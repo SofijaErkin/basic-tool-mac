@@ -1,6 +1,6 @@
 // Problem: How do I show a MySQL warning that just happened?
 // stackoverflow: 
-// https://stackoverflow.com/questions/1215692/how-do-i-show-a-mysql-warning-that-just-happened/70223816#70223816
+// https://stackoverflow.com/questions/1215692/how-do-i-show-a-mysql-warning-that-just-happened
 /*
 When MySQL database imports data, warnings often appear. 
 
