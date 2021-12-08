@@ -1,5 +1,7 @@
 # # Problem: MongoDB: exception in initAndListen: 
 # # 20 Attempted to create a lock file on a read-only directory: /data/db, terminating?
+# # stackoverflow:
+# # https://stackoverflow.com/questions/42446931/mongodb-exception-in-initandlisten-20-attempted-to-create-a-lock-file-on-a-rea/70231134#70231134
 # [[
 wrong reason:
 
