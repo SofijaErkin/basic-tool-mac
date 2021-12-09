@@ -1,3 +1,4 @@
+*.tcl linguist-language=Tcl
 *.cmake linguist-language=CMake
 *.v linguist-language=Verilog
 *.m linguist-language=MATLAB
