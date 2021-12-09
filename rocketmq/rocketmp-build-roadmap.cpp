@@ -1,4 +1,4 @@
-// This is a roadmap of building kafka on mac.
+// This is a roadmap of building rocketmp on mac.
 /*
 
 */
