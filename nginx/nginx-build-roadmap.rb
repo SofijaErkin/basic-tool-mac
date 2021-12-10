@@ -20,4 +20,6 @@ You know,
 16.nginx -s stop;
 17.nginx -s quit;
 The Nginx version suitable for macOS 1x.x.x ranges from 1.11.13 to 1.21.4(the lastest version).
+
+Others reference：https://github.com/Homebrew/homebrew-core/blob/HEAD/Formula/nginx.rb
 =end
