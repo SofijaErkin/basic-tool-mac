@@ -35,4 +35,29 @@ You know,
 16.VS code or others Desktop.
 
 The Redis version suitable for macOS 1x.x ranges from 3.2.x to 4.0.x, or even the lastest version.
+
+Other reference:
+1.homebrew-core/Formula/redis.rb
+("Persistent key-value database, with built-in net interface")
+https://github.com/Homebrew/homebrew-core/blob/master/Formula/redis.rb
+
+2.homebrew-core/Formula/redis@3.2.rb :
+("Persistent key-value database, with built-in net interface")
+https://github.com/Homebrew/homebrew-core/blob/master/Formula/redis@3.2.rb
+
+3.homebrew-core/Formula/redis@4.0.rb:
+("Persistent key-value database, with built-in net interface")
+https://github.com/Homebrew/homebrew-core/blob/master/Formula/redis@4.0.rb
+
+4.homebrew-core/Formula/redis@4.0.rb:
+("Persistent key-value database, with built-in net interface")
+https://github.com/Homebrew/homebrew-core/blob/master/Formula/redis@4.0.rb
+
+5.homebrew-core/Formula/redis-leveldb.rb:
+("Redis-protocol compatible frontend to leveldb")
+
+6.homebrew-core/Formula/hiredis.rb
+("Minimalistic client for Redis")
+https://github.com/Homebrew/homebrew-core/blob/master/Formula/hiredis.rb
+
 =end
