@@ -260,5 +260,8 @@ directly in the browser URL bar.
 
 The Nginx version suitable for macOS 1x.x.x ranges from 1.11.13 to 1.21.4(the lastest version).
 
+Notices:
+I do recommand you store nginx.conf out of the directroy /usr/local/nginx.
+
 Others reference：https://github.com/Homebrew/homebrew-core/blob/HEAD/Formula/nginx.rb
 =end
