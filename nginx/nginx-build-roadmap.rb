@@ -1,8 +1,11 @@
 # Problem:How to build Nginx x.x.x on Mac OS 
-# RoadMap:
+# RoadMap: Install nginx manually
 =begin
 You know, 
-1.download;
+1.download
+Open the terminal and enter the /usr/local directory, just use that command:
+cd /usr/local/
+
 2.tar;
 3.sudo ln -s;
 4../con ../pcre ../zlib ../openssl;
