@@ -172,6 +172,9 @@ sudo make install
 facilitate later version upgrades. just use this command:
 cd .. && cd ..
 sudo ln -s nginx-1.12.2 nginx
+sudo chown marryme nginx
+sudo chown marryme nginx-1.12.2
+sudo rm -rf nginx-install
 
 2.6 manually add Nginx to environment variables
 2.6.1 if the default terminal of your system is generally bash, just use this
