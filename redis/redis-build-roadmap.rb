@@ -353,10 +353,36 @@ sudo /usr/local/redis/bin/redis-server /usr/local/etc/redis.conf
 
 Login to verify whether the password is set successfully:
 
-(1) 
+(1) Start the redis server
 
- 
- 
+redis-server
+
+or
+
+sudo redis-server
+
+(2) Start the redis client
+
+redis-cli
+
+(3) Enter "config get requirepass" to verify
+
+(4) "(error) NOAUTH Authentication required." appears to verify that 
+
+the password is set successfully!
+
+(5) Enter the password:
+
+auth 123456 // get ok
+
+(6) Enter "config get requirepass" again to verify, you can see the 
+
+password you set, 123456 is the password
+
+1) "requirepass"
+
+2) "123456"
+
 
 16.Install graphical interface
 
@@ -364,35 +390,6 @@ Install the mac client: redis-desktop-manager
 
 Official website download address (release version): https://redisdesktop.com
 
-
-
-
-
-
-
-
-
-
-
-7.sudo cp -r /usr/local/redis/redis/conf /usr/local/etc/redis/conf;
-
-8.sudo mkdir -p /usr/local/var/log/redis;
-
-9.$Path;
-
-10.vim ./redis.conf;
-
-11. ./redis-server ./etc/redis/conf;
-
-12. redis-server;
-
-13. redis-cli;
-
-14.shutdown;
-
-15. vim ./redis.conf for requipentpass changing;
-
-16.VS code or others Desktop.
 
 The Redis version suitable for macOS 1x.x ranges from 3.2.x to 4.0.x, or even the lastest version.
 
