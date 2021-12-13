@@ -2,7 +2,14 @@
 # RoadMap:
 =begin
 You know, 
+
+cd /usr/local/
+
 1.download redis;
+
+sudo tar 
+
+sudo chown
 
 2.ln -s;
 
@@ -12,7 +19,7 @@ You know,
 
 5.sudo mkdir -p /usr/local/redis/bin;
 
-6.sudo cp -r /usr/local/redis/src/... /usr/local/redis/bin/...;
+6.sudo cp -r /usr/local/redis/src/... /usr/local/redis/bin/...; // redis-server, redis-cli
 
 7.sudo cp -r /usr/local/redis/redis/conf /usr/local/etc/redis/conf;
 
