@@ -48,28 +48,28 @@ The above marryme is the user on my computer, you need to modify it according
 
 to your current user name.
 
-3.Grant soft link permissions
+5.Grant soft link permissions
 
 sudo chown -R marryme redis
 
-4.Compile
+6.Compile
 
 cd redis
 sudo make
 
-5.Compile and install
+7.Compile and install
 
 sudo make install
 
-6.Create executable file directory
+8.Create executable file directory
 
 sudo mkdir -p /usr/local/redis/bin
 
-7.Grant executable file permissions
+9.Grant executable file permissions
 
 sudo chown marryme /usr/local/redis/bin
 
-8.Migrate executable files
+10.Migrate executable files
 
 Redis will put some executable files under the /redis/src directory, and move 
 
@@ -91,7 +91,7 @@ sudo cp -r /usr/local/redis/src/redis-server /usr/local/redis/bin/redis-server
 
 sudo cp -r /usr/local/redis/src/redis-trib.rb /usr/local/redis/bin/redis-trib.rb
 
-9.Configuration file
+11.Configuration file
 
 It is not recommended to place any product configuration files under the 
 
@@ -201,7 +201,7 @@ appendonly no
 
 appendfsync everysec
 
-10.Data directory and log directory
+12.Data directory and log directory
 
 According to the configuration of the configuration file, create a data 
 
@@ -219,7 +219,7 @@ sudo chown marryme /usr/local/var/log/redis
 
 sudo chown marryme /data/db
 
-11.Configure global variables
+13.Configure global variables
 
 After the installation and configuration is complete, we can add the redis 
 
@@ -245,7 +245,7 @@ Edit redis path: export PATH=/usr/local/redis/bin:$PATH, then save
 
 (3) source ~/.zshrc //Save to make the configuration effective
 
-12.Start the server
+14.Start the server
 
 Start the redis server for the first time, Or start the server every 
 
@@ -264,7 +264,7 @@ or
 
 sudo redis-server
 
-13. redis client
+15. redis client
 
 Open the redis client:
 
@@ -302,7 +302,7 @@ cd /usr/local/redis
 
 ./bin/redis-cil shutdown
 
-14.close the reids server
+16.close the reids server
 
 (1)Forcibly close the server:
 
@@ -316,7 +316,7 @@ kill -9 PID
 
 (3)Close the redis server in the redis client
 
-15.set password
+17.set password
 
 Redis does not provide a password by default, and access control can be turned 
 
@@ -384,7 +384,7 @@ password you set, 123456 is the password
 2) "123456"
 
 
-16.Install graphical interface
+18.Install graphical interface
 
 Install the mac client: redis-desktop-manager
 
