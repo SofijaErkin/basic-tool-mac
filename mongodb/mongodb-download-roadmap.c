@@ -70,6 +70,14 @@ Now we need to configure global variables for mongodb, that is, add the MongoDB
 
 binary command file directory (installation directory/bin) to the PATH path.
 
+
+Pay attention to the common commands of vim or bash:
+
+1) Press the letter key "i" to edit mode;
+
+2) Press the return key "esc" + input the letter ":wq": save and exit;
+
+
 If your system's default terminal is generally bash,then
 
 (1) Enter the terminal
