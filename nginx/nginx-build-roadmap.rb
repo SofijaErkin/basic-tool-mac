@@ -177,6 +177,13 @@ sudo chown marryme nginx-1.12.2
 sudo rm -rf nginx-install
 
 2.6 manually add Nginx to environment variables
+
+Pay attention to the common commands of vim or bash:
+
+1) Press the letter key "i" to edit mode;
+
+2) Press the return key "esc" + input the letter ":wq": save and exit;
+
 2.6.1 if the default terminal of your system is generally bash, just use this
 command:
 vi ~/.bash_profile
