@@ -83,5 +83,51 @@ Oh shit. Northeastern young couple at home. I was so scared that I was afraid
 
 of being broken in and raped! Hurry up to find a job, change the house to rent.
 
+Ok, i'm fine.
+
+While watching pornographic videos and masturbating with hands, the brain is 
+
+the most involved in this process. When watching pornographic videos, the 
+
+provocative body and exposed sexual organs will cause the brain to secrete 
+
+a large amount of dopamine.
+
+And dopamine is a neurotransmitter, a chemical substance used to help cells 
+
+transmit impulses. It is related to human lust and feelings, and it transmits 
+
+excitement and happiness. In addition, dopamine is also associated with 
+
+various addictive behaviors.
+
+At the same time, dopamine is a dopamine receptor stimulant, which can 
+
+excite adrenaline alpha and beta receptors, and can accelerate heart rate, 
+
+constrict blood vessels, and raise blood pressure. If it is secreted too much,
+
+Then it may cause the heart rate to increase, the blood pressure to rise, it 
+
+may cause arrhythmia, paroxysmal tachycardia, paroxysmal atrial fibrillation, 
+
+paroxysmal atrial flutter, and the patient may also experience dizziness, and 
+
+may even occur Insomnia, dreaminess.
+
+Dopamine appears in the forebrain and basal ganglia (Basal Ganglia). The basal 
+
+ganglia are responsible for processing fear emotions, but because of dopamine, 
+
+it replaces the feeling of fear.
+
+Therefore, many people's addictive behaviors are caused by dopamine.
+
+Excessive dopamine can also cause emotional problems, anxiety, fear and even 
+
+mild depression. 
+
+
+
 }
 # "if 0 { ... } " for more than one lines comment.
