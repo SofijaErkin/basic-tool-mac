@@ -2,6 +2,18 @@
 # '#' just for only one line comment
 if 0 {
 
+The better way to build ssh for logging in github, gitlab... via git is that
+
+just search "terminal log in github" by Google search engine.
+
+first search just using native language,
+
+second search just using english,
+
+third search just using third language,
+
+As the saying goes, well-informed.
+
 Secure Shell (SSH) is a cryptographic network protocol for operating network 
 
 services securely over an unsecured network.
