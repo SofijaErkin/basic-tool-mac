@@ -6,6 +6,10 @@ The better way to build ssh for logging in github, gitlab... via git is that
 
 just search "terminal log in github" by Google search engine.
 
+A better way to learn the terminal to log in to github is to read the 
+
+official github related documents.
+
 first search just using native language,
 
 second search just using english,
