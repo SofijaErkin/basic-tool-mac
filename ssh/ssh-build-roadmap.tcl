@@ -56,6 +56,12 @@ The encryption used by SSH is intended to provide confidentiality and
 
 integrity of data over an unsecured network, such as the Internet. 
 
+The most effective and safest way to build SSH is to refer to the search 
+
+engine to practice, and then use the search engine to find and solve 
+
+the problem.
+
 
 
 Other reference:
