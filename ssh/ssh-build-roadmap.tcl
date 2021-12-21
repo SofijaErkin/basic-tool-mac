@@ -62,6 +62,11 @@ engine to practice, and then use the search engine to find and solve
 
 the problem.
 
+It is necessary to consider logging into multiple GitHub accounts on the 
+
+same computer, as well as logging into the same github account on multiple 
+
+computers.
 
 
 Other reference:
