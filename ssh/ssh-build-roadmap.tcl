@@ -68,6 +68,10 @@ same computer, as well as logging into the same github account on multiple
 
 computers.
 
+e.g: logging in github(personal), github(company), cloud(company), cloud(personal),
+
+blog(personal), gitlab, gitbucket, azure devops... via ssh on a terminal.
+
 
 Other reference:
 1.homebrew-core/Formula/sshtrix.rb:
