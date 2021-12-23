@@ -86,14 +86,76 @@ GitHub client.
 
 What if there are 2 GitHub accounts on the same computer?
 
-Cancel the global setting, set the user name and password for each warehouse 
+Cancel the global setting, set the user name and password for each 
 
-separately: cancel global;
+warehouse separately: cancel global;
 
 git config --global --unset user.name
 
 git config --global --unset user.email
 
+
+And, If the corresponding git repository is not specifically configured, 
+
+the git global configuration will be taken by default, that is, the 
+
+default global configuration account will be used for git submission.
+
+At this time, we need to configure different warehouses accordingly.
+
+We can cd to the root directory of the corresponding git repository and
+
+execute local git configuration commands.For example, 
+
+/Users/XXX/github/DemoProject is the root directory of a local git 
+
+repository hosted on the github platform. We can execute the following 
+
+commands:
+
+cd /Users/XXX/github/DemoProject
+
+git config user.name
+
+git config user.email
+
+If the return is empty, it means that no partial configuration has been 
+
+performed. The account name and email address of github can be configured 
+
+separately:
+
+git config user.name "github account name"
+
+git config user.email "github@example.com"
+
+In the same way, under different git repositories, you can configure git 
+
+account names and git mailboxes for different platforms.
+
+Although this seems troublesome, as long as the settings are completed, 
+
+as long as the path of the corresponding git repository is no longer 
+
+changed, there is no need to change the configuration.
+
+Moreover, even if we did not cancel the default global git configuration,
+
+After partial configuration, the latter will have a higher priority.
+
+execute:
+
+git config --list
+
+You can view the specific configuration information of the current 
+
+warehouse, The configuration viewed in the current warehouse directory 
+
+is the global configuration + the partial configuration of the current 
+
+project, When using it, the local configuration of the current warehouse 
+
+will be used first, if not, the global configuration will be read.
 
 Set up each repo's own user.email
 
