@@ -68,9 +68,15 @@ same computer, as well as logging into the same github account on multiple
 
 computers.
 
-e.g: logging in github(personal), github(company), cloud(company), cloud(personal),
+e.g: logging in github(personal), github(company), cloud(company), cloud
 
-blog(personal), gitlab, gitbucket, azure devops... via ssh on a terminal.
+(personal),blog(personal), gitlab, gitbucket, azure devops... via ssh on 
+
+a terminal.
+
+Multiple GitHub accounts can be considered: one to log in through the 
+
+terminal, and one to log in through the GitHub client.
 
 
 Other reference:
