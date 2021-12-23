@@ -74,9 +74,32 @@ e.g: logging in github(personal), github(company), cloud(company), cloud
 
 a terminal.
 
-Multiple GitHub accounts can be considered: one to log in through the 
+Multiple GitHub accounts can be considered: 
 
-terminal, and one to log in through the GitHub client.
+1.Log in to the terminal and GitHub client separately：
+
+one to log in through the terminal, and one to log in through the 
+
+GitHub client.
+
+2.Cancel global settings：
+
+What if there are 2 GitHub accounts on the same computer?
+
+Cancel the global setting, set the user name and password for each warehouse 
+
+separately: cancel global;
+
+git config --global --unset user.name
+
+git config --global --unset user.email
+
+
+Set up each repo's own user.email
+
+git config  user.email "xyz@xyz.com"
+
+git config  user.name "xyz"
 
 
 Other reference:
