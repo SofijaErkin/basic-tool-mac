@@ -163,6 +163,16 @@ git config  user.email "xyz@xyz.com"
 
 git config  user.name "xyz"
 
+If there are two git accounts, they are `github@example.com and 
+
+gitee@example.com`. In order to submit git, we need to set the 
+
+corresponding ssh key, so each git account needs to create and manage 
+
+ssh key, add public key to git platform, configure file config, verify 
+
+ssh key.
+
 
 Other reference:
 1.homebrew-core/Formula/sshtrix.rb:
