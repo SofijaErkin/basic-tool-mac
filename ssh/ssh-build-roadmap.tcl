@@ -173,6 +173,27 @@ ssh key, add public key to git platform, configure file config, verify
 
 ssh key.
 
+References to the use of multiple Github accounts:
+
+A.Generating a new SSH key and adding it to the ssh-agent(Github Docs)
+
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
+B.Adding a new SSH key to your GitHub account(Github Docs)
+
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
+
+C.How to Work with GitHub and Multiple Accounts(Github Gist)
+
+https://gist.github.com/JoaquimLey/e6049a12c8fd2923611802384cd2fb4a
+
+D.Using multiple github accounts with ssh keys(Github Gist)
+
+https://gist.github.com/SofijaErkin/606ad4a47a59af731469c61b15b526e3
+
+E.How to manage multiple Github accounts on one machine
+
+https://learnku.com/articles/59358
 
 Other reference:
 1.homebrew-core/Formula/sshtrix.rb:
