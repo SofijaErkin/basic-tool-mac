@@ -62,6 +62,66 @@ engine to practice, and then use the search engine to find and solve
 
 the problem.
 
+
+
+Now the simple roadmap of logging in GitHub via terminal using ssh and git
+
+1.mkdir /Users/user-name/GitHub/Personal/Sofija
+
+2.cd /Users/user-name/GitHub/Personal/Sofija
+
+3.(create ssh key for my individual GitHub account sofija)
+
+ssh -T -C "sofijaerkin@gmail.com"
+
+4. store sofija_rsa in /Users/user-name/.ssh/sofija_github_rsa
+
+5.eval "$(ssh-agent -s)"
+
+6.(optional)ssh-add -l 
+
+if yes, then delete: ssh-add -D
+
+    if error, then ssh-agent bash
+
+7.(adding private rsa)cd /Users/user-name/.ssh && vim config
+
+edit and adding :
+
+   Host sofija-github.com
+       Hostname github.com
+       User git
+       AddKeysToAgent yes
+       UseKeychain yes
+       IdentityFile /Users/user-name/.ssh/sofija_github_rsa
+       
+ 8.(adding public rsa) GitHub public rsa ssh
+ 
+ 9. ssh-add -l
+ 
+ 10. (local git do connect with GitHub via ssh)
+ 
+ ssh -T git@sofija-github.com
+ 
+ 11. cd /Users/user-name/GitHub/Personal/Sofija
+ 
+ 12. git clone url
+ 
+ 13. git init
+ 
+ 14. cp /.../... /.../...
+ 
+ 15. git add
+ 
+ 16. git commit -m "..."
+ 
+ 17. git remote add origin url
+ 
+ 18. git push -u origin master
+ 
+ 
+ 
+ 
 It is necessary to consider logging into multiple GitHub accounts on the 
 
 same computer, as well as logging into the same github account on multiple 
@@ -194,6 +254,8 @@ https://gist.github.com/SofijaErkin/606ad4a47a59af731469c61b15b526e3
 E.How to manage multiple Github accounts on one machine
 
 https://learnku.com/articles/59358
+
+
 
 Other reference:
 1.homebrew-core/Formula/sshtrix.rb:
