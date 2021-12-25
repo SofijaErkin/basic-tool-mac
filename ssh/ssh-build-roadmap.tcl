@@ -72,7 +72,7 @@ Now the simple roadmap of logging in GitHub via terminal using ssh and git
 
 3.(create ssh key for my individual GitHub account sofija)
 
-ssh -t rsa -b 4096 -C "sofijaerkin@gmail.com"
+ssh-keygen -t rsa -b 4096 -C "sofijaerkin@gmail.com"
 
 -t type
 
