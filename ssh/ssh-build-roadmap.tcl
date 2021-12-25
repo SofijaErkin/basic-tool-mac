@@ -72,7 +72,27 @@ Now the simple roadmap of logging in GitHub via terminal using ssh and git
 
 3.(create ssh key for my individual GitHub account sofija)
 
-ssh -T -C "sofijaerkin@gmail.com"
+ssh -t rsa -C "sofijaerkin@gmail.com"
+
+-t type
+
+鍵の生成に使用する鍵のアルゴリズムを指定します。プロトコルバージョン 2 に指定可能な値は「rsa」
+
+または「dsa」です。指定できる値は、「ecdsa」、「rsa」または「dsa」です
+
+-b “Bits” This option specifies the number of bits in the key. The regulations 
+
+that govern the use case for SSH may require a specific key length to be used. 
+
+In general, 2048 bits is considered to be sufficient for RSA keys.
+
+-C comment
+
+鍵ファイル内のコメントフィールドに情報を指定します。文字列に空白が含まれている場合、
+
+引用符を使用します。鍵の作成時にコメントを指定していない場合、鍵の種類、作成者、日付、時刻を含
+
+む既定のコメントが作成されます。
 
 4. store sofija_rsa in /Users/user-name/.ssh/sofija_github_rsa
 
