@@ -72,7 +72,7 @@ Now the simple roadmap of logging in GitHub via terminal using ssh and git
 
 3.(create ssh key for my individual GitHub account sofija)
 
-ssh -t rsa -C "sofijaerkin@gmail.com"
+ssh -t rsa -b 4096 -C "sofijaerkin@gmail.com"
 
 -t type
 
@@ -94,7 +94,7 @@ In general, 2048 bits is considered to be sufficient for RSA keys.
 
 む既定のコメントが作成されます。
 
-4. store sofija_rsa in /Users/user-name/.ssh/sofija_github_rsa
+4. store sofija_rsa in /Users/user-name/.ssh/sofija_github_id_rsa
 
 5.eval "$(ssh-agent -s)"
 
@@ -108,38 +108,115 @@ if yes, then delete: ssh-add -D
 
 edit and adding :
 
-   Host sofija-github.com
+   Host sofija_personal-github.com
        Hostname github.com
        User git
        AddKeysToAgent yes
        UseKeychain yes
-       IdentityFile /Users/user-name/.ssh/sofija_github_rsa
+       IdentityFile /Users/user-name/.ssh/sofija_github_id_rsa
+       
+  ssh-add -K /Users/user-name/.ssh/sofija_github_id_rsa
+  
+  ssh-add -l
        
  8.(adding public rsa) GitHub public rsa ssh
+ 
+ cat /Users/user-name/.ssh/sofija_personal_github_id_rsa
+ 
+ copy the print to GitHub ssh key location
  
  9. ssh-add -l
  
  10. (local git do connect with GitHub via ssh)
  
- ssh -T git@sofija-github.com
+ ssh -T git@sofija_personal-github.com
+ 
+ then typing "yes"
  
  11. cd /Users/user-name/GitHub/Personal/Sofija
  
- 12. git clone url
+ 12. (Optional, OR 13.)
  
- 13. git init
+ git clone ssh-url
  
- 14. cp /.../... /.../...
+ (git clone only run once, once run git clone, then do not need to run git init /
  
- 15. git add
+ and git remote add origin git@sofija_personal-github.com:SofijaPersonal/
  
- 16. git commit -m "..."
+ hello-world-debug-vscode.git)
  
- 17. git remote add origin url
+ cd hello-world
  
- 18. git push -u origin master
+ git config user.name
  
+ git config user.email
  
+ git config user.name "Sofija_Personal_GitHub"
+ 
+ git config user.email "sofijapersonal@gmail.com"
+ 
+ git config --list
+ 
+ echo "# hello-world" >> README.md
+ 
+ git add README.md
+ 
+ git status
+ 
+ git commit -m "Create README.md"
+ 
+ git branch -M main 
+ 
+ git push -u origin main
+ 
+ 13. (Optional, OR 12.)
+ 
+ mkdir hello_world
+ 
+ cd hello_world
+ 
+ echo "# hello-world-debug-vscode" >> README.md
+ 
+ git init
+ 
+ (git init only run once)
+ 
+ git config user.name
+ 
+ git config user.email
+ 
+ git config user.name "Sofija_Personal_GitHub"
+ 
+ git config user.email "sofijapersonal@gmail.com"
+ 
+ git config --list
+ 
+ git add README.md
+ 
+ (git add/rm <file> run everytime changing files)
+ 
+ git status
+ 
+ git commit -m "Create README.md"
+ 
+ (once run git add/rm <file>, must run git commit -m "")
+ 
+ git branch -M main
+ 
+ (git branch -M main only run once, or git branch -M other-branch)
+ 
+ git remote add origin git@sofija_persaonal-github.com:SofijaPersonal/
+ 
+ hello-world-debug-vscode.git
+ 
+ (git remote add only run once)
+
+ git push -u origin main
+ 
+ (git push -u origin main run everytime once git add/rm <file>, or run git push /
+ 
+ -u origin other-branch)
+
  
  
 It is necessary to consider logging into multiple GitHub accounts on the 
