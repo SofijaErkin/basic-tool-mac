@@ -179,9 +179,9 @@ edit and adding :
  
  repository to your local workspace or Your GitHub has that repository but
  
- your local workspace has not that repository, please use command
+ your local workspace has not that repository, please use command the step 
  
- git clone ssh-url)
+ 12.)
  
  git clone ssh-url
  
@@ -216,6 +216,8 @@ edit and adding :
  git push -u origin main
  
  13. (Optional, OR 12.)
+ 
+ (If your GitHub repository is empty, then just use the step 13.)
  
  mkdir hello_world
  
