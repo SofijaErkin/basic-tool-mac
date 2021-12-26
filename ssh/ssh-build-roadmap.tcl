@@ -110,6 +110,8 @@ Now the simple roadmap of logging in GitHub via terminal using ssh and git
 
 3.(create ssh key for my individual GitHub account sofija)
 
+(ssh is to connect between my computer Git and my GitHub )
+
 ssh-keygen -t rsa -b 4096 -C "sofijaerkin@gmail.com"
 
 -t type
@@ -274,6 +276,10 @@ edit and adding :
  git remote add origin git@sofija_persaonal-github.com:SofijaPersonal/
  
  hello-world-debug-vscode.git
+ 
+ ("git remote add origin url" is to connect between local repository and
+ 
+ remote repository)
  
  (git remote add only run once)
 
