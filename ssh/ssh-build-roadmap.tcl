@@ -193,6 +193,24 @@ edit and adding :
  
  cd hello-world
  
+ Configure the information of the git user of the current warehouse. If you 
+ 
+ do not configure the git user of the current warehouse, then the user name 
+ 
+ submitted to GitHub is the current user name of the computer; for example, 
+ 
+ the current user name of my computer is marryme, if I do not configure the 
+ 
+ user name of my current warehouse as Sofija, then submit The name of the 
+ 
+ Repository to GitHub is marryme.
+ 
+ (I think a safe, convenient, and concise way to use git is to configure 
+ 
+ different user names, emails, and passwords in each local warehouse, so 
+ 
+ that possible problems can be located in a certain warehouse) 
+ 
  git config user.name
  
  git config user.email
