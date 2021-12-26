@@ -62,7 +62,45 @@ engine to practice, and then use the search engine to find and solve
 
 the problem.
 
+I know, I'll have more than one GitHub account, some are personal, others 
 
+are corporate. So I just create a directory GitHub in my current user 
+
+directory /Users/marryme, before doing this, I need to enter the terminal.
+
+Some use the default terminal Apple Terminal, but I use iTerm here.
+
+when i'm in the terminal, just use this command to create the dirctory
+
+GitHub:
+
+mkdir GitHub
+
+Also, use thic command to enter the dirctory /Users/marryme/GitHub
+
+cd /Users/marryme/Github
+
+I know, I'll have more than one personal GitHUb accounts and more than one
+
+corporate GitHub accounts. Now I'll create a directory /Personal and a
+
+directory /Corporate. Just use this command to create that directions:
+
+mkdir Personal
+
+mkdir Corporate
+
+Now, I have more than one personal GitHub accounts. My personal Github 
+
+accounts Sofija, Starla, Sivert. Enter my personal GitHub dirctory
+
+/Personal and create three personal GitHub accounts:
+
+mkdir Sofija
+
+mkdir Starla
+
+mkdir Sivert
 
 Now the simple roadmap of logging in GitHub via terminal using ssh and git
 
@@ -136,6 +174,14 @@ edit and adding :
  11. cd /Users/user-name/GitHub/Personal/Sofija
  
  12. (Optional, OR 13.)
+ 
+ (If your GitHub repository are not empty or you firstly download GitHub /
+ 
+ repository to your local workspace or Your GitHub has that repository but
+ 
+ your local workspace has not that repository, please use command
+ 
+ git clone ssh-url)
  
  git clone ssh-url
  
