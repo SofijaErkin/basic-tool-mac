@@ -309,6 +309,14 @@ edit and adding :
  remote repository)
  
  (git remote add only run once)
+ 
+ But if you remote add Wrong address via url using "git remote add origin
+ 
+ url" or you want to change the url address, you could use this command to 
+ 
+ change the url to the target address：
+ 
+ git remote set-url origin url
 
  git push -u origin main
  
