@@ -4,7 +4,7 @@ if 0 {
 
 The better way to build ssh for logging in cloud services (such as github, 
 
-gitlab, gitee, bitbucket ...), remotee server, customer premises via git 
+gitlab, gitee, bitbucket ...), remotee web server, customer premises via git 
 
 is that just search "terminal log in github" by Google search engine.
 
