@@ -2,53 +2,61 @@
 # '#' just for only one line comment
 if 0 {
 
-The better way to build ssh for logging in cloud services (such as github, 
+# SSH Manually
 
-gitlab, gitee, bitbucket ...), remotee web server(Nginx, Cloudflare Server,
 
-Apache, IIS and lighttpd, Microsoft Internet Information Services, 
 
-Sun Java System Web Server and Jigsaw.), customer premises via git 
+## 1.Search "Terminal log in GitHub"
 
-is that just search "terminal log in github" by Google search engine.
+The better way to build ssh for logging in cloud services (such as `GitHub`, 
+
+`GitLab`, `Gitee`, `Bitbucket` ...), remotee web server(`Nginx`, `Cloudflare Server`,
+
+`Apache`, `IIS and lighttpd`, `Microsoft Internet Information Services`, 
+
+`Sun Java System Web Server` and `Jigsaw`), customer premises via git 
+
+is that just search "`terminal log in github`" by Google search engine.
 
 A better way to learn the terminal to log in to github is to read the 
 
 official github related documents.
 
-first search just using native language,
+firstly search just using native language,
 
-second search just using english,
+secondly search just using english,
 
-third search just using third language,
+thirdly search just using third language,
 
 As the saying goes, well-informed.
 
-Secure Shell (SSH) is a cryptographic network protocol for operating network 
+## 2.What is [SSH](https://ja.wikipedia.org/wiki/Secure_Shell)
+
+`Secure Shell (SSH)` is a cryptographic network protocol for operating network 
 
 services securely over an unsecured network.
 
 Typical applications include remote command-line, login, and remote command 
 
-execution, but any network service can be secured with SSH. 
+execution, but any network service can be secured with `SSH`. 
 
-SSH provides a secure channel over an unsecured network by using a client
+`SSH` provides a secure channel over an unsecured network by using a client
 
-–server architecture, connecting an SSH client application with an SSH server.
+–server architecture, connecting an `SSH` client application with an `SSH` server.
 
 The protocol specification distinguishes between two major versions, referred 
  
-to as SSH-1 and SSH-2. 
+to as `SSH-1` and `SSH-2`. 
 
-The standard TCP port for SSH is 22. 
+The standard `TCP` port for `SSH` is `22`. 
 
-SSH is generally used to access Unix-like operating systems, but it can also 
+`SSH` is generally used to access `Unix-like` operating systems, but it can also 
 
-be used on Microsoft Windows.
+be used on `Microsoft Windows`.
 
-Windows 10 uses OpenSSH as its default SSH client and SSH server.
+`Windows 10` uses `OpenSSH` as its default `SSH` client and `SSH` server.
 
-SSH was designed as a replacement for Telnet and for unsecured remote shell 
+`SSH` was designed as a replacement for Telnet and for unsecured remote shell 
 
 protocols such as the Berkeley rsh and the related rlogin and rexec protocols. 
 
@@ -58,81 +66,93 @@ rendering them susceptible to interception and disclosure using packet
 
 analysis.
 
-The encryption used by SSH is intended to provide confidentiality and 
+The encryption used by `SSH` is intended to provide confidentiality and 
 
-integrity of data over an unsecured network, such as the Internet. 
+integrity of data over an unsecured network, such as the `Internet`. 
 
-The most effective and safest way to build SSH is to refer to the search 
+## 3.Build SSH
+
+The most effective and safest way to build `SSH` is to refer to the search 
 
 engine to practice, and then use the search engine to find and solve 
 
 the problem.
 
-I know, I'll have more than one GitHub account, some are personal, others 
+### 3.1 Create GitHub Directory
 
-are corporate. So I just create a directory GitHub in my current user 
+I know, I'll have more than one `GitHub` account, some are personal, others 
 
-directory /Users/marryme, before doing this, I need to enter the terminal.
+are corporate. So I just create a directory `/GitHub` in my current user 
 
-Some use the default terminal Apple Terminal, but I use iTerm here.
+directory `/Users/marryme`, before doing this, I need to enter the terminal.
+
+Some use the default terminal Apple `Terminal`, but I use `iTerm` here.
 
 when i'm in the terminal, just use this command to create the dirctory
 
-GitHub:
+`/GitHub`:
 
-mkdir GitHub
+`mkdir GitHub`
 
-Also, use thic command to enter the dirctory /Users/marryme/GitHub
+Also, use thic command to enter the dirctory `/Users/marryme/GitHub`:
 
-cd /Users/marryme/Github
+`cd /Users/marryme/Github`
 
-I know, I'll have more than one personal GitHub accounts and more than one
+I know, I'll have more than one personal `GitHub` accounts and more than one
 
-corporate GitHub accounts. Now I'll create a directory /Personal and a
+corporate `GitHub` accounts. Now I'll create a directory `/Personal` and a
 
-directory /Corporate. Just use this command to create that directions:
+directory `/Corporate`. Just use this command to create that directions:
 
-mkdir Personal
+`mkdir Personal`
 
-mkdir Corporate
+`mkdir Corporate`
 
 Now, I have more than one personal GitHub accounts. My personal Github 
 
-accounts Sofija, Starla, Sivert. Enter my personal GitHub dirctory
+accounts `Sofija`, `Starla`, `Sivert`. Enter my personal GitHub dirctory
 
-/Personal and create three personal GitHub accounts:
+`/Personal` and create three personal GitHub accounts:
 
-mkdir Sofija
+`mkdir Sofija`
 
-mkdir Starla
+`mkdir Starla`
 
-mkdir Sivert
+`mkdir Sivert`
 
-Now the simple roadmap of logging in GitHub via terminal using ssh and git
+### 3.2 SSH Keys Generation and Configuration
 
-1.mkdir /Users/user-name/GitHub/Personal/Sofija
+Now the simple roadmap of logging in GitHub via terminal using ssh and git.
 
-2.cd /Users/user-name/GitHub/Personal/Sofija
+#### 3.2.1 Create SSH key for my personal GitHub Sofija
 
-3.(create ssh key for my individual GitHub account sofija)
+Just use this command to enter my personal GitHub account directory `/Sofija`:
 
-(ssh is to connect between my computer Git and my GitHub )
+`cd /Users/marryme/GitHub/Personal/Sofija`
 
-ssh-keygen -t rsa -b 4096 -C "sofijaerkin@gmail.com"
+##### 3.2.1.1 Command create SSH key
 
--t type
+SSH is to connect between my computer Git and my GitHub,so Enter the command 
 
-鍵の生成に使用する鍵のアルゴリズムを指定します。プロトコルバージョン 2 に指定可能な値は「rsa」
+to create an SSH Key for my personal GitHub account Sofija:
 
-または「dsa」です。指定できる値は、「ecdsa」、「rsa」または「dsa」です
+`ssh-keygen -t rsa -b 4096 -C "sofijapersonalgithub@gmail.com"`
 
--b “Bits” This option specifies the number of bits in the key. The regulations 
+-`t type`
+
+鍵の生成に使用する鍵のアルゴリズムを指定します。プロトコルバージョン 2 に指定可能な値は「`rsa`」
+
+または「`dsa`」です。指定できる値は、「`ecdsa`」、「rsa」または「`dsa`」です
+
+`-b “Bits”` 
+
+This option specifies the number of bits in the key. The regulations 
 
 that govern the use case for SSH may require a specific key length to be used. 
 
 In general, 2048 bits is considered to be sufficient for RSA keys.
 
--C comment
+`-C comment`
 
 鍵ファイル内のコメントフィールドに情報を指定します。文字列に空白が含まれている場合、
 
@@ -140,198 +160,409 @@ In general, 2048 bits is considered to be sufficient for RSA keys.
 
 む既定のコメントが作成されます。
 
-4. store sofija_rsa in /Users/user-name/.ssh/sofija_github_id_rsa
+`sofijapersonalgithub@gmail.com` is my email address
 
-5.eval "$(ssh-agent -s)"
+##### 3.2.1.2 Change the name of file rsa 
 
-6.(optional)ssh-add -l 
+The terminal prompt is as follows:
 
-if yes, then delete: ssh-add -D
+`Generating public/private rsa key pair.`
 
-    if error, then ssh-agent bash
+`Enter file in which to save the key (/Users/XXX/.ssh/id_rsa):`
 
-7.(adding private rsa to My computer SSH agent)
+At this time, press Enter directly, and a public key named id_rsa will be created under
 
-(ssh-agent, a helper program，a key manager for SSH, a agent server)
+the path `/Users/XXX/.ssh/`, which is not what I want.
 
-(But during the SSH handshake my computer local git as a client,
+Because I want to manage multiple ssh keys, this naming does not have any characteristics.
 
-and GitHub ad a server)
+I will store `sofija_personal_github_id_rsa` in `/Users/user-name/.ssh/sofija_github_id_rsa`.
 
-reference(ssh-agent as a server):
+Enter the following command in the terminal:
 
-(1)ssh-agent - How to configure, forwarding, protocol.
+`/Users/user-name/.ssh/sofija_personal_github_id_rsa`
 
-https://www.ssh.com/academy/ssh/agent
+It means that this is the key of my private github account, and then according to the terminal 
 
-(2)SSH Agent Explained
+prompt, enter and confirm the password, and it can be generated.
 
-https://smallstep.com/blog/ssh-agent-explained/
+`Enter passphrase (empty for no passphrase): `
 
+`Enter same passphrase again: `
 
-cd /Users/user-name/.ssh && vim config
+`Your identification has been saved in /Users/XXX/.ssh/sofija_personal_github_id_rsa.`
 
-edit and adding :
+`Your public key has been saved in /Users/XXX/.ssh/sofija_personal_github_id_rsa.pub.`
 
-   Host sofija_personal-github.com
+`The key fingerprint is:`
+
+`...`
+
+#### 3.2.2 Start SSH-Agent in the Background
+
+`eval "$(ssh-agent -s)"`
+
+`> Agent pid 59566`
+
+#### 3.2.3 (Optional But Recommended)Configure SSH Proxy
+
+Once you have created the above ssh key, you can start to manage it.
+
+Enter the following command in the terminal to query the proxy of 
+
+the system ssh key:
+
+`ssh-add -l`
+
+If the system has set up a proxy, you need to delete:
+
+`ssh-add -D`
+
+`All identities removed.`
+
+If prompted:
+
+`Could not open a connection to your authentication agent.`
+
+execute:
+
+`ssh-agent bash`
+
+#### 3.2.4 Adding Private RSA to My Computer SSH Agent)
+
+SSH-Agent, [a helper program](https://www.ssh.com/academy/ssh/agent)，[a key manager for SSH](https://smallstep.com/blog/ssh-agent-explained/), a agent server.
+
+But during the SSH handshake my computer local git as a client,
+
+and GitHub ad a server.
+
+##### 3.2.4.1 Configure SSH config file
+
+Create a config configuration file in the /.ssh directory:
+
+`cd /Users/user-name/.ssh && vim config`
+
+Pay attention to the common commands of `vim` or `bash`:
+
+   1) Press the letter key "`i`" to edit mode;
+
+   2) Press the return key "`esc`" + input the letter "`:wq`": save and exit;
+
+Edit and adding :
+
+    Host sofija_personal-github.com
+   
        Hostname github.com
+       
        User git
+       
        AddKeysToAgent yes
+       
        UseKeychain yes
-       IdentityFile /Users/user-name/.ssh/sofija_personal_github_id_rsa
        
-  ssh-add -K /Users/user-name/.ssh/sofija_github_id_rsa
+       IdentityFile /Users/marryme/.ssh/sofija_personal_github_id_rsa
+       
+##### 3.2.4.2 SSH key added to SSH-Agent
+
+Add the SSH private key to ssh-agent and store the passphrase in the keychain. 
+
+If you create a key with another name, or if you want to add an existing key 
+
+with another name, replace `sofija_personal_github_id_rsa` in the command with 
+
+the name of the private key file.
+
+`ssh-add -K /Users/marryme/.ssh/sofija_personal_github_id_rsa`
+
+Check the proxy of the ssh key again:
   
-  ssh-add -l
-       
- 8.(adding public rsa to GitHub SSH keys) GitHub public rsa ssh
+`ssh-add -l`
+
+`4096 SHA256:............ /Users/marryme/.ssh/sofija_personal_github_id_rsa (RSA)`
+
+#### 3.2.5 Adding Public RSA to GitHub SSH keys
  
- I know, no matter I directly copy the public key file 
+I know, no matter I directly copy the public key file 
  
- sofija_personal_github_id_rsa.pub via vim copying or changing the .pub 
+`sofija_personal_github_id_rsa.pub` via vim copying or changing the `.pub` 
  
- to .txt, that all does not sucessfuly add to GitHub SSH keys, Use the 
+to `.txt`, that all does not sucessfuly add to GitHub SSH keys, Use the 
  
- cat command to print out the just created ssh key in the terminal.
+`cat` command to print out the just created ssh key in the terminal.
+
+(After creating the local ssh key, I need to let github know that the ssh key 
+
+is myself, so I need to copy the generated ssh key, write it to github, and 
+
+enter it in the terminal under mac)
  
- cat /Users/user-name/.ssh/sofija_personal_github_id_rsa.pub
+`cat /Users/user-name/.ssh/sofija_personal_github_id_rsa.pub`
  
  copy the print to GitHub ssh key location
  
- 9. ssh-add -l
- 
- 10. (local git do connect with GitHub via ssh)
- 
- ssh -T git@sofija_personal-github.com
- 
- then typing "yes"
- 
- 11. cd /Users/user-name/GitHub/Personal/Sofija
- 
- 12. (Optional, OR 13.)
- 
- (If your GitHub repository are not empty or you firstly download GitHub /
- 
- repository to your local workspace or Your GitHub has that repository but
- 
- your local workspace has not that repository, please use command the step 
- 
- 12.)
- 
- git clone ssh-url
- 
- (git clone only run once, once run git clone, then do not need to run git init /
- 
- and git remote add origin git@sofija_personal-github.com:SofijaPersonal/
- 
- hello-world-debug-vscode.git)
- 
- cd hello-world
- 
- Configure the information of the git user of the current warehouse. If you 
- 
- do not configure the git user of the current warehouse, then the user name 
- 
- submitted to GitHub is the current user name of the computer; for example, 
- 
- the current user name of my computer is marryme, if I do not configure the 
- 
- user name of my current warehouse as Sofija, then submit The name of the 
- 
- Repository to GitHub is marryme.
- 
- (I think a safe, convenient, and concise way to use git is to configure 
- 
- different user names, emails, and passwords in each local warehouse, so 
- 
- that possible problems can be located in a certain warehouse) 
- 
- git config user.name
- 
- git config user.email
- 
- git config user.name "Sofija_Personal_GitHub"
- 
- git config user.email "sofijapersonal@gmail.com"
- 
- git config --list
- 
- echo "# hello-world" >> README.md
- 
- git add README.md
- 
- git status
- 
- git commit -m "Create README.md"
- 
- git branch -M main 
- 
- git push -u origin main
- 
- 13. (Optional, OR 12.)
- 
- (If your GitHub repository is empty, then just use the step 13.)
- 
- mkdir hello_world
- 
- cd hello_world
- 
- echo "# hello-world-debug-vscode" >> README.md
- 
- git init
- 
- (git init only run once)
- 
- git config user.name
- 
- git config user.email
- 
- git config user.name "Sofija_Personal_GitHub"
- 
- git config user.email "sofijapersonal@gmail.com"
- 
- git config --list
- 
- git add README.md
- 
- (git add/rm <file> run everytime changing files)
- 
- git status
- 
- git commit -m "Create README.md"
- 
- (once run git add/rm <file>, must run git commit -m "")
- 
- git branch -M main
- 
- (git branch -M main only run once, or git branch -M other-branch)
- 
- git remote add origin git@sofija_persaonal-github.com:SofijaPersonal/
- 
- hello-world-debug-vscode.git
- 
- ("git remote add origin url" is to connect between local repository and
- 
- remote repository)
- 
- (git remote add only run once)
- 
- But if you remote add Wrong address via url using "git remote add origin
- 
- url" or you want to change the url address, you could use this command to 
- 
- change the url to the target address：
- 
- git remote set-url origin url
+ Check the proxy of the ssh key again:
+  
+`ssh-add -l`
 
- git push -u origin main
- 
- (git push -u origin main run everytime once git add/rm <file>, or run git push /
- 
- -u origin other-branch)
+`4096 SHA256:............ /Users/marryme/.ssh/sofija_personal_github_id_rsa (RSA)`
 
  
+ ### 3.3Local Git do connect with GitHub via SSH)
  
+ Enter the following verification command in the terminal. If it returns as follows, 
+ 
+ the configuration is successful:
+ 
+ `ssh -T git@sofija_personal-github.com`
+ 
+ `Hi Sofija! You've successfully authenticated, but GitHub does not provide shell access.`
+ 
+ If there need to type "`yes/no`", then typing "`yes`".
+ 
+ ## 4.Upload Repository
+ 
+First, before uploading the repository, you need to create a github repository. After 
+
+logging in to your account, click `+` next to the avatar and select `New repository` to 
+
+create a personal repository.
+ 
+You can first create an empty warehouse, public, without README.md,LICENSE, .gitignore 
+
+and .gitattributes.
+
+Please remember the ssh-url(SSH Git Address) of the empty warehouse created.
+
+## 4.1 TO Not Empty Repository
+
+If your GitHub repository are not empty or you firstly download GitHub 
+ 
+repository to your local workspace or Your GitHub has that repository but
+ 
+your local workspace has not that repository, please use command the step 
+ 
+`## 4.1`.
+
+I need to enter my personal GitHub account directory.
+
+`cd /Users/user-name/GitHub/Personal/Sofija`
+
+Now I need to pull remote Repository:
+ 
+`git clone git@sofija_personal-github.com:SofijaPersonal/hello-world-debug-vscode.git`
+ 
+(`git clone` only run once, once run git clone, then do not need to run `git init` 
+ 
+and `git remote add origin git@sofija_personal-github.com:SofijaPersonal/hello-world-debug-vscode.git`)
+
+`git clone` will clone the remote repository to the local directory 
+
+`/Users/marryme/GitHub/Personal/Sofija` via creating the directory
+
+`/Users/marryme/GitHub/Personal/Sofija/hello-world-debug-vscode`.
+
+The created directory `/Users/marryme/GitHub/Personal/Sofija/hello-world-debug-vscode`
+
+is that my created GitHub Repository just now.
+
+And, the created directory `/hello-world-debug-vscode` also include `.git`.
+
+Now I need to enter my local repository `hello-world-debug-vscode`
+
+`cd hello-world-debug-vscode`
+ 
+Configure the information of the git user of the current Repository. 
+
+If I do not configure the git user of the current Repository, then the user name 
+ 
+submitted to GitHub is the current user name of the computer; 
+
+for example, 
+ 
+the current user name of my computer is `marryme`, if I do not configure the 
+ 
+user name of my current warehouse as `Sofija`, then submit The name of the 
+ 
+Repository to GitHub is `marryme`.
+ 
+ 
+(I think a safe, convenient, and concise way to use git is to configure 
+ 
+different user names, emails, and passwords in each local Repository, so 
+ 
+that possible problems can be located in a certain Repository) 
+
+
+In the terminal, enter the following commands respectively to check the 
+
+partial configuration information of git in the current computer. If it 
+
+does not return, it means that there is no partial configuration. 
+
+If there is, you can see that the corresponding default account is that.
+
+`git config user.name`
+ 
+`git config user.email`
+
+If the return is empty, it means that no partial configuration has been 
+
+performed, and the account name and email address of github can be 
+
+configured separately:
+ 
+`git config user.name "Sofija_Personal_GitHub"`
+ 
+`git config user.email "sofijapersonal@gmail.com"`
+
+execute：
+ 
+`git config --list`
+
+You can view the specific configuration information of the current Repository. 
+
+The configuration viewed in the current Repository directory is the global 
+
+configuration + the local configuration of the current project. When using it, 
+
+the local configuration of the current Repository will be used first. If not, 
+
+the global configuration will be read.
+
+Now we create `README.md` and write "`# hello-world-debug-vscode`":
+ 
+`echo "# hello-world-debug-vscode" >> README.md`
+
+Add the file `README.md` that needs to be updated to the local git repository:
+ 
+`git add README.md`
+
+(`git add <your file name>`: specify the class update)
+ 
+(`git add .`:All classes that need to be updated)
+
+Check if the file to be uploaded is correct:
+ 
+`git status`
+
+Record this submission:
+
+`git commit -m "Create README.md"`
+
+Create `main` branch, git workspace and move from `master` branch to `main` branch:
+ 
+`git branch -M main`
+
+Mention the main branch to the remote github repository:
+ 
+`git push -u origin main`
+
+The main here refers to the `main` branch name, if it is another branch, fill in the 
+
+corresponding branch name.
+
+Log in to github to view the submission results.
+
+### 4.2 TO Empty Repository
+ 
+If your GitHub repository is empty, then just use the step `4.2`.
+
+i need to create a directory `/hello-world-debug-vscode`.Please remember every 
+
+GitHub Repository to create one directory, and i'm in the directory
+
+`/Users/marryme/GitHub/Personal/Sofija`, Now:
+
+mkdir hello-world-debug-vscode && cd hello-world-debug-vscode
+
+The same thing, create `README.md` and write "`# hello-world-debug-vscode`":
+ 
+`echo "# hello-world-debug-vscode" >> README.md`
+
+make this directory `/hello-world-debug-vscode` Git Repository
+ 
+`git init`
+ 
+`git init` only run once, that will create the local Git repository.
+
+ALso, enter the following commands respectively to check the 
+
+partial configuration information of git in the current computer:
+
+`git config user.name`
+ 
+`git config user.email`
+
+And, the account name and email address of github can be 
+
+configured separately:
+ 
+`git config user.name "Sofija_Personal_GitHub"`
+ 
+`git config user.email "sofijapersonal@gmail.com"`
+
+To view the specific configuration information of the current Repository:
+
+`git config --list`
+
+Now, add the file `README.md` that needs to be updated to the local git repository:
+ 
+`git add README.md`
+ 
+Please notice: `git add/rm <file>` run everytime while changing files.
+ 
+Never forget check if the file to be uploaded is correct:
+
+`git status`
+
+Record this submission:
+ 
+`git commit -m "Create README.md"`
+ 
+Once run `git add/rm <file>`, must run `git commit -m "XXXX"`.
+
+It's time to create `main` branch, git workspace and move from `master` branch 
+
+to `main` branch:
+ 
+`git branch -M main`
+ 
+`git branch -M main` only run once, or `git branch -M other-branch`.
+
+Associate a remote library command. Fill in my github repository (repository) 
+
+after git@. After creating the repository in github, there are links to `http` 
+
+and `ssh`. `Origin` is the name I gave to this repository and can be customized.
+ 
+`git remote add origin git@sofija_persaonal-github.com:SofijaPersonal/hello-world-debug-vscode.git`
+ 
+ "`git remote add origin ssh-url`" is to connect between local repository and
+ 
+ remote repository, only run once.
+ 
+ But if you remote add Wrong address via url using "`git remote add origin ssh-url`" 
+ 
+ or you want to change the url address, you could use this command to 
+ 
+ change the `ssh-url` to the target address：
+ 
+ `git remote set-url origin ssh-url`
+ 
+ eg:
+ 
+ `git remote set-url origin git@sofija_persaonal-github.com:SofijaPersonal/hello-world.git`
+ 
+ Mention the main branch to the remote github repository:
+ 
+ `git push -u origin main`
+ 
+ "`git push -u origin main`" or "`git push`" run everytime once "`git add/rm <file>`", 
+ 
+ or run `git push -u origin other-branch`.
+
+# 5.Multiple GitHub accounts
+
 It is necessary to consider logging into multiple GitHub accounts on the 
 
 same computer, as well as logging into the same github account on multiple 
@@ -344,26 +575,23 @@ e.g: logging in GitHub(personal), GitHub(company), Cloud(company), Cloud
 
 a terminal.
 
-Multiple GitHub accounts can be considered: 
-
-1.Log in to the terminal and GitHub client separately：
+## 5.1 Log in to the terminal and GitHub client separately：
 
 one to log in through the terminal, and one to log in through the 
 
 GitHub client.
 
-2.Cancel global settings：
+## 5.2 Cancel global settings：
 
-What if there are 2 GitHub accounts on the same computer?
+What if there are two GitHub accounts on the same computer?
 
 Cancel the global setting, set the user name and password for each 
 
 warehouse separately: cancel global;
 
-git config --global --unset user.name
+`git config --global --unset user.name`
 
-git config --global --unset user.email
-
+`git config --global --unset user.email`
 
 And, If the corresponding git repository is not specifically configured, 
 
@@ -375,19 +603,21 @@ At this time, we need to configure different warehouses accordingly.
 
 We can cd to the root directory of the corresponding git repository and
 
-execute local git configuration commands.For example, 
+execute local git configuration commands.
 
-/Users/XXX/github/DemoProject is the root directory of a local git 
+For example, 
 
-repository hosted on the github platform. We can execute the following 
+`/Users/marryme/Github/Personal/Starla` is the root directory of another local git 
+
+repository hosted on the github platform. I can execute the following 
 
 commands:
 
-cd /Users/XXX/github/DemoProject
+`cd /Users/marryme/Github/Personal/Starla`
 
-git config user.name
+`git config user.name`
 
-git config user.email
+`git config user.email`
 
 If the return is empty, it means that no partial configuration has been 
 
@@ -395,9 +625,11 @@ performed. The account name and email address of github can be configured
 
 separately:
 
-git config user.name "github account name"
+`git config user.name "Starla-Personal-GitHub"`
 
-git config user.email "github@example.com"
+`git config user.email "starlapersonalgithub@example.com"`
+
+## 5.3 Other Gits Accounts
 
 In the same way, under different git repositories, you can configure git 
 
@@ -415,7 +647,7 @@ After partial configuration, the latter will have a higher priority.
 
 execute:
 
-git config --list
+`git config --list`
 
 You can view the specific configuration information of the current 
 
@@ -429,13 +661,13 @@ will be used first, if not, the global configuration will be read.
 
 Set up each repo's own user.email
 
-git config  user.email "xyz@xyz.com"
+`git config  user.email "sivertpersonalgitee@gmail.com"`
 
-git config  user.name "xyz"
+`git config  user.name "Sivert_Personal_Gittee"`
 
-If there are two git accounts, they are `github@example.com and 
+If there are two git accounts, they are `github@example.com` and 
 
-gitee@example.com`. In order to submit git, we need to set the 
+`gitee@example.com`. In order to submit git, we need to set the 
 
 corresponding ssh key, so each git account needs to create and manage 
 
@@ -443,66 +675,43 @@ ssh key, add public key to git platform, configure file config, verify
 
 ssh key.
 
-References to the use of multiple Github accounts:
+## 5.4 References to the use of multiple Github accounts:
 
-A.Generating a new SSH key and adding it to the ssh-agent(Github Docs)
+A.[Generating a new SSH key and adding it to the ssh-agent(Github Docs)](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
-https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+B.[Adding a new SSH key to your GitHub account(Github Docs)](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 
-B.Adding a new SSH key to your GitHub account(Github Docs)
+C.[How to Work with GitHub and Multiple Accounts(Github Gist)](https://gist.github.com/JoaquimLey/e6049a12c8fd2923611802384cd2fb4a)
 
-https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
+D.[Using multiple github accounts with ssh keys(Github Gist)](https://gist.github.com/SofijaErkin/606ad4a47a59af731469c61b15b526e3)
 
-C.How to Work with GitHub and Multiple Accounts(Github Gist)
 
-https://gist.github.com/JoaquimLey/e6049a12c8fd2923611802384cd2fb4a
-
-D.Using multiple github accounts with ssh keys(Github Gist)
-
-https://gist.github.com/SofijaErkin/606ad4a47a59af731469c61b15b526e3
-
-E.How to manage multiple Github accounts on one machine
-
-https://learnku.com/articles/59358
+E.[How to manage multiple Github accounts on one machine](https://learnku.com/articles/59358)
 
 
 
-Other reference:
-1.homebrew-core/Formula/sshtrix.rb:
-("SSH login cracker")
-https://github.com/Homebrew/homebrew-core/blob/master/Formula/sshtrix.rb
 
-2.homebrew-core/Formula/sshguard.rb:
-("Protect from brute force attacks against SSH")
-https://github.com/Homebrew/homebrew-core/blob/master/Formula/sshguard.rb
+# 6.Other SSH Reference:
 
-3.homebrew-core/Formula/ssh-vault.rb:
-("Encrypt/decrypt using SSH keys")
-https://github.com/Homebrew/homebrew-core/blob/master/Formula/ssh-vault.rb
+1.[homebrew-core/Formula/sshtrix.rb:("SSH login cracker")](https://github.com/Homebrew/homebrew-core/blob/master/Formula/sshtrix.rb)
 
-4.homebrew-core/Formula/ssh-copy-id.rb:
-("Add a public key to a remote machine's authorized_keys file")
-https://github.com/Homebrew/homebrew-core/blob/master/Formula/ssh-copy-id.rb
+2.[homebrew-core/Formula/sshguard.rb:("Protect from brute force attacks against SSH")](https://github.com/Homebrew/homebrew-core/blob/master/Formula/sshguard.rb)
 
-5.homebrew-core/Formula/ssh-permit-a38.rb:
-("Central management and deployment for SSH keys")
-https://github.com/Homebrew/homebrew-core/blob/master/Formula/ssh-permit-a38.rb
+3.[homebrew-core/Formula/ssh-vault.rb:("Encrypt/decrypt using SSH keys")](https://github.com/Homebrew/homebrew-core/blob/master/Formula/ssh-vault.rb)
 
-6.homebrew-core/Formula/git-ssh.rb:
-("Proxy for serving git repositories over SSH")
-https://github.com/Homebrew/homebrew-core/blob/master/Formula/git-ssh.rb
+4.[homebrew-core/Formula/ssh-copy-id.rb:("Add a public key to a remote machine's authorized_keys file")](https://github.com/Homebrew/homebrew-core/blob/master/Formula/ssh-copy-id.rb)
 
-7.homebrew-core/Formula/assh.rb:
-("Advanced SSH config - Regex, aliases, gateways, includes and dynamic hosts")
-https://github.com/Homebrew/homebrew-core/blob/master/Formula/assh.rb
+5.[homebrew-core/Formula/ssh-permit-a38.rb:("Central management and deployment for SSH keys")](https://github.com/Homebrew/homebrew-core/blob/master/Formula/ssh-permit-a38.rb)
 
-8.homebrew-core/Formula/openssh.rb:
-("OpenBSD freely-licensed SSH connectivity tools")
-https://github.com/Homebrew/homebrew-core/blob/master/Formula/openssh.rb
+6.[homebrew-core/Formula/git-ssh.rb:("Proxy for serving git repositories over SSH")](https://github.com/Homebrew/homebrew-core/blob/master/Formula/git-ssh.rb)
 
-9.homebrew-core/Formula/stormssh.rb:
-("Command-line tool to manage your ssh connections")
-https://github.com/Homebrew/homebrew-core/blob/master/Formula/stormssh.rb
+7.[homebrew-core/Formula/assh.rb:("Advanced SSH config - Regex, aliases, gateways, includes and dynamic hosts")](https://github.com/Homebrew/homebrew-core/blob/master/Formula/assh.rb)
+
+8.[homebrew-core/Formula/openssh.rb:("OpenBSD freely-licensed SSH connectivity tools")](https://github.com/Homebrew/homebrew-core/blob/master/Formula/openssh.rb)
+
+9.[homebrew-core/Formula/stormssh.rb:("Command-line tool to manage your ssh connections")](https://github.com/Homebrew/homebrew-core/blob/master/Formula/stormssh.rb)
+
+# 7.Staying up late will lose dealing with fear
 
 Oh shit. Northeastern young couple at home. I was so scared that I was afraid 
 
@@ -551,8 +760,6 @@ Therefore, many people's addictive behaviors are caused by dopamine.
 Excessive dopamine can also cause emotional problems, anxiety, fear and even 
 
 mild depression. 
-
-
 
 }
 # "if 0 { ... } " for more than one lines comment.
