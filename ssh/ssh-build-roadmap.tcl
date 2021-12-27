@@ -541,6 +541,10 @@ and `ssh`. `Origin` is the name I gave to this repository and can be customized.
  
  remote repository, only run once.
  
+ Query whether the connection is successful: 
+ 
+ `git remote -v`
+ 
  But if you remote add Wrong address via url using "`git remote add origin ssh-url`" 
  
  or you want to change the url address, you could use this command to 
