@@ -2,9 +2,11 @@
 # '#' just for only one line comment
 if 0 {
 
-The better way to build ssh for logging in github, gitlab... via git is that
+The better way to build ssh for logging in cloud services (such as github, 
 
-just search "terminal log in github" by Google search engine.
+gitlab, gitee, bitbucket ...), remotee server, customer premises via git 
+
+is that just search "terminal log in github" by Google search engine.
 
 A better way to learn the terminal to log in to github is to read the 
 
