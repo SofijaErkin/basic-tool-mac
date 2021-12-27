@@ -144,7 +144,26 @@ if yes, then delete: ssh-add -D
 
     if error, then ssh-agent bash
 
-7.(adding private rsa)cd /Users/user-name/.ssh && vim config
+7.(adding private rsa to My computer SSH agent)
+
+(ssh-agent, a helper program，a key manager for SSH, a agent server)
+
+(But during the SSH handshake my computer local git as a client,
+
+and GitHub ad a server)
+
+reference(ssh-agent as a server):
+
+(1)ssh-agent - How to configure, forwarding, protocol.
+
+https://www.ssh.com/academy/ssh/agent
+
+(2)SSH Agent Explained
+
+https://smallstep.com/blog/ssh-agent-explained/
+
+
+cd /Users/user-name/.ssh && vim config
 
 edit and adding :
 
@@ -153,15 +172,23 @@ edit and adding :
        User git
        AddKeysToAgent yes
        UseKeychain yes
-       IdentityFile /Users/user-name/.ssh/sofija_github_id_rsa
+       IdentityFile /Users/user-name/.ssh/sofija_personal_github_id_rsa
        
   ssh-add -K /Users/user-name/.ssh/sofija_github_id_rsa
   
   ssh-add -l
        
- 8.(adding public rsa) GitHub public rsa ssh
+ 8.(adding public rsa to GitHub SSH keys) GitHub public rsa ssh
  
- cat /Users/user-name/.ssh/sofija_personal_github_id_rsa
+ I know, no matter I directly copy the public key file 
+ 
+ sofija_personal_github_id_rsa.pub via vim copying or changing the .pub 
+ 
+ to .txt, that all does not sucessfuly add to GitHub SSH keys, Use the 
+ 
+ cat command to print out the just created ssh key in the terminal.
+ 
+ cat /Users/user-name/.ssh/sofija_personal_github_id_rsa.pub
  
  copy the print to GitHub ssh key location
  
@@ -297,9 +324,9 @@ same computer, as well as logging into the same github account on multiple
 
 computers.
 
-e.g: logging in github(personal), github(company), cloud(company), cloud
+e.g: logging in GitHub(personal), GitHub(company), Cloud(company), Cloud
 
-(personal),blog(personal), gitlab, gitbucket, azure devops... via ssh on 
+(personal),Blog(personal), BitLab, Bitbucket, Azure devops... via ssh on 
 
 a terminal.
 
