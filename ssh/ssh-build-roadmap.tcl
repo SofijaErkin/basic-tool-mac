@@ -86,7 +86,7 @@ Also, use thic command to enter the dirctory /Users/marryme/GitHub
 
 cd /Users/marryme/Github
 
-I know, I'll have more than one personal GitHUb accounts and more than one
+I know, I'll have more than one personal GitHub accounts and more than one
 
 corporate GitHub accounts. Now I'll create a directory /Personal and a
 
