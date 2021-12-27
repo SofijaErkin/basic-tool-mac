@@ -715,7 +715,82 @@ E.[How to manage multiple Github accounts on one machine](https://learnku.com/ar
 
 9.[homebrew-core/Formula/stormssh.rb:("Command-line tool to manage your ssh connections")](https://github.com/Homebrew/homebrew-core/blob/master/Formula/stormssh.rb)
 
-# 7.Staying up late will lose dealing with fear
+# 7.Others English References:
+
+1.[Your first time with git and github](https://kbroman.org/github_tutorial/pages/first_time.html)
+
+2.[Set up Git](https://docs.github.com/en/get-started/quickstart/set-up-git)
+
+3.[Start using Git on the command line](https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html)
+
+4.[How do I log in using the Git terminal?](https://stackoverflow.com/questions/57947268/how-do-i-log-in-using-the-git-terminal)
+
+5.[How to switch git user at terminal?](https://superuser.com/questions/1064197/how-to-switch-git-user-at-terminal)
+
+6.[Set-up Git and GitHub](https://tutorials.codebar.io/version-control/set-up/tutorial.html)
+
+7.[An Intro to Git and GitHub for Beginners (Tutorial)](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)
+
+8.[Using Git with Terminal](https://guides.codepath.com/ios/Using-Git-with-Terminal)
+
+9.[How to Install, Configure and Use GIT on Ubuntu?](https://www.geeksforgeeks.org/how-to-install-configure-and-use-git-on-ubuntu/)
+
+# 8.Others Japanese References:
+
+1.[Git for Windows のインストール手順](https://laboradian.com/git-installation-on-wndows/)
+
+2.[【初心者向け】Gitのインストール方法をわかり易く解説（画面付き）](https://eng-entrance.com/git-install)
+
+3.[Gitインストール手順＜Windows向け＞](https://sukkiri.jp/technologies/devtools/git/git_win.html)
+
+4.[【Windows】Gitの環境構築をしよう！](https://prog-8.com/docs/git-env-win)
+
+5.[WindowsにGitをインストールする方法](https://proengineer.internous.co.jp/content/columnfeature/6893)
+
+6.[使い始める - Gitのインストール](https://git-scm.com/book/ja/v2/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-Git%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)
+
+7.[Gitをインストールしてみよう！Windows/Macどちらも丁寧に解説](https://www.sejuku.net/blog/73444)
+
+8.[WindowsにGitをインストールする手順(2021年12月更新)](https://www.curict.com/item/60/60bfe0e.html)
+
+9.[Git のインストールと設定](https://docs.microsoft.com/ja-jp/devops/develop/git/install-and-set-up-git)
+
+10.[はじめてでもOK！Gitをインストールする方法【初心者向け】](https://techacademy.jp/magazine/5304)
+
+11.[【Mac】Gitの環境構築をしよう！](https://prog-8.com/docs/git-env)
+
+12.[MacにGitをインストールする方法](https://chirashi.twittospia.com/%E6%8A%80%E8%A1%93/mac%E3%81%ABgit%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/2021-02-26/)
+
+13.[初心者でもWindowsやMacでできる、Gitのインストールと基本的な使い方](https://atmarkit.itmedia.co.jp/ait/articles/1603/31/news026_4.html)
+
+14.[Git チュートリアル - Gitをインストールする](https://www.atlassian.com/ja/git/tutorials/install-git)
+
+15.[GitをMacにインストールする方法](https://it-kyujin.jp/article/detail/459/)
+
+16.[MacでGitを設定する方法](https://ichi.pro/mac-de-git-o-setteisuru-hoho-114058223710161) 
+
+17.[MacOS】Homebrew経由でGitをインストールする方法](https://blog.cloud-acct.com/posts/u-homebrew-git-install/) 
+
+# 9.Others Chinese References:
+
+1.[git command line to log in to github for operation](https://www.jianshu.com/p/6e3f9e4e8e69)
+
+2.[Use GitHub to share on the terminal](https://www.jianshu.com/p/899a2d4de88f)
+
+3.[DevOps uses terminal to configure GitHub account on Mac](https://www.dazhuanlan.com/liyimin70s/topics/1397744)
+
+4.[git connection github summary](https://segmentfault.com/a/1190000007466317)
+
+5.[One computer to manage multiple Git accounts and SSH KEY](https://kukumalucn.github.io/blog/2018/08/02/%E4%B8%80%E5%8F%B0%E7%94%B5%E8%84%91%E7%AE%A1%E7%90%86%E5%A4%9A%E4%B8%AAGit%E8%B4%A6%E6%88%B7%E5%92%8CSSH-KEY/)
+
+6.[How to manage multiple Github accounts on one machine](https://learnku.com/articles/59358)
+
+7.[Use SSH to connect to GitHub on Mac](https://www.cxyzjd.com/article/qq_41977618/108262500)
+
+8.[Upload files to GitHub in MacOS](https://bin-ye.com/boke/file_upload_git/)
+
+
+# 10.Staying up late will lose dealing with fear
 
 Oh shit. Northeastern young couple at home. I was so scared that I was afraid 
 
