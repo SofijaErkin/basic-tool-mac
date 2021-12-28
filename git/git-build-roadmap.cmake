@@ -13,6 +13,12 @@
 
 As you can see the local branch is deleted.
 
+### View the branch merge graph
+
+`git log --graph`
+
+press key "`q`" to Quit.
+
 ## 2.Special commands
 
 ### Fixed conflicts in uploading GitHub files
