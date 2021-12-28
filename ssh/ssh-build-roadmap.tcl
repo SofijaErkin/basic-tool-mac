@@ -140,9 +140,9 @@ to create an SSH Key for my personal GitHub account Sofija:
 
 -`t type`
 
-Specifies the key algorithm used to generate the key. The value that can be specified for protocol version 2 is "`rsa` ".
+鍵の生成に使用する鍵のアルゴリズムを指定します。プロトコルバージョン 2 に指定可能な値は「`rsa`」
 
-Or "` dsa` ". Possible values are "`ecdsa` "," rsa "or" `dsa`"
+または「`dsa`」です。指定できる値は、「`ecdsa`」、「rsa」または「`dsa`」です
 
 `-b “Bits”` 
 
@@ -154,11 +154,11 @@ In general, 2048 bits is considered to be sufficient for RSA keys.
 
 `-C comment`
 
-Specify the information in the comment field in the key file. If the string 
+鍵ファイル内のコメントフィールドに情報を指定します。文字列に空白が含まれている場合、
 
-contains spaces, Use quotes. Includes key type, author, date, and time if no 
+引用符を使用します。鍵の作成時にコメントを指定していない場合、鍵の種類、作成者、日付、時刻を含
 
-comment was specified when creating the key A default comment is created.
+む既定のコメントが作成されます。
 
 `sofijapersonalgithub@gmail.com` is my email address
 
@@ -449,11 +449,17 @@ Record this submission:
 
 `git commit -m "Create README.md"`
 
-Create `main` branch, git workspace and move from `master` branch to `main` branch:
+Create `main` branch, git workspace and move from `master` branch to `main` branch,
+
+`-m` attribute is used to rename the branch name without affecting the branch’s 
+
+history:
  
 `git branch -M main`
 
-Mention the main branch to the remote github repository:
+Mention the main branch to the remote github repository, `-u` attribute is used to 
+
+set the upstream tracking for the branch.:
  
 `git push -u origin main`
 
