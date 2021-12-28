@@ -2,10 +2,15 @@
 # #
 # # "# [[ ... ]]" for more than one lines comment
 # [[
-
 # Git commands Manually
 
 ## 1.General commands
+
+### To delete the local branch
+
+`git branch --delete <name>`
+
+As you can see the local branch is deleted.
 
 ## 2.Special commands
 
@@ -55,7 +60,7 @@ create branch <name>, and switch local branch to the new created branch <name>.
 
 The above command will just fetch all the remote branches to your local.
 
-### To delete the old branch
+### To delete the remote branch
 
 `git push origin --delete <name>`
 
