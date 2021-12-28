@@ -196,7 +196,19 @@ prompt, enter and confirm the password, and it can be generated.
 
 `The key fingerprint is:`
 
-`...`
+--------------------------------
+|                              |
+|    xxxxxx                    |
+|         xxxxx                |
+|                              |
+|     xxxxx                    |
+|     xxxxx                    |
+|          xxxxx               |
+|                              |
+|                              |
+|                              |
+--------------------------------
+
 
 #### 3.2.2 Start SSH-Agent in the Background
 
