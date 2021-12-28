@@ -315,9 +315,27 @@ enter it in the terminal under mac)
  
  `ssh -T git@sofija_personal-github.com`
  
+ discover Terminal:
+ 
+ `The authenticity of host 'github.com (xxx.xx.xxx.xxx)' can't be established.`
+ 
+ `ECDSA key fingerprint is SHA256:XXXXxxxxXXXXxxxxXXXXxxxxXXXXxxxx.`
+ 
+ `Are you sure you want to continue connecting (yes/no)?`
+ 
+Please type "`yes`".
+ 
+Then success:
+ 
+ `Warning: Permanently added 'github.com,xxx.xx.xxx.xx' (ECDSA) to the list of known hosts.`
+ 
  `Hi Sofija! You've successfully authenticated, but GitHub does not provide shell access.`
  
- If there need to type "`yes/no`", then typing "`yes`".
+ If that was in GitLab, then:
+ 
+ `Warning: Permanently added 'gitlab.com,xxx.xx.xxx.xx' (ECDSA) to the list of known hosts.`
+ 
+ `Welcome to GitLab, @sofijapersonalgithub!`
  
  ## 4.Upload Repository
  
