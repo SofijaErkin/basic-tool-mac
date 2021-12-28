@@ -105,6 +105,46 @@ this kind of mark, comment out the feature ("`ae9a0f6b7e42fda2ce9b14a21a7a03cfc5
 
 `git push`
 
+#### Eight step
+
+(1)After the conflict:
+
+`git pull`
+
+(2)Temporary local changes:
+
+`git stash`
+
+(3)Then update the code:
+
+`git pull`
+
+(4)View the list of temporary records:
+
+`git stash list`
+
+(5)Release local staging:
+
+`git stash apply stash@{0}`
+
+Use "`git stash apply @{x}`" to release the cache number "`x`", but 
+
+the cache still exists in the "`list`".
+
+(6)Conflicting files appear, find and resolve them:
+
+reference: `####Six step`.
+
+(7)Submit and join the index library:
+
+`git add <file>`
+
+`git commit -m "comment"`
+
+(8)Push to remote
+
+`git push`
+  
 ### Merge Two branches
 
 (1) Enter the directory of your needed Merging Repository
