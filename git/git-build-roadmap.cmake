@@ -2,6 +2,7 @@
 # #
 # # "# [[ ... ]]" for more than one lines comment
 # [[
+
 # Git commands Manually
 
 ## 1.General commands
@@ -13,6 +14,70 @@
 As you can see the local branch is deleted.
 
 ## 2.Special commands
+
+### Fixed conflicts in uploading GitHub files
+
+(1)Update the repository every time before uploading the repositroy, please run
+
+`git pull`
+
+discover Terminal:
+
+`>error: Your local changes to the following files would be overwritten by merge:helloworld.cpp`
+
+`>Please commit your changes or stash them before you merge.`
+
+The error is basically a conflict. This shows that your helloworld.cpp conflicts 
+
+with the remote, you need to submit the local modification first and then update it.
+
+(2)Submit the local helloworld.cpp file without pushing remotely 
+
+`git add helloworld.cpp`
+
+`git commit -m "conflict fixed"`
+
+(3)Update local repository 
+
+`git pull`
+
+discover Terminal:
+
+`>Auto-merging helloworld.cpp`
+
+`>CONFLICT (content): Merge conflict in helloworld.cpp`
+
+`>Automatic merge failed; fix conflicts and then commit the result.`
+
+After the update, (develop|MERGING) will appear on your local branch 
+
+similar to this kind of logo.
+
+(4)Delete functions according to prompts
+
+Find your local helloworld.cpp file and open it.
+
+You will find "`<<<<<<< HEAD`", "`=======`", "`>>>>>>> ae9a0f6b7e42fda2ce9b14a21a7a03cfc5344d61`" 
+
+in the file.
+
+This kind of mark, "`<<<<<<< HEAD`" and "`=======`" is your own code, 
+
+"`=======`" and "`>>>>>>>>`" is modified by others Code.
+
+Make sure to keep that part of the code, and finally delete "`<<<<<<< HEAD`", "`=======`", "`>>>>>>`"
+
+this kind of mark, comment out the feature ("`ae9a0f6b7e42fda2ce9b14a21a7a03cfc5344d61`").
+
+(5)Submit the local helloworld.cpp file agiain without pushing remotely
+
+`git add helloworld.cpp`
+
+`git commit -m "conflict fixed end"`
+
+(6)pushing remotely
+
+`git push`
 
 ## 3.Remote commands
 
