@@ -3,9 +3,17 @@
 # # "# [[ ... ]]" for more than one lines comment
 # [[
 
-git branch -a
+# Git commands Manually
 
-View all remote branches
+## 1.General commands
+
+## 2.Special commands
+
+## 3.Remote commands
+
+### View all remote branches
+
+git branch -a
 
 reference:
 1.homebrew-core/Formula/git.rb:
