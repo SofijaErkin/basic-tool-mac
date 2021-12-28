@@ -23,6 +23,26 @@ press key "`q`" to Quit.
 
 ### Fixed conflicts in uploading GitHub files
 
+#### Two step(Recommended)
+
+(1)Discard local conflict file modification after conflict occurs:
+
+`git pull` 
+
+(2)use remote file to overwrite local file:
+
+`git checkout [file path]`
+
+eg. 
+
+`git checkout helloworld.cpp`
+
+or
+
+`git checkout src/main/resources/helloworld.cpp`
+
+#### Six step 
+
 (1)Update the repository every time before uploading the repositroy, please run
 
 `git pull`
