@@ -15,6 +15,10 @@
 
 `git branch -a`
 
+or 
+
+`git branch --all`
+
 ### View branch
 
 `git branch`
@@ -22,6 +26,12 @@
 ### Create branch
 
 `git branch <name>`
+
+`git branch (-m) (local branch )<name>`
+
+`-m` attribute is used to rename the branch name without affecting the branch’s history.
+
+create branch <name>, and switch local branch to the new created branch <name>.
 
 ### Switch branch
 
@@ -39,7 +49,17 @@
 
 `git branch -d <name>`
 
+### Fetch all the branches
 
+`git fetch`
+
+The above command will just fetch all the remote branches to your local.
+
+### To delete the old branch
+
+`git push origin --delete <name>`
+
+As you can see the old remote is deleted.
 
 reference:
 1.homebrew-core/Formula/git.rb:
