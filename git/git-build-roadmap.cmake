@@ -27,6 +27,19 @@
 
 `git checkout <name>`
 
+### Create + switch branches
+
+`git checkout -b <name>`
+
+### Merge a branch into the current branch
+
+`git merge <name>`
+
+### Delete branch
+
+`git branch -d <name>`
+
+
 
 reference:
 1.homebrew-core/Formula/git.rb:
