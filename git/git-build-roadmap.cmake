@@ -13,7 +13,20 @@
 
 ### View all remote branches
 
-git branch -a
+`git branch -a`
+
+### View branch
+
+`git branch`
+
+### Create branch
+
+`git branch <name>`
+
+### Switch branch
+
+`git checkout <name>`
+
 
 reference:
 1.homebrew-core/Formula/git.rb:
