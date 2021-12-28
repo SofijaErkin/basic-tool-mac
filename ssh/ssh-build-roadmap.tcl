@@ -337,6 +337,26 @@ Then success:
  
  `Welcome to GitLab, @sofijapersonalgithub!`
  
+ If that was in Bitbucket,then:
+ 
+  if you enter "`ssh -T git@sofija_personal-bitbucket.com`", then:
+  
+    `The authenticity of host 'bitbucket.com (xx.xxx.xx.x)' can't be established.`
+    
+    `RSA key fingerprint is SHA256:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.`
+    
+    `Are you sure you want to continue connecting (yes/no)?`
+    
+    please type "`yes`".
+  
+  Then, successful:
+  
+    `Warning: Permanently added 'bitbucket.com,xx.xxx.xx.x' (RSA) to the list of known hosts.`
+    
+    `authenticated via ssh key.`
+    
+    `You can use git to connect to Bitbucket. Shell access is disabled`
+ 
  ## 4.Upload Repository
  
 First, before uploading the repository, you need to create a github repository. After 
