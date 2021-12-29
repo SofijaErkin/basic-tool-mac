@@ -10,9 +10,11 @@ GDB(Docker/Cloud services).
 
 ## ABOUT LINUX(DOCKER/CLOUD)
 
-Which Linux distribution should I choose for servers? Debian, Ubuntu, or CentOS?
+Which  Server System to choose? Windows, or Linux?
 
-Or which  Server System to choose?
+Or Which Linux distribution should I choose for servers? Debian, Ubuntu, 
+
+or CentOS?
 
 Reference:
 
