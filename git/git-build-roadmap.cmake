@@ -7,6 +7,61 @@
 
 ## 1.General commands
 
+### Add changed file of being git added and all the workspace file to 
+
+### local repository without being deleted file
+
+`git add -A`
+
+or
+
+`git add --all`
+
+It is a collection of the following two functions "`git add .`" and 
+
+"`git add -u`".
+
+### Add all the workspace file to local repository without being deleted file
+
+`git add .`
+
+Monitor the status tree of the work area, and use it to submit all changes 
+
+during work to the temporary storage area, including file content modification
+
+(modified) and new files (new), but not including deleted files.
+
+### Add the changed file of already been git added to local repository 
+
+`git add -u`
+
+or
+
+`git add --update`
+
+That means:
+
+Only monitor files that have been added (tracked files), and submit the 
+
+modified files to the temporary storage area. 
+
+Will not submit new files (untracked file)
+
+Or
+
+Update the index just where it already has an entry matching` <pathspec>`. 
+
+This removes as well as modifies index entries to match the working tree, 
+
+but adds no new files.
+
+If no `<pathspec>` is given when `-u` option is used, all tracked files 
+
+in the entire working tree are updated (old versions of Git used to limit 
+
+the update to the current directory and its subdirectories).
+
+
 ### Delete local repository file
 
 `git rm <file>`
