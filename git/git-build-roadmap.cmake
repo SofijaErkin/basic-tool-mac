@@ -31,6 +31,58 @@ press key "`q`" to Quit.
 
 `git pull --rebase`
 
+`git pull --rebase`: During execution, each commit in the local 
+
+current branch will be cancelled, and then the local current 
+
+branch will be updated to the latest "origin" branch.
+
+`git pull` == `git fetch` + `git merge`;
+
+`git pull --rebase` == `git fetch` + `git rebase`;
+
+`git fetch`: Get the latest version from remote to local, will not 
+
+automatically merge branches.
+
+`git rebase`: Redefine (re) the role of the starting point (base), 
+
+that is, redefine the status of the branch's version library.
+
+If there are merge conflicts after executing `git pull --rebase`, use the 
+
+following three methods to deal with these conflicts:
+
+`git rebase --abort `will abandon the merge and return to the state before 
+
+the rebase operation, and the previous commits will not be discarded;
+
+`git rebase --skip` will discard the commits that cause conflicts 
+
+(use with caution!!);
+
+`git rebase --continue` merge conflicts, combined with "`git add <file>`" 
+
+command to use and repair conflicts, to remind the developer, step by step 
+
+if there is any conflict resolution. (Fix conflicts and then run 
+
+"`git rebase --continue`")
+
+After executing $`git pull --rebase`, if there is a conflict locally, after 
+
+manually resolving the conflict, use the "`git add`" command to update the 
+
+index of the content, and then just execute:
+
+$ `git rebase --continue` can linearly connect the local branch and the remote
+
+branch, and then exit and return to the main branch after correctness.
+
+Note: In general, there is no problem in checking after modification, use 
+
+`rebase continue` to merge conflicts.
+
 ### Fixed conflicts in uploading GitHub files
 
 #### Two step(Recommended)
