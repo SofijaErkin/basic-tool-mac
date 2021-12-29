@@ -10,15 +10,27 @@ GDB(Docker/Cloud services).
 
 ## ABOUT LINUX(DOCKER/CLOUD)
 
+Which Linux distribution should I choose for servers? Debian, Ubuntu, or CentOS?
+
+Or which  Server System to choose?
+
+Reference:
+
+(1)[English Version](https://www.quora.com/Which-Linux-distribution-should-I-choose-for-servers-Debian-Ubuntu-or-CentOS)
+
+(2)[Japanese Version](https://qiita.com/search?q=%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%81%AE%E9%81%B8%E3%81%B3%E6%96%B9)
+
+(3)[Chinese Version](https://www.zhihu.com/question/19599986)
+
 It doesn’t make any practical sense to talk about this issue out of the actual 
 
 usage scenario.
 
 Consider the following different usage scenarios:
 
-1.You maintain a game project, the game will be suspended for three hours a 
+### 1.You maintain a game project, the game will be suspended for three hours a 
 
-week for maintenance.
+### week for maintenance.
 
 `It is recommended to use Windows.`
 
@@ -42,35 +54,35 @@ that `Linuxn is really stable`. I joined an Internet company and never saw a `wi
 
 `server` again.
 
-2.You maintain a telecommunications system. If there is a problem with this 
+### 2.You maintain a telecommunications system. If there is a problem with this 
 
-system, people in a city cannot access the Internet or make phone calls.
+### system, people in a city cannot access the Internet or make phone calls.
 
 `It is recommended to use AIX or Solaris `
 
 It is said that China Telecom uses `SUSE`.
 
-3.You maintain an airport dispatch system. If there is a problem with this 
+### 3.You maintain an airport dispatch system. If there is a problem with this 
 
-system, the plane may crash, and you will be in the headlines.
+### system, the plane may crash, and you will be in the headlines.
 
 `It is recommended to use the system recommended by the manufacturer.`
 
-4.What you maintain is a commercial software purchased from another 
+### 4.What you maintain is a commercial software purchased from another 
 
-manufacturer that is not open source. This software was developed under the 
+### manufacturer that is not open source. This software was developed under the 
 
-RedHat system. The manufacturer stated that it has not tested the execution 
+### RedHat system. The manufacturer stated that it has not tested the execution 
 
-under other systems.
+### under other systems.
 
 `RHEL is recommended`
 
-5.You are maintaining the products developed by your own company. The 
+### 5.You are maintaining the products developed by your own company. The 
 
-company’s technical staff are very trendy and like to use a lot of the latest 
+### company’s technical staff are very trendy and like to use a lot of the latest 
 
-technology and functions.
+### technology and functions.
 
 `Recommend to use Debian/Ubuntu.`
 
@@ -86,19 +98,19 @@ Or, rely on `CUDA 6` three years ago and now rely on `CUDA 10`.
 
 `compatible.`
 
-6.The product you maintain has not been updated for seven years, and it is 
+### 6.The product you maintain has not been updated for seven years, and it is 
 
-unlikely to be updated in the future.
-
-`It is recommended to use whatever the company uses now.`
-
-7.The product you maintain can only support MySQL 4, but cannot support the new 
-
-version of MySQL. The developer has left for a long time and cannot be changed.
+### unlikely to be updated in the future.
 
 `It is recommended to use whatever the company uses now.`
 
+### 7.The product you maintain can only support MySQL 4, but cannot support the new 
 
+### version of MySQL. The developer has left for a long time and cannot be changed.
+
+`It is recommended to use whatever the company uses now.`
+
+### 8.Others
 
 Can the operating systems selected in these scenarios be the same? Any scene can 
 
