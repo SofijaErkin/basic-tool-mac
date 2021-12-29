@@ -27,6 +27,10 @@ press key "`q`" to Quit.
 
 ## 2.Special commands
 
+### Avoid two independent branches from generating merge commits
+
+`git pull --rebase`
+
 ### Fixed conflicts in uploading GitHub files
 
 #### Two step(Recommended)
