@@ -7,6 +7,24 @@
 
 ## 1.General commands
 
+### [Error: Cannot pull with rebase: You have unstaged changes](https://stackoverflow.com/questions/23517464/error-cannot-pull-with-rebase-you-have-unstaged-changes)
+
+Do `git status`, this will show you what files have changed. Since you stated that you 
+
+don't want to keep the changes you can do `git checkout -- <file name>` or `git reset` 
+  
+`--hard` to get rid of the changes.
+
+For the most part, `git` will tell you what to do about changes. For example, your error 
+
+message said to git stash your changes. This would be if you wanted to keep them. After 
+
+pulling, you would then do git stash pop and your changes would be reapplied.
+
+`git status` also has how to get rid of changes depending on if the file is staged for 
+
+commit or not. 
+
 ### Add changed file of being git added and all the workspace file to 
 
 ### local repository without being deleted file
@@ -81,6 +99,46 @@ As you can see the local branch is deleted.
 press key "`q`" to Quit.
 
 ## 2.Special commands
+
+### GIT PUSH ERROR
+
+`! [rejected] master -> master (fetch first) error: failed to push some refs to 'git@`
+
+or
+
+`! [rejected] main -> main (fetch first) error: failed to push some refs to 'git@`
+
+or
+
+`! [rejected] your_branch -> your_branch (fetch first) error: failed to push some refs to 'git@`
+
+This problem occurs because the `README.md` file in github is not in the local code directory. 
+
+You can use the following command to merge the code:
+
+Firstly
+
+`git pull --rebase origin master`
+
+or
+
+`git pull --rebase origin main`
+
+or 
+
+`git pull --rebase origin your_branch`
+
+Then
+
+`git push origin master`
+
+or 
+
+`git push origin main`
+
+or 
+
+`git push origin your_branch`
 
 ### Avoid two independent branches from generating merge commits
 
