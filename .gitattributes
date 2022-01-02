@@ -8,6 +8,7 @@
 *.R linguist-language=R
 *.scala linguist-language=Scala 
 *.c linguist-language=C
+*.cc linguist-language=C++
 *.cpp linguist-language=C++
 *.java linguist-language=Java
 *.go linguist-language=Golang
