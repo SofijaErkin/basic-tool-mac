@@ -1,0 +1,23 @@
+{
+    "files.defaultLanguage": "c++",
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.acceptSuggestionOnEnter": "off",
+    "code-runner.runInTerminal": true,
+    "code-runner.executorMap": {
+        "c": "cd $dir && gcc -std=c11 -stdlib=libc++  $fileName  -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "cpp": "cd $dir && g++ -std=c++11 -stdlib=libc++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+    },
+    "code-runner.saveFileBeforeRun": true,
+    "code-runner.preserveFocus": false,
+    "code-runner.clearPreviousOutput": false,
+    "code-runner.ignoreSelection": true,
+    // "C_Cpp.clang_format_sortIncludes": true,
+    "editor.formatOnType": true,
+    "clang.cxxflags": [
+        "-std=c++11"
+    ],
+    "clang.cflags": [
+        "-std=c11"
+    ],
+    "clang.completion.enable": true
+}
