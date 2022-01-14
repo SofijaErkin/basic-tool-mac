@@ -21,13 +21,13 @@ Because This CPPtools and that CodeLLDb conflict.
 
 ### 1.1Hardware
 
-Laptop OS: macOS 10.12
-
 CPU: Intel
 
 ### 1.2Software
 
 #### 1.2.1System
+
+Laptop OS: macOS 10.12
 
 Clang: 9.0.0
 
@@ -113,7 +113,19 @@ times in a week. Fuck!!!
 
 ### 1.Check Envirnment
 
-Please enter Mac Terminal. Some one use the default Terminal, I just use iTerm.
+Please enter Mac Terminal. Some one use the default Terminal, 
+
+I just use iTerm.
+
+Use this command to checkout the CPU information on mac:
+
+`sysctl -n machdep.cpu.brand_string`
+
+It shows like:
+
+`Intel(R) Core(TM)2 Duo CPU E8600 @ 2.40GHz`
+
+That "`Intel`" is the type of CPU on mac.
 
 Also, use this command to check the laptop system version on mac:
 
@@ -126,3 +138,53 @@ That Terminal show like:
 `ProductVersion:	10.12.4`
 
 `BuildVersion:	16E195`
+
+That "`ProductVersion`" is the version of the macOS.
+
+And, use this command to checkout the version of clang on your mac:
+`clang --version`
+That shows like:
+
+`Apple LLVM version 9.1.0 (clang-902.0.39.1)`
+
+`Target: x86_64-apple-darwin17.4.0`
+
+`Thread model: posix`
+
+`InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin`
+
+That means your `Clang` version was `9.1.0`.
+
+But if that "clang --version" output shows like:
+
+`Apple LLVM version 9.1.0 (clang-902.0.39.1)`
+
+`Target: x86_64-apple-darwin17.4.0`
+
+`Thread model: posix`
+
+`InstalledDir: /Library/Developer/CommandLineTools/usr/bin`
+
+Just use this command to checkout the Now Clang version you are using:
+
+`cd /Library/Developer/CommandLineTools/usr/lib/clang/ && ls `
+
+That may show like "`9.0.0`" or "`9.1.0`" or "`10.0.0`". 
+
+That are your Clang version.
+
+Just use this command to checkout the gcc version of your mac:`gcc --version`
+
+That shows like:
+
+`Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1`
+
+`Apple LLVM version 9.0.0 (clang-900.0.39.2)`
+
+`Target: x86_64-apple-darwin16.7.0`
+
+`Thread model: posix`
+
+`InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin`
+
+the first line "`4.2.1`" is your `gcc/g++` version.
