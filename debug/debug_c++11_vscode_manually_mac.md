@@ -105,7 +105,7 @@ Also,
 
 that bugger version 1.6.10 has taken me seven days to config debug C++
 
-with VSCode on mac, made me in trumble, made me depressed even masturbate 4 
+with VSCode on mac, made me in trouble, made me depressed even masturbate 4 
 
 times in a week. Fuck!!!
 
@@ -230,7 +230,7 @@ To avoid any issues, please install my version of the Extensions on VSCode.
 
 `Code Runner v0.11.6` (Author: Jun Han）
 
-`C/C++ Clang Command Adapter v0.2.4` (Author: Jun Han）
+`C/C++ Clang Command Adapter v0.2.4` (Author: Yasuaki MITANI）
 
 `CodeLLDB v1.4.5` (Author: Vadim Chugunov)
 
@@ -314,11 +314,11 @@ And that will enter an empty `helloworld.cpp`, please copy this program:
     
 `}`
 
-This time just create and enter vscode configration folder, use this command:
+This time just create and enter vscode configuration folder, use this command:
 
 `mkdir .vscode && cd .vscode`
 
-Then create four configration files.
+Then create four configuration files.
 
 use thia command to create task.json:
 
