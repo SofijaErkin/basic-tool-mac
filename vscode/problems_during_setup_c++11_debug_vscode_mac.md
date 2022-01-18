@@ -14,6 +14,24 @@
 
 debug has been run, but no breakpoints have been set.
 
+#### 1.1.2TERMINAL
+
+##### 1.1.2.1DEBUG == Function OUTPUT
+
+"Generate debug information" is not set in the task.json file
+
+add this to `task.json/"args[]"`
+
+`{`
+
+   `"args":[`
+ 
+       "-g"
+ 
+    ]
+
+`}`
+
 ### 1.2Notifications
 
 #### 1.2.1Code language not supported or defined
