@@ -97,6 +97,10 @@ If you download 1.6.x, please [rollback extension/install](https://stackoverflow
 
 version.
 
+Also, CodeLLDB v1.5.0 is Ok.
+
+Update 10:17 PM Monday,January 17 2022 LA.
+
 e.g: CodeLLDB v1.4.5.
 
 Version 1.6.x has caused much more [buggers since Nov 5, 2020](https://github.com/vadimcn/vscode-lldb/issues/387), and [never fix](https://github.com/NixOS/nixpkgs/issues/148946).
