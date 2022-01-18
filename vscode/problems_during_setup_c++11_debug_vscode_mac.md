@@ -6,7 +6,7 @@
 
 #### 1.1.1DEBUG CONSOLE
 
-##### 1.1.1.1(OUTPUT)
+##### 1.1.1.1(OUTPUT)Debug Not Function
 
 `Launching: /Users/yq/VSCode/CppProject/helloworld/helloworld`
 
