@@ -32,6 +32,43 @@ add this to `task.json/"args[]"`
 
 `}`
 
+##### 1.1.2.2 Successfully Run But Debug error
+
+`> Executing task: clang++ helloworld.cpp -o helloworld.out -g <`
+
+`helloworld.cpp:8:21: error: expected ';' at end of declaration`
+
+  `vector<string> msg{"Hello", "C++",     "World",`
+  
+ `                   ^`
+ 
+ `                   ;`
+ 
+`helloworld.cpp:11:27: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]`
+
+  `for (const string &word : msg) {`
+  
+`                          ^`
+
+`1 warning and 1 error generated.`
+
+`The terminal process "zsh '-c', 'clang++ helloworld.cpp -o helloworld.out -g'" terminated with exit code: 1.`
+
+`Terminal will be reused by tasks, press any key to close it.`
+
+"Compile C++11" is not set in the task.json file
+
+add this to `task.json/"args:[]"`
+
+{
+
+     "args": [
+				"-std=c++11",
+				"-stdlib=libc++"
+            ]
+
+}
+
 ### 1.2Notifications
 
 #### 1.2.1Code language not supported or defined
