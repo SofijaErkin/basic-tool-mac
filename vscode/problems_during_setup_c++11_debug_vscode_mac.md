@@ -69,11 +69,106 @@ add this to `task.json/"args:[]"`
 
 }
 
+##### 1.1.2.2 Successfully Run But Debug as run
+
+Terminal status: Just like running notice, press any button to end.
+
+breakpoints: can set breakpoints in main function, but debug ignore that as run
+
+do.
+
+watch status: Variable or STL detection settings have no effect.
+
+debugging control panel status: debugging control panel fransh rollout,
+
+debugging control panel display period for a moment,
+
+step over button do not show; step into button do not show;
+
+step out button do not show.
+
+Debug status: debug as the same as run.
+
+Compile and debug envirnmnet: compile: clang, debug tool: cpptools, 
+
+type/launch.json: cppdbg+lldb/MiMode.
+
+Workspace envirnment: CodeLLDB: `v1.6.10`, C/C++ cpptools: `v1.8.0-insiders2`,
+
+VSCode `v1.63.2`, CPU: `Intel`, Laptop: `macOS 10.12`, clang: `v9.0.0`, llvm-gcc: `v4.2.1`,
+
+clang-format: `v1.9.0`, Code Runner: `v0.11.6`, C/C++ Clang Command Adapter: `v0.2.4`.
+
+solution:
+
+Deprecate and uninstall C/C++ cpptools. This version `1.6.10` of CodeLLDB has 
+
+bugs, lower the version, choose `1.4.5` or `1.5.0`.
+
+#### 1.1.3OUTPUT
+
+##### 1.1.3.1Successfully Run But Debug error
+
+    configuration: {
+      name: 'Debug With LLDB',
+      type: 'lldb',
+      request: 'launch',
+      program: '${fileDirname}/${fileBasenameNoExtension}',
+      args: [],
+      stopAtEntry: true,
+      cwd: '${workspaceFolder}',
+      environment: [],
+      externalConsole: false,
+      preLaunchTask: 'Compile With clang++',
+      __configurationTarget: 5,
+      relativePathBase: '/Users/yq/VSCode/CppProject/ms_vs_aus_doc_debug_test'
+    }
+    Listening on port 54343
+    Received signal: SIGSEGV
+       0: backtrace::backtrace::trace
+       1: backtrace::capture::Backtrace::new
+       2: codelldb::hook_crashes::handler
+       3: __os_alloc_heap
+
+    Debug adapter exit code=255, signal=null.
+
+breakpoints: can set breakpoints in main function, but debug ignore that as run
+
+do.
+
+watch status: Variable or STL detection settings have no effect.
+
+debugging control panel status: debugging control panel frensh exit, debugging
+
+control panel display period for a moment, step over button do not show;
+
+step into button do not show; step out button do not show.
+
+Debug status: Debugger adapter abnormally terminates.
+
+Compile and debug envirnmnet: compile: clang, debug tool: codelldb, 
+
+type/launch.json: lldb.
+
+Workspace envirnment: CodeLLDB: `v1.6.10`, C/C++ cpptools: `v1.8.0-insiders2`,
+
+VSCode `v1.63.2`, CPU: `Intel`, Laptop: `macOS 10.12`, clang: `v9.0.0`, llvm-gcc: `v4.2.1`,
+
+clang-format: `v1.9.0`, Code Runner: `v0.11.6`, C/C++ Clang Command Adapter: `v0.2.4`.
+
+solution:
+
+The codelldb plugin version has bugs, reduce the plugin version. There are bugs
+
+in the `1.6.X` series version, replace the `1.4.5` or `1.5.0` version.
+
 ### 1.2Notifications
 
 #### 1.2.1Code language not supported or defined
 
-Not running in the main function or in the configuration file, you can transfer to the main function to run
+Not running in the main function or in the configuration file, you can transfer 
+
+to the main function to run
 
 #### 1.2.2C/C++ Clang Command Adapter(Extension)
 
