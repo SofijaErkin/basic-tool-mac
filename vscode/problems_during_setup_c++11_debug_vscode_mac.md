@@ -91,3 +91,35 @@ add this things on settings.json
     ]
 
 }
+
+### 1.3Additional pop-up alerts
+
+#### 1.3.1warning
+
+##### 1.3.1.1Internal debugger error
+
+eg.
+
+`Internal debugger error: unable to find executable for `
+
+`'/Users/yq/VSCode/CppProject/vscode_c_cpp/test.out'`
+
+`launch.json` is missing "`preLaunchTask`".
+
+Please add this in `launch.json/"configurations": []`:
+
+{
+
+    "configurations": [
+
+      "preLaunchTask": "Build with Clang"
+
+    ]
+
+}
+
+"preLaunchTask" in launch.json must be the same as "label" in task.json.
+
+#### 1.3.2Severity error
+
+#### 1.3.3fatal error
