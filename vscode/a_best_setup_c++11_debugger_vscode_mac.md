@@ -1,25 +1,46 @@
 # A best setup C++11 debugger with VSCode (mac)
-This is a set of files about setting up C++11 debugger with Visual Studio Code on mac.
+
+(ONLY FOR ONE SINGLE C/C++ FILE)
+
+This is a set of files about setting up C++11 debugger with Visual Studio Code
+
+on mac.
+
+Notice: 
+
+This is my workspace environment!
+
+Clang: 9.0.0;
+
+Llvm-gcc: 4.2.1;
+
+Visual Studio Code v1.63.2;
+
+Code Runner v0.11.6 (Author: Jun Han);
+
+CodeLLDB v1.4.5 or v1.5.0 (Author: Vadim Chugunov).
+
+Now:
 
 This workspace named `HelloWorld`, including a directories `.vscode` and 5 files.
 
 The Architecture of workspace `HelloWorld` are:
 
-HelloWorld
+   HelloWorld
 
-|
+   |
 
-|_.vscode
+   |_.vscode
 
-|     |__c_cpp_properties.json
+   |     |__c_cpp_properties.json
 
-|     |__launch.json
+   |     |__launch.json
 
-|     |__settings.json
+   |     |__settings.json
 
-|     |__tasks.json
+   |     |__tasks.json
 
-|__helloworld.cpp
+   |__helloworld.cpp
 
 `helloworld.cpp`: This workspace main function.
 
@@ -41,7 +62,7 @@ the compiler, include paths.
 
 Notices:
 
-You only need to modify the Include path setting if your program includes 
+You only need to modify the `Include path` setting if your program includes 
 
 header files that are not in your workspace or the standard library path.
 
