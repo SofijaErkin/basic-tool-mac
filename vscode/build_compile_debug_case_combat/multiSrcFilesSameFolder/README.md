@@ -68,7 +68,6 @@ fitBodyBootCamp
 
 |__testImp.cpp
 
-     
 `test.cpp`: This project main function.
 
 `testImp.cpp`: This project connected source function.
