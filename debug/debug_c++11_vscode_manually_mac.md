@@ -1,5 +1,6 @@
-
 # Debug C++11 manually with VSCode(mac)
+
+(ONLY FOR ONE SINGLE C/C++ FILE)
 
 This is a Configuration for VSCode to debug C++11 on mac. 
 
@@ -568,27 +569,27 @@ the just use this command to checkout your workspace:
 
 it shows like:
 
-`/Users/marryme/VSCode/CppProject/HelloWorld`
+    /Users/marryme/VSCode/CppProject/HelloWorld
 
-`.`
+    .
 
-`| __.vscode`
+    | __.vscode
 
-`|    |`
+    |    |
 
-`|    |_c_cpp_properties.json`
+    |    |_c_cpp_properties.json
 
-`|    |_launch.json`
+    |    |_launch.json
 
-`|    |_settings.json`
+    |    |_settings.json
 
-`|    |_tasks.json`
+    |    |_tasks.json
 
-`|`    
+    | 
 
-`| __hellworld.cpp`
+    | __hellworld.cpp
 
-`1 directory, 5 files`
+    1 directory, 5 files
 
 Then just use this command to enter VSCode:
 
