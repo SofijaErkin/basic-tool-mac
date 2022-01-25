@@ -48,34 +48,36 @@ This workspace named `fitBody`, including 4 directories, 7 files.
 
 The Architecture of workspace `fitBody` are:
 
-fitBody
 
-|
+    fitBody
 
-|_.vscode
+    |
 
-|     |__c_cpp_properties.json
+    |_.vscode
 
-|     |__launch.json
+    |     |__c_cpp_properties.json
 
-|     |__settings.json
+    |     |__launch.json
 
-|     |__tasks.json
+    |     |__settings.json
 
-|__build
+    |     |__tasks.json
 
-|__inc
+    |__build
 
-|     |__fitbody.h
+    |__inc
 
-|__src
+    |     |__fitbody.h
 
-     |__fitbody.cpp
+    |__src
+
+         |__fitbody.cpp
      
-     |__main.cpp
-
+         |__main.cpp
+         
+     
 `src`: source file folder.
-
+     
 `main.cpp`: This project main function.
 
 `fitbody.cpp`: This project connected source function.
