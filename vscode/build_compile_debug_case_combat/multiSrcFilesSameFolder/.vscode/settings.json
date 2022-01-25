@@ -51,7 +51,7 @@
         "editor.insertSpaces": true
     },
     "C_Cpp.default.includePath": [
-        "${workspaceFolder}/inc"
+        "${workspaceFolder}"
     ],
     "clang.completion.enable": true
 }
