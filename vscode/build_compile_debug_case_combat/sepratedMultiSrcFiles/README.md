@@ -1,4 +1,4 @@
-# Separated Multiple CXX Manully VScode(mac)
+# Separated Multiple CXX Manually VScode(mac)
 
 This is a setup for multiple C/C++ files under different folder to build, 
 
