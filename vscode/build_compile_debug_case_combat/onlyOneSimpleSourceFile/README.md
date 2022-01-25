@@ -26,21 +26,21 @@ This workspace named `HelloWorld`, including a directories `.vscode` and 5 files
 
 The Architecture of workspace `HelloWorld` are:
 
-   HelloWorld
+    HelloWorld
 
-   |
+    |
 
-   |_.vscode
+    |_.vscode
 
-   |     |__c_cpp_properties.json
+    |     |__c_cpp_properties.json
 
-   |     |__launch.json
+    |     |__launch.json
 
-   |     |__settings.json
+    |     |__settings.json
 
-   |     |__tasks.json
+    |     |__tasks.json
 
-   |__helloworld.cpp
+    |__helloworld.cpp
 
 `helloworld.cpp`: This workspace main function.
 
