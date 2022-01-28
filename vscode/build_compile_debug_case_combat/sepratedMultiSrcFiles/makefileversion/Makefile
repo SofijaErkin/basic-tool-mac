@@ -1,4 +1,4 @@
-# This is a Makefile for separated multiple sources to build with VSCode on mac
+# This is a Makefile fot separated multiple sources to build with VSCode on mac
 # Thanks, Job Vranish.
 # (https://spin.atomicobject.com/2016/08/26/makefile-c-projects/)
 # Reference: Makefile Tutorial
@@ -89,9 +89,22 @@ ${BUILD_DIR}/${TARGET} : $(OBJS)
 # $@ := {TARGET}
 # $< := THE first file
 # $^ all the dependency
+# C++ Sources
 $(BUILD_DIR)/%.cpp.o: $(SRC_DIRS)/%.cpp
 	$(MKDIR_P) $(dir $@)
 	$(CXX) $(CPP_FLAGS) $(CXX_FLAGS) -c $< -o $@
+# C Language Sources
+# # CC := clang
+# # C_FLAGS = -Wall -Wextra -std=c11 -g
+# $(BUILD_DIR)/%.c.o: $(SRC_DIRS)/%.c
+# $(MKDIR_P) $(dir $@)
+# $(CC) $(CPPFLAGS) $(C_FLAGS) -c $< -o $@
+# Assembly Langusge Sources
+# # AS := NASM/
+# # ASFLAGS := # I DO NOT KNOW
+# $(BUILD_DIR)/%.s.o: $(SRC_DIRS)/%.s
+# $(MKDIR_P) $(dir $@)
+# $(AS) $(ASFLAGS) -c $< -o $@
 .PHONY: clean 
 clean:
 # rm  ./build/./build/bank.cpp.d ./build/main.cpp.d ./build/ ./build/bank.cpp.o  ./build/main.cpp.o ./build/main
