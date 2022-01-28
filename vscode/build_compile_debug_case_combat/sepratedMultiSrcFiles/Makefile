@@ -50,6 +50,21 @@ INC_FLAGS := $(addprefix -I,$(INC_DIRS))
 # That -MMD and -MP flags together to generate Makefiles 
 # That generated Makefiles will take .o as .d to the output
 CPP_FLAGS := $(INC_FLAGS) -MMD -MP
+.PHONY: all
+all:
+	echo $(CXX)
+	echo $(CXX_FLAGS)
+	echo $(BUILD_DIR)
+	echo $(SRC_DIRS)
+	echo $(LIBDIR)
+	echo $(LIBS)
+	echo $(TARGET)
+	echo $(SRCS)
+	echo $(OBJS)
+	echo $(DEPS)
+	echo $(INC_DIRS)
+	echo $(INC_FLAGS)
+	echo $(CPP_FLAGS)
 # Link: Generate executable file from object file
 $(BUILD_DIR)/$(TARGET) : $(OBJS)
     $(CXX) $(OBJS) -o $@ $(LDFLAGS)
