@@ -1,8 +1,4 @@
-# Notices--------------------------------------------------
-# This Seprated Multiple CXX Manully VScode(mac) Do Not USE Makefile.
-# This Seprated Multiple CXX Manully VScode(mac) Do Not USE Makefile.
-# This Seprated Multiple CXX Manully VScode(mac) Do Not USE Makefile.
-# ---------------------------------------------------------
+# This is a Makefile for separated multiple sources to build with VSCode on mac
 # Thanks, Job Vranish.
 # (https://spin.atomicobject.com/2016/08/26/makefile-c-projects/)
 # Reference: Makefile Tutorial
