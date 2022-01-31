@@ -70,19 +70,6 @@ DEPS := $(OBJS:.o=.d)
 # INC_DIR = ./inc
 # ./inc
 INC_DIRS := ./inc
-.PHONY: all
-all:
-	echo $(CXX)
-	echo $(CXX_FLAGS)
-	echo $(BUILD_DIR)
-	echo $(SRC_DIRS)
-	echo $(LIBDIR)
-	echo $(LIBS)
-	echo $(TARGET)
-	echo $(SRCS)
-	echo $(OBJS)
-	echo $(DEPS)
-	echo $(INC_DIRS)
 # If use below this , include files  should be at the same directory 
 # with sources files.
 # INC_DIRS := $(shell find $(SRC_DIRS) -type d)
@@ -95,10 +82,14 @@ INC_FLAGS := $(addprefix -I,$(INC_DIRS))
 # That "-MMD" and "-MP" To generate the dependency files, all you have to do is
 # add some flags to the compile command (supported by both Clang and GCC):
 CPP_FLAGS ?= $(INC_FLAGS) -MMD -MP
+
 # Link: Generate executable file from object file
 # make your target depend on the objects files:
-${BUILD_DIR}/${TARGET} : $(OBJS) 	
-	$(CXX) $^  -o $@ 
+
+#${BUILD_DIR}/${TARGET} : $(OBJS) 	
+# $(CXX) $^  -o $@
+#	$(CXX) $(OBJS)  -o ${TARGET}
+
 # Compile: Generate object files from source files
 # $@ := {TARGET}
 # $< := THE first file
@@ -106,7 +97,7 @@ ${BUILD_DIR}/${TARGET} : $(OBJS)
 # C++ Sources
 $(BUILD_DIR)/%.cpp.o : $(SRC_DIRS)/%.cpp 
 	$(MKDIR_P) $(dir $@)
-	$(CXX) $(CPP_FLAGS) $(CXX_FLAGS) -c $< -o $@
+	$(CXX) $(CPP_FLAGS) $(CXX_FLAGS) -c $^ -o $@
 # C Language Sources
 # # CC := clang
 # # C_FLAGS = -Wall -Wextra -std=c11 -g
