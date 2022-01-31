@@ -27,6 +27,7 @@ SRC_DIRS ?= .
 LIBDIR :=
 # (6)Add library files
 LIBS :=
+
 # (7)Target file, excutable file.
 #TARGET := main
 #TARGET := ${BUILD_DIR}/main
@@ -69,6 +70,19 @@ DEPS := $(OBJS:.o=.d)
 # INC_DIR = ./inc
 # ./inc
 INC_DIRS := ./inc
+.PHONY: all
+all:
+	echo $(CXX)
+	echo $(CXX_FLAGS)
+	echo $(BUILD_DIR)
+	echo $(SRC_DIRS)
+	echo $(LIBDIR)
+	echo $(LIBS)
+	echo $(TARGET)
+	echo $(SRCS)
+	echo $(OBJS)
+	echo $(DEPS)
+	echo $(INC_DIRS)
 # If use below this , include files  should be at the same directory 
 # with sources files.
 # INC_DIRS := $(shell find $(SRC_DIRS) -type d)
@@ -83,17 +97,13 @@ INC_FLAGS := $(addprefix -I,$(INC_DIRS))
 CPP_FLAGS ?= $(INC_FLAGS) -MMD -MP
 # Link: Generate executable file from object file
 # make your target depend on the objects files:
-#${BUILD_DIR}/${TARGET} : $(OBJS) 	
-#	$(CXX) $^  -o $@ 
+${BUILD_DIR}/${TARGET} : $(OBJS) 	
+	$(CXX) $^  -o $@ 
 # Compile: Generate object files from source files
 # $@ := {TARGET}
 # $< := THE first file
 # $^ all the dependency
 # C++ Sources
-.PHONY: all
-all:
-	echo $(BUILD_DIR)/%.cpp.o
-	echo $(SRC_DIRS)/%.cpp
 $(BUILD_DIR)/%.cpp.o : $(SRC_DIRS)/%.cpp 
 	$(MKDIR_P) $(dir $@)
 	$(CXX) $(CPP_FLAGS) $(CXX_FLAGS) -c $< -o $@
