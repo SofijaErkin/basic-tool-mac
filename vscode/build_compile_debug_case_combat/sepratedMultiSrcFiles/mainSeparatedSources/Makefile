@@ -98,6 +98,11 @@ ${BUILD_DIR}/${TARGET} : $(OBJS)
 # $< := THE first file
 # $^ all the dependency
 # C++ Sources
+#
+# BREAK NEWS!!!
+# If all the sources files including the main function are separated directory,
+# Then you need to generate the object files via one by one directory
+# 
 # clang++ -I./inc -MMD -MP -Wall -Wextra -std=c++11 -g -c main.cpp src/bank.cpp -o build/main.cpp.o
 # clang: error: cannot specify -o when generating multiple output files
 # make: *** [build/main.cpp.o] Error 1
