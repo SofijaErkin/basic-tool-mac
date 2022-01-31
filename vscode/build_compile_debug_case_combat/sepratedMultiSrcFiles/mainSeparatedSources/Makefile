@@ -23,6 +23,7 @@ BUILD_DIR ?= ./build
 # (4)Source files directory path
 # ./src
 SRC_DIRS ?= .
+SRC_DIRS_SRC ?= ./src
 # (5)Library files directory path
 LIBDIR :=
 # (6)Add library files
@@ -40,6 +41,7 @@ TARGET ?= main
 # SRCS = $(wildcard ./src/*.cpp)
 # ./src/bank.cpp ./src/main.cpp
 SRCS := $(shell find $(SRC_DIRS) -name '*.cpp' -or -name '*.c' -or -name '*.s')
+SRCS_SRC := $(shell find $(SRC_DIRS_SRC) -name '*.cpp' -or -name '*.c' -or -name '*.s')
 # (9)Object files
 # String substituion for every C/C++ file
 # e.g: ./src/bank.cpp turns into ./build/bank.cpp.o
@@ -57,6 +59,7 @@ SRCS := $(shell find $(SRC_DIRS) -name '*.cpp' -or -name '*.c' -or -name '*.s')
 # OBJS := $(SRCS:$(SRC_DIRS)/%.cpp=$(BUILD_DIR)/%.o)
 # ./build/bank.cpp.o  ./build/main.cpp.o
 OBJS := $(patsubst %.cpp, ${BUILD_DIR}/%.cpp.o, $(notdir $(SRCS)))
+OBJS_SRC := $(patsubst %.cpp, ${BUILD_DIR}/%.cpp.o, $(notdir $(SRCS_SRC)))
 # make: *** build: Is a directory.  Stop.
 # OBJS := $(patsubst %.cpp, ${BUILD_DIR}/%.cpp.o, $(notdir $(BUILD_DIR)))
 # (10)Dependency files
@@ -64,6 +67,7 @@ OBJS := $(patsubst %.cpp, ${BUILD_DIR}/%.cpp.o, $(notdir $(SRCS)))
 # you just need to find them all:
 # 
 DEPS := $(OBJS:.o=.d)
+DEPS_SRC := $(OBJS_SRC:.o=.d)
 # (11)Include files directory path
 # Every folder in ./src find include files to be passed via clang 
 # INCDIR = -I./inc
@@ -85,18 +89,23 @@ CPP_FLAGS ?= $(INC_FLAGS) -MMD -MP
 
 # Link: Generate executable file from object file
 # make your target depend on the objects files:
-
-#${BUILD_DIR}/${TARGET} : $(OBJS) 	
-# $(CXX) $^  -o $@
-#	$(CXX) $(OBJS)  -o ${TARGET}
-
+${BUILD_DIR}/${TARGET} : $(OBJS)
+#${BUILD_DIR}/${TARGET} : $(OBJS) $(OBJS_SRC)	
+	$(CXX) $^ -o $@
+#	$(CXX) $(OBJS) $(OBJS_SRC)	 -o ${TARGET}
 # Compile: Generate object files from source files
 # $@ := {TARGET}
 # $< := THE first file
 # $^ all the dependency
 # C++ Sources
+# clang++ -I./inc -MMD -MP -Wall -Wextra -std=c++11 -g -c main.cpp src/bank.cpp -o build/main.cpp.o
+# clang: error: cannot specify -o when generating multiple output files
+# make: *** [build/main.cpp.o] Error 1
+#$(OBJS) : $(SRCS)
 $(BUILD_DIR)/%.cpp.o : $(SRC_DIRS)/%.cpp 
 	$(MKDIR_P) $(dir $@)
+	$(CXX) $(CPP_FLAGS) $(CXX_FLAGS) -c $^ -o $@
+$(BUILD_DIR)/%.cpp.o : $(SRC_DIRS_SRC)/%.cpp 
 	$(CXX) $(CPP_FLAGS) $(CXX_FLAGS) -c $^ -o $@
 # C Language Sources
 # # CC := clang
