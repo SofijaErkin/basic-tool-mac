@@ -1,4 +1,4 @@
-#include "../inc/bank.h"
+#include "../bin/bank.h"
 #include <iostream>
 #include <clocale>
 

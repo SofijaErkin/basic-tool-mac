@@ -1,3 +1,8 @@
+# -Only Separatedly Generate Object Files But Generate Main Object Add Directory Makefile-
+# BIG BIG BIG NEWS
+# This Makefile file : generate object file one by one directory 
+# Also add main object sources files directory to generate main object
+# ----------------------------------------------------------------------------------------
 # This is a Makefile fot separated multiple sources to build with VSCode on mac
 # Thanks, Job Vranish.
 # (https://spin.atomicobject.com/2016/08/26/makefile-c-projects/)
@@ -19,15 +24,16 @@ CXX_FLAGS = -Wall -Wextra -std=c++11 -g
 # (3)Build task directory path
 # I do care about out-of-source builds
 # ./build
-BUILD_DIR ?= ../build
+BUILD_DIR ?= ./build
 # (4)Source files directory path
 # ./src
 SRC_DIRS ?= .
-SRC_DIRS_COMMON ?= ../src
+SRC_DIRS_SRC ?= ./src
 # (5)Library files directory path
 LIBDIR :=
 # (6)Add library files
 LIBS :=
+
 # (7)Target file, excutable file.
 #TARGET := main
 #TARGET := ${BUILD_DIR}/main
@@ -40,7 +46,7 @@ TARGET ?= main
 # SRCS = $(wildcard ./src/*.cpp)
 # ./src/bank.cpp ./src/main.cpp
 SRCS := $(shell find $(SRC_DIRS) -name '*.cpp' -or -name '*.c' -or -name '*.s')
-SRCS_COMMON := $(shell find $(SRC_DIRS_COMMON) -name '*.cpp' -or -name '*.c' -or -name '*.s')
+SRCS_SRC := $(shell find $(SRC_DIRS_SRC) -name '*.cpp' -or -name '*.c' -or -name '*.s')
 # (9)Object files
 # String substituion for every C/C++ file
 # e.g: ./src/bank.cpp turns into ./build/bank.cpp.o
@@ -58,7 +64,7 @@ SRCS_COMMON := $(shell find $(SRC_DIRS_COMMON) -name '*.cpp' -or -name '*.c' -or
 # OBJS := $(SRCS:$(SRC_DIRS)/%.cpp=$(BUILD_DIR)/%.o)
 # ./build/bank.cpp.o  ./build/main.cpp.o
 OBJS := $(patsubst %.cpp, ${BUILD_DIR}/%.cpp.o, $(notdir $(SRCS)))
-OBJS_COMMON := $(patsubst %.cpp, ${BUILD_DIR}/%.cpp.o, $(notdir $(SRCS_COMMON)))
+OBJS_SRC := $(patsubst %.cpp, ${BUILD_DIR}/%.cpp.o, $(notdir $(SRCS_SRC)))
 # make: *** build: Is a directory.  Stop.
 # OBJS := $(patsubst %.cpp, ${BUILD_DIR}/%.cpp.o, $(notdir $(BUILD_DIR)))
 # (10)Dependency files
@@ -66,19 +72,20 @@ OBJS_COMMON := $(patsubst %.cpp, ${BUILD_DIR}/%.cpp.o, $(notdir $(SRCS_COMMON)))
 # you just need to find them all:
 # 
 DEPS := $(OBJS:.o=.d)
-DEPS_COMMON := $(OBJS_COMMON:.o=.d)
+DEPS_SRC := $(OBJS_SRC:.o=.d)
 # (11)Include files directory path
 # Every folder in ./src find include files to be passed via clang 
 # INCDIR = -I./inc
 # INC_DIR = ./inc
 # ./inc
-INC_DIRS := ./inc
+INC_DIRS := ./bin
 # If use below this , include files  should be at the same directory 
 # with sources files.
 # INC_DIRS := $(shell find $(SRC_DIRS) -type d)
 # (12)Include files add together a prefix, clang make sense that -I flag
 # INCS = -I$(INC_DIR)
 INC_FLAGS := $(addprefix -I,$(INC_DIRS))
+# LIBS_FLAGS := $(addprefix -L,$(LIBS)) 
 # (13)Make Makefiles output Dependency files
 # That -MMD and -MP flags together to generate Makefiles 
 # That generated Makefiles will take .o as .d to the output
@@ -87,18 +94,32 @@ INC_FLAGS := $(addprefix -I,$(INC_DIRS))
 CPP_FLAGS ?= $(INC_FLAGS) -MMD -MP
 # Link: Generate executable file from object file
 # make your target depend on the objects files:
-${BUILD_DIR}/${TARGET} : $(OBJS) 
-	$(CXX) $^ -o $@ 
+${BUILD_DIR}/${TARGET} : $(OBJS)
+#${BUILD_DIR}/${TARGET} : $(OBJS) $(OBJS_SRC)	
+	$(CXX) $^ -o $@
+#    $(CXX) $^ -o $@ $(LIBS_FLAGS)
+#	$(CXX) $(OBJS) $(OBJS_SRC)	 -o ${TARGET}
 # Compile: Generate object files from source files
 # $@ := {TARGET}
 # $< := THE first file
 # $^ all the dependency
 # C++ Sources
-$(BUILD_DIR)/%.cpp.o : $(SRC_DIRS)/%.cpp 
+#
+# BREAK NEWS!!!
+# If all the sources files including the main function are separated directory,
+# Then you need to generate the object files via one by one directory
+# 
+# clang++ -I./inc -MMD -MP -Wall -Wextra -std=c++11 -g -c main.cpp src/bank.cpp -o build/main.cpp.o
+# clang: error: cannot specify -o when generating multiple output files
+# make: *** [build/main.cpp.o] Error 1
+#$(OBJS) : $(SRCS)
+# make: *** No rule to make target `build/main.cpp.o', needed by `build/main'.  Stop.
+# $(BUILD_DIR)/%.cpp.o : $(SRC_DIRS)/%.cpp 
+$(BUILD_DIR)/%.cpp.o : $(SRC_DIRS)/common/%.cpp 
 	$(MKDIR_P) $(dir $@)
-	$(CXX) $(CPP_FLAGS) $(CXX_FLAGS) -c $< -o $@
-$(BUILD_DIR)/%.cpp.o : $(SRC_DIRS_COMMON)/%.cpp 
-	$(CXX) $(CPP_FLAGS) $(CXX_FLAGS) -c $< -o $@
+	$(CXX) $(CPP_FLAGS) $(CXX_FLAGS) -c $^ -o $@
+$(BUILD_DIR)/%.cpp.o : $(SRC_DIRS_SRC)/%.cpp 
+	$(CXX) $(CPP_FLAGS) $(CXX_FLAGS) -c $^ -o $@
 # C Language Sources
 # # CC := clang
 # # C_FLAGS = -Wall -Wextra -std=c11 -g
@@ -121,9 +142,9 @@ clean:
 # ld: can't open output file for writing: /Users/yq/VSCode/CppProject/fitBodyFarm/build/main, errno=2 for architecture x86_64
 # clang: error: linker command failed with exit code 1 (use -v to see invocation)
 #	$(RM) -r $(BUILD_DIR)
-	$(RM) $(DEPS) $(DEPS_MAIN) $(OBJS) $(OBJS_MAIN) ${BUILD_DIR}/${TARGET} 
+	$(RM) $(DEPS) $(OBJS) ${BUILD_DIR}/${TARGET} 
 	
--include $(DEPS) $(DEPS_MAIN)
+-include $(DEPS) 
 
 MKDIR_P ?= mkdir -p
 
@@ -144,6 +165,27 @@ MKDIR_P ?= mkdir -p
 #	echo $(SRCS)
 #	echo $(OBJS)
 #	echo $(DEPS)
+#	echo $(INC_DIRS)
+#	echo $(INC_FLAGS)
+#	echo $(CPP_FLAGS)
+# 
+# OR
+# .PHONY: all
+# all:
+#	echo $(CXX)
+#	echo $(CXX_FLAGS)
+#	echo $(BUILD_DIR)
+#	echo $(SRC_DIRS)
+#	echo $(SRC_DIRS_SRC)
+#	echo $(LIBDIR)
+#	echo $(LIBS)
+#	echo $(TARGET)
+#	echo $(SRCS)
+#	echo $(SRCS_SRC)
+#	echo $(OBJS)
+#	echo $(OBJS_SRC)
+#	echo $(DEPS)
+#	echo $(DEPS_SRC)
 #	echo $(INC_DIRS)
 #	echo $(INC_FLAGS)
 #	echo $(CPP_FLAGS)
