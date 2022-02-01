@@ -80,6 +80,7 @@ INC_DIRS := ./inc
 # (12)Include files add together a prefix, clang make sense that -I flag
 # INCS = -I$(INC_DIR)
 INC_FLAGS := $(addprefix -I,$(INC_DIRS))
+# LIBS_FLAGS := $(addprefix -L,$(LIBS)) 
 # (13)Make Makefiles output Dependency files
 # That -MMD and -MP flags together to generate Makefiles 
 # That generated Makefiles will take .o as .d to the output
@@ -92,6 +93,7 @@ CPP_FLAGS ?= $(INC_FLAGS) -MMD -MP
 ${BUILD_DIR}/${TARGET} : $(OBJS)
 #${BUILD_DIR}/${TARGET} : $(OBJS) $(OBJS_SRC)	
 	$(CXX) $^ -o $@
+#    $(CXX) $^ -o $@ $(LIBS_FLAGS)
 #	$(CXX) $(OBJS) $(OBJS_SRC)	 -o ${TARGET}
 # Compile: Generate object files from source files
 # $@ := {TARGET}
