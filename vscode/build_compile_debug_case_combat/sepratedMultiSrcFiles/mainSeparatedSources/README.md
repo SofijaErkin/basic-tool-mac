@@ -86,7 +86,7 @@ The Architecture of workspace `fitBodyPl` are:
 
 `build`: build task folder, Debug folder, Executable file.
 
-`Makefile`: Makefile to manually build fitBody program.
+`Makefile`: Makefile to manually build fitBodyPl program.
 
 `.vscode`: VSCode configuration folder.
 
