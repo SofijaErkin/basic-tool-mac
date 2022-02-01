@@ -143,3 +143,9 @@ eg:
     echo $(INC_FLAGS)
     
     echo $(CPP_FLAGS)
+
+2.Multiple separated sources directory generate object files:
+
+If all the sources files including the main function are separated directory,
+
+Then you need to generate the object files via one by one directory.
