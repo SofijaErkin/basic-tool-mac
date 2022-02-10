@@ -6,5 +6,7 @@ set(CMAKE_CXX_STANDARD 11)          # Enable C++11 standard
 set(SOURCE_FILES thefitbody.cpp)
 # Add excutable target with source files listed in SOURCE_FILES variable
 add_executable(theFitBody ${SOURCE_FILES})
+# REferences: CMakeLists.txt | CLion - JetBrains
+# https://www.jetbrains.com/help/clion/cmakelists-txt-file.html
 
 
