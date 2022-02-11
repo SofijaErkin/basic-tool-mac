@@ -3,13 +3,31 @@
 #include <vector>
 #include "thefitbodyConfig.h"
 #include "thefitbodyConfig.h.in"
+// Optional Library step o-7-5-thefitbody.cpp.
+/*
+#ifdef USE_TEST
+# include "test.h"
+// Or # include "./test/test/h"
+#endif
+*/
+// Optional Library step o-7-5-thefitbody.cpp.
+
+// Optional Library step o-7-6-thefitbody.h.in.
+/*
+#ifdef USE_TEST
+  const double variable = accept_variable(input_value)
+#else
+  const double variable = accept_other_variable(input_value)
+#endif
+*/
+// Optional Library step o-7-6-thefitbody.h.in.
 
 using namespace std;
 int main(int argc, char **argv) {
   const double inputValue = std::stod(argv[1]);
   // 
 
-  // Project version step 4.
+  // Project version step p-v-5-4-thefitbodyConfig.h.in.
   /*
   if (argc < 2) {
     // report version
@@ -19,7 +37,11 @@ int main(int argc, char **argv) {
     return 1;
   }
   */
-  // Project version step 4.
+  // Project version step p-v-5-4-thefitbodyConfig.h.in.
+
+  //
+
+  //
 
   SofijaMarcas sofija_marcas_temporary_;
   sofija_marcas_temporary_.printHello();
