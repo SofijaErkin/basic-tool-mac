@@ -147,8 +147,13 @@ target_include_directories(theFitBody PUBLIC "${PROJECT_BINARY_DIR}")
 # Separated Multiple directories CMakeLists.txt may see:
 # https://cmake.org/examples/
 
+# Update the optional variable USE_TEST 
+# cmake ../Step2 -DUSE_TEST=OFF
+# may see:
+# https://cmake.org/cmake/help/latest/guide/tutorial/Adding%20a%20Library.html#tutorialconfig-h-in-cmakedefine
 
-# REferences: 
+
+# References: 
 # CMakeLists.txt | CLion - JetBrains
 # https://www.jetbrains.com/help/clion/cmakelists-txt-file.html
 # Quick CMake tutorial | CLion - JetBrains
