@@ -1,0 +1,4 @@
+#include "thefitbodyConfig.h"
+// the configured options and settings for Tutorial
+#define THEFITBODY_VERSION_MAJOR @THEFITBODY_VERSION_MAJOR@
+#define THEFITBODY_VERSION_MINOR @THEFITBODY_VERSION_MINOR@
