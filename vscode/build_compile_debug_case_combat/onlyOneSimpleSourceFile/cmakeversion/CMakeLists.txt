@@ -7,11 +7,16 @@ cmake_minimum_required(VERSION 2.8)
 project(theFitBody VERSION 1.0)                 
 # Defines the project name and the version according to what we provied during
 # project creation.
-# Project version step 1.
+# Project version step p-v-5-1-CMakeLists.txt.
+
+# option(USE_TEST "Use theFitBody provided dynamic library implementation" ON)
+# Makes the Dynamic/Static Library optional. Large projects this s a common
+# occurrence.
+# Optional Library step o-7-1-CMakeLists.txt.
 
 configure_file(thefitbodyConfig.h.in thefitbodyConfig.h)
 # Configure a header file to pass the version number to the source code.
-# Project version step 2.
+# Project version step p-v-5-2-CMakeLists.txt.
 
 set(CMAKE_CXX_STANDARD 11)          
 # Sets the CMAKE_CXX_STANDARD variable to the value of 11, as we selected 
@@ -32,6 +37,16 @@ set(SOURCE_FILES thefitbody.cpp)
 add_executable(theFitBody ${SOURCE_FILES})
 # Adds theFitBody excutable target which will be build from "${SOURCE_FILES}".
 
+# Optional Library step o-7-2-CMakeLists.txt.
+# if(USE_TEST)
+#   add_subdirectory(test)
+#  list(APPEND EXTRA_LIBS test)
+#  list(APPEND EXTRA_INCLUDES "${PROJECT_SOURCE_DIR}/test")
+# endif(~USE_TEST)
+#   add_subdirectory(~test)
+#   ...
+# Optional Library step o-7-2-CMakeLists.txt.
+
 # include_directories(inc/github)
 # Add additional headers located n separate directories.
 
@@ -51,11 +66,15 @@ add_executable(theFitBody ${SOURCE_FILES})
 # this folder.
 # target_link_libraries(theFitBody LINK_PUBLIC ${TEST_LIBRARY})
 # Pass directly via ${TEST_LIBRARY} variable.
+# 
+# target_link_libraries(theFitBody PUBLIC ${EXTRA_LIBS})
+# Optional Library step o-7-3-CMakeLists.txt.
 # Make sure o place target_link_libraries after the add_execuable command.
 
 target_include_directories(theFitBody PUBLIC "${PROJECT_BINARY_DIR}")
 # Adds that directory to the list of paths to search for include files. 
-# Project version step 3.
+# Project version step p-v-5-3-thefitbody.cpp.
+
 
 # Link Dynamic Library
 # To avoid the root CMakeLists.txt too difficult to maintian as our project 
@@ -77,11 +96,16 @@ target_include_directories(theFitBody PUBLIC "${PROJECT_BINARY_DIR}")
 # |    |
 # |    |__CMakeLists.txt
 # |    |__test.cpp
+# |    |__test.h
 # |    
 # |__thefitbody.cpp
 #
 # Just use Boost.Test framework for example.
 # Inserted this code to CMakeLists.txt under ./theFitBody/test:
+# add_library(test test.cpp)
+# # The test.cpp provides similar functionality to the compiler's dynamic func.
+# # Dynamic Library Link step d-4-1-CMakeLists.txt.
+# # OR the below |>
 # set(Boost_USE_STATIC_LIBS OFF) 
 # #enable dynamic linking
 # find_package(Boost REQUIRED COMPONENTS unit_test_framework)
@@ -97,10 +121,24 @@ target_include_directories(theFitBody PUBLIC "${PROJECT_BINARY_DIR}")
 #
 # target_link_libraries(cmake_testapp_boost test_library)
 # # link Boost with code library
+# # the Upper <|
 #
+# 
 # add_subdirectory(test)
+# add the test library
+# Dynamic Library Link step d-4-2-CMakeLists.txt.
 # Make subproject test target cmake_testapp_boost available for the main build.
 # Place he add_subdirectory(test) command in the rootCMakeLists.txt.
+# 
+# target_link_libraries(theFitBody PUBLIC test)
+# Link the dynamic library test
+# Dynamic Library Link step d-4-3-CMakeLists.txt.
+# target_include_directories(theFitBody PUBLIC "${PROJECT_SOURCE_DIR}/test")
+# Adds the binary tree to the search path or include files o that we will find
+# test.h.
+# Dynamic Library Link step d-4-4-OVER.
+# target_include_directories(theFitBody PUBLIC "${EXTRA_INCLUDES}")
+# Optional Library step o-7-4-thefirbody.cpp.
 
 # CTest: a framework for compiling and running tests as part of the CMake build 
 # process.
@@ -117,3 +155,4 @@ target_include_directories(theFitBody PUBLIC "${PROJECT_BINARY_DIR}")
 # https://www.jetbrains.com/help/clion/quick-cmake-tutorial.html
 # CMake Tutorial
 # https://cmake.org/cmake/help/latest/guide/tutorial/index.html#cmake-tutorial
+# 
