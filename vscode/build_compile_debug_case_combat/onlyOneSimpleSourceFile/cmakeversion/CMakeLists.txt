@@ -91,6 +91,9 @@ add_executable(theFitBody ${SOURCE_FILES})
 # process.
 # may see: https://www.jetbrains.com/help/clion/quick-cmake-tutorial.html#ctest
 
+# Separated Multiple directories CMakeLists.txt may see:
+# https://cmake.org/examples/
+
 # REferences: 
 # CMakeLists.txt | CLion - JetBrains
 # https://www.jetbrains.com/help/clion/cmakelists-txt-file.html
