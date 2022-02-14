@@ -413,6 +413,23 @@ target_include_directories(theFitBody PUBLIC "${PROJECT_BINARY_DIR}")
 # https://cmake.org/cmake/help/latest/guide/tutorial/Adding%20Support%20for%20a%20Testing%20Dashboard.html#ctestconfig-cmake
 # Testing dashboard theFitBody t-d-t-f-b-n-1-CTestConfig.cmake ----------------
 
+# Testing dashboard theFitBody t-d-t-f-b-n-3-OVER ----------------
+# To create a simple dashboard you can run the cmake executable or the 
+# cmake-gui to configure the project, but do not build it yet.
+# Instead, change directory to the binary tree, and then run:
+# ctest [-VV] -D Experimental
+# Multi-config generators, the configuration type must be specified:
+# ctest [-VV] -C Debug -D Experimental
+# OR
+# ctest [-VV] -C Release -D Experimental
+# Notice: I need to create a project named "theFirBody"on CMakeTurorial, or 
+# That Testing dashboard does not work!
+# If create a project "theFitBody" on CMakeTurorial, then The ctest executable 
+# will build and test the project and submit the results to Kitware's public 
+# dashboard:
+# https://my.cdash.org/index.php?project=CMaketheFitBody
+# Testing dashboard theFitBody t-d-t-f-b-n-3-OVER ----------------
+
 # Packages an installer
 # may see:
 # https://cmake.org/cmake/help/latest/guide/tutorial/Packaging%20an%20Installer.html#step-7-packaging-an-installer
