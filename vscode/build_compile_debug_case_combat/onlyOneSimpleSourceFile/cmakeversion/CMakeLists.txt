@@ -1,3 +1,6 @@
+# Version Update RoadMap may see:
+# GitHub Gist:
+# https://gist.github.com/SofijaErkin/0c3e104b76fc874eb40579bb2527ed4f
 # Upper, lower, and mixed case commands are supported by CMake. 
 #may see: https://cmake.org/cmake/help/latest/guide/tutorial/A%20Basic%20Starting%20Point.html#step-1-a-basic-starting-point
 cmake_minimum_required(VERSION 2.8) 
