@@ -349,7 +349,7 @@ add_executable(theFitBody ${SOURCE_FILES})
 # Link the dynamic library test
 # Dynamic Library Link step d-4-3-CMakeLists.txt.
 # Also,
-# Selecting static or shared Librarires s-s-o-s-l-n-3-OVER.
+# Selecting static or shared Librarires s-s-o-s-l-n-3-~/test/CMakeLists.txt.
 # target_include_directories(theFitBody PUBLIC "${PROJECT_SOURCE_DIR}/test")  
 # Adds the binary tree to the search path or include files o that we will find
 # test.h.
