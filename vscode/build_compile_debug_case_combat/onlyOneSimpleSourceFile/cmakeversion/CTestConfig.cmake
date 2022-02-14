@@ -1,4 +1,6 @@
 # Testing dashboard theFitBody t-d-t-f-b-n-2-CMakeLists.txt -------------------
+# may see:
+# https://cmake.org/cmake/help/latest/guide/tutorial/Adding%20Support%20for%20a%20Testing%20Dashboard.html#ctestconfig-cmake
 set(CTEST_PROJECT_NAME "CMaketheFitBody")
 # The project name
 set(CTEST_NIGHTLY_START_TIME "00:00:00 UTC")
