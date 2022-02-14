@@ -397,6 +397,18 @@ target_include_directories(theFitBody PUBLIC "${PROJECT_BINARY_DIR}")
 #
 # Testing theFitBody t-t-f-b-n-1-OVER.-----------------------------------------
 
+# Or Change "Testing theFitBody t-t-f-b-n-1-OVER." to Testing dashboard
+#
+# Testing dashboard theFitBody t-d-t-f-b-n-1-CTestConfig.cmake ----------------
+# may see:
+# https://cmake.org/cmake/help/latest/guide/tutorial/Adding%20Support%20for%20a%20Testing%20Dashboard.html#step-8-adding-support-for-a-testing-dashboard
+# include(CTest)
+# enable dashboard scripting
+# Adds CTestConfig.cmake to the top directory of theFitBody Project.
+# may see:
+# https://cmake.org/cmake/help/latest/guide/tutorial/Adding%20Support%20for%20a%20Testing%20Dashboard.html#ctestconfig-cmake
+# Testing dashboard theFitBody t-d-t-f-b-n-1-CTestConfig.cmake ----------------
+
 # Packages an installer
 # may see:
 # https://cmake.org/cmake/help/latest/guide/tutorial/Packaging%20an%20Installer.html#step-7-packaging-an-installer
