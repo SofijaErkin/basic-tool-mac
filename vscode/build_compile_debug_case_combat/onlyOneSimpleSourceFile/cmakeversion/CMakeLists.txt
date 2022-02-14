@@ -145,6 +145,11 @@ target_include_directories(theFitBody PUBLIC "${PROJECT_BINARY_DIR}")
 # # INTERFACE usage i-u-3-2-CMakeLists.txt/./test/CMakeLists.txt.
 # # Selecting static or shared Librarires s-s-o-s-l-n-5-~/test/CMakeLists.txt.
 #
+# # Selecting static or shared Librarires s-s-o-s-l-n-6-~/test/CMakeLists.txt.
+# option(USE_MYMATH "Use theFitBody provided testLIB implementation" ON)
+# # # Should we use our own testLIB functions.
+# # Selecting static or shared Librarires s-s-o-s-l-n-6-~/test/CMakeLists.txt.
+#
 # # Adds system inrospecion s-i-n-1--CMakeLists.txt.
 # # may see:
 # # https://cmake.org/cmake/help/latest/guide/tutorial/Adding%20System%20Introspection.html#step-5-adding-system-introspection
