@@ -57,9 +57,6 @@ set(SOURCE_FILES thefitbody.cpp)
 # Can manually add the source file using the set command as follows:
 # (Add source files of project root directory as source file)
 
-add_executable(theFitBody ${SOURCE_FILES})
-# Adds theFitBody excutable target which will be build from "${SOURCE_FILES}".
-
 # Optional Library step o-7-2-CMakeLists.txt.
 # if(USE_TEST)
 #   add_subdirectory(test)
@@ -342,6 +339,10 @@ target_include_directories(theFitBody PUBLIC "${PROJECT_BINARY_DIR}")
 # Make subproject test target cmake_testapp_boost available for the main build.
 # Place he add_subdirectory(test) command in the rootCMakeLists.txt.
 # 
+
+add_executable(theFitBody ${SOURCE_FILES})
+# Adds theFitBody excutable target which will be build from "${SOURCE_FILES}".
+
 # target_link_libraries(theFitBody PUBLIC test)
 # Link the dynamic library test
 # Dynamic Library Link step d-4-3-CMakeLists.txt.
