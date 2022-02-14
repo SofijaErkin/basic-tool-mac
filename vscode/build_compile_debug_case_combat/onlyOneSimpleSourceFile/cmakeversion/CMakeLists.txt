@@ -12,7 +12,7 @@ project(theFitBody VERSION 1.0)
 # project creation.
 # Project version step p-v-5-1-CMakeLists.txt.
 
-# Selecting static or shared Librarires s-s-o-s-l-n-1
+# Selecting static or shared Librarires s-s-o-s-l-n-1-CMakeLists.txt.
 # may see:
 # https://cmake.org/cmake/help/latest/guide/tutorial/Selecting%20Static%20or%20Shared%20Libraries.html#step-9-selecting-static-or-shared-libraries
 # Shows the BUILD_SHARED_LIBS variable be used to control the default behavior 
@@ -29,8 +29,7 @@ project(theFitBody VERSION 1.0)
 # option(BUILD_SHARED_LIBS "Build using shared libraries" ON)
 # Uses the option() command as it allows users to optionally select if the 
 # value should be ON or OFF.
-# Selecting static or shared Librarires s-s-o-s-l-n-1
-
+# Selecting static or shared Librarires s-s-o-s-l-n-1-CMakeLists.txt.
 
 # option(USE_TEST "Use theFitBody provided dynamic library implementation" ON)
 # Makes the Dynamic/Static Library optional. Large projects this s a common
@@ -333,9 +332,12 @@ target_include_directories(theFitBody PUBLIC "${PROJECT_BINARY_DIR}")
 # 
 # # CMakeLists.txt under ./theFitBody/test ------------------------------------ 
 
+
 # add_subdirectory(test)
-# add the test library
+# AddS the test library.
 # Dynamic Library Link step d-4-2-CMakeLists.txt.
+# Also,
+# Selecting static or shared Librarires s-s-o-s-l-n-2-CMakeLists.txt.
 # Make subproject test target cmake_testapp_boost available for the main build.
 # Place he add_subdirectory(test) command in the rootCMakeLists.txt.
 # 
@@ -346,6 +348,8 @@ add_executable(theFitBody ${SOURCE_FILES})
 # target_link_libraries(theFitBody PUBLIC test)
 # Link the dynamic library test
 # Dynamic Library Link step d-4-3-CMakeLists.txt.
+# Also,
+# Selecting static or shared Librarires s-s-o-s-l-n-3
 # target_include_directories(theFitBody PUBLIC "${PROJECT_SOURCE_DIR}/test")  
 # Adds the binary tree to the search path or include files o that we will find
 # test.h.
