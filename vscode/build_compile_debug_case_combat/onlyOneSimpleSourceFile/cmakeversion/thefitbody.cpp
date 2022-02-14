@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <math.h>
 #include "thefitbodyConfig.h"
 #include "thefitbodyConfig.h.in"
 // Optional Library step o-7-5-thefitbody.cpp.
@@ -24,6 +25,16 @@
 
 using namespace std;
 int main(int argc, char **argv) {
+
+  // Just test Project theFitBody via input-output-----------------------------
+  // may see:
+  // https://www.thecrazyprogrammer.com/2011/03/c-program-to-calculate-square-root-of.html
+  float sqrt_test_project_input_, test_result_;
+  cout << "Enter any number to test input-output for Project theFitBody:";
+  cin >> sqrt_test_project_input_;
+  test_result_ = sqrt(sqrt_test_project_input_);
+  cout << "Square root of " << sqrt_test_project_input_ << "is" << test_result_;
+  // Just test Project theFitBody via input-output-----------------------------
   const double inputValue = std::stod(argv[1]);
   // 
 
