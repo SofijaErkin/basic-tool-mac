@@ -403,7 +403,11 @@ target_include_directories(theFitBody PUBLIC "${PROJECT_BINARY_DIR}")
 # may see:
 # https://cmake.org/cmake/help/latest/guide/tutorial/Adding%20Support%20for%20a%20Testing%20Dashboard.html#step-8-adding-support-for-a-testing-dashboard
 # include(CTest)
-# enable dashboard scripting
+# Enable dashboard scripting.
+# CTest module will automatically call enable_testing(), so we can remove it 
+# from our CMake files.
+# may see:
+# https://cmake.org/cmake/help/latest/guide/tutorial/Adding%20Support%20for%20a%20Testing%20Dashboard.html#cmakelists-txt-include-ctest
 # Adds CTestConfig.cmake to the top directory of theFitBody Project.
 # may see:
 # https://cmake.org/cmake/help/latest/guide/tutorial/Adding%20Support%20for%20a%20Testing%20Dashboard.html#ctestconfig-cmake
