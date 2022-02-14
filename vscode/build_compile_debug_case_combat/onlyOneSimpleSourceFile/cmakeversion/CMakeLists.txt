@@ -12,6 +12,26 @@ project(theFitBody VERSION 1.0)
 # project creation.
 # Project version step p-v-5-1-CMakeLists.txt.
 
+# Selecting static or shared Librarires s-s-o-s-l-n-1
+# may see:
+# https://cmake.org/cmake/help/latest/guide/tutorial/Selecting%20Static%20or%20Shared%20Libraries.html#step-9-selecting-static-or-shared-libraries
+# Shows the BUILD_SHARED_LIBS variable be used to control the default behavior 
+# of add_library(), and allow control over how libraries without an explicit 
+# type (STATIC, SHARED, MODULE or OBJECT) are built.
+# 
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${PROJECT_BINARY_DIR}")
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${PROJECT_BINARY_DIR}")
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${PROJECT_BINARY_DIR}")
+# Notice: this three command need to be changed for mac!
+# Control where the static and shared libraries are built so that on windows,
+# we don't need to tinker with the path to run the executable.
+#
+option(BUILD_SHARED_LIBS "Build using shared libraries" ON)
+# Uses the option() command as it allows users to optionally select if the 
+# value should be ON or OFF.
+# Selecting static or shared Librarires s-s-o-s-l-n-1
+
+
 # option(USE_TEST "Use theFitBody provided dynamic library implementation" ON)
 # Makes the Dynamic/Static Library optional. Large projects this s a common
 # occurrence.
