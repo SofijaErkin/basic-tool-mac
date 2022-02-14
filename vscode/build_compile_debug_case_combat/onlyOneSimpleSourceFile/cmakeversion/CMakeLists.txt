@@ -41,7 +41,10 @@ add_executable(theFitBody ${SOURCE_FILES})
 # if(USE_TEST)
 #   add_subdirectory(test)
 #  list(APPEND EXTRA_LIBS test)
-#  list(APPEND EXTRA_INCLUDES "${PROJECT_SOURCE_DIR}/test")
+#  list(APPEND EXTRA_INCLUDES "${PROJECT_SOURCE_DIR}/test") # OR the below
+#  # Delete the line "list(APPEND EXTRA_INCLUDES "${PROJECT_SOURCE_DIR}/test")"
+#  # if use INTERFACE in ~/test/CMakeLists.txt.
+#  # INTERFACE usage i-u-3-1-CMakeLists.txt/./test/CMakeLists.txt.
 # endif(~USE_TEST)
 #   add_subdirectory(~test)
 #   ...
@@ -102,6 +105,7 @@ target_include_directories(theFitBody PUBLIC "${PROJECT_BINARY_DIR}")
 #
 # Just use Boost.Test framework for example.
 # Inserted this code to CMakeLists.txt under ./theFitBody/test:
+# # CMakeLists.txt under ./theFitBody/test ------------------------------------
 # add_library(test test.cpp)
 # # The test.cpp provides similar functionality to the compiler's dynamic func.
 # # Dynamic Library Link step d-4-1-CMakeLists.txt.
@@ -116,14 +120,199 @@ target_include_directories(theFitBody PUBLIC "${PROJECT_BINARY_DIR}")
 # add_executable(cmake_testapp_boost tests.cpp)
 # # create a cmake_testapp_boost target from test.cpp
 # 
+# target_include_directories(test INTERFACE ${CMAKE_CURRENT_SOURCE_DIR})
+# # Use test Library as INTERFACE.
+# # INTERFACE usage i-u-3-2-CMakeLists.txt/./test/CMakeLists.txt.
+#
+# # Adds system inrospecion s-i-n-1--CMakeLists.txt.
+# # may see:
+# # https://cmake.org/cmake/help/latest/guide/tutorial/Adding%20System%20Introspection.html#step-5-adding-system-introspection
+# # 
+# include(CheckSymbolExists)
+# check_symbol_exists(log "test.h" HAVE_LOG)
+# check_symbol_exists(exp "test.h" HAVE_EXP)
+# if(NOT (HAVE_LOG AND HAVE_EXP))
+#   unset(HAVE_LOG CACHE) 
+#   unset(HAVE_EXP CACHE)
+#  set(CMAKE_REQUIRED_LIBRARIES "t")
+#  check_symbol_exists(log "test.h" HAVE_LOG)
+#  check_symbol_exists(exp "test.h" HAVE_EXP)
+#  if(HAVE_LOG AND HAVE_EXP)
+#    target_link_libraries(test PRIVATE t)
+#  endif()
+# endif()
+# # Does this system provide the log and exp functions?
+# # Or, has the target platform suppoet the log and exp functions.
+#
+# # OR
+# include(CheckSymbolExists)
+# check_symbol_exists(log "test.h" HAVE_LOG)
+# check_symbol_exists(exp "test.h" HAVE_EXP)
+# if(HAVE_LOG AND HAVE_EXP)
+#   target_compile_definitions(test
+#                              PRIVATE "HAVE_LOG" "HAVE_EXP")
+# endif()
+# 
+# # Adds system inrospecion s-i-n-1--CMakeLists.txt.
+#
+# # Adds system inrospecion s-i-n-2--CMakeLists.txt.
+# # may see:
+# # https://cmake.org/cmake/help/latest/guide/tutorial/Adding%20System%20Introspection.html#mathfunctions-mysqrt-cxx-ifdef
+# # Adds #if-#endif on ~/test/test.cpp
+# #if defined(HAVE_LOG) && defined(HAVE_EXP)
+#     type_expression_ variable_tar_ = expression(in-expression_variable_);
+# std :: cout << "Computng sqrt of " << in-expression_variable_ << "to be" 
+#             << variable_tar << "Using og and expc" << std :: endl;
+# #else 
+#     type_expression_ variable_tar_ = in-expression_variable_;
+# #endif
+# # Adds system inrospecion s-i-n-2--CMakeLists.txt.
+#
+# # Adds system inrospecion s-i-n-3-OVER.
+# # may see:
+# # https://cmake.org/cmake/help/latest/guide/tutorial/Adding%20System%20Introspection.html#mathfunctions-mysqrt-cxx-include-cmath
+# # Needs to add the test-Library to ~/test/test.cpp
+# #include <test-Library>
+# # Adds system inrospecion s-i-n-3-OVER.
+# 
+#
 # target_link_libraries(cmake_testapp_boost ${Boost_LIBRARIES})
 # # link Boost libraries to the new target
 #
 # target_link_libraries(cmake_testapp_boost test_library)
+# 
+# # link Boost with code library
+# # the Upper <|
+# 
+# 
+# # Installing and testing Library i-t-l-3-1-CMakeLists.txt.
+#
+# install(TARGETS test DESTINATION lib)
+# # Installs the library and header of Dynamic test Library and for the 
+# # application we want to install the executable nd configured header.
+# install(FILES test.h DESTINATION include)
+# # This install command CMake add to the end of test/CMakeLists.txt.
+#
+# # Installing and testing Library i-t-l-3-1-CMakeLists.txt.
+# 
+# # CMakeLists.txt under ./theFitBody/test ------------------------------------ 
+
+# Not use paltform log and exp functions.
+# Link Dynamic Library
+# To avoid the root CMakeLists.txt too difficult to maintian as our project 
+# gets more complicated, and to build a transparent project structure,
+# extract the dynamic tests into a subproject
+# Transparent project structure just like this: 
+# theFitBody
+# |
+# | __.vscode
+# |    |
+# |    |__c_cpp_properties.json
+# |    |__launch.json
+# |    |__settings.json
+# |    |__tasks.json
+# |
+# | __CMakeLists.txt
+# |
+# | __test
+# |    |
+# |    |__CMakeLists.txt
+# |    |__MakeTable.cpp
+# |    |__test.cpp
+# |    |__test.h
+# |    
+# |__thefitbody.cpp
+#
+# Just use Boost.Test framework for example.
+# Inserted this code to CMakeLists.txt under ./theFitBody/test:
+# # CMakeLists.txt under ./theFitBody/test ------------------------------------
+#
+# # Adds a custom command and generate file a-c-c-g-f-n-1
+# add_executable(MakeTable MakeTable.cxx)
+# # At the top of ~/test/CMakeLists.txt, the executable for MakeTable is added 
+# # as any other executable would be added.
+# # Adds a custom command and generate file a-c-c-g-f-n-1
+#
+# # Adds a custom command and generate file a-c-c-g-f-n-2
+# add_custom_command(
+#  OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/Table.h
+#  COMMAND MakeTable ${CMAKE_CURRENT_BINARY_DIR}/Table.h
+#  DEPENDS MakeTable
+#  )
+# # Adds a custom command that specifies how to produce Table.h by running 
+# # MakeTable.
+# # Adds a custom command and generate file a-c-c-g-f-n-2
+# 
+# # Adds a custom command and generate file a-c-c-g-f-n-3
+# add_library(test
+#             test.cxx
+#            ${CMAKE_CURRENT_BINARY_DIR}/Table.h
+#            )
+# # Lets CMake know that mysqrt.cxx depends on the generated file Table.h. 
+# # This is done by adding the generated Table.h to the list of sources for the
+# # library MathFunctions.
+# # Adds a custom command and generate file a-c-c-g-f-n-3
+#
+# add_library(test test.cpp)
+# # The test.cpp provides similar functionality to the compiler's dynamic func.
+# # Dynamic Library Link step d-4-1-CMakeLists.txt.
+# # OR the below |>
+# set(Boost_USE_STATIC_LIBS OFF) 
+# #enable dynamic linking
+# find_package(Boost REQUIRED COMPONENTS unit_test_framework)
+# # search for unit_test_framework
+# 
+# include_directories(${Boost_INCLUDE_DIR})
+#
+# add_executable(cmake_testapp_boost tests.cpp)
+# # create a cmake_testapp_boost target from test.cpp
+# 
+# target_include_directories(test INTERFACE ${CMAKE_CURRENT_SOURCE_DIR})
+# # Use test Library as INTERFACE.
+# # INTERFACE usage i-u-3-2-CMakeLists.txt/./test/CMakeLists.txt.
+# 
+#
+# target_link_libraries(cmake_testapp_boost ${Boost_LIBRARIES})
+# # link Boost libraries to the new target
+#
+# target_link_libraries(cmake_testapp_boost test_library)
+# 
 # # link Boost with code library
 # # the Upper <|
 #
+# # Adds a custom command and generate file a-c-c-g-f-n-4
+# target_include_directories(test
+#          INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}
+#          PRIVATE ${CMAKE_CURRENT_BINARY_DIR}
+#          )
+# # Adds the current binary directory to the list of include directories so 
+# # that Table.h can be found and included by test.cxx.
+# # Adds a custom command and generate file a-c-c-g-f-n-4
+#
+# # Adds a custom command and generate file a-c-c-g-f-n-5
+# # Adds header file ~/test/Table.h to ~/test/test.cpp
+# #include "Table.h"
+# # Adds a custom command and generate file a-c-c-g-f-n-5
+#
+# # Adds a custom command and generate file a-c-c-g-f-n-6
+# # Rewrite ~/test/test.cpp
+# # may see:
+# # https://cmake.org/cmake/help/latest/guide/tutorial/Adding%20a%20Custom%20Command%20and%20Generated%20File.html#mathfunctions-mysqrt-cxx
+#
+#
+#
+# # Installing and testing Library i-t-l-3-1-CMakeLists.txt.
+#
+# install(TARGETS test DESTINATION lib)
+# # Installs the library and header of Dynamic test Library and for the 
+# # application we want to install the executable nd configured header.
+# install(FILES test.h DESTINATION include)
+# # This install command CMake add to the end of test/CMakeLists.txt.
+#
+# # Installing and testing Library i-t-l-3-1-CMakeLists.txt.
 # 
+# # CMakeLists.txt under ./theFitBody/test ------------------------------------ 
+
 # add_subdirectory(test)
 # add the test library
 # Dynamic Library Link step d-4-2-CMakeLists.txt.
@@ -133,12 +322,91 @@ target_include_directories(theFitBody PUBLIC "${PROJECT_BINARY_DIR}")
 # target_link_libraries(theFitBody PUBLIC test)
 # Link the dynamic library test
 # Dynamic Library Link step d-4-3-CMakeLists.txt.
-# target_include_directories(theFitBody PUBLIC "${PROJECT_SOURCE_DIR}/test")
+# target_include_directories(theFitBody PUBLIC "${PROJECT_SOURCE_DIR}/test")  
 # Adds the binary tree to the search path or include files o that we will find
 # test.h.
 # Dynamic Library Link step d-4-4-OVER.
-# target_include_directories(theFitBody PUBLIC "${EXTRA_INCLUDES}")
+# target_include_directories(theFitBody PUBLIC "${EXTRA_INCLUDES}") # OR below
+# if use test as INTERFACE.
+# target_include_directories(theFitBody PUBLIC "${PROJECT_BINARY_DIR}")
 # Optional Library step o-7-4-thefirbody.cpp.
+
+# Installing and testing Library i-t-l-3-2-CMakeLists.txt.
+# 
+# install(TARGETS theFitBody DESTINATION bin)
+#
+# install(FILES "${PROJECT_BINARY_DIR}/thefitbodyCOnfig.h" DESTINATION include)
+#
+# Installing and testing Library i-t-l-3-2-CMakeLists.txt.
+
+# Testing theFitBody t-t-f-b-n-1-OVER.-----------------------------------------
+# may see:
+# https://cmake.org/cmake/help/latest/guide/tutorial/Installing%20and%20Testing.html#testing-support
+# enable_testing()
+#
+# add_test(NAME Runs COMMAND theFitBody 25)
+# Does simply verifes that the application theFitBody runs, does no segfault or
+# otherwise ceash, and has a zero return value.
+#
+# add_test(NAME Usage COMMAND theFitBody)
+# Does the usage message work?
+# Does verify that the output of the test contains certain strings. 
+# set_tests_properties(Usage
+#  PROPERTIES PASS_REGULAR_EXPRESSION "Usage:.*number"
+#  )
+#
+# function(do_test target arg result)
+#  add_test(NAME Comp${arg} COMMAND ${target} ${arg})
+#  set_tests_properties(Comp${arg}
+#    PROPERTIES PASS_REGULAR_EXPRESSION ${result}
+#    )
+# endfunction()
+# Define a function to simplify adding tests.
+# do_test that runs the application and verifies that the computed square root 
+# is correct for given input.
+#
+# do_test(theFitBody 4 "4 is 2")
+# do_test(theFitBody 9 "9 is 3")
+# do_test(theFitBody 5 "5 is 2.236")
+# do_test(theFitBody 7 "7 is 2.645")
+# do_test(theFitBody 25 "25 is 5")
+# do_test(theFitBody -25 "-25 is (-nan|nan|0)")
+# do_test(theFitBody 0.0001 "0.0001 is 0.01")
+# Do a bunch of result based tests
+# Ddded to the project with a name, input, and expected results based on the 
+# passed arguments.
+#
+# Rebuild and cd the binary directory and run ctest executable:
+# ctest -N
+# 
+# and
+# 
+# ctest -VV
+# 
+# For multi-config generator, add the "-C <mode>" flag:
+# e.g:
+# Run tests in Debug mode use(from binary directory):
+# ctest -C Debug -VV
+# Run tests in Release mode:
+# ctest -C Release -VV
+# 
+# Others, IDE need to build RUN_TESTS target.
+#
+# Testing theFitBody t-t-f-b-n-1-OVER.-----------------------------------------
+
+# Packages an installer
+# include(InstallRequiredSystemLibraries)
+#
+# set(CPACK_RESOURCE_FILE_LICENSE "${CMAKE_CURRENT_SOURCE_DIR}/License.txt")
+#
+# set(CPACK_PACKAGE_VERSION_MAJOR "${THEFITBODY_VERSION_MAJOR}")
+#
+# set(CPACK_PACKAGE_VERSION_MINOR "${THEFITBODY_VERSION_MINOR}")
+#
+# set(CPACK_SOURCE_GENERATOR "TGZ")
+#
+# include(CPack)
+
 
 # CTest: a framework for compiling and running tests as part of the CMake build 
 # process.
@@ -152,6 +420,24 @@ target_include_directories(theFitBody PUBLIC "${PROJECT_BINARY_DIR}")
 # may see:
 # https://cmake.org/cmake/help/latest/guide/tutorial/Adding%20a%20Library.html#tutorialconfig-h-in-cmakedefine
 
+# Installing and testing Library i-t-l-3-3-OVER.
+# Install step, just use :
+# make install
+# 
+# OR
+# 
+# cmake install
+# 
+# multi-configuration add the "--config" argument to specific the configuration
+# 
+# Separated install add the "--prefix" argument to follow the installed root, 
+# e.g:
+# (This will navigate to the install directory nd verify that the installed 
+# theFitBody runs.)
+# cmake install . --prefix "User/marryme/theFitBodyTest"
+# 
+# may see:
+# https://cmake.org/cmake/help/latest/guide/tutorial/Installing%20and%20Testing.html#install-rules
 
 # References: 
 # CMakeLists.txt | CLion - JetBrains
