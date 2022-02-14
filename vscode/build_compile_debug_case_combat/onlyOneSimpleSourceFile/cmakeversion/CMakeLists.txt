@@ -398,18 +398,42 @@ target_include_directories(theFitBody PUBLIC "${PROJECT_BINARY_DIR}")
 # Testing theFitBody t-t-f-b-n-1-OVER.-----------------------------------------
 
 # Packages an installer
+# may see:
+# https://cmake.org/cmake/help/latest/guide/tutorial/Packaging%20an%20Installer.html#step-7-packaging-an-installer
 # include(InstallRequiredSystemLibraries)
-#
+# Includes InstallRequiredSystemLibraries,
+# This module will include any runtime libraries that are needed by the project 
+# for the current platform. 
 # set(CPACK_RESOURCE_FILE_LICENSE "${CMAKE_CURRENT_SOURCE_DIR}/License.txt")
-#
+# Sets some CPack variables to where we have stored the license and version
+# information for this project. 
 # set(CPACK_PACKAGE_VERSION_MAJOR "${THEFITBODY_VERSION_MAJOR}")
-#
 # set(CPACK_PACKAGE_VERSION_MINOR "${THEFITBODY_VERSION_MINOR}")
-#
+# The version information was set earlier in this theFitBody and the 
+# license.txt has been included in the top-level source directory for this 
+# step.
 # set(CPACK_SOURCE_GENERATOR "TGZ")
-#
+# The CPACK_SOURCE_GENERATOR variable selects a file format for the source 
+# package.
 # include(CPack)
-
+# CPack module which will use these variables and some other properties of 
+# the current system to setup an installer.
+# Build the Packages an installer Project and run the cpack execuable, just 
+# use:
+# cpack
+# To specify the generator, use the -G option, e.g:
+# cpack -G ZIP
+# Multi-config builds, use "-C" to specify he configuration, just use:
+# cpack -G ZIP -C Debug
+#
+# OR
+# 
+# cpack -G ZIP -C Release
+# To create an archive of the full source tree would just type:
+# cpack --config CPackSourceConfig.cmake
+# Others,
+# Run the installer found in the binary directory. 
+# Then run the installed executable and verify that it works.
 
 # CTest: a framework for compiling and running tests as part of the CMake build 
 # process.
