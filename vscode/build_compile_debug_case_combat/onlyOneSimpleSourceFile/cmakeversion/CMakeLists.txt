@@ -19,14 +19,14 @@ project(theFitBody VERSION 1.0)
 # of add_library(), and allow control over how libraries without an explicit 
 # type (STATIC, SHARED, MODULE or OBJECT) are built.
 # 
-set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${PROJECT_BINARY_DIR}")
-set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${PROJECT_BINARY_DIR}")
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${PROJECT_BINARY_DIR}")
+# set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${PROJECT_BINARY_DIR}")
+# set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${PROJECT_BINARY_DIR}")
+# set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${PROJECT_BINARY_DIR}")
 # Notice: this three command need to be changed for mac!
 # Control where the static and shared libraries are built so that on windows,
 # we don't need to tinker with the path to run the executable.
 #
-option(BUILD_SHARED_LIBS "Build using shared libraries" ON)
+# option(BUILD_SHARED_LIBS "Build using shared libraries" ON)
 # Uses the option() command as it allows users to optionally select if the 
 # value should be ON or OFF.
 # Selecting static or shared Librarires s-s-o-s-l-n-1
