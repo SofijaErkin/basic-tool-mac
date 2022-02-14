@@ -143,7 +143,7 @@ target_include_directories(theFitBody PUBLIC "${PROJECT_BINARY_DIR}")
 # target_include_directories(test INTERFACE ${CMAKE_CURRENT_SOURCE_DIR})
 # # Use test Library as INTERFACE.
 # # INTERFACE usage i-u-3-2-CMakeLists.txt/./test/CMakeLists.txt.
-# # # Selecting static or shared Librarires s-s-o-s-l-n-5-~/test/CMakeLists.txt.
+# # Selecting static or shared Librarires s-s-o-s-l-n-5-~/test/CMakeLists.txt.
 #
 # # Adds system inrospecion s-i-n-1--CMakeLists.txt.
 # # may see:
