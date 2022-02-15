@@ -200,6 +200,16 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
 # Just use Boost.Test framework for example.
 # Inserted this code to CMakeLists.txt under ./theFitBody/test:
 # # CMakeLists.txt under ./theFitBody/test ------------------------------------
+#
+# # Packaging Debug and Release p-d-a-r-n-3-~/theFitBody/test/CMakeLists.txt.
+# # may see:
+# # https://cmake.org/cmake/help/latest/guide/tutorial/Packaging%20Debug%20and%20Release.html#mathfunctions-cmakelists-txt-version-properties
+# set_property(TARGET test PROPERTY VERSION "1.0.0")
+# set_property(TARGET test PROPERTY SOVERSION "1")
+# # Sets the VERSION and SOVERSION properties, in test/CMakeLists.txt.
+# # Adds version numbering to the test library. 
+# # Packaging Debug and Release p-d-a-r-n-3-~/theFitBody/test/CMakeLists.txt.
+#
 # add_library(test test.cpp)
 # # The test.cpp provides similar functionality to the compiler's dynamic func.
 # # Dynamic Library Link step d-4-1-CMakeLists.txt.
