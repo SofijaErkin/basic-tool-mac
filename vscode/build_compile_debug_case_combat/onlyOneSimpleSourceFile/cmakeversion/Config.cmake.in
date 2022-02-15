@@ -1,0 +1,7 @@
+// # # Adding Export Configuration a-e-c-n-5-~/theFitBody/CMakeLists.txt.
+@PACKAGE_INIT@
+
+include ( "${CMAKE_CURRENT_LIST_DIR}/testTargets.cmake" )
+// may see:
+// https://cmake.org/cmake/help/latest/guide/tutorial/Adding%20Export%20Configuration.html#config-cmake-in
+// # # Adding Export Configuration a-e-c-n-5-~/theFitBody/CMakeLists.txt.
