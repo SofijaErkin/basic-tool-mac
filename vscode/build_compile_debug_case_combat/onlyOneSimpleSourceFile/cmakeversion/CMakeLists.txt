@@ -107,7 +107,7 @@ target_include_directories(theFitBody PUBLIC "${PROJECT_BINARY_DIR}")
 add_executable(theFitBody ${SOURCE_FILES})
 # Adds theFitBody excutable target which will be build from "${SOURCE_FILES}".
 # Packaging Debug and Release p-d-a-r-n-2-~/theFitBody/test/CMakeLists.txt.
-set_target_properties(theFitBody PROPERTIES DEBUG_POSTFIX ${CMAKE_DEBUG_POSTFIX}) 
+# set_target_properties(theFitBody PROPERTIES DEBUG_POSTFIX ${CMAKE_DEBUG_POSTFIX}) 
 # Packaging Debug and Release p-d-a-r-n-2-~/theFitBody/test/CMakeLists.txt.
 
 # 7.Compiler
@@ -119,12 +119,13 @@ set(CMAKE_BUILD_TYPE "Debug")
 set(CMAKE_CXX_FLAGS_DEBUG "$ENV{CXXFLAGS} -O0 -Wall -g2 -ggdb")
 set(CAMKE_CXX_FLAGS_RELEASE "$ENV{CXXFLAGS} -O3 -Wall")
 # Open the message of debug
+
 # OR,
 # Packaging Debug and Release p-d-a-r-n-1-CMakeLists.txt.
 # may see:
 # https://cmake.org/cmake/help/latest/guide/tutorial/Packaging%20Debug%20and%20Release.html#step-12-packaging-debug-and-release
-set(CMAKE_DEBUG_POSTFIX d)
-add_library(theFitBody_compiler_flags INTERFACE)
+# set(CMAKE_DEBUG_POSTFIX d)
+# add_library(theFitBody_compiler_flags INTERFACE)
 # Uses d as the postfix for the debug executable and libraries.
 # Packaging Debug and Release p-d-a-r-n-1-CMakeLists.txt.
 
