@@ -305,6 +305,12 @@ target_include_directories(theFitBody PUBLIC "${PROJECT_BINARY_DIR}")
 #                             ${CMAKE_CURRENT_BINARY_DIR}
 #                             )
 # # States that we depend on our binary dir to find Table.h
+# target_link_libraries(test PRIVATE testLibrary)
+# endif()
+# 
+# target_compile_definitions(test PRIVATE "EXPORTING_TEST")
+# # Define the symbol stating we are using the declspec(dllexport) when
+# # building on windows, macOS may change!
 # # Selecting static or shared Librarires s-s-o-s-l-n-11-~/test/CMakeLists.txt.
 #
 # add_library(test test.cpp)
