@@ -6,6 +6,13 @@
 cmake_minimum_required(VERSION 2.8) 
 # Specifies the minimum required version of CMake.
 
+# OR,
+# Adding Generator Expressions a-g-e-n-2-OVER------------------------
+cmake_minimum_required(VERSION 3.15)
+# 
+# Adding Generator Expressions a-g-e-n-2-OVER------------------------
+
+
 # project(theFitBody)     
 project(theFitBody VERSION 1.0)                 
 # Defines the project name and the version according to what we provied during
@@ -46,6 +53,20 @@ set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 # Specify he C++ standard
 # Adds CMAKE_CXX_STANDARD declarations above the call to add_executable.
+
+# OR,
+# Adding Generator Expressions a-g-e-n-1-CMakeLists.txt------------------------
+# may see:
+# https://cmake.org/cmake/help/latest/guide/tutorial/Adding%20Generator%20Expressions.html#step-10-adding-generator-expressions
+# Insteading of using  CMAKE_CXX_STANDARD,
+# Just constructe an INTERFACE target and specifying the required C++ standard
+# level of 11:
+add_library(theFitBody_compiler_flags INTERFACE)
+target_compile_features(theFitBody_compiler_flags INTERFACE cxx_std_11)
+# This upcoming section constructing an INTERFACE target and specifying the required C++ standard
+# level of 11 will require a change to the cmake_minimum_required() usage in the code. 
+# The Generator Expression that is about to be used was introduced in 3.15. 
+# Adding Generator Expressions a-g-e-n-1-CMakeLists.txt------------------------
 
 # include_directories(inc)
 # include_directories(${CMAKE_CURRENT_LIST_DIR}/inc)
