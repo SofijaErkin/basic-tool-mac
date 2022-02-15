@@ -261,6 +261,7 @@ target_include_directories(theFitBody PUBLIC "${PROJECT_BINARY_DIR}")
 # # Adds a custom command and generate file a-c-c-g-f-n-1
 # # Selecting static or shared Librarires s-s-o-s-l-n-8-~/test/CMakeLists.txt.
 # add_executable(MakeTable MakeTable.cxx)
+# # First we add the executable that generates the table.
 # # At the top of ~/test/CMakeLists.txt, the executable for MakeTable is added 
 # # as any other executable would be added.
 # # Selecting static or shared Librarires s-s-o-s-l-n-8-~/test/CMakeLists.txt.
