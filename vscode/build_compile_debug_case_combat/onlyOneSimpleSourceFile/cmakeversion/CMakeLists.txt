@@ -326,7 +326,25 @@ target_include_directories(theFitBody PUBLIC "${PROJECT_BINARY_DIR}")
 # # may see:
 # # https://cmake.org/cmake/help/latest/guide/tutorial/Selecting%20Static%20or%20Shared%20Libraries.html#mathfunctions-mysqrt-cxx-namespace
 # 
-# # Selecting static or shared Librarires s-s-o-s-l-n-11-~/test/thefitbody.cpp.
+# # Selecting static or shared Librarires s-s-o-s-l-n-13-~/test/CMakeLists.txt.
+# # may see:
+# # https://cmake.org/cmake/help/latest/guide/tutorial/Selecting%20Static%20or%20Shared%20Libraries.html#mathfunctions-mathfunctions-h
+# test.h under ~/theFitBody/test/test.h ---------------------------------------
+#if defined(_WIN32)
+#  if defined(EXPORTING_MYMATH)
+#    define DECLSPEC __declspec(dllexport)
+#  else
+#    define DECLSPEC __declspec(dllimport)
+#  endif
+#else // non windows
+#  define DECLSPEC
+#endif
+# namespace test {
+# double DECLSPEC mytest(double x);
+# }
+# #
+# test.h under ~/theFitBody/test/test.h ---------------------------------------
+# # Selecting static or shared Librarires s-s-o-s-l-n-13-~/test/CMakeLists.txt.
 #
 # add_library(test test.cpp)
 # # The test.cpp provides similar functionality to the compiler's dynamic func.
