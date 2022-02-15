@@ -281,6 +281,8 @@ target_include_directories(theFitBody PUBLIC "${PROJECT_BINARY_DIR}")
 # # Adds a custom command and generate file a-c-c-g-f-n-2
 # 
 # # Adds a custom command and generate file a-c-c-g-f-n-3
+# # may see:
+# # https://cmake.org/cmake/help/latest/guide/tutorial/Adding%20a%20Custom%20Command%20and%20Generated%20File.html#mathfunctions-cmakelists-txt-add-library-table-h
 # # Selecting static or shared Librarires s-s-o-s-l-n-10-~/test/CMakeLists.txt.
 # # may see:
 # # https://cmake.org/cmake/help/latest/guide/tutorial/Selecting%20Static%20or%20Shared%20Libraries.html#mathfunctions-cmakelists-txt-add-library-static
