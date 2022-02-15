@@ -309,7 +309,16 @@ target_include_directories(theFitBody PUBLIC "${PROJECT_BINARY_DIR}")
 # # States that we depend on our binary dir to find Table.h
 # target_link_libraries(test PRIVATE testLibrary)
 # endif()
-# 
+#
+# # Selecting static or shared Librarires s-s-o-s-l-n-14-OVER.
+# # may see:
+# # https://cmake.org/cmake/help/latest/guide/tutorial/Selecting%20Static%20or%20Shared%20Libraries.html#mathfunctions-cmakelists-txt-position-independent-code
+set_target_properties(testLibrary PROPERTIES
+                        POSITION_INDEPENDENT_CODE ${BUILD_SHARED_LIBS}
+                        )
+# # States that testLibrary need PIC when the default is shared libraries
+# # Selecting static or shared Librarires s-s-o-s-l-n-14-OVER.
+#
 # target_compile_definitions(test PRIVATE "EXPORTING_TEST")
 # # Define the symbol stating we are using the declspec(dllexport) when
 # # building on windows, macOS may change!
