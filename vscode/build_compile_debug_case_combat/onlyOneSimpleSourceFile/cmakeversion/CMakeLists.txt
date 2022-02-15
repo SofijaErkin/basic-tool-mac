@@ -108,8 +108,19 @@ add_executable(theFitBody ${SOURCE_FILES})
 # Adds theFitBody excutable target which will be build from "${SOURCE_FILES}".
 
 # 7.Compiler
+set(CMAKE_CXX_COMPILER "g++")
+# the default editor
+
 # 8.Debugr
+set(CMAKE_BUILD_TYPE "Debug")
+set(CMAKE_CXX_FLAGS_DEBUG "$ENV{CXXFLAGS} -O0 -Wall -g2 -ggdb")
+set(CAMKE_CXX_FLAGS_RELEASE "$ENV{CXXFLAGS} -O3 -Wall")
+# Open the message of debug
+
 # 9.C++11 Support
+set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
+# That make clang++ support C++11
+
 # 10.Target Linked Library
 
 # add_library(test_library STATIC cal.cpp)
