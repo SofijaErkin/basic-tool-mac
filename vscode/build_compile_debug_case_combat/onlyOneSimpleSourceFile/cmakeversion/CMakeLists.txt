@@ -542,13 +542,20 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
 #
 # Installing and testing Library i-t-l-3-2-CMakeLists.txt.
 
-# # Adding Export Configuration a-e-c-n-3-~/theFitBody/test/CMakeLists.txt
+#  Adding Export Configuration a-e-c-n-3-~/theFitBody/test/CMakeLists.txt
 # install(EXPORT testTargets
 #   FILE testTargets.cmake
 #  DESTINATION lib/cmake/test
 # )
-# # Needs to explicitly install the generated testTargets.cmake file.
-# # Adding Export Configuration a-e-c-n-3-~/theFitBody/test/CMakeLists.txt
+# Needs to explicitly install the generated testTargets.cmake file.
+# Adding Export Configuration a-e-c-n-3-~/theFitBody/test/CMakeLists.txt
+# Adding Export Configuration a-e-c-n-6-CMakeLists.txt.
+# include(CMakePackageConfigHelpers)
+# To properly configure and install that file, add the following to the bottom 
+# of the top-level CMakeLists.txt.
+# may see:
+# https://cmake.org/cmake/help/latest/guide/tutorial/Adding%20Export%20Configuration.html#cmakelists-txt-install-config-cmake
+# Adding Export Configuration a-e-c-n-6-CMakeLists.txt.
 
 # Testing theFitBody t-t-f-b-n-1-OVER.-----------------------------------------
 # may see:
