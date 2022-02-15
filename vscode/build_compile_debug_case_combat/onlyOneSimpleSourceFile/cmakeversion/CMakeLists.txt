@@ -401,7 +401,9 @@ target_compile_options(theFitBody_compiler_flags INTERFACE
 # install(TARGETS ${installable_libs} DESTINATION lib)
 # # OR,
 # # Adding Export Configuration a-e-c-n-2-CMakeLists.txt
-# #
+# install(TARGETS ${installable_libs}
+#        EXPORT testTargets
+#        DESTINATION lib)
 # # Adding Export Configuration a-e-c-n-2-CMakeLists.txt
 #
 # install(FILES test.h DESTINATION include)
