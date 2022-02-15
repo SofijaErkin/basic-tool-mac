@@ -8,8 +8,8 @@ cmake_minimum_required(VERSION 2.8)
 
 # OR,
 # Adding Generator Expressions a-g-e-n-2-OVER------------------------
-cmake_minimum_required(VERSION 3.15)
-# 
+# cmake_minimum_required(VERSION 3.15)
+# Update the call to require that more recent version.
 # Adding Generator Expressions a-g-e-n-2-OVER------------------------
 
 
@@ -61,8 +61,10 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 # Insteading of using  CMAKE_CXX_STANDARD,
 # Just constructe an INTERFACE target and specifying the required C++ standard
 # level of 11:
-add_library(theFitBody_compiler_flags INTERFACE)
-target_compile_features(theFitBody_compiler_flags INTERFACE cxx_std_11)
+# may see:
+# https://cmake.org/cmake/help/latest/guide/tutorial/Adding%20Generator%20Expressions.html#cmakelists-txt-cxx-std-feature
+# add_library(theFitBody_compiler_flags INTERFACE)
+# target_compile_features(theFitBody_compiler_flags INTERFACE cxx_std_11)
 # This upcoming section constructing an INTERFACE target and specifying the required C++ standard
 # level of 11 will require a change to the cmake_minimum_required() usage in the code. 
 # The Generator Expression that is about to be used was introduced in 3.15. 
