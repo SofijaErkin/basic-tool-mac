@@ -300,7 +300,9 @@ target_include_directories(theFitBody PUBLIC "${PROJECT_BINARY_DIR}")
 # # library MathFunctions.
 # # Adds a custom command and generate file a-c-c-g-f-n-3
 #
-# # Selecting static or shared Librarires s-s-o-s-l-n-11-~/test/CMakeLists.txt.
+# # Selecting static or shared Librarires s-s-o-s-l-n-11-~/test/thefitbody.cpp.
+# # may see:
+# # https://cmake.org/cmake/help/latest/guide/tutorial/Selecting%20Static%20or%20Shared%20Libraries.html#mathfunctions-cmakelists-txt-add-library-static
 # target_include_directories(testLibrary PRIVATE
 #                             ${CMAKE_CURRENT_BINARY_DIR}
 #                             )
@@ -311,7 +313,20 @@ target_include_directories(theFitBody PUBLIC "${PROJECT_BINARY_DIR}")
 # target_compile_definitions(test PRIVATE "EXPORTING_TEST")
 # # Define the symbol stating we are using the declspec(dllexport) when
 # # building on windows, macOS may change!
-# # Selecting static or shared Librarires s-s-o-s-l-n-11-~/test/CMakeLists.txt.
+#
+# set(installable_libs test)
+# if(TARGET testLibrary)
+#  list(APPEND installable_libs testLibrary)
+# endif()
+# install(TARGETS ${installable_libs} DESTINATION lib)
+# install(FILES test.h DESTINATION include)
+# # Install rules.
+# 
+# # May change mytest.cpp.!
+# # may see:
+# # https://cmake.org/cmake/help/latest/guide/tutorial/Selecting%20Static%20or%20Shared%20Libraries.html#mathfunctions-mysqrt-cxx-namespace
+# 
+# # Selecting static or shared Librarires s-s-o-s-l-n-11-~/test/thefitbody.cpp.
 #
 # add_library(test test.cpp)
 # # The test.cpp provides similar functionality to the compiler's dynamic func.
