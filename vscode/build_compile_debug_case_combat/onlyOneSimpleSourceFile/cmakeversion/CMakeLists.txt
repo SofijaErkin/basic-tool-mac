@@ -387,6 +387,11 @@ target_compile_options(theFitBody_compiler_flags INTERFACE
 # # building on windows, macOS may change!
 #
 # set(installable_libs test)
+# # OR,
+# set(installable_libs test theFitBody_compiler_flags)
+# # Modify test/CMakeLists.txt so that all targets have a 
+# # target_link_libraries() call to theFitBody_compiler_flags.
+#
 # if(TARGET testLibrary)
 #  list(APPEND installable_libs testLibrary)
 # endif()
