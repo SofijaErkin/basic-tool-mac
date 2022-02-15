@@ -213,11 +213,13 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
 #
 # # OR,
 # # Adding Export Configuration a-e-c-n-4-~/theFitBody/test/CMakeLists.txt.
-target_include_directories(test
-                           INTERFACE
-                            $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
-                            $<INSTALL_INTERFACE:include>
-                           )
+# # may see:
+# # https://cmake.org/cmake/help/latest/guide/tutorial/Adding%20Export%20Configuration.html#mathfunctions-cmakelists-txt-target-include-directories
+# target_include_directories(test
+#                           INTERFACE
+#                            $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
+#                            $<INSTALL_INTERFACE:include>
+#                           )
 # # Adding Export Configuration a-e-c-n-4-~/theFitBody/test/CMakeLists.txt.
 #
 # # Selecting static or shared Librarires s-s-o-s-l-n-6-~/test/CMakeLists.txt.
