@@ -121,6 +121,24 @@ set(CAMKE_CXX_FLAGS_RELEASE "$ENV{CXXFLAGS} -O3 -Wall")
 set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
 # That make clang++ support C++11
 
+# OR, 7. 8. 9. 
+# Adding Generator Expressions a-g-e-n-3--CMakeLists.txt.------------------------
+# may see:
+# https://cmake.org/cmake/help/latest/guide/tutorial/Adding%20Generator%20Expressions.html#cmakelists-txt-target-compile-options-genex
+set(gcc_like_cxx "$<COMPILE_LANG_AND_ID:CXX,ARMClang,AppleClang,Clang,GNU,LCC>")
+set(msvc_cxx "$<COMPILE_LANG_AND_ID:CXX,MSVC>")
+# Uses the COMPILE_LANG_AND_ID generator expression to control which flags to 
+# apply given a language and a set of compiler ids as seen upstairs.
+target_compile_options(theFitBody_compiler_flags INTERFACE
+  "$<${gcc_like_cxx}:$<BUILD_INTERFACE:-Wall;-Wextra;-Wshadow;-Wformat=2;-Wunused>>"
+  "$<${msvc_cxx}:$<BUILD_INTERFACE:-W3>>"
+)
+# Adds the desired compiler warning flags that we want for our project. 
+# The warning flags are encapsulated inside a BUILD_INTERFACE condition.
+# This is done so that consumers of our installed project will not inherit our
+# warning flags.
+# Adding Generator Expressions a-g-e-n-3--CMakeLists.txt.------------------------
+
 # 10.Target Linked Library
 
 # add_library(test_library STATIC cal.cpp)
