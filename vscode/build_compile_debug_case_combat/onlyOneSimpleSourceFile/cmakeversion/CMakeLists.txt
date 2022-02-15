@@ -107,7 +107,7 @@ target_include_directories(theFitBody PUBLIC "${PROJECT_BINARY_DIR}")
 add_executable(theFitBody ${SOURCE_FILES})
 # Adds theFitBody excutable target which will be build from "${SOURCE_FILES}".
 # Packaging Debug and Release p-d-a-r-n-2-CMakeLists.txt. 
-set_target_properties(Tutorial PROPERTIES DEBUG_POSTFIX ${CMAKE_DEBUG_POSTFIX}) 
+set_target_properties(theFitBody PROPERTIES DEBUG_POSTFIX ${CMAKE_DEBUG_POSTFIX}) 
 # Packaging Debug and Release p-d-a-r-n-2-CMakeLists.txt.
 
 # 7.Compiler
