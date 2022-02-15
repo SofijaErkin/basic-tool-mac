@@ -4,9 +4,9 @@
 #include <math.h>
 #include "thefitbodyConfig.h"
 #include "thefitbodyConfig.h.in"
-// Selecting static or shared Librarires s-s-o-s-l-n-12-~/test/test.h.
+// Selecting static or shared Librarires s-s-o-s-l-n-12-~/test/test.h/./CMakeLists.txt.
 // #include "./test/test.h"
-// Selecting static or shared Librarires s-s-o-s-l-n-12-~/test/test.h.
+// Selecting static or shared Librarires s-s-o-s-l-n-12-~/test/test.h/./CMakeLists.txt.
 // Optional Library step o-7-5-thefitbody.cpp.
 /*
 #ifdef USE_TEST
