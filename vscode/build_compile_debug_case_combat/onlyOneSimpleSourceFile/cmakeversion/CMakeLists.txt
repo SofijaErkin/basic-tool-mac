@@ -274,12 +274,14 @@ target_include_directories(theFitBody PUBLIC "${PROJECT_BINARY_DIR}")
 #  COMMAND MakeTable ${CMAKE_CURRENT_BINARY_DIR}/Table.h
 #  DEPENDS MakeTable
 #  )
+# # Adds the command to generate the source code.
 # # Adds a custom command that specifies how to produce Table.h by running 
 # # MakeTable.
 # # Selecting static or shared Librarires s-s-o-s-l-n-9-~/test/CMakeLists.txt.
 # # Adds a custom command and generate file a-c-c-g-f-n-2
 # 
 # # Adds a custom command and generate file a-c-c-g-f-n-3
+# # Selecting static or shared Librarires s-s-o-s-l-n-9-~/test/CMakeLists.txt.
 # add_library(test
 #             test.cxx
 #            ${CMAKE_CURRENT_BINARY_DIR}/Table.h
@@ -287,6 +289,7 @@ target_include_directories(theFitBody PUBLIC "${PROJECT_BINARY_DIR}")
 # # Lets CMake know that mysqrt.cxx depends on the generated file Table.h. 
 # # This is done by adding the generated Table.h to the list of sources for the
 # # library MathFunctions.
+# # Selecting static or shared Librarires s-s-o-s-l-n-9-~/test/CMakeLists.txt.
 # # Adds a custom command and generate file a-c-c-g-f-n-3
 #
 # add_library(test test.cpp)
