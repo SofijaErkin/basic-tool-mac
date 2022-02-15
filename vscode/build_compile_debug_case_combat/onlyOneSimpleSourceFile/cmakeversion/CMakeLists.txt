@@ -103,6 +103,15 @@ target_include_directories(theFitBody PUBLIC "${PROJECT_BINARY_DIR}")
 # Adds that directory to the list of paths to search for include files. 
 # Project version step p-v-5-3-thefitbody.cpp.
 
+# 6.Add Executable
+add_executable(theFitBody ${SOURCE_FILES})
+# Adds theFitBody excutable target which will be build from "${SOURCE_FILES}".
+
+# 7.Compiler
+# 8.Debugr
+# 9.C++11 Support
+# 10.Target Linked Library
+
 # add_library(test_library STATIC cal.cpp)
 # Adds library target. e.g: create a static library "test_library: from cal.cpp 
 # source file.
@@ -448,17 +457,6 @@ target_include_directories(theFitBody PUBLIC "${PROJECT_BINARY_DIR}")
 # Selecting static or shared Librarires s-s-o-s-l-n-2-CMakeLists.txt.
 # Make subproject test target cmake_testapp_boost available for the main build.
 # Place he add_subdirectory(test) command in the rootCMakeLists.txt.
-# 
-
-# 6.Add Executable
-add_executable(theFitBody ${SOURCE_FILES})
-# Adds theFitBody excutable target which will be build from "${SOURCE_FILES}".
-
-
-# 7.Compiler
-# 8.Debugr
-# 9.C++11 Support
-# 10.Target Linked Library
 
 # target_link_libraries(theFitBody PUBLIC test)
 # Link the dynamic library test
