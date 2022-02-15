@@ -107,6 +107,9 @@ set(SOURCE_FILES thefitbody.cpp)
 # may see:
 # https://www.jetbrains.com/help/clion/quick-cmake-tutorial.html#lib-targets
 
+target_include_directories(theFitBody PUBLIC "${PROJECT_BINARY_DIR}")
+# Adds that directory to the list of paths to search for include files. 
+# Project version step p-v-5-3-thefitbody.cpp.
 
 # Link Static Library
 # find_library(TEST_LIBRARY test_library lib)
@@ -119,11 +122,6 @@ set(SOURCE_FILES thefitbody.cpp)
 # target_link_libraries(theFitBody PUBLIC ${EXTRA_LIBS})
 # Optional Library step o-7-3-CMakeLists.txt.
 # Make sure o place target_link_libraries after the add_execuable command.
-
-target_include_directories(theFitBody PUBLIC "${PROJECT_BINARY_DIR}")
-# Adds that directory to the list of paths to search for include files. 
-# Project version step p-v-5-3-thefitbody.cpp.
-
 
 # Link Dynamic Library
 # To avoid the root CMakeLists.txt too difficult to maintian as our project 
