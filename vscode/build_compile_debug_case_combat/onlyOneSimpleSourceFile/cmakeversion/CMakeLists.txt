@@ -404,6 +404,8 @@ target_compile_options(theFitBody_compiler_flags INTERFACE
 # install(TARGETS ${installable_libs}
 #        EXPORT testTargets
 #        DESTINATION lib)
+# # The EXPORT keyword generates a CMake file containing code to import all 
+# # targets listed in the install command from the installation tree. 
 # # Adding Export Configuration a-e-c-n-2-CMakeLists.txt
 #
 # install(FILES test.h DESTINATION include)
@@ -493,7 +495,6 @@ target_compile_options(theFitBody_compiler_flags INTERFACE
 # 
 # # CMakeLists.txt under ./theFitBody/test ------------------------------------ 
 
-
 # add_subdirectory(test)
 # AddS the test library.
 # Dynamic Library Link step d-4-2-CMakeLists.txt.
@@ -523,6 +524,14 @@ target_compile_options(theFitBody_compiler_flags INTERFACE
 # install(FILES "${PROJECT_BINARY_DIR}/thefitbodyCOnfig.h" DESTINATION include)
 #
 # Installing and testing Library i-t-l-3-2-CMakeLists.txt.
+
+# # Adding Export Configuration a-e-c-n-3-CMakeLists.txt
+# install(EXPORT testTargets
+#   FILE testTargets.cmake
+#  DESTINATION lib/cmake/test
+# )
+# # Needs to explicitly install the generated testTargets.cmake file.
+# # Adding Export Configuration a-e-c-n-3-CMakeLists.txt
 
 # Testing theFitBody t-t-f-b-n-1-OVER.-----------------------------------------
 # may see:
