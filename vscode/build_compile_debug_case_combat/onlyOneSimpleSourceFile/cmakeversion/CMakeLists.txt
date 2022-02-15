@@ -388,14 +388,22 @@ target_compile_options(theFitBody_compiler_flags INTERFACE
 #
 # set(installable_libs test)
 # # OR,
+# # Adding Export Configuration a-e-c-n-1-CMakeLists.txt
 # set(installable_libs test theFitBody_compiler_flags)
 # # Modify test/CMakeLists.txt so that all targets have a 
 # # target_link_libraries() call to theFitBody_compiler_flags.
+# # Adding Export Configuration a-e-c-n-1-CMakeLists.txt
 #
 # if(TARGET testLibrary)
 #  list(APPEND installable_libs testLibrary)
 # endif()
+#
 # install(TARGETS ${installable_libs} DESTINATION lib)
+# # OR,
+# # Adding Export Configuration a-e-c-n-2-CMakeLists.txt
+# #
+# # Adding Export Configuration a-e-c-n-2-CMakeLists.txt
+#
 # install(FILES test.h DESTINATION include)
 # # Install rules.
 # 
