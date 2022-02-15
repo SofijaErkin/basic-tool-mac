@@ -281,15 +281,18 @@ target_include_directories(theFitBody PUBLIC "${PROJECT_BINARY_DIR}")
 # # Adds a custom command and generate file a-c-c-g-f-n-2
 # 
 # # Adds a custom command and generate file a-c-c-g-f-n-3
-# # Selecting static or shared Librarires s-s-o-s-l-n-9-~/test/CMakeLists.txt.
+# # Selecting static or shared Librarires s-s-o-s-l-n-10-~/test/CMakeLists.txt.
+# # may see:
+# # https://cmake.org/cmake/help/latest/guide/tutorial/Selecting%20Static%20or%20Shared%20Libraries.html#mathfunctions-cmakelists-txt-add-library-static
 # add_library(test
-#             test.cxx
+#             mytest.cxx
 #            ${CMAKE_CURRENT_BINARY_DIR}/Table.h
 #            )
-# # Lets CMake know that mysqrt.cxx depends on the generated file Table.h. 
+# # Library that just does mytest.
+# # Lets CMake know that mytest.cxx depends on the generated file Table.h. 
 # # This is done by adding the generated Table.h to the list of sources for the
 # # library MathFunctions.
-# # Selecting static or shared Librarires s-s-o-s-l-n-9-~/test/CMakeLists.txt.
+# # Selecting static or shared Librarires s-s-o-s-l-n-10-~/test/CMakeLists.txt.
 # # Adds a custom command and generate file a-c-c-g-f-n-3
 #
 # add_library(test test.cpp)
