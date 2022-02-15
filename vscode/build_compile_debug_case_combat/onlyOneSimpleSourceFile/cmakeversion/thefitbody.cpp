@@ -4,11 +4,14 @@
 #include <math.h>
 #include "thefitbodyConfig.h"
 #include "thefitbodyConfig.h.in"
+// Selecting static or shared Librarires s-s-o-s-l-n-11-~/test/test.h.
+// #include "./test/test.h"
+// Selecting static or shared Librarires s-s-o-s-l-n-11-~/test/test.h.
 // Optional Library step o-7-5-thefitbody.cpp.
 /*
 #ifdef USE_TEST
 # include "test.h"
-// Or # include "./test/test/h"
+// Or # include "./test/test.h"
 #endif
 */
 // Optional Library step o-7-5-thefitbody.cpp.
