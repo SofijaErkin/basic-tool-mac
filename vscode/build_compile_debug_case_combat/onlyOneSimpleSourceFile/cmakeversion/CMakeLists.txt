@@ -201,7 +201,7 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
 # Inserted this code to CMakeLists.txt under ./theFitBody/test:
 # # CMakeLists.txt under ./theFitBody/test ------------------------------------
 #
-# # Packaging Debug and Release p-d-a-r-n-3-~/theFitBody/test/CMakeLists.txt.
+# # Packaging Debug and Release p-d-a-r-n-3-MultiCPackConfig.cmake.
 # # may see:
 # # https://cmake.org/cmake/help/latest/guide/tutorial/Packaging%20Debug%20and%20Release.html#mathfunctions-cmakelists-txt-version-properties
 # set_property(TARGET test PROPERTY VERSION "1.0.0")
@@ -224,7 +224,7 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
 # Setup debug and release builds, use CMAKE_BUILD_TYPE to set the 
 # configuration type.
 # 
-# # Packaging Debug and Release p-d-a-r-n-3-~/theFitBody/test/CMakeLists.txt.
+# # Packaging Debug and Release p-d-a-r-n-3-MultiCPackConfig.cmake.
 #
 # add_library(test test.cpp)
 # # The test.cpp provides similar functionality to the compiler's dynamic func.
