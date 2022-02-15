@@ -555,6 +555,29 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
 # of the top-level CMakeLists.txt.
 # may see:
 # https://cmake.org/cmake/help/latest/guide/tutorial/Adding%20Export%20Configuration.html#cmakelists-txt-install-config-cmake
+#
+# configure_package_config_file(${CMAKE_CURRENT_SOURCE_DIR}/Config.cmake.in
+#   "${CMAKE_CURRENT_BINARY_DIR}/testConfig.cmake"
+#   INSTALL_DESTINATION "lib/cmake/example"
+#   NO_SET_AND_CHECK_MACRO
+#   NO_CHECK_REQUIRED_COMPONENTS_MACRO
+#   )
+# Generates the config file that is includes the exports
+# may see:
+# https://cmake.org/cmake/help/latest/guide/tutorial/Adding%20Export%20Configuration.html#cmakelists-txt-configure-package-config-cmake
+#
+#  write_basic_package_version_file(
+#   "${CMAKE_CURRENT_BINARY_DIR}/testConfigVersion.cmake"
+#   VERSION "${THEFITBODY_VERSION_MAJOR}.${THEFITBODY_VERSION_MINOR}"
+#   COMPATIBILITY AnyNewerVersion
+# )
+# Writes a file which is used by the "find_package" document the version and 
+# compatibility of the desired package. Use the THEFITBODY_VERSION_* variables
+# and say that it is compatible with AnyNewerVersion, which denotes that this 
+# version or any higher one are compatible with the requested version.
+# may see:
+# https://cmake.org/cmake/help/latest/guide/tutorial/Adding%20Export%20Configuration.html#cmakelists-txt-basic-version-file-cmake
+#
 # Adding Export Configuration a-e-c-n-6-CMakeLists.txt.
 
 # Testing theFitBody t-t-f-b-n-1-OVER.-----------------------------------------
