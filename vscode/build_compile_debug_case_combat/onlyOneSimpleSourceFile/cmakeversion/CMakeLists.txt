@@ -588,6 +588,18 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
 # may see:
 # https://cmake.org/cmake/help/latest/guide/tutorial/Adding%20Export%20Configuration.html#cmakelists-txt-install-configured-files-cmake
 #
+# Optional
+# 
+# export(EXPORT test
+#  FILE "${CMAKE_CURRENT_BINARY_DIR}/testTargets.cmake"
+# )
+# If want project to also be used from a build directory we only have to add 
+# the following to the bottom of the top level CMakeLists.txt.
+# may see:
+# https://cmake.org/cmake/help/latest/guide/tutorial/Adding%20Export%20Configuration.html#cmakelists-txt-export
+# With this export call now generate a Targets.cmake, allowing the configured 
+# testConfig.cmake in the build directory to be used by other projects, without
+# needing it to be installed.
 # Adding Export Configuration a-e-c-n-6-CMakeLists.txt.
 
 # Testing theFitBody t-t-f-b-n-1-OVER.-----------------------------------------
