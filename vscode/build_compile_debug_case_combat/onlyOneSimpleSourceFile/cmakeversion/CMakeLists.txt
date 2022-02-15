@@ -125,14 +125,14 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
 # Adding Generator Expressions a-g-e-n-3--CMakeLists.txt.------------------------
 # may see:
 # https://cmake.org/cmake/help/latest/guide/tutorial/Adding%20Generator%20Expressions.html#cmakelists-txt-target-compile-options-genex
-set(gcc_like_cxx "$<COMPILE_LANG_AND_ID:CXX,ARMClang,AppleClang,Clang,GNU,LCC>")
-set(msvc_cxx "$<COMPILE_LANG_AND_ID:CXX,MSVC>")
+# set(gcc_like_cxx "$<COMPILE_LANG_AND_ID:CXX,ARMClang,AppleClang,Clang,GNU,LCC>")
+# set(msvc_cxx "$<COMPILE_LANG_AND_ID:CXX,MSVC>")
 # Uses the COMPILE_LANG_AND_ID generator expression to control which flags to 
 # apply given a language and a set of compiler ids as seen upstairs.
-target_compile_options(theFitBody_compiler_flags INTERFACE
-  "$<${gcc_like_cxx}:$<BUILD_INTERFACE:-Wall;-Wextra;-Wshadow;-Wformat=2;-Wunused>>"
-  "$<${msvc_cxx}:$<BUILD_INTERFACE:-W3>>"
-)
+# target_compile_options(theFitBody_compiler_flags INTERFACE
+#   "$<${gcc_like_cxx}:$<BUILD_INTERFACE:-Wall;-Wextra;-Wshadow;-Wformat=2;-Wunused>>"
+#   "$<${msvc_cxx}:$<BUILD_INTERFACE:-W3>>"
+# )
 # Adds the desired compiler warning flags that we want for our project. 
 # The warning flags are encapsulated inside a BUILD_INTERFACE condition.
 # This is done so that consumers of our installed project will not inherit our
@@ -203,10 +203,22 @@ target_compile_options(theFitBody_compiler_flags INTERFACE
 # add_executable(cmake_testapp_boost tests.cpp)
 # # create a cmake_testapp_boost target from test.cpp
 # 
-# target_include_directories(test INTERFACE ${CMAKE_CURRENT_SOURCE_DIR})
+# target_include_directories(test 
+#                             INTERFACE 
+#                             ${CMAKE_CURRENT_SOURCE_DIR}
+#                             )
 # # Use test Library as INTERFACE.
 # # INTERFACE usage i-u-3-2-CMakeLists.txt/./test/CMakeLists.txt.
 # # Selecting static or shared Librarires s-s-o-s-l-n-5-~/test/CMakeLists.txt.
+#
+# # OR,
+# # Adding Export Configuration a-e-c-n-4-~/theFitBody/test/CMakeLists.txt.
+target_include_directories(test
+                           INTERFACE
+                            $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
+                            $<INSTALL_INTERFACE:include>
+                           )
+# # Adding Export Configuration a-e-c-n-4-~/theFitBody/test/CMakeLists.txt.
 #
 # # Selecting static or shared Librarires s-s-o-s-l-n-6-~/test/CMakeLists.txt.
 # # may see:
