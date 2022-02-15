@@ -99,6 +99,10 @@ set(SOURCE_FILES thefitbody.cpp)
 # include_directories(inc/github)
 # Add additional headers located n separate directories.
 
+target_include_directories(theFitBody PUBLIC "${PROJECT_BINARY_DIR}")
+# Adds that directory to the list of paths to search for include files. 
+# Project version step p-v-5-3-thefitbody.cpp.
+
 # add_library(test_library STATIC cal.cpp)
 # Adds library target. e.g: create a static library "test_library: from cal.cpp 
 # source file.
@@ -106,10 +110,6 @@ set(SOURCE_FILES thefitbody.cpp)
 # cmake-build-debug folder. 
 # may see:
 # https://www.jetbrains.com/help/clion/quick-cmake-tutorial.html#lib-targets
-
-target_include_directories(theFitBody PUBLIC "${PROJECT_BINARY_DIR}")
-# Adds that directory to the list of paths to search for include files. 
-# Project version step p-v-5-3-thefitbody.cpp.
 
 # Link Static Library
 # find_library(TEST_LIBRARY test_library lib)
