@@ -7,10 +7,10 @@ cmake_minimum_required(VERSION 2.8)
 # Specifies the minimum required version of CMake.
 
 # OR,
-# Adding Generator Expressions a-g-e-n-2-OVER------------------------
+# Adding Generator Expressions a-g-e-n-2--CMakeLists.txt.------------------------
 # cmake_minimum_required(VERSION 3.15)
 # Update the call to require that more recent version.
-# Adding Generator Expressions a-g-e-n-2-OVER------------------------
+# Adding Generator Expressions a-g-e-n-2--CMakeLists.txt.------------------------
 
 
 # project(theFitBody)     
