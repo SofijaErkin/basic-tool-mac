@@ -525,13 +525,13 @@ target_compile_options(theFitBody_compiler_flags INTERFACE
 #
 # Installing and testing Library i-t-l-3-2-CMakeLists.txt.
 
-# # Adding Export Configuration a-e-c-n-3-CMakeLists.txt
+# # Adding Export Configuration a-e-c-n-3-~/theFitBody/test/CMakeLists.txt
 # install(EXPORT testTargets
 #   FILE testTargets.cmake
 #  DESTINATION lib/cmake/test
 # )
 # # Needs to explicitly install the generated testTargets.cmake file.
-# # Adding Export Configuration a-e-c-n-3-CMakeLists.txt
+# # Adding Export Configuration a-e-c-n-3-~/theFitBody/test/CMakeLists.txt
 
 # Testing theFitBody t-t-f-b-n-1-OVER.-----------------------------------------
 # may see:
