@@ -1,3 +1,4 @@
+# 1.CMake Version
 # Version Update RoadMap may see:
 # GitHub Gist:
 # https://gist.github.com/SofijaErkin/0c3e104b76fc874eb40579bb2527ed4f
@@ -12,7 +13,7 @@ cmake_minimum_required(VERSION 2.8)
 # Update the call to require that more recent version.
 # Adding Generator Expressions a-g-e-n-2--CMakeLists.txt.------------------------
 
-
+# 2.Project Name And Version
 # project(theFitBody)     
 project(theFitBody VERSION 1.0)                 
 # Defines the project name and the version according to what we provied during
@@ -47,6 +48,7 @@ configure_file(thefitbodyConfig.h.in thefitbodyConfig.h)
 # Configure a header file to pass the version number to the source code.
 # Project version step p-v-5-2-CMakeLists.txt.
 
+# 3.CMake CXX Standard
 set(CMAKE_CXX_STANDARD 11)          
 # Sets the CMAKE_CXX_STANDARD variable to the value of 11, as we selected 
 # when creating the project.
@@ -70,10 +72,12 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 # The Generator Expression that is about to be used was introduced in 3.15. 
 # Adding Generator Expressions a-g-e-n-1-CMakeLists.txt------------------------
 
+# 4.Bring Includes
 # include_directories(inc)
 # include_directories(${CMAKE_CURRENT_LIST_DIR}/inc)
 # Adds the headers either to all the targets or to some specificones.
 
+# 5.Manually Sources
 set(SOURCE_FILES thefitbody.cpp)
 # Add thefitbody.cpp file of project root directory as source file.
 # Can manually add the source file using the set command as follows:
@@ -336,9 +340,9 @@ target_include_directories(theFitBody PUBLIC "${PROJECT_BINARY_DIR}")
 # # Selecting static or shared Librarires s-s-o-s-l-n-14-OVER.
 # # may see:
 # # https://cmake.org/cmake/help/latest/guide/tutorial/Selecting%20Static%20or%20Shared%20Libraries.html#mathfunctions-cmakelists-txt-position-independent-code
-set_target_properties(testLibrary PROPERTIES
-                        POSITION_INDEPENDENT_CODE ${BUILD_SHARED_LIBS}
-                        )
+# set_target_properties(testLibrary PROPERTIES
+#                        POSITION_INDEPENDENT_CODE ${BUILD_SHARED_LIBS}
+#                        )
 # # States that testLibrary need PIC when the default is shared libraries
 # # Selecting static or shared Librarires s-s-o-s-l-n-14-OVER.
 #
@@ -448,8 +452,15 @@ set_target_properties(testLibrary PROPERTIES
 # Place he add_subdirectory(test) command in the rootCMakeLists.txt.
 # 
 
+# 6.Add Executable
 add_executable(theFitBody ${SOURCE_FILES})
 # Adds theFitBody excutable target which will be build from "${SOURCE_FILES}".
+
+
+# 7.Compiler
+# 8.Debugr
+# 9.C++11 Support
+# 10.Target Linked Library
 
 # target_link_libraries(theFitBody PUBLIC test)
 # Link the dynamic library test
