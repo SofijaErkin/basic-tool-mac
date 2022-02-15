@@ -116,6 +116,14 @@ set(CMAKE_BUILD_TYPE "Debug")
 set(CMAKE_CXX_FLAGS_DEBUG "$ENV{CXXFLAGS} -O0 -Wall -g2 -ggdb")
 set(CAMKE_CXX_FLAGS_RELEASE "$ENV{CXXFLAGS} -O3 -Wall")
 # Open the message of debug
+# OR,
+# Packaging Debug and Release p-d-a-r-n-1-CMakeLists.txt.
+# may see:
+# https://cmake.org/cmake/help/latest/guide/tutorial/Packaging%20Debug%20and%20Release.html#step-12-packaging-debug-and-release
+set(CMAKE_DEBUG_POSTFIX d)
+add_library(theFitBody_compiler_flags INTERFACE)
+# Uses d as the postfix for the debug executable and libraries.
+# Packaging Debug and Release p-d-a-r-n-1-CMakeLists.txt.
 
 # 9.C++11 Support
 set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
@@ -591,7 +599,7 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
 # Optional
 # 
 # export(EXPORT test
-#  FILE "${CMAKE_CURRENT_BINARY_DIR}/testTargets.cmake"
+#  FILE "${CMAKE_CURRENT_BINARY_DIR}/testTargets.cmakDEBUGe"
 # )
 # If want project to also be used from a build directory we only have to add 
 # the following to the bottom of the top level CMakeLists.txt.
