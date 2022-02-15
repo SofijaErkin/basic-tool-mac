@@ -300,6 +300,13 @@ target_include_directories(theFitBody PUBLIC "${PROJECT_BINARY_DIR}")
 # # library MathFunctions.
 # # Adds a custom command and generate file a-c-c-g-f-n-3
 #
+# # Selecting static or shared Librarires s-s-o-s-l-n-11-~/test/CMakeLists.txt.
+# target_include_directories(testLibrary PRIVATE
+#                             ${CMAKE_CURRENT_BINARY_DIR}
+#                             )
+# # States that we depend on our binary dir to find Table.h
+# # Selecting static or shared Librarires s-s-o-s-l-n-11-~/test/CMakeLists.txt.
+#
 # add_library(test test.cpp)
 # # The test.cpp provides similar functionality to the compiler's dynamic func.
 # # Dynamic Library Link step d-4-1-CMakeLists.txt.
