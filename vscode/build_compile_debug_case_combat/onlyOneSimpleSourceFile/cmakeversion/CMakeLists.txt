@@ -578,6 +578,16 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
 # may see:
 # https://cmake.org/cmake/help/latest/guide/tutorial/Adding%20Export%20Configuration.html#cmakelists-txt-basic-version-file-cmake
 #
+#
+# install(FILES
+#   ${CMAKE_CURRENT_BINARY_DIR}/testConfig.cmake
+#   ${CMAKE_CURRENT_BINARY_DIR}/testConfigVersion.cmake
+#   DESTINATION lib/cmake/test
+#   )
+# Sets both generated files to be installed.
+# may see:
+# https://cmake.org/cmake/help/latest/guide/tutorial/Adding%20Export%20Configuration.html#cmakelists-txt-install-configured-files-cmake
+#
 # Adding Export Configuration a-e-c-n-6-CMakeLists.txt.
 
 # Testing theFitBody t-t-f-b-n-1-OVER.-----------------------------------------
