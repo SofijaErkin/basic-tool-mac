@@ -280,6 +280,14 @@ target_include_directories(theFitBody PUBLIC "${PROJECT_BINARY_DIR}")
 # # Selecting static or shared Librarires s-s-o-s-l-n-9-~/test/CMakeLists.txt.
 # # Adds a custom command and generate file a-c-c-g-f-n-2
 # 
+# # Selecting static or shared Librarires s-s-o-s-l-n-10-~/test/CMakeLists.txt.
+# add_library(testLibrary STATIC
+#              mytest.cxx
+#              ${CMAKE_CURRENT_BINARY_DIR}/Table.h
+#              )
+# # Library that just does mytest.
+# # Selecting static or shared Librarires s-s-o-s-l-n-10-~/test/CMakeLists.txt.
+#
 # # Adds a custom command and generate file a-c-c-g-f-n-3
 # # may see:
 # # https://cmake.org/cmake/help/latest/guide/tutorial/Adding%20a%20Custom%20Command%20and%20Generated%20File.html#mathfunctions-cmakelists-txt-add-library-table-h
@@ -287,7 +295,6 @@ target_include_directories(theFitBody PUBLIC "${PROJECT_BINARY_DIR}")
 #             mytest.cxx
 #            ${CMAKE_CURRENT_BINARY_DIR}/Table.h
 #            )
-# # Library that just does mytest.
 # # Lets CMake know that mytest.cxx depends on the generated file Table.h. 
 # # This is done by adding the generated Table.h to the list of sources for the
 # # library MathFunctions.
