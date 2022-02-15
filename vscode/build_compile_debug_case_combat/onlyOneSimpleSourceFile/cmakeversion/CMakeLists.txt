@@ -268,6 +268,7 @@ target_include_directories(theFitBody PUBLIC "${PROJECT_BINARY_DIR}")
 # # Adds a custom command and generate file a-c-c-g-f-n-1
 #
 # # Adds a custom command and generate file a-c-c-g-f-n-2
+# # Selecting static or shared Librarires s-s-o-s-l-n-9-~/test/CMakeLists.txt.
 # add_custom_command(
 #  OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/Table.h
 #  COMMAND MakeTable ${CMAKE_CURRENT_BINARY_DIR}/Table.h
@@ -275,6 +276,7 @@ target_include_directories(theFitBody PUBLIC "${PROJECT_BINARY_DIR}")
 #  )
 # # Adds a custom command that specifies how to produce Table.h by running 
 # # MakeTable.
+# # Selecting static or shared Librarires s-s-o-s-l-n-9-~/test/CMakeLists.txt.
 # # Adds a custom command and generate file a-c-c-g-f-n-2
 # 
 # # Adds a custom command and generate file a-c-c-g-f-n-3
