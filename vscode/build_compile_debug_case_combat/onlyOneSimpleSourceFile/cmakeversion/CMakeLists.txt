@@ -208,6 +208,22 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
 # set_property(TARGET test PROPERTY SOVERSION "1")
 # # Sets the VERSION and SOVERSION properties, in test/CMakeLists.txt.
 # # Adds version numbering to the test library. 
+#
+# mkdir debug release
+# Create debug and release subbdirectories. 
+# cd debug
+# cmake -DCMAKE_BUILD_TYPE=Debug ..
+# Notice: CMake Error at CMakeLists.txt:18 (project):
+# VERSION not allowed unless CMP0048 is set to NEW
+# cmake --build .
+# cd ../release
+# cmake -DCMAKE_BUILD_TYPE=Release ..
+# Notice: CMake Error at CMakeLists.txt:18 (project):
+# VERSION not allowed unless CMP0048 is set to NEW
+# cmake --build .
+# Setup debug and release builds, use CMAKE_BUILD_TYPE to set the 
+# configuration type.
+# 
 # # Packaging Debug and Release p-d-a-r-n-3-~/theFitBody/test/CMakeLists.txt.
 #
 # add_library(test test.cpp)
