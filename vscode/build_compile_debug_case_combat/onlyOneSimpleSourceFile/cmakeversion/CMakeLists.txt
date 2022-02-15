@@ -146,6 +146,8 @@ target_include_directories(theFitBody PUBLIC "${PROJECT_BINARY_DIR}")
 # # Selecting static or shared Librarires s-s-o-s-l-n-5-~/test/CMakeLists.txt.
 #
 # # Selecting static or shared Librarires s-s-o-s-l-n-6-~/test/CMakeLists.txt.
+# # may see:
+# #https://cmake.org/cmake/help/latest/guide/tutorial/Selecting%20Static%20or%20Shared%20Libraries.html#mathfunctions-cmakelists-txt-add-library-static
 # option(USE_MYMATH "Use theFitBody provided testLIB implementation" ON)
 # # # Should we use our own testLIB functions.
 # # Selecting static or shared Librarires s-s-o-s-l-n-6-~/test/CMakeLists.txt.
@@ -255,10 +257,7 @@ target_include_directories(theFitBody PUBLIC "${PROJECT_BINARY_DIR}")
 #
 # # Adds a custom command and generate file a-c-c-g-f-n-1
 # # Selecting static or shared Librarires s-s-o-s-l-n-7-~/test/CMakeLists.txt.
-# # may see:
-# #https://cmake.org/cmake/help/latest/guide/tutorial/Selecting%20Static%20or%20Shared%20Libraries.html#mathfunctions-cmakelists-txt-add-library-static
 # add_executable(MakeTable MakeTable.cxx)
-# # Selecting static or shared Librarires s-s-o-s-l-n-7-~/test/CMakeLists.txt.
 # # At the top of ~/test/CMakeLists.txt, the executable for MakeTable is added 
 # # as any other executable would be added.
 # # Adds a custom command and generate file a-c-c-g-f-n-1
