@@ -1,3 +1,4 @@
+# Notices: "may see" means "reference".
 # 1.CMake Version
 # Version Update RoadMap may see:
 # GitHub Gist:
@@ -21,6 +22,9 @@
 # Update the call to require that more recent version.
 # Adding Generator Expressions a-g-e-n-2--CMakeLists.txt.------------------------
 cmake_minimum_required(VERSION 2.8...3.22) 
+# may see:
+# https://github.com/hsf-training/hsf-training-cmake-webpage/blob/gh-pages/_includes/code/00-intro/CMakeLists.txt
+# This is required in all CMakeLists Selecting a nice minimum version and range
 # may see:
 # https://hsf-training.github.io/hsf-training-cmake-webpage/03-cmakelists/index.html
 # Specify a range of versions, this will cause the policies to be set to the 
@@ -50,6 +54,10 @@ project(theFitBody
   LANGUAGES
     CXX
 )
+# may see:
+# https://github.com/hsf-training/hsf-training-cmake-webpage/blob/gh-pages/_includes/code/00-intro/CMakeLists.txt
+# # We can call the project anything we want Listing the language(s) avoids the C
+# + CXX default.
 # may see:
 # https://hsf-training.github.io/hsf-training-cmake-webpage/03-cmakelists/index.html
 # Projects can have versions, descriptions, and languages.
@@ -140,6 +148,9 @@ target_include_directories(theFitBody PUBLIC "${PROJECT_BINARY_DIR}")
 
 # 6.Add Executable
 add_executable(theFitBody ${SOURCE_FILES})
+# We need an executable target.
+# may see:
+# https://github.com/hsf-training/hsf-training-cmake-webpage/blob/gh-pages/_includes/code/00-intro/CMakeLists.txt
 # Adds theFitBody excutable target which will be build from "${SOURCE_FILES}".
 # Packaging Debug and Release p-d-a-r-n-2-~/theFitBody/test/CMakeLists.txt.
 # set_target_properties(theFitBody PROPERTIES DEBUG_POSTFIX ${CMAKE_DEBUG_POSTFIX}) 
@@ -846,4 +857,6 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
 # https://www.jetbrains.com/help/clion/quick-cmake-tutorial.html
 # CMake Tutorial
 # https://cmake.org/cmake/help/latest/guide/tutorial/index.html#cmake-tutorial
-# 
+# More Modern CMake Your first CMakeLists.txt file
+# https://hsf-training.github.io/hsf-training-cmake-webpage/03-cmakelists/index.html
+# https://github.com/hsf-training/hsf-training-cmake-webpage/tree/gh-pages/_includes/code/00-intro
