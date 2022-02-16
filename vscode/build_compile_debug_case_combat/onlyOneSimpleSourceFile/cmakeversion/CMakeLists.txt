@@ -131,6 +131,11 @@ set(SOURCE_FILES thefitbody.cpp)
 # Add thefitbody.cpp file of project root directory as source file.
 # Can manually add the source file using the set command as follows:
 # (Add source files of project root directory as source file)
+# The set(SOURCES … ) function can be used to set a variable (e.g: SOURCES or
+# SOURCE_FILES) that contains the name values of all of the source files (.cpp
+# or .cc or .c) in the project. However, because each source file must be added
+# manually the next line is used in its place(file(GLOB)), and this line is 
+# commented out. 
 # 
 # aux_source_directory(${CMAKE_CURRENT_LIST_DIR}/src sources_path)
 # 
@@ -139,6 +144,10 @@ set(SOURCE_FILES thefitbody.cpp)
 #
 # file(GLOB SOURCES "src/*.cc")
 # However, the file(GLOB...) allows for wildcard additions.
+# The file() command is used to add the source files to the project. GLOB (or 
+# GLOB_RECURSE) is used to create a list of all of the files that meet the 
+# globbing expression (i.e., “src/*.cpp“ or "src/.cc" or "src/.c" or "common/
+# .cc") and add them to a variable SOURCES or SOURCE_FILES.
 
 # Optional Library step o-7-2-CMakeLists.txt.
 # if(USE_TEST)
