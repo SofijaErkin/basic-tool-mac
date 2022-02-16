@@ -833,6 +833,13 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
 # may see: https://www.jetbrains.com/help/clion/quick-cmake-tutorial.html#ctest
 
 # Separated Multiple directories CMakeLists.txt 
+# As your project grows, it is likely that you will organize it into 
+# sub-directories. Makefiles become more verbose when there are sub-directories
+# present —in fact, it is usual practice to place an individual Makefile in 
+# each sub-directory. These Makefiles are then individually invoked by the 
+# Makefile in the parent directory.
+# But,
+# CMake can be very useful in this situation. 
 # may see:
 # https://cmake.org/examples/
 # OR,
