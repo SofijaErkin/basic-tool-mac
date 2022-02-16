@@ -21,7 +21,11 @@
 # cmake_minimum_required(VERSION 3.15)
 # Update the call to require that more recent version.
 # Adding Generator Expressions a-g-e-n-2--CMakeLists.txt.------------------------
-cmake_minimum_required(VERSION 2.8...3.22) 
+cmake_minimum_required(VERSION 2.8.9...3.22) 
+# may see:
+# http://derekmolloy.ie/hello-world-introductions-to-cmake/
+# major version 2, minor version 8, and patch version 9. Providing a version
+# number allows for future support for your build environment. 
 # may see:
 # https://github.com/hsf-training/hsf-training-cmake-webpage/blob/gh-pages/_includes/code/00-intro/CMakeLists.txt
 # This is required in all CMakeLists Selecting a nice minimum version and range
@@ -148,6 +152,11 @@ target_include_directories(theFitBody PUBLIC "${PROJECT_BINARY_DIR}")
 
 # 6.Add Executable
 add_executable(theFitBody ${SOURCE_FILES})
+# may see:
+# http://derekmolloy.ie/hello-world-introductions-to-cmake/
+# The first argument to the add_executable() function is the name of the 
+# executable to be built, and the second argument is the source file from which
+# to build the executable.
 # We need an executable target.
 # may see:
 # https://github.com/hsf-training/hsf-training-cmake-webpage/blob/gh-pages/_includes/code/00-intro/CMakeLists.txt
@@ -823,8 +832,12 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
 # process.
 # may see: https://www.jetbrains.com/help/clion/quick-cmake-tutorial.html#ctest
 
-# Separated Multiple directories CMakeLists.txt may see:
+# Separated Multiple directories CMakeLists.txt 
+# may see:
 # https://cmake.org/examples/
+# OR,
+# may see:
+# http://derekmolloy.ie/hello-world-introductions-to-cmake/
 
 # Update the optional variable USE_TEST 
 # cmake ../Step2 -DUSE_TEST=OFF
@@ -860,3 +873,5 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
 # More Modern CMake Your first CMakeLists.txt file
 # https://hsf-training.github.io/hsf-training-cmake-webpage/03-cmakelists/index.html
 # https://github.com/hsf-training/hsf-training-cmake-webpage/tree/gh-pages/_includes/code/00-intro
+# Introduction to CMake by Example
+# http://derekmolloy.ie/hello-world-introductions-to-cmake/
