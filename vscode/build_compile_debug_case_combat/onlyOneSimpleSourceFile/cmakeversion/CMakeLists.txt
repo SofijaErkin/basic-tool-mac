@@ -4,7 +4,7 @@
 # https://gist.github.com/SofijaErkin/0c3e104b76fc874eb40579bb2527ed4f
 # Upper, lower, and mixed case commands are supported by CMake. 
 #may see: https://cmake.org/cmake/help/latest/guide/tutorial/A%20Basic%20Starting%20Point.html#step-1-a-basic-starting-point
-cmake_minimum_required(VERSION 2.8) 
+# cmake_minimum_required(VERSION 2.8) 
 # Specifies the minimum required version of CMake.
 # 
 # may see:
@@ -14,12 +14,20 @@ cmake_minimum_required(VERSION 2.8)
 # “dumbs itself down” to the version you request for any features that could 
 # produce a different build. This makes CMake almost perfectly backwards 
 # compatible.
-
+#
 # OR,
 # Adding Generator Expressions a-g-e-n-2--CMakeLists.txt.------------------------
 # cmake_minimum_required(VERSION 3.15)
 # Update the call to require that more recent version.
 # Adding Generator Expressions a-g-e-n-2--CMakeLists.txt.------------------------
+cmake_minimum_required(VERSION 2.8...3.22) 
+# may see:
+# https://hsf-training.github.io/hsf-training-cmake-webpage/03-cmakelists/index.html
+# Specify a range of versions, this will cause the policies to be set to the 
+# highest supported value in that range. As a general rule, set the highest 
+# version you’ve tested with here.
+# Note: "the highest version" means your the version of cmake on your laptop, 
+# as I see.
 
 # 2.Project Name And Version
 # project(theFitBody)     
