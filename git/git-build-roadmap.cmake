@@ -86,6 +86,20 @@ the update to the current directory and its subdirectories).
 
 `git commit -m "delete <file>"`
 
+If adding use "`git push`", that will delete both local and remote repository files.
+
+Note:
+
+`rm <file>`
+
+means delete the workspace file.
+
+Notices:
+
+`rm -r directory_name_/*`
+
+means: delete all the files under the directory_name_.
+
 ### To delete the local branch
 
 `git branch --delete <name>`
