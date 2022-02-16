@@ -31,7 +31,7 @@ cmake_minimum_required(VERSION 2.8...3.22)
 
 # 2.Project Name And Version
 # project(theFitBody)     
-project(theFitBody VERSION 1.0)                 
+# project(theFitBody VERSION 1.0)                 
 # Defines the project name and the version according to what we provied during
 # project creation.
 # Project version step p-v-5-1-CMakeLists.txt.
@@ -41,6 +41,19 @@ project(theFitBody VERSION 1.0)
 # You need to be working on a project, and it needs at least a name. CMake
 # assumes a CXX (that’s C++) and C mixed project if you don’t give any 
 # LANGUAGES.
+#
+project(theFitBody 
+  VERSION 
+    1.0
+  DESCRIPTION
+    "A project to test CMake build"
+  LANGUAGES
+    CXX
+)
+# may see:
+# https://hsf-training.github.io/hsf-training-cmake-webpage/03-cmakelists/index.html
+# Projects can have versions, descriptions, and languages.
+# Whitespace doesn’t matter. Be clear/pretty, or use cmake-format.
 
 # Selecting static or shared Librarires s-s-o-s-l-n-1-CMakeLists.txt.
 # may see:
