@@ -10,6 +10,24 @@
         // Use Makefile
         "c": "cd $dir && make && ./$fileNameWithoutExt && make clean",
         "cpp": "cd $dir && make && ./$fileNameWithoutExt && make clean"
+        // may see:
+        // 1.single source file compile command below
+        // "c/cpp": "cd $dir && cmake . && make && ./$fileNameWithoutExt && make clean"
+        // Using CMake — execute the cmake command and pass it the directory 
+        // that contains the source code and the CMakeLists.txt file — in this
+        // case “.” refers to the current directory:
+        // cmake .
+        // CMake identified the environment settings for the Linux device and
+        // created the Makefile for this project, which can be viewed. Do not 
+        // make edits to this Makefile, as any edits will be overwritten the 
+        // next time that the cmake utility is executed.
+        // Once the Makefile has been created, the make command can be used to
+        // build the project:
+        // make
+        // ./$fileNameWithoutExt
+        // It works! 
+        // Introduction to CMake by Example:
+        // http://derekmolloy.ie/hello-world-introductions-to-cmake/
     },
     "code-runner.saveFileBeforeRun": true,
     "code-runner.preserveFocus": false,
