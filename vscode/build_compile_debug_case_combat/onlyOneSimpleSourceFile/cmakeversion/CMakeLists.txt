@@ -129,6 +129,14 @@ set(SOURCE_FILES thefitbody.cpp)
 # Add thefitbody.cpp file of project root directory as source file.
 # Can manually add the source file using the set command as follows:
 # (Add source files of project root directory as source file)
+# 
+# aux_source_directory(${CMAKE_CURRENT_LIST_DIR}/src sources_path)
+# 
+# aux_source_directory(src SOURCES)
+# Add all the file in directory.
+#
+# file(GLOB SOURCES "src/*.cc")
+# However, the file(GLOB...) allows for wildcard additions.
 
 # Optional Library step o-7-2-CMakeLists.txt.
 # if(USE_TEST)
@@ -152,6 +160,11 @@ target_include_directories(theFitBody PUBLIC "${PROJECT_BINARY_DIR}")
 
 # 6.Add Executable
 add_executable(theFitBody ${SOURCE_FILES})
+#
+# add_exectable(Bank ${SOURCES})
+#
+# # add_executable(${PROJECT_NAME} ${source_path})
+#
 # may see:
 # http://derekmolloy.ie/hello-world-introductions-to-cmake/
 # The first argument to the add_executable() function is the name of the 
