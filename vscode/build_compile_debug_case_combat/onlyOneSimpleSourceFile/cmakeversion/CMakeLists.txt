@@ -123,6 +123,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 # include_directories(inc)
 # include_directories(${CMAKE_CURRENT_LIST_DIR}/inc)
 # Adds the headers either to all the targets or to some specificones.
+# The include_directories() function is used to bring the header files into the
+# build environment.
 
 # 5.Manually Sources
 set(SOURCE_FILES thefitbody.cpp)
