@@ -123,14 +123,20 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 # include_directories(inc)
 # include_directories(${CMAKE_CURRENT_LIST_DIR}/inc)
 # Adds the headers either to all the targets or to some specificones.
+#
 # The include_directories() function is used to bring the header files into the
 # build environment.
+# may see:
+# http://derekmolloy.ie/hello-world-introductions-to-cmake/
 
 # 5.Manually Sources
 set(SOURCE_FILES thefitbody.cpp)
 # Add thefitbody.cpp file of project root directory as source file.
 # Can manually add the source file using the set command as follows:
 # (Add source files of project root directory as source file)
+# 
+# may see:
+# http://derekmolloy.ie/hello-world-introductions-to-cmake/
 # The set(SOURCES … ) function can be used to set a variable (e.g: SOURCES or
 # SOURCE_FILES) that contains the name values of all of the source files (.cpp
 # or .cc or .c) in the project. However, because each source file must be added
@@ -144,6 +150,9 @@ set(SOURCE_FILES thefitbody.cpp)
 #
 # file(GLOB SOURCES "src/*.cc")
 # However, the file(GLOB...) allows for wildcard additions.
+#
+# may see:
+# http://derekmolloy.ie/hello-world-introductions-to-cmake/
 # The file() command is used to add the source files to the project. GLOB (or 
 # GLOB_RECURSE) is used to create a list of all of the files that meet the 
 # globbing expression (i.e., “src/*.cpp“ or "src/.cc" or "src/.c" or "common/
