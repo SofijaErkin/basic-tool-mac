@@ -187,6 +187,9 @@ add_executable(theFitBody ${SOURCE_FILES})
 #
 # may see:
 # http://derekmolloy.ie/hello-world-introductions-to-cmake/
+# The add_executable() function uses the SOURCES or SOURCE_FILES variable, 
+# rather than an explicit reference to each source file, in order to build the
+# theFitBody executable program.
 # The first argument to the add_executable() function is the name of the 
 # executable to be built, and the second argument is the source file from which
 # to build the executable.
