@@ -6,6 +6,14 @@
 #may see: https://cmake.org/cmake/help/latest/guide/tutorial/A%20Basic%20Starting%20Point.html#step-1-a-basic-starting-point
 cmake_minimum_required(VERSION 2.8) 
 # Specifies the minimum required version of CMake.
+# 
+# may see:
+# https://hsf-training.github.io/hsf-training-cmake-webpage/03-cmakelists/index.html
+# The cmake_minimum_required command sets the policies so that the build is 
+# exactly like it would be on the listed version of CMake, in other words, CMake
+# “dumbs itself down” to the version you request for any features that could 
+# produce a different build. This makes CMake almost perfectly backwards 
+# compatible.
 
 # OR,
 # Adding Generator Expressions a-g-e-n-2--CMakeLists.txt.------------------------
@@ -19,6 +27,12 @@ project(theFitBody VERSION 1.0)
 # Defines the project name and the version according to what we provied during
 # project creation.
 # Project version step p-v-5-1-CMakeLists.txt.
+# 
+# may see:
+# https://hsf-training.github.io/hsf-training-cmake-webpage/03-cmakelists/index.html
+# You need to be working on a project, and it needs at least a name. CMake
+# assumes a CXX (that’s C++) and C mixed project if you don’t give any 
+# LANGUAGES.
 
 # Selecting static or shared Librarires s-s-o-s-l-n-1-CMakeLists.txt.
 # may see:
@@ -109,6 +123,13 @@ add_executable(theFitBody ${SOURCE_FILES})
 # Packaging Debug and Release p-d-a-r-n-2-~/theFitBody/test/CMakeLists.txt.
 # set_target_properties(theFitBody PROPERTIES DEBUG_POSTFIX ${CMAKE_DEBUG_POSTFIX}) 
 # Packaging Debug and Release p-d-a-r-n-2-~/theFitBody/test/CMakeLists.txt.
+# 
+# may see:
+# https://hsf-training.github.io/hsf-training-cmake-webpage/03-cmakelists/index.html
+# You need at least one library or executable to do anything interesting. 
+# The “thing” you make here is called a “target”, and the executable/library has
+# the same name, by default, and it has to be unique in the project. You use 
+# add_executable for programs, and add_library for libraries.
 
 # 7.Compiler
 set(CMAKE_CXX_COMPILER "g++")
