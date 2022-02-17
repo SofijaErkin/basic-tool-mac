@@ -272,7 +272,7 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
 # cmake-build-debug folder. 
 # may see:
 # https://www.jetbrains.com/help/clion/quick-cmake-tutorial.html#lib-targets
-Build a static library ------------------------------------------------------
+# Build a static library ------------------------------------------------------
 
 # Link Static Library
 # find_library(TEST_LIBRARY test_library lib)
