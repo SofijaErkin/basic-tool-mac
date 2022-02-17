@@ -250,7 +250,21 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
 # Adding Generator Expressions a-g-e-n-3--CMakeLists.txt.------------------------
 
 # 10.Target Linked Library
-
+# main source function file, No inlcude, as it is not relevant to a library 
+# build.
+#
+# Build s shared library ---------------------------
+# add_library(testStudent SHARED ${SOURCES})
+# Generate the shared library from the sources.
+#
+# install(TARGETS testStudent DESTINATION /usr/lib)
+# Set the location for library installation -- i.e., /usr/lib in this case
+# not really necessary in this example. Use "sudo make install" to apply.
+# may see:
+# http://derekmolloy.ie/hello-world-introductions-to-cmake/
+# Build s shared library ---------------------------
+# 
+# Build a static library ------------------------------------------------------
 # add_library(test_library STATIC cal.cpp)
 # Adds library target. e.g: create a static library "test_library: from cal.cpp 
 # source file.
@@ -258,6 +272,7 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
 # cmake-build-debug folder. 
 # may see:
 # https://www.jetbrains.com/help/clion/quick-cmake-tutorial.html#lib-targets
+Build a static library ------------------------------------------------------
 
 # Link Static Library
 # find_library(TEST_LIBRARY test_library lib)
