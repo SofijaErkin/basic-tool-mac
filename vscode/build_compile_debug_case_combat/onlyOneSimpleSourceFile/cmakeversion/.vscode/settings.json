@@ -56,6 +56,10 @@
         // 
         // Directory build for target, CMakeCache.txt, CMakeFiles, Makefile,
         // cmake_install.cmake.
+        // For this Architecture from 2 ~ 12, I wish to place all of the build 
+        // files in the build directory, which is achieved very simply by 
+        // calling the cmake program from within the build directory, as 
+        // follows.
         // "c/cpp": "cd $dir/./build && cmake .. && make && ./$fileNameWithoutExt && make clean"
         // OR,
         // "c/cpp": "cd $dir/./build && cmake .. && make && ./$fileNameWithoutExt && cd .. && rm -r build/*"
