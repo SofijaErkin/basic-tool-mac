@@ -271,15 +271,37 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
 #
 #
 # set(CMAKE_BUILD_TYPE Release)
-#
+# The set(CMAKE_BUILD_TYPE Release) function is used to set the build type to 
+# be a release build.
 # include_directories(include)
 #
 # add_library(testStudent SHARED ${SOURCES})
 # Generate the shared library from the sources.
+# The library is built as a shared library using the SHARED flag (other options
+# are: STATIC or MODULE) , and the testStudent name is used as the name of the 
+# shared library.
 #
 # install(TARGETS testStudent DESTINATION /usr/lib)
 # Set the location for library installation -- i.e., /usr/lib in this case
 # not really necessary in this example. Use "sudo make install" to apply.
+# The install() function to define an installation location for the library 
+# (in this case it is /usr/lib). Deployment is invoked using a call to 
+# sudo make install in this case.
+# The library is built in the build directory, which results in the output.
+# Use the ldd command to display the shared library dependencies.
+# The CMakeLists.txt file(for shared library) also includes a deployment step, 
+# which allows you to install the library in a suitable accessible location. 
+# Shared library locations can be added to the path, or if you wish to make 
+# them available system wide you can add them to the /usr/lib directory. 
+# For example, the libtestStudent.so library can be installed system wide 
+# using: 
+# sudo make install
+# ls -l /usr/lib|grep libtest*
+# This step has to be performed with root access in order to write to the 
+# /usr/lib directory. 
+# You will also find a file in the build directory, called install_manifest.txt 
+# that describes the locations at which the make install command applied 
+# changes.
 # may see:
 # http://derekmolloy.ie/hello-world-introductions-to-cmake/
 # Build s shared library ---------------------------
