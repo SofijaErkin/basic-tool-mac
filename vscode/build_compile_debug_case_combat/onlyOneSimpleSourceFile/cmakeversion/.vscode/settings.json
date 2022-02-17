@@ -198,6 +198,109 @@
         // 
         //
         // 
+        // 10. multiple separated main source file build directory include link library 
+        // test input compile command below.
+        // The Architecture of workspace HelloWorld are:
+        // HelloWorld
+        // |
+        // |_.vscode
+        // |     |__c_cpp_properties.json
+        // |     |__launch.json
+        // |     |__settings.json
+        // |     |__tasks.json
+        // |__CMakeLists.txt
+        // |__build
+        // |__patch_taylor
+        // |   |__CMakeLists.txt
+        // |   |__helloworld_taylor.h
+        // |   |__helloworld_taylor.cpp
+        // |__patch_david
+        // |   |__CMakeLists.txt
+        // |   |__helloworld_david.h
+        // |   |__helloworld_david.cpp
+        // |__library_link
+        // |   |__library_link_.css
+        // |__main.cpp
+        // |__test_input
+        //     |__test_input_.txt
+        //
+        // Directory patch_taylor: for the taylor to patch;
+        // Directory patch_david: for the taylor to patch.
+        //
+        //
+        //
+        // 11. multiple directroy separated main source file build directory include link library 
+        // test input compile command below.
+        // The Architecture of workspace HelloWorld are:
+        // HelloWorld
+        // |
+        // |_.vscode
+        // |   |__c_cpp_properties.json
+        // |   |__launch.json
+        // |   |__settings.json
+        // |   |__tasks.json
+        // |__CMakeLists.txt
+        // |__build
+        // |__patch_taylor
+        // |   |__CMakeLists.txt
+        // |   |__inc_taylor
+        // |   |  |__helloworld_taylor.h
+        // |   |__src_taylor
+        // |      |__helloworld_taylor.cpp
+        // |__patch_david
+        // |   |__CMakeLists.txt
+        // |   |__inc_david
+        // |   |  |__helloworld_david.h
+        // |   |__src_david
+        // |      |__helloworld_david.cpp
+        // |__library_link
+        // |   |__library_link_.css
+        // |__main.cpp
+        // |__test_input
+        //     |__test_input_.txt
+        //
+        // Directory patch_taylor: for the taylor to patch dircetoy;
+        // Directory patch_david: for the taylor to patch dircetoy.
+        //
+        //
+        //
+        // 12. multiple directroy separated main source file build directory include link library 
+        // test input compile command below.
+        // The Architecture of workspace HelloWorld are:
+        // HelloWorld
+        // |
+        // |_.vscode
+        // |   |__c_cpp_properties.json
+        // |   |__launch.json
+        // |   |__settings.json
+        // |   |__tasks.json
+        // |__CMakeLists.txt
+        // |__build
+        // |__patch_taylor
+        // |   |__CMakeLists.txt
+        // |   |__inc_taylor
+        // |   |  |__helloworld_taylor.h
+        // |   |__library_link
+        // |   |  |__library_link_taylor_.css
+        // |   |__src_taylor
+        // |      |__helloworld_taylor.cpp
+        // |__patch_david
+        // |   |__CMakeLists.txt
+        // |   |__inc_david
+        // |   |  |__helloworld_david.h
+        // |   |__library_link
+        // |   |  |__library_link_david_.css
+        // |   |__src_david
+        // |      |__helloworld_david.cpp
+        // |__main.cpp
+        // |__test_input
+        //     |__test_input_.txt
+        //
+        // Directory patch_taylor: for the taylor to patch all dircetoy;
+        // Directory patch_david: for the taylor to patch all dircetoy.
+        //
+        //
+        //
     },
     "code-runner.saveFileBeforeRun": true,
     "code-runner.preserveFocus": false,
