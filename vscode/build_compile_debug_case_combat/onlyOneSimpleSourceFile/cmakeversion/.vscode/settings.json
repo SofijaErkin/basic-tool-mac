@@ -41,6 +41,24 @@
         // Introduction to CMake by Example:
         // http://derekmolloy.ie/hello-world-introductions-to-cmake/
         //
+        // 2.single source file build directory compile command below.
+        // The Architecture of workspace HelloWorld are:
+        // HelloWorld
+        // |
+        // |_.vscode
+        // |     |__c_cpp_properties.json
+        // |     |__launch.json
+        // |     |__settings.json
+        // |     |__tasks.json
+        // |__CMakeLists.txt
+        // |__build
+        // |__helloworld.cpp
+        // 
+        // Directory build for target, CMakeCache.txt, CMakeFiles, Makefile,
+        // cmake_install.cmake.
+        //
+        // 
+        //
     },
     "code-runner.saveFileBeforeRun": true,
     "code-runner.preserveFocus": false,
