@@ -1048,3 +1048,9 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
 # https://github.com/hsf-training/hsf-training-cmake-webpage/tree/gh-pages/_includes/code/00-intro
 # Introduction to CMake by Example
 # http://derekmolloy.ie/hello-world-introductions-to-cmake/
+#
+# The best, and most up-to-date documentation on CMake:
+# https://cmake.org/
+# The CMake Documentation Index provides a very useful list of available commands:
+# The document is available at:CMake 3.23 Documentation Index
+# https://cmake.org/cmake/help/v3.23/genindex.html
