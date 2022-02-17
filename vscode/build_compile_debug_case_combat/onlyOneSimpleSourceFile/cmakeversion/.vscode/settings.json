@@ -59,6 +59,68 @@
         //
         // 
         //
+        // 4.source file build directory include compile command below.
+        // The Architecture of workspace HelloWorld are:
+        // HelloWorld
+        // |
+        // |_.vscode
+        // |     |__c_cpp_properties.json
+        // |     |__launch.json
+        // |     |__settings.json
+        // |     |__tasks.json
+        // |__CMakeLists.txt
+        // |__build
+        // |__inc
+        // |   |__helloworld.h
+        // |__src
+        //     |__helloworld.cpp
+        //
+        // Directory src for source files.
+        //
+        //
+        // 
+        // 5. main source file build directory include compile command below.
+        // The Architecture of workspace HelloWorld are:
+        // HelloWorld
+        // |
+        // |_.vscode
+        // |     |__c_cpp_properties.json
+        // |     |__launch.json
+        // |     |__settings.json
+        // |     |__tasks.json
+        // |__CMakeLists.txt
+        // |__build
+        // |__inc
+        // |   |__helloworld.h
+        // |__main.cpp
+        // |__src
+        //     |__helloworld.cpp
+        //
+        // main.cpp  for main function in top directory of the Project.
+        // 
+        //
+        // 
+        // 6. main source file build directory include compile command below.
+        // The Architecture of workspace HelloWorld are:
+        // HelloWorld
+        // |
+        // |_.vscode
+        // |     |__c_cpp_properties.json
+        // |     |__launch.json
+        // |     |__settings.json
+        // |     |__tasks.json
+        // |__CMakeLists.txt
+        // |__build
+        // |__inc
+        // |   |__helloworld.h 
+        // |__src
+        //     |__helloworld.cpp
+        //     |__main.cpp
+        //
+        // main.cpp  for main function under the src directory.
+        //
+        //
+        //
     },
     "code-runner.saveFileBeforeRun": true,
     "code-runner.preserveFocus": false,
