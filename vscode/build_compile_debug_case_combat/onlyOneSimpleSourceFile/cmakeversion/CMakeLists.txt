@@ -253,7 +253,7 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
 # main source function file, No inlcude, as it is not relevant to a library 
 # build.
 #
-# Build s shared library ---------------------------
+# Build s shared library (.so)---------------------------
 # BIG Notice:
 # HelloWorld
 #         |
@@ -304,7 +304,7 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
 # changes.
 # may see:
 # http://derekmolloy.ie/hello-world-introductions-to-cmake/
-# Build s shared library ---------------------------
+# Build s shared library (.so)---------------------------
 # 
 # Build a static library ------------------------------------------------------
 # add_library(test_library STATIC cal.cpp)
