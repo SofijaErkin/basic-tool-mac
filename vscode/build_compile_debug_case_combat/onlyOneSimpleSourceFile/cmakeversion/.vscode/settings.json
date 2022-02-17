@@ -121,6 +121,83 @@
         //
         //
         //
+        // 7. separated main source file build directory include compile 
+        // command below.
+        // The Architecture of workspace HelloWorld are:
+        // HelloWorld
+        // |
+        // |_.vscode
+        // |     |__c_cpp_properties.json
+        // |     |__launch.json
+        // |     |__settings.json
+        // |     |__tasks.json
+        // |__CMakeLists.txt
+        // |__build
+        // |__inc
+        // |   |__helloworld.h
+        // |__common
+        //     |__main.cpp
+        // |__src
+        //     |__helloworld.cpp
+        //
+        // main.cpp  for main function under the common directory.
+        //
+        //
+        //
+        // 8. separated main source file build directory include link library 
+        // compile command below.
+        // The Architecture of workspace HelloWorld are:
+        // HelloWorld
+        // |
+        // |_.vscode
+        // |     |__c_cpp_properties.json
+        // |     |__launch.json
+        // |     |__settings.json
+        // |     |__tasks.json
+        // |__CMakeLists.txt
+        // |__build
+        // |__inc
+        // |   |__helloworld.h
+        // |__library_link
+        //     |__library_link_.css
+        // |__common
+        //     |__main.cpp
+        // |__src
+        //     |__helloworld.cpp
+        //
+        // Directory  library_link: for the project to link library (e.g:
+        // library_link_.css).
+        //
+        //
+        //
+        // 9. separated main source file build directory include link library 
+        // test input compile command below.
+        // The Architecture of workspace HelloWorld are:
+        // HelloWorld
+        // |
+        // |_.vscode
+        // |     |__c_cpp_properties.json
+        // |     |__launch.json
+        // |     |__settings.json
+        // |     |__tasks.json
+        // |__CMakeLists.txt
+        // |__build
+        // |__inc
+        // |   |__helloworld.h
+        // |__library_link
+        //     |__library_link_.css
+        // |__common
+        //     |__main.cpp
+        // |__src
+        //     |__helloworld.cpp
+        // |__test_input
+        //     |__test_input_.txt
+        //
+        // Directory test_input: for the project to input file (e.g:
+        // test_input_.txt or test_input_.md or others.
+        // 
+        //
+        // 
     },
     "code-runner.saveFileBeforeRun": true,
     "code-runner.preserveFocus": false,
