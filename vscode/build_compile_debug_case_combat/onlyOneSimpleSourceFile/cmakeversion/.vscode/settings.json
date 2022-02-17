@@ -59,6 +59,26 @@
         //
         // 
         //
+        // 3.single source file build directory include compile command below.
+        // The Architecture of workspace HelloWorld are:
+        // HelloWorld
+        // |
+        // |_.vscode
+        // |     |__c_cpp_properties.json
+        // |     |__launch.json
+        // |     |__settings.json
+        // |     |__tasks.json
+        // |__CMakeLists.txt
+        // |__build
+        // |__inc
+        //    |__helloworld.h
+        // |__helloworld.cpp
+        //
+        // 
+        // Directory inc for include files.
+        //
+        //
+        //
         // 4.source file build directory include compile command below.
         // The Architecture of workspace HelloWorld are:
         // HelloWorld
