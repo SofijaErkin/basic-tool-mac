@@ -56,8 +56,9 @@
         // 
         // Directory build for target, CMakeCache.txt, CMakeFiles, Makefile,
         // cmake_install.cmake.
-        //
-        // 
+        // "c/cpp": "cd $dir/./build && cmake . && make && ./$fileNameWithoutExt && make clean"
+        // OR,
+        // "c/cpp": "cd $dir/./build && cmake . && make && ./$fileNameWithoutExt && cd .. && rm -r build/*"
         //
         // 3.single source file build directory include compile command below.
         // The Architecture of workspace HelloWorld are:
