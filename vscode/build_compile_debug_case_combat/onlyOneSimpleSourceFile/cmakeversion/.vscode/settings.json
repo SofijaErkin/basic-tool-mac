@@ -56,9 +56,9 @@
         // 
         // Directory build for target, CMakeCache.txt, CMakeFiles, Makefile,
         // cmake_install.cmake.
-        // "c/cpp": "cd $dir/./build && cmake . && make && ./$fileNameWithoutExt && make clean"
+        // "c/cpp": "cd $dir/./build && cmake .. && make && ./$fileNameWithoutExt && make clean"
         // OR,
-        // "c/cpp": "cd $dir/./build && cmake . && make && ./$fileNameWithoutExt && cd .. && rm -r build/*"
+        // "c/cpp": "cd $dir/./build && cmake .. && make && ./$fileNameWithoutExt && cd .. && rm -r build/*"
         //
         // 3.single source file build directory include compile command below.
         // The Architecture of workspace HelloWorld are:
@@ -74,11 +74,9 @@
         // |__inc
         //    |__helloworld.h
         // |__helloworld.cpp
-        //
         // 
         // Directory inc for include files.
-        //
-        //
+        // cd $dir/./build && cmake .. && make && ./$fileNameWithoutExt && cd .. && rm -r build/*
         //
         // 4.source file build directory include compile command below.
         // The Architecture of workspace HelloWorld are:
@@ -97,9 +95,8 @@
         //     |__helloworld.cpp
         //
         // Directory src for source files.
+        // cd $dir/../build && cmake .. && make && ./$fileNameWithoutExt && cd .. && rm -r build/*
         //
-        //
-        // 
         // 5. main source file build directory include compile command below.
         // The Architecture of workspace HelloWorld are:
         // HelloWorld
@@ -118,8 +115,7 @@
         //     |__helloworld.cpp
         //
         // main.cpp  for main function in top directory of the Project.
-        // 
-        //
+        // cd $dir/./build && cmake .. && make && ./$fileNameWithoutExt && cd .. && rm -r build/*
         // 
         // 6. main source file build directory include compile command below.
         // The Architecture of workspace HelloWorld are:
@@ -139,8 +135,7 @@
         //     |__main.cpp
         //
         // main.cpp  for main function under the src directory.
-        //
-        //
+        // cd $dir/../build && cmake .. && make && ./$fileNameWithoutExt && cd .. && rm -r build/*
         //
         // 7. separated main source file build directory include compile 
         // command below.
@@ -162,8 +157,7 @@
         //     |__helloworld.cpp
         //
         // main.cpp  for main function under the common directory.
-        //
-        //
+        // cd $dir/../build && cmake .. && make && ./$fileNameWithoutExt && cd .. && rm -r build/*
         //
         // 8. separated main source file build directory include link library 
         // compile command below.
@@ -188,8 +182,7 @@
         //
         // Directory  library_link: for the project to link library (e.g:
         // library_link_.css).
-        //
-        //
+        // cd $dir/../build && cmake .. && make && ./$fileNameWithoutExt && cd .. && rm -r build/*
         //
         // 9. separated main source file build directory include link library 
         // test input compile command below.
@@ -216,8 +209,7 @@
         //
         // Directory test_input: for the project to input file (e.g:
         // test_input_.txt or test_input_.md or others.
-        // 
-        //
+        // cd $dir/../build && cmake .. && make && ./$fileNameWithoutExt && cd .. && rm -r build/*
         // 
         // 10. multiple separated main source file build directory include link library 
         // test input compile command below.
