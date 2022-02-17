@@ -56,10 +56,28 @@
         // 
         // Directory build for target, CMakeCache.txt, CMakeFiles, Makefile,
         // cmake_install.cmake.
+        //
         // For this Architecture from 2 ~ 12, I wish to place all of the build 
         // files in the build directory, which is achieved very simply by 
         // calling the cmake program from within the build directory, as 
         // follows.
+        // The build directory then contains the Makefile for the project, 
+        // which correctly refers to the files in the src and include 
+        // directories. The project can then be built from the build directory 
+        // using the make command.
+        // One nice feature of this approach is that all of the files related 
+        // to the build process are within the build directory as illustrated 
+        // by the tree utility output.
+        // To clean this project you can simply recursively delete all files/
+        // directories within the build directory. which is the same file 
+        // system structure as was present before the cmake program was
+        // executed.
+        // Important: If you add new source files to your project it is very 
+        // important that you call the cmake program again, otherwise the 
+        // Makefiles will not be updated to account for any additions.
+        // may see:
+        // http://derekmolloy.ie/hello-world-introductions-to-cmake/
+        // 
         // "c/cpp": "cd $dir/./build && cmake .. && make && ./$fileNameWithoutExt && make clean"
         // OR,
         // "c/cpp": "cd $dir/./build && cmake .. && make && ./$fileNameWithoutExt && cd .. && rm -r build/*"
