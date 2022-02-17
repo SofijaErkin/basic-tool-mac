@@ -254,6 +254,26 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
 # build.
 #
 # Build s shared library ---------------------------
+# BIG Notice:
+# HelloWorld
+#         |
+#         |_.vscode
+#         |     |__c_cpp_properties.json
+#         |     |__launch.json
+#         |     |__settings.json
+#         |     |__tasks.json
+#         |__CMakeLists.txt
+#         |__build
+#         |__inc
+#         |   |__helloworld.h
+#         |__src
+#             |__helloworld.cpp
+#
+#
+# set(CMAKE_BUILD_TYPE Release)
+#
+# include_directories(include)
+#
 # add_library(testStudent SHARED ${SOURCES})
 # Generate the shared library from the sources.
 #
