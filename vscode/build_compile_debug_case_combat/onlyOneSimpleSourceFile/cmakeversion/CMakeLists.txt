@@ -273,7 +273,7 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
 # set(CMAKE_BUILD_TYPE Release)
 # The set(CMAKE_BUILD_TYPE Release) function is used to set the build type to 
 # be a release build.
-# include_directories(include)
+# include_directories(inc)
 #
 # add_library(testStudent SHARED ${SOURCES})
 # Generate the shared library from the sources.
@@ -306,27 +306,100 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
 # http://derekmolloy.ie/hello-world-introductions-to-cmake/
 # Build s shared library (.so)---------------------------
 # 
-# Build a static library ------------------------------------------------------
+# Build a static library (.a)------------------------------------------------------
+# may see;
+# http://derekmolloy.ie/hello-world-introductions-to-cmake/
+# A statically-linked library is created at compile time to contain all of the 
+# code relating the library — essentially it makes copies of any dependency 
+# code,including that in other libraries. 
+# This results in a library that is typically larger in size than the 
+# equivalent shared library, but because all of the dependencies are determined
+# at compile time, there are fewer run-time loading costs and the library may 
+# be more platform independent. 
+# Unless you are certain that you require a static library,  you should use a 
+# shared library as there will be fewer code duplications and the shared library
+# can be updated (e.g., for error correction) without recompilation.
+#
+# To build a static library using CMake, the steps are almost exactly the same 
+# as for building a shared library.
+#
+# set(CMAKE_BUILD_TYPE Release)
+#
+# include_directories(inc)
+# Bring the headers, such as Student.h into the project.
+#
+# file(GLOB SOURCES "src/*.cpp")
+# However, the file(GLOB...) allows for wildcard additions.
+# 
+# add_library(testStudent STATIC ${SOURCES})
+# OR,
 # add_library(test_library STATIC cal.cpp)
+# Generate the static library from the sources.
 # Adds library target. e.g: create a static library "test_library: from cal.cpp 
 # source file.
 # Library target "test_library" build from libtest_library.a file under the 
 # cmake-build-debug folder. 
+# 
+# install(TARGETS testStudent DESTINATION /usr/lib)
+# Set the location for library installation -- i.e., /usr/lib in this case.
+# not really necessary in this example. Use "sudo make install" to apply
+# Use the same steps as before to build the static library, and you will see
+# the output as follows:
+# cd build/
+# cmake ..
+# make
+# ls -l lib*
+# You can determine the constituents of a static library using the GNU ar 
+# (archive) command — for example:
+# ar -t libtestStudent.a
+# You can also use the GNU nm command to list the symbols in object files and
+# binaries. In this case, the command lists the symbols in the student library
+# and their types (e.g., T is code, U is undefined, R is read-only data). 
+# This information can be very useful for debugging any problems that may occur
+# with static libraries.
+# ~/studentlib_static/build$ nm -C libtestStudent.a 
 # may see:
 # https://www.jetbrains.com/help/clion/quick-cmake-tutorial.html#lib-targets
-# Build a static library ------------------------------------------------------
+# Build a static library (.a)------------------------------------------------------
 
-# Link Static Library
+# Link Shared or Static Library
+# CMake can be used to generate the Makefiles in your project in order to 
+# simplify this process.
+# This step provides the source code for a CMakeLists.txt file that can be 
+# used to build a program that links to a library (either shared or static).
+#
+# For the shared library:
+# set ( PROJECT_LINK_LIBS libtestStudent.so )
+# link_directories( ~/exploringBB/extras/cmake/studentlib_shared/build )
+# For the static library:
+# set ( PROJECT_LINK_LIBS libtestStudent.a )
+# link_directories( ~/exploringBB/extras/cmake/studentlib_static/build )
+# 
+# include_directories(~/exploringBB/extras/cmake/studentlib_shared/include)
+# 
+# add_executable(libtest libtest.cpp)
+# target_link_libraries(libtest ${PROJECT_LINK_LIBS} )
+# The project can be built and executed using the following steps:
+# tree
+# cd build
+# cmake ..
+# make
+# ls -l libtest
+# ./libtest
+# 
+# OR,
+#
 # find_library(TEST_LIBRARY test_library lib)
 # Provides the full path, or Create a lib directory under the project root 
 # and copy libtest_library.a from its default location (cmake-build-debug) to 
 # this folder.
 # target_link_libraries(theFitBody LINK_PUBLIC ${TEST_LIBRARY})
 # Pass directly via ${TEST_LIBRARY} variable.
-# 
 # target_link_libraries(theFitBody PUBLIC ${EXTRA_LIBS})
 # Optional Library step o-7-3-CMakeLists.txt.
 # Make sure o place target_link_libraries after the add_execuable command.
+#
+# 
 
 # Link Dynamic Library
 # To avoid the root CMakeLists.txt too difficult to maintian as our project 
