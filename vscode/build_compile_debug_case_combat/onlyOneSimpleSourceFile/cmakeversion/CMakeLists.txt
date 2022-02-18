@@ -1056,4 +1056,6 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
 # https://cmake.org/cmake/help/v3.23/genindex.html
 # CMake commands:
 # https://cmake.org/cmake/help/latest/manual/cmake-commands.7.html
-#
+# KDE has its own CMake style guideline
+# https://community.kde.org/Policies/CMake_Coding_Style
+# 
