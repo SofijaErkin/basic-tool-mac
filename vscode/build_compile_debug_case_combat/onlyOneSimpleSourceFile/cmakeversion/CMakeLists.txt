@@ -1060,4 +1060,9 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
 # https://community.kde.org/Policies/CMake_Coding_Style
 # A detailed list of environment variables
 # https://cmake.org/cmake/help/latest/manual/cmake-env-variables.7.html
+# CMake Generator Expressions
+# https://cmake.org/cmake/help/v3.23/manual/cmake-generator-expressions.7.html
+# CMake Variables
+# https://cmake.org/cmake/help/v3.23/manual/cmake-language.7.html#variables
+# https://cmake.org/cmake/help/v3.23/manual/cmake-variables.7.html#manual:cmake-variables(7)
 # 
