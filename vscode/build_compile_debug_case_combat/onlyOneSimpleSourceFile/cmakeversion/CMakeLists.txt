@@ -1074,3 +1074,6 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
 # Following script can be used to block in-source building.
 # Source of script OpenCV Project:
 # https://github.com/opencv/opencv/blob/master/CMakeLists.txt
+# 
+# Cross Compiling for Linux
+# https://cmake.org/cmake/help/v3.23/manual/cmake-toolchains.7.html#cross-compiling-for-linux
