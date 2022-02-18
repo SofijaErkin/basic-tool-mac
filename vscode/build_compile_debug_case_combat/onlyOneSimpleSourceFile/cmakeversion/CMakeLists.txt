@@ -1065,4 +1065,8 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
 # CMake Variables
 # https://cmake.org/cmake/help/v3.23/manual/cmake-language.7.html#variables
 # https://cmake.org/cmake/help/v3.23/manual/cmake-variables.7.html#manual:cmake-variables(7)
-# 
+# Following variables can be used to check for system related information
+# https://gitlab.kitware.com/cmake/community/-/wikis/doc/tutorials/How-To-Write-Platform-Checks
+# Following script can be used to block in-source building.
+# Source of script OpenCV Project:
+# https://github.com/opencv/opencv/blob/master/CMakeLists.txt
