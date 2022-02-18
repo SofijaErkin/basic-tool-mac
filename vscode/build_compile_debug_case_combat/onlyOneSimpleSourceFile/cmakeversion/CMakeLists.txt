@@ -253,7 +253,7 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
 # main source function file, No inlcude, as it is not relevant to a library 
 # build.
 #
-# Build s shared library (.so)---------------------------
+# Build s shared library (Linux: .so / Mac OS X: .dylib / Windows: .dll)-------
 # BIG Notice:
 # HelloWorld
 #         |
@@ -304,9 +304,12 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
 # changes.
 # may see:
 # http://derekmolloy.ie/hello-world-introductions-to-cmake/
-# Build s shared library (.so)---------------------------
+# Build s shared library (Linux: .so / Mac OS X: .dylib / Windows: .dll)-------
 # 
-# Build a static library (.a)------------------------------------------------------
+#
+#
+#
+# Build a static library (Linux: .a / Mac OS X: .a / Windows: .lib)------------
 # may see;
 # http://derekmolloy.ie/hello-world-introductions-to-cmake/
 # A statically-linked library is created at compile time to contain all of the 
@@ -360,7 +363,8 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
 # ~/studentlib_static/build$ nm -C libtestStudent.a 
 # may see:
 # https://www.jetbrains.com/help/clion/quick-cmake-tutorial.html#lib-targets
-# Build a static library (.a)------------------------------------------------------
+#
+# Build a static library (Linux: .a / Mac OS X: .a / Windows: .lib)------------
 
 # Link Shared or Static Library
 # CMake can be used to generate the Makefiles in your project in order to 
