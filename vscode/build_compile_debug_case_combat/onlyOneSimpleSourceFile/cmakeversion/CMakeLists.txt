@@ -1058,4 +1058,6 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
 # https://cmake.org/cmake/help/latest/manual/cmake-commands.7.html
 # KDE has its own CMake style guideline
 # https://community.kde.org/Policies/CMake_Coding_Style
+# A detailed list of environment variables
+# https://cmake.org/cmake/help/latest/manual/cmake-env-variables.7.html
 # 
