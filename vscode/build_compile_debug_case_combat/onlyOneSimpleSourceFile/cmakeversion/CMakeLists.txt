@@ -1054,3 +1054,6 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
 # The CMake Documentation Index provides a very useful list of available commands:
 # The document is available at:CMake 3.23 Documentation Index
 # https://cmake.org/cmake/help/v3.23/genindex.html
+# CMake commands:
+# https://cmake.org/cmake/help/latest/manual/cmake-commands.7.html
+#
