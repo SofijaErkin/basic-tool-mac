@@ -1089,4 +1089,10 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
 # User manuals:
 # https://gcc.gnu.org/onlinedocs/gcc-4.1.2/gcc/Invoking-GCC.html#Invoking-GCC
 # https://clang.llvm.org/docs/ClangCommandLineReference.html#clang-command-line-argument-reference
+# Optimisation flags-Setting Compiler Flags
+# https://clang.llvm.org/docs/ClangCommandLineReference.html#optimization-level
+# https://gcc.gnu.org/onlinedocs/gcc/Optimize-Options.html
+# Warning flags
+# https://gist.github.com/d0k/3608547
+# https://clang.llvm.org/docs/DiagnosticsReference.html
 #
