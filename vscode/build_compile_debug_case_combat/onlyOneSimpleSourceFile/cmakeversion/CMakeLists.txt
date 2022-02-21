@@ -1077,3 +1077,7 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
 # 
 # Cross Compiling for Linux
 # https://cmake.org/cmake/help/v3.23/manual/cmake-toolchains.7.html#cross-compiling-for-linux
+# User manuals:
+# https://gcc.gnu.org/onlinedocs/gcc-4.1.2/gcc/Invoking-GCC.html#Invoking-GCC
+# https://clang.llvm.org/docs/ClangCommandLineReference.html#clang-command-line-argument-reference
+#
