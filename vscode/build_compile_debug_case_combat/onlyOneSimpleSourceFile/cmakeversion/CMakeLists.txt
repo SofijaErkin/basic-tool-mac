@@ -1065,8 +1065,8 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
 # The best, and most up-to-date documentation on CMake:
 # https://cmake.org/
 # The CMake Documentation Index provides a very useful list of available commands:
-# The document is available at:CMake 3.23 Documentation Index
-# https://cmake.org/cmake/help/v3.23/genindex.html
+# The document is available at:CMake 3.22 Documentation Index
+# https://cmake.org/cmake/help/v3.22/genindex.html
 # CMake commands:
 # https://cmake.org/cmake/help/latest/manual/cmake-commands.7.html
 # KDE has its own CMake style guideline
@@ -1074,10 +1074,10 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
 # A detailed list of environment variables
 # https://cmake.org/cmake/help/latest/manual/cmake-env-variables.7.html
 # CMake Generator Expressions
-# https://cmake.org/cmake/help/v3.23/manual/cmake-generator-expressions.7.html
+# https://cmake.org/cmake/help/v3.22/manual/cmake-generator-expressions.7.html
 # CMake Variables
-# https://cmake.org/cmake/help/v3.23/manual/cmake-language.7.html#variables
-# https://cmake.org/cmake/help/v3.23/manual/cmake-variables.7.html#manual:cmake-variables(7)
+# https://cmake.org/cmake/help/v3.22/manual/cmake-language.7.html#variables
+# https://cmake.org/cmake/help/v3.22/manual/cmake-variables.7.html#manual:cmake-variables(7)
 # Following variables can be used to check for system related information
 # https://gitlab.kitware.com/cmake/community/-/wikis/doc/tutorials/How-To-Write-Platform-Checks
 # Following script can be used to block in-source building.
@@ -1085,7 +1085,7 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
 # https://github.com/opencv/opencv/blob/master/CMakeLists.txt
 # 
 # Cross Compiling for Linux
-# https://cmake.org/cmake/help/v3.23/manual/cmake-toolchains.7.html#cross-compiling-for-linux
+# https://cmake.org/cmake/help/v3.22/manual/cmake-toolchains.7.html#cross-compiling-for-linux
 # User manuals:
 # https://gcc.gnu.org/onlinedocs/gcc-4.1.2/gcc/Invoking-GCC.html#Invoking-GCC
 # https://clang.llvm.org/docs/ClangCommandLineReference.html#clang-command-line-argument-reference
@@ -1095,4 +1095,5 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
 # Warning flags
 # https://gist.github.com/d0k/3608547
 # https://clang.llvm.org/docs/DiagnosticsReference.html
-#
+# Set Source File Properties
+# https://cmake.org/cmake/help/v3.22/manual/cmake-properties.7.html#source-file-properties
