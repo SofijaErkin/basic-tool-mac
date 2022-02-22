@@ -243,9 +243,19 @@ set(CAMKE_CXX_FLAGS_RELEASE "$ENV{CXXFLAGS} -O3 -Wall")
 # Uses d as the postfix for the debug executable and libraries.
 # Packaging Debug and Release p-d-a-r-n-1-CMakeLists.txt.
 
-# 
-#
-#
+# Check System Environment
+# UNIX, WIN32, WINRT, CYGWIN, APPLE are environment variables as flags set by default system
+if(UNIX)
+    message("This is a ${CMAKE_SYSTEM_NAME} system")
+elseif(WIN32)
+    message("This is a Windows System")
+endif()# or use MATCHES to see if actual system name 
+# Darwin is Apple's system name
+# if(${CMAKE_SYSTEM_NAME} MATCHES Darwin)
+#    message("This is a ${CMAKE_SYSTEM_NAME} system")
+# elseif(${CMAKE_SYSTEM_NAME} MATCHES Windows)
+#    message("This is a Windows System")
+#endif()
 
 # 9.C++11 Support
 set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
@@ -277,6 +287,8 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
 # This is done so that consumers of our installed project will not inherit our
 # warning flags.
 # Adding Generator Expressions a-g-e-n-3--CMakeLists.txt.------------------------
+
+# 
 
 # 10.Target Linked Library
 # main source function file, No inlcude, as it is not relevant to a library 
