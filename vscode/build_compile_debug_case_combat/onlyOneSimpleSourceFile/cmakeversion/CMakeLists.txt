@@ -131,6 +131,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 # The Generator Expression that is about to be used was introduced in 3.15. 
 # Adding Generator Expressions a-g-e-n-1-CMakeLists.txt------------------------
 
+message(${CMAKE_BINARY_DIR})
+
 # 4.Bring Includes
 # include_directories(inc)
 # include_directories(${CMAKE_CURRENT_LIST_DIR}/inc)
