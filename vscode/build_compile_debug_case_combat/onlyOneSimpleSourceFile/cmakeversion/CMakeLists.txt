@@ -144,6 +144,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 # 5.Manually Sources
 set(SOURCE_FILES thefitbody.cpp)
 # message("Source files: ${SOURCE_FILES}")          
+# As an alternate, you can create a variable named ${SOURCES} as a list to 
+# include target sources. It can be done in a lot of different ways, depending
+# on your methodology.
 # Add thefitbody.cpp file of project root directory as source file.
 # Can manually add the source file using the set command as follows:
 # (Add source files of project root directory as source file)
