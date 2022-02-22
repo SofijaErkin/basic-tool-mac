@@ -195,6 +195,9 @@ set(SOURCE_FILES thefitbody.cpp)
 target_include_directories(theFitBody PUBLIC "${PROJECT_BINARY_DIR}")
 # Adds that directory to the list of paths to search for include files. 
 # Project version step p-v-5-3-thefitbody.cpp.
+#
+# include_directories will include library headers, 
+# 
 
 # 6.Add Executable
 add_executable(theFitBody ${SOURCE_FILES})
@@ -452,6 +455,7 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
 # 
 # add_executable(libtest libtest.cpp)
 # target_link_libraries(libtest ${PROJECT_LINK_LIBS} )
+# target_link_libraries will link boost library. 
 # The project can be built and executed using the following steps:
 # tree
 # cd build
