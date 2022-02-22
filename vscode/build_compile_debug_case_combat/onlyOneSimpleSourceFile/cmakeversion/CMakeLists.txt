@@ -304,6 +304,15 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
 # Use archive output paths for static libraries (.a or .lib)
 # CMAKE_ARCHIVE_OUTPUT_DIRECTORY Or ARCHIVE_OUTPUT_PATH
 
+# Disable in-source building
+# Disable in-source builds to prevent source tree corruption.
+# if(" ${CMAKE_SOURCE_DIR}" STREQUAL " ${CMAKE_BINARY_DIR}")
+#  message(FATAL_ERROR "
+#FATAL: In-source builds are not allowed.
+#       You should create a separate directory for build files.
+#")
+#endif()
+
 # 10.Target Linked Library
 # main source function file, No inlcude, as it is not relevant to a library 
 # build.
