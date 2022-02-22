@@ -1,3 +1,12 @@
+# Popular open source projects using CMake
+# It is always a good practice to read open source projects, which are widely
+# used to learn about the best practices.
+# OpenCV: https://github.com/opencv/opencv
+# Caffe2: https://github.com/caffe2/caffe2
+# MySql Server: https://github.com/mysql/mysql-server
+# Reference:
+# https://medium.com/@onur.dundar1/cmake-tutorial-585dd180109b
+
 # Notices: "may see" means "reference".
 # 1.CMake Version
 # Version Update RoadMap may see:
