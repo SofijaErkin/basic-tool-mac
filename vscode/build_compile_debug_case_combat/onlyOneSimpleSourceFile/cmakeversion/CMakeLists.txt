@@ -295,7 +295,14 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
 # warning flags.
 # Adding Generator Expressions a-g-e-n-3--CMakeLists.txt.------------------------
 
-# 
+# set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/build)
+# To generate binary file inside bin folder with setting 
+# CMAKE_RUNTIME_OUTPUT_DIRECTORY or EXECUTABLE_OUTPUT_PATH.
+# Same procedure can be done for library paths as well for shared libraries 
+# (.dll or .so) with following variables.
+# LIBRARY_OUTPUT_PATH Or CMAKE_LIBRARY_OUTPUT_DIRECTORY
+# Use archive output paths for static libraries (.a or .lib)
+# CMAKE_ARCHIVE_OUTPUT_DIRECTORY Or ARCHIVE_OUTPUT_PATH
 
 # 10.Target Linked Library
 # main source function file, No inlcude, as it is not relevant to a library 
