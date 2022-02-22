@@ -224,11 +224,6 @@ set(CMAKE_CXX_COMPILER "g++")
 # 8.Debugr
 set(CMAKE_BUILD_TYPE "Debug")
 set(CMAKE_CXX_FLAGS_DEBUG "$ENV{CXXFLAGS} -O0 -Wall -g2 -ggdb")
-# Suggested way is to keep previous flags in mind and append new ones
-# set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++0x -Wall")
-# Alternatively, you can use generator expressions, which are conditional 
-# expressions. Below says that, if compiper is c++ then set it to c++11
-# add_compile_options("$<$<STREQUAL:$<TARGET_PROPERTY:LINKER_LANGUAGE>,CXX>:-std=c++11>")
 set(CAMKE_CXX_FLAGS_RELEASE "$ENV{CXXFLAGS} -O3 -Wall")
 # Open the message of debug
 
@@ -248,6 +243,14 @@ set(CAMKE_CXX_FLAGS_RELEASE "$ENV{CXXFLAGS} -O3 -Wall")
 # 9.C++11 Support
 set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
 # That make clang++ support C++11
+# Append flag, best practice, suggested, don't lose previously defined flags
+# set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall")
+# eg:
+# Suggested way is to keep previous flags in mind and append new ones
+# set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++0x -Wall")
+# Alternatively, you can use generator expressions, which are conditional 
+# expressions. Below says that, if compiper is c++ then set it to c++11
+# add_compile_options("$<$<STREQUAL:$<TARGET_PROPERTY:LINKER_LANGUAGE>,CXX>:-std=c++11>")
 
 # OR, 7. 8. 9. 
 # Adding Generator Expressions a-g-e-n-3--CMakeLists.txt.------------------------
