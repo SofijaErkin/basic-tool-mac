@@ -243,7 +243,7 @@ set(CAMKE_CXX_FLAGS_RELEASE "$ENV{CXXFLAGS} -O3 -Wall")
 # Uses d as the postfix for the debug executable and libraries.
 # Packaging Debug and Release p-d-a-r-n-1-CMakeLists.txt.
 
-# Check System Environment
+# Check Build System Environment
 # UNIX, WIN32, WINRT, CYGWIN, APPLE are environment variables as flags set by default system
 if(UNIX)
     message("This is a ${CMAKE_SYSTEM_NAME} system")
