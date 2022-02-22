@@ -256,6 +256,13 @@ endif()# or use MATCHES to see if actual system name
 # elseif(${CMAKE_SYSTEM_NAME} MATCHES Windows)
 #    message("This is a Windows System")
 #endif()
+# or use MATCHES to see if actual system name 
+# Darwin is Apple's system name
+# if(${CMAKE_SYSTEM_NAME} MATCHES Darwin)
+#    add_definitions(-DCMAKEMACROSAMPLE="Apple MacOS")
+#elseif(${CMAKE_SYSTEM_NAME} MATCHES Windows)
+#    add_definitions(-DCMAKEMACROSAMPLE="Windows PC")
+#endif()
 
 # 9.C++11 Support
 set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
