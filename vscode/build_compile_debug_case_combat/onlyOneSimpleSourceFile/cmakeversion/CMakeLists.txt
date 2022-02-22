@@ -1131,3 +1131,5 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
 # https://gitlab.kitware.com/cmake/community/-/wikis/doc/cmake/Examples
 # Learning CMake A Beginner's Guide
 # https://tuannguyen68.gitbooks.io/learning-cmake-a-beginner-s-guide/content/index.html
+# How To Write Platform Checks
+# https://gitlab.kitware.com/cmake/community/-/wikis/doc/tutorials/How-To-Write-Platform-Checks
