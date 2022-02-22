@@ -31,6 +31,7 @@
 # Update the call to require that more recent version.
 # Adding Generator Expressions a-g-e-n-2--CMakeLists.txt.------------------------
 cmake_minimum_required(VERSION 2.8.9...3.22) 
+message("CMake Minimum Required Version: ${VERSION}")
 # may see:
 # http://derekmolloy.ie/hello-world-introductions-to-cmake/
 # major version 2, minor version 8, and patch version 9. Providing a version
@@ -67,6 +68,7 @@ project(theFitBody
   LANGUAGES
     CXX
 )
+# message("theFitBody Project Version: ${VERSION}; Description: ${DESCRIPTION}; Language: ${LANGUAGES}")
 # may see:
 # https://github.com/hsf-training/hsf-training-cmake-webpage/blob/gh-pages/_includes/code/00-intro/CMakeLists.txt
 # # We can call the project anything we want Listing the language(s) avoids the C
@@ -105,7 +107,8 @@ configure_file(thefitbodyConfig.h.in thefitbodyConfig.h)
 # Project version step p-v-5-2-CMakeLists.txt.
 
 # 3.CMake CXX Standard
-set(CMAKE_CXX_STANDARD 11)          
+set(CMAKE_CXX_STANDARD 11)
+# message("CMake C++ Standard: C++ ${CMAKE_CXX_STANDARD}")          
 # Sets the CMAKE_CXX_STANDARD variable to the value of 11, as we selected 
 # when creating the project.
 set(CMAKE_CXX_STANDARD_REQUIRED True)
@@ -140,6 +143,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 # 5.Manually Sources
 set(SOURCE_FILES thefitbody.cpp)
+# message("Source files: ${SOURCE_FILES}")          
 # Add thefitbody.cpp file of project root directory as source file.
 # Can manually add the source file using the set command as follows:
 # (Add source files of project root directory as source file)
@@ -220,10 +224,13 @@ add_executable(theFitBody ${SOURCE_FILES})
 # 7.Compiler
 set(CMAKE_CXX_COMPILER "g++")
 # the default editor
+# message("C++ Compiler: ${CMAKE_CXX_COMPILER}")   
 
 # 8.Debugr
 set(CMAKE_BUILD_TYPE "Debug")
+# message("Build Type: ${CMAKE_BUILD_TYPE}")   
 set(CMAKE_CXX_FLAGS_DEBUG "$ENV{CXXFLAGS} -O0 -Wall -g2 -ggdb")
+# message("Debug Flags: ${CMAKE_CXX_FLAGS_DEBUG}")   
 set(CAMKE_CXX_FLAGS_RELEASE "$ENV{CXXFLAGS} -O3 -Wall")
 # Open the message of debug
 
@@ -242,6 +249,7 @@ set(CAMKE_CXX_FLAGS_RELEASE "$ENV{CXXFLAGS} -O3 -Wall")
 
 # 9.C++11 Support
 set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
+# message("C++ Flags: ${CMAKE_CXX_FLAGS}")   
 # That make clang++ support C++11
 # Append flag, best practice, suggested, don't lose previously defined flags
 # set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall")
@@ -1123,4 +1131,3 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
 # https://gitlab.kitware.com/cmake/community/-/wikis/doc/cmake/Examples
 # Learning CMake A Beginner's Guide
 # https://tuannguyen68.gitbooks.io/learning-cmake-a-beginner-s-guide/content/index.html
-# 
