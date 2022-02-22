@@ -1097,3 +1097,18 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
 # https://clang.llvm.org/docs/DiagnosticsReference.html
 # Set Source File Properties
 # https://cmake.org/cmake/help/v3.22/manual/cmake-properties.7.html#source-file-properties
+# Linker Flags
+# https://gcc.gnu.org/onlinedocs/gcc/Link-Options.html
+# Install command of CMake
+# https://cmake.org/cmake/help/v3.22/command/install.html
+# 
+# Other Resources
+# GNU and LLVM Compiler Flags:
+# https://www.bu.edu/tech/support/research/software-and-programming/programming/compilers/gcc-compiler-flags/
+# FindBoost-cmake-modules
+# https://cmake.org/cmake/help/v3.22/module/FindBoost.html
+# CMake Wiki Examples
+# https://gitlab.kitware.com/cmake/community/-/wikis/doc/cmake/Examples
+# Learning CMake A Beginner's Guide
+# https://tuannguyen68.gitbooks.io/learning-cmake-a-beginner-s-guide/content/index.html
+# 
