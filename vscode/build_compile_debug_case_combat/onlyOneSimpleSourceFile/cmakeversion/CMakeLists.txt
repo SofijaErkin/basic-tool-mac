@@ -563,6 +563,16 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
 # # CMakeLists.txt under ./theFitBody/test ------------------------------------
 #
 # # Packaging Debug and Release p-d-a-r-n-3-MultiCPackConfig.cmake.
+# #
+# # may see: https://medium.com/@onur.dundar1/cmake-tutorial-585dd180109b
+# # If you intend to deliver binaries, you should make a Release, which doesn't 
+# # include debug flags in binary, which would be a way faster and ready to run. 
+# # However, debug version of executable files include many of other flags which
+# # exposes the memory, method names etc for debuggers to help identify the 
+# # errors.
+# # It is not a good practice and not safe to deliver debug version of an 
+# # application.
+# # 
 # # may see:
 # # https://cmake.org/cmake/help/latest/guide/tutorial/Packaging%20Debug%20and%20Release.html#mathfunctions-cmakelists-txt-version-properties
 # set_property(TARGET test PROPERTY VERSION "1.0.0")
