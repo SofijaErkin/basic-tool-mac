@@ -290,8 +290,14 @@ endif()# or use MATCHES to see if actual system name
 #
 
 # 9.C++11 Support
+# Compiler/Linker Flags with CMake
+# may see user manuals:
+# https://gcc.gnu.org/onlinedocs/gcc-2.95.2/gcc_2.html
+# https://clang.llvm.org/docs/ClangCommandLineReference.html
+# Setting Compiler Flags
 set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
-# message("C++ Flags: ${CMAKE_CXX_FLAGS}")   
+# message("C++ Flags: ${CMAKE_CXX_FLAGS}")
+#
 # That make clang++ support C++11
 # Append flag, best practice, suggested, don't lose previously defined flags
 # set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall")
@@ -301,6 +307,22 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
 # Alternatively, you can use generator expressions, which are conditional 
 # expressions. Below says that, if compiper is c++ then set it to c++11
 # add_compile_options("$<$<STREQUAL:$<TARGET_PROPERTY:LINKER_LANGUAGE>,CXX>:-std=c++11>")
+# Please see manual:
+# https://clang.llvm.org/docs/ClangCommandLineReference.html#optimization-level
+# https://gcc.gnu.org/onlinedocs/gcc/Optimize-Options.html
+#
+# -O0, -O1, -O2, -O3, -Os, -Oz, -Ofast
+# Warning flags, See manual and tree:
+# https://gist.github.com/d0k/3608547
+# https://clang.llvm.org/docs/DiagnosticsReference.html
+
+# Set Source File Properties
+# Change one target’s certain behavior, build main.cpp with C++11 and if you 
+# building only library, you may want to build it with C++14. 
+# set_source_files_properties(${CMAKE_CURRENT_SOURCE_DIR}/*.cpp PROPERTIES COMPILE_FLAGS "-std=c++11")
+# A large set of properties manual:
+# https://cmake.org/cmake/help/v3.22/manual/cmake-properties.7.html#source-file-properties
+# 
 
 # OR, 7. 8. 9. 
 # Adding Generator Expressions a-g-e-n-3--CMakeLists.txt.------------------------
