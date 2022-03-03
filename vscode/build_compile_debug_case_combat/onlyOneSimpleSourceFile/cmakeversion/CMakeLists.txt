@@ -1216,6 +1216,20 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
 # may see:
 # https://cmake.org/cmake/help/latest/guide/tutorial/Installing%20and%20Testing.html#install-rules
 
+# CMake Best Practices
+# may see:
+# https://medium.com/@onur.dundar1/cmake-tutorial-585dd180109b
+# Always remember the previous configurations, make sure you append new flag
+# instead of overwriting it. 
+# It is better to implement, add_flag/remove method of yours, to achieve 
+# easier implementation.
+# e.g:
+# set(VARIABLE "${VARIABLE} Flag1 Flag2")
+# Always check system information carefully, raise error if a certain 
+# configuration can’t be done to prevent faulty binaries.
+# Always, check required libraries to continue build process, raise error if
+# not found.
+
 # References: 
 # CMakeLists.txt | CLion - JetBrains
 # https://www.jetbrains.com/help/clion/cmakelists-txt-file.html
