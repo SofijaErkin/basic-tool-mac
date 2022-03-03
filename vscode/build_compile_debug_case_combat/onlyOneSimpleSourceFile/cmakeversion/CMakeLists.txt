@@ -594,7 +594,31 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
 # cmake --build .
 # Setup debug and release builds, use CMAKE_BUILD_TYPE to set the 
 # configuration type.
-# 
+#
+#  OR,
+# may see: https://medium.com/@onur.dundar1/cmake-tutorial-585dd180109b
+# cmake -H. -Bbuild/Debug
+# cmake -H. -Bbuild/Release
+# Above configuration is not enough to create different binaries. 
+# Also set build type with CMAKE_BUILD_TYPE variable on the command line.
+# (CLion handles this process by itself.)
+# $ cmake -DCMAKE_BUILD_TYPE=Debug -H.  -Bbuild/Debug
+# $ cmake -DCMAKE_BUILD_TYPE=Release -H. -Bbuild/Release
+# CMAKE_BUILD_TYPE is accessible inside CMakeLists.txt. You can easily check
+# for build type in CMakeLists.txt:
+# if(${CMAKE_BUILD_TYPE} MATCHES Debug)
+#    message("Debug Build")
+# elseif(${CMAKE_BUILD_TYPE} MATCHES Release)
+#     message("Release Build")
+# endif()
+# Can also, set compiler and linker flags separately for build types using the
+# config variables shown in the previous section.
+# e.g:
+# CMAKE_EXE_LINKER_FLAGS_RELEASE: Flags used to by linker during creation of release executable
+# CMAKE_EXE_LINKER_FLAGS_DEBUG: Flags used to by linker during creation of debug executable
+# CMAKE_CXX_FLAGS_RELEASE
+# CMAKE_CXX_FLAGS_DEBUG
+#
 # # Packaging Debug and Release p-d-a-r-n-3-MultiCPackConfig.cmake.
 #
 # add_library(test test.cpp)
