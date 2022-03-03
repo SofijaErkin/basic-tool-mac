@@ -315,7 +315,7 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
 # Warning flags, See manual and tree:
 # https://gist.github.com/d0k/3608547
 # https://clang.llvm.org/docs/DiagnosticsReference.html
-
+#
 # Set Source File Properties
 # Change one target’s certain behavior, build main.cpp with C++11 and if you 
 # building only library, you may want to build it with C++14. 
@@ -323,6 +323,23 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
 # A large set of properties manual:
 # https://cmake.org/cmake/help/v3.22/manual/cmake-properties.7.html#source-file-properties
 # 
+# Linker Flags
+# GNU GCC Linker may see:
+# https://gcc.gnu.org/onlinedocs/gcc/Link-Options.html
+# Search the directories defined in environment variables /usr/lib;
+# /usr/local/lib , then links standard libraries by default.
+# Most common flag is -l to link desired library like, -lzlib, -lboost etc.
+# The variables which you can add linker flags:
+# CMAKE_EXE_LINKER_FLAGS: Flags used to by linker during creation of executable
+# CMAKE_EXE_LINKER_FLAGS_RELEASE: Flags used to by linker during creation of release executable
+# CMAKE_EXE_LINKER_FLAGS_DEBUG: Flags used to by linker during creation of debug executable
+# CMAKE_STATIC_LINKER_FLAGS: Flags used by linker during the creation of static libraries (.a, .lib)
+# CMAKE_SHARED_LINKER_FLAGS: Flags used by linker during the creation of shared libraries (.so, .dylib, .dll)
+# CMAKE_MODULE_LINKER_FLAGS: Flags used by linker during the creation of module libraries 
+# e.g:
+# set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -fsanitize=address")
+# set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -Wl")
+#
 
 # OR, 7. 8. 9. 
 # Adding Generator Expressions a-g-e-n-3--CMakeLists.txt.------------------------
