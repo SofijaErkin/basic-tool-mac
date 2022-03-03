@@ -274,6 +274,9 @@ endif()# or use MATCHES to see if actual system name
 
 #
 # Build Project's C/C++ compiler and tools (linker etc.)
+# Cross Compiling for Linux
+# may see:
+# https://cmake.org/cmake/help/v3.22/manual/cmake-toolchains.7.html#cross-compiling-for-linux
 # eg:
 #set(CMAKE_SYSTEM_NAME Linux)
 #set(CMAKE_SYSTEM_PROCESSOR arm)
