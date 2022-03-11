@@ -4,11 +4,11 @@ This is a markdown to Manually CMake on mac via VSCode.
 
 ## 1.[MicroSoft Quick Start](https://medium.com/@dexterchan_44737/visual-studio-code-build-and-debug-a-c-with-cmake-on-mac-os-7633bc59bf34)
 
-1.1 Platform
+### 1.1 Platform
 
 CMake Tools
 
-1.2 RoadMap
+### 1.2 RoadMap
 
 Press `⇧+⌘+P` for Command Line
 
@@ -20,7 +20,7 @@ Type the project name , e.g. “HelloWorld”
 
 Finally, select `Executable`.
 
-1.3 OutPut
+### 1.3 OutPut
 
     [variant] Loaded new set of variants
 
@@ -119,3 +119,9 @@ Finally, select `Executable`.
     [cmake] -- Generating done
 
     [cmake] -- Build files have been written to: /Users/marryme/practiseCMake/build
+    
+### 1.4Reference
+
+1.4.1 [Visual Studio Code Build and Debug a C++ with CMake on Mac OS](https://medium.com/@dexterchan_44737/visual-studio-code-build-and-debug-a-c-with-cmake-on-mac-os-7633bc59bf34)
+
+1.4.2 [Introduction to CMake by Example](http://derekmolloy.ie/hello-world-introductions-to-cmake/)
