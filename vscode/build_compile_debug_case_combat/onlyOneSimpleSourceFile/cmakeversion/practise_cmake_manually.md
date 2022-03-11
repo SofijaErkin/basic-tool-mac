@@ -1,6 +1,6 @@
 # CMake Manually
 
-This is a markdown to Manually CMake.
+This is a markdown to Manually CMake on mac via VSCode.
 
 ## 1.[MicroSoft Quick Start](https://medium.com/@dexterchan_44737/visual-studio-code-build-and-debug-a-c-with-cmake-on-mac-os-7633bc59bf34)
 
