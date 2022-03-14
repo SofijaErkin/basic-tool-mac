@@ -1,3 +1,4 @@
+# Reference: https://medium.com/@dexterchan_44737/visual-studio-code-build-and-debug-a-c-with-cmake-on-mac-os-7633bc59bf34
 cmake_minimum_required(VERSION 3.0.0)
 project(HelloWorld VERSION 0.1.0)
 

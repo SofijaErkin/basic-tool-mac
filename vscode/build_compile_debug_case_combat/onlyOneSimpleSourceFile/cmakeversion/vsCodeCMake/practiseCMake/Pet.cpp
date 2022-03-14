@@ -1,3 +1,4 @@
+// Reference: https://medium.com/@dexterchan_44737/visual-studio-code-build-and-debug-a-c-with-cmake-on-mac-os-7633bc59bf34
 #include "include/Pet.h" 
 #include <iostream> 
 Pet::Pet(std::string &_name){
