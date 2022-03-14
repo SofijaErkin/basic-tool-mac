@@ -125,3 +125,71 @@ Finally, select `Executable`.
 1.4.1 [Visual Studio Code Build and Debug a C++ with CMake on Mac OS](https://medium.com/@dexterchan_44737/visual-studio-code-build-and-debug-a-c-with-cmake-on-mac-os-7633bc59bf34)
 
 1.4.2 [Introduction to CMake by Example](http://derekmolloy.ie/hello-world-introductions-to-cmake/)
+
+### 1.5Output Every time Change CMakefiles.txt
+
+    [variant] Loaded new set of variants
+    
+    [kit] Successfully loaded 1 kits from /Users/yq/.local/share/CMakeTools/cmake-tools-kits.json
+    
+    [proc] Executing command: /usr/bin/clang -v
+    
+    [main] Configuring folder: practiseCMake 
+    
+    [proc] Executing command: /usr/local/bin/cmake --no-warn-unused-cli -DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE -DCMAKE_BUILD_TYPE:STRING=Debug -DCMAKE_C_COMPILER:FILEPATH=/usr/bin/clang -DCMAKE_CXX_COMPILER:FILEPATH=/usr/bin/clang++ -H/Users/yq/VSCode/CppProject/practiseCMake -B/Users/yq/VSCode/CppProject/practiseCMake/build -G Ninja
+
+    [cmake] Not searching for unused variables given on the command line.
+    
+    [cmake] -- Configuring done
+    
+    [cmake] -- Generating done
+    
+    [cmake] -- Build files have been written to: /Users/yq/VSCode/CppProject/practiseCMake/build
+    
+    [main] Configuring folder: practiseCMake 
+    
+    [proc] Executing command: /usr/local/bin/cmake --no-warn-unused-cli -DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE -DCMAKE_BUILD_TYPE:STRING=Debug -DCMAKE_C_COMPILER:FILEPATH=/usr/bin/clang -DCMAKE_CXX_COMPILER:FILEPATH=/usr/bin/clang++ -H/Users/yq/VSCode/CppProject/practiseCMake -B/Users/yq/VSCode/CppProject/practiseCMake/build -G Ninja
+    
+    [cmake] Not searching for unused variables given on the command line.
+    
+    [cmake] -- Configuring done
+    
+    [cmake] -- Generating done
+    
+    [cmake] -- Build files have been written to: /Users/yq/VSCode/CppProject/practiseCMake/build
+    
+    [main] Configuring folder: practiseCMake 
+    
+    [proc] Executing command: /usr/local/bin/cmake --no-warn-unused-cli -DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE -DCMAKE_BUILD_TYPE:STRING=Debug -DCMAKE_C_COMPILER:FILEPATH=/usr/bin/clang -DCMAKE_CXX_COMPILER:FILEPATH=/usr/bin/clang++ -H/Users/yq/VSCode/CppProject/practiseCMake -B/Users/yq/VSCode/CppProject/practiseCMake/build -G Ninja
+    
+    [cmake] Not searching for unused variables given on the command line.
+    
+    [cmake] -- Configuring done
+    
+    [cmake] -- Generating done
+    
+    [cmake] -- Build files have been written to: /Users/yq/VSCode/CppProject/practiseCMake/build
+    
+    [main] Configuring folder: practiseCMake 
+    
+    [proc] Executing command: /usr/local/bin/cmake --no-warn-unused-cli -DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE -DCMAKE_BUILD_TYPE:STRING=Debug -DCMAKE_C_COMPILER:FILEPATH=/usr/bin/clang -DCMAKE_CXX_COMPILER:FILEPATH=/usr/bin/clang++ -H/Users/yq/VSCode/CppProject/practiseCMake -B/Users/yq/VSCode/CppProject/practiseCMake/build -G Ninja
+    
+    [cmake] Not searching for unused variables given on the command line.
+    
+    [cmake] -- Configuring done
+    
+    [cmake] -- Generating done
+    
+    [cmake] -- Build files have been written to: /Users/yq/VSCode/CppProject/practiseCMake/build
+    
+    [main] Configuring folder: practiseCMake 
+    
+    [proc] Executing command: /usr/local/bin/cmake --no-warn-unused-cli -DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE -DCMAKE_BUILD_TYPE:STRING=Debug -DCMAKE_C_COMPILER:FILEPATH=/usr/bin/clang -DCMAKE_CXX_COMPILER:FILEPATH=/usr/bin/clang++ -H/Users/yq/VSCode/CppProject/practiseCMake -B/Users/yq/VSCode/CppProject/practiseCMake/build -G Ninja
+    
+    [cmake] Not searching for unused variables given on the command line.
+    
+    [cmake] -- Configuring done
+    
+    [cmake] -- Generating done
+    
+    [cmake] -- Build files have been written to: /Users/yq/VSCode/CppProject/practiseCMake/build
