@@ -6,7 +6,7 @@
                 // The include files directory path.
                 // "${workspaceFolder}/**"
                 // has Changed!
-                "${workspaceFolder}",
+                // "${workspaceFolder}",
                 "${workspaceFolder}/include"
             ],
             "defines": [],

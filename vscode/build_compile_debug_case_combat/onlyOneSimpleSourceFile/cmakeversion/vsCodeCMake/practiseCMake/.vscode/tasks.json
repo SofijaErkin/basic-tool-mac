@@ -1,0 +1,34 @@
+{
+	// See https://go.microsoft.com/fwlink/?LinkId=733558
+	// for the documentation about the tasks.json format
+	"version": "2.0.0",
+	// "isShellCommand":true,
+	"options": {
+		"cwd": "${workspaceRoot}/build"
+	},
+	// Property “label” allows VSC to reference the task name when running the
+	// task.
+	"tasks": [
+		{
+			"label": "cmake",
+			"command": "cmake -G 'Unix Makefiles' -DCMAKE_BUILD_TYPE=Debug ..",
+			"type": "shell",
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"panel": "shared"
+			}
+		},
+		{
+			"label": "make",
+			"command": "make -j 8",
+			"type": "shell",
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"panel": "shared"
+			},
+			// "isBuildCommand":false
+		}
+	]
+}
