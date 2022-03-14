@@ -33,6 +33,8 @@
 				"panel": "shared"
 			},
 			// "isBuildCommand":false
+			// the property “isBuildCommand” set to true enables the task to be
+			// executed via the Tasks: Run Build Task.
 		}
 	]
 }
