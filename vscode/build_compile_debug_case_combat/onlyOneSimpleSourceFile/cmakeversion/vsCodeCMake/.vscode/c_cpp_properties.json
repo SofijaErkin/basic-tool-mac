@@ -1,0 +1,32 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                // The include files directory path.
+                // "${workspaceFolder}/**"
+                // has Changed!
+                "${workspaceFolder}",
+                "${workspaceFolder}/include"
+            ],
+            "defines": [],
+            "macFrameworkPath": [
+                // This is the FrameworkPath of Mac Now we are using.
+                "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks",
+                "/System/Library/Frameworks",
+                "/Library/Frameworks"
+            ],
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c11",
+            "cppStandard": "c++11",
+            "intelliSenseMode": "macos-clang-x64",
+            // This time we use MicroSoft CMake-Tools.
+            "configurationProvider": "vector-of-bool.cmake-tools",
+            // This is to Compile and Run the main Cpp. 
+            // Also, is the same as "code-runner.executorMap" settings.json 
+            // during using Code-Runner Module.
+            "compileCommands": "${workspaceFolder}/build/compile_commands.json"
+        }
+    ],
+    "version": 4
+}
