@@ -5,9 +5,9 @@ project(HelloWorld VERSION 0.1.0)
 set(CMAKE_CXX_STANDARD 11)
 # set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-include_directories(include)
+include_directories(${CMAKE_CURRENT_LIST_DIR}/include)
 
-set(SOURCES Pet.cpp main.cpp)
+file(GLOB SOURCES "*.cpp")
 
 include(CTest)
 enable_testing()
