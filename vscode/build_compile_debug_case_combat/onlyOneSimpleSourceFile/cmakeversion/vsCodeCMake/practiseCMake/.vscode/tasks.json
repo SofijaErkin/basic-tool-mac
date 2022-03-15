@@ -6,15 +6,17 @@
 	// "isShellCommand":true,
 	"options": {
 		// {workspaceRoot} is the directory of your workspace.
-		"cwd": "${workspaceRoot}/build"
+		// "cwd" is the source files directory.
+		// "cwd": "${workspaceRoot}/build"
+		"cwd": "${workspaceFolder}" // Have changed
 	},
 	// Property “label” allows VSC to reference the task name when running the
 	// task.
 	"tasks": [
 		{
+			"type": "shell",
 			"label": "cmake",
 			"command": "cmake -G 'Unix Makefiles' -DCMAKE_BUILD_TYPE=Debug ..",
-			"type": "shell",
 			"presentation": {
 				"echo": true,
 				"reveal": "always",
@@ -22,11 +24,11 @@
 			}
 		},
 		{
+			"type": "shell",
 			"label": "make",
 			"command": "make -j 8",
 			// “make -j 8 “ mean running the compile in parallel with max 8 
 			// source files.
-			"type": "shell",
 			"presentation": {
 				"echo": true,
 				"reveal": "always",

@@ -50,5 +50,11 @@
         "utility": "cpp",
         "*.tcc": "cpp",
         "cinttypes": "cpp"
-    }
+    },
+    "clang.cxxflags": [
+        "-std=c++11"
+    ],
+    "clang.cflags": [
+        "-std=c11"
+    ]
 }
