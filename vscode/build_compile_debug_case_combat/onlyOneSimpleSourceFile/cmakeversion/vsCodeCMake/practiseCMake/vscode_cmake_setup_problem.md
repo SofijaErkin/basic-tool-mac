@@ -32,7 +32,7 @@ Just like:
     
     |_main.cpp
 
-    |__Pet.cpp
+    |_Pet.cpp
 
 ### 1.2VSCode Output 
 
