@@ -1,12 +1,40 @@
 # Problem Occur Setting-Up CMake in VSCode on mac
 
-## 1.DOWN
+## 1.Problem A
 
 ### 1.1Platform
 
 [See project architecture](https://github.com/SofijaErkin/basic-tool-mac/tree/main/vscode/build_compile_debug_case_combat/onlyOneSimpleSourceFile/cmakeversion/vsCodeCMake/practiseCMake).
 
-### 1.2Problem
+Just like:
+
+    HelloWorld
+
+    |
+
+    |_.vscode
+
+    |     |__c_cpp_properties.json
+
+    |     |__launch.json
+
+    |     |__settings.json
+
+    |     |__tasks.json
+    
+    |_build
+    
+    |_include
+    
+    |     |__Pet.h
+    
+    |_CMakeLists.txt 
+    
+    |_main.cpp
+
+    |__Pet.cpp
+
+### 1.2VSCode Output 
 
     [Running] cd "/Users/yq/VSCode/CppProject/practiseCMake/" && g++ main.cpp -o main && "/Users/yq/VSCode/CppProject/practiseCMake/"main
     
