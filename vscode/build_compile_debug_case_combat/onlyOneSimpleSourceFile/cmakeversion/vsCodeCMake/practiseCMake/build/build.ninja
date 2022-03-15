@@ -223,6 +223,12 @@ build CMakeFiles/HelloWorld.dir/main.cpp.o: CXX_COMPILER__HelloWorld_Debug /User
   OBJECT_DIR = CMakeFiles/HelloWorld.dir
   OBJECT_FILE_DIR = CMakeFiles/HelloWorld.dir
 
+build CMakeFiles/HelloWorld.dir/Pet.cpp.o: CXX_COMPILER__HelloWorld_Debug /Users/yq/VSCode/CppProject/practiseCMake/Pet.cpp || cmake_object_order_depends_target_HelloWorld
+  DEP_FILE = CMakeFiles/HelloWorld.dir/Pet.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/HelloWorld.dir
+  OBJECT_FILE_DIR = CMakeFiles/HelloWorld.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target HelloWorld
@@ -231,7 +237,7 @@ build CMakeFiles/HelloWorld.dir/main.cpp.o: CXX_COMPILER__HelloWorld_Debug /User
 #############################################
 # Link the executable HelloWorld
 
-build HelloWorld: CXX_EXECUTABLE_LINKER__HelloWorld_Debug CMakeFiles/HelloWorld.dir/main.cpp.o
+build HelloWorld: CXX_EXECUTABLE_LINKER__HelloWorld_Debug CMakeFiles/HelloWorld.dir/main.cpp.o CMakeFiles/HelloWorld.dir/Pet.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/HelloWorld.dir
   POST_BUILD = :
