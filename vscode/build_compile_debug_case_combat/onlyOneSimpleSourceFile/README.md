@@ -40,7 +40,7 @@ The Architecture of workspace `HelloWorld` are:
 
     |     |__tasks.json
 
-    |__helloworld.cpp
+    |_helloworld.cpp
 
 `helloworld.cpp`: This workspace main function.
 
