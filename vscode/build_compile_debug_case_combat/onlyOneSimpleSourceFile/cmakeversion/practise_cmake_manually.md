@@ -193,3 +193,13 @@ Finally, select `Executable`.
     [cmake] -- Generating done
     
     [cmake] -- Build files have been written to: /Users/yq/VSCode/CppProject/practiseCMake/build
+    
+### 1.6 Git worksapce to local repository or even remote repository
+
+Just use:
+
+    cd .. && git add cmakeversion && git commit -m "Update cmakeversion" && git pull --rebase && git push && cd cmakeversion && pwd && ls -al
+    
+Or,
+
+    cd .. && git add cmakeversion && git commit -m "Update cmakeversion" && git pull && git push && cd cmakeversion && pwd && ls -al
