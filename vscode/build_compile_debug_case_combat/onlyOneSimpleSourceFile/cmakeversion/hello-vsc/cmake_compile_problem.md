@@ -163,5 +163,11 @@ but `DEBUG CONSOLE` Output:
     Process exited with code 0.
 Debug do not work.
 
+Debug as Output target file.
+
+    hello Visual Studio Code! :)
+ 
+    marryme@rose-2  ~/VSCode/CppProject/hello-vsc  
+
 
     
