@@ -43,9 +43,14 @@ during using `coder-runner` extensions. I guess!!!
 ## Problem A
 
 ### Operate RoadMap
+echo: echo Hello
+
 cmake:
 `⇧+⌘+P` and type “`Tasks`” and pick “`Run Task`”
 From the list pick “`cmake`” and pick "`contiue xxx`"
+
+Run Code: `^\~N`
+
 ### Output
 
 echo:
@@ -103,11 +108,21 @@ make:
 
     Terminal will be reused by tasks, press any key to close it.
 
+Run Code:
+
+    [Running] cd "/Users/marryme/VSCode/CppProject/hello-vsc/" && g++ hello_vsc.cpp -o hello_vsc && "/Users/yq/VSCode/CppProject/hello-vsc/"hello_vsc
+    
+    hello Visual Studio Code! :)
+
+    [Done] exited with code=0 in 0.449 seconds
+
 ### Run Or Not
 
 cmake: Not(Before);
 
 make: Run.
+
+Run Code: Run. Genrate hello_vsc target file in ~/./.
 
 ### Fix Or Not
 
