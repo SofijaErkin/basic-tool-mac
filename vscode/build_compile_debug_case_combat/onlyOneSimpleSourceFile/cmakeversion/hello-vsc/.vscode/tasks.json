@@ -31,6 +31,14 @@
             "label": "make",
             // "command": "echo Hello"
             "command": "make -j 8",
+            // basically instructs make to start building our program and use 8
+            // jobs that can run simultaneously in each core of your computer’s
+            // CPU,
+            // even when in this case this argument is not necessary you can 
+            // leave it in case you have more than 8 source files,
+            // that’ll make the compiler to compile all the sources in parallel 
+            /// assigning each source to one core and leaving the rest to other 
+            // cores as soon as they get free of work.  
             // "isBuildCommand": true
             // the property “isBuildCommand” set to true enables the task to be
             // executed via the Tasks: Run Build Task.
