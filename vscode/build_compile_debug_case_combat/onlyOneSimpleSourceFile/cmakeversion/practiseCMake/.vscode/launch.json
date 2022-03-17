@@ -6,7 +6,7 @@
     "configurations": [
         {
             "name": "(lldb)Launch",
-            "type":"cppgdb",
+            "type":"lldb",
             "request": "launch",
             // "program" is the target file diretory
             // "program": "${fileDirname}/${fileBasenameNoExtension}",

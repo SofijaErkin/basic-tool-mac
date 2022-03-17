@@ -18,6 +18,14 @@ make:
 
     From the list pick “`make`” and pick "`contiue xxx`"
 
+debug:
+
+    On VSC click on the little bug icon on the Sidebar
+
+    Click the Configure Icon on the Debug View (the little gear with a red badge on it)
+
+    From the list select LLDB
+
 ### 0.2Output
 
 cmake:
@@ -59,11 +67,17 @@ make:
 
     Terminal will be reused by tasks, press any key to close it.
 
+debug:
+
+    Internal debugger error: unable to find executable for '/Users/yq/VSCode/CppProject/practiseCMake/main'
+
 ### 0.3Run Or Not
 
 cmake: Run.
 
 make: Run.
+
+debug: Not.
 
 ## 1.Problem A
 
