@@ -19,6 +19,11 @@
             "label": "cmake",
             // "command": "echo Hello"
             "command": "cmake -G 'Unix Makefiles' -DCMAKE_BUILD_TYPE=Debug .."
+            // Basically instructs CMake to generate the build files and set it
+            // up to instruct the C++ compiler to avoid using optimizations and
+            // generate debug code; 
+            // finally the “..” indicate to use the ../CMakeLists.txt file as 
+            // the input of CMake. 
         },
         {
             // The task “make” that allows us to build our executable.
