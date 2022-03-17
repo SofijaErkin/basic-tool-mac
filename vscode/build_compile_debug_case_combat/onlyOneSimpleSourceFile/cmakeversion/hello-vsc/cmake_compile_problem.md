@@ -31,7 +31,9 @@ if use Native Debug extension, then you can add lldb-mi to your path using ln -s
 
 /Applications/Xcode.app/Contents/Developer/usr/bin/lldb-mi /usr/local/bin/lldb-mi
 
-if you have Xcode.
+if you have Xcode. But This does not work! Please do not worry to cancel the 
+
+soft-link.
 
 
 This equals `~/.vscode/settings.json` `"code-runner.executorMap"`: [`"cpp": "xxx"`] 
@@ -102,10 +104,15 @@ Output:
 ## Problem B
 
 ### Operate RoadMap
+After add lldb-mi dibbuger to your PATH on your .bash_profile the location of 
 
+the lldb-mi debugger just re-launch VSC and you should be able to debug your 
+
+code by just clicking the “`Start Debugging (F5)`” button.
 ### Output
-
+Debug button fresh! Debug did not work.
 ### Run Or Not
+Not
 
 
 
