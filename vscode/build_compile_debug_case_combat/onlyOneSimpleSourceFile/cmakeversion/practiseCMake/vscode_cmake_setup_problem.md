@@ -47,12 +47,23 @@ cmake:
 
 make:
     
+    > Executing task: make -j 8 <
+
+    [ 66%] Building CXX object CMakeFiles/HelloWorld.dir/main.cpp.o
+
+    [ 66%] Building CXX object CMakeFiles/HelloWorld.dir/Pet.cpp.o
+    
+    [100%] Linking CXX executable HelloWorld
+    
+    [100%] Built target HelloWorld
+
+    Terminal will be reused by tasks, press any key to close it.
 
 ### 0.3Run Or Not
 
 cmake: Run.
 
-make: .
+make: Run.
 
 
 ## 1.Problem A
