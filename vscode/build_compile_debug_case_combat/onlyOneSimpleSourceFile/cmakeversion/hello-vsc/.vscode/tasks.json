@@ -1,10 +1,16 @@
 {
+    // Reference: https://medium.com/@ivan.mejia/c-development-using-visual-studio-code-cmake-and-lldb-d0f13d38c563
     // See https://go.microsoft.com/fwlink/?LinkId=733558
     // for the documentation about the tasks.json format
     "version": "2.0.0",
     "options": {
         "cwd": "${workspaceRoot}/build"
     },
+    // the “options” section where is used the property “cwd” (current working 
+    // directory) and the substitution variable “${workspaceRoot}”, this 
+    // variable contains the path to the folder where we load our project in 
+    // VSC. We concat the “build” directory which should be created under our
+    // project’s root directory.
     "tasks": [
         {
             "type": "shell",
