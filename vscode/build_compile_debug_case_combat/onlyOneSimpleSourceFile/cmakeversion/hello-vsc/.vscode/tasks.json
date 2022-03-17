@@ -13,23 +13,30 @@
     // project’s root directory.
     "tasks": [
         {
+            // The task “cmake” which allows us to generate all the build files
+            // required to generate a binary executable.
             "type": "shell",
             "label": "cmake",
             // "command": "echo Hello"
             "command": "cmake -G 'Unix Makefiles' -DCMAKE_BUILD_TYPE=Debug .."
         },
         {
+            // The task “make” that allows us to build our executable.
             "type": "shell",
             "label": "make",
             // "command": "echo Hello"
             "command": "make -j 8",
+            // "isBuildCommand": true
+            // the property “isBuildCommand” set to true enables the task to be
+            // executed via the Tasks: Run Build Task.
+            // "The property isBuildCommand is deprecated. Use the group 
+            // property instead. See also the 1.14 release notes."
             "presentation": {
                 "echo": true,
                 "reveal": "always",
                 "panel": "shared"
             }
-            // "The property isBuildCommand is deprecated. Use the group 
-            // property instead. See also the 1.14 release notes."
         }
     ]
+    // The property “tasks” is an array of tasks we require.
 }
