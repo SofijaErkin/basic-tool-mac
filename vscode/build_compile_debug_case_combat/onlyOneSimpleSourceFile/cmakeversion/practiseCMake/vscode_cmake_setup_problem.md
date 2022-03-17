@@ -79,6 +79,10 @@ make: Run.
 
 debug: Not.
 
+### 0.4Fix Or Not
+
+debug: Not.
+
 ## 1.Problem A
 
 ### 1.1Platform
