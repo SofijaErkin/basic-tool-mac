@@ -15,6 +15,19 @@ make:
 
     From the list pick “`make`” and pick "`contiue xxx`"
 
+debug:
+    
+    On VSC click on the little bug icon on the Sidebar
+
+    Click the Configure Icon on the Debug View (the little gear with a red badge on it)
+
+    From the list select LLDB
+
+    (if you also install the extension CodeLLDB, select the second one)
+
+    (if you do not install the extension CodeLLDB, select the first one)
+
+
 This equals `~/.vscode/settings.json` `"code-runner.executorMap"`: [`"cpp": "xxx"`] 
 
 during using `coder-runner` extensions. I guess!!!
