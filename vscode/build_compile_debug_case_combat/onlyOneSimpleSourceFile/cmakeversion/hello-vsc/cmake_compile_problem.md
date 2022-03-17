@@ -153,3 +153,15 @@ Debug button fresh! Debug did not work.
 Not
 ### May be
 lanuch.json under ~/.vscode/ needed to be changed.
+### Fix Or Not
+Fix But Not successfully fixed.
+Add "`"program": "${workspaceFolder}/${fileBasenameNoExtension}", // Have changed`",
+but `DEBUG CONSOLE` Output:
+
+    Launching: /Users/yq/VSCode/CppProject/hello-vsc/hello_vsc
+
+    Process exited with code 0.
+Debug do not work.
+
+
+    
