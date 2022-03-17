@@ -1,5 +1,24 @@
 # CMake Compile Problem
 This is a markdown for the problem of this hello-vsc project to compile via CMake.
+
+First, roadmap of using CMake in VSCode on mac:
+
+cmake:
+
+    type `⇧+⌘+P` and type “`Tasks`” and pick “`Run Task`”
+
+    From the list pick “`cmake`” and pick "`contiue xxx`"
+
+make:
+
+    type `⇧+⌘+P` and type “`Tasks`” and but this time pick “`Run Build Task`”
+
+    From the list pick “`make`” and pick "`contiue xxx`"
+
+This equals `~/.vscode/settings.json` `"code-runner.executorMap"`: [`"cpp": "xxx"`] 
+
+during using `coder-runner` extensions. I guess!!!
+
 ## Problem A
 
 ### Operate RoadMap
