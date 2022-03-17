@@ -27,6 +27,12 @@ debug:
 
     (if you do not install the extension CodeLLDB, select the first one)
 
+if use Native Debug extension, then you can add lldb-mi to your path using ln -s 
+
+/Applications/Xcode.app/Contents/Developer/usr/bin/lldb-mi /usr/local/bin/lldb-mi
+
+if you have Xcode.
+
 
 This equals `~/.vscode/settings.json` `"code-runner.executorMap"`: [`"cpp": "xxx"`] 
 

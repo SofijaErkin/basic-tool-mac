@@ -8,7 +8,8 @@
             "name": "Debug",
             "type": "lldb-mi",
             "request": "launch",
-            "target": "./bin/hello-vsc",
+            "target": "./bin/hello-vsc", // that’ll make the debugger run and 
+            // attach to our executable inside VSC.
             "cwd": "${workspaceRoot}",
             "valuesFormatting": "parseText"
         }
