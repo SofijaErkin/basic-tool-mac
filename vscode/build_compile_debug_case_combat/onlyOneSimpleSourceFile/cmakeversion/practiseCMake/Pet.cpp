@@ -1,6 +1,6 @@
 // Reference: https://medium.com/@dexterchan_44737/visual-studio-code-build-and-debug-a-c-with-cmake-on-mac-os-7633bc59bf34
-#include "include/Pet.h" 
 #include <iostream> 
+#include "include/Pet.h" 
 Pet::Pet(std::string &_name){
     this->name = _name; 
 } 
