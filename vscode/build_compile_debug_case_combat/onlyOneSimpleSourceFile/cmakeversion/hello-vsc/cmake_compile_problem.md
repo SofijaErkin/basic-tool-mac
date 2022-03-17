@@ -168,6 +168,4 @@ Debug as Output target file.
     hello Visual Studio Code! :)
  
     marryme@rose-2  ~/VSCode/CppProject/hello-vsc  
-
-
-    
+May be need to fix later.
