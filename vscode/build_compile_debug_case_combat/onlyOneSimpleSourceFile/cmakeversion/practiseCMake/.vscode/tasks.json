@@ -8,7 +8,7 @@
 		// {workspaceRoot} is the directory of your workspace.
 		// "cwd" is the source files directory.
 		// "cwd": "${workspaceRoot}/build"
-		"cwd": "${workspaceFolder}" // Have changed
+		"cwd": "${workspaceFolder}/build" // Have changed
 	},
 	// Property “label” allows VSC to reference the task name when running the
 	// task.
