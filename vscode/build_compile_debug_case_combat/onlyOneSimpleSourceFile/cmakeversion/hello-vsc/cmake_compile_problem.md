@@ -43,15 +43,20 @@ during using `coder-runner` extensions. I guess!!!
 ## Problem A
 
 ### Operate RoadMap
+cmake:
 `⇧+⌘+P` and type “`Tasks`” and pick “`Run Task`”
 From the list pick “`cmake`” and pick "`contiue xxx`"
 ### Output
+
+echo:
 
     Executing task: echo Hello <
 
     Hello
 
     Terminal will be reused by tasks, press any key to close it.
+
+cmake:
 
     > Executing task: cmake -G 'Unix Makefiles' -DCMAKE_BUILD_TYPE=Debug .. <
 
@@ -86,9 +91,16 @@ From the list pick “`cmake`” and pick "`contiue xxx`"
 
     Terminal will be reused by tasks, press any key to close it.
 
+make:
+    
 ### Run Or Not
-Not
+cmake: Not(Before);
+
+make:.
+
 ### Fix Or Not
+
+cmake:
 Fixed. 
 Adjust `set(SOURCE hello-vsc.cpp)` to `set(SOURCE hello_vsc.cpp)`.
 Also, 
@@ -113,6 +125,3 @@ code by just clicking the “`Start Debugging (F5)`” button.
 Debug button fresh! Debug did not work.
 ### Run Or Not
 Not
-
-
-

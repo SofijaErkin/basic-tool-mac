@@ -6,7 +6,7 @@
     "configurations": [
         {
             "name": "Debug",
-            "type": "lldb-mi",
+            "type": "lldb",
             "request": "launch",
             "target": "./bin/hello-vsc", // that’ll make the debugger run and 
             // attach to our executable inside VSC.
