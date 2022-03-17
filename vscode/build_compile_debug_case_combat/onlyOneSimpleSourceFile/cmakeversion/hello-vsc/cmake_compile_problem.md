@@ -169,3 +169,5 @@ Debug as Output target file.
  
     marryme@rose-2  ~/VSCode/CppProject/hello-vsc  
 May be need to fix later.
+Even add "`//`" before "`"target": "./bin/hello-vsc",`" in lanuch.json, not fix,
+Debug as Output target file.
