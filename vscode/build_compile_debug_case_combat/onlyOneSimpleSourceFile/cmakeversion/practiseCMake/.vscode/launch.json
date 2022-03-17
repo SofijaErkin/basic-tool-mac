@@ -19,8 +19,9 @@
             // That's the source files directory
             "cwd": "${workspaceFolder}", // Have changed
             "environment": [],
-            "externalConsole": true,
-            "MIMode": "lldb" // ?
+            "externalConsole": true // ,
+            // "MIMode": "lldb" // ?
+            // "preLaunchTask": "Compile With clang++"
         }
     ]
 }
