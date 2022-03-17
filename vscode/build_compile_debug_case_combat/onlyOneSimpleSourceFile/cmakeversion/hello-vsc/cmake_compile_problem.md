@@ -93,10 +93,21 @@ cmake:
 
 make:
     
+    > Executing task: make -j 8 <
+
+    [ 50%] Building CXX object CMakeFiles/hello-vsc.dir/hello_vsc.cpp.o
+
+    [100%] Linking CXX executable hello-vsc
+    
+    [100%] Built target hello-vsc
+
+    Terminal will be reused by tasks, press any key to close it.
+
 ### Run Or Not
+
 cmake: Not(Before);
 
-make:.
+make: Run.
 
 ### Fix Or Not
 
