@@ -65,7 +65,6 @@ cmake: Run.
 
 make: Run.
 
-
 ## 1.Problem A
 
 ### 1.1Platform
