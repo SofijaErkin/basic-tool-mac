@@ -48,6 +48,19 @@ From the list pick “`cmake`” and pick "`contiue xxx`"
 
 ### Run Or Not
 Not
+### Fix Or Not
+Fixed. 
+Adjust `set(SOURCE hello-vsc.cpp)` to `set(SOURCE hello_vsc.cpp)`.
+Also, 
+Output:
+
+    Executing task: cmake -G 'Unix Makefiles' -DCMAKE_BUILD_TYPE=Debug .. <
+
+    -- Configuring done
+    -- Generating done
+    -- Build files have been written to: /Users/yq/VSCode/CppProject/hello-vsc/build
+
+    Terminal will be reused by tasks, press any key to close it.
 ## Problem B
 
 ### Operate RoadMap
