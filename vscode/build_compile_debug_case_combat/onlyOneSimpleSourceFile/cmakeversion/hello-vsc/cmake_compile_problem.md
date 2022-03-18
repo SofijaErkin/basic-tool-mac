@@ -186,4 +186,16 @@ add The below thins to ~/.vscode/tasks.json:
             "make"
         ]
     }
+But 
+"`DEBUG CONSOLE`" output:
 
+    Launching: /Users/yq/VSCode/CppProject/hello-vsc/hello_vsc
+
+    Process exited with code 0.
+"`TERMINAL`" output:
+
+    hello Visual Studio Code! :)
+    marryme@rose-2  ~/VSCode/CppProject/hello-vsc  
+Did Not Fixed! Debug as output the target file.
+
+    
