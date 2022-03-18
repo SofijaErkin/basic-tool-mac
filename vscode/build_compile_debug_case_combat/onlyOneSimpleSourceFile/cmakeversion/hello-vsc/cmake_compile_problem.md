@@ -198,4 +198,7 @@ But
     marryme@rose-2  ~/VSCode/CppProject/hello-vsc  
 Did Not Fixed! Debug as output the target file.
 
-    
+Added Fix Output:
+
+    Internal debugger error: unable to find executable for '/Users/yq/VSCode/CppProject/hello-vsc/build/hello_vsc'
+Did Not Fix.
