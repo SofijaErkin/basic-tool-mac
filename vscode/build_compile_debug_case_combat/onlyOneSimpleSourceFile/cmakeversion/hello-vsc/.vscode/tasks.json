@@ -4,8 +4,8 @@
     // for the documentation about the tasks.json format
     "version": "2.0.0",
     "options": {
-        "cwd": "${workspaceRoot}/build"
-    }, // What that "cwd" means?
+        "cwd": "${workspaceRoot}/build/debug" // What that "cwd" means?
+    }, 
     // the “options” section where is used the property “cwd” (current working 
     // directory) and the substitution variable “${workspaceRoot}”, this 
     // variable contains the path to the folder where we load our project in 
@@ -18,7 +18,7 @@
             "type": "shell",
             "label": "cmake",
             // "command": "echo Hello"
-            "command": "cmake -G 'Unix Makefiles' -DCMAKE_BUILD_TYPE=Debug .."
+            "command": "cmake -G 'Unix Makefiles' -DCMAKE_BUILD_TYPE=Debug ../.."
             // Basically instructs CMake to generate the build files and set it
             // up to instruct the C++ compiler to avoid using optimizations and
             // generate debug code; 
@@ -55,7 +55,7 @@
             "label": "Build",
             "dependsOrder": "sequence",
             "dependsOn": [
-                "cmake",
+                "cmake ",
                 "make"
             ]
         }
