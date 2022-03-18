@@ -1,7 +1,7 @@
 # Reference: https://medium.com/@ivan.mejia/c-development-using-visual-studio-code-cmake-and-lldb-d0f13d38c563
 cmake_minimum_required(VERSION 3.0)
 # make sure to use as minimum version of cmake the 3.0
-project(hello-vsc)
+project(hello_vsc)
 # set the project’s name to “hello-vac”
 set(SOURCE hello_vsc.cpp)
 # the source code of our project is in “hello-vsc.cpp”

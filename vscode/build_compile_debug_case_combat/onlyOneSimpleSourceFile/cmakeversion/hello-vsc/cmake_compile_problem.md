@@ -202,3 +202,19 @@ Added Fix Output:
 
     Internal debugger error: unable to find executable for '/Users/yq/VSCode/CppProject/hello-vsc/build/hello_vsc'
 Did Not Fix.
+
+BREAK FIXED!
+
+    WHAT HAPPENS?
+
+    Your know, I set the project name "hello-vsc" in CMakeLists.txt before 
+    
+    BREAK FIXED, and set the debug name "hello_vsc" in ~/.vscode/lanuch.json.
+
+    when i cmake and make in the dirctory build, that will generate target file
+
+    hello-vsc. But when i click the debug button, that lanuch will to find 
+
+    target file hello_vsc. CAN YOU SEE? To be find target file "hello_vsc" 
+
+    differ from the generated target file "hello-vsc". That's it.

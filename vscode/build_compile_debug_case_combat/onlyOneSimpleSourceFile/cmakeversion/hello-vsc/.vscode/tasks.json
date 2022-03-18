@@ -54,7 +54,7 @@
             "type": "shell",
             "label": "Build",
             "dependsOrder": "sequence",
-            "dependsOn":[
+            "dependsOn": [
                 "cmake",
                 "make"
             ]
