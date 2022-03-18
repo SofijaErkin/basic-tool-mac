@@ -12,7 +12,8 @@
             // "target": "./bin/hello-vsc", // that’ll make the debugger run and 
             // attach to our executable inside VSC.
             "cwd": "${workspaceRoot}",
-            "valuesFormatting": "parseText"
+            "valuesFormatting": "parseText",
+            "preLaunchTask": "Build"
         }
     ]
 }

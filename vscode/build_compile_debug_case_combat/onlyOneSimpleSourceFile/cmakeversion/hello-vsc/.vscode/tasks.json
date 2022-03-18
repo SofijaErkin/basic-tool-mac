@@ -49,6 +49,15 @@
                 "reveal": "always",
                 "panel": "shared"
             }
+        },
+        {
+            "type": "shell",
+            "label": "Build",
+            "dependsOrder": "sequence",
+            "dependsOn":[
+                "cmake",
+                "make"
+            ]
         }
     ]
     // The property “tasks” is an array of tasks we require.

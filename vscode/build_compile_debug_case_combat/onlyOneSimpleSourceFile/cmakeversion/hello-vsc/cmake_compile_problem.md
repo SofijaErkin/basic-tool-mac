@@ -171,3 +171,19 @@ Debug as Output target file.
 May be need to fix later.
 Even add "`//`" before "`"target": "./bin/hello-vsc",`" in lanuch.json, not fix,
 Debug as Output target file.
+### Other Fix Or Not
+Yes.
+add "`,"preLaunchTask": "Build"`" to ~/.vscode/lanuch.json, 
+add The below thins to ~/.vscode/tasks.json:
+
+    ,
+    {
+        "type": "shell",
+        "label": "Build",
+        "dependsOrder": "sequence",
+        "dependsOn":[
+            "cmake",
+            "make"
+        ]
+    }
+
