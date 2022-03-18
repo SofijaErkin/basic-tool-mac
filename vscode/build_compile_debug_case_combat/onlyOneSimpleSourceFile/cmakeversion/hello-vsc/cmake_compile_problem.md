@@ -218,3 +218,13 @@ BREAK FIXED!
     target file hello_vsc. CAN YOU SEE? To be find target file "hello_vsc" 
 
     differ from the generated target file "hello-vsc". That's it.
+
+Notice:
+    
+    CMake Warning:
+  
+      No source or binary directory provided.  Both will be assumed to be the
+  
+      same as the current working directory, but note that this warning will
+  
+      become a fatal error in future CMake releases.
