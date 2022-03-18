@@ -10,9 +10,10 @@
             "request": "launch",
             // Added to fix: Changed "program": 
             "program": "${workspaceFolder}/build/${fileBasenameNoExtension}", // Have changed
+            // What that "program" means?
             // "target": "./bin/hello-vsc", // that’ll make the debugger run and 
             // attach to our executable inside VSC.
-            "cwd": "${workspaceRoot}",
+            "cwd": "${workspaceRoot}", // What that means?
             "valuesFormatting": "parseText",
             "envirment": [], // Added to fix.
             "externalConsole": false, // Added to fix.

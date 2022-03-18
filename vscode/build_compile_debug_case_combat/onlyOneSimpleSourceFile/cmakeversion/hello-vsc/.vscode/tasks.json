@@ -5,7 +5,7 @@
     "version": "2.0.0",
     "options": {
         "cwd": "${workspaceRoot}/build"
-    },
+    }, // What that "cwd" means?
     // the “options” section where is used the property “cwd” (current working 
     // directory) and the substitution variable “${workspaceRoot}”, this 
     // variable contains the path to the folder where we load our project in 

@@ -4,8 +4,8 @@
     "editor.acceptSuggestionOnEnter": "off",
     "code-runner.runInTerminal": true,
     "code-runner.executorMap": {
-        "c": "cd $dir && cmake -G 'Unix Makefiles' -DCMAKE_BUILD_TYPE=Debug && make -j 8 && $dir$fileNameWithoutExt",
-        "cpp": "cd $dir && cmake -G 'Unix Makefiles' -DCMAKE_BUILD_TYPE=Debug && make -j 8 && $dir$fileNameWithoutExt"
+        "c": "cd $dir && cd build && cmake -G 'Unix Makefiles' -DCMAKE_BUILD_TYPE=Debug .. && make -j 8 && $dir/build/$fileNameWithoutExt",
+        "cpp": "cd $dir && cd build && cmake -G 'Unix Makefiles' -DCMAKE_BUILD_TYPE=Debug .. && make -j 8 && $dirbuild/$fileNameWithoutExt"
     },
     "code-runner.saveFileBeforeRun": true,
     "code-runner.preserveFocus": false,

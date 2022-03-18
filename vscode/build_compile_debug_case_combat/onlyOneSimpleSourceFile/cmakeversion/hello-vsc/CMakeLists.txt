@@ -3,6 +3,8 @@ cmake_minimum_required(VERSION 3.0)
 # make sure to use as minimum version of cmake the 3.0
 project(hello_vsc)
 # set the project’s name to “hello-vac”
+set(CMAKE_CXX_STANDARD 11)
+# set(CMAKE_CXX_STANDARD_REQUIRED True)
 set(SOURCE hello_vsc.cpp)
 # the source code of our project is in “hello-vsc.cpp”
 add_executable(${PROJECT_NAME} ${SOURCE})
