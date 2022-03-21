@@ -40,7 +40,7 @@
 		},
 		{
 			"type": "shell",
-			"label": "Build Debug Version",
+			"label": "Build Debug Version", // Notice!!!
 			"dependsOrder": "sequence",
 			"dependsOn": [
 				"cmake ",

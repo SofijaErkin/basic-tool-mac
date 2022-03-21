@@ -6,7 +6,7 @@
             // the place to add more paths so VSC can provide auto completion 
             // information.
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/include/**" // Have changed!
             ],
             "defines": [],
             "macFrameworkPath": [
@@ -21,4 +21,3 @@
     ],
     "version": 4
 }
-
