@@ -1,0 +1,31 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(lldb)Launch Debug",
+            "type":"lldb",
+            "request": "launch",
+            // "program" is the target file diretory
+            // "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "program": "${workspaceFolder}/build/debug/${fileBasenameNoExtension}", // Have changed
+            "args": [],
+            "stopAtEntry": false,
+            // Changes the current working directory directive ("cwd") to the folder
+            // where main.cpp is.
+            // This "cwd" is the same as "cwd" in the tasks.json 
+            // That's the source files directory
+            "cwd": "${workspaceFolder}", // Have changed
+            "environment": [],
+            "externalConsole": true,
+            // "MIMode": "lldb" // ?
+            // "preLaunchTask": "Compile With clang++"
+            "preLaunchTask": "Build Debug Version"
+        }
+    ]
+}
+
+
+
