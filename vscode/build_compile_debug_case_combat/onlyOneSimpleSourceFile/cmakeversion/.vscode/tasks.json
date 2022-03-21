@@ -1,0 +1,68 @@
+{
+    // Reference: https://medium.com/@ivan.mejia/c-development-using-visual-studio-code-cmake-and-lldb-d0f13d38c563
+    // Reference: 
+    // Build C++ Project using CMake at VSCode on mac(Chinese Blog)
+    // https://blog.csdn.net/Gou_Hailong/article/details/119939307
+    // That has solved My Deubg trouble. Thanks!
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "options": {
+        "cwd": "${workspaceRoot}/build/debug" // What that "cwd" means?
+    }, 
+    // the “options” section where is used the property “cwd” (current working 
+    // directory) and the substitution variable “${workspaceRoot}”, this 
+    // variable contains the path to the folder where we load our project in 
+    // VSC. We concat the “build” directory which should be created under our
+    // project’s root directory.
+    "tasks": [
+        {
+            // The task “cmake” which allows us to generate all the build files
+            // required to generate a binary executable.
+            "type": "shell",
+            "label": "cmake",
+            // "command": "echo Hello"
+            "command": "cmake -G 'Unix Makefiles' -DCMAKE_BUILD_TYPE=Debug ../.."
+            // Basically instructs CMake to generate the build files and set it
+            // up to instruct the C++ compiler to avoid using optimizations and
+            // generate debug code; 
+            // finally the “..” indicate to use the ../CMakeLists.txt file as 
+            // the input of CMake. 
+        },
+        {
+            // The task “make” that allows us to build our executable.
+            "type": "shell",
+            "label": "make",
+            // "command": "echo Hello"
+            "command": "make -j 8",
+            // basically instructs make to start building our program and use 8
+            // jobs that can run simultaneously in each core of your computer’s
+            // CPU,
+            // even when in this case this argument is not necessary you can 
+            // leave it in case you have more than 8 source files,
+            // that’ll make the compiler to compile all the sources in parallel 
+            /// assigning each source to one core and leaving the rest to other 
+            // cores as soon as they get free of work.  
+            // "isBuildCommand": true
+            // the property “isBuildCommand” set to true enables the task to be
+            // executed via the Tasks: Run Build Task.
+            // "The property isBuildCommand is deprecated. Use the group 
+            // property instead. See also the 1.14 release notes."
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "panel": "shared"
+            }
+        },
+        {
+            "type": "shell",
+            "label": "Build Debug Version",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "cmake ",
+                "make"
+            ]
+        }
+    ]
+    // The property “tasks” is an array of tasks we require.
+}
