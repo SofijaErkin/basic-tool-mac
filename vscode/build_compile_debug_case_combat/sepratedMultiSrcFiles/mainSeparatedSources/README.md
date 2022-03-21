@@ -1,6 +1,6 @@
-# Main Separated from Sources Manually
+# C/C++ Main Seperated from Sources Manually
 
-This is a Makefile for main function separated from sources files.
+This is a Makefile for main function seperated from sources files.
 
 Amazing Notice:
 
@@ -42,7 +42,7 @@ CodeLLDB v1.4.5 or v1.5.0 (Author: Vadim Chugunov).
 
 Now:
 
-This workspace named `fitBody`, including 4 directories, 8 files.
+This workspace named `fitBodyPl`, including 4 directories, 8 files.
 
 The Architecture of workspace `fitBodyPl` are:
 
@@ -106,7 +106,7 @@ the compiler, include paths.
 
 Big hanker manually Notice:
 
-The best way to debug Makefile is using "
+1.The best way to debug Makefile is using "
 
     .PHONY: all
     all:
@@ -143,9 +143,9 @@ eg:
     echo $(INC_FLAGS)
     
     echo $(CPP_FLAGS)
+    
+2.Multiple seperated sources directory generate object files:
 
-2.Multiple separated sources directory generate object files:
-
-If all the sources files including the main function are separated directory,
+If all the sources files including the main function are seperated directory,
 
 Then you need to generate the object files via one by one directory.
