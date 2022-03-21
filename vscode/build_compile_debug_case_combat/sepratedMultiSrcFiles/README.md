@@ -1,4 +1,4 @@
-# Separated Multiple CXX Manually VScode(mac)
+# Seperated Multiple C/C++ Manually VScode(mac)
 
 This is a setup for multiple C/C++ files under different folder to build, 
 
@@ -75,7 +75,6 @@ The Architecture of workspace `fitBody` are:
      
          |__main.cpp
          
-     
 `src`: source file folder.
      
 `main.cpp`: This project main function.
