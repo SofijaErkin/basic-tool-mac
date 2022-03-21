@@ -1,0 +1,7 @@
+#include "thefitbodyConfig.h"
+// the configured options and settings for theFitBody
+#define THEFITBODY_VERSION_MAJOR @THEFITBODY_VERSION_MAJOR@
+#define THEFITBODY_VERSION_MINOR @THEFITBODY_VERSION_MINOR@
+// Project version p-v-5-5-OVER.
+// #cmakedefine USE_TEST
+// Optional Library step o-7-7-OVER
