@@ -1,0 +1,53 @@
+{
+	// Reference: https://medium.com/@dexterchan_44737/visual-studio-code-build-and-debug-a-c-with-cmake-on-mac-os-7633bc59bf34
+	// See https://go.microsoft.com/fwlink/?LinkId=733558
+	// for the documentation about the tasks.json format
+	"version": "2.0.0",
+	// "isShellCommand":true,
+	"options": {
+		// {workspaceRoot} is the directory of your workspace.
+		// "cwd" is the source files directory.
+		// "cwd": "${workspaceRoot}/build"
+		"cwd": "${workspaceFolder}/build/debug" // Have changed
+	},
+	// Property “label” allows VSC to reference the task name when running the
+	// task.
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "cmake",
+			"command": "cmake -G 'Unix Makefiles' -DCMAKE_BUILD_TYPE=Debug ../..",
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"panel": "shared"
+			}
+		},
+		{
+			"type": "shell",
+			"label": "make",
+			"command": "make -j 8",
+			// “make -j 8 “ mean running the compile in parallel with max 8 
+			// source files.
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"panel": "shared"
+			},
+			// "isBuildCommand":false
+			// the property “isBuildCommand” set to true enables the task to be
+			// executed via the Tasks: Run Build Task.
+		},
+		{
+			"type": "shell",
+			"label": "Build Debug Version",
+			"dependsOrder": "sequence",
+			"dependsOn": [
+				"cmake ",
+				"make"
+			]
+		}
+	]
+}
+
+
