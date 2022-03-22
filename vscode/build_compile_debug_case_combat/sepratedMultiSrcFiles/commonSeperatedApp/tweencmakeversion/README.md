@@ -1,4 +1,4 @@
-# Common Seperated Apps C/C++ Manually CMake VSCode on Mac
+# Common Seperated Apps C/C++ Manually CMake VSCode on Mac(Tween CMake Version)
 
 workspace environment:
 
@@ -55,4 +55,4 @@ The Architecture of workspace are:
     |__CMakeLists.txt
    
     |__comsepeapp_cmake_compile_problem.md
-I will add the 10 file via adding file.
+I will add the 11 file via adding file.
