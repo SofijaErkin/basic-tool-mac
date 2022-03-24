@@ -7,7 +7,7 @@ project(banks_simulator_plus
   VERSION
     0.1.0
   DESCRIPTION
-    "A project to compile BankSimulator using CMake in VSCode"
+    "A project to compile BankSimulatorPlus using CMake in VSCode"
   LANGUAGES
     CXX)
 
