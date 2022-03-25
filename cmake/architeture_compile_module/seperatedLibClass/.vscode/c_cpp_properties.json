@@ -1,0 +1,27 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            // to use other third party libraries, the “includePath” array is 
+            // the place to add more paths so VSC can provide auto completion 
+            // information.
+            "includePath": [
+                "${workspaceFolder}/petActive/include/**" // Have Changed 
+            ],
+            "defines": [],
+            "macFrameworkPath": [
+                "/System/Library/Frameworks",
+                "/Library/Frameworks"
+            ],
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c11",
+            "cppStandard": "c++11",
+            "intelliSenseMode": "macos-clang-x64"
+        }
+    ],
+    "version": 4
+}
+
+
+
+
