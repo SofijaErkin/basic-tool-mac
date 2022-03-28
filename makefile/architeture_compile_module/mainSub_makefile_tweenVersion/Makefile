@@ -16,6 +16,8 @@ CXX = clang++
 # (2)Compile options
 # -Wall -Wextra -std=c++11 -g
 CXX_FLAGS = -Wall -Wextra -std=c++11 -g
+
+
 # (3)Build task directory path
 # I do care about out-of-source builds
 # ./build
@@ -23,7 +25,8 @@ BUILD_DIR ?= ./build/debug
 # (4)Source files directory path
 # ./src
 SRC_DIRS ?= .
-SRC_DIRS_SRC ?= ./petActive/source
+
+# SRC_DIRS_SRC ?= ./petActive/source
 # (5)Library files directory path
 LIBDIR :=
 # (6)Add library files
@@ -40,8 +43,9 @@ TARGET ?= main
 # *expression must around by single quotos
 # SRCS = $(wildcard ./src/*.cpp)
 # ./src/bank.cpp ./src/main.cpp
+
 SRCS := $(shell find $(SRC_DIRS) -name '*.cpp' -or -name '*.c' -or -name '*.s')
-SRCS_SRC := $(shell find $(SRC_DIRS_SRC) -name '*.cpp' -or -name '*.c' -or -name '*.s')
+# SRCS_SRC := $(shell find $(SRC_DIRS_SRC) -name '*.cpp' -or -name '*.c' -or -name '*.s')
 # (9)Object files
 # String substituion for every C/C++ file
 # e.g: ./src/bank.cpp turns into ./build/bank.cpp.o
@@ -58,8 +62,9 @@ SRCS_SRC := $(shell find $(SRC_DIRS_SRC) -name '*.cpp' -or -name '*.c' -or -name
 # ./build/bank.o ./build/main.o
 # OBJS := $(SRCS:$(SRC_DIRS)/%.cpp=$(BUILD_DIR)/%.o)
 # ./build/bank.cpp.o  ./build/main.cpp.o
+
 OBJS := $(patsubst %.cpp, ${BUILD_DIR}/%.cpp.o, $(notdir $(SRCS)))
-OBJS_SRC := $(patsubst %.cpp, ${BUILD_DIR}/%.cpp.o, $(notdir $(SRCS_SRC)))
+# OBJS_SRC := $(patsubst %.cpp, ${BUILD_DIR}/%.cpp.o, $(notdir $(SRCS_SRC)))
 # make: *** build: Is a directory.  Stop.
 # OBJS := $(patsubst %.cpp, ${BUILD_DIR}/%.cpp.o, $(notdir $(BUILD_DIR)))
 # (10)Dependency files
@@ -67,19 +72,28 @@ OBJS_SRC := $(patsubst %.cpp, ${BUILD_DIR}/%.cpp.o, $(notdir $(SRCS_SRC)))
 # you just need to find them all:
 # 
 DEPS := $(OBJS:.o=.d)
-DEPS_SRC := $(OBJS_SRC:.o=.d)
+# DEPS_SRC := $(OBJS_SRC:.o=.d)
 # (11)Include files directory path
 # Every folder in ./src find include files to be passed via clang 
 # INCDIR = -I./inc
 # INC_DIR = ./inc
 # ./inc
-INC_DIRS := ./petActive/include
+
+# INC_DIRS+= ${CFLAGS}
+INC_DIRS:= 
+#CFLAGS :=
+
+# INC_DIRS := ./petActive/include
 # If use below this , include files  should be at the same directory 
 # with sources files.
 # INC_DIRS := $(shell find $(SRC_DIRS) -type d)
 # (12)Include files add together a prefix, clang make sense that -I flag
 # INCS = -I$(INC_DIR)
+
+
 INC_FLAGS := $(addprefix -I,$(INC_DIRS))
+#INC_FLAGS := $(addprefix -I,$(CFLAGS))
+
 # (13)Make Makefiles output Dependency files
 # That -MMD and -MP flags together to generate Makefiles 
 # That generated Makefiles will take .o as .d to the output
@@ -110,8 +124,17 @@ ${BUILD_DIR}/${TARGET} : $(OBJS)
 $(BUILD_DIR)/%.cpp.o : $(SRC_DIRS)/%.cpp 
 	$(MKDIR_P) $(dir $@)
 	$(CXX) $(CPP_FLAGS) $(CXX_FLAGS) -c $^ -o $@
-$(BUILD_DIR)/%.cpp.o : $(SRC_DIRS_SRC)/%.cpp 
-	$(CXX) $(CPP_FLAGS) $(CXX_FLAGS) -c $^ -o $@
+
+#MODULES := petActive
+#look for include files in each of the modules
+#CFLAGS += $(patsubst %,-I%,\
+    $(MODULES))
+# include the description for each module
+#include $(patsubst %,\
+    %/module.mk,$(MODULES))
+
+# $(BUILD_DIR)/%.cpp.o : $(SRC_DIRS_SRC)/%.cpp 
+# 	$(CXX) $(CPP_FLAGS) $(CXX_FLAGS) -c $^ -o $@
 # C Language Sources
 # # CC := clang
 # # C_FLAGS = -Wall -Wextra -std=c11 -g
