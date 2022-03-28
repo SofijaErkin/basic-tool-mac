@@ -6,16 +6,7 @@ Let's reinstate the environment of compiling problem!
 
 ### 1.1Terminal output during compiling
 
-    CMake Error at petActive/CMakeLists.txt:3 (target_sources):
-  
-      Cannot specify sources for target "PRIVATE" which is not built by this
-  
-      project.
-
-
-    -- Configuring incomplete, errors occurred!
-    
-    See also "/Users/marryme/VSCode/CppProject/mainSub/build/debug/CMakeFiles/CMakeOutput.log".
+    Makefile:22: *** missing separator.  Stop.
 
 ### 1.2Run Or Not
 
@@ -25,22 +16,11 @@ Not.
 
 Fix.
 
-Add target"petActive" to "PRIVATE" under ~/petActive/CMakeLists.txt.
-
-    target_sources(petActive
-      PRIVATE
-        ${CMAKE_CURRENT_LIST_DIR}/source/Pet.cpp
-      PUBLIC
-        ${CMAKE_CURRENT_LIST_DIR}/include/Pet.h
-    )
+Just use the vim editor, and replace "`tab`" using four space.
 
 ### 1.4May be
 
-Notice:
-
-    target_sources(<target>
-      <INTERFACE|PUBLIC|PRIVATE> [items1...]
-      [<INTERFACE|PUBLIC|PRIVATE> [items2...] ...])
+With this command your tabs will look like the other ones (i.e. ^I) and *** missing separator.  Stop. error from make will go away :)
 
 ### 1.5Other Fix Or Not
 
