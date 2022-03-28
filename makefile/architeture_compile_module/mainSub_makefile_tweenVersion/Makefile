@@ -12,36 +12,38 @@
 # (1)Compiler
 # clang++
 CXX = clang++
-.PHONY: all
-all: 
-	echo $(CXX)
 # CXX = g++
 # (2)Compile options
 # -Wall -Wextra -std=c++11 -g
 CXX_FLAGS = -Wall -Wextra -std=c++11 -g
-    echo $(CXX_FLAGS)
 # (3)Build task directory path
 # I do care about out-of-source builds
 # ./build
 BUILD_DIR ?= ./build/debug
-echo $(BUILD_DIR)
 # (4)Source files directory path
 # ./src
 SRC_DIRS ?= .
-echo $(SRC_DIRS)
 # SRC_DIRS_SRC ?= ./petActive/source
 # (5)Library files directory path
 LIBDIR :=
-echo $(LIBDIR)
+.PHONY: all
+all: 
+	echo $(CXX)
+	echo $(CXX_FLAGS)
+	echo $(BUILD_DIR)
+	echo $(SRC_DIRS)
+	echo $(LIBDIR)
 # (6)Add library files
 LIBS :=
-echo $(LIBS)
+all_e:
+	echo $(LIBS)
 # (7)Target file, excutable file.
 #TARGET := main
 #TARGET := ${BUILD_DIR}/main
 # main
 TARGET ?= main
-echo $(TARGET)
+all_f:    
+	echo$(TARGET)
 # BUILD_TARGET = ${BUILD_DIR}/${TARGET}
 # (8)Source files(code), to be compiled
 # Find source files we want to compile 
@@ -49,7 +51,8 @@ echo $(TARGET)
 # SRCS = $(wildcard ./src/*.cpp)
 # ./src/bank.cpp ./src/main.cpp
 SRCS := $(shell find $(SRC_DIRS) -name '*.cpp' -or -name '*.c' -or -name '*.s')
-echo $(SRCS)
+all_g:    
+	echo $(SRCS)
 # SRCS_SRC := $(shell find $(SRC_DIRS_SRC) -name '*.cpp' -or -name '*.c' -or -name '*.s')
 # (9)Object files
 # String substituion for every C/C++ file
@@ -68,7 +71,8 @@ echo $(SRCS)
 # OBJS := $(SRCS:$(SRC_DIRS)/%.cpp=$(BUILD_DIR)/%.o)
 # ./build/bank.cpp.o  ./build/main.cpp.o
 OBJS := $(patsubst %.cpp, ${BUILD_DIR}/%.cpp.o, $(notdir $(SRCS)))
-echo $(OBJS)
+all_h:    
+	echo $(OBJS)
 # OBJS_SRC := $(patsubst %.cpp, ${BUILD_DIR}/%.cpp.o, $(notdir $(SRCS_SRC)))
 # make: *** build: Is a directory.  Stop.
 # OBJS := $(patsubst %.cpp, ${BUILD_DIR}/%.cpp.o, $(notdir $(BUILD_DIR)))
@@ -77,7 +81,8 @@ echo $(OBJS)
 # you just need to find them all:
 # 
 DEPS := $(OBJS:.o=.d)
-echo $(DEPS)
+all_i:    
+	echo $(DEPS)
 # DEPS_SRC := $(OBJS_SRC:.o=.d)
 # (11)Include files directory path
 # Every folder in ./src find include files to be passed via clang 
@@ -86,7 +91,8 @@ echo $(DEPS)
 # ./inc
 # INC_DIRS+= ${CFLAGS}
 INC_DIRS:= 
-echo $(INC_DIRS)
+all_j:    
+	echo $(INC_DIRS)
 #CFLAGS :=
 # INC_DIRS := ./petActive/include
 # If use below this , include files  should be at the same directory 
@@ -95,7 +101,8 @@ echo $(INC_DIRS)
 # (12)Include files add together a prefix, clang make sense that -I flag
 # INCS = -I$(INC_DIR)
 INC_FLAGS := $(addprefix -I,$(INC_DIRS))
-echo $(INC_FLAGS)
+all_l:    
+	echo $(INC_FLAGS)
 #INC_FLAGS := $(addprefix -I,$(CFLAGS))
 # (13)Make Makefiles output Dependency files
 # That -MMD and -MP flags together to generate Makefiles 
@@ -103,7 +110,8 @@ echo $(INC_FLAGS)
 # That "-MMD" and "-MP" To generate the dependency files, all you have to do is
 # add some flags to the compile command (supported by both Clang and GCC):
 CPP_FLAGS ?= $(INC_FLAGS) -MMD -MP
-echo $(CPP_FLAGS)
+all_m:    
+	echo $(CPP_FLAGS)
 # Link: Generate executable file from object file
 # make your target depend on the objects files:
 ${BUILD_DIR}/${TARGET} : $(OBJS)
