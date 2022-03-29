@@ -30,8 +30,30 @@ New Fixed.
 
 ### 2.1Terminal output during compiling
 
+    echo clang++
+
+    clang++
+
+    zsh: no such file or directory: /Users/yq/VSCode/CppProject/mainSub_makefile_tweenVersion//./build/debug/main
+
 ### 2.2Run Or Not
+
+Not.
 
 ### 2.3Fix Or Not
 
+Fixed.
+
+Remove the functional code to debug Makefile in the `Makefile`.
+
+e.g:
+
+    .PHONY: all all_a all_b
+
+    all:
+
+        echo $(CXX)
+
 ### 2.5Other Fix Or Not
+
+Remove debug functional code at Makefile before compiling and outputing.
