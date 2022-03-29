@@ -57,3 +57,38 @@ e.g:
 ### 2.5Other Fix Or Not
 
 Remove debug functional code at Makefile before compiling and outputing.
+
+## 3.Problem C
+
+If change "`SRC_DIRS_SRC`" into "`SRC_DIRS`" in "`module.mk`" under
+
+"`./petActive/module.mk`", and delete all the variables "`XXX_SRC`" in
+
+"`Makefile`" under "`./`", and delete the sub-directory compiling, then
+
+compiling output:
+
+    =============
+
+    Creat Make Directory ./build/debug
+    mkdir -p build/debug/
+    =============
+
+    -- Creat finished --
+    =============
+
+    Top Root Directory Compiling petActive/source/Pet.cpp
+    clang++ -I./petActive/include -MMD -MP -Wall -Wextra -std=c++11 -g -c petActive/source/Pet.cpp -o build/debug/Pet.cpp.o
+    =============
+
+    -- Compile top root finished --
+    Linking the target build/debug/main
+    =============
+
+    clang++ build/debug/Pet.cpp.o -o build/debug/main
+    Undefined symbols for architecture x86_64:
+      "_main", referenced from:
+        implicit entry/start for main executable
+    ld: symbol(s) not found for architecture x86_64
+    clang: error: linker command failed with exit code 1 (use -v to see invocation)
+    make: *** [build/debug/main] Error 1

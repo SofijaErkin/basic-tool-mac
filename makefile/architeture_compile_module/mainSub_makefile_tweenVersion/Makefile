@@ -55,7 +55,7 @@ BUILD_DIR ?= ./build/debug
 # (4)Source files directory path
 # ./src
 SRC_DIRS ?= .
-# SRC_DIRS_SRC ?= .
+SRC_DIRS_SRC ?= .
 # (5)Library files directory path
 LIBDIR :=
 # (6)Add library files
@@ -150,6 +150,7 @@ ${BUILD_DIR}/${TARGET} : $(OBJS)
 	@echo -- Link finished --
 	@echo "============="
 	@echo "Output the target $@"
+	@echo -- Output below --
 #	$(CXX) $(OBJS) $(OBJS_SRC)	 -o ${TARGET}
 # Compile: Generate object files from source files
 # $@ := {TARGET}

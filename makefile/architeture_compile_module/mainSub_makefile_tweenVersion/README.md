@@ -34,29 +34,29 @@ The Architecture of workspace are:
 
     |     |__tasks.json
 
-    |__CMakeLists.txt
-    
     |_build
     
     |     |_debug
     
     |     |_release
+
+    |_petActive
+          
+    |     |_include
+          
+    |     |     |__Pet.h
+          
+    |     |_source
+    
+    |     |     |__Pet.cpp
+
+    |     |__module.mk
     
     |__main.cpp
     
     |__mainSub_cmake_compile_problem.md
-    
-    |_petActive
-    
-          |__CMakeLists.txt
-          
-          |_include
-          
-          |     |__Pet.h
-          
-          |_source
-    
-                |__Pet.cpp
+
+    |__Makefile
 
 I will add the 10 file via adding file.
 

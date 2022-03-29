@@ -1,4 +1,5 @@
 SRC_DIRS_SRC += ./petActive/source
+#SRC_DIRS += ./petActive/source
 #.PHONY: all_a
 #all_a:
 #	echo $(SRC_DIRS)
