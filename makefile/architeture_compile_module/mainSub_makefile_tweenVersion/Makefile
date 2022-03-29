@@ -30,6 +30,7 @@
 #
 # 
 # Refer: Tutorial on writing makefiles
+# Ways: Recursive Makefile
 # Step/Key words: Template or boilerplate files/Working with several directories
 # (https://www.math.colostate.edu/~yzhou/computer/writemakefile.html#%2emakepp_log)
 #
@@ -38,6 +39,7 @@
 # Refer: Makefiles with source files in different directories(Stackoverflow)
 # RC's post was SUPER useful. I never thought about using the $(dir $@) function, 
 # but it did exactly what I needed it to do.
+# Ways: Single Makefile under top root directory
 # https://stackoverflow.com/a/1139628/10846570
 # 
 include ./petActive/module.mk
@@ -56,6 +58,7 @@ BUILD_DIR ?= ./build/debug
 # ./src
 SRC_DIRS ?= .
 SRC_DIRS_SRC ?= .
+#SRC_DIRS += ${SRC_DIRS_SRC}
 # (5)Library files directory path
 LIBDIR :=
 # (6)Add library files
