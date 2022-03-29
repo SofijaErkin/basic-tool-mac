@@ -1,5 +1,5 @@
 SRC_DIRS_SRC += ./petActive/source
-# SRC_DIRS += ./petActive/source
+# SRC_DIRS += ${SRC_DIRS_SRC}
 #.PHONY: all_a
 #all_a:
 #	echo $(SRC_DIRS)
@@ -9,7 +9,8 @@ SRC_DIRS_SRC += ./petActive/source
 #echo $(SRC_DIRS)
 #DEPS := $(OBJS:.o=.d)
 #echo $(SRC_DIRS)
-INC_DIRS += ./petActive/include
+INC_DIRS_SRC += ./petActive/include
+# INC_DIRS += ${INC_DIRS_SRC}
 #.PHONY: all_b
 #all_b:
 #	echo $(INC_DIRS)

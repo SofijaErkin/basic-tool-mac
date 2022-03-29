@@ -108,7 +108,7 @@ DEPS_SRC := $(OBJS_SRC:.o=.d)
 # INC_DIR = ./inc
 # ./inc
 # INC_DIRS+= ${CFLAGS}
-INC_DIRS?= .
+INC_DIRS ?= .
 # INC_DIRS := ./petActive/include
 # If use below this , include files  should be at the same directory 
 # with sources files.
