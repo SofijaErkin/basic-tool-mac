@@ -9,8 +9,35 @@
 # (https://github.com/simonsso/empty-cpp-project/blob/master/Makefile)
 # Reference: Chinese Website blogger CDNS
 # (https://blog.csdn.net/qq_22073849/article/details/88893201)
-# Refer: Recursive Make Considered Harmful(Peter Miller)
+#
+# Thanks you very much, 
+# Refer: Recursive Make Considered Harmful
+# (Peter Miller) 1998
 # (https://accu.org/journals/overload/14/71/miller_2004/)
+#
+#
+# Refer: Implementing non-recursive make
+# (Emile van Bergen) 2002
+# (http://sites.e-advies.nl/nonrecursive-make.html)
+#
+#
+#
+#
+# Refer: Managing Projects with GNU Make, 3rd Edition by Robert Mecklenburg
+# Chapter 6. Managing Large Projects
+# Step/Key words: Nonrecursive make
+# (https://www.oreilly.com/library/view/managing-projects-with/0596006101/ch06.html)
+#
+# 
+# Refer: Tutorial on writing makefiles
+# Step/Key words: Template or boilerplate files/Working with several directories
+# (https://www.math.colostate.edu/~yzhou/computer/writemakefile.html#%2emakepp_log)
+#
+# 
+#
+# Refer: Makefiles with source files in different directories(Stackoverflow)
+# https://stackoverflow.com/a/1139628/10846570
+# 
 include ./petActive/module.mk
 # (1)Compiler
 # clang++
@@ -113,8 +140,14 @@ CPP_FLAGS ?= $(INC_FLAGS) -MMD -MP
 # Link: Generate executable file from object file
 # make your target depend on the objects files:
 ${BUILD_DIR}/${TARGET} : $(OBJS)
+
 #${BUILD_DIR}/${TARGET} : $(OBJS) $(OBJS_SRC)	
+	@echo "Linking the target $@"
+	@echo "============="
 	$(CXX) $^ -o $@
+	@echo -- Link finished --
+	@echo "============="
+	@echo "Output the target $@"
 #	$(CXX) $(OBJS) $(OBJS_SRC)	 -o ${TARGET}
 # Compile: Generate object files from source files
 # $@ := {TARGET}
@@ -131,10 +164,23 @@ ${BUILD_DIR}/${TARGET} : $(OBJS)
 # make: *** [build/main.cpp.o] Error 1
 #$(OBJS) : $(SRCS)
 $(BUILD_DIR)/%.cpp.o : $(SRC_DIRS)/%.cpp 
+	@echo "============="
+	@echo "Creat Make Directory ./build/debug"
 	$(MKDIR_P) $(dir $@)
+	@echo "============="
+	@echo -- Creat finished --
+	@echo "============="
+	@echo "Top Root Directory Compiling $^"
 	$(CXX) $(CPP_FLAGS) $(CXX_FLAGS) -c $^ -o $@
+	@echo "============="
+	@echo -- Compile top root finished --
 $(BUILD_DIR)/%.cpp.o : $(SRC_DIRS_SRC)/%.cpp 
+	@echo "============="
+	@echo "Sub-directory Compiling $^"
 	$(CXX) $(CPP_FLAGS) $(CXX_FLAGS) -c $^ -o $@
+	@echo "============="
+	@echo -- Compile sub-dir finished --
+	@echo "============="
 # C Language Sources
 # # CC := clang
 # # C_FLAGS = -Wall -Wextra -std=c11 -g
