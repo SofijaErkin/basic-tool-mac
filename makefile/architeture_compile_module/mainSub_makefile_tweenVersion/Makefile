@@ -36,6 +36,8 @@
 # 
 #
 # Refer: Makefiles with source files in different directories(Stackoverflow)
+# RC's post was SUPER useful. I never thought about using the $(dir $@) function, 
+# but it did exactly what I needed it to do.
 # https://stackoverflow.com/a/1139628/10846570
 # 
 include ./petActive/module.mk
