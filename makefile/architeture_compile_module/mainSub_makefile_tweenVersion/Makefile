@@ -11,10 +11,7 @@
 # (https://blog.csdn.net/qq_22073849/article/details/88893201)
 # Refer: Recursive Make Considered Harmful(Peter Miller)
 # (https://accu.org/journals/overload/14/71/miller_2004/)
-MODULES := petActive
-#look for include files in each of the modules
-INC_DIRS += $(patsubst %,-I%,\
-    $(MODULES))
+include ./petActive/module.mk
 # (1)Compiler
 # clang++
 CXX = clang++
@@ -29,7 +26,7 @@ BUILD_DIR ?= ./build/debug
 # (4)Source files directory path
 # ./src
 SRC_DIRS ?= .
-# SRC_DIRS_SRC ?= ./petActive/source
+# SRC_DIRS_SRC ?= .
 # (5)Library files directory path
 LIBDIR :=
 # (6)Add library files
@@ -46,7 +43,7 @@ TARGET ?= main
 # SRCS = $(wildcard ./src/*.cpp)
 # ./src/bank.cpp ./src/main.cpp
 SRCS := $(shell find $(SRC_DIRS) -name '*.cpp' -or -name '*.c' -or -name '*.s')
-# SRCS_SRC := $(shell find $(SRC_DIRS_SRC) -name '*.cpp' -or -name '*.c' -or -name '*.s')
+SRCS_SRC := $(shell find $(SRC_DIRS_SRC) -name '*.cpp' -or -name '*.c' -or -name '*.s')
 # (9)Object files
 # String substituion for every C/C++ file
 # e.g: ./src/bank.cpp turns into ./build/bank.cpp.o
@@ -64,7 +61,7 @@ SRCS := $(shell find $(SRC_DIRS) -name '*.cpp' -or -name '*.c' -or -name '*.s')
 # OBJS := $(SRCS:$(SRC_DIRS)/%.cpp=$(BUILD_DIR)/%.o)
 # ./build/bank.cpp.o  ./build/main.cpp.o
 OBJS := $(patsubst %.cpp, ${BUILD_DIR}/%.cpp.o, $(notdir $(SRCS)))
-# OBJS_SRC := $(patsubst %.cpp, ${BUILD_DIR}/%.cpp.o, $(notdir $(SRCS_SRC)))
+OBJS_SRC := $(patsubst %.cpp, ${BUILD_DIR}/%.cpp.o, $(notdir $(SRCS_SRC)))
 # make: *** build: Is a directory.  Stop.
 # OBJS := $(patsubst %.cpp, ${BUILD_DIR}/%.cpp.o, $(notdir $(BUILD_DIR)))
 # (10)Dependency files
@@ -72,40 +69,21 @@ OBJS := $(patsubst %.cpp, ${BUILD_DIR}/%.cpp.o, $(notdir $(SRCS)))
 # you just need to find them all:
 # 
 DEPS := $(OBJS:.o=.d)
-# DEPS_SRC := $(OBJS_SRC:.o=.d)
+DEPS_SRC := $(OBJS_SRC:.o=.d)
 # (11)Include files directory path
 # Every folder in ./src find include files to be passed via clang 
 # INCDIR = -I./inc
 # INC_DIR = ./inc
 # ./inc
 # INC_DIRS+= ${CFLAGS}
-INC_DIRS:= 
-
-# include the description for each module
-include $(patsubst %,\
-    %/module.mk,$(MODULES))
-.PHONY: all all_a all_b
-all:
-	echo $(CXX)
-	echo $(CXX_FLAGS)
-	echo $(BUILD_DIR)
-	echo $(SRC_DIRS)
-	echo $(LIBDIR)
-	echo $(LIBS)
-	echo $(TARGET)
-	echo $(SRCS)
-	echo $(OBJS)
-	echo $(DEPS)
-	echo $(INC_DIRS)
-	echo $(INC_FLAGS)
-	echo $(CPP_FLAGS)
-#CFLAGS :=
+INC_DIRS?= .
 # INC_DIRS := ./petActive/include
 # If use below this , include files  should be at the same directory 
 # with sources files.
 # INC_DIRS := $(shell find $(SRC_DIRS) -type d)
 # (12)Include files add together a prefix, clang make sense that -I flag
 # INCS = -I$(INC_DIR)
+# include the description for each module
 INC_FLAGS := $(addprefix -I,$(INC_DIRS))
 #INC_FLAGS := $(addprefix -I,$(CFLAGS))
 # (13)Make Makefiles output Dependency files
@@ -114,7 +92,24 @@ INC_FLAGS := $(addprefix -I,$(INC_DIRS))
 # That "-MMD" and "-MP" To generate the dependency files, all you have to do is
 # add some flags to the compile command (supported by both Clang and GCC):
 CPP_FLAGS ?= $(INC_FLAGS) -MMD -MP
-
+#.PHONY: all all_a all_b
+#all:
+#	echo $(CXX)
+#	echo $(CXX_FLAGS)
+#	echo $(BUILD_DIR)
+#	echo $(SRC_DIRS)
+#	echo $(SRC_DIRS_SRC)
+#	echo $(LIBDIR)
+#	echo $(LIBS)
+#	echo $(TARGET)
+#	echo $(SRCS)
+#	echo $(SRCS_SRC)
+#	echo $(OBJS_SRC)
+#	echo $(DEPS)
+#	echo $(DEPS_SRC)
+#	echo $(INC_DIRS)
+#	echo $(INC_FLAGS)
+#	echo $(CPP_FLAGS)
 # Link: Generate executable file from object file
 # make your target depend on the objects files:
 ${BUILD_DIR}/${TARGET} : $(OBJS)
@@ -138,16 +133,8 @@ ${BUILD_DIR}/${TARGET} : $(OBJS)
 $(BUILD_DIR)/%.cpp.o : $(SRC_DIRS)/%.cpp 
 	$(MKDIR_P) $(dir $@)
 	$(CXX) $(CPP_FLAGS) $(CXX_FLAGS) -c $^ -o $@
-#MODULES := petActive
-#look for include files in each of the modules
-#CFLAGS += $(patsubst %,-I%,\
-    $(MODULES))
-# include the description for each module
-#include $(patsubst %,\
-    %/module.mk,$(MODULES))
-
-# $(BUILD_DIR)/%.cpp.o : $(SRC_DIRS_SRC)/%.cpp 
-# 	$(CXX) $(CPP_FLAGS) $(CXX_FLAGS) -c $^ -o $@
+$(BUILD_DIR)/%.cpp.o : $(SRC_DIRS_SRC)/%.cpp 
+	$(CXX) $(CPP_FLAGS) $(CXX_FLAGS) -c $^ -o $@
 # C Language Sources
 # # CC := clang
 # # C_FLAGS = -Wall -Wextra -std=c11 -g
