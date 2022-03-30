@@ -1,0 +1,1 @@
+SRC_DIRS_SRC += ./apps
