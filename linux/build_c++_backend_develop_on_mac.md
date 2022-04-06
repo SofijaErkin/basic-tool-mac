@@ -26,13 +26,13 @@ Kill Linux C++ Back-end on Mac(LXCBEOMAC)
 
 Dual boot building harmful.
 
-2.Virtual Machine(running Linux)
+2.Virtual Machine(running Linux, via SSH and SFTP)
 
 e.g: [Vagrant](https://qr.ae/pvKYln)+ VirtualBox.
 
 This is the simplest route, but is effectively just building in Linux.
 
-3.Docker(Linux based containers running on MacOS)
+3.Docker(Linux based containers running on MacOS, via SSH and SFTP)
 
 The docker image, this could end up being difficult to run/debug your
 
@@ -40,7 +40,7 @@ application and have the MacOS IDE understand error messages. Also use vagrant
 
 instead of docker.
 
-4.Cloud Host(remote Linux)
+4.Cloud Host(remote Linux via SSH and SFTP)
 
 Well idea.
 
@@ -90,7 +90,7 @@ Reading notes:
 
     <about using 4.Cloud Host>
 
-    Auto build, ship and post platform via Docker, ECS and Terraorm. That's
+    Auto build, ship and post platform via Docker, ECS and Terraform. That's
 
     funncy and powerful. I could use that auto-idea on my Mac Docker for build,
     
@@ -184,7 +184,7 @@ Reading notes:
 
     Because if you turn down Docker, the continer will miss, until you use last 
     
-    time with manually rebuild.
+    time with manually rebuild. Also, that could automate building images.
 
 12.[How to cross compile from Mac OS X to Linux x86?](https://stackoverflow.com/a/1778024/10846570)
 
@@ -218,12 +218,6 @@ Reading notes:
 
     And,
 
-    I've already read at "Dockerfile Syntax".
-
-14.[Docker Explained: Using Dockerfiles to Automate Building of Images](https://www.digitalocean.com/community/tutorials/docker-explained-using-dockerfiles-to-automate-building-of-images)
-
-    <about using 3.Docker>
-
     Editing Dockerfile just like write embeded language, matlab, or python.
 
     I wonder if is it strictly speaking a programming language? I mean that
@@ -233,6 +227,323 @@ Reading notes:
     Automate building of Images means that package the currently created
 
     basic iamge with other installed app stack into the new image via Dockerfile.
+
+    Dockerfile initial image to automate building image, and easy-est shiping.
+
+14.[Notes about seperatedly installing Linux via Docker on Mac(Chinese)](https://juejin.cn/post/6941284080029794312)
+
+    <about using 3.Docker>
+
+    Create a image, then start varity of containers. There may be Nginx, Redis,
+
+    MySQL, MongoDB, or even Memcached.
+
+15.[Confige LNMP environment using Docker(Chinese)](https://cloud.tencent.com/developer/article/1858142)
+
+    <about using 3.Docker>
+    
+    Docker+Nginx+MySQL+PHP+Redis.
+
+    Directory architecture:
+    
+    .
+
+    |_data
+
+    |    |_elasticsearchdata
+
+    |    |_mongodb
+
+    |    |_mysql
+
+    |    |_mysql8
+
+    |_services
+
+    |    |_elasticsearch
+
+    |    |_mysql
+
+    |    |_mysql8
+
+    |    |_nginx
+
+    |    |_redis
+
+    |_log
+
+    |_docker-compose.yml
+
+    |_env
+
+    |_www
+
+16.[Develop C++ via Docker under CLion and VSCode(Chinese)](https://graueneko.com/archives/64/)
+
+    <about using 3.Docker>
+
+    Using VSCode debug remote virtual machine contianers via Microsofts'"Remote
+    
+    Developent", current workspace folder".devcontainer" with "devcontainer.json"
+
+    and CMake extensions optional"Remote-Contianers: Open Folder in Contianer".
+
+17.[The idea to config the development environment of LNMP via Docker on Mac(Chinese)](https://www.php.cn/php-ask-479200.html)
+
+    <about using 3.Docker>
+
+    The useage of Docker is that a container do only provide one service.
+
+    The designed principle of Docker is not to run services at Backend, actually
+    
+    to run services at Frontend.
+
+    From downloading image command "docker pull linux_release", then, creating
+
+    contianer command "docker run ...", to entering contianer command "docker
+
+    exec ...".
+
+    I wonder if are you creating all contianers under one image or one image 
+
+    with one container?
+
+    Now, I know that the auth create contianer one by one image, all the image
+
+    are seperated, also, the contianer under image are seperated.
+
+    And, my guess was right. There are two ways to create multiple services,
+
+    the one is that one kind image create one kind contianer; the another
+
+    is that all services are created below one base image with starting
+
+    one contianer one service.
+
+18.[Setup C/C++ development environment via Docker on Mac(Chinese)](https://zhuanlan.zhihu.com/p/422010999)
+
+    <about using 3.Docker>
+
+    Automate Docker via four files: Dockerfile, entrypoint.sh, rsync.conf, 
+
+    docker-compose.yml. 
+
+    That's a good idea.
+
+19.[Create the development environment of DNMP via Docker on Mac(Chinese)](https://www.ucloud.cn/yun/28764.html)
+
+    <about using 3.Docker>
+
+    Great DNMP directory:
+
+    .
+
+    |_conf
+
+    |    |_conf.d
+
+    |    |    |_certs
+
+    |    |    |    |_site2
+
+    |    |    |_site1.conf
+
+    |    |    |_site2.conf
+
+    |    |__my.cnf
+
+    |    |__nginx.conf
+
+    |    |_php-fpm.d
+
+    |    |    |_www.conf
+
+    |    |_php.ini
+
+    |__docker-compose.yml
+
+    |__docker-compose54.yml
+
+    |__docker-compose56.yml
+
+    |_log
+
+    |    |__mysql.slow.log
+
+    |    |__nginx.error.log
+
+    |    |__nginx.site1.error.log
+
+    |    |__nginx.site2.error.log
+
+    |_mysql
+
+    |_php
+
+    |_www
+
+        |_site1
+
+        |_site2
+
+    This blog also has more description about MySQL, Redis.
+
+20.[Docker build LNMP via deployer posting(Chinese)](https://learnku.com/articles/19868)
+
+    <about using 4.Cloud Host + using 3.Docker>
+
+    "docker pull service" is to create image;
+
+    "apt-get install service" it to install services below that base
+
+    image.
+
+    Like LNMP or DNMP, one image, one contianer, one service;
+
+    Base image also could install many services.
+
+21.[Using Docker build up Linux server on Mac(Chinese)](https://blog.csdn.net/liqingbing12/article/details/109307073)
+
+    <about using 3.Docker>
+
+    The installed many applications of Docker contianers should be sync as a 
+
+    new sync_image.
+
+22.[Setup the development environment ofr Linux server(Chinese)](https://www.codeleading.com/article/40092840458/)
+
+    <about using 2.Virtual Machine>
+
+    The "environment installed package" of Linux release version should be 
+    
+    installed seperating from the system directory in order to conveniently 
+    
+    delete without affecting the system directory.
+    
+    "oh-my-zsh" is the functional assistant of shell zsh.
+
+    "vim7.4+" is to wintness the liking lamda of C++11.
+
+    "GCC9.1" supports the C11 C14 C+=17, well error prompt.
+
+    "bison" is to solve the warming of "'bison' is missing on your system".
+
+    "textinfo" is to solve the warming of "'makeinfo' is missing on your system".
+
+    "automake1.15+" is requisite for GCC.
+
+    "autoconf2.69" is essential to "automake1.15+".
+
+    "GCC" is cruial that that is vital to more than 30 minutes to install.
+
+    "GDB8.3" is the requirement of "GCC" with installing after "GCC".
+
+    "CMake3.15" product "Makefile" with source files.
+
+    "Ragel6.10" is the limited state machine to edit the parser protocol.
+
+    Others like "psmic", "openssl-devel", "net-tools".
+
+23.[Build Linux C++ development environmnet with VS2017(Chinese)](https://segmentfault.com/a/1190000016300215)
+
+    <about using 2.Virtual Machine>
+
+    VS2017 log into virtual machine via SSH.
+
+    Linux release below virtual machine install like "openssh-server", "g++",
+
+    "gdb" and "gdbserver".
+
+24.[What's the development environment of C/C++ under Linux(Chinese)](https://www.zhihu.com/question/19848310/answers/updated?page=1)
+
+    <about using Development Tools>
+
+    editor: Jebains's paid Clion, vim, MicroSoft's VSCode,
+
+    script: zsh, bash, shellcheck,
+
+    debugger: 
+      
+      (Online)google-breakpad; 
+      
+      (LIVE)gdb(functionally stack trace, that bugger home location),  
+
+            printf(<syslog, one prinf let IO console apply more resources than
+            
+            once IPC call systlog. Could relocate syslog, file, udp socket
+            
+            (receive log output), define marco to realize classify sign or 
+            
+            level),
+73項4仍8i·
+            syslog(call IPC, e.g:log4cxx(support UDP log), or log file), open 
+            
+            source chromium's logging module,
+
+            "UDP log" could record multiple devices's log at a time, easy to
+
+            checkout and relocate or track. e.g: when a bugger happens, you
+
+            could track that bugger cia UDP log, do not need to go to Test 
+        
+            Group to checkout their testing log,
+
+
+            printk(using in printf kernel, every changed debug should be delete
+            
+            everytime, every debug every recompile, not always function that 
+            
+            means not output print everytime),
+
+            systemtap, perf, kdump,
+
+            valgrind(memory lock(dynamic mem statistics)), 
+
+            SAFECode(LLVM subproject, to solve memory lock, faster valgrind),
+
+    memory lock: not free that applied mem, access illegal mem(Segmentation
+    
+                fault), use not initalized mem, ...
+
+    log: web checkout,
+    
+    optimization: gprof,
+
+    test framework: DejiGnu, CppUnit,
+    
+    single unit test: googletest,
+
+    others's code review: grep, Source Insight,
+
+    follow code: cscope, ctags, gtags,
+
+    grammer parser: global,
+
+    checkout static code: splint,
+
+    autocomplete: YouCompleteMe,
+
+    lint: pypep8, pylint, jslint,
+
+    compiler: 
+    
+      (Makefile)GNUMake,
+      
+      (CMake)
+
+    compiler platform: remote Jenkins(hunson), chroot
+
+    code sync: virtual machine settings share folder with VS editting code, 
+    
+    "Ctrl+shift+s" syncing code, recompileing before debugging.
+
+    project: autoconf,
+
+    code style: cpplint.py, google-styleuide.google.com...,
+
+    style formater: astyle, astyle.sourceforge.net/...,
+
+    document generation/orgnization: doygen,
 
 ## 3.C++ Tools
 
@@ -246,10 +557,42 @@ libraries for Linux;
 
 the C++ programs;
 
-"`CMake`" is a generator tool that takes a description of the build process and
+Also, "`automake`", "`make`".
+
+"`CMake`"("`cmake`") is a generator tool that takes a description of the build process and
 
 can generate a Makefile for the target platform; On the Linux, it will use GCC
 
 and G++ to build the program.
 
-## 4.RoadMap
+"`openssh-server`"
+
+"`g++`"
+
+"`gdb`"
+
+"`gdbserver`"
+
+"`net-tools`" includes "`ifconfig`"
+
+"`tar`"
+
+"`rsync`"
+
+"`python3`"
+
+"`python3-pip`"
+
+"`libboost-dev`"
+
+## 4.Source Or Library Or Application Tools
+
+"`SSH`" is to connect the remote Host, the virtual Machine, that Docker contian
+
+-ers with the local Host Mac.
+
+"`Nginx`" is a architecture of server. That need: `GCC` environment(`gcc-g++`),
+
+lib `PCRE`(parser Lamda: `pcre`, `pcre-devel`), `zlib`(compress and decompress:
+
+`zlib`, `zlib-devel`), OpenSSL protocol(`openssl`).
