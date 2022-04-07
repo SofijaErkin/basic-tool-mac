@@ -26,7 +26,7 @@ Kill Linux C++ Back-end on Mac(LXCBEOMAC)
 
 Dual boot building harmful.
 
-2.Virtual Machine(running Linux, via SSH and SFTP)
+2.Virtual Machine(running Linux. connect via SSH and SFTP)
 
 e.g: [Vagrant](https://qr.ae/pvKYln)+ VirtualBox.
 
@@ -40,11 +40,11 @@ application and have the MacOS IDE understand error messages. Also use vagrant
 
 instead of docker.
 
-4.Cloud Host(remote Linux via SSH and SFTP)
+4.Cloud Host(remote Linux. connect via SSH and SFTP)
 
 Well idea.
 
-5.[Raspberry Pi](https://www.raspberrypi.com/products/raspberry-pi-4-model-b/)(a proper Linux computer)
+5.[Raspberry Pi](<https://www.raspberrypi.com/products/raspberry-pi-4-model-b/)(a> proper Linux computer. could as remote Linux. connect via SSH and SFTP)
 
 Nice!
 
@@ -228,7 +228,7 @@ Reading notes:
 
     basic iamge with other installed app stack into the new image via Dockerfile.
 
-    Dockerfile initial image to automate building image, and easy-est shiping.
+    Dockerfile initial image to automate building image, and easyest shiping.
 
 14.[Notes about seperatedly installing Linux via Docker on Mac(Chinese)](https://juejin.cn/post/6941284080029794312)
 
@@ -319,6 +319,14 @@ Reading notes:
     is that all services are created below one base image with starting
 
     one contianer one service.
+
+    If create all contianers under only one image, that just like a physical
+
+    Linux;
+
+    If creat contianer one by one image, that all called seperated system, 
+
+    distributed system, computer cluster, or service farm.
 
 18.[Setup C/C++ development environment via Docker on Mac(Chinese)](https://zhuanlan.zhihu.com/p/422010999)
 
@@ -475,7 +483,7 @@ Reading notes:
             (receive log output), define marco to realize classify sign or 
             
             level),
-73項4仍8i·
+
             syslog(call IPC, e.g:log4cxx(support UDP log), or log file), open 
             
             source chromium's logging module,
@@ -539,11 +547,11 @@ Reading notes:
 
     project: autoconf,
 
-    code style: cpplint.py, google-styleuide.google.com...,
+    code style: cpplint.py, google-styleguide.google.com...,
 
     style formater: astyle, astyle.sourceforge.net/...,
 
-    document generation/orgnization: doygen,
+    document generation/orgnization: doxygen,
 
 ## 3.C++ Tools
 
