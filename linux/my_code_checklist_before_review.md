@@ -2,7 +2,7 @@
 
 ## 1. Wrong spelling
 
-(1) seperate -> separate
+(1) eperate -> separate
 
 (2) seperated -> separated
 
@@ -44,7 +44,7 @@
 
 (21) recompileing -> recompiling
 
-(22) editting -> editing
+(22) editting-> editing
 
 (23) orgnization -> organization
 

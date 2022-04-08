@@ -22,17 +22,17 @@ So, that's clear.
 
 Kill Linux C++ Back-end on Mac
 
-1.Physical Linux Notebook(dual boot Linux and macOS)
+1.Physical Linux Notebook(dual boot Linux and MacOS)
 
 Dual boot building harmful.
 
-2.Virtual Machine(running Linux. connect via SSH and SFTP)
+2.Virtual Machine(running Linux. Connect via SSH and S FTP)
 
 e.g: [Vagrant](https://qr.ae/pvKYln)+ VirtualBox.
 
 This is the simplest route, but is effectively just building in Linux.
 
-3.Docker(Linux based containers running on MacOS, via SSH and SFTP)
+3.Docker(Linux based containers running on MacOS, via SSH and S FTP)
 
 The docker image, this could end up being difficult to run/debug your
 
@@ -40,11 +40,11 @@ application and have the MacOS IDE understand error messages. Also use vagrant
 
 instead of docker.
 
-4.Cloud Host(remote Linux. connect via SSH and SFTP)
+4.Cloud Host(remote Linux. Connect via SSH and S FTP)
 
 Well idea.
 
-5.[Raspberry Pi](<https://www.raspberrypi.com/products/raspberry-pi-4-model-b/)(a> proper Linux computer. could as remote Linux. connect via SSH and SFTP)
+5.[Raspberry Pi](<https://www.raspberrypi.com/products/raspberry-pi-4-model-b/)(a> proper Linux computer. Could as remote Linux. Connect via SSH and S FTP)
 
 Nice!
 
