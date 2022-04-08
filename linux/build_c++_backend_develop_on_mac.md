@@ -1,16 +1,16 @@
 # Manually C++ Back-end Development On Mac
 
-I'm a new hire that the company has recently given a job for me, and I've got a
+I'm a new hire that the company has recently given me a job, and I've got a
 
-working notebook Mac, I need to code Linux server using C++ on Mac. I wonder if
+work notebook Mac, I need to code Linux server using C++ on Mac. I wonder if
 
 is there any tips to do that?
 
 ## 1.First Supposition
 
-I used to run Fedora on Mac using Paralles Desktop 11, and I heard that Docker
+I used to run Fedora on Mac using Parallels Desktop 11, and I heard that Docker
 
-support Contianer carrying Linux on Mac, and I know that I could use Web Services
+support Container carrying Linux on Mac, and I know that I could use Web Services
 
 to run C++ code under Linux, as Amazon Elastic Compute Cloud(EC2: Cloud Server)
 
@@ -20,7 +20,7 @@ lower price and better solution.
 
 So, that's clear.
 
-Kill Linux C++ Back-end on Mac(LXCBEOMAC)
+Kill Linux C++ Back-end on Mac
 
 1.Physical Linux Notebook(dual boot Linux and macOS)
 
@@ -50,11 +50,11 @@ Nice!
 
 6.Cross GCC on MacOS
 
-Do Not recommand!
+Do Not recommend!
 
 ## 2.Reading Plan
 
-I'm ready to checkout the Journal, Blog, Stackoverflow, or Others.
+I'm ready to checkout the Journal, Blog, Stack Overflow, or Others.
 
 Reading notes:
 
@@ -62,7 +62,7 @@ Reading notes:
 
     <about using 3.Docker>
 
-    Docker has two modules. The one is the static way, dependenciesand testing,
+    Docker has two modules. The one is the static way, dependencies and testing,
 
     or just as App release version; the another is dynamic way, application
 
@@ -82,7 +82,7 @@ Reading notes:
 
     Compute, ship and post your App using using Elastic Compute Cloud(EC2) via 
     
-    Amazon Web Services. Multiple environment using Docker in EC2 Contianer 
+    Amazon Web Services. Multiple environment using Docker in EC2 Container 
 
     Services(ECS).
 
@@ -92,7 +92,7 @@ Reading notes:
 
     Auto build, ship and post platform via Docker, ECS and Terraform. That's
 
-    funncy and powerful. I could use that auto-idea on my Mac Docker for build,
+    fancy and powerful. I could use that auto-idea on my Mac Docker for build,
     
     ship or post.
 
@@ -182,7 +182,7 @@ Reading notes:
 
     "backup your container as base build image docker commit [id] centos:build"
 
-    Because if you turn down Docker, the continer will miss, until you use last 
+    Because if you turn down Docker, the container will miss, until you use last 
     
     time with manually rebuild. Also, that could automate building images.
 
@@ -226,19 +226,19 @@ Reading notes:
 
     Automate building of Images means that package the currently created
 
-    basic iamge with other installed app stack into the new image via Dockerfile.
+    basic image with other installed app stack into the new image via Dockerfile.
 
-    Dockerfile initial image to automate building image, and easyest shiping.
+    Dockerfile initial image to automate building image, and easiest migration.
 
-14.[Notes about seperatedly installing Linux via Docker on Mac(Chinese)](https://juejin.cn/post/6941284080029794312)
+14.[Notes about separately installing Linux via Docker on Mac(Chinese)](https://juejin.cn/post/6941284080029794312)
 
     <about using 3.Docker>
 
-    Create a image, then start varity of containers. There may be Nginx, Redis,
+    Create a image, then start variety of containers. There may be Nginx, Redis,
 
     MySQL, MongoDB, or even Memcached.
 
-15.[Confige LNMP environment using Docker(Chinese)](https://cloud.tencent.com/developer/article/1858142)
+15.[Config LNMP environment using Docker(Chinese)](https://cloud.tencent.com/developer/article/1858142)
 
     <about using 3.Docker>
     
