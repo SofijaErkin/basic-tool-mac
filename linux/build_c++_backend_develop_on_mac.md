@@ -282,17 +282,17 @@ Reading notes:
 
     <about using 3.Docker>
 
-    Using VSCode debug remote virtual machine contianers via Microsofts'"Remote
+    Using VSCode debug remote virtual machine containers via Microsoft's'"Remote
     
-    Developent", current workspace folder".devcontainer" with "devcontainer.json"
+    Development", current workspace folder ".devcontainer" with "devcontainer.json"
 
-    and CMake extensions optional"Remote-Contianers: Open Folder in Contianer".
+    and CMake extensions optional "Remote-Containers: Open Folder in Container".
 
 17.[The idea to config the development environment of LNMP via Docker on Mac(Chinese)](https://www.php.cn/php-ask-479200.html)
 
     <about using 3.Docker>
 
-    The useage of Docker is that a container do only provide one service.
+    The usage of Docker is that a container do only provide one service.
 
     The designed principle of Docker is not to run services at Backend, actually
     
@@ -300,31 +300,31 @@ Reading notes:
 
     From downloading image command "docker pull linux_release", then, creating
 
-    contianer command "docker run ...", to entering contianer command "docker
+    container command "docker run ...", to entering container command "docker
 
     exec ...".
 
-    I wonder if are you creating all contianers under one image or one image 
+    I wonder if are you creating all containers under one image or one image 
 
     with one container?
 
-    Now, I know that the auth create contianer one by one image, all the image
+    Now, I know that the auth create container one by one image, all the image
 
-    are seperated, also, the contianer under image are seperated.
+    are separated, also, the container under image are separated.
 
     And, my guess was right. There are two ways to create multiple services,
 
-    the one is that one kind image create one kind contianer; the another
+    the one is that one kind image create one kind container; the another
 
     is that all services are created below one base image with starting
 
-    one contianer one service.
+    one container one service.
 
-    If create all contianers under only one image, that just like a physical
+    If create all containers under only one image, that just like a physical
 
     Linux;
 
-    If creat contianer one by one image, that all called seperated system, 
+    If create container one by one image, that all called separated system, 
 
     distributed system, computer cluster, or service farm.
 
@@ -406,7 +406,7 @@ Reading notes:
 
     image.
 
-    Like LNMP or DNMP, one image, one contianer, one service;
+    Like LNMP or DNMP, one image, one container, one service;
 
     Base image also could install many services.
 
@@ -414,7 +414,7 @@ Reading notes:
 
     <about using 3.Docker>
 
-    The installed many applications of Docker contianers should be sync as a 
+    The installed many applications of Docker containers should be sync as a 
 
     new sync_image.
 
@@ -424,13 +424,13 @@ Reading notes:
 
     The "environment installed package" of Linux release version should be 
     
-    installed seperating from the system directory in order to conveniently 
+    installed separating from the system directory in order to conveniently 
     
     delete without affecting the system directory.
     
     "oh-my-zsh" is the functional assistant of shell zsh.
 
-    "vim7.4+" is to wintness the liking lamda of C++11.
+    "vim7.4+" is to witness the liking lambda of C++11.
 
     "GCC9.1" supports the C11 C14 C+=17, well error prompt.
 
@@ -442,7 +442,7 @@ Reading notes:
 
     "autoconf2.69" is essential to "automake1.15+".
 
-    "GCC" is cruial that that is vital to more than 30 minutes to install.
+    "GCC" is crucial that that is vital to more than 30 minutes to install.
 
     "GDB8.3" is the requirement of "GCC" with installing after "GCC".
 
@@ -466,7 +466,7 @@ Reading notes:
 
     <about using Development Tools>
 
-    editor: Jebains's paid Clion, vim, MicroSoft's VSCode,
+    editor: Jetbrains 's paid CLion, vim, MicroSoft's VSCode,
 
     script: zsh, bash, shellcheck,
 
@@ -476,9 +476,9 @@ Reading notes:
       
       (LIVE)gdb(functionally stack trace, that bugger home location),  
 
-            printf(<syslog, one prinf let IO console apply more resources than
+            printf(<syslog, one printf let IO console apply more resources than
             
-            once IPC call systlog. Could relocate syslog, file, udp socket
+            once IPC call syslog. Could relocate syslog, file, udp socket
             
             (receive log output), define marco to realize classify sign or 
             
@@ -497,21 +497,21 @@ Reading notes:
             Group to checkout their testing log,
 
 
-            printk(using in printf kernel, every changed debug should be delete
+            printk (using in printf kernel, every changed debug should be delete
             
-            everytime, every debug every recompile, not always function that 
+            every time, every debug every recompile, not always function that 
             
-            means not output print everytime),
+            means not output print every time),
 
             systemtap, perf, kdump,
 
-            valgrind(memory lock(dynamic mem statistics)), 
+            valgrind (memory lock(dynamic mem statistics)), 
 
             SAFECode(LLVM subproject, to solve memory lock, faster valgrind),
 
     memory lock: not free that applied mem, access illegal mem(Segmentation
     
-                fault), use not initalized mem, ...
+                fault), use not initialized mem, ...
 
     log: web checkout,
     
@@ -525,7 +525,7 @@ Reading notes:
 
     follow code: cscope, ctags, gtags,
 
-    grammer parser: global,
+    grammar parser: global,
 
     checkout static code: splint,
 
@@ -539,19 +539,19 @@ Reading notes:
       
       (CMake)
 
-    compiler platform: remote Jenkins(hunson), chroot
+    compiler platform: remote Jenkins(hudson), chroot
 
-    code sync: virtual machine settings share folder with VS editting code, 
+    code sync: virtual machine settings share folder with VS editing code, 
     
-    "Ctrl+shift+s" syncing code, recompileing before debugging.
+    "Ctrl+shift+s" syncing code, recompiling before debugging.
 
     project: autoconf,
 
     code style: cpplint.py, google-styleguide.google.com...,
 
-    style formater: astyle, astyle.sourceforge.net/...,
+    style format: astyle, astyle.sourceforge.net/...,
 
-    document generation/orgnization: doxygen,
+    document generation/organization: doxygen,
 
 ## 3.C++ Tools
 
@@ -595,12 +595,12 @@ and G++ to build the program.
 
 ## 4.Source Or Library Or Application Tools
 
-"`SSH`" is to connect the remote Host, the virtual Machine, that Docker contian
+"`SSH`" is to connect the remote Host, the virtual Machine, that Docker contain
 
 -ers with the local Host Mac.
 
 "`Nginx`" is a architecture of server. That need: `GCC` environment(`gcc-g++`),
 
-lib `PCRE`(parser Lamda: `pcre`, `pcre-devel`), `zlib`(compress and decompress:
+lib `PCRE`(parser Lambda: `pcre`, `pcre-devel`), `zlib`(compress and decompress:
 
 `zlib`, `zlib-devel`), OpenSSL protocol(`openssl`).
