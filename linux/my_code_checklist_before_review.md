@@ -4,7 +4,7 @@
 
 (1) seperate -> separate
 
-(2) seperated -> separetd
+(2) seperated -> separated
 
 (3) seperating -> separating
 
@@ -24,7 +24,7 @@
 
 (11) cruial -> crucial
 
-(12) enviroemnt -> enviroment
+(12) enviroemnt -> environment
 
 (13) environmnet -> environment
 
@@ -54,6 +54,4 @@
 
 (26) Lamda -> Lambda
 
-(27) 
-
-
+(27)
