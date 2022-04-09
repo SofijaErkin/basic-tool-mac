@@ -72,6 +72,16 @@ Related Read:
 
 2.[GNU Aspell – A Free, Open Source And Independent Spell Checker](https://ostechnix.com/gnu-aspell-free-open-source-independent-spell-checker/).
 
+### 1.3 [Syntax highlighting](https://linuxhint.com/vim_syntax_highlighting/)(command)
+
+Syntax highlighting is on for vim editor by default.
+
+After opening target file in vim editor, press `ESC` key and type `:syntax on`
+
+to enable syntax highlighting.
+
+Press `ESC` key and type, `syntax off` to disable syntax highlighting.
+
 ## 2. Applications
 
 ## 3. Online Services
