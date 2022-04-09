@@ -242,7 +242,11 @@ Reading notes:
 
     <about using 3.Docker>
     
-    Docker+Nginx+MySQL+PHP+Redis.
+    (DNMP)Docker+Nginx+MySQL+PHP+Redis.
+
+    (LNMP)Linux+Nginx+MySQL+PHP.
+
+    (LAMP)Linux+Apache+MySQL+PHP.
 
     Directory architecture:
     

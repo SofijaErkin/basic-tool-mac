@@ -54,4 +54,4 @@
 
 (26) Lamda -> Lambda
 
-(27)
+(27) Debain -> Debian

@@ -2,7 +2,9 @@
 
 I need to conclude software engineering tools about what are they and how to use
 
-them.
+those.
+
+PHP5.X is friendly with Debian 7/8, Ubuntu 12/14.
 
 ## 1. Commands Or Plug-ins
 
@@ -20,7 +22,7 @@ Config spell in Vim under `/usr/share/vim/vim81/spell`.
 
 Need to type the command inside Vim session.
 
-`:help spell` : know more about spell check feature.
+`:help spell`: know more about spell check feature.
 
 `:set spell` : enable spell check.
 
