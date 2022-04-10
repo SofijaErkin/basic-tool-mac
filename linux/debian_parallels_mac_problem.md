@@ -28,4 +28,4 @@ As the upstairs terminal shows, input twice your new root password.
 
 ### 1.4 Refer
 
-[The default root and password during installing centos7 at Parallels Desktop](https://blog.csdn.net/u012852597/article/details/79353949).
+[The default root and password during installing centos7 at Parallels Desktop(Chinese Blog)](https://blog.csdn.net/u012852597/article/details/79353949).
