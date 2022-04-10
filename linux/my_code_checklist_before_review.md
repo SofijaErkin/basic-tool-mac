@@ -55,3 +55,11 @@
 (26) Lamda -> Lambda
 
 (27) Debain -> Debian
+
+(28) Happans -> Happens
+
+(29) Bebian -> Debian
+
+(30) requies -> requires
+
+(31) Authenication -> Authentication
