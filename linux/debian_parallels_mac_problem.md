@@ -29,3 +29,16 @@ As the upstairs terminal shows, input twice your new root password.
 ### 1.4 Refer
 
 [The default root and password during installing centos7 at Parallels Desktop(Chinese Blog)](https://blog.csdn.net/u012852597/article/details/79353949).
+
+## 2. Problem B
+
+### 2.1 Queation
+
+I need to change the host name of Debian in the virtual machine at mac.
+
+### 2.2 Standard Operating Procedure
+
+Input below code at your terminal:
+
+    hostnamectl hostname your_new_host_name
+`your_new_host_name` is the target host name of Linux.
