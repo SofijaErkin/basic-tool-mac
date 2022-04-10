@@ -32,7 +32,7 @@ As the upstairs terminal shows, input twice your new root password.
 
 ## 2. Problem B
 
-### 2.1 Queation
+### 2.1 Question
 
 I need to change the host name of Debian in the virtual machine at mac.
 
