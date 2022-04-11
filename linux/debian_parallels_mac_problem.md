@@ -146,3 +146,18 @@ paste:
 
     Shift+Ctrl+V
 But, I've just used hotkeys map between MacOS and virtual machine Debian.
+
+## 7. Problem G
+
+apt-get update W:
+
+    W: There is no public key available for the following key IDs:
+
+    AA8E81B4331F7F50
+Fixed:
+
+    sudo apt-get install debian-keyring debian-archive-keyring
+
+    sudo apt-key update
+
+    sudo apt-get update
