@@ -42,3 +42,25 @@ Input below code at your terminal:
 
     hostnamectl hostname your_new_host_name
 `your_new_host_name` is the target host name of Linux.
+
+## 3. Problem C
+
+Enter or logout the root mode.
+
+## 3.1 Standard Operating Procedure
+
+login root mode, input the below code and type "`enter`" key, then type your
+
+root password:
+
+    su -
+exit the root mode, just type the code:
+
+    exit
+Or
+
+    logout
+Or
+
+    Ctrl+D
+the upstairs are typing keys.
