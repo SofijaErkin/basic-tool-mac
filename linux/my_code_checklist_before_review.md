@@ -63,3 +63,5 @@
 (30) requies -> requires
 
 (31) Authenication -> Authentication
+
+(32) Ctrol -> Ctrl

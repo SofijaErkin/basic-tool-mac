@@ -64,3 +64,85 @@ Or
 
     Ctrl+D
 the upstairs are typing keys.
+
+## 4. Problem D
+
+Checkout the target software version.
+
+all the source: `apt-cache madison vim`;
+
+all source policy: `apt-cache policy vim`;
+
+all version, reverse depends, dependencies, provides, reverse provides:
+
+`apt-cache showpkg vim`.
+
+## 5. Problem E
+
+make error output:
+
+    /bin/sh: 1: git: not found
+
+    ...
+
+    GITGUI_VERSION = 0.21.GITGUI
+
+    * new locations or Tcl/Tk interpreter
+
+    GEN git-gui
+
+    INDEX lib/
+
+    * tclsh failed; using unoptimized loading
+
+    MSGFMT    po/de.msg Makefile:252: recipe for target 'po/de.msg' failed
+
+    make[1]: ***[po/de.msg] Error 127
+
+    Makefile:1955: recipe for target 'all' failed
+
+    make:*** [all] Error 2
+
+Fix upstairs error:
+
+    sudo apt install tcl build-essential tk
+And the output:
+
+    SUBDIR templates
+
+    MSGFMT po/build/locale/pt_PT/LC_MESSAGES/git.mo
+
+    /bin/sh: 1: msgfmt: not found
+
+    Makefile:2449: recipe for target 'po/build/locale/pt_PT/LC_MESSAGES/git.mo' failed
+
+    make: *** [po/build/locale/pt_PT/LC_MESSAGES/git.mo] Error 127
+
+Again fix upstairs error:
+
+    sudo apt install gettext-devel
+Again the output:
+
+    Reading package lists... Done
+    
+    Building dependency tree
+
+    Reading state information... Done
+
+    E: Unable to locate package gettext-devel
+Again again fix upstairs error:
+
+    sudo apt-get install gettext
+And fixed.
+
+## 6. Problem F
+
+copy and paste text in Linux.
+
+copy:
+
+    Shift+Ctrl+C
+paste:
+
+    Shift+Ctrl+V
+But, I've just used hotkeys map between MacOS and virtual machine Debian.
