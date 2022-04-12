@@ -65,3 +65,9 @@
 (31) Authenication -> Authentication
 
 (32) Ctrol -> Ctrl
+
+(33) Modefy -> Modify
+
+(34) simpified -> simplified
+
+(35) correcte -> correct

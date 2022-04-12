@@ -6,11 +6,15 @@ those.
 
 ## 1. Commands Or Plug-ins
 
-### 1.1 rsync(command)
+### 1.1 Sync(command)
+
+#### 1.1.1 rsync(Shell)
 
 Transform/Transmit and sync the data/code between local and remote.
 
 ### 1.2 [spell check](https://ostechnix.com/use-spell-check-feature-vim-text-editor/)(command)
+
+#### 1.2.1 Vim
 
 VSCode just use Extension `Code Spell Checker`  and `Grammarly (unoffical)`.
 
@@ -72,6 +76,8 @@ Related Read:
 
 ### 1.3 [Syntax highlighting](https://linuxhint.com/vim_syntax_highlighting/)(command)
 
+#### 1.3.1 Vim
+
 Syntax highlighting is on for vim editor by default.
 
 After opening target file in vim editor, press `ESC` key and type `:syntax on`
@@ -79,6 +85,32 @@ After opening target file in vim editor, press `ESC` key and type `:syntax on`
 to enable syntax highlighting.
 
 Press `ESC` key and type, `syntax off` to disable syntax highlighting.
+
+### 1.4 Auto-complete(command)
+
+#### 1.4.1 oh-my-zsh(Shell)
+
+Auto list the directories: input `cd` and type `tab` key, use `tab` switch.
+
+AUto complete simplified directory: access `/usr/local/bin`, input `cd /u/l/b`
+
+and type `tab` to auto complete.
+
+Auto check camel case and correct: access `Desktop`, input `cd de` and type
+
+`tab` to correct case; Or, check `README.md`, input `cat re` and type `tab` to
+
+auto complete and correct.
+
+Auto complete command: check using command, input`kubectl` and type `tab` to
+
+check useable command.
+
+Auto complete command parameter: input `kill` and type `tab` to auto display
+
+running process ID.
+
+Refer: [Using oh-my-zsh build Linux Shell environment(Chinese)](https://sysin.org/blog/linux-zsh/).
 
 ## 2. Applications
 
