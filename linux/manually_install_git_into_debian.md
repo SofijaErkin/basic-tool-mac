@@ -21,6 +21,12 @@ Next, install the packages:
 
     sudo apt install make libssl-dev libghc-zlib-dev libcurl4-gnutls-dev
     libexpat1-dev gettext unzip
+BIG BIG BIG Notice:  
+
+All needed packages should be install together, even if you already have
+
+installed.
+
 After you have installed the necessary dependencies, go ahead and get the
 
 version of Git you would like to install by visiting the [Git project’s mirror](https://github.com/git/git)
