@@ -147,7 +147,7 @@ paste:
     Shift+Ctrl+V
 But, I've just used hotkeys map between MacOS and virtual machine Debian.
 
-## 7. Problem G
+## 7. [Problem G](https://juniway.blogspot.com/2015/12/build-git-from-source-on-ubuntu.html)
 
 apt-get update W:
 
