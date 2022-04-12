@@ -11,3 +11,7 @@ Debian(Ubuntu): apt, apt-get;
 Fedora: dnf;
 
 CentOS: yum;
+
+## 3. Check Java Version
+
+    java -version
