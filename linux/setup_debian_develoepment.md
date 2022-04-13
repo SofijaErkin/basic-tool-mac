@@ -15,4 +15,18 @@ Refer:
 
 [Using oh-my-zsh build Linux Shell](https://sysin.org/blog/linux-zsh/).
 
-## 3. Vim
+## 3. Curl
+
+[How to Install curl on Debian 10/11 in 6 Easy Steps.](https://www.cyberithub.com/how-to-install-curl-on-debian-10-11-in-6-easy-steps/)
+
+## 4. [shellcheck](https://packages.debian.org/sid/shellcheck)
+
+Do not use brew to install shellcheck on mac.
+
+Shell static syntax check tool.
+
+[Online using.](https://www.shellcheck.net/)
+
+For VSCode: vscode-shellcheck.
+
+For Vim: integrated via ALE, Neomake or Syntastic.

@@ -32,6 +32,8 @@ enter on your keyboard. Otherwise, fill out a new file name.
 
 Yet to find anything lacking in GNU Emacs.
 
+`Ctrl+X` and `Ctrl+C` save and exit file.
+
 ## 4.Refer
 
 [Vim vs. Nano vs. Emacs: Three sysadmins weigh in](https://www.redhat.com/sysadmin/3-text-editors-compared).

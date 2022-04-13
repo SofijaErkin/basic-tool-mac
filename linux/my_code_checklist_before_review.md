@@ -71,3 +71,5 @@
 (34) simpified -> simplified
 
 (35) correcte -> correct
+
+(36) intergrate -> integrate

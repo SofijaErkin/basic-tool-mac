@@ -15,3 +15,7 @@ CentOS: yum;
 ## 3. Check Java Version
 
     java -version
+
+## 4. Check dependence
+
+    brew deps xxx
