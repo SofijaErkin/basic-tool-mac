@@ -25,17 +25,29 @@ brew uninstall:
 
 End brew uninstall :
 
+ghc: No install.
+
+cabal-install:  No install.
+
+pandoc: No install.
+
 python@3.9
 
     Error: Refusing to uninstall /usr/local/Cellar/python@3.9/3.9.9
     because it is required by cairo, glib, gobject-introspection, harfbuzz, macvim, meson, pango, pdf2htmlex, sphinx-doc and ttfautohint, which are currently installed.
 
-python@3.10:
+sphix-doc:
 
     brew uninstall sphix-doc
 
-The upstairs code uninstall the least sphix-doc version, roll back to the old
+The upstairs code uninstall the least sphix-doc version, roll back to
 
-version. python@3.10 depends on sphix-doc.
+the old version. python@3.10 depends on sphix-doc.
+
+python@3.10:
 
     brew uninstall python@3.10
+
+mpdecimal:
+
+    brew uninstall mpdecimal
