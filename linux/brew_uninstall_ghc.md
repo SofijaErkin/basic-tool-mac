@@ -30,4 +30,12 @@ python@3.9
     Error: Refusing to uninstall /usr/local/Cellar/python@3.9/3.9.9
     because it is required by cairo, glib, gobject-introspection, harfbuzz, macvim, meson, pango, pdf2htmlex, sphinx-doc and ttfautohint, which are currently installed.
 
-python@3.10
+python@3.10:
+
+    brew uninstall sphix-doc
+
+The upstairs code uninstall the least sphix-doc version, roll back to the old
+
+version. python@3.10 depends on sphix-doc.
+
+    brew uninstall python@3.10

@@ -434,3 +434,5 @@ Xcode can be updated from the App Store.
 ==> make install
 ==> ./configure --prefix=/usr/local/Cellar/ghc/8.10.7_1 --with-gmp-includes=/usr/local/Cellar/ghc/8.10.7_1/libexec/integer-gmp/include --with
 ==> make
+
+Do not use brew to install shellcheck on mac!!!

@@ -18,4 +18,10 @@ CentOS: yum;
 
 ## 4. Check dependence
 
-    brew deps xxx
+    brew deps xxx -tree
+
+## 5. Grep
+
+To find out "python":
+
+    ls -l | grep "python"
