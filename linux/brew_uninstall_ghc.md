@@ -75,3 +75,23 @@ uninstall 5.2.5, and roll back to 5.2.4,
     You can override this and force removal with:
         
         brew uninstall --ignore-dependencies xz
+xz was downloaded by brew under `/usr/local/Cellar/xz/`, and its' functional
+
+soft link was under `/usr/local/bin`.
+
+Just use the below to check out that xz under `/usr/local/bin`:
+
+    pwd && cd /usr/local/bin/ && pwd && ls -al | grep "xz"
+
+1.uninstall:
+
+    brew uninstall --ignore-dependencies xz
+And that terminal output:
+
+    Uninstalling /usr/local/Cellar/xz/5.2.5... (95 files, 1.2MB)
+
+    xz 5.2.4 is still installed.
+
+    To remove all versions, run:
+
+       brew uninstall --force xz
