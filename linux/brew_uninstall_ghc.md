@@ -127,9 +127,89 @@ change soft link source address under `/usr/local/bin` from
 
     ls -al | grep "xz"
 python@3.10:
+brew install python@3.10:
+
+    ./configure --prefix=/usr/local/Cellar/python@3.10/3.10.0_2 --enable-ipv6 
+
+    --datarootdir=/usr/local/Cellar/python@3.10/3.10.0_2/share --da
+
+    install PYTHONAPPSDIR=/usr/local/Cellar/python@3.10/3.10.0_2
+
+    frameworkinstallextras PYTHONAPPSDIR=/usr/local/Cellar/python@3.10/3.10.0_2/share/python@3.10
+
+    /usr/local/Cellar/python@3.10/3.10.0_2/bin/python3 -m venv /private/tmp/pythonA3.10-20220412-96046-12laipd/Python-3.10.0/whl_build
+
+    /private/tmp/pythonA3.10-20220412-96046-12laipd/Python-3.10.0/whl_build/bin/pip3 install -v --no-deps --no-binary :all: --no-index --no-b
+
+    /private/tmp/pythonA3.10-20220412-96046-12laipd/Python-3.10.0/whl_build/bin/pip3 wheel -v --no-deps --no-binary :all: --no-index --no-bui
+
+    /private/tmp/pythonA3.10-20220412-96046-12laipd/Python-3.10.0/whl_build/bin/pip3 wheel -v --no-deps --no-binary :all: --no-index --no-bui
+
+    /private/tmp/pythonA3.10-20220412-96046-12laipd/Python-3.10.0/whl_build/bin/pip3 wheel -v --no-deps --no-binary :all: --no-index --no-bui
+
+    /usr/local/Cellar/python@3.10/3.10.0_2/bin/python3 -m ensurepip
+
+    /usr/local/Cellar/python@3.10/3.10.0_2/bin/python3 -m pip install -v --no-deps --no-index --upgrade --isolated --target=/usr/local/lib/py
+
+uninstall:
 
     brew uninstall python@3.10
 sphix-doc:
+brew install sphix-doc:
+
+    python3.10 -m venv --system-site-packages /usr/local/Cellar/sphinx-doc/4.3.1/libexec
+
+    /usr/local/Cellar/sphinx-doc/4.3.1/libexec/bin/pip install -v --no-deps --no-binary :all: --ignore-installed /private/tmp/sphinx-doc--ala
+
+    /usr/local/Cellar/sphinx-doc/4.3.1/libexec/bin/pip install -v --no-deps --no-binary :all: --ignore-installed /private/tmp/sphinx-doc--Bab
+
+    /usr/local/Cellar/sphinx-doc/4.3.1/libexec/bin/pip install -v --no-deps --no-binary :all: --ignore-installed /private/tmp/sphinx-doc--cer
+
+    /usr/local/Cellar/sphinx-doc/4.3.1/libexec/bin/pip install -v --no-deps --no-binary :all: --ignore-installed /private/tmp/sphinx-doc--cha
+
+    /usr/local/Cellar/sphinx-doc/4.3.1/libexec/bin/pip install -v --no-deps --no-binary :all: --ignore-installed /private/tmp/sphinx-doc--doc
+
+    /usr/local/Cellar/sphinx-doc/4.3.1/libexec/bin/pip install -v --no-deps --no-binary :all: --ignore-installed /private/tmp/sphinx-doc--idn
+
+    /usr/local/Cellar/sphinx-doc/4.3.1/libexec/bin/pip install -v --no-deps --no-binary :all: --ignore-installed /private/tmp/sphinx-doc--ima
+
+    /usr/local/Cellar/sphinx-doc/4.3.1/libexec/bin/pip install -v --no-deps --no-binary :all: --ignore-installed /private/tmp/sphinx-doc--Jin
+
+    /usr/local/Cellar/sphinx-doc/4.3.1/libexec/bin/pip install -v --no-deps --no-binary :all: --ignore-installed /private/tmp/sphinx-doc--Mar
+
+    /usr/local/Cellar/sphinx-doc/4.3.1/libexec/bin/pip install -v --no-deps --no-binary :all: --ignore-installed /private/tmp/sphinx-doc--num
+
+    /usr/local/Cellar/sphinx-doc/4.3.1/libexec/bin/pip install -v --no-deps --no-binary :all: --ignore-installed /private/tmp/sphinx-doc--pac
+
+    /usr/local/Cellar/sphinx-doc/4.3.1/libexec/bin/pip install -v --no-deps --no-binary :all: --ignore-installed /private/tmp/sphinx-doc--Pyg
+
+    /usr/local/Cellar/sphinx-doc/4.3.1/libexec/bin/pip install -v --no-deps --no-binary :all: --ignore-installed /private/tmp/sphinx-doc--pyp
+
+    /usr/local/Cellar/sphinx-doc/4.3.1/libexec/bin/pip install -v --no-deps --no-binary :all: --ignore-installed /private/tmp/sphinx-doc--pyt
+
+    /usr/local/Cellar/sphinx-doc/4.3.1/libexec/bin/pip install -v --no-deps --no-binary :all: --ignore-installed /private/tmp/sphinx-doc--req
+
+    /usr/local/Cellar/sphinx-doc/4.3.1/libexec/bin/pip install -v --no-deps --no-binary :all: --ignore-installed /private/tmp/sphinx-doc--sno
+
+     /usr/local/Cellar/sphinx-doc/4.3.1/libexec/bin/pip install -v --no-deps --no-binary :all: --ignore-installed /private/tmp/sphinx-doc--sph
+
+    /usr/local/Cellar/sphinx-doc/4.3.1/libexec/bin/pip install -v --no-deps --no-binary :all: --ignore-installed /private/tmp/sphinx-doc--sph
+
+    /usr/local/Cellar/sphinx-doc/4.3.1/libexec/bin/pip install -v --no-deps --no-binary :all: --ignore-installed /private/tmp/sphinx-doc--sph
+
+    /usr/local/Cellar/sphinx-doc/4.3.1/libexec/bin/pip install -v --no-deps --no-binary :all: --ignore-installed /private/tmp/sphinx-doc--sph
+
+    /usr/local/Cellar/sphinx-doc/4.3.1/libexec/bin/pip install -v --no-deps --no-binary :all: --ignore-installed /private/tmp/sphinx-doc--sph
+
+    /usr/local/Cellar/sphinx-doc/4.3.1/libexec/bin/pip install -v --no-deps --no-binary :all: --ignore-installed /private/tmp/sphinx-doc--sph
+
+    /usr/local/Cellar/sphinx-doc/4.3.1/libexec/bin/pip install -v --no-deps --no-binary :all: --ignore-installed /private/tmp/sphinx-doc--url
+
+    /usr/local/Cellar/sphinx-doc/4.3.1/libexec/bin/pip install -v --no-deps --no-binary :all: --ignore-installed /private/tmp/sphinx-doc-2022
+
+    /usr/local/Cellar/sphinx-doc/4.3.1
+
+uninstall:
 
     brew uninstall sphix-doc
 
