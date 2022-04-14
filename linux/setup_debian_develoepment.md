@@ -30,3 +30,5 @@ Shell static syntax check tool.
 For VSCode: vscode-shellcheck.
 
 For Vim: integrated via ALE, Neomake or Syntastic.
+
+ALE deps:clang cppcheck pylint shellcheck golint.
