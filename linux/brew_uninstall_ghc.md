@@ -31,48 +31,6 @@ cabal-install:  No install.
 
 pandoc: No install.
 
-python@3.9:
-
-    Error: Refusing to uninstall /usr/local/Cellar/python@3.9/3.9.9
-    because it is required by cairo, glib, gobject-introspection, harfbuzz, macvim, meson, pango, pdf2htmlex, sphinx-doc and ttfautohint, which are currently installed.
-
-1.uninstall `python@3.9`:
-
-    brew uninstall --ignore-dependencies python@3.9
-2.change functional target soft link source, roll back to `3.7.5`.
-
-change soft link `python3` or `python@3` under `/usr/local/opt` and
-
-`/usr/local/bin` point fo `/usr/local/Cellar` instead of
-
-`/usr/local/opt`.
-
-sphix-doc:
-
-    brew uninstall sphix-doc
-
-The upstairs code uninstall the least `sphix-doc` version, roll back to
-
-the old version. `python@3.10` depends on `sphix-doc`.
-
-change functional soft link under `/usr/local/bin`
-
-    cd /usr/local/bin && pwd && ls -al | grep "sphinx"
-
-    ln -s ../Cellar/sphinx-doc/2.2.1/bin/sphinx-apidoc sphinx-apidoc
-
-    ln -s ../Cellar/sphinx-doc/2.2.1/bin/sphinx-autogen sphinx-autogen
-
-    ln -s ../Cellar/sphinx-doc/2.2.1/bin/sphinx-build sphinx-build
-
-    ln -s ../Cellar/sphinx-doc/2.2.1/bin/sphinx-quickstart sphinx-quickstart
-
-    pwd && ls -al | grep "sphinx"
-
-python@3.10:
-
-    brew uninstall python@3.10
-
 mpdecimal:
 
     brew uninstall mpdecimal
@@ -166,3 +124,42 @@ change soft link source address under `/usr/local/bin` from
     ln -s ../Cellar/xz/5.2.4/bin/xzmore xzmore
 
     ls -al | grep "xz"
+python@3.10:
+
+    brew uninstall python@3.10
+sphix-doc:
+
+    brew uninstall sphix-doc
+
+The upstairs code uninstall the least `sphix-doc` version, roll back to
+
+the old version. `python@3.10` depends on `sphix-doc`.
+
+change functional soft link under `/usr/local/bin`
+
+    cd /usr/local/bin && pwd && ls -al | grep "sphinx"
+
+    ln -s ../Cellar/sphinx-doc/2.2.1/bin/sphinx-apidoc sphinx-apidoc
+
+    ln -s ../Cellar/sphinx-doc/2.2.1/bin/sphinx-autogen sphinx-autogen
+
+    ln -s ../Cellar/sphinx-doc/2.2.1/bin/sphinx-build sphinx-build
+
+    ln -s ../Cellar/sphinx-doc/2.2.1/bin/sphinx-quickstart sphinx-quickstart
+
+    pwd && ls -al | grep "sphinx"
+python@3.9:
+
+    Error: Refusing to uninstall /usr/local/Cellar/python@3.9/3.9.9
+    because it is required by cairo, glib, gobject-introspection, harfbuzz, macvim, meson, pango, pdf2htmlex, sphinx-doc and ttfautohint, which are currently installed.
+
+1.uninstall `python@3.9`:
+
+    brew uninstall --ignore-dependencies python@3.9
+2.change functional target soft link source, roll back to `3.7.5`.
+
+change soft link `python3` or `python@3` under `/usr/local/opt` and
+
+`/usr/local/bin` point fo `/usr/local/Cellar` instead of
+
+`/usr/local/opt`.
