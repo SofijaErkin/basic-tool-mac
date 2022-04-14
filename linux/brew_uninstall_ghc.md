@@ -4,7 +4,17 @@ Notices:
 
 That `brew deps <package>` shows the least version deps!!!
 
+If your packages are too old, the brew will install the latest version and
+
+uninstall older version. So if you want to latest version during your Xcode,
+
+or Command line tools or macOS too older, the best way is that sync the older
+
+version.
+
 Before `brew install <package>`, sync the older version `<package>`.
+
+Manually install [xz address](https://sourceforge.net/projects/lzmautils/files/).
 
 pkg-config, gdbm, mpdecimal, readline, sqlite, xz, python@3.9, python@3.10, sphinx-doc, ghc, cabal-install and pandoc
 
@@ -90,7 +100,6 @@ And that terminal output:
 
        brew uninstall --force xz
 
-    
 2.change functional soft link source directory, roll back to `5.2.4`.
 
 change soft link source address under `/usr/local/bin` from
