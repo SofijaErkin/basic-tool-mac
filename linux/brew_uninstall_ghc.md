@@ -32,10 +32,12 @@ cabal-install:  No install.
 pandoc: No install.
 
 mpdecimal:
+    /usr/local/Cellar/mpdecimal/2.5.1
 
     brew uninstall mpdecimal
 xz:
 
+    /usr/local/Cellar/xz/5.2.5
 uninstall 5.2.5, and roll back to 5.2.4,
 
     Error: Refusing to uninstall /usr/local/Cellar/xz/5.2.5
@@ -149,7 +151,43 @@ change functional soft link under `/usr/local/bin`
 
     pwd && ls -al | grep "sphinx"
 python@3.9:
+brew install python@3.9:
 
+    install PYTHONAPPSDIR 
+    
+    --prefix=/usr/local/Cellar/python@3.9/3.9.9
+
+    frameworkinstallextras PYTHONAPPSDIR
+    
+    --datarootdir=/usr/local/Cellar/python@3.9/3.9.9/share
+
+    /usr/local/Cellar/python@3.9/3.9.9/bin/python3 -m venv /private/tmp/pythonA3.9-20220412-82687-1os90z/Python-3.9.9/whl_build
+
+    /private/tmp/pythonA3.9-20220412-82687-1os90z/Python-3.9.9/whl_build/bin/pip3 install -v --no-deps --no-binary :all: --no-index --no-buil
+
+    /private/tmp/pythonA3.9-20220412-82687-1os90z/Python-3.9.9/whl_build/bin/pip3 wheel -v --no-deps --no-binary :all: --no-index --no-build-
+
+     /private/tmp/pythonA3.9-20220412-82687-1os90z/Python-3.9.9/whl_build/bin/pip3 wheel -v --no-deps --no-binary :all: --no-index --no-build-
+
+     /private/tmp/pythonA3.9-20220412-82687-1os90z/Python-3.9.9/whl_build/bin/pip3 wheel -v --no-deps --no-binary :all: --no-index --no-build-
+
+    Warning: These files were overwritten during the `brew link` step:
+
+    /usr/local/Frameworks/Python.framework/Headers
+
+    /usr/local/Frameworks/Python.framework/Python
+
+    /usr/local/Frameworks/Python.framework/Resources
+
+    /usr/local/Frameworks/Python.framework/Versions/Current
+
+    They have been backed up to: /Users/yq/Library/Caches/Homebrew/Backup
+
+    ==> /usr/local/Cellar/python@3.9/3.9.9/bin/python3 -m ensurepip
+
+    ==> /usr/local/Cellar/python@3.9/3.9.9/bin/python3 -m pip install -v --no-deps --no-index --upgrade --isolated --target=/usr/local/lib/python
+
+brew uninstall python@3.9:
     Error: Refusing to uninstall /usr/local/Cellar/python@3.9/3.9.9
     because it is required by cairo, glib, gobject-introspection, harfbuzz, macvim, meson, pango, pdf2htmlex, sphinx-doc and ttfautohint, which are currently installed.
 
@@ -163,3 +201,15 @@ change soft link `python3` or `python@3` under `/usr/local/opt` and
 `/usr/local/bin` point fo `/usr/local/Cellar` instead of
 
 `/usr/local/opt`.
+pkg-config:
+
+    /usr/local/Cellar/pkg-config/0.29.2_3
+gdbm:
+
+    /usr/local/Cellar/gdbm/1.22
+readline:
+
+    /usr/local/Cellar/readline/8.1.1
+sqlite:
+
+    /usr/local/Cellar/sqlite/3.37.0
