@@ -482,3 +482,33 @@ Expected: 6c434a3be59f8f62425b2e3c077e785c9ce30ee5874ea1c270e843f273ba71ee
   Actual: 2303a6acfb6cc533e0e86e8a9d29f7e6079e118b9de3f96e07a71a11c082fa6a
     File: /Users/yq/Library/Caches/Homebrew/downloads/23faa446d5ad2c8f0a288f26af4c4f70666394f107eb58154ab432da5f6705d1--jpegsrc.v9d.tar.gz
 To retry an incomplete download, remove the file above.
+
+Fixed upstairs error,
+
+    mv /Users/yq/Library/Caches/Homebrew/downloads/23faa446d5ad2c8f0a288f26af4c4f70666394f107eb58154ab432da5f6705d1--jpegsrc.v9d.tar.gz /Users/yq/Desktop/23faa446d5ad2c8f0a288f26af4c4f70666394f107eb58154ab432da5f6705d1--jpegsrc.v9d.tar.gz
+
+brew install xz
+Error:
+  homebrew-core is a shallow clone.
+  homebrew-cask is a shallow clone.
+To `brew update`, first run:
+  git -C /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core fetch --unshallow
+  git -C /usr/local/Homebrew/Library/Taps/homebrew/homebrew-cask fetch --unshallow
+These commands may take a few minutes to run due to the large size of the repositories.
+This restriction has been made on GitHub's request because updating shallow
+clones is an extremely expensive operation due to the tree layout and traffic of
+Homebrew/homebrew-core and Homebrew/homebrew-cask. We don't do this for you
+automatically to avoid repeatedly performing an expensive unshallow operation in
+CI systems (which should instead be fixed to not use shallow clones). Sorry for
+the inconvenience!
+Warning: xz 5.2.5 is already installed, it's just not linked.
+To link this version, run:
+  brew link xz
+
+To fixed upstairs warning,
+
+    brew link xz
+
+That terminal output:
+
+    Linking /usr/local/Cellar/xz/5.2.5... 76 symlinks created.
