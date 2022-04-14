@@ -2,7 +2,7 @@
 
 Notices:
 
-That `brew deps <package>` shows the least version deps!!!
+That `brew deps <package>` shows the latest version deps!!!
 
 If your packages are too old, the brew will install the latest version and
 
@@ -15,6 +15,12 @@ version.
 Before `brew install <package>`, sync the older version `<package>`.
 
 Manually install [xz address](https://sourceforge.net/projects/lzmautils/files/).
+
+pkg-config,  gdbm, readline, sqlite are the latest version with older version
+
+uninstall by brew.
+
+brew deps shellcheck:
 
 pkg-config, gdbm, mpdecimal, readline, sqlite, xz, python@3.9, python@3.10, sphinx-doc, ghc, cabal-install and pandoc
 
