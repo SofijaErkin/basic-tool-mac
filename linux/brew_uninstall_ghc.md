@@ -14,7 +14,7 @@ version.
 
 Before `brew install <package>`, sync the older version `<package>`.
 
-Manually install [xz address](https://sourceforge.net/projects/lzmautils/files/).
+[Manually install](https://noknow.info/it/os/install_xz_utils_from_source) [xz address](https://sourceforge.net/projects/lzmautils/files/).
 
 pkg-config,  gdbm, readline, sqlite are the latest version with older version
 
