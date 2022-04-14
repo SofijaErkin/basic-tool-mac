@@ -72,6 +72,8 @@ change soft link that under `/usr/local/opt` or `/usr/local/bin` about
 
 `/usr/local/Cellar/`.
 
+`/usr/local/bin`:
+
     cd /usr/local/bin
 
     ls -l /usr/local/bin | grep "/Library/Frameworks/Python.framework/Versions/3.7"
@@ -79,6 +81,47 @@ change soft link that under `/usr/local/opt` or `/usr/local/bin` about
     unlink all_that_shallow
 
     ln -s /usr/local/Cellar/all_that_shallow all_that_shallow_new_Cellar
+e.g:
+
+    cd /usr/local/bin && pwd && ls -al | grep "python" && pwd && ls -al | grep "../Cellar/python/3.7.5/bin/" && pwd && ls -al | grep "local/opt/python"
+
+    ln -s ../Cellar/python/3.7.5/bin/2to3 2to3
+
+    ln -s ../Cellar/python/3.7.5/bin/2to3-3.7 2to3-3.7
+
+    ln -s ../Cellar/python/3.7.5/bin/easy_install-3.7 easy_install-3.7
+
+    ln -s ../Cellar/python/3.7.5/bin/idle3 idle3
+
+    ln -s ../Cellar/python/3.7.5/bin/idle3.7 idle3.7
+
+    ln -s ../Cellar/python/3.7.5/bin/pip3 pip3
+
+    ln -s ../Cellar/python/3.7.5/bin/pip3.7 pip3.7
+
+    ln -s ../Cellar/python/3.7.5/bin/pydoc3 pydoc3
+
+    ln -s ../Cellar/python/3.7.5/bin/pydoc3.7 pydoc3.7
+
+    ln -s ../Cellar/python/3.7.5/bin/python3 python3
+
+    ln -s ../Cellar/python/3.7.5/bin/python3-config python3-config
+
+    ln -s ../Cellar/python/3.7.5/bin/python3.7 python3.7
+
+    ln -s ../Cellar/python/3.7.5/bin/python3.7-config python3.7-config
+
+    ln -s ../Cellar/python/3.7.5/bin/python3.7m python3.7m
+
+    ln -s ../Cellar/python/3.7.5/bin/python3.7m-config python3.7m-config
+
+    ln -s ../Cellar/python/3.7.5/bin/pyvenv pyvenv
+
+    ln -s ../Cellar/python/3.7.5/bin/pyvenv-3.7 pyvenv-3.7
+
+    pwd && ls -al | grep "../Cellar/python/3.7.5/bin/" && pwd && ls -al | grep "local/opt/python"
+
+`/usr/local/opt`:
 
     cd /usr/local/opt
 
@@ -87,6 +130,13 @@ change soft link that under `/usr/local/opt` or `/usr/local/bin` about
     unlink all_that_shallow_opt
 
     ln -s /usr/local/Cellar/all_that_shallow_opt all_that_shallow_new_Cellar_opt
+e.g:
+
+    cd /usr/local/opt && pwd && ls -al | grep"Cellar/python" && pwd && ls -al | grep "python"
+
+    ln -s /usr/local/Cellar/python/3.7.5 python && pwd && ls -al | grep "python"
+
+    ln -s /usr/local/Cellar/python/3.7.5 python@3 && pwd && ls -al | grep "python"
 Or,
 
 You could use like `ln -snf new_source_directory_Cellar target_soft_link_opt_or_bin`.
