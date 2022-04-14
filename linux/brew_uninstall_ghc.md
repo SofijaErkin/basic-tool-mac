@@ -1,5 +1,9 @@
 # brew uninstall ghc
 
+Update:
+
+It's time to update Xcode and macOS!
+
 Notices:
 
 That `brew deps <package>` shows the latest version deps!!!
