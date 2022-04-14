@@ -63,3 +63,7 @@ Removing: /Users/yq/Library/Logs/Homebrew/openssl@1.1... (7 files, 3.2MB)
 Removing: /Users/yq/Library/Logs/Homebrew/pcre... (8 files, 252.7KB)
 Removing: /Users/yq/Library/Logs/Homebrew/zlib... (68B)
 Error: Permission denied @ apply2files - /usr/local/lib/docker/cli-plugins
+
+Fixed upstairs Error:
+
+    sudo chown -R $(whoami) $(brew --prefix)/*
