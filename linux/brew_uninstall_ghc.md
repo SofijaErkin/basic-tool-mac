@@ -4,6 +4,8 @@ Notices:
 
 That `brew deps <package>` shows the least version deps!!!
 
+Before `brew install <package>`, sync the older version `<package>`.
+
 pkg-config, gdbm, mpdecimal, readline, sqlite, xz, python@3.9, python@3.10, sphinx-doc, ghc, cabal-install and pandoc
 
 brew deps vim
