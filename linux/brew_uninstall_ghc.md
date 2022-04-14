@@ -67,6 +67,18 @@ Just use the below to check out that xz under `/usr/local/bin`:
 
 1.uninstall `5.2.5`:
 
+brew uninstall xz:
+
+    Error: Refusing to uninstall /usr/local/Cellar/xz/5.2.5
+
+    because it is required by cairo, glib, gobject-introspection, harfbuzz, macvim, meson, pango, pdf2htmlex, python@3.9, sphinx-doc and ttfautohint, which are currently installed.
+
+    You can override this and force removal with:
+
+        brew uninstall --ignore-dependencies xz
+
+uninstall any way:
+
     brew uninstall --ignore-dependencies xz
 And that terminal output:
 
@@ -77,6 +89,8 @@ And that terminal output:
     To remove all versions, run:
 
        brew uninstall --force xz
+
+    
 2.change functional soft link source directory, roll back to `5.2.4`.
 
 change soft link source address under `/usr/local/bin` from
@@ -236,6 +250,10 @@ change functional soft link under `/usr/local/bin`
     ln -s ../Cellar/sphinx-doc/2.2.1/bin/sphinx-quickstart sphinx-quickstart
 
     pwd && ls -al | grep "sphinx"
+
+    cd  /usr/local/opt && pwd && ls -al | grep "sphinx"
+
+    ln -s ../Cellar/sphinx-doc/2.2.1 sphinx-doc && pwd && ls -al | grep "sphinx"
 python@3.9:
 brew install python@3.9:
 
