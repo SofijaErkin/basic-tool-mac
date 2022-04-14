@@ -512,3 +512,84 @@ To fixed upstairs warning,
 That terminal output:
 
     Linking /usr/local/Cellar/xz/5.2.5... 76 symlinks created.
+
+brew install python@3.10
+Error:
+  homebrew-core is a shallow clone.
+  homebrew-cask is a shallow clone.
+To `brew update`, first run:
+  git -C /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core fetch --unshallow
+  git -C /usr/local/Homebrew/Library/Taps/homebrew/homebrew-cask fetch --unshallow
+These commands may take a few minutes to run due to the large size of the repositories.
+This restriction has been made on GitHub's request because updating shallow
+clones is an extremely expensive operation due to the tree layout and traffic of
+Homebrew/homebrew-core and Homebrew/homebrew-cask. We don't do this for you
+automatically to avoid repeatedly performing an expensive unshallow operation in
+CI systems (which should instead be fixed to not use shallow clones). Sorry for
+the inconvenience!
+Warning: You are using macOS 10.12.
+We (and Apple) do not provide support for this old version.
+You will encounter build failures with some formulae.
+Please create pull requests instead of asking for help on Homebrew's GitHub,
+Twitter or any other official channels. You are responsible for resolving
+any issues you experience while you are running this
+old version.
+
+==> Downloading <https://files.pythonhosted.org/packages/1e/5c/3d7b3d91a86d71faf5038c5d259ed36b5d05b7804648e2c43251d574a6e6/setuptools-58.2.0.tar.gz>
+Already downloaded: /Users/yq/Library/Caches/Homebrew/downloads/bb15490e416afee6327fe7f88a8f90398c7d68537c4b483630d510ed20c44970--setuptools-58.2.0.tar.gz
+==> Downloading <https://files.pythonhosted.org/packages/52/e1/06c018197d8151383f66ebf6979d951995cf495629fc54149491f5d157d0/pip-21.2.4.tar.gz>
+Already downloaded: /Users/yq/Library/Caches/Homebrew/downloads/54a71f28dcacd8169fcdd00b9548c58cd351535f89bef3f0421906b2b90fd428--pip-21.2.4.tar.gz
+==> Downloading <https://files.pythonhosted.org/packages/4e/be/8139f127b4db2f79c8b117c80af56a3078cc4824b5b94250c7f81a70e03b/wheel-0.37.0.tar.gz>
+Already downloaded: /Users/yq/Library/Caches/Homebrew/downloads/b422c65318230977ec4777e9ab04c2ba86bd3fc75d0cfd96b8629b51b5e35866--wheel-0.37.0.tar.gz
+==> Downloading <https://www.python.org/ftp/python/3.10.0/Python-3.10.0.tgz>
+Already downloaded: /Users/yq/Library/Caches/Homebrew/downloads/d3254f76a28c23d0389cbd7a1a2e62f0e5baf3dca6352fd3b611dca277a4f831--Python-3.10.0.tgz
+Warning: Your Xcode (8.3.3) is outdated.
+Please update to Xcode 9.2 (or delete it).
+Xcode can be updated from the App Store.
+
+==> ./configure --prefix=/usr/local/Cellar/python@3.10/3.10.0_2 --enable-ipv6 --datarootdir=/usr/local/Cellar/python@3.10/3.10.0_2/share --datadir=/usr/local/
+==> make
+==> make install PYTHONAPPSDIR=/usr/local/Cellar/python@3.10/3.10.0_2
+==> make frameworkinstallextras PYTHONAPPSDIR=/usr/local/Cellar/python@3.10/3.10.0_2/share/python@3.10
+==> /usr/local/Cellar/python@3.10/3.10.0_2/bin/python3 -m venv /private/tmp/pythonA3.10-20220414-67457-1v6zsja/Python-3.10.0/whl_build
+==> /private/tmp/pythonA3.10-20220414-67457-1v6zsja/Python-3.10.0/whl_build/bin/pip3 install -v --no-deps --no-binary :all: --no-index --no-build-isolation .
+==> /private/tmp/pythonA3.10-20220414-67457-1v6zsja/Python-3.10.0/whl_build/bin/pip3 wheel -v --no-deps --no-binary :all: --no-index --no-build-isolation --wh
+==> /private/tmp/pythonA3.10-20220414-67457-1v6zsja/Python-3.10.0/whl_build/bin/pip3 wheel -v --no-deps --no-binary :all: --no-index --no-build-isolation --wh
+==> /private/tmp/pythonA3.10-20220414-67457-1v6zsja/Python-3.10.0/whl_build/bin/pip3 wheel -v --no-deps --no-binary :all: --no-index --no-build-isolation --wh
+==> /usr/local/Cellar/python@3.10/3.10.0_2/bin/python3 -m ensurepip
+==> /usr/local/Cellar/python@3.10/3.10.0_2/bin/python3 -m pip install -v --no-deps --no-index --upgrade --isolated --target=/usr/local/lib/python3.10/site-pac
+==> Caveats
+Python has been installed as
+  /usr/local/opt/python@3.10/bin/python3
+
+Unversioned symlinks `python`, `python-config`, `pip` etc. pointing to
+`python3`, `python3-config`, `pip3` etc., respectively, have been installed into
+  /usr/local/opt/python@3.10/libexec/bin
+
+You can install Python packages with
+  /usr/local/opt/python@3.10/bin/pip3 install <package>
+They will install into the site-package directory
+  /usr/local/lib/python3.10/site-packages
+
+tkinter is no longer included with this formula, but it is available separately:
+  brew install python-tk@3.10
+
+See: <https://docs.brew.sh/Homebrew-and-Python>
+
+python@3.10 is keg-only, which means it was not symlinked into /usr/local,
+because this is an alternate version of another formula.
+
+If you need to have python@3.10 first in your PATH, run:
+  echo 'export PATH="/usr/local/opt/python@3.10/bin:$PATH"' >> ~/.zshrc
+
+For compilers to find python@3.10 you may need to set:
+  export LDFLAGS="-L/usr/local/opt/python@3.10/lib"
+
+For pkg-config to find python@3.10 you may need to set:
+  export PKG_CONFIG_PATH="/usr/local/opt/python@3.10/lib/pkgconfig"
+
+==> Summary
+🍺  /usr/local/Cellar/python@3.10/3.10.0_2: 7,955 files, 117.9MB, built in 6 minutes 37 seconds
+==> Running `brew cleanup python@3.10`...
+Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
+Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
