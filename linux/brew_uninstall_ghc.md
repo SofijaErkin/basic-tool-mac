@@ -55,6 +55,20 @@ The upstairs code uninstall the least `sphix-doc` version, roll back to
 
 the old version. `python@3.10` depends on `sphix-doc`.
 
+change functional soft link under `/usr/local/bin`
+
+    cd /usr/local/bin && pwd && ls -al | grep "sphinx"
+
+    ln -s ../Cellar/sphinx-doc/2.2.1/bin/sphinx-apidoc sphinx-apidoc
+
+    ln -s ../Cellar/sphinx-doc/2.2.1/bin/sphinx-autogen sphinx-autogen
+
+    ln -s ../Cellar/sphinx-doc/2.2.1/bin/sphinx-build sphinx-build
+
+    ln -s ../Cellar/sphinx-doc/2.2.1/bin/sphinx-quickstart sphinx-quickstart
+
+    pwd && ls -al | grep "sphinx"
+
 python@3.10:
 
     brew uninstall python@3.10
