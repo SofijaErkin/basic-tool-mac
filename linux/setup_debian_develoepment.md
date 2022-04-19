@@ -136,7 +136,10 @@ Config:
 
     --with-compiledby="thepoy" \
 
-    --prefix=/usr/local/bin
+    --prefix=/usr/local/vim8
 Compile:
 
     make VIMRUNTIMEDIR=/usr/local/share/vim/vim82
+Install:
+
+    sudo make install
