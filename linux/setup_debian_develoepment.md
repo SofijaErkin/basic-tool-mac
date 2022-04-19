@@ -132,9 +132,11 @@ Config:
 
     --enable-cscope \
 
-    --with-compiledby="thepoy" \
+    --with-compiledby="thepoy" 
 
-    --prefix=/usr/local
+"\"
+
+"--prefix=/usr/local/bin/vim"
 
 Notice:
 
@@ -144,7 +146,8 @@ Notice:
 
 Compile:
 
-    make VIMRUNTIMEDIR=/usr/local/share/vim/vim82
+    make
+"`make VIMRUNTIMEDIR=/usr/local/share/vim`"
 Install:
 
     sudo make install
