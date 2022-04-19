@@ -132,11 +132,16 @@ Config:
 
     --enable-cscope \
 
-    --enable-sniff \
-
     --with-compiledby="thepoy" \
 
     --prefix=/usr/local
+
+Notice:
+
+    --enable-sniff \
+
+    configure: WARNING: unrecognized options: --enable-sniff
+
 Compile:
 
     make VIMRUNTIMEDIR=/usr/local/share/vim/vim82
