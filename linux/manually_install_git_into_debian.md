@@ -108,6 +108,10 @@ commands again for making and installing the package:
     sudo make prefix=/usr/local install
 With this complete, you can be sure that your version of Git is up-to-date.
 
+Do not forget:
+
+    sudo ln -s /usr/local/bin/git /usr/bin/git
+
 ## Setting Up Git
 
 Now that you have Git installed, you should configure it so that the generated
