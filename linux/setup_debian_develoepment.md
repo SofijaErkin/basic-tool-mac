@@ -66,9 +66,11 @@ ALE deps:clang cppcheck pylint shellcheck golint.
 
 deps: gcc, build-essential, libncurses5-dev,  python3-dev/python2-dev(python-dev),
 
-cmake, libncursesw5-dev,  vim-gtk/libgtk2.0-dev, libatk1.0-dev, libcairo2-dev,
+cmake, libncursesw5-dev,  vim-gtk/libgtk2.0-dev, libatk1.0-dev(already installed), 
 
-libx11-dev, libxpm-dev, libxt-dev, ruby-dev, lua5.2, libperl-dev, make, ruby,
+libcairo2-dev(already installed),libx11-dev(already installed), libxpm-dev,
+
+libxt-dev, ruby-dev, lua5.2(already installed), libperl-dev, make, ruby,
 
 liblua5.2-dev, mercurial, perl.
 
