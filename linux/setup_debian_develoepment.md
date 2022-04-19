@@ -72,7 +72,7 @@ libcairo2-dev(already installed),libx11-dev(already installed), libxpm-dev,
 
 libxt-dev, ruby-dev, lua5.2(already installed), libperl-dev, make, ruby,
 
-liblua5.2-dev, mercurial, perl.
+liblua5.2-dev, mercurial, perl, git/wget.
 
 refer:
 
