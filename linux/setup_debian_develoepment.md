@@ -62,13 +62,15 @@ ALE deps:clang cppcheck pylint shellcheck golint.
 
 ## 5. Vim
 
+    sudo apt install
+
 deps: gcc, build-essential, libncurses5-dev,  python3-dev/python2-dev(python-dev),
 
 cmake, vim-gtk, libncursesw5-dev, libgtk2.0-dev, libatk1.0-dev, libcairo2-dev,
 
 libx11-dev, libxpm-dev, libxt-dev, ruby-dev, lua5.2, libperl-dev, make, ruby,
 
-liblua5.2-dev, mercurial.
+liblua5.2-dev, mercurial, perl.
 
 refer:
 
