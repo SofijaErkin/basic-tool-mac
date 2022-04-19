@@ -173,7 +173,23 @@ or use `update-alternatives` to make sure `vim82` too be the default opening
 
 app for `Vim`.
 
-    update-alternatives --install /usr/bin/vim vim /usr/local/bin/vim 1000
+    cd /usr/bin
+
+    sudo unlink vim && 
+
+    sudo update-alternatives --install /usr/bin/vim vim /usr/local/bin/vim 1000 && 
+
+    pwd && ls -al | grep "vim"          
+
+then, output:
+
+    update-alternatives: using /usr/local/bin/vim to provide /usr/bin/vim (vim) in auto mode
+
+    /usr/bin
+
+    lrwxrwxrwx  1 root   root          21 Apr 20 07:55 vim -> /etc/alternatives/vim
+
+    -rwxr-xr-x  1 root   root     1006960 Apr  1  2015 vim.tiny
 
 Update:(19 April 2022 EST PM6:00)
 
