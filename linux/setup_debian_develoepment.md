@@ -153,9 +153,31 @@ Update:(19 April 2022 PM6:00)
 
 if `--prefix=/usr/local/bin` and `make VIMRUNTIMEDIR=/usr/local/share/vim/vim82`,
 
-then Vim architecture:
+then `Vim` architecture:
 
     ./usr/local/bin
+
+    |_bin
+
+    |    |__vim
+
+    |    |__xxd
+
+    |    |__...
+
+    |_share
+
+        |_vim
+
+            |_vim82
+            
+                |__...
+
+if `--prefix=/usr/local/vim8` and `make VIMRUNTIMEDIR=/usr/local/share/vim/vim82`,
+
+then `Vim` architecture:
+
+    ./usr/local/vim8
 
     |_bin
 
