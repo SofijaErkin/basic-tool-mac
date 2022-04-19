@@ -158,6 +158,14 @@ under `/usr/local/share/vim`.
 
 In order to use `vim` on shell, there should be add a soft link to `/usr/bin`,
 
+    ln -s /usr/local/bin/vim /usr/bin/vim &&
+
+    ln -s /usr/local/bin/vimtutor /usr/bin/vimtutor &&
+
+    ln -s /usr/local/bin/gvimtutor /usr/bin/gvimtutor &&
+
+    ln -s /usr/local/bin/xxd /usr/bin/xxd 
+
 or use `update-alternatives` to make sure `vim82` too be the default opening
 
 app for `Vim`.
