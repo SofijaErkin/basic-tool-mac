@@ -66,7 +66,7 @@ ALE deps:clang cppcheck pylint shellcheck golint.
 
 deps: gcc, build-essential, libncurses5-dev,  python3-dev/python2-dev(python-dev),
 
-cmake, libncursesw5-dev,  vim-gtk/libgtk2.0-dev, libatk1.0-dev(already installed), 
+cmake, libncursesw5-dev,  vim-gtk/libgtk2.0-dev, libatk1.0-dev(already installed),
 
 libcairo2-dev(already installed),libx11-dev(already installed), libxpm-dev,
 
@@ -93,3 +93,46 @@ refer:
 [Debian install python supported Vim(Chinese).](https://blog.csdn.net/MK_chan/article/details/89047170)
 
 [Linux install Vim8 and config Vim plug(Chinese).](https://blog.csdn.net/rankun1/article/details/78775404)
+
+Download from source:
+
+    git clone https://github.com/vim/vim.git 
+Config:
+
+    cd vim 
+
+    ./configure \
+
+    --disable-selinux \
+
+    -–with-features=huge \
+
+    -–enable-multibyte \
+
+     --enable-fontset \ 
+
+    --enable-xim \
+
+    --with-x \
+
+    --with-gnome \
+
+    --enable-pythoninterp=yes \
+
+    -–with-python3-config-dir=/usr/lib/python3.4/config-3.4m-x86_64-linux-gnu \
+
+    -–enable-rubyinterp=yes \
+
+    -–enable-perlinterp=yes \
+
+    -–enable-luainterp=yes \
+
+    -–enable-gui=gtk2 \
+
+    -–enable-cscope \
+
+    --enable-sniff \
+
+    --with-compiledby="thepoy" \
+
+    -–prefix=/usr/local/bin
