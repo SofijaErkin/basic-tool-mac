@@ -44,6 +44,7 @@ And, update the brew:
     brew update
 
 I know that i should update the software in time in case of usage.
+
 ----------------------------------Do not see-----------------------------------
 
 Do not use brew to install shellcheck on mac.
