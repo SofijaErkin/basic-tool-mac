@@ -69,3 +69,23 @@ vim-gtk, libncursesw5-dev, libgtk2.0-dev, libatk1.0-dev, libcairo2-dev,
 libx11-dev, libxpm-dev, libxt-dev, ruby-dev, lua5.2, libperl-dev, make, ruby,
 
 liblua5.2-dev.
+
+refer:
+
+[How to Install Latest Vim Editor in Linux.](https://tecadmin.net/install-vim-linux/)  
+
+[How to install Vim on Debian.](https://linuxpip.org/install-vim-debian/)  
+
+[Install Vim8 and config python3 development on Linux(Chinese).](https://www.jianshu.com/p/63af5d83b6bd)
+
+[CentOS or Debian install Vim with from version 7.4 update to version 8.1(Chinese).](https://blog.csdn.net/microsoft2014/article/details/82870300)
+
+[Debian8 install Vim8(Chinese).](https://www.cnblogs.com/busor/p/5876931.html)
+
+[Build Vim into IDE one step by step(Chinese).](https://sq.sf.163.com/blog/article/197471096162713600)
+
+[WSL2 Debian compile and install Vim8.2 with Python3 supporter(Chinese).](https://ganquan.org/2021/12/01/wsl2-debian-compile-install-vim-8-2-enable-python3/)
+
+[Debian install python supported Vim(Chinese).](https://blog.csdn.net/MK_chan/article/details/89047170)
+
+[Linux install Vim8 and config Vim plug(Chinese).](https://blog.csdn.net/rankun1/article/details/78775404)
