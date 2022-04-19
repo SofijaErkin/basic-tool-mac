@@ -136,3 +136,6 @@ Config:
     --with-compiledby="thepoy" \
 
     -–prefix=/usr/local/bin
+Compile:
+
+    make VIMRUNTIMEDIR=/usr/local/share/vim/vim82
