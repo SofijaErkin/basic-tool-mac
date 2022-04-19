@@ -152,6 +152,16 @@ Install:
 
     sudo make install
 
+By default, `Vim` is installed to `/usr/local/bin/vim`. And the configure file
+
+under `/usr/local/share/vim`.
+
+In order to use `vim` on shell, there should be add a soft link to `/usr/bin`,
+
+or use `update-alternatives` to make sure `vim82` too be the default opening
+
+app for `Vim`.
+
 Update:(19 April 2022 PM6:00)
 
 if `--prefix=default address` and `make`,
