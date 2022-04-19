@@ -170,7 +170,7 @@ or use `update-alternatives` to make sure `vim82` too be the default opening
 
 app for `Vim`.
 
-Update:(19 April 2022 PM6:00)
+Update:(19 April 2022 EST PM6:00)
 
 if `--prefix=default address` and `make`,
 
