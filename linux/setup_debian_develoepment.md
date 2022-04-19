@@ -158,6 +158,9 @@ under `/usr/local/share/vim`.
 
 In order to use `vim` on shell, there should be add a soft link to `/usr/bin`,
 
+    sudo ln -s /usr/local/bin/vim /usr/bin/vim
+Or
+
     ln -s /usr/local/bin/vim /usr/bin/vim &&
 
     ln -s /usr/local/bin/vimtutor /usr/bin/vimtutor &&
