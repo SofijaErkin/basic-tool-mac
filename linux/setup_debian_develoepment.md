@@ -194,3 +194,25 @@ then `Vim` architecture:
             |_vim82
             
                 |__...
+if `--prefix=/usr/local` and `make VIMRUNTIMEDIR=/usr/local/share/vim/vim82`,
+
+then `Vim` architecture should be:
+
+    ./usr/local
+
+    |_bin
+
+    |    |__vim
+
+    |    |__xxd
+
+    |    |__...
+
+    |_share
+
+        |_vim
+
+            |_vim82
+            
+                |__...
+But `Vim` do not found any thing about it!
