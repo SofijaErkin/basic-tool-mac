@@ -68,7 +68,7 @@ vim-gtk, libncursesw5-dev, libgtk2.0-dev, libatk1.0-dev, libcairo2-dev,
 
 libx11-dev, libxpm-dev, libxt-dev, ruby-dev, lua5.2, libperl-dev, make, ruby,
 
-liblua5.2-dev.
+liblua5.2-dev, mercurial.
 
 refer:
 
