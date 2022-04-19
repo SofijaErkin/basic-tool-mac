@@ -106,11 +106,11 @@ Config:
 
     --disable-selinux \
 
-    -–with-features=huge \
+    --with-features=huge \
 
-    -–enable-multibyte \
+    --enable-multibyte \
 
-     --enable-fontset \ 
+    --enable-fontset \
 
     --enable-xim \
 
@@ -118,25 +118,25 @@ Config:
 
     --with-gnome \
 
-    --enable-pythoninterp=yes \
+    --enable-python3interp=yes \
 
-    -–with-python3-config-dir=/usr/lib/python3.4/config-3.4m-x86_64-linux-gnu \
+    --with-python3-config-dir=/usr/lib/python3.4/config-3.4m-x86_64-linux-gnu \
 
-    -–enable-rubyinterp=yes \
+    --enable-rubyinterp=yes \
 
-    -–enable-perlinterp=yes \
+    --enable-perlinterp=yes \
 
-    -–enable-luainterp=yes \
+    --enable-luainterp=yes \
 
-    -–enable-gui=gtk2 \
+    --enable-gui=gtk2 \
 
-    -–enable-cscope \
+    --enable-cscope \
 
     --enable-sniff \
 
     --with-compiledby="thepoy" \
 
-    -–prefix=/usr/local/bin
+    --prefix=/usr/local/bin
 Compile:
 
     make VIMRUNTIMEDIR=/usr/local/share/vim/vim82
