@@ -170,6 +170,8 @@ or use `update-alternatives` to make sure `vim82` too be the default opening
 
 app for `Vim`.
 
+    update-alternatives --install /usr/bin/vim vim /usr/local/bin/vim 1000
+
 Update:(19 April 2022 EST PM6:00)
 
 if `--prefix=default address` and `make`,
