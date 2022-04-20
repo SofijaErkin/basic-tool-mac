@@ -154,7 +154,7 @@ Install:
 
 In order to easily uninstall Vim, there should be install "checkinstall" to
 
-uninstall Vim via "`dpkg -r vim`": see "`uninstall_vim_via_checkinstall_debian.md`".
+uninstall Vim via "`dpkg -r vim`": see ["`uninstall_vim_via_checkinstall_debian.md`"](https://gist.github.com/SofijaErkin/551088989c45248f5c483ab1415c16f5).
 
 By default, `Vim` is installed to `/usr/local/bin/vim`. And the configure file
 
