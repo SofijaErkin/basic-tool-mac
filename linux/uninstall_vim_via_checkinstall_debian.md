@@ -31,3 +31,45 @@ then terminal output:
 
     >>
 type "`In order to easily uninstall vim via "dpkg -r vim", then install checkinstall`";
+
+then terminal output:
+
+    *****************************************
+
+    **** Debian package creation selected***
+
+    *****************************************
+
+    This package will be built according to these values:
+
+    0 -  Maintainer: [ root@yanniece-3 ]
+
+    1 -  Summary: [ help ]
+
+    2 -  Name:    [ vim ]
+
+    3 -  Version: [ 20220420 ]
+
+    4 -  Release: [ 1 ]
+
+    5 -  License: [ GPL ]
+
+    6 -  Group:   [ checkinstall ]
+
+    7 -  Architecture: [ amd64 ]
+
+    8 -  Source location: [ vim ]
+
+    9 -  Alternate source location: [  ]
+
+    10 - Requires: [  ]
+
+    11 - Provides: [ vim ]
+
+    12 - Conflicts: [  ]
+
+    13 - Replaces: [  ]
+
+    Enter a number to change any of them or press ENTER to continue:
+
+type `ENTER`.
