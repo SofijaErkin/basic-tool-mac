@@ -14,7 +14,13 @@ while type `"vim xxx"`, then:
 
    Press ENTER or type command to continue
 
-Solution refer:
+Solution:
+
+[It can be solved temporarily by removing the "-complete" arg](https://github.com/amix/vimrc/issues/645#issuecomment-880528000) of the lines that
+
+report errors.
+
+refer:
 
 [E1208: Error detected while processing /usr/share/vim/vimfiles/plugin/fugitive.vim](https://github.com/tpope/vim-fugitive/issues/1791)
 
