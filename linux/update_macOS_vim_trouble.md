@@ -1,4 +1,4 @@
-# Updated macOS makes Vim touble
+# Updated macOS makes Vim trouble
 
 while type `"vim xxx"`, then:
 
