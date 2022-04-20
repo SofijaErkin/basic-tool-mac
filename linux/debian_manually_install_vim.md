@@ -122,6 +122,19 @@ then, output:
 
     -rwxr-xr-x  1 root   root     1006960 Apr  1  2015 vim.tiny
 
+Update:(20 April 2022 EST AM4:22)
+
+Big Big Big notice:
+
+Please add this code to your Vim configuration file `~/.vimrc`, to enable the
+
+key `delete` with deleting empty line, empty byte or back space. As I know, the
+
+manually installed `Vim` should add that line.
+
+     set backspace=indent,eol,start
+After `set nocompatible              " be iMproved, required` under `~/.vimrc`.
+
 Update:(19 April 2022 EST PM6:00)
 
 if `--prefix=default address` and `make`,

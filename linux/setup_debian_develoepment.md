@@ -62,3 +62,5 @@ For Vim: integrated via ALE, Neomake or Syntastic.
 ALE deps:clang cppcheck pylint shellcheck golint.
 
 ## 5. [Vim](https://gist.github.com/SofijaErkin/6b836186f81184d5913ca791a32a7b55)
+
+## 6. Vundle(Vim install Package Manage)
