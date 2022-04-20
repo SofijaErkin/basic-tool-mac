@@ -158,7 +158,18 @@ under `/usr/local/share/vim`.
 
 In order to use `vim` on shell, there should be add a soft link to `/usr/bin`,
 
-    sudo ln -s /usr/local/bin/vim /usr/bin/vim
+    sudo ln -s /usr/local/bin/vim /usr/bin/vim && 
+
+    pwd && ls -al | grep "vim"
+
+then, output:
+
+    /usr/bin
+
+    lrwxrwxrwx  1 root   root          18 Apr 20 06:58 vim -> /usr/local/bin/vim
+
+    -rwxr-xr-x  1 root   root     1006960 Apr  1  2015 vim.tiny
+
 Or
 
     ln -s /usr/local/bin/vim /usr/bin/vim &&
@@ -167,7 +178,7 @@ Or
 
     ln -s /usr/local/bin/gvimtutor /usr/bin/gvimtutor &&
 
-    ln -s /usr/local/bin/xxd /usr/bin/xxd 
+    ln -s /usr/local/bin/xxd /usr/bin/xxd && 
 
 or use `update-alternatives` to make sure `vim82` too be the default opening
 
