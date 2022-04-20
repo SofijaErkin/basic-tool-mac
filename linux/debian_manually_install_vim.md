@@ -36,6 +36,8 @@ refer:
 
 Download from source:
 
+    cd ~/
+
     git clone https://github.com/vim/vim.git 
 Config:
 
