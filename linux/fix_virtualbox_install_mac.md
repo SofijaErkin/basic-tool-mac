@@ -48,6 +48,14 @@ display output:
 
 Fixed.
 
+This is because:
+
+After installing `Virtual Box`, first grant "`VirtualBox`" APP
+
+permissions, then restart mac.
+
+So,
+
 click `apple` logo, select "`System Preferences`", chose "`Security & Privacy`"
 
 , click "`General`", click your locked `lock` logo, just input your mac pass
