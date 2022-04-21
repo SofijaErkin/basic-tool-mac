@@ -40,11 +40,11 @@ display output:
 
     The virtual machine 'Linuxdemo' has terminated unexpectedly during startup with exit code 1 (0x1).
 
-    back code: NS_ERROR_FAILURE (0x80004005)
+    Back/Result Code: NS_ERROR_FAILURE (0x80004005)
 
-    part/unit: MachineWrap
+    part/unit/Component: MachineWrap
 
-    window: IMachine {85632c68-b5bb-4316-a900-5eb28d3413df}
+    window/Interface: IMachine {85632c68-b5bb-4316-a900-5eb28d3413df}
 
 Fixed.
 
