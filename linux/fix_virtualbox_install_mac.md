@@ -54,4 +54,20 @@ click `apple` logo, select "`System Preferences`", chose "`Security & Privacy`"
 
 -word, then you will see "allow Virtual box XXX" or "allow Oracle XXX", shoot
 
-or check that mark on the right of the upstairs showing news.
+or check that mark on the right of the upstairs showing news. Then, restart
+
+mac.
+
+## 2. Problem B
+
+My Mac touch-pad  do not work on Debian under Virtual Box.
+
+Fixed.
+
+click `apple` logo, select "`System Preferences`", chose "`Security & Privacy`"
+
+, click "`Privacy`", click your locked `lock` logo, just input your mac pass
+
+-word, add "`VirtualBox App`" to "`Accessibility`" and "Input Monitoring". 
+
+Then, restart mac.
