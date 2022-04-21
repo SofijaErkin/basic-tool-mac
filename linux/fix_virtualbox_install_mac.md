@@ -76,6 +76,100 @@ click `apple` logo, select "`System Preferences`", chose "`Security & Privacy`"
 
 , click "`Privacy`", click your locked `lock` logo, just input your mac pass
 
--word, add "`VirtualBox App`" to "`Accessibility`" and "Input Monitoring". 
+-word, add "`VirtualBox App`" to "`Accessibility`" and "Input Monitoring".
 
 Then, restart mac.
+
+## 3. Problem C
+
+Debian via `Virtual Box` display too small on mac.
+
+Fixed.
+
+When a new virtual machine witness on mac, first step is to adjust virtual
+
+machine's scale factor and maximum screen size, second step is to adjust
+
+guest's scale factor, third step is to adjust guest's resolution, fourth
+
+step is to restart host machine(e.g: macOS/Windows).
+
+Just as `Virtual Box` manually installed `Debian` on `Mac` for example:
+
+My host machine `macOS` Retina display is `13.3 inch` (`2560*1600`);
+
+My virtual machine VirtualBox`6.1.32` Max scale factor is `300%`;
+
+And, VirtualBox default interface is `400*300`with scale factor `100%`;
+
+Now,
+
+1.VM scale factor and max screen size:
+
+click `VirtualBox` APP, then you see "`Oracle Vm VirtualBox Manager`",
+
+move your mouse to top menu, found out `VirtualBox`logo, select
+
+"`Preference`", then enter "`VirtualBox - General`", click `Display`,
+
+Choose "`Maximum screen size`" to "`Hint`" with Width "`1280`" and
+
+Height "`800`", and adjust "`Scale Factor`" to "`200%`", then click
+
+"`OK`".
+
+2.Guest scale factor:
+
+When you enter `VirtualBox` APP, then you see "`Oracle Vm VirtualBox Manager`",
+
+found out your guest machine name button, as mine is "`linux_debian_11`",
+
+you will see "`Power Off`" under the name of your guest machine.
+
+Please found out your guest machine "`Menu Box Button`", that is at the right
+
+of your guest machine name, right click your "`Menu Box`" or single click your
+
+"`Guest Machine Box`", choose "`Settings`", then you will enter your guest
+
+machines's "`General`", mine is "`linux_debian_11 - General`", then click
+
+"`Display`", and adjust "`Scale Factor`" to "`200%`"(the same as `Scale Factor`
+
+on virtual machine's "`General`").
+
+3.Guest Resolution:
+
+My guest machine is "`Debian`". So, just use "`Debian`" for an example here.
+
+click my guest machine "`Debian`"'s "Settings", then found out "`Display`",
+
+and, also, choose "`Resolution`" to "`1280*800(16:10)`".
+
+No matter your Debian version is "`8`", or even "`11`", the upstairs settings
+
+is OK.
+
+Are you Ok? Said, Lei Jun.
+
+4.Reboot Host Machine:
+
+Now, it's your time show!
+
+Please restart my Mac.
+
+Finally, "`Guest Resolution`" *  "`Scale Factor`" == "`Host Display size`".
+
+"`1280*800`" * "`200%`" == "`2560*1600`";
+
+VirtualBox Default interface is 400*300 with "`100%`", it's too small, so
+
+"`Scale Factor`" should be from "`100%`" to VBox's max "`300%`". Also, has:
+
+"`2560*1600`" * "`100%`" == "`2560*1600`"; (But VirtualBox Enter Wins will
+
+too small just like VirtualBox default interface.)
+
+"`1024*640`" * "`250%`" == "`2560*1600`"; (But guest machine "`Debian`"'s 
+
+resolution display do not have "`1024*640`".)
