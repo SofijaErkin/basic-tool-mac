@@ -170,6 +170,22 @@ VirtualBox Default interface is 400*300 with "`100%`", it's too small, so
 
 too small just like VirtualBox default interface.)
 
-"`1024*640`" * "`250%`" == "`2560*1600`"; (But guest machine "`Debian`"'s 
+"`1024*640`" * "`250%`" == "`2560*1600`"; (But guest machine "`Debian`"'s
 
 resolution display do not have "`1024*640`".)
+
+## 4. Problem D
+
+    linuxconfig is not in the sudoers file.  This incident will be reported.
+
+Fixed.
+
+    su -
+
+    usermod -aG sudo linuxconfig
+
+reboot virtual machine or Debian.
+
+refer:
+
+[How to fix: user is not in the sudoers file error.](https://linuxconfig.org/rhel7-user-is-not-in-the-sudoers-file-error)
