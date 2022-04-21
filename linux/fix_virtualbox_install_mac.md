@@ -189,3 +189,17 @@ reboot virtual machine or Debian.
 refer:
 
 [How to fix: user is not in the sudoers file error.](https://linuxconfig.org/rhel7-user-is-not-in-the-sudoers-file-error)
+
+## 5. Problem E
+
+    please use apt-cdrom to make this CD-ROM recognized by APT. apt-get cannot be used to add new CD-ROMS
+
+Fix:
+
+    sudo vi /etc/apt/sources.list
+
+Remove any lines that include CD-ROM. Save the file and try once more.
+
+refer:
+
+[Failed to download repository information due to missing CDROM.](https://askubuntu.com/a/120498)
