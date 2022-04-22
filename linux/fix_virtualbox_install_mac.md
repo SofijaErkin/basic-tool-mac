@@ -210,6 +210,10 @@ Do not COPY between Guest and Host.
 
 Fixed.
 
+0.Virtual Machine Sync COPY Settings:
+
+Settings-General-Advanced-click "`Share Clipboard`" and "`Drag'n'Drop`";
+
 1.Virtual Machine Settings:
 
 Settings-General-Storage-Controller:STAT-click "`Use Host I/O Cache`";
