@@ -301,7 +301,16 @@ is only available from another source
 
     E: Package 'gcc' has no installation candidate
 
+Or
+    E: The repository '<http://security.debian.org> bullseye/updates Release' does not have a Release file.
+
+    N: Updating from such a repository can't be done securely, and is therefore disabled by default.
+
+    N: See apt-secure(8) manpage for repository creation and user configuration details.
+
 Fixed.
+
+Need to change ["`Sources List Generator for Debian`"](https://debgen.xyz/).
 
     cd /etc/apt/ && sudo nano sources.list
 
@@ -309,9 +318,57 @@ Add the below three code :
 
     deb http://mirrors.xmission.com/debian/ testing main non-free contrib
 
-    deb <http://http.us.debian.org/debian> testing main contrib non-free
+    deb http://http.us.debian.org/debian testing main contrib non-free
 
-    deb <http://ftp.us.debian.org/debian> testing main non-free contrib
+    deb http://ftp.us.debian.org/debian testing main non-free contrib
+
+The upstairs code "`apt-cache madison gcc`":
+
+    gcc | 4:11.2.0-2 | http://mirrors.xmission.com/debian testing/main amd64 Packages
+    
+    gcc | 4:11.2.0-2 | http://http.us.debian.org/debian testing/main amd64 Packages
+    
+    gcc | 4:11.2.0-2 | http://ftp.us.debian.org/debian testing/main amd64 Packages
+
+Or the below code(Debian 11):
+
+    deb http://ftp.us.debian.org/debian/ bullseye main
+
+    deb-src <http://ftp.us.debian.org/debian/> bullseye main
+
+    deb <http://ftp.us.debian.org/debian/> bullseye-updates main
+
+    deb-src <http://ftp.us.debian.org/debian/> bullseye-updates main
+
+    deb http://security.debian.org/debian-security bullseye-security main 
+
+    deb-src <http://security.debian.org/debian-security> bullseye-security main
+
+The upstairs code "`apt-cache madison gcc`":
+
+    gcc | 4:10.2.1-1 | http://ftp.us.debian.org/debian bullseye/main amd64 Packages
+
+    gcc-defaults |      1.190 | <http://ftp.us.debian.org/debian> bullseye/main Sources
+
+Or:
+
+    deb http://deb.debian.org/debian/ bullseye main
+
+    deb-src <http://deb.debian.org/debian/> bullseye main
+
+    deb <http://security.debian.org/debian-security> bullseye-security main contrib
+
+    deb-src <http://security.debian.org/debian-security> bullseye-security main contrib
+
+    deb <http://deb.debian.org/debian/> bullseye-updates main contrib
+
+    deb-src <http://deb.debian.org/debian/> bullseye-updates main contrib
+
+The upstairs code "`apt-cache madison gcc`":
+
+    gcc | 4:10.2.1-1 | http://deb.debian.org/debian bullseye/main amd64 Packages
+
+    gcc-defaults |      1.190 | <http://deb.debian.org/debian> bullseye/main Sources
 
 Also, comment your source deb.
 
