@@ -203,3 +203,51 @@ Remove any lines that include CD-ROM. Save the file and try once more.
 refer:
 
 [Failed to download repository information due to missing CDROM.](https://askubuntu.com/a/120498)
+
+## 6. Problem F
+
+Do not COPY between Guest and Host.
+
+## 7. Problem G
+
+    Runtime error opening '/Users/yq/.docker/machine/machines/default/default/default.vbox' for reading: -102 (File not found.).
+
+    /Users/vbox/tinderbox/6.1-mac-rel/src/VBox/Main/src-server/MachineImpl.cpp[754] (nsresult Machine::i_registeredInit()).
+
+    Result Code: NS_ERROR_FAILURE (0x80004005)
+
+    Component: MachineWrap
+
+    Interface: IMachine {85632c68-b5bb-4316-a900-5eb28d3413df}
+
+## 8. Problem H
+
+    Unable to insert the virtual optical disk
+
+    /Applications/VirtualBox.app/Contents/MacOS/VBoxGuestAdditions.iso 
+    
+    into the machine linux_Debian_11
+
+    Details
+
+    The object functionality is limited
+
+    Result Code: E_ACCESSDENIED(0x80070005)
+
+    Compoent: MachineWarp
+
+    Interface: IMachine{85632c68-b5bb-4316-a900-5eb28d3413df}
+
+    Callee RC: NS_ERROR_FAILURE(0x80004005)
+
+Fix.
+
+    sudo mkdir --p /media/cdrom
+
+    sudo mount -t auto /dev/cdrom /media/cdrom
+
+    cd /media/cdrom
+
+    sudo sh VBoxLinuxAdditions.run
+
+Restart or Reboot Guest machine.
