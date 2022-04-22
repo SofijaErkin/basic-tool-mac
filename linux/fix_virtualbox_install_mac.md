@@ -254,6 +254,8 @@ out like "`xxx.vbox-prev`", change that extension name from "`.vbox-prev`" to
 
 "`.vbox`".
 
+Not Fix!
+
 ## 8. Problem H
 
     Unable to insert the virtual optical disk
