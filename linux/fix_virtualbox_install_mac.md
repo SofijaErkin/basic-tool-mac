@@ -287,3 +287,30 @@ Fixed.
     sudo sh VBoxLinuxAdditions.run
 
 Restart or Reboot Guest machine.
+
+## 9. Problem I
+
+    E: Unable to locate package emacs
+
+    E: Package 'gcc-10' has no installation candidate
+
+    package gcc-10 is not available, but is referred to by another package.
+   
+    This may mean that the package is missing, has been obsoleted, or
+is only available from another source
+
+    E: Package 'gcc' has no installation candidate
+
+Fixed.
+
+    cd /etc/apt/ && sudo nano sources.list
+
+Add the below three code :
+
+    deb http://mirrors.xmission.com/debian/ testing main non-free contrib
+
+    deb <http://http.us.debian.org/debian> testing main contrib non-free
+
+    deb <http://ftp.us.debian.org/debian> testing main non-free contrib
+
+Also, comment your source deb.
