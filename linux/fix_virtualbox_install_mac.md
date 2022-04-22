@@ -246,6 +246,14 @@ Storage-Controller:STAT-XXX.vdi-click "Solid-state Drive";
 
     Interface: IMachine {85632c68-b5bb-4316-a900-5eb28d3413df}
 
+Do not formally turn down VM.
+
+Could enter "`/Users/yq/.docker/machine/machines/default/default/`", found
+
+out like "`xxx.vbox-prev`", change that extension name from "`.vbox-prev`" to
+
+"`.vbox`".
+
 ## 8. Problem H
 
     Unable to insert the virtual optical disk
