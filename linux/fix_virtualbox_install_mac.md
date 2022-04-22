@@ -314,3 +314,11 @@ Add the below three code :
     deb <http://ftp.us.debian.org/debian> testing main non-free contrib
 
 Also, comment your source deb.
+
+## 10. Problem J
+
+    Error writing sources.list: Permission denied
+
+Fixed.
+
+    sudo nano sources.list
