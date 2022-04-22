@@ -302,7 +302,7 @@ is only available from another source
     E: Package 'gcc' has no installation candidate
 
 Or
-    E: The repository ' http://security.debian.org bullseye/updates Release' does not have a Release file.
+    E: The repository "<http://security.debian.org> bullseye/updates Release" does not have a Release file.
 
     N: Updating from such a repository can't be done securely, and is therefore disabled by default.
 
@@ -363,6 +363,30 @@ Or:
     deb http://deb.debian.org/debian/ bullseye-updates main contrib
 
     deb-src http://deb.debian.org/debian/ bullseye-updates main contrib
+
+The upstairs code "`apt-cache madison gcc`":
+
+    gcc | 4:10.2.1-1 | http://deb.debian.org/debian bullseye/main amd64 Packages
+
+    gcc-defaults |      1.190 | http://deb.debian.org/debian bullseye/main Sources
+
+Or:
+
+    deb http://deb.debian.org/debian bullseye main contrib non-free
+
+    deb-src http://deb.debian.org/debian bullseye main contrib non-free
+  
+    # deb http://deb.debian.org/debian-security bullseye/updates main contrib non-free
+
+    # deb-src http://deb.debian.org/debian-security bullseye/updates main contrib non-free
+
+    deb http://deb.debian.org/debian bullseye-updates main contrib non-free
+
+    deb-src http://deb.debian.org/debian bullseye-updates main contrib non-free
+
+    deb http://security.debian.org/debian-security bullseye-security main contrib non-free
+
+    deb-src http://security.debian.org/debian-security bullseye-security main contrib non-free
 
 The upstairs code "`apt-cache madison gcc`":
 
