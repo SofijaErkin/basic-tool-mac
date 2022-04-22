@@ -208,6 +208,28 @@ refer:
 
 Do not COPY between Guest and Host.
 
+Fixed.
+
+1.Virtual Machine Settings:
+
+Settings-General-Storage-Controller:STAT-click "`Use Host I/O Cache`";
+
+2.Virtual Machine Storage:
+
+Storage-Controller:STAT-XXX.vdi-click "Solid-state Drive";
+
+3.Manually install VBoxLinuxAdditions:
+
+   sudo mkdir --p /media/cdrom
+
+    sudo mount -t auto /dev/cdrom /media/cdrom
+
+    cd /media/cdrom
+
+    sudo sh VBoxLinuxAdditions.run 
+
+4.Restart or Reboot Guest machine.
+
 ## 7. Problem G
 
     Runtime error opening '/Users/yq/.docker/machine/machines/default/default/default.vbox' for reading: -102 (File not found.).
@@ -240,7 +262,7 @@ Do not COPY between Guest and Host.
 
     Callee RC: NS_ERROR_FAILURE(0x80004005)
 
-Fix.
+Fixed.
 
     sudo mkdir --p /media/cdrom
 
