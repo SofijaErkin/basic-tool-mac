@@ -34,6 +34,8 @@ Manually Install + (System Including).
 
 ## 4. SHELL
 
+Checkout the current SHELL: "`echo $SHELL`".
+
     $(GNU Bash);
 
     -((zsh+oh-my-zsh));
