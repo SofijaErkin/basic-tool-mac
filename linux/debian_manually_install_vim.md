@@ -132,7 +132,8 @@ key `delete` with deleting empty line, empty byte or back space. As I know, the
 
 manually installed `Vim` should add that line.
 
-     set backspace=indent,eol,start
+    set backspace=indent,eol,start
+
 After `set nocompatible              " be iMproved, required` under `~/.vimrc`.
 
 Update:(19 April 2022 EST PM6:00)
