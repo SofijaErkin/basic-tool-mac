@@ -44,9 +44,9 @@ Choose the current SHELL to root:
 
 Choose the current SHELL to the current user:
 
-    sudo chsh -s /bin/zsh
+    sudo chsh -s /usr/bin/zsh usr_name
 
-And, restart or reboot your guest machine.
+And, restart or reboot your guest machine(Especially Debian11).
 
 SHELL:
 
