@@ -110,13 +110,47 @@ VIM deps:
 
     +(git), $(wget).
 
-If use "`sudo apt install vim`", then VIM do not support Python3.
+If use "`sudo apt install vim`", then VIM do not support Python3. Just use this
+
+code to check:
+
+    vim --version|grep python3
 
 So we need to uninstall apt's installed VIM, and manually install VIM.
+
+Just use this code to uninstall VIM:
+
+    sudo apt remove vim
 
 Also, "`VIM`" has changed from `-(VIM)` to `-((VIM))`.
 
 [-((VIM));](https://gist.github.com/SofijaErkin/6b836186f81184d5913ca791a32a7b55)
+
+Notice:
+
+Python@3.9 on Debian config-dir:
+
+    /usr/lib/python3.9/config-3.9-x86_64-linux-gnu
+
+Manually make VIM problem:
+
+    /usr/include/gtk-2.0/gtk/gtktypeutils.h:236:1: warning: ‘GTypeDebugFlags’ is deprecated [-Wdeprecated-declarations]
+
+    236 | void            gtk_type_init   (GTypeDebugFlags    debug_flags);
+
+        | ^~~~
+
+    /usr/include/glib-2.0/gobject/gtype.h:679:1: note: declared here
+
+    679 | {
+
+        | ^
+
+    /usr/include/gtk-2.0/gtk/gtktooltips.h:73:3: warning: ‘GTimeVal’ is deprecated: Use 'GDateTime' instead [-Wdeprecated-declarations]
+
+    73 |   GTimeVal last_popdown;
+
+      |   ^~~~~~~~
 
     +(GNU Emacs);
 
