@@ -54,7 +54,9 @@ SHELL:
 
     +((zsh+oh-my-zsh));
 
-Notice: every time you change theme on Debian 11, restart terminal to make
+Notice:
+
+Using oh-my-zsh every time you change [themes](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes) on Debian 11, restart terminal to make
 
 reality that!!!
 
