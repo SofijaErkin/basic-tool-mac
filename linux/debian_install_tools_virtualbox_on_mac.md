@@ -58,6 +58,14 @@ Notice: every time you change theme on Debian 11, restart terminal to make
 
 reality that!!!
 
+refer:
+
+[debian/wiki/Zsh](https://wiki.debian.org/Zsh).
+
+[How to install and configure Zsh on Linux](https://computingforgeeks.com/how-to-install-and-configure-zsh-shell-on-linux/).
+
+[Using oh-my-zsh build Linux Shell(Chinese)](https://sysin.org/blog/linux-zsh/).
+
 ## 4.1 Assisted SHELL
 
     +(ShellCheck);
