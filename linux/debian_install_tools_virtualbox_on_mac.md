@@ -114,6 +114,10 @@ If use "`sudo apt install vim`", then VIM do not support Python3.
 
 So we need to uninstall apt's installed VIM, and manually install VIM.
 
+Also, "`VIM`" has changed from `-(VIM)` to `-((VIM))`.
+
+[-((VIM));](https://gist.github.com/SofijaErkin/6b836186f81184d5913ca791a32a7b55)
+
     +(GNU Emacs);
 
     $(GNU nano);
