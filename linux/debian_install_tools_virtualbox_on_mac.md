@@ -52,7 +52,11 @@ SHELL:
 
     $(GNU Bash);
 
-    -((zsh+oh-my-zsh));
+    +((zsh+oh-my-zsh));
+
+Notice: every time you change theme on Debian 11, restart terminal to make
+
+reality that!!!
 
 ## 4.1 Assisted SHELL
 
