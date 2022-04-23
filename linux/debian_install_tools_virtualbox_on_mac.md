@@ -34,34 +34,46 @@ Manually Install + (System Including).
 
 ## 4. SHELL
 
-$(GNU Bash);
+    $(GNU Bash);
 
--((zsh+oh-my-zsh));
+    -((zsh+oh-my-zsh));
 
 ## 4.1 Assisted SHELL
 
-+(ShellCheck);
+    +(ShellCheck);
 
 ## 5. Version Control
 
--(git);
+$(git);
+
+    git deps:
+
+    libssl-dev; libghc-zlib-dev; libcurl4-gnutls-dev; libexpat1-dev; +(gettext); 
+    
+    $(unzip);
 
 ## 6. Language
 
--(Python);
+    -(Python);
 
-$(Python3);
+    $(Python3);
 
--(Ruby);
+    +(Ruby);
 
-$(Perl);
+    $(Perl);
 
--(PHP);
+    +(PHP);
 
 ## 7. Editor
 
--(VIM);
+    -(VIM);
 
--(GNU Emacs);
+    +(GNU Emacs);
 
-$(GNU nano);
+    $(GNU nano);
+
+## 8. Terminal Download
+
+    $(GNU Wget);
+
+    +(curl);
