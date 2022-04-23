@@ -36,6 +36,20 @@ Manually Install + (System Including).
 
 Checkout the current SHELL: "`echo $SHELL`".
 
+Choose the current SHELL to root:
+
+    su -
+
+    sudo chsh -s /usr/bin/zsh
+
+Choose the current SHELL to the current user:
+
+    sudo chsh -s /bin/zsh
+
+And, restart or reboot your guest machine.
+
+SHELL:
+
     $(GNU Bash);
 
     -((zsh+oh-my-zsh));
