@@ -74,7 +74,7 @@ refer:
 
 ## 5. Version Control
 
-$(git);
+[$(git);](https://gist.github.com/SofijaErkin/2b70beb264de57c9f8f7c80517766a89)
 
     git deps:
 
