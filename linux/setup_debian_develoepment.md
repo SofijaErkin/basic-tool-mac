@@ -13,7 +13,7 @@ Refer:
 
 [How to install and configure Zsh on Linux](https://computingforgeeks.com/how-to-install-and-configure-zsh-shell-on-linux/).
 
-[Using oh-my-zsh build Linux Shell](https://sysin.org/blog/linux-zsh/).
+[Using oh-my-zsh build Linux Shell(Chinese)](https://sysin.org/blog/linux-zsh/).
 
 ## 3. Curl
 
