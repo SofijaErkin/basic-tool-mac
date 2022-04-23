@@ -74,7 +74,7 @@ $(git);
 
 ## 6. Language
 
-    -(Python);
+    +(Python);
 
     $(Python3);
 
