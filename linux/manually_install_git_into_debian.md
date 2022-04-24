@@ -1,5 +1,11 @@
 # [Debian Manually install Git](https://www.digitalocean.com/community/tutorials/how-to-install-git-on-debian-10)
 
+Update April 23 EST PM 9:13
+
+([git8.2 on Debian 11](https://gist.github.com/SofijaErkin/2a2bbfb2917c6a5a4ecc281e48cb63f8))deps:
+
+    libssl-dev; libghc-zlib-dev; libcurl4-gnutls-dev; libexpat1-dev; +(gettext); 
+
 ## Installing Git from Source
 
 A more flexible method of installing Git is to compile the software from source
