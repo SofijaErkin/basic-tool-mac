@@ -124,7 +124,7 @@ Just use this code to uninstall VIM:
 
 Also, "`VIM`" has changed from `-(VIM)` to `-((VIM))`.
 
-[-((VIM));](https://gist.github.com/SofijaErkin/6b836186f81184d5913ca791a32a7b55)
+[+((VIM));](https://gist.github.com/SofijaErkin/6b836186f81184d5913ca791a32a7b55)
 
 Notice:
 
