@@ -44,7 +44,7 @@ Manually Install + (System Including).
 
 ## 5. Version Control
 
-[+(git);](https://gist.github.com/SofijaErkin/2b70beb264de57c9f8f7c80517766a89)
+[+(git);](https://gist.github.com/SofijaErkin/2b70beb264de57c9f8f7c80517766a89#git82-on-debian-11)
 
     $(unzip);
 
