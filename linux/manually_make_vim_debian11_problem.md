@@ -1,10 +1,10 @@
-# Problem during Debian 11 manually make VIM
+# Problems during Debian 11 manually make VIM
 
 ## Notice
 
 Debian 11 make VIM 113 times for two warnings and two notes.
 
-## Terminal utput
+## Terminal output
 
     /usr/include/gtk-2.0/gtk/gtktypeutils.h:236:1: warning: ‘GTypeDebugFlags’ is deprecated [-Wdeprecated-declarations]
 
