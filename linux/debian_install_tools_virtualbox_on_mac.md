@@ -52,7 +52,7 @@ SHELL:
 
     $(GNU Bash);
 
-    +((zsh+oh-my-zsh));
+[+((zsh+oh-my-zsh));](https://gist.github.com/SofijaErkin/b301177d002f9705f2d2acec34de6109#2-zsh--oh-my-zsh)
 
 Notice:
 
