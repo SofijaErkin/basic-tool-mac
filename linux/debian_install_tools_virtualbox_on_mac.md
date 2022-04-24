@@ -34,39 +34,9 @@ Manually Install + (System Including).
 
 ## 4. SHELL
 
-Checkout the current SHELL: "`echo $SHELL`".
-
-Choose the current SHELL to root:
-
-    su -
-
-    sudo chsh -s /usr/bin/zsh
-
-Choose the current SHELL to the current user:
-
-    sudo chsh -s /usr/bin/zsh usr_name
-
-And, restart or reboot your guest machine(Especially Debian11).
-
-SHELL:
-
     $(GNU Bash);
 
 [+((zsh+oh-my-zsh));](https://gist.github.com/SofijaErkin/b301177d002f9705f2d2acec34de6109#2-zsh--oh-my-zsh)
-
-Notice:
-
-Using oh-my-zsh every time you change [themes](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes) on Debian 11, restart terminal to make
-
-reality that!!!
-
-refer:
-
-[debian/wiki/Zsh](https://wiki.debian.org/Zsh).
-
-[How to install and configure Zsh on Linux](https://computingforgeeks.com/how-to-install-and-configure-zsh-shell-on-linux/).
-
-[Using oh-my-zsh build Linux Shell(Chinese)](https://sysin.org/blog/linux-zsh/).
 
 ## 4.1 Assisted SHELL
 
