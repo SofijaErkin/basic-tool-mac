@@ -62,7 +62,7 @@ Manually Install + (System Including).
 
 ## 7. Editor
 
-[+((VIM));](https://gist.github.com/SofijaErkin/6b836186f81184d5913ca791a32a7b55)
+[+((VIM));](https://gist.github.com/SofijaErkin/6b836186f81184d5913ca791a32a7b55#about-debian11)
 
     +(GNU Emacs);
 
