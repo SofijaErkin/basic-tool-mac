@@ -86,3 +86,7 @@ ALE deps:clang cppcheck pylint shellcheck golint.
 ## 5. [Vim](https://gist.github.com/SofijaErkin/6b836186f81184d5913ca791a32a7b55)
 
 ## 6. Vundle(Vim install Package Manage)
+
+    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim 
+
+Edit [`~/.vimrc`](https://gist.github.com/SofijaErkin/83bd8ee7b75362d4c017ca33744b511a#manually-installed-vim-config), and active `~/.vimrc` with "`source ~/.vimrc`".
