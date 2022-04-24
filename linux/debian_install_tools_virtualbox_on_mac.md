@@ -134,31 +134,6 @@ Python@3.9 on Debian config-dir:
 
 [Manually make VIM problems.](https://gist.github.com/SofijaErkin/985437aebaf0c4d28ee2a88b6f91f66b)
 
-    /usr/include/gtk-2.0/gtk/gtktypeutils.h:236:1: warning: ‘GTypeDebugFlags’ is deprecated [-Wdeprecated-declarations]
-
-    236 | void            gtk_type_init   (GTypeDebugFlags    debug_flags);
-
-        | ^~~~
-
-    /usr/include/glib-2.0/gobject/gtype.h:679:1: note: declared here
-
-    679 | {
-
-        | ^
-
-    /usr/include/gtk-2.0/gtk/gtktooltips.h:73:3: warning: ‘GTimeVal’ is deprecated: Use 'GDateTime' instead [-Wdeprecated-declarations]
-
-    73 |   GTimeVal last_popdown;
-
-      |   ^~~~~~~~
-
-    /usr/include/glib-2.0/glib/gtypes.h:547:8: note: declared here
-
-    547 | struct _GTimeVal
-
-        |        ^~~~~~~~~
-
-
     +(GNU Emacs);
 
     $(GNU nano);
