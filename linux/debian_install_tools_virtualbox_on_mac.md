@@ -132,7 +132,7 @@ Python@3.9 on Debian config-dir:
 
     /usr/lib/python3.9/config-3.9-x86_64-linux-gnu
 
-Manually make VIM problem:
+[Manually make VIM problems.](https://gist.github.com/SofijaErkin/985437aebaf0c4d28ee2a88b6f91f66b)
 
     /usr/include/gtk-2.0/gtk/gtktypeutils.h:236:1: warning: ‘GTypeDebugFlags’ is deprecated [-Wdeprecated-declarations]
 
