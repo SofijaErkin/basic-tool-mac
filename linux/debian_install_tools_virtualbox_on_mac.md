@@ -64,6 +64,8 @@ Manually Install + (System Including).
 
 [+((VIM));](https://gist.github.com/SofijaErkin/6b836186f81184d5913ca791a32a7b55#about-debian11)
 
++((vundle))(Manage vim package install);
+
     +(GNU Emacs);
 
     $(GNU nano);

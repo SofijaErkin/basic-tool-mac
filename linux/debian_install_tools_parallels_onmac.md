@@ -62,6 +62,8 @@ PHP;
 
 VIM;
 
+Vundle(Manage VIM package install);
+
 GNU Emacs;
 
 (GNU nano);
