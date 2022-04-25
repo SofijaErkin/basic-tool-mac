@@ -93,13 +93,13 @@ Edit [`~/.vimrc`](https://gist.github.com/SofijaErkin/83bd8ee7b75362d4c017ca3374
 
 VIM Normal state to active `~/.vimrc` with "`:source ~/.vimrc`".
 
-Add NERDTree configuration to `~/.vimrc`:
+Add [NERDTree](https://github.com/preservim/nerdtree) configuration to `~/.vimrc`:
 
     " NERDTree config
 
     map <F4> :NERDTreeToggle<CR>  " F4 control the content tree
 
-    autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary" )     | q | endif                   
+    autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType=="primary" ) | q | endif                   
     
     " exit vim during the current winter being the last content tree winer
 
