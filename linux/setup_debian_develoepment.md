@@ -92,3 +92,21 @@ ALE deps:clang cppcheck pylint shellcheck golint.
 Edit [`~/.vimrc`](https://gist.github.com/SofijaErkin/83bd8ee7b75362d4c017ca33744b511a#manually-installed-vim-config), and  enter
 
 VIM Normal state to active `~/.vimrc` with "`:source ~/.vimrc`".
+
+Add NERDTree configuration to `~/.vimrc`:
+
+    " NERDTree config
+
+    map <F4> :NERDTreeToggle<CR>  " F4 control the content tree
+
+    autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary" )     | q | endif                   
+    
+    " exit vim during the current winter being the last content tree winer
+
+Also, reopen and active `~/.vimrc`, use "`F4`" to open file content tree,
+
+use key `UP` and `DOWN` to move between the below and upstairs content tree,
+
+use key `ENTER` to open file under content tree, click "`CTRL+w+w`" to switch
+
+windows between the file content tree window and the file editing window.
