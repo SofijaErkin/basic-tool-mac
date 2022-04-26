@@ -119,16 +119,34 @@ Add NERDTree(File Content Tree) configuration to `~/.vimrc`:
     
     " exit vim during the current winter being the last content tree winer
 
-Also, reopen and active `~/.vimrc`, use "`F4`" to open file content tree,
+Also,
+
+reopen and active `~/.vimrc`, use "`F4`" to open file content tree,
 
 use key `UP` and `DOWN` to move between the below and upstairs content tree,
 
-use key `ENTER` to open file under content tree, click "`CTRL+w+w`" to switch
+use key `ENTER` to open file under content tree.
 
-windows between the file content tree window and the file editing window.
+And, the [NERDTree Keyboard Shortcuts](https://cheatography.com/msstar846/cheat-sheets/nerdtree/):
 
-Cursor just use "`Ctrl+w+h`" to focus the left tree content, and "`Ctrl+w+l`"
+click "`CTRL+w+w`" to switch windows between the file content tree window and
 
-to focus the right file display window. Also, "`Ctrl+w+w`" to auto switch
+ the file editing window. Cursor just use "`Ctrl+w+h`" to focus the left tree
 
-between the left and right window.
+ content, and "`Ctrl+w+l`" to focus the right file display window.
+
+Also,
+
+"`o`" to open and jump to file at the current window,
+
+"`go`" to open but not jump to file at the current window,
+
+"`t`" to open and jump to bookmarks at the current window,
+
+"`T`" to open but not jump to bookmarks at the current window,
+
+"`gT`" to switch the next bookmark,
+
+"`gt`" to switch the upstairs bookmark,
+
+"`:tabc`"(VIM command) to close the current bookmark.
