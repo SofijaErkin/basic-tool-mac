@@ -97,7 +97,17 @@ VIM Normal state to active `~/.vimrc` with "`:source ~/.vimrc`".
 
 ## 8.YouCompleteMe
 
+Notice:
+
+    YouCompleteMe requires Python >= 3.6.0; your version of Python is 3.4.2 (default, Sep 14 2019, 00:52:38)
+
 deps:
 
     build-essential, cmake, clang, python3-dev/python-dev
 `clang` for C/C++ auto complete.
+
+compile and install:
+
+    cd ~/.vim/bundle/YouCompleteMe
+
+    python3 install.py --clang-completer --system-libclang
