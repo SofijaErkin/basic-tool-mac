@@ -93,7 +93,23 @@ Edit [`~/.vimrc`](https://gist.github.com/SofijaErkin/83bd8ee7b75362d4c017ca3374
 
 VIM Normal state to active `~/.vimrc` with "`:source ~/.vimrc`".
 
-Add [NERDTree](https://github.com/preservim/nerdtree) configuration to `~/.vimrc`:
+## 7.[NERDTree](https://github.com/preservim/nerdtree)
+
+Add to `~/.vimrc`, back VIM normal state with command "`:BundleInstall`" to
+
+install:
+
+    call vundle#begin()
+
+    ...
+
+    Plugin 'https://github.com/scrooloose/nerdtree.git'
+
+    ...
+
+    call vundle#end()
+
+Add NERDTree(File Content Tree) configuration to `~/.vimrc`:
 
     " NERDTree config
 
@@ -110,3 +126,9 @@ use key `UP` and `DOWN` to move between the below and upstairs content tree,
 use key `ENTER` to open file under content tree, click "`CTRL+w+w`" to switch
 
 windows between the file content tree window and the file editing window.
+
+Cursor just use "`Ctrl+w+h`" to focus the left tree content, and "`Ctrl+w+l`"
+
+to focus the right file display window. Also, "`Ctrl+w+w`" to auto switch
+
+between the left and right window.
