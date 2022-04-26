@@ -25,3 +25,9 @@ CentOS: yum;
 To find out "python":
 
     ls -l | grep "python"
+
+## 6. Upgrade
+
+To upgrade all the latest version:
+
+    sudo apt update && sudo apt upgrade

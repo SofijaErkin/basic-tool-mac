@@ -94,3 +94,10 @@ Edit [`~/.vimrc`](https://gist.github.com/SofijaErkin/83bd8ee7b75362d4c017ca3374
 VIM Normal state to active `~/.vimrc` with "`:source ~/.vimrc`".
 
 ## 7.[NERDTree](https://gist.github.com/SofijaErkin/ae3505742a431c343f54a9a995fd7e2b)
+
+## 8.YouCompleteMe
+
+deps:
+
+    build-essential, cmake, clang, python3-dev/python-dev
+`clang` for C/C++ auto complete.
