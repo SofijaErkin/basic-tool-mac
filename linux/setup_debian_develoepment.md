@@ -111,3 +111,7 @@ compile and install:
     cd ~/.vim/bundle/YouCompleteMe
 
     python3 install.py --clang-completer --system-libclang
+
+Notice:
+
+    CMake 3.14 or higher is required.  You are running version 3.0.2
