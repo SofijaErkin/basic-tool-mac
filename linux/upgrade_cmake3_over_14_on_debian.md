@@ -22,7 +22,7 @@ But terminal output:
 
     -- Configuring incomplete, errors occurred!
 
-So, install `cmake3.1` before install `cmake3.14`.
+So, to fix the upstairs, install `cmake3.1` before install `cmake3.14`.
 
     sudo wget -O cmake-3.1.0.tar.gz  https://cmake.org/files/v3.1/cmake-3.1.0.tar.gz
 
@@ -31,6 +31,46 @@ So, install `cmake3.1` before install `cmake3.14`.
     cd cmake-3.1.0 && pwd && ls -a
 
     cmake -DCMAKE_INSTALL_PREFIX=/usr . 
+
+    make
+
+    make install
+
+But terminal output:
+
+    -- Install configuration: ""
+
+    CMake Error at cmake_install.cmake:36 (file):
+  
+      file cannot create directory: /usr/doc/cmake-3.1.  Maybe need
+
+      administrative privileges.
+
+    Makefile:66: recipe for target 'install' failed
+
+    make: *** [install] Error 1
+
+to fix the upstairs:
+
+    sudo make install
+
+Notice:
+
+"`make install`" will replace the older version of Applications under
+
+`/usr/bin/`, "`make altinstall`" will not replace the older version of the APP
+
+with installing under `/usr/local/bin`.
+
+If not use the older version of Applications, just use "`make install`";
+
+If may be use the older version of Applications or do not to mix the new
+
+and the older, just use "`make altinstall`".
+
+Also, continue compile install `CMake 3.14`:
+
+    cmake -DCMAKE_INSTALL_PREFIX=/usr .
 
     make
 
