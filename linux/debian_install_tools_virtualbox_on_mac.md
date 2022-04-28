@@ -66,6 +66,10 @@ Manually Install + (System Including).
 
 +((vundle))(Manage vim package install);
 
++((NERDTree)(File content tree));
+
++((YouCompleteMe)(Auto complete code));
+
     +(GNU Emacs);
 
     $(GNU nano);

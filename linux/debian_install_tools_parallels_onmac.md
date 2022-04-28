@@ -64,6 +64,16 @@ VIM;
 
 Vundle(Manage VIM package install);
 
+NERDTree(File content tree);
+
+-YouCompleteMe;
+
 GNU Emacs;
 
 (GNU nano);
+
+## 8. Terminal Download
+
+(GNU Wget);
+
+curl;

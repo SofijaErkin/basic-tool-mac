@@ -99,7 +99,8 @@ VIM Normal state to active `~/.vimrc` with "`:source ~/.vimrc`".
 
 deps:
 
-    build-essential, cmake, clang, python3-dev/python-dev
+    build-essential, cmake, clang, python3-dev/python-dev, python3, gcc
+
 `clang` for C/C++ auto complete.
 
 compile and install:
