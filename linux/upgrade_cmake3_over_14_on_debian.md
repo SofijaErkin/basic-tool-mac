@@ -74,7 +74,7 @@ Also, continue compile install `CMake 3.14`:
 
     make
 
-    sudo make altinstall
+    sudo make install
 
 ## refer
 
@@ -85,3 +85,15 @@ Also, continue compile install `CMake 3.14`:
 [CMake on Linux CentOS 7, how to force the system to use cmake3?](https://stackoverflow.com/a/48842999/10846570)
 
 [How to upgrade cmake in Ubuntu?](https://askubuntu.com/a/829311)
+
+[ソースコードからのビルドとインストール (Ubuntu Linux編)](https://choreonoid.org/ja/manuals/latest/install/build-ubuntu.html)
+
+[[Linux][cmake] 最新のcmakeをインストールする方法](https://qiita.com/koara-local/items/9d01c6bb9dd93563b7c6)
+
+[linux - 最新のcmakeバージョンを再インストールする方法は？](https://jablogs.com/detail/54946)
+
+[Install CMake 3.14.0 on Debian 10(Chinese).](https://blog.csdn.net/KoBelieve8/article/details/117108843)
+
+[Install other version CMake or upgrade CMake version on Linux(Chinese).](https://blog.csdn.net/weixin_41010198/article/details/109343347)
+
+[Upgrade CMake over 3.17(Chinese).](https://blog.51cto.com/u_15262460/2882793)
