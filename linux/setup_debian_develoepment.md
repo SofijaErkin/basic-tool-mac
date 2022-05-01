@@ -117,6 +117,8 @@ Notice:
 
    python3 install.py --clang-completer --system-libclang
 
+Fixed upstairs. Install the python`3.6.10`.
+
 Notice:
 
     CMake 3.14 or higher is required.  You are running version 3.0.2
@@ -124,6 +126,8 @@ Notice:
 [Fixed, `cmake3.14.6`](https://gist.github.com/SofijaErkin/f307c2c0220b8392633959e450646f1e).continue:
 
     python3 install.py --clang-completer --system-libclang
+
+Fixed upstairs. Install the cmake`3.14.6`.
 
 Notice:
 
@@ -144,3 +148,5 @@ Notice:
     The installation failed; please see above for the actual error. In order to get more information, please re-run the command, adding the --verbose flag. If you think this is a bug and you raise an issue, you MUST include the *full verbose* output.
 
     For example, run:/usr/bin/python3 /home/parallels/.vim/bundle/YouCompleteMe/third_party/ycmd/build.py --clang-completer --system-libclang --verbose
+
+Fixed upstairs. Install the gcc`7.3`.
