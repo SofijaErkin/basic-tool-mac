@@ -95,7 +95,7 @@ VIM Normal state to active `~/.vimrc` with "`:source ~/.vimrc`".
 
 ## 7.[NERDTree](https://gist.github.com/SofijaErkin/ae3505742a431c343f54a9a995fd7e2b)
 
-## 8.YouCompleteMe
+## 8.[YouCompleteMe](https://gist.github.com/SofijaErkin/9318ecb63460400c8b3876cce6c2bf25)
 
 deps:
 
