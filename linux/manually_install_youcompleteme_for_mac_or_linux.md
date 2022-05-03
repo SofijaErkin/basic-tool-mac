@@ -1,4 +1,4 @@
-# MacOS/Linux Manually install YouCompleteMe
+# MacOS/Linux Manually Install YouCompleteMe
 
 ## deps
 
