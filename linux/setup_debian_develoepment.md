@@ -1,15 +1,10 @@
 # Build Debian Development
 
-## 1. Git
-
-Refer:
-1.[Manually install Git.](https://gist.github.com/SofijaErkin/2b70beb264de57c9f8f7c80517766a89)
+## 1. [Git](https://gist.github.com/SofijaErkin/2b70beb264de57c9f8f7c80517766a89)
 
 ## 2. [zsh && oh-my-zsh](https://gist.github.com/SofijaErkin/ac6a0e4294d5d29ebd4557eca21c77ce)
 
-## 3. Curl
-
-[How to Install curl on Debian 10/11 in 6 Easy Steps.](https://www.cyberithub.com/how-to-install-curl-on-debian-10-11-in-6-easy-steps/)
+## 3. [Curl](https://www.cyberithub.com/how-to-install-curl-on-debian-10-11-in-6-easy-steps/)
 
 ## 4. [shellcheck](https://gist.github.com/SofijaErkin/38e9738c6a9225901c70ceb4c9049fee)
 
