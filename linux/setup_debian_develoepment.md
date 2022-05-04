@@ -10,13 +10,7 @@
 
 ## 5. [Vim](https://gist.github.com/SofijaErkin/6b836186f81184d5913ca791a32a7b55)
 
-## 6. Vundle(Vim install Package Manage)
-
-    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim 
-
-Edit [`~/.vimrc`](https://gist.github.com/SofijaErkin/83bd8ee7b75362d4c017ca33744b511a#manually-installed-vim-config), and  enter
-
-VIM Normal state to active `~/.vimrc` with "`:source ~/.vimrc`".
+## 6. [Vundle(Vim install Package Manage)](https://gist.github.com/SofijaErkin/f8eafbc87f3a174e17e49ffd1a2c727d)
 
 ## 7.[NERDTree](https://gist.github.com/SofijaErkin/ae3505742a431c343f54a9a995fd7e2b)
 
