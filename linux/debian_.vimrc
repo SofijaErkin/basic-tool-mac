@@ -16,7 +16,7 @@ set backspace=indent,eol,start
 
 syntax on
 
-colorscheme  default
+"colorscheme  default         " too dark to comment
 
 set autoindent                " keep the same intent with the uppstairs 
 
