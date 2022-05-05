@@ -2,7 +2,7 @@ set nocp                      " forbid optional vi module
 set ru                        " show the scale
 set nu                        " show the line number
 
-" syntax on
+syntax on
 
 set sw=2                      " auto intent 2 character
 set ts=2                      " tab width 2 character
@@ -17,8 +17,9 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 " exit vim during the current winter being the last content tree winer
 
 " YouCompleteMe Configuration
-" set completeopt=longest,menu
+set completeopt=longest,menu
 " cancel the pop after completing
+let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/third_party/ycmd/.ycm_extra_conf.py'
 " hightlight Pmenu ctermfg=15 ctermfg=0 guifg=#000000 guibg=#111100
 " change the complete backcolor into vim's backcolor
 
