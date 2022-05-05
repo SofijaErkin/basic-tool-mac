@@ -1,33 +1,38 @@
 " VIM
-set nocp                      " forbid optional vi module
 
-set ru                        " show the scale
+set nocp                        " forbid optional vi module
 
-set nu                        " show the line number
+set ru                          " show the scale
 
-set cursorline                " hightlight the current line
+set nu                          " show the line number
+
+set cursorline                  " hightlight the current line
 hi CursorLine cterm=bold      
 
-set sw=2                      " auto intent 2 character
+set sw=2                        " auto intent 2 character
 
-set ts=2                      " tab width 2 character
+set ts=2                        " tab width 2 character
 
-set backspace=indent,eol,start
+set backspace=indent,eol,start  " local cmment test line comment
 
 syntax on
 
-"colorscheme  default         " too dark to comment
+"colorscheme  default           " too dark to comment
 
-set autoindent                " keep the same intent with the uppstairs 
+set autoindent                  " keep the same intent with the uppstairs
 
-set ruler                     " display the location of cursor at the right buttom
+set ruler                       " display the location of cursor at the right
 
-set incsearch                 " show match points while the fuzzy search
+                                " buttom
+
+set incsearch                   " show match points while the fuzzy search
 
 " ctags
+
 "set tags=~/tags
 
 " taglist
+
 "let Tlist_Exit_OnlyWindow = 1
 
 "let Tlist_Use_Right_Window =1
@@ -37,14 +42,18 @@ set incsearch                 " show match points while the fuzzy search
 "map <F3> :TlistOpen<CR>
 
 " NERDTree config
-map <F4> :NERDTreeToggle<CR>  " F4 control the content tree
+
+map <F4> :NERDTreeToggle<CR> 
+
+" F4 control the content tree
 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType=="primary" )     | q | endif
 
 " exit vim during the current winter being the last content tree winer
 
 " YouCompleteMe Configuration
-set completeopt=longest,menu " cancel the pop after completing
+
+set completeopt=longest,menu  " cancel the pop after completing
 
 let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/third_party/ycmd/.ycm_extra_conf.py'
 
@@ -53,18 +62,25 @@ let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/third_party/ycmd/.y
 " change the complete backcolor into vim's backcolor
 
 " Vundle
-set nocompatible              " be iMproved, required
 
-filetype off                  " required
+set nocompatible                   " be iMproved, required
 
-set rtp+=~/.vim/bundle/Vundle.vim " set the runtime path to include Vundle and initialize
+filetype off                       " required
+
+set rtp+=~/.vim/bundle/Vundle.vim  " set the runtime path to include Vundle
+
+                                   " and initialize
 
 call vundle#begin()
 
-Plugin 'VundleVim/Vundle.vim' " let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'      " let Vundle manage Vundle, required
 
-Plugin 'https://github.com/scrooloose/nerdtree.git' " install NERDTree, file and directory tree.
+Plugin 'https://github.com/scrooloose/nerdtree.git' 
 
-call vundle#end()             " All of your Plugins must be added before the following line required
+                                   " install NERDTree, file and directory tree
 
-filetype plugin indent on     " required
+call vundle#end()                  " All of your Plugins must be added before
+
+                                   " the following line required
+
+filetype plugin indent on          " required
