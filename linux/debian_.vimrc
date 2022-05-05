@@ -27,9 +27,13 @@ set ruler                       " display the location of cursor at the right
 
 set incsearch                   " show match points while the fuzzy search
 
+
+
 " ctags
 
 "set tags=~/tags
+
+
 
 " taglist
 
@@ -41,6 +45,8 @@ set incsearch                   " show match points while the fuzzy search
 
 "map <F3> :TlistOpen<CR>
 
+
+
 " NERDTree config
 
 map <F4> :NERDTreeToggle<CR> 
@@ -51,6 +57,8 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 
 " exit vim during the current winter being the last content tree winer
 
+
+
 " YouCompleteMe Configuration
 
 set completeopt=longest,menu  " cancel the pop after completing
@@ -60,6 +68,8 @@ let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/third_party/ycmd/.y
 "hightlight Pmenu ctermfg=15 ctermfg=0 guifg=#000000 guibg=#111100
 
 " change the complete backcolor into vim's backcolor
+
+
 
 " Vundle
 
