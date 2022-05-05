@@ -12,6 +12,8 @@ compile and install:
 
     python3 install.py --clang-completer --system-libclang
 
+## [config](https://itecnote.com/tecnote/c-vim-youcompleteme-configuration/)
+
 ## fix problems
 
 ### A
