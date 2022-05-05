@@ -5,8 +5,8 @@ set ru                        " show the scale
 
 set nu                        " show the line number
 
-set cursorline
-hi CursorLine cterm=bold      " hightlight the current line
+set cursorline                " hightlight the current line
+hi CursorLine cterm=bold      
 
 set sw=2                      " auto intent 2 character
 
