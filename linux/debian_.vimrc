@@ -16,6 +16,12 @@ map <F4> :NERDTreeToggle<CR>  " F4 control the content tree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType=="primary" )     | q | endif
 " exit vim during the current winter being the last content tree winer
 
+" YouCompleteMe Configuration
+" set completeopt=longest,menu
+" cancel the pop after completing
+" hightlight Pmenu ctermfg=15 ctermfg=0 guifg=#000000 guibg=#111100
+" change the complete backcolor into vim's backcolor
+
 filetype off                  " required
 
 set rtp+=~/.vim/bundle/Vundle.vim " set the runtime path to include Vundle and initialize
