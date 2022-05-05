@@ -61,9 +61,53 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 
 " YouCompleteMe Configuration
 
+set runtimepath+=~/.vim/bundle/YouCompleteMe
+
 set completeopt=longest,menu  " cancel the pop after completing
 
+let g:ycm_collect_identifiers_from_tags_files = 1  " enable YCM engine based tag
+
+let g:ycm_collect_identifiers_from_comments_and_strings = 1
+
+                               " used to comment and string contents
+
+let g:syntastic_ignore_files=[".*\.py$"]
+
+let g:ycm_seed_identifiers_with_syntax = 1  " complete the key words of syntax
+
+let g:ycm_complete_in_comments = 1
+
+let g:ycm_confirm_extra_conf = 0
+
+let g:ycm_key_list_select_completion = ['<c-n>', '<Down>']
+
+                              " touch buttons mapping, make trouble tab button
+
+                              " if do not have the upstaris code line
+
+let g:ycm_key_list_previous_completion = ['<c-p>', '<Up>']
+
+let g:ycm_complete_in_comments = 1  " enable the complete at comment
+
+let g:ycm_complete_in_strings = 1  " enable the complete at string contents
+
+let g:ycm_collect_identifiers_from_comments_and_strings = 1
+
+                               " bookmark the comment and string contents into
+
+                               " the complete library
+
 let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/third_party/ycmd/.ycm_extra_conf.py'
+
+let g:ycm_show_diagnostics_ui = 0  " disable the checkout syntax
+
+nnoremap <c-j> :YcmCompleter GoToDefinitionElseDeclaration<CR>|
+
+                              " goto the define of the functions
+
+let g:ycm_min_num_of_chars_for_completion=2
+
+                              " complete begin at the second character
 
 "hightlight Pmenu ctermfg=15 ctermfg=0 guifg=#000000 guibg=#111100
 
