@@ -83,7 +83,7 @@ plugins=(git)
 # Fish-like syntax highlighting
 # Notice: plugin colored-man not found, so comment.
 # plugins+=(colored-man zsh-syntax-highlighting)
-plugins+=(git colorize github jira vagrant virtualenv pip python brew macos zsh-syntax-highlighting)
+plugins+=(colorize github jira vagrant virtualenv pip python brew macos zsh-syntax-highlighting)
 # zsh-completions
 # Configure additional zsh-completions, applicable to all Linux systems.
 plugins+=(zsh-completions)
