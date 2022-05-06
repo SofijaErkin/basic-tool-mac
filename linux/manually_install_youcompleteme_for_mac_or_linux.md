@@ -1,5 +1,7 @@
 # MacOS/Linux Manually Install YouCompleteMe
 
+This is used to notice syntax complete for C/C++ and Python.
+
 ## deps
 
     build-essential, cmake, clang, python3-dev/python-dev, python3, gcc
@@ -13,6 +15,22 @@ compile and install:
     python3 install.py --clang-completer --system-libclang
 
 ## [config](https://itecnote.com/tecnote/c-vim-youcompleteme-configuration/)
+
+## goTo defines
+
+add this to "`~/vimrc`":
+
+    " locate any functions, variables or classes via cursor, just use VIM
+
+    " command (:YouCompleteMe GoTo), then will jump into that defines,
+
+    " mapping key_button F6 with the goTo function of YouCompleteMe,
+
+    " that means goTo defines after touching down F6 button,
+
+    " just use (ctrl+o) to goBack that source location.
+
+    map <F6> :YcmCompleter GoTo<CR>
 
 ## fix problems
 
