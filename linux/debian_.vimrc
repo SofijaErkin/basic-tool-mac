@@ -15,7 +15,7 @@ set ts=2                        " tab width 2 character
 
 set backspace=indent,eol,start  " local cmment test line comment
 
-syntax on
+syntax on                       " enable the syntax function of VIM
 
 "colorscheme  default           " too dark to comment
 
