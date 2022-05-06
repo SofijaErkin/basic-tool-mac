@@ -4,7 +4,7 @@ I need like notice_complete, goto_define, search_keywords, highlight_syntax,
 
 check_syntax, intent_folding, display_the_architecture_of_function,
 
-file_template, content_tree...
+file_template, [content_tree](https://gist.github.com/SofijaErkin/ae3505742a431c343f54a9a995fd7e2b)...
 
 ## 1. [Git](https://gist.github.com/SofijaErkin/2b70beb264de57c9f8f7c80517766a89)
 
