@@ -1,5 +1,11 @@
 # Build Debian Development
 
+I need like notice_complete, goto_define, search_keywords, highlight_syntax,
+
+check_syntax, intent_folding, display_the_architecture_of_function,
+
+file_template, content_tree...
+
 ## 1. [Git](https://gist.github.com/SofijaErkin/2b70beb264de57c9f8f7c80517766a89)
 
 ## 2. [zsh && oh-my-zsh](https://gist.github.com/SofijaErkin/ac6a0e4294d5d29ebd4557eca21c77ce)
