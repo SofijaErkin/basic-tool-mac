@@ -113,6 +113,8 @@ let g:ycm_min_num_of_chars_for_completion=2
 
 " change the complete backcolor into vim's backcolor
 
+map <F6> :YcmCompleter GoTo<CR>  " mapping key_button F6 with the goTo function of YouCompleteMe
+
 
 
 " Vundle
