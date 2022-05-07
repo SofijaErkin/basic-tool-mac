@@ -1,6 +1,6 @@
 # Build Debian Development
 
-I need like notice_complete, goto_define, search_keywords, highlight_syntax,
+I need like [notice_complete](https://gist.github.com/SofijaErkin/9318ecb63460400c8b3876cce6c2bf25), goto_define, search_keywords, highlight_syntax,
 
 check_syntax, intent_folding, display_the_architecture_of_function,
 
