@@ -44,7 +44,7 @@ ShellCheck;
 
 ## 5. Version Control
 
-grit;
+git;
 
 ## 6. Language
 
