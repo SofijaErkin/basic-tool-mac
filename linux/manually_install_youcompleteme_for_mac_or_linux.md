@@ -1,5 +1,7 @@
 # MacOS/Linux Manually Install YouCompleteMe
 
+Mainly on Debian.
+
 This is used to notice syntax complete for C/C++ and Python.
 
 ## deps
@@ -9,6 +11,8 @@ This is used to notice syntax complete for C/C++ and Python.
 `clang` for C/C++ auto complete.
 
 compile and install:
+
+    git clone --recursive https://github.com/Valloric/YouCompleteMe.git ~/.vim/bundle
 
     cd ~/.vim/bundle/YouCompleteMe
 
