@@ -1,5 +1,7 @@
 # Mac Manually install VIM with supporting Python3
 
+I include this answer to "`Way 0`" and "`Way 1`" and "`Way 2`".
+
 ## Way 0
 
 ### 1.run the below on terminal
@@ -40,7 +42,7 @@ edit your `zsh` configuration file `~/.zshrc` via
 
 and add the below to TOP line(just use `i` to enter editing status,
 
-then use "`:wq`" to quit editting status and save file):
+then use "`:wq`" to quit editing status and save file):
 
     export VIM_HOME=/usr/local/Cellar/vim/8.2.2100/
 
@@ -58,7 +60,7 @@ We know the default `VIM` functional file is located at `/usr/bin/vim`,
 
 while homebrew `VIM` functional file is located at `/usr/local/bin/vim`;
 
-And default `VIM` supprot `Python2` with not supporting `Python3`,
+And default `VIM` support `Python2` with not supporting `Python3`,
 
 but homebrew `VIM` support `Python3`(That's also we needed!).
 
@@ -71,5 +73,27 @@ create soft link `vim` under `/usr/local/opt`,
 and Homebrew `VIM` 's functional file `vim` is located at `/usr/local/bin/vim`, also linked to `/usr/local/Cellar/vim`.
 
 ## Way 1
+
+### First
+
+you need to use this to checkout whether `VIM` support `Python3` or not?
+
+    vim --version | grep python
+
+you may see the terminal output liking:
+
+    +conceal           +linebreak         -python3           +visual
+
+as the upstairs shows: that Mac default installed `VIM` DO NOT SUPPORT `Python3`.
+
+And that default installed `VIM` of Mac is not been installed via "`brew`".
+
+Now, we could not use liking "`brew remove`" to delate that default installed `VIM` of Mac,
+
+and it's also why your action
+
+    "brew delete vim and brew cleanup and reinstalled Vim"
+
+DO NOT FUNCTION!
 
 ## Way 2
