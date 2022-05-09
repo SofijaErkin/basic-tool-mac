@@ -124,4 +124,36 @@ then checkout `python` that that version whether is `python3` or not:
 
 then, we found that "`python -V`" shows "`Python 3.9.12`".
 
+### Third
+
+That's time to use `Homebrew` to install `VIM`.
+
+    brew install vim
+
+After installing Homebrew`VIM`, we need to make sure where is Homebrew`VIM`,
+
+differ from that default installed `VIM` of Mac:
+
+    which vim
+
+output:
+
+    /usr/local/bin/vim
+
+Please restart Your Mac, restart Your Terminal and reenter your terminal!!!
+
+Please restart Your Mac, restart Your Terminal and reenter your terminal!!!
+
+Please restart Your Mac, restart Your Terminal and reenter your terminal!!!
+
+then, we need to checkout whether that Homebrew`VIM` supports `Python3` or Not:
+
+    vim --version | grep python
+
+output:
+
+    +conceal           +linebreak         +python3           +visual
+
+Successful!
+
 ## Way 2
