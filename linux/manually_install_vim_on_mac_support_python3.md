@@ -96,4 +96,32 @@ and it's also why your action
 
 DO NOT FUNCTION!
 
+### Second
+
+we need to know where that fu-king default installed `VIM` with not supporting `python3`,
+
+    which vim
+
+output:
+
+    /usr/bin/vim
+
+mostly shows like the upstairs(depends default macOS).
+
+Even we use "`--with-python3`" to install `VIM` with supporting
+
+`Python3`at a long time, but Now `Homebrew` ONLY recognize "`python -V`"'s version.
+
+SO we NEED to manually let default `python` to be `python3`.
+
+Open your terminal and input:
+
+    alias python="python3"
+
+then checkout `python` that that version whether is `python3` or not:
+
+    python -V
+
+then, we found that "`python -V`" shows "`Python 3.9.12`".
+
 ## Way 2
