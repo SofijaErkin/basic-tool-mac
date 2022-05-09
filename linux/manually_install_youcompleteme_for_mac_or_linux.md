@@ -1,22 +1,80 @@
 # MacOS/Linux Manually Install YouCompleteMe
 
-Mainly on Debian.
-
 This is used to notice syntax complete for C/C++ and Python.
 
 ## deps
+
+Debian:
 
     build-essential, cmake, clang, python3-dev/python-dev, python3, gcc
 
 `clang` for C/C++ auto complete.
 
-compile and install:
+MacOS:
+
+    Vundle(VIM plugin manager), cmake, python3, VIM(support Python3),
+
+    system call(),
+
+## compile and install and config
+
+Debian:
+
+install,
 
     git clone --recursive https://github.com/Valloric/YouCompleteMe.git ~/.vim/bundle
+
+Or
+
+install via `Vundle`and add this to `~/.vimrc`
+
+    Plugin 'Valloric/YouCompleteMe'    " install YouCompleteMe, with autoupdate via
+
+                                       " vundle
+
+compile and config,
 
     cd ~/.vim/bundle/YouCompleteMe
 
     python3 install.py --clang-completer --system-libclang
+
+The upstairs will complete C/C++(via clang-completer) and Python(default support
+
+) with `YouCompleteMe`.
+
+If you want to support Java, Go, PHP, just install their compiler default-jdk
+
+(for Java), php(for PHP), golang-go(for Go), then just add their configuration
+
+compile installing `--java-completer`(for Java), `--go-completer`(for Go) and
+
+(I don't know about php-completer)when calling `install.py`.
+
+MacOS:
+
+install via `Vundle`,
+
+Add this to `~/.vimrc`
+
+    Plugin 'Valloric/YouCompleteMe'    " install YouCompleteMe, with autoupdate via
+
+                                       " vundle
+
+compile and config,
+
+    cd ~/.vim/bundle/YouCompleteMe
+
+    python3 install.py --clang-completer --system-libclang
+
+If you want to support Javascript, Ruby, Perl, just install their compiler node
+
+(or nodejs) and npm(for JavaScript), ruby(for Ruby), perl(for Perl), then just
+
+add their configuration compile installing `--ts-completer`(for JS and TS), (I
+
+don't know ruby-completer and perl-compiler) when calling `install.py`.
+
+Notice: [install Java JDK for macOS](https://mkyong.com/java/how-to-install-java-on-mac-osx/#homebrew-install-java-8-on-macos).
 
 ## [config](https://itecnote.com/tecnote/c-vim-youcompleteme-configuration/)
 
@@ -36,7 +94,7 @@ add this to "`~/vimrc`":
 
     map <F6> :YcmCompleter GoTo<CR>
 
-## fix problems
+## fix Debian problems
 
 ### A
 
@@ -84,4 +142,6 @@ Notice:
 
     For example, run:/usr/bin/python3 /home/parallels/.vim/bundle/YouCompleteMe/third_party/ycmd/build.py --clang-completer --system-libclang --verbose
 
-Fixed upstairs. Install the gcc`7.3`.
+Fixed upstairs. Install the gcc`8.2`.
+
+gcc>=8, clang>=7.
