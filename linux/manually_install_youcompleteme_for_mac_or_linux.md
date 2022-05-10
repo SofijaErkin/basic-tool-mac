@@ -80,7 +80,41 @@ The upstairs will complete C/C++(via clang-completer) and Python(default support
 
 ) with `YouCompleteMe`.
 
-#### others
+Notice:
+
+if use "`python3 install.py --clang-completer`" to compile installing, the
+
+"`:YcmDebugInfo`" will be:
+
+    Printing YouCompleteMe debug information...
+
+    -- Resolve completions: Never
+
+    -- Client logfile: /tmp/ycm_fwvvdvzn.log
+
+    -- Server Python interpreter: /usr/bin/python3
+
+    -- Server Python version: 3.9.2
+
+    -- Server has Clang support compiled in: True
+
+    -- Clang version: clang version 13.0.0 (<https://github.com/ycm-core/llvm> 02d1fa3185f1beeebb182b8911bfe09d3429707f)
+
+    -- Extra configuration file found and loaded
+
+    -- Extra configuration path: /home/foruo/.vim/bundle/YouCompleteMe/third_party/ycmd/.ycm_extra_conf.py
+
+    -- Server running at: <http://127.0.0.1:44381>
+
+    -- Server process ID: 4802
+
+    -- Server logfiles:
+
+    --   /tmp/ycmd_44381_stdout_jv2c3psh.log
+
+    --   /tmp/ycmd_44381_stderr_5c0v_iw9.log
+
+#### others on Debian
 
 If you want to support Java, Go, PHP, just install their compiler default-jdk
 
@@ -91,6 +125,8 @@ compile installing `--java-completer`(for Java), `--go-completer`(for Go) and
 (I don't know about php-completer)when calling `install.py`.
 
 ### for MacOS
+
+#### Install on MacOS
 
 install via `Vundle`,
 
@@ -105,6 +141,10 @@ and use `ESC` key to quit editing status, just use "`:PluginInstall`" to
 download `YouCompleteMe`. `YouCompleteMe` is about 240MB, and will take
 
 56 seconds to download via `Vundle`.
+
+the downloaded `.ycm_extra_conf.py` under `~/.vim/bundle/YouCompleteMe/` is
+
+[there](https://gist.github.com/SofijaErkin/dfb17d47ea1700957a777ed5ffdd64e7).
 
 #### compile and Config
 
@@ -152,7 +192,7 @@ if use "`python3 install.py --clangd-completer`" to compile installing, the
 
     --   /var/folders/zs/_m5zmn613_vgyyszpxwcyx980000gn/T/ycmd_53097_stderr_5thjdf8m.log
 
-#### Others
+#### Others on MacOS
 
 If you want to support Javascript, Ruby, Perl, just install their compiler node
 
