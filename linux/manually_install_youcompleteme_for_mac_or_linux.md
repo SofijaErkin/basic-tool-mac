@@ -68,6 +68,10 @@ The upstairs will complete C/C++(via clang-completer) and Python(default support
 
 ) with `YouCompleteMe`.
 
+Just Just Just use "`:YcmDiags`" to make sure whether `YouCompleteMe` is being
+
+successfully installed or not?
+
 Notice:
 
 if use "`python3 install.py --clang-completer`" to compile installing, the
@@ -145,6 +149,26 @@ Or
     python3 install.py --clang-completer
 
 the upstairs compiling installing takes 2 minutes to compile installing.
+
+Big Big Big notice:
+
+just use "`:YcmDiags`" to make sure whether `YouCompleteMe` is being successfully
+
+installed or not?
+
+If output "`No warnings or errors detected.`", that means `YouCompleteMe` has
+
+been successfully installed;
+
+If output "`YCM has not yet been compiled`", that means `YouCompleteMe` has
+
+been successfully downloaded;
+
+If output
+
+    Native filetype completion not supported for current file, cannot force recompilation.
+
+, the upstairs means Your current file is not Python file, C file or C++ file.
 
 Notice:
 
