@@ -2,15 +2,9 @@
 
 This is used to notice syntax complete for C/C++ and Python.
 
-## refer
+## Deps
 
-[YouCompleteMe: a code-completion engine for Vim](https://github.com/ycm-core/YouCompleteMe#youcompleteme-a-code-completion-engine-for-vim).
-
-[Below are the instructions for installing YouCompleteMe on Mac OS X](https://gist.github.com/ChengLong/6208775).
-
-## deps
-
-### Debian
+### Debian(Linux)
 
     build-essential, cmake, clang, python3-dev/python-dev, python3, gcc
 
@@ -22,23 +16,37 @@ This is used to notice syntax complete for C/C++ and Python.
 
     system call(),
 
-## compile and install and config
+## Compile and Install and config
 
-### for Debian
+### for Debian(Linux)
 
-if you use "`git clone ...`" to install `YouCompleteMe`, the `YouCompleteMe`
+if you use "`git clone ...`" to install `YouCompleteMe` and use this
 
-default configuration file `.ycm_extra_conf.py` will be located under
+"`python3 install.py --clang-completer --system-libclang`"
+
+to compile installing, the `YouCompleteMe` compiling configuration file
+
+ `.ycm_extra_conf.py` liking this will be located under
 
     ~/.vim/bundle/YouCompleteMe/third_party/ycmd/.ycm_extra_conf.py
 
-or if you use `VIM` plugin manager `Vundle` to download `YouCompleteMe`, the
+Or if you use `VIM` plugin manager `Vundle` to download `YouCompleteMe`, the
 
-default configuration file `.ycm_extra_conf.py` will be located under
+default downloaded configuration file liking here `.ycm_extra_conf.py` will be
+
+under
 
     ~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py
 
-install,
+and if you use that "`python3 install.py --clang-completer`" to compile
+
+installing, the compiling configuration file `.ycm_extra_conf.py` liking that
+
+will be located under
+
+    ~/.vim/bundle/YouCompleteMe/third_party/ycmd/.ycm_extra_conf.py
+
+#### install
 
     git clone --recursive https://github.com/Valloric/YouCompleteMe.git ~/.vim/bundle
 
@@ -50,15 +58,29 @@ install via `Vundle`and add this to `~/.vimrc`
 
                                        " vundle
 
-compile and config,
+and use `ESC` key to quit editing status, just use "`:PluginInstall`" to
+
+download `YouCompleteMe`. `YouCompleteMe` is about 240MB, and will take
+
+30 seconds to download via `Vundle`.
+
+#### compile and config
 
     cd ~/.vim/bundle/YouCompleteMe
 
     python3 install.py --clang-completer --system-libclang
 
+Or
+
+    python3 install.py --clang-completer
+
+the upstairs compiling installing takes 3 minutes to compile installing.
+
 The upstairs will complete C/C++(via clang-completer) and Python(default support
 
 ) with `YouCompleteMe`.
+
+#### Others
 
 If you want to support Java, Go, PHP, just install their compiler default-jdk
 
@@ -78,7 +100,13 @@ Add this to `~/.vimrc`
 
                                        " vundle
 
-compile and config,
+and use `ESC` key to quit editing status, just use "`:PluginInstall`" to
+
+download `YouCompleteMe`. `YouCompleteMe` is about 240MB, and will take
+
+56 seconds to download via `Vundle`.
+
+#### Compile and Config
 
     cd ~/.vim/bundle/YouCompleteMe
 
@@ -86,7 +114,9 @@ compile and config,
 
 Or
 
-   python3 install.py --clang-completer
+    python3 install.py --clang-completer
+
+the upstairs compiling installing takes 2 minutes to compile installing.
 
 If you want to support Javascript, Ruby, Perl, just install their compiler node
 
@@ -98,9 +128,9 @@ don't know ruby-completer and perl-compiler) when calling `install.py`.
 
 Notice: [install Java JDK for macOS](https://mkyong.com/java/how-to-install-java-on-mac-osx/#homebrew-install-java-8-on-macos).
 
-## [config](https://itecnote.com/tecnote/c-vim-youcompleteme-configuration/)
+## [Config](https://itecnote.com/tecnote/c-vim-youcompleteme-configuration/)
 
-## goTo defines
+## GoTo Defines
 
 add this to "`~/vimrc`":
 
@@ -116,7 +146,7 @@ add this to "`~/vimrc`":
 
     map <F6> :YcmCompleter GoTo<CR>
 
-## fix Debian problems
+## Fix Debian(Linux) problems While Compiling install YouCompleteMe
 
 ### A
 
@@ -167,3 +197,9 @@ Notice:
 Fixed upstairs. Install the gcc`8.2`.
 
 gcc>=8, clang>=7.
+
+## Refer
+
+[YouCompleteMe: a code-completion engine for Vim](https://github.com/ycm-core/YouCompleteMe#youcompleteme-a-code-completion-engine-for-vim).
+
+[Below are the instructions for installing YouCompleteMe on Mac OS X](https://gist.github.com/ChengLong/6208775).
