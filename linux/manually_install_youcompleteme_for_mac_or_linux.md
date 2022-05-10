@@ -20,30 +20,6 @@ This is used to notice syntax complete for C/C++ and Python.
 
 ### for Debian(Linux)
 
-if you use this "`python3 install.py --clang-completer --system-libclang`"
-
-to compile installing, the `YouCompleteMe` compiling configuration file
-
- `.ycm_extra_conf.py` liking this will be located under
-
-    ~/.vim/bundle/YouCompleteMe/third_party/ycmd/.ycm_extra_conf.py
-
-Or if you use `VIM` plugin manager `Vundle` to download `YouCompleteMe`, the
-
-default downloaded configuration file liking [here](https://gist.github.com/SofijaErkin/01223a0f96f28ed0d0f8e87eec9b2d78) `.ycm_extra_conf.py` will be
-
-under
-
-    ~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py
-
-and if you use that "`python3 install.py --clang-completer`" to compile
-
-installing, the compiling configuration file `.ycm_extra_conf.py` liking that
-
-will be located under
-
-    ~/.vim/bundle/YouCompleteMe/third_party/ycmd/.ycm_extra_conf.py
-
 #### Install on Debian
 
     git clone --recursive https://github.com/Valloric/YouCompleteMe.git ~/.vim/bundle
@@ -62,17 +38,31 @@ download `YouCompleteMe`. `YouCompleteMe` is about 240MB, and will take
 
 30 seconds to download via `Vundle`.
 
+if you use `VIM` plugin manager `Vundle` to download `YouCompleteMe`,
+
+the downloaded `.ycm_extra_conf.py` under `~/.vim/bundle/YouCompleteMe/` is
+
+[here](https://gist.github.com/SofijaErkin/01223a0f96f28ed0d0f8e87eec9b2d78).
+
 #### Compile and Config on Debian
 
     cd ~/.vim/bundle/YouCompleteMe
 
     python3 install.py --clang-completer --system-libclang
 
+the upstairs compiling configuration file `.ycm_extra_conf.py` liking this.
+
 Or
 
     python3 install.py --clang-completer
 
-the upstairs compiling installing takes 3 minutes to compile installing.
+the upstairs compiling configuration file `.ycm_extra_conf.py` liking that.
+
+the upstairs compiling installing command takes 3 minutes to compile installing.
+
+The compiling configuration file `.ycm_extra_conf.py` will be located under
+
+ `~/.vim/bundle/YouCompleteMe/third_party/ycmd/`.
 
 The upstairs will complete C/C++(via clang-completer) and Python(default support
 
