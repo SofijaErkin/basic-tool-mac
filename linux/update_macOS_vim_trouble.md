@@ -77,4 +77,4 @@ For:
 
 fixed with:
 
-reinstall `YouCompleteMe` via `Vundle` on `VIM`.
+[reinstall `YouCompleteMe` via `Vundle` on `VIM`](https://gist.github.com/SofijaErkin/9318ecb63460400c8b3876cce6c2bf25#for-macos).
