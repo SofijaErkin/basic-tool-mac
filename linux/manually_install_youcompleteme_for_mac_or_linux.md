@@ -74,6 +74,56 @@ successfully installed or not?
 
 Notice:
 
+if use "`python3 install.py --clang-completer --system-libclang`" to compile installing, the
+
+"`:YcmDebugInfo`" will be:
+
+    Printing YouCompleteMe debug information...
+
+    -- Resolve completions: Never
+
+    -- Client logfile: /tmp/ycm_hy1ogqqg.log
+
+    -- Server Python interpreter: /usr/bin/python3
+
+    -- Server Python version: 3.9.2
+
+    -- Server has Clang support compiled in: True
+
+    -- Clang version: Debian clang version 11.0.1-2
+
+    -- Extra configuration file found and loaded
+
+    -- Extra configuration path: /home/foruo/.vim/bundle/YouCompleteMe/third_party/ycmd/.ycm_extra_conf.py
+
+    -- Python completer debug information:
+
+    --   Python interpreter: /usr/bin/python3
+
+    --   Python root: /home/foruo/.vim/bundle/YouCompleteMe/third_party/ycmd
+
+    --   Python path: ['/home/foruo/.vim/bundle/YouCompleteMe/third_party/ycmd', '/home/foruo/.vim/bundle/You
+
+    CompleteMe/third_party/ycmd/third_party/bottle', '/home/foruo/.vim/bundle/YouCompleteMe/third_party/ycmd/
+
+    third_party/regex-build', '/home/foruo/.vim/bundle/YouCompleteMe/third_party/ycmd/third_party/frozendict', '/home/foruo/.vim/bundle/YouCompleteMe/third_party/ycmd/third_party/jedi_deps/jedi', '/home/foruo/.vim/bundle/YouCompleteMe/third_party/ycmd/third_party/jedi_deps/parso', '/home/foruo/.vim/bundle/YouCompleteMe/third_party/ycmd/third_party/watchdog_deps/watchdog/build/lib3', '/home/foruo/.vim/bundle/YouCompleteMe/third_party/ycmd/third_party/watchdog_deps/pathtools', '/home/foruo/.vim/bundle/YouCompleteMe/third_party/ycmd/third_party/waitress', '/usr/lib/python39.zip', '/usr/lib/python3.9', '/usr/lib/python3.9/lib-dynload', '/usr/local/lib/python3.9/dist-packages', '/usr/lib/python3/dist-packages', '/home/foruo/.vim/bundle/YouCompleteMe/third_party/ycmd/third_party/jedi_deps/numpydoc']
+
+    --   Python version: 3.9.2
+
+    --   Jedi version: 0.18.0
+
+    --   Parso version: 0.8.1
+
+    -- Server running at: <http://127.0.0.1:50651>
+
+    -- Server process ID: 8693
+
+    -- Server logfiles:
+
+    --   /tmp/ycmd_50651_stdout_zp798qqf.log
+
+    --   /tmp/ycmd_50651_stderr_3x0se3qs.log
+
 if use "`python3 install.py --clang-completer`" to compile installing, the
 
 "`:YcmDebugInfo`" will be:
