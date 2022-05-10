@@ -20,9 +20,7 @@ This is used to notice syntax complete for C/C++ and Python.
 
 ### for Debian(Linux)
 
-if you use "`git clone ...`" to install `YouCompleteMe` and use this
-
-"`python3 install.py --clang-completer --system-libclang`"
+if you use this "`python3 install.py --clang-completer --system-libclang`"
 
 to compile installing, the `YouCompleteMe` compiling configuration file
 
@@ -32,7 +30,7 @@ to compile installing, the `YouCompleteMe` compiling configuration file
 
 Or if you use `VIM` plugin manager `Vundle` to download `YouCompleteMe`, the
 
-default downloaded configuration file liking here `.ycm_extra_conf.py` will be
+default downloaded configuration file liking [here](https://gist.github.com/SofijaErkin/01223a0f96f28ed0d0f8e87eec9b2d78) `.ycm_extra_conf.py` will be
 
 under
 
