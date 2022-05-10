@@ -46,7 +46,7 @@ will be located under
 
     ~/.vim/bundle/YouCompleteMe/third_party/ycmd/.ycm_extra_conf.py
 
-#### install
+#### Install on Debian
 
     git clone --recursive https://github.com/Valloric/YouCompleteMe.git ~/.vim/bundle
 
@@ -64,7 +64,7 @@ download `YouCompleteMe`. `YouCompleteMe` is about 240MB, and will take
 
 30 seconds to download via `Vundle`.
 
-#### compile and config
+#### Compile and Config on Debian
 
     cd ~/.vim/bundle/YouCompleteMe
 
@@ -114,7 +114,7 @@ if use "`python3 install.py --clang-completer`" to compile installing, the
 
     --   /tmp/ycmd_44381_stderr_5c0v_iw9.log
 
-#### others on Debian
+#### Others on Debian
 
 If you want to support Java, Go, PHP, just install their compiler default-jdk
 
@@ -146,7 +146,7 @@ the downloaded `.ycm_extra_conf.py` under `~/.vim/bundle/YouCompleteMe/` is
 
 [there](https://gist.github.com/SofijaErkin/dfb17d47ea1700957a777ed5ffdd64e7).
 
-#### compile and Config
+#### Compile and Config on MacOS
 
     cd ~/.vim/bundle/YouCompleteMe
 
