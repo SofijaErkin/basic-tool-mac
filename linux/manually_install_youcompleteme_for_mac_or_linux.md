@@ -80,7 +80,7 @@ The upstairs will complete C/C++(via clang-completer) and Python(default support
 
 ) with `YouCompleteMe`.
 
-#### Others
+#### others
 
 If you want to support Java, Go, PHP, just install their compiler default-jdk
 
@@ -106,7 +106,7 @@ download `YouCompleteMe`. `YouCompleteMe` is about 240MB, and will take
 
 56 seconds to download via `Vundle`.
 
-#### Compile and Config
+#### compile and Config
 
     cd ~/.vim/bundle/YouCompleteMe
 
@@ -117,6 +117,8 @@ Or
     python3 install.py --clang-completer
 
 the upstairs compiling installing takes 2 minutes to compile installing.
+
+#### Others
 
 If you want to support Javascript, Ruby, Perl, just install their compiler node
 
