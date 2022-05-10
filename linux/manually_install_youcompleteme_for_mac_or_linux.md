@@ -66,6 +66,10 @@ compile and config,
 
     python3 install.py --clang-completer --system-libclang
 
+Or
+
+   python3 install.py --clang-completer
+
 If you want to support Javascript, Ruby, Perl, just install their compiler node
 
 (or nodejs) and npm(for JavaScript), ruby(for Ruby), perl(for Perl), then just
