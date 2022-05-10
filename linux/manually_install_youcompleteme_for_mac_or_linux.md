@@ -4,13 +4,13 @@ This is used to notice syntax complete for C/C++ and Python.
 
 ## deps
 
-Debian:
+### Debian
 
     build-essential, cmake, clang, python3-dev/python-dev, python3, gcc
 
 `clang` for C/C++ auto complete.
 
-MacOS:
+### MacOS
 
     Vundle(VIM plugin manager), cmake, python3, VIM(support Python3),
 
@@ -18,7 +18,7 @@ MacOS:
 
 ## compile and install and config
 
-Debian:
+### for Debian
 
 install,
 
@@ -50,7 +50,7 @@ compile installing `--java-completer`(for Java), `--go-completer`(for Go) and
 
 (I don't know about php-completer)when calling `install.py`.
 
-MacOS:
+### for MacOS
 
 install via `Vundle`,
 
