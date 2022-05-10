@@ -172,6 +172,38 @@ If output
 
 Notice:
 
+if use "`python3 install.py --clang-completer`" to compile installing, the
+
+"`:YcmDebugInfo`" will be:
+
+    Printing YouCompleteMe debug information...
+
+    -- Resolve completions: Never
+
+    -- Client logfile: /var/folders/zs/_m5zmn613_vgyyszpxwcyx980000gn/T/ycm_069agh87.log
+
+    -- Server Python interpreter: /usr/local/opt/python@3.9/bin/python3.9
+
+    -- Server Python version: 3.9.12
+
+    -- Server has Clang support compiled in: True
+
+    -- Clang version: clang version 13.0.0
+
+    -- Extra configuration file found and loaded
+
+    -- Extra configuration path: /Users/yq/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py
+
+    -- Server running at: <http://127.0.0.1:54620>
+
+    -- Server process ID: 26002
+
+    -- Server logfiles:
+
+    --   /var/folders/zs/_m5zmn613_vgyyszpxwcyx980000gn/T/ycmd_54620_stdout_h15x9zuz.log
+
+    --   /var/folders/zs/_m5zmn613_vgyyszpxwcyx980000gn/T/ycmd_54620_stderr_py5q02rj.log
+
 if use "`python3 install.py --clangd-completer`" to compile installing, the
 
 "`:YcmDebugInfo`" will be:
