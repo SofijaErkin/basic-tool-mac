@@ -56,7 +56,7 @@ Or
 
     python3 install.py --clang-completer
 
-the upstairs compiling configuration file `.ycm_extra_conf.py` liking that.
+the upstairs compiling configuration file `.ycm_extra_conf.py` liking [that](https://gist.github.com/SofijaErkin/7de23a66d70b7c6924fcd701423fdef7).
 
 the upstairs compiling installing command takes 3 minutes to compile installing.
 
