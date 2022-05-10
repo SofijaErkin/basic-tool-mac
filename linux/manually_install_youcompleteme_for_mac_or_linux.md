@@ -2,6 +2,12 @@
 
 This is used to notice syntax complete for C/C++ and Python.
 
+## refer
+
+[YouCompleteMe: a code-completion engine for Vim](https://github.com/ycm-core/YouCompleteMe#youcompleteme-a-code-completion-engine-for-vim).
+
+[Below are the instructions for installing YouCompleteMe on Mac OS X](https://gist.github.com/ChengLong/6208775).
+
 ## deps
 
 ### Debian
@@ -19,6 +25,18 @@ This is used to notice syntax complete for C/C++ and Python.
 ## compile and install and config
 
 ### for Debian
+
+if you use "`git clone ...`" to install `YouCompleteMe`, the `YouCompleteMe`
+
+default configuration file `.ycm_extra_conf.py` will be located under
+
+    ~/.vim/bundle/YouCompleteMe/third_party/ycmd/.ycm_extra_conf.py
+
+or if you use `VIM` plugin manager `Vundle` to download `YouCompleteMe`, the
+
+default configuration file `.ycm_extra_conf.py` will be located under
+
+    ~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py
 
 install,
 
