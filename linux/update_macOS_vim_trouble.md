@@ -1,4 +1,32 @@
-# Updated macOS makes Vim trouble
+# Updated macOS makes Vim And Terminal trouble
+
+Update 10 05 2022 AM 01:19 EST
+
+New Trouble:
+
+while new log into terminal:
+
+    xcodebuild[1285:7402]
+
+    Requested but did not find extension point with identifier
+
+    Xcode.IDEKit.ExtensionSentinelHostApplications for extension
+
+    Xcode.DebuggerFoundation.AppExtension
+
+    Hosts.watchOS of plug-in com.apple.dt.IDEWatchSupportCore
+
+    xcodebuild[1285:7402]
+
+    Requested but did not find extension point with identifier Xcode.IDEKit.Extension
+
+    PointIdentifierToBundleIdentifier for extension
+
+    Xcode.DebuggerFoundation.AppExtension
+
+    ToBundleIdentifierMap.watchOS of plug-in com.apple.dt.IDEWatchSupportCore
+
+Not fix!
 
 while type `"vim xxx"`, then:
 
