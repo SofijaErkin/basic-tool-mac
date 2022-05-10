@@ -118,6 +118,40 @@ Or
 
 the upstairs compiling installing takes 2 minutes to compile installing.
 
+Notice:
+
+if use "`python3 install.py --clangd-completer`" to compile installing, the
+
+"`:YcmDebugInfo`" will be:
+
+    Printing YouCompleteMe debug information...
+
+    -- Resolve completions: Never
+
+    -- Client logfile: /var/folders/zs/_m5zmn613_vgyyszpxwcyx980000gn/T/ycm_b7v3dril.log
+
+    -- Server Python interpreter: /usr/local/opt/python@3.9/bin/python3.9
+
+    -- Server Python version: 3.9.12
+
+    -- Server has Clang support compiled in: False
+
+    -- Clang version: None
+
+    -- Extra configuration file found and loaded
+
+    -- Extra configuration path: /Users/yq/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py
+
+    -- Server running at: <http://127.0.0.1:53097>
+
+    -- Server process ID: 17102
+
+    -- Server logfiles:
+
+    --   /var/folders/zs/_m5zmn613_vgyyszpxwcyx980000gn/T/ycmd_53097_stdout_hokuct2s.log
+
+    --   /var/folders/zs/_m5zmn613_vgyyszpxwcyx980000gn/T/ycmd_53097_stderr_5thjdf8m.log
+
 #### Others
 
 If you want to support Javascript, Ruby, Perl, just install their compiler node
