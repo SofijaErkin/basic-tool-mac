@@ -7,6 +7,7 @@ set ru                          " show the scale
 set nu                          " show the line number
 
 set cursorline                  " hightlight the current line
+
 hi CursorLine cterm=bold      
 
 set sw=2                        " auto intent 2 character
@@ -134,6 +135,10 @@ Plugin 'VundleVim/Vundle.vim'      " let Vundle manage Vundle, required
 Plugin 'https://github.com/scrooloose/nerdtree.git' 
 
                                    " install NERDTree, file and directory tree
+
+Plugin 'Valloric/YouCompleteMe'    " install YouCompleteMe, with autoupdate via
+
+                                    " vundle
 
 call vundle#end()                  " All of your Plugins must be added before
 
