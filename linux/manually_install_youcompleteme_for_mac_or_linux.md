@@ -24,6 +24,20 @@ This is used to notice syntax complete for C/C++ and Python.
 
     git clone --recursive https://github.com/Valloric/YouCompleteMe.git ~/.vim/bundle
 
+if you use the upstairs to download `YouCompleteMe`, you need to enter the
+
+directory of `YouCompleteMe` using "`cd ~/.vim/bundle/YouCompleteMe`" to update
+
+`YouCompleteMe` code using "`git pull --rebase`" with making sure your
+
+your directory  is under "`~/.vim/bundle/YouCompleteMe on git:master o`" or
+
+"`~/.vim/bundle/YouCompleteMe on git:master x`"every time after you upgraded
+
+your PC/Laptop Operation.
+
+System.
+
 Or
 
 install via `Vundle`and add this to `~/.vimrc`
