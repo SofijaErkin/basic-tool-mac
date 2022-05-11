@@ -1,6 +1,8 @@
-# Color Plugins fo VIM
+# Plugins for VIM
 
-## Main plugins
+## Color Plugins for VIM
+
+### Main plugins
 
 add this to `~/.vimrc`
 
@@ -10,7 +12,7 @@ add this to `~/.vimrc`
 
     Plugin 'vim-scripts/phd'
 
-## Config color plugins for VIM method
+### Config color plugins for VIM method
 
 add this to `~/.vimrc`
 
@@ -20,7 +22,11 @@ add this to `~/.vimrc`
 
     set background=dark
 
-    colorscheme solarized  " solarized is the better 
+    colorscheme solarized  " solarized is the better
+
+    " the upstairs VIM command config need to come somewhere after
+
+    " "call vundle#end()". 
 
     " Also, we could chose the below two lines plugins
 
