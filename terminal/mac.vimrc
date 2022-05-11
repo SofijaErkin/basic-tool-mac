@@ -109,6 +109,16 @@ let g:ycm_collect_identifiers_from_comments_and_strings = 1
 
                                " the complete library
 
+let g:ycm_filetype_blacklist = { 'tagbar' : 1, 'nerdtree' : 1, }
+
+                               " Set block Ycm at the below types file
+
+let g:ycm_key_invoke_completion = '<M-;>'
+
+                               " change hot-kay mapping about completing for C
+
+                               " functions, from Ctrl + space to ALT + ;
+
 "let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/third_party/ycmd/.ycm_extra_conf.py'
 
 let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py'
