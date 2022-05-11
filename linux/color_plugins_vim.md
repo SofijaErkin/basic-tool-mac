@@ -18,6 +18,8 @@ add this to `~/.vimrc`
 
     set t_Co=256  " make color normally
 
+    set background=dark
+
     colorscheme solarized  " solarized is the better 
 
     " Also, we could chose the below two lines plugins
