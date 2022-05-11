@@ -14,7 +14,7 @@ add this to `~/.vimrc`
 
 add this to `~/.vimrc`
 
-    " color idea for VIM via color plugins
+    " Color idea for VIM via color plugins
 
     set t_Co=256  " make color normally
 
