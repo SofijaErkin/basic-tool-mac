@@ -386,6 +386,14 @@ add this to "`~/vimrc`":
 
     map <F6> :YcmCompleter GoTo<CR>
 
+### Jump GoTo
+
+Ycm make jump GoTo enable via the jumplist of VIM:
+
+    jump before: Ctr+o
+
+    jump after: Ctrl+l
+
 ### Use command
 
 add this to "`~/vimrc`":
