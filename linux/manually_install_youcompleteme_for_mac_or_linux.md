@@ -467,3 +467,5 @@ gcc>=8, clang>=7.
 [Below are the instructions for installing YouCompleteMe on Mac OS X](https://gist.github.com/ChengLong/6208775).
 
 [Install and Config VIM auto-complete plugin YouCompleteMe(Chinese Blog)](https://www.i4k.xyz/article/yangkuanqaz85988/48886367).
+
+[VIM Auto-Completer Hacker: YouCOmpleteMe(Chinese Blog)](https://www.daimajiaoliu.com/daima/471987fda9003f4).
