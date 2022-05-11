@@ -370,6 +370,8 @@ refer unit `YouCompleteMe` at [`~/.vimrc`](https://gist.github.com/SofijaErkin/8
 
 ## GoTo Defines
 
+### Use key map F6
+
 add this to "`~/vimrc`":
 
     " locate any functions, variables or classes via cursor, just use VIM
@@ -383,6 +385,26 @@ add this to "`~/vimrc`":
     " just use (ctrl+o) to goBack that source location.
 
     map <F6> :YcmCompleter GoTo<CR>
+
+### Use command
+
+add this to "`~/vimrc`":
+
+    nnoremap <leader>gl :YcmCompleter GoToDeclaration<CR>
+
+    " jump into Declaration
+
+    nnoremap <leader>gf :YcmCompleter GoToDefinition<CR>
+
+    " jump into Definition
+
+    nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
+
+    " first jump into Definition, then jump into declaration
+
+    " Or Using the below vim command setting:
+
+    " nnoremap <c-j> :YcmCompleter GoToDefinitionElseDeclaration<CR>|
 
 ## Fix Debian(Linux) problems While Compiling install YouCompleteMe
 
