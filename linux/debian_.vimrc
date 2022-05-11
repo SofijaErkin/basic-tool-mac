@@ -112,13 +112,29 @@ let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/third_party/ycmd/.y
 
 let g:ycm_show_diagnostics_ui = 0  " disable the checkout syntax
 
-nnoremap <c-j> :YcmCompleter GoToDefinitionElseDeclaration<CR>|
+nnoremap <leader>gl :YcmCompleter GoToDeclaration<CR>
 
-                              " goto the define of the functions
+                               " jump into Declaration
+
+nnoremap <leader>gf :YcmCompleter GoToDefinition<CR>
+
+                               " jump into Definition
+
+nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
+
+                               " first jump into Definition, then jump into
+
+                               " declaration
+
+                               " Or Using the below vim command setting:
+
+"nnoremap <c-j> :YcmCompleter GoToDefinitionElseDeclaration<CR>|
+
+                               " goto the define of the functions
 
 let g:ycm_min_num_of_chars_for_completion=2
 
-                              " complete begin at the second character
+                               " complete begin at the second character
 
 "hightlight Pmenu ctermfg=15 ctermfg=0 guifg=#000000 guibg=#111100
 
