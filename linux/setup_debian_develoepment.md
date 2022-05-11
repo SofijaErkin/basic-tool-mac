@@ -21,3 +21,5 @@ file_template, [content_tree](https://gist.github.com/SofijaErkin/ae3505742a431c
 ## 7.[NERDTree](https://gist.github.com/SofijaErkin/ae3505742a431c343f54a9a995fd7e2b)
 
 ## 8.[YouCompleteMe](https://gist.github.com/SofijaErkin/9318ecb63460400c8b3876cce6c2bf25)
+
+## 9.[Color Plugins(for VIM)](https://gist.github.com/SofijaErkin/c380d13ce0725d134f073686a2eb994b)
