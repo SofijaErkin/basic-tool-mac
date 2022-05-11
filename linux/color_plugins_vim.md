@@ -1,5 +1,29 @@
 # Plugins for VIM
 
+## Indent Plugin for VIM
+
+Display differ indent while loop, condition occurs in code, recommend plugin
+
+`vim-indent-guides`, add the below to `~/.vimrc` to install and config:
+
+    Plugin 'nathanaelkane/vim-indent-guides'
+
+    " Auto-Start with VIM
+
+    let g:indent_guides_enable_on_vim_startup=1
+
+    " visually display indent from the second level
+
+    let g:indent_guides_start_level=2
+
+    " color block width
+
+    let g:indent_guides_guide_size=1
+
+    " use key i to start or terminal visualization
+
+    nmap <silent> <Leader>i <Plug>IndentGuidesToggle
+
 ## Color Plugins for VIM
 
 ### Main plugins
