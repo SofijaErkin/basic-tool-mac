@@ -78,7 +78,7 @@ let g:ycm_seed_identifiers_with_syntax = 1  " complete the key_words of syntax
 
 let g:ycm_complete_in_comments = 1
 
-let g:ycm_confirm_extra_conf = 0
+let g:ycm_confirm_extra_conf = 0  " close YCM during opeaning .ycm_extra_conf.py
 
 let g:ycm_key_list_select_completion = ['<c-n>', '<Down>']
 
@@ -163,6 +163,10 @@ nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
 let g:ycm_min_num_of_chars_for_completion=2
 
                                " complete begin at the second character
+
+let g:ycm_cache_omnifunc=0     " disable cache complete, occur new complete
+
+                               " tag every time
 
 "hightlight Pmenu ctermfg=15 ctermfg=0 guifg=#000000 guibg=#111100
 
