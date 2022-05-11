@@ -479,3 +479,5 @@ gcc>=8, clang>=7.
 [VIM Auto-Completer Hacker: YouCOmpleteMe(Chinese Blog)](https://www.daimajiaoliu.com/daima/471987fda9003f4).
 
 [VIM Auto-Complete Plugin: Install and Config YouCompleteMe](https://www.programminghunter.com/article/3917136126/).
+
+[Install VIM and Config Plugins](https://shengfazhu.github.io/2019/08/03/vim/).
