@@ -2,6 +2,28 @@
 
 This is used to notice syntax complete for C/C++ and Python.
 
+## Usage
+
+Ycm use `tab` to accept the completion, pushing `tab`at all time will
+
+right-handwise accept all the completion, pushing "`shift` + `tab`" will
+
+left-handwise accept the completion.
+
+Notice, We use console `VIM`on Debian, use `MacVim` on MacOS. So, We need to
+
+ set a new key mapping during using console `VIM`(Debian) because the console
+
+ will not transform "`shift` + `tab`" to that console `VIM`.
+
+Others, if we use plugin `ultisnaps`, there maybe have some conflicting key
+
+mapping, also, we need to set new key mapping again. Could use `ctrl` + `space`
+
+ to trigger completion, but there will be conflicted with the input method
+
+ editor, also, need to set key mapping.
+
 ## Deps
 
 ### Debian(Linux)
@@ -58,7 +80,7 @@ the downloaded `.ycm_extra_conf.py` under `~/.vim/bundle/YouCompleteMe/` is
 
 [here](https://gist.github.com/SofijaErkin/01223a0f96f28ed0d0f8e87eec9b2d78).
 
-#### Compile and Config on Debian
+#### Compile installing on Debian
 
     cd ~/.vim/bundle/YouCompleteMe
 
@@ -198,7 +220,7 @@ the downloaded `.ycm_extra_conf.py` under `~/.vim/bundle/YouCompleteMe/` is
 
 [there](https://gist.github.com/SofijaErkin/dfb17d47ea1700957a777ed5ffdd64e7).
 
-#### Compile and Config on MacOS
+#### Compile installing on MacOS
 
     cd ~/.vim/bundle/YouCompleteMe
 
@@ -340,6 +362,10 @@ don't know ruby-completer and perl-compiler) when calling `install.py`.
 
 Notice: [install Java JDK for macOS](https://mkyong.com/java/how-to-install-java-on-mac-osx/#homebrew-install-java-8-on-macos).
 
+### Config
+
+refer unit `YouCompleteMe` at [`~/.vimrc`](https://gist.github.com/SofijaErkin/83bd8ee7b75362d4c017ca33744b511a).
+
 ## [Config](https://itecnote.com/tecnote/c-vim-youcompleteme-configuration/)
 
 ## GoTo Defines
@@ -417,3 +443,5 @@ gcc>=8, clang>=7.
 [YouCompleteMe: a code-completion engine for Vim](https://github.com/ycm-core/YouCompleteMe#youcompleteme-a-code-completion-engine-for-vim).
 
 [Below are the instructions for installing YouCompleteMe on Mac OS X](https://gist.github.com/ChengLong/6208775).
+
+[Install and Config VIM auto-complete plugin YouCompleteMe(Chinese Blog)](https://www.i4k.xyz/article/yangkuanqaz85988/48886367).
