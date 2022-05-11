@@ -250,6 +250,14 @@ Plugin 'vim-scripts/phd'
 
 Plugin 'nathanaelkane/vim-indent-guides'  " indent Plugin
 
+Plugin 'scrooloose/nerdcommenter'  " Comment Plugin for VIM
+
+                                   " use shift + V to enter visual block status
+
+                                   " just use command leader + cc to comment
+
+                                   " just use command leader + cc to comment
+
 call vundle#end()                  " All of your Plugins must be added before
 
                                    " the following line required
