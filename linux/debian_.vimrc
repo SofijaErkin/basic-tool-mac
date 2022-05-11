@@ -48,6 +48,26 @@ set incsearch                   " show match points while the fuzzy search
 
 
 
+" Color idea for VIM via color plugins  
+
+set t_Co=256  " make color normally
+
+set background=dark
+
+" colorscheme solarized  " solarized is the better
+
+" the upstairs VIM command config need to come somewhere after
+
+" "call vundle#end()".
+
+" Also, we could chose the below two lines plugins
+
+"colorscheme molokai
+
+"colorscheme phd
+
+
+
 " NERDTree config
 
 map <F4> :NERDTreeToggle<CR> 
@@ -196,8 +216,26 @@ Plugin 'Valloric/YouCompleteMe'    " install YouCompleteMe, with autoupdate via
 
                                     " vundle
 
+Plugin 'altercation/vim-colors-solarized'
+
+                                   " color plugins, improve the color method of
+
+                                   " VIM, the main three color plugins: the
+
+                                   " upstairs and the below two line
+
+Plugin 'tomasr/molokai'
+
+Plugin 'vim-scripts/phd'
+
 call vundle#end()                  " All of your Plugins must be added before
 
                                    " the following line required
+
+"colorscheme solarized  " solarized is the better
+
+colorscheme molokai
+
+"colorscheme phd
 
 filetype plugin indent on          " required
