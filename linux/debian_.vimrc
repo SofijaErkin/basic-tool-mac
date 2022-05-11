@@ -112,6 +112,10 @@ let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/third_party/ycmd/.y
 
 let g:ycm_show_diagnostics_ui = 0  " disable the checkout syntax
 
+let g:ycm_error_symbol = '>>'  " config Ycm show >> during occuring error
+
+let g:ycm_warning_symbol = '>*'  " config Ycm show >* during occuring warning
+
 nnoremap <leader>gl :YcmCompleter GoToDeclaration<CR>
 
                                " jump into Declaration
@@ -126,11 +130,21 @@ nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
                                " declaration
 
-                               " Or Using the below vim command setting:
+                               " Or Using the below VIM command setting:
 
 "nnoremap <c-j> :YcmCompleter GoToDefinitionElseDeclaration<CR>|
 
                                " goto the define of the functions
+
+"nmap <F4> :YcmDiags<CR>
+
+                               " config VIM command :YcmDiags,
+
+                               " the upstairs VIM command opens the 
+                               
+                               " location-list to display error and warning,
+
+                               " but confliting with NERDTree hot-key
 
 let g:ycm_min_num_of_chars_for_completion=2
 
