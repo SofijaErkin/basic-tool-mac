@@ -106,7 +106,7 @@ let g:ycm_key_invoke_completion = '<M-;>'
 
                                " change hot-kay mapping about completing for C
 
-                               " functions, from Ctrl + space to ALT + ;
+                               " functions, from ctrl + space to ALT + ;
 
 let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/third_party/ycmd/.ycm_extra_conf.py'
 
@@ -123,6 +123,20 @@ nnoremap <leader>gl :YcmCompleter GoToDeclaration<CR>
 nnoremap <leader>gf :YcmCompleter GoToDefinition<CR>
 
                                " jump into Definition
+
+map <F6> :YcmCompleter GoTo<CR>  
+
+                               " mapping key_button F6 with the goTo function
+
+                               " of YouCompleteMe to jump into That 
+                                 
+                               " definition, use ctrl+o to goback
+
+" Notice: Ycm make jump GoTo enable via the jumplist of VIM
+
+" jump before command: ctrl+o
+
+" jump after command: ctrl+l
 
 nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
@@ -153,8 +167,6 @@ let g:ycm_min_num_of_chars_for_completion=2
 "hightlight Pmenu ctermfg=15 ctermfg=0 guifg=#000000 guibg=#111100
 
 " change the complete backcolor into vim's backcolor
-
-map <F6> :YcmCompleter GoTo<CR>  " mapping key_button F6 with the goTo function of YouCompleteMe
 
 
 
