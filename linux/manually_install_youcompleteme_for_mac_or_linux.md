@@ -50,17 +50,13 @@ the downloaded `.ycm_extra_conf.py` under `~/.vim/bundle/YouCompleteMe/` is
 
     python3 install.py --clang-completer --system-libclang
 
-the upstairs compiling configuration file `.ycm_extra_conf.py` liking this.
-
 Or
 
     python3 install.py --clang-completer
 
-the upstairs compiling configuration file `.ycm_extra_conf.py` liking [that](https://gist.github.com/SofijaErkin/7de23a66d70b7c6924fcd701423fdef7).
-
 the upstairs compiling installing command takes 3 minutes to compile installing.
 
-The compiling configuration file `.ycm_extra_conf.py` will be located under
+The compiling configuration file `.ycm_extra_conf.py` liking [that](https://gist.github.com/SofijaErkin/7de23a66d70b7c6924fcd701423fdef7) will be located under
 
  `~/.vim/bundle/YouCompleteMe/third_party/ycmd/`.
 
