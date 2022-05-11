@@ -480,4 +480,4 @@ gcc>=8, clang>=7.
 
 [VIM Auto-Complete Plugin: Install and Config YouCompleteMe](https://www.programminghunter.com/article/3917136126/).
 
-[Install VIM and Config Plugins](https://shengfazhu.github.io/2019/08/03/vim/).
+[Install VIM and Config Plugins(Including Clang-format)](https://shengfazhu.github.io/2019/08/03/vim/).
