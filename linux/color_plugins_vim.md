@@ -1,5 +1,27 @@
 # Plugins for VIM
 
+## Comment Plugin for VIM
+
+we need to comment code block sometimes, also, could insert comment symbol
+
+under "`visual block`" mode, just use plugin `nerdcommenter`this time,
+
+"`shift` + `V`" enter `visual block` mode, chose that needed comment code
+
+block, just use `leader + cc` to comment, and `leader + cu` to disable
+
+comment. Add the below to `~/.vimrc`
+
+    Plugin 'scrooloose/nerdcommenter'  " Comment Plugin for VIM
+
+                                       " use shift + V to enter visual block
+
+                                       " status, just use command leader + cc 
+
+                                       " to comment code block, use leader +
+
+                                       " cu to disable
+
 ## Indent Plugin for VIM
 
 Display differ indent while loop, condition occurs in code, recommend plugin
