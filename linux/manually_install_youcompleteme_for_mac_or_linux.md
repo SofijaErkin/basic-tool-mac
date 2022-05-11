@@ -390,9 +390,9 @@ add this to "`~/vimrc`":
 
 Ycm make jump GoTo enable via the jumplist of VIM:
 
-    jump before: Ctr+o
+    jump before command : ctrl+o
 
-    jump after: Ctrl+l
+    jump after command : ctrl+l
 
 ### Use command
 
