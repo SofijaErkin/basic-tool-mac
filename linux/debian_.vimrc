@@ -48,6 +48,26 @@ set incsearch                   " show match points while the fuzzy search
 
 
 
+" Indent Plugin for VIm
+
+" Auto-Start with VIM
+
+let g:indent_guides_enable_on_vim_startup=1
+
+" visually display indent from the second level
+
+let g:indent_guides_start_level=2
+
+" color block width
+
+let g:indent_guides_guide_size=1
+
+" use key i to start or terminal visualization
+
+nmap <silent> <Leader>i <Plug>IndentGuidesToggle
+
+
+
 " Color idea for VIM via color plugins  
 
 set t_Co=256  " make color normally
@@ -227,6 +247,8 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'tomasr/molokai'
 
 Plugin 'vim-scripts/phd'
+
+Plugin 'nathanaelkane/vim-indent-guides'  " indent Plugin
 
 call vundle#end()                  " All of your Plugins must be added before
 
