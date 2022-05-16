@@ -18,6 +18,8 @@ CentOS: yum;
 
 ## 4. Check dependence
 
+macOS:
+
     brew deps xxx -tree
 
 ## 5. Grep
@@ -28,6 +30,20 @@ To find out "python":
 
 ## 6. Upgrade
 
-To upgrade all the latest version:
+Debian To upgrade all the latest version:
 
     sudo apt update && sudo apt upgrade
+
+## 7. Search
+
+To search package on macOS/Debian:
+
+macOS:
+
+    brew search package
+
+Debian:
+
+    apt search package
+
+    apt-cache madison package
