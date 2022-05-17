@@ -18,6 +18,36 @@ Or [refer](https://gist.github.com/ffeu/6ffb75d8e8c7d92c0fbeb4b036599c33?permali
 
 ### for Git
 
+#### only format one
+
+only format the changed file(e.g:`.c` or `.h` or `.cpp`), format that changed
+
+code or changed commit using `git-clang-format`:
+
+    usage: git clang-format [OPTIONS] [<commit>] [<commit>] [--] [<file>...]
+
+Notice:
+
+there is best way to format that code during no changes and no commit.
+
+#### multiple format
+
+integrant format to version controller git, add the below to `.gitconfig`:
+
+    clang-format-cached = !git diff -U0 --no-color --relative --cached | clang-format-diff -p1 -i && git status
+
+    clang-format-head = !git diff -U0 --no-color --relative HEAD^ | clang-format-diff -p1 -i && git status
+
+`git clang-format-cached`: format the changed code under workspace;
+
+`git clang-format-head`: format the commit code under local repository;
+
+we could format code using hands, then checkout using format tool to push.
+
+#### auto-format machine
+
+refer: [git with clang-format to auto format(Chinese Blog)](https://www.swack.cn/wiki/001558681974020669b912b0c994e7090649ac4846e80b2000/001590369741968fd78cde7465845d3acc31c3e4a7f3d7d000).
+
 ### for VIM
 
 install clang-format via bundle for vim by adding the below to `~/.vimrc`
@@ -324,8 +354,10 @@ add this to `~/.vimrc`
 
 ## Refer
 
-[Install VIM and Config plugins(Chinese blog)](https://shengfazhu.github.io/2019/08/03/vim/).
+1.[Install VIM and Config plugins(Chinese blog)](https://shengfazhu.github.io/2019/08/03/vim/).
 
-[VSCode config clang-format and set auto-format during saving on MacBook (Chinese Blog)](https://www.daimajiaoliu.com/daima/479600735900402).
+2.[VSCode config clang-format and set auto-format during saving on MacBook (Chinese Blog)](https://www.daimajiaoliu.com/daima/479600735900402).
 
-[Install Tools: basic usage Clang-Format(Chinese Blog)](https://blog.csdn.net/weixin_39609623/article/details/102080465).
+3.[Install Tools: basic usage Clang-Format(Chinese Blog)](https://blog.csdn.net/weixin_39609623/article/details/102080465).
+
+4.[Usage GPS for clang-format](https://www.swack.cn/wiki/001558681974020669b912b0c994e7090649ac4846e80b2000/00158131059939952d487f8b3a6425fb6d945fa40a9aa7f000).
