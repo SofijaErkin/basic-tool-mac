@@ -1,5 +1,89 @@
 # Plugins for VIM
 
+## Clang format
+
+### for macOS or Debian
+
+macOS:
+
+maybe problem:
+
+1.input
+
+    cd /usr/local/bin && pwd && ls -al | grep "clang-format"
+
+output
+
+    clang-format -> ../Cellar/clang-format@5/5.0.2/bin/clang-format
+
+    git-clang-format -> ../Cellar/clang-format@5/5.0.2/bin/git-clang-format
+
+2.input
+
+    cd /usr/local/share/clang/ && pwd && ls -al | grep "clang-format"
+
+output
+
+    clang-format-bbedit.applescript
+
+    clang-format-diff.py
+
+    clang-format-sublime.py
+
+    clang-format-test.el
+
+    clang-format.el
+
+    clang-format.py
+
+3.input
+
+    cd /usr/local/Cellar && pwd && ls -al | grep "clang-format"
+
+output
+
+    clang-format@5
+
+4.input
+
+    clang-format --version
+
+output
+
+    clang-format version 5.0.2 (tags/RELEASE_502/final)
+
+5.input
+
+    brew install clang-format
+
+output
+
+    Error: The `brew link` step did not complete successfully
+
+    The formula built, but is not symlinked into /usr/local
+
+    Could not symlink bin/clang-format
+
+    Target /usr/local/bin/clang-format
+
+    is a symlink belonging to clang-format@5. You can unlink it:
+  
+      brew unlink clang-format@5
+
+    Possible conflicting files are:
+
+    /usr/local/bin/clang-format -> /usr/local/Cellar/clang-format@5/5.0.2/bin/clang-format
+
+    /usr/local/bin/git-clang-format -> /usr/local/Cellar/clang-format@5/5.0.2/bin/git-clang-format
+
+    Error: Could not symlink share/clang/clang-format-bbedit.applescript
+
+    Target /usr/local/share/clang/clang-format-bbedit.applescript
+
+    is a symlink belonging to clang-format@5. You can unlink it:
+  
+      brew unlink clang-format@5
+
 ## Comment Plugin for VIM
 
 we need to comment code block sometimes, also, could insert comment symbol
@@ -83,3 +167,5 @@ add this to `~/.vimrc`
 ## Refer
 
 [Install VIM and Config plugins(Chinese blog)](https://shengfazhu.github.io/2019/08/03/vim/).
+
+[VSCode config clang-format and set auto-format during saving on MacBook (Chinese Blog)](https://www.daimajiaoliu.com/daima/479600735900402).
