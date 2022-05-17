@@ -50,6 +50,8 @@ open the search engine of Setting, type `Format`, find out `Format on Save`,
 
 check out and pull down, check the box `☑️`.
 
+refer: VSCode config clang-format and set auto-format during saving on MacBook.
+
 ### for macOS or Debian
 
 #### for Debian
