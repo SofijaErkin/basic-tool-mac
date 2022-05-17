@@ -6,11 +6,7 @@
 
 ### for VSCode
 
-just use the extension `Clang-Format`, author `xaver`. store the configuration
-
- file of clang-format extension `.clang-format` at the same level with `.vs`,
-
- then just use hot-key mapping `Shift + ALT + F`.
+just use the extension `Clang-Format`, author `xaver`.
 
 Settings on VSCode: `User Status(Not Workspace) -> Clang-Format Configuration`,
 
@@ -24,7 +20,35 @@ Notice: during logo into remote machine, there will be need executable file
 
 for Fallback Style:`Google` or `google`,
 
-for Language > Apex: `Enable`,
+for Language > Apex: Enable: check out and pull down, check the box `☑️`.
+
+for Style: `file`.
+
+Store the configuration file of clang-format extension `.clang-format` at the
+
+ same level with `.vs`(under the root content of project).
+
+The configuration file of `clang-format`:
+
+    BasedOnStyle: google
+  
+    IndentWidth: 4
+
+    AccessModifierOffset: -3
+  
+    AllowAllParametersOfDeclarationOnNextLine: true
+  
+    BinPackParameters: false
+  
+    SortIncludes: false
+
+then just use hot-key mapping `Shift + ALT + F` to format the project files.
+
+Using auto-formatting during saving is the better way. Just use `command +`,
+
+open the search engine of Setting, type `Format`, find out `Format on Save`,
+
+check out and pull down, check the box `☑️`.
 
 ### for macOS or Debian
 
