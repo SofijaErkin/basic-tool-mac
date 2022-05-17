@@ -2,9 +2,25 @@
 
 ## Clang format
 
+### for VIM
+
+### for VSCode
+
+just use the extension `Clang-Format`, author `xaver`. store the configuration
+
+ file of clang-format extension `.clang-format` at the same level with `.vs`,
+
+ then just use hot-key mapping `Shift + ALT + F`.
+
 ### for macOS or Debian
 
-macOS:
+#### for Debian
+
+To install
+
+    sudo apt install clang-format
+
+#### for macOS
 
 maybe problem:
 
