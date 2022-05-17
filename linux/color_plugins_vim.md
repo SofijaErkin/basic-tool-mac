@@ -12,6 +12,74 @@ then just use key `esc` to enter `VIM` normal status, and use `VIM` command
 
  `:PluginInstall` to install plugin for `VIM`.
 
+Config via `~/vimrc`, add the below to `~/.vimrc` for macOS:
+
+    " use leader + f in NORMAL Model
+
+    map <leader>f :py3f  /usr/local/share/clang/clang-format.py<cr>
+
+    " use leader + f in INSERT Model
+
+    imap <leader>f <c-o>:py3f /usr/local/share/clang/clang-format.py<cr>
+
+    " set clang-format range to all file
+
+    function FormatFile()
+
+      let l:lines="all"
+
+      py3f /usr/local/Cellar/clang-format@5/5.0.2/share/clang/clang-format.py
+
+    endfunction
+
+    " Or Format during saving
+
+    "function! Formatonsave()
+
+    "  let l:formatdiff =1
+
+    "  py3f /usr/local/Cellar/clang-format@5/5.0.2/share/clang/clang-format.py
+
+    "autocmd BufWritePre *.h,*.cc,*.cpp call Formatonsave()
+
+    " auto format when leave INSERT Model
+
+    let g:clang_format#auto_format_on_insert_leave=1
+
+    " Comment about the two upstairs configuration for VIM
+
+    " changing pyf to py3f: because the default version of python on macOS
+
+    " is python2;
+
+    " let l:lines = "all": format all the code under this project
+
+    " let l:formatdiff = 1: only format for changing code
+
+    " if doing all the things does not work or if clang-format.py of
+
+    " clang-format@5.0 script in the macOS12.3.1 (clang-format-5.0) is not
+
+    " compatible with Python 3, then download the latest clang-format.py to
+    
+    " replace the default clang-format.py for clang-format@5.0, refer from
+
+    " https://stackoverflow.com/a/39781747/10846570
+
+    " the upstairs means that we should download the latest clang-format.py via
+    
+    " the below
+
+    " wget https://llvm.org/svn/llvm-project/cfe/trunk/tools/clang-format/clang-format.py
+
+    " Others,
+    
+    " clang-format-3.8.py is compatible with Python 2;
+
+    " clang-format-6.0.py is compatible with Python 3;
+
+    " I do know whether clang-format-5.0.py is compatible with Python 3 or not
+
 ### for VSCode
 
 just use the extension `Clang-Format`, author `xaver`.
@@ -38,7 +106,7 @@ Store the configuration file of clang-format extension `.clang-format` at the
 
 The configuration file of `clang-format`:
 
-    BasedOnStyle: google
+    BasedOnStyle: Google
   
     IndentWidth: 4
 
