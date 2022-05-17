@@ -1,6 +1,22 @@
 # Plugins for VIM
 
+## Optional software Settings
+
+just use clang-format for an example:
+
+    sudo update-alternatives --install /usr/local/bin/clang-format clang-format /usr/local/Cellar/clang-format@5/5.0.2/bin/clang-format 99
+
+    sudo update-alternatives --install /usr/local/bin/clang-format clang-format /usr/local/Cellar/clang-format/14.0.3/bin/clang-format 100 
+
+Or [refer](https://gist.github.com/ffeu/6ffb75d8e8c7d92c0fbeb4b036599c33?permalink_comment_id=2761559#gistcomment-2761559):
+
+    brew unlink clang-format@5
+
+    brew link clang-format
+
 ## Clang format
+
+### for Git
 
 ### for VIM
 
@@ -11,6 +27,10 @@ install clang-format via bundle for vim by adding the below to `~/.vimrc`
 then just use key `esc` to enter `VIM` normal status, and use `VIM` command
 
  `:PluginInstall` to install plugin for `VIM`.
+
+checkout file `clang-format.py` on debian:
+
+    dpkg -L clang-format | grep clang-format.py
 
 Config via `~/vimrc`, add the below to `~/.vimrc` for macOS:
 
@@ -104,7 +124,11 @@ Store the configuration file of clang-format extension `.clang-format` at the
 
  same level with `.vs`(under the root content of project).
 
-The configuration file of `.clang-format`:
+Copy the standard configuration of Google for `~/.clang-format`:
+
+    clang-format -style=google -dump-config > .clang-format
+
+or create by the configuration file of `.clang-format` by yourself :
 
     BasedOnStyle: Google
   
@@ -117,6 +141,8 @@ The configuration file of `.clang-format`:
     BinPackParameters: false
   
     SortIncludes: false
+
+the upstairs refer: [Clang 5 documentation->Clang-Format Style Options](https://releases.llvm.org/5.0.2/tools/clang/docs/ClangFormatStyleOptions.html).
 
 then just use hot-key mapping `Shift + ALT + F` to format the project files.
 
@@ -301,3 +327,5 @@ add this to `~/.vimrc`
 [Install VIM and Config plugins(Chinese blog)](https://shengfazhu.github.io/2019/08/03/vim/).
 
 [VSCode config clang-format and set auto-format during saving on MacBook (Chinese Blog)](https://www.daimajiaoliu.com/daima/479600735900402).
+
+[Install Tools: basic usage Clang-Format(Chinese Blog)](https://blog.csdn.net/weixin_39609623/article/details/102080465).
