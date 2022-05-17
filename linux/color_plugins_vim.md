@@ -104,7 +104,7 @@ Store the configuration file of clang-format extension `.clang-format` at the
 
  same level with `.vs`(under the root content of project).
 
-The configuration file of `clang-format`:
+The configuration file of `.clang-format`:
 
     BasedOnStyle: Google
   
