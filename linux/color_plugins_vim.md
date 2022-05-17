@@ -4,6 +4,14 @@
 
 ### for VIM
 
+install clang-format via bundle for vim by adding the below to `~/.vimrc`
+
+    Plugin 'rhysd/vim-clang-format'
+
+then just use key `esc` to enter `VIM` normal status, and use `VIM` command
+
+ `:PluginInstall` to install plugin for `VIM`.
+
 ### for VSCode
 
 just use the extension `Clang-Format`, author `xaver`.
