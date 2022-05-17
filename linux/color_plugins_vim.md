@@ -12,6 +12,20 @@ just use the extension `Clang-Format`, author `xaver`. store the configuration
 
  then just use hot-key mapping `Shift + ALT + F`.
 
+Settings on VSCode: `User Status(Not Workspace) -> Clang-Format Configuration`,
+
+for Executable(clang-format executable path): `/usr/local/bin/clang-format`,
+
+Notice: during logo into remote machine, there will be need executable file
+
+ liking `/bin/clang-format`, the configuration of clang-format on remote
+
+ machine is the same as the configuration for VSCode.
+
+for Fallback Style:`Google` or `google`,
+
+for Language > Apex: `Enable`,
+
 ### for macOS or Debian
 
 #### for Debian
