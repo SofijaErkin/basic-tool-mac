@@ -1,0 +1,18 @@
+---
+# refer
+# https://freebug.top/blog/2021/08/23/%E5%A4%9A%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83%E4%B8%8B%E7%9A%84clang-format%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/
+# Language: None, Cpp, Java, JavaScript, ObjC, 
+# Code style
+BasedOnStyle: Google
+# the widthe of indent
+IndentWidth: 4
+# the offset of accessing symbol(public, private...)
+AccessModifierOffset: -3
+# allow all the parameter of declaration function under one line 
+AllowAllParametersOfDeclarationOnNextLine: true
+# if the below false, that means all the bin parameters all stay in one line or
+# one parameter one line
+BinPackParameters: false
+# allow to sort the includes 
+SortIncludes: false
+...
