@@ -27,3 +27,7 @@ file_template, [content_tree](https://gist.github.com/SofijaErkin/ae3505742a431c
 ## 10.[Indent Plugin for VIM](https://gist.github.com/SofijaErkin/c380d13ce0725d134f073686a2eb994b#indent-plugin-for-vim)
 
 ## 11.[Comment Plugin for VIM](https://gist.github.com/SofijaErkin/c380d13ce0725d134f073686a2eb994b#comment-plugin-for-vim)
+
+## 12.Assistant command tree for Shell ls
+
+    sudo apt install tree
