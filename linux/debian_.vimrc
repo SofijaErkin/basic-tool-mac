@@ -258,6 +258,10 @@ Plugin 'scrooloose/nerdcommenter'  " Comment Plugin for VIM
 
                                    " just use command leader + cc to comment
 
+Plugin 'rhysd/vim-clang-format'    " Format Plugin for VIM to directly standard
+
+                                   " code format
+
 call vundle#end()                  " All of your Plugins must be added before
 
                                    " the following line required
