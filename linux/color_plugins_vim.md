@@ -174,6 +174,16 @@ Config via `~/.vimrc`, add the below to `~/.vimrc` for Debian:
 
     imap <C-I> <c-o>:py3f /usr/share/vim/addons/syntax/clang-format.py<cr>
 
+    " Or using the below four VIM command
+
+    " use leader + f in NORMAL Model
+
+    "map <leader>f :py3f  /usr/share/vim/addons/syntax/clang-format.py<cr>
+
+    " use leader + f in INSERT Model
+
+    "imap <leader>f <c-o>:py3f /usr/share/vim/addons/syntax/clang-format.py<cr>
+
     " Comment about the upstairs 
 
     " Change "C-I" to another binding if you need clang-format on a different
