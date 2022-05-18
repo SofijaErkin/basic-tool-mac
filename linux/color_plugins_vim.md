@@ -158,6 +158,8 @@ one was downloaded by `VIM` under `/usr/share/vim/addons/syntax/`, also another
 
  was downloaded by `Debian` under `/usr/share/clang/clang-format-11`.
 
+###### config Debian VIM configuration file
+
 Config via `~/.vimrc`, add the below to `~/.vimrc` for Debian:
 
     " refer
