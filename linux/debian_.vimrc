@@ -48,7 +48,123 @@ set incsearch                   " show match points while the fuzzy search
 
 
 
-" Indent Plugin for VIm
+" Format plugin for VIM
+
+" refer
+
+" https://mesos.readthedocs.io/en/0.23.1/clang-format/
+
+" mapping enables clang-format for NORMAL and VISUAL mode
+
+map <C-I> :py3f /usr/share/vim/addons/syntax/clang-format.py<cr>
+
+" mapping adds support for INSERT mode
+
+imap <C-I> <c-o>:py3f /usr/share/vim/addons/syntax/clang-format.py<cr>
+
+" Or using the below four VIM command
+
+" use leader + f in NORMAL Model
+
+"map <leader>f :py3f  /usr/share/vim/addons/syntax/clang-format.py<cr>
+
+" use leader + f in INSERT Model
+
+"imap <leader>f <c-o>:py3f /usr/share/vim/addons/syntax/clang-format.py<cr>
+
+" Comment about the upstairs 
+
+" Change "C-I" to another binding if you need clang-format on a different
+
+" key (C-I stands for Ctrl+i)
+
+" With this integration you can press the bound key and clang-format will
+    
+" format the current line in NORMAL and INSERT mode or the selected region
+
+" in VISUAL mode. The line or region is extended to the next bigger
+    
+" syntactic entity.
+
+" refer
+
+" https://shengfazhu.github.io/2019/08/03/vim/
+
+" to format the full file
+
+function FormatFile()
+
+  let l:lines="all"
+
+  py3f /usr/share/clang/clang-format-11/clang-format.py/clang-format.py
+
+endfunction
+
+" Comment the upstairs
+
+" You can also pass in the variable "l:lines" to choose the range for
+
+" formatting. This variable can either contain "<start line>:<end line>"
+
+" refer 
+
+" https://blog.csdn.net/weixin_39609623/article/details/102080465
+
+"  or "all" to format the full file. 
+    
+"function! Formatonsave()
+
+"  let l:formatdiff =1
+
+"   py3f /usr/share/clang/clang-format-11/clang-format.py/clang-format.py
+
+"endfunction
+
+"autocmd BufWritePre *.h,*.cc,*.cpp call Formatonsave()
+
+" auto format when leave INSERT Model
+
+let g:clang_format#auto_format_on_insert_leave=1
+
+" Comment about the two upstairs configuration for VIM
+
+" changing pyf to py3f: because the default version of python on Debian
+
+" is python2;
+
+" let l:lines = "all": format all the code under this project
+
+" let l:formatdiff = 1: only format for changing code
+
+" if doing all the things does not work or if clang-format.py of
+
+" clang-format@11.0 script in the Debian11 (clang-format-11.0) is not
+
+" compatible with Python 3, then download the latest clang-format.py to
+    
+" replace the default clang-format.py for clang-format@11.0, refer from
+
+" https://stackoverflow.com/a/39781747/10846570
+
+" the upstairs means that we should download the latest clang-format.py via
+    
+" the below
+
+" wget https://llvm.org/svn/llvm-project/cfe/trunk/tools/clang-format/clang-format.py
+
+" Others,
+    
+" clang-format-3.8.py is compatible with Python 2;
+
+" clang-format-4.0.py is compatible with Python 3; 
+
+" clang-format-6.0.py is compatible with Python 3;
+
+" I do know whether clang-format-11.0.py is compatible with Python 3 or not
+
+
+
+" Indent Plugin for VIM
 
 " Auto-Start with VIM
 
