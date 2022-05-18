@@ -46,7 +46,7 @@ we could format code using hands, then checkout using format tool to push.
 
 #### auto-format machine
 
-refer: [git with clang-format to auto format(Chinese Blog)](https://www.swack.cn/wiki/001558681974020669b912b0c994e7090649ac4846e80b2000/001590369741968fd78cde7465845d3acc31c3e4a7f3d7d000).
+refer: [git with clang-format to auto format(Chinese Blog)].
 
 ### for VIM
 
@@ -58,9 +58,211 @@ then just use key `esc` to enter `VIM` normal status, and use `VIM` command
 
  `:PluginInstall` to install plugin for `VIM`.
 
-checkout file `clang-format.py` on debian:
+#### config VIM on Debian
+
+##### find out clang-format and clang-format configuration file
+
+###### find out clang-format file
+
+checkout file `clang-format`:
+
+   where clang-format && which clang-format && whereis clang-format
+
+on my Debian shows:
+
+    /usr/bin/clang-format
+
+    /bin/clang-format
+
+continue check out the upstairs two directory:
+
+input:
+
+    cd /usr/bin/ && pwd && ls -al | grep "clang-format"
+
+output:
+
+    /usr/bin/clang-format -> clang-format-11-> ../lib/llvm-11/bin/clang-format
+
+continue input:
+
+    cd /bin && pwd && ls -al | grep "clang-format"
+
+continue output:
+
+    /bin/clang-format -> clang-format-11-> ../lib/llvm-11/bin/clang-format
+
+then check `../lib/llvm-11/bin/`:
+
+then input
+
+    cd /usr/lib/llvm-11/bin/ && pwd && ls -al | grep "clang-format"
+
+then output
+
+    /usr/lib/llvm-11/bin/clang-format
+
+All in all, `clang-format-11.0`:
+
+the `clang-format` was downloaded under `/usr/lib/llvm-11/bin/`
+
+with it's soft link `clang-format` under `/usr/bin/` and another soft link
+
+`clang-format` under `/bin/` on Debian, and it's version is `11.0`.
+
+###### find out clang-format configuration file
+
+just use the below:
 
     dpkg -L clang-format | grep clang-format.py
+
+and the upstairs output:
+
+    /usr/share/vim/addons/syntax/clang-format.py
+
+continue search under `/usr/share/vim/addons/syntax/`:
+
+input
+
+    cd /usr/share/vim/addons/syntax/ && pwd && ls -al | grep "clang-format"
+
+output
+
+    /usr/share/vim/addons/syntax/clang-format.py -> clang-format-11.py
+
+others use this command to check out clang-format configuration file again:
+
+then input
+
+    find / -name "clang-format.py"
+
+then output
+
+    /usr/share/vim/addons/syntax/clang-format.py
+
+    /usr/share/clang/clang-format-11/clang-format.py 
+
+finally enter `/usr/share/clang/clang-format-11` to find out:
+
+finally input
+
+    cd /usr/share/clang/clang-format-11 && pwd && ls -al | grep "clang-format"
+
+finally output
+
+    /usr/share/clang/clang-format-11/clang-format.py 
+
+In conclude, the `clang-format` configuration files `clang-format-11.0.py`:
+
+one was downloaded by `VIM` under `/usr/share/vim/addons/syntax/`, also another
+
+ was downloaded by `Debian` under `/usr/share/clang/clang-format-11`.
+
+Config via `~/.vimrc`, add the below to `~/.vimrc` for Debian:
+
+    " refer
+
+    " https://mesos.readthedocs.io/en/0.23.1/clang-format/
+
+    " mapping enables clang-format for NORMAL and VISUAL mode
+
+    map <C-I> :py3f /usr/share/vim/addons/syntax/clang-format.py<cr>
+
+    " mapping adds support for INSERT mode
+
+    imap <C-I> <c-o>:py3f /usr/share/vim/addons/syntax/clang-format.py<cr>
+
+    " Comment about the upstairs 
+
+    " Change "C-I" to another binding if you need clang-format on a different
+
+    " key (C-I stands for Ctrl+i)
+
+    " With this integration you can press the bound key and clang-format will
+    
+    " format the current line in NORMAL and INSERT mode or the selected region
+
+    " in VISUAL mode. The line or region is extended to the next bigger
+    
+    " syntactic entity.
+
+    " refer
+
+    " https://shengfazhu.github.io/2019/08/03/vim/
+
+    " to format the full file
+
+    function FormatFile()
+
+      let l:lines="all"
+
+      py3f /usr/share/clang/clang-format-11/clang-format.py/clang-format.py
+
+    endfunction
+
+    " Comment the upstairs
+
+    " You can also pass in the variable "l:lines" to choose the range for
+
+    " formatting. This variable can either contain "<start line>:<end line>"
+
+    " refer 
+
+    " https://blog.csdn.net/weixin_39609623/article/details/102080465
+
+    "  or "all" to format the full file. 
+    
+    "function! Formatonsave()
+
+    "  let l:formatdiff =1
+
+    "   py3f /usr/share/clang/clang-format-11/clang-format.py/clang-format.py
+
+    "endfunction
+
+    "autocmd BufWritePre *.h,*.cc,*.cpp call Formatonsave()
+
+    " auto format when leave INSERT Model
+
+    let g:clang_format#auto_format_on_insert_leave=1
+
+    " Comment about the two upstairs configuration for VIM
+
+    " changing pyf to py3f: because the default version of python on Debian
+
+    " is python2;
+
+    " let l:lines = "all": format all the code under this project
+
+    " let l:formatdiff = 1: only format for changing code
+
+    " if doing all the things does not work or if clang-format.py of
+
+    " clang-format@11.0 script in the Debian11 (clang-format-11.0) is not
+
+    " compatible with Python 3, then download the latest clang-format.py to
+    
+    " replace the default clang-format.py for clang-format@11.0, refer from
+
+    " https://stackoverflow.com/a/39781747/10846570
+
+    " the upstairs means that we should download the latest clang-format.py via
+    
+    " the below
+
+    " wget https://llvm.org/svn/llvm-project/cfe/trunk/tools/clang-format/clang-format.py
+
+    " Others,
+    
+    " clang-format-3.8.py is compatible with Python 2;
+
+    " clang-format-4.0.py is compatible with Python 3; 
+
+    " clang-format-6.0.py is compatible with Python 3;
+
+    " I do know whether clang-format-11.0.py is compatible with Python 3 or not
+
+#### config VIM on macOS
 
 Config via `~/vimrc`, add the below to `~/.vimrc` for macOS:
 
@@ -89,6 +291,8 @@ Config via `~/vimrc`, add the below to `~/.vimrc` for macOS:
     "  let l:formatdiff =1
 
     "  py3f /usr/local/Cellar/clang-format@5/5.0.2/share/clang/clang-format.py
+
+    "endfunction
 
     "autocmd BufWritePre *.h,*.cc,*.cpp call Formatonsave()
 
@@ -125,6 +329,8 @@ Config via `~/vimrc`, add the below to `~/.vimrc` for macOS:
     " Others,
     
     " clang-format-3.8.py is compatible with Python 2;
+
+    " clang-format-4.0.py is compatible with Python 3; 
 
     " clang-format-6.0.py is compatible with Python 3;
 
