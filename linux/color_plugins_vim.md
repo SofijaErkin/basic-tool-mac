@@ -295,7 +295,7 @@ showing
 And the clang-format@5.0 soft link create configuration file `clang-format.py`
 
  under `/usr/local/share/clang/`, with linking to
- 
+
  `/usr/local/Cellar/clang-format@5/5.0.2/share/clang/clang-format.py`.
 
 Config via `~/vimrc`, add the below to `~/.vimrc` for macOS:
