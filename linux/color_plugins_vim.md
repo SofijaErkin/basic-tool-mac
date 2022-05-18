@@ -264,6 +264,40 @@ Config via `~/.vimrc`, add the below to `~/.vimrc` for Debian:
 
 #### config VIM on macOS
 
+If you have installed clang-format via brew, the `clang-format` has been
+
+downloaded under `/usr/local/Cellar/clang-format@5/`, with it's executable file
+
+`clang-format` under `/usr/local/Cellar/clang-format@5/5.0.2/bin/clang-format`,
+
+with it's configuration file `clang-format.py` under
+
+`/usr/local/Cellar/clang-format@5/5.0.2/share/clang/clang-format.py`.
+
+Also, the `clang-format@5.0` will create soft link executable file
+
+`clang-format` under `/usr/local/bin/`, that's why while I check where the
+
+clang-format is no matter using `where clang-format` or which `clang-format`
+
+or even `whereis clang-format`, that always shows `/usr/local/bin/`.
+
+If you want to check where soft link `/usr/local/bin/clang-format` linked to?
+
+Just use the command to check
+
+`cd /usr/local/bin/ && pwd && ls -al | grep "clang-format"`, liking mine
+
+showing
+
+`/usr/local/bin/clang-format -> ../Cellar/clang-format@5/5.0.2/bin/clang-format`.
+
+And the clang-format@5.0 soft link create configuration file `clang-format.py`
+
+ under `/usr/local/share/clang/`, with linking to
+ 
+ `/usr/local/Cellar/clang-format@5/5.0.2/share/clang/clang-format.py`.
+
 Config via `~/vimrc`, add the below to `~/.vimrc` for macOS:
 
     " use leader + f in NORMAL Model
