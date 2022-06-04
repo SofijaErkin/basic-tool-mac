@@ -94,7 +94,7 @@ also try
 
     xcodebuild --help
 
-but new Problem:
+but [new Problem](https://stackoverflow.com/questions/17980759/xcode-select-active-developer-directory-error):
 
     xcode-select: error: tool 'xcodebuild' requires Xcode, but active developer directory '/Library/Developer/CommandLineTools' is a command line tools instance
 
