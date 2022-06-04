@@ -86,17 +86,19 @@ another try
 
     sudo xcode-select -s /Library/Developer/CommandLineTools
 
+maybe the upstairs fixed the problem.
+
 and download the "Command Line tools" for Xcode `13.3.1` or `13.4` or `13.4.1`
 
 also try
 
     xcodebuild --help
 
-but
+but new Problem:
 
     xcode-select: error: tool 'xcodebuild' requires Xcode, but active developer directory '/Library/Developer/CommandLineTools' is a command line tools instance
 
-Not know whether it fixed!
+Fixed.
 
 while type `"vim xxx"`, then:
 
