@@ -2,7 +2,7 @@
 
 Update 10 05 2022 AM 01:19 EST
 
-New Trouble:
+[New Trouble](https://stackoverflow.com/questions/71954487/xcodebuild-error-requested-but-didnt-find-extension-point-with-identifier):
 
 while new log into terminal:
 
@@ -12,19 +12,41 @@ while new log into terminal:
 
     Xcode.IDEKit.ExtensionSentinelHostApplications for extension
 
-    Xcode.DebuggerFoundation.AppExtension
-
-    Hosts.watchOS of plug-in com.apple.dt.IDEWatchSupportCore
+    Xcode.DebuggerFoundation.AppExtensionHosts.watchOS 
+    
+    of plug-in com.apple.dt.IDEWatchSupportCore
 
     xcodebuild[1285:7402]
 
-    Requested but did not find extension point with identifier Xcode.IDEKit.Extension
+    Requested but did not find extension point with identifier 
+    
+    Xcode.IDEKit.ExtensionPointIdentifierToBundleIdentifier for extension
 
-    PointIdentifierToBundleIdentifier for extension
+    Xcode.DebuggerFoundation.AppExtensionToBundleIdentifierMap.watchOS 
+    
+    of plug-in com.apple.dt.IDEWatchSupportCore
 
-    Xcode.DebuggerFoundation.AppExtension
+Or
 
-    ToBundleIdentifierMap.watchOS of plug-in com.apple.dt.IDEWatchSupportCore
+    xcodebuild[1395:9112]
+
+    Requested but did not find extension point with identifier
+
+    Xcode.IDEKit.ExtensionSentinelHostApplications for extension
+
+    Xcode.DebuggerFoundation.AppExtensionHosts.watchOS 
+    
+    of plug-in com.apple.dt.IDEWatchSupportCore
+
+    xcodebuild[1395:9112]
+
+    Requested but did not find extension point with identifier
+
+    Xcode.IDEKit.ExtensionPointIdentifierToBundleIdentifier for extension 
+    
+    Xcode.DebuggerFoundation.AppExtensionToBundleIdentifierMap.watchOS
+
+    of plug-in com.apple.dt.IDEWatchSupportCore
 
 Not fix!
 
