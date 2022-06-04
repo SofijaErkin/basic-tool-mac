@@ -403,3 +403,23 @@ Also, comment your source deb.
 Fixed.
 
     sudo nano sources.list
+
+## 11. [Problem H](https://forums.virtualbox.org/viewtopic.php?t=92632#wrap)
+
+    VirtualBox-Error
+
+    You must specify a machine to start, using command line.
+
+    Usage:VirtualBoxVM --startvm <name|UUID>
+
+    Starts the VirtualBox virtual machine with the given ame or unique identifier(UUID).
+
+To fix.
+
+Go to the OSX System Preferences » Users & Groups » select your account »
+
+Login Items tab (on the right).
+
+Select the automatically item named `VirtualBoxVM`, then click the minus
+
+button `-`, then quit the "OSX System Preferences".
