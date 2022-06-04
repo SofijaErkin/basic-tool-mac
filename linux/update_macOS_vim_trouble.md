@@ -48,7 +48,39 @@ Or
 
     of plug-in com.apple.dt.IDEWatchSupportCore
 
-Not fix!
+Try to fix!
+
+try to  install the Xcode command line tools
+
+    xcode-select --install
+
+but
+
+    xcode-select: error: command line tools are already installed, use "Software Update" to install updates
+
+continue
+
+    softwareupdate --install
+
+but
+
+    Software Update Tool
+
+nothing was installed.
+
+another try
+
+    softwareupdate -d -a
+
+but
+
+    Software Update Tool
+
+    Finding available software
+
+    No updates are available.
+
+Not fixed!
 
 while type `"vim xxx"`, then:
 
