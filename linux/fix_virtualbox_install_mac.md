@@ -34,7 +34,7 @@ luxury and too expensive. Got down on my knees, VirtualBox.
 
 9.[MacOS install Linux using Virtual machine(VirtualBox) (Chinese)](https://zhuanlan.zhihu.com/p/109808506).
 
-## 1. Problem A
+## 1. [Problem A](https://stackoverflow.com/questions/52689672/virtualbox-ns-error-failure-0x80004005-macos)
 
 display output:
 
