@@ -4,6 +4,8 @@ Update 10 05 2022 AM 01:19 EST
 
 [New Trouble](https://stackoverflow.com/questions/71954487/xcodebuild-error-requested-but-didnt-find-extension-point-with-identifier):
 
+fix refer [here](https://developer.apple.com/forums/thread/703233).
+
 while new log into terminal:
 
     xcodebuild[1285:7402]
