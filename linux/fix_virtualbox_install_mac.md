@@ -64,7 +64,9 @@ click `apple` logo, select "`System Preferences`", chose "`Security & Privacy`"
 
 or check that mark on the right of the upstairs showing news. Then, restart
 
-mac.
+mac. Then, I just remove the named item `default` that below the `Tools` on
+
+the "Oracle VM VirtualBox Manager".
 
 ## 2. Problem B
 
