@@ -52,7 +52,7 @@ This is because:
 
 After installing `Virtual Box`, first grant "`VirtualBox`" APP
 
-permissions, then restart mac.
+permissions, then restart/reboot mac.
 
 So,
 
