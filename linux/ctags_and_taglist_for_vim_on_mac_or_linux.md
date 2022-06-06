@@ -14,12 +14,4 @@ So, we need to install the other ctags called `exuberant-ctags`(Debian) or
 
 ## install ctags and taglist
 
-### ctags and taglist on Debian
-
-### ctags and taglist on MacOS
-
 ## refer
-
-### refer for Linux(Debian)
-
-### refer for MacOS
