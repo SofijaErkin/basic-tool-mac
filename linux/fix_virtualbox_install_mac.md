@@ -312,6 +312,12 @@ Or
 
 Fixed.
 
+Update June 5 2022 EST 10:24PM
+
+Or maybe you should reconnect the network! Please adjust the connection of
+
+network.
+
 Need to change ["`Sources List Generator for Debian`"](https://debgen.xyz/).
 
     cd /etc/apt/ && sudo nano sources.list
