@@ -1,6 +1,6 @@
 # Plugins for VIM
 
-## Optional software Settings
+## Optional tools software choosing settings
 
 just use clang-format for an example:
 
