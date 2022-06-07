@@ -114,6 +114,30 @@ Move to the next same tags/goes to the next tag in that list:
 
     :tn
 
+Move to the previous tags/goes to the previous tag in that list:
+
+    :tprev
+    
+    "Or 
+    
+    :tp
+
+Move to the last tags/ goes to the function which is in the last of the list:
+
+    :tlast
+    
+    "Or
+    
+    :tl
+
+Move to the first tags/goes to the function which is in the first of the list:
+
+    :tfirst
+
+    "Or
+
+    :tf
+
 To select a particular tag from a list of tags after opening the source code
 
 file/shows the list, use the following command:
