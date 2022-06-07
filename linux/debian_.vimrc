@@ -378,6 +378,10 @@ Plugin 'rhysd/vim-clang-format'    " Format Plugin for VIM to directly standard
 
                                    " code format
 
+Plugin 'https://github.com/vim-scripts/taglist.vim.git'
+
+                                   " taglist plugin for VIM
+
 call vundle#end()                  " All of your Plugins must be added before
 
                                    " the following line required
