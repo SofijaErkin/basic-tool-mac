@@ -14,6 +14,42 @@ So, we need to install the other ctags called `exuberant-ctags`(Debian) or
 
 ## install ctags and taglist
 
+### usage taglist
+
+Call/open Taglist window: `:Tlist`, `:TlistOpen`, `:TlistToggle`;
+
+Close Taglist window: `:Tlist`, `:TlistClose`, `q`;
+
+Switch the left/right window: `Ctrl` + `ww`;
+
+Navigate to function definition from Taglist window: `Ctrl` + `]`;
+
+Returning back again to function tag from definition: `Ctrl` + `o`;
+
+Navigate to cursor location: `<CR>`;
+
+Display cursor's tags on New opening window: `o`;
+
+Show the beta definition of current cursor tag: `<Space>`;
+
+Update the tags on Taglist window: `u`;
+
+Change sort method between name and occur: `s`;
+
+Make big or small Taglist window: `x`;
+
+Open an fold tag: `zo`, `+`;
+
+Fold an tag: `zc`, `-`;
+
+Open all fold: `zR`, `*`;
+
+Jump to the previous file: `[[`;
+
+Jump to the next file: `]]`;
+
+Help tag document: `<F1>`.
+
 ### install taglist
 
 Pre-Requisite: `ctags` should be installed to use `taglist` plugin. But it is
@@ -170,61 +206,29 @@ Nothing could be better!
 
 Locate to target tags, search tags/goto tags definition using tag command:
 
-    vi -t tag-name
+`vi -t tag-name`, `:ta tag-name`, `:tag tag-name`;
 
-    :ta tag-name
+Find tags using search pattern: `: /tag-name`;
 
-    :tag tag-name
+Move to the next same tags/goes to the next tag in that list: `:tnext`, `:tn`;
 
-Find tags using search pattern:
+Move to the previous tags/goes to the previous tag in that list: `:tprev`,
 
-    : /tag-name
-
-Move to the next same tags/goes to the next tag in that list:
-
-    :tnext
-
-    "Or
-
-    :tn
-
-Move to the previous tags/goes to the previous tag in that list:
-
-    :tprev
-    
-    "Or 
-    
-    :tp
+`:tp`;
 
 Move to the last tags/ goes to the function which is in the last of the list:
 
-    :tlast
-    
-    "Or
-    
-    :tl
+`:tlast`, `:tl`;
 
 Move to the first tags/goes to the function which is in the first of the list:
 
-    :tfirst
-
-    "Or
-
-    :tf
+`:tfirst`, `:tf`;
 
 To select a particular tag from a list of tags after opening the source code
 
-file/shows the list, use the following command:
+file/shows the list, use the following command: `:tselect`, `:ts`;
 
-    :tselect
-
-    "Or
-
-    :ts
-
-Show the current tags information:
-
-    :tags
+Show the current tags information: `:tags`;
 
 Navigate to the definition of tag from `function call`: `ctrl` + `]`, that
 
@@ -238,7 +242,7 @@ Navigate return back again to the function call from the definition using:
 
 Navigate through a list of function names which has the similar names, e.g:
 
-    :ta /^get
+`:ta /^get`;
 
 `:ta` will go to the function definition whose name starts with `get`, and also
 
