@@ -14,6 +14,36 @@ So, we need to install the other ctags called `exuberant-ctags`(Debian) or
 
 ## install ctags and taglist
 
+### install taglist
+
+Pre-Requisite: `ctags` should be installed to use `taglist` plugin. But it is
+
+ not a must to generate the tag list manually by `ctags` command for using
+
+`taglist` plugin.
+
+I just use vundle manager to install taglist plugin here, adding the below to
+
+`~/.vimrc`:
+
+    Plugin 'https://github.com/vim-scripts/taglist.vim.git'
+
+                                       " taglist plugin for VIM
+
+And Do not forget the below to add the `~/.vimrc`:
+
+    filetype plugin indent on          " required
+
+                                       " taglist plugin relies on the Vim "filetype"
+
+                                       " determine the type of the current file.
+
+                                       " We have to turn on the Vim filetype
+
+                                       " detection. e.g: filetype on
+
+                                       " , Or: filetype plugin on
+
 ### install ctags
 
 #### ctags On Debian
