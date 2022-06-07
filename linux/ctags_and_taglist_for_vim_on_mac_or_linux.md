@@ -76,6 +76,8 @@ in `~/.vimrc`.
 
                                 " connect taglist with ctags
 
+    "map t :TlistToggle              " (hot-key)Leader + t: call or close taglist
+
     "map <F2> :TlistToggle<CR>
 
     "map <F3> :TlistOpen<CR>
