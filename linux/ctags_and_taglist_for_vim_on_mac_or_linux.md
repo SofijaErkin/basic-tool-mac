@@ -14,8 +14,28 @@ So, we need to install the other ctags called `exuberant-ctags`(Debian) or
 
 ## install ctags and taglist
 
-On Debian, just use this to download and install the need `ctags`,
+On Debian
+
+Just use this to download and install the need `ctags`(`exuberant-ctags`),
 
     sudo apt install ctags
+
+and you will get:
+
+    Reading package lists... Done
+
+    Building dependency tree... Done
+
+    Reading state information... Done
+
+    Package ctags is a virtual package provided by:
+  
+      universal-ctags 0+git20200824-1.1
+  
+      exuberant-ctags 1:5.9~svn20110310-14
+
+    You should explicitly select one to install.
+
+    E: Package 'ctags' has no installation candidate
 
 ## refer
