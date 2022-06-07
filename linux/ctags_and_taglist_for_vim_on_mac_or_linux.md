@@ -38,4 +38,12 @@ and you will get:
 
     E: Package 'ctags' has no installation candidate
 
+then using the suggestion,
+
+    sudo apt install exuberant-ctags
+
+and checkout the version of `ctags`:
+
+    ctags --version
+
 ## refer
