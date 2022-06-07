@@ -82,6 +82,12 @@ in `~/.vimrc`.
 
     "map <F3> :TlistOpen<CR>
 
+After all settings finish, just use `:wq` to save and quit `~/.vimrc`, exit
+
+and restart/reboot `VIM`, use `:Tlist` or `:TlistOpen` or `TlistToggle` or
+
+hot-key `Leader` + `t` to call tagslist.
+
 ### install ctags
 
 #### ctags On Debian
