@@ -114,6 +114,10 @@ in `~/.vimrc`.
 
     " taglist
 
+    set mouse=a                     " always use mouse
+
+    let Tlist_Use_SingleClick=1     " enable single click tags goto definition 
+
     let Tlist_Exit_OnlyWindow = 1   " exit the VIM while taglist window be the last
 
     let Tlist_Use_Right_Window =1   " let taglist display on the right window
