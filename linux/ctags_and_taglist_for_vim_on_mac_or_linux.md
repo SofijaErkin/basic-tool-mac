@@ -14,7 +14,9 @@ So, we need to install the other ctags called `exuberant-ctags`(Debian) or
 
 ## install ctags and taglist
 
-On Debian
+### install ctags
+
+#### ctags On Debian
 
 Just use this to download and install the need `ctags`(`exuberant-ctags`),
 
@@ -51,5 +53,19 @@ The Debian will install `exuberant-ctags` under `/usr/bin/`, and will create
 soft link `ctags` under `/etc/alternatives/`, also, that `ctags` under
 
 `/usr/bin` will link to `/etc/alternatives/ctags`.
+
+Then go to the directory where your source code is located. I have stored all
+
+my programming source code under ~/my_project_debian directory.
+
+    cd && mkdir my_project_debian && pwd && ls -a 
+
+    cd my_project_debian && pwd && ls -al
+
+    ctags -R *
+
+The ctags command will create a filename `tags` the will contain all required
+
+information (`tags`) about the all typed program files.
 
 ## refer
