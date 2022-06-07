@@ -68,4 +68,18 @@ The ctags command will create a filename `tags` the will contain all required
 
 information (`tags`) about the all typed program files.
 
+Finally, add the `tags` file into `~/.vimrc` to auto load the `tags` under
+
+project once `VIM` reboot/start.
+
+    cd && vim ~/.vimrc      
+    
+    set tags += /home/my_debian_user_name/my_project_debian  
+
+Or
+
+    cd && vim ~/.vimrc      
+    
+    set tags = /home/my_debian_user_name/my_project_debian/tags
+
 ## refer
