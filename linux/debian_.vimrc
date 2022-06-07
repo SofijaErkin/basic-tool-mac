@@ -46,7 +46,7 @@ let Tlist_File_Fold_Auto_Close = 1
 
                                 " tagslist only display the current file's tag
 
-                                " and indent the onther files tags
+                                " and indent the other files tags
 
 let Tlist_Show_One_File = 1     " only display one file's tag
 
