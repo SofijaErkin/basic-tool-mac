@@ -393,3 +393,13 @@ colorscheme molokai
 "colorscheme phd
 
 filetype plugin indent on          " required
+
+                                   " taglist plugin relies on the Vim "filetype"
+
+                                   " determine the type of the current file.
+
+                                   " We have to turn on the Vim filetype
+
+                                   " detection. e.g: filetype on
+
+                                   " , Or: filetype plugin on
