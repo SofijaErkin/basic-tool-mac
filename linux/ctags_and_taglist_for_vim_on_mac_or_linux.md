@@ -92,4 +92,18 @@ and that added to `~/.vimrc` should be:
 
 Nothing could be better!
 
+### Usage ctags
+
+Locate to target tags, search tags/goto tags definition using tag command:
+
+    vi -t tag-name
+
+    :ta tag-name
+
+    :tag tag-name
+
+Find tags using search pattern:
+
+    : /tag-name
+
 ## refer
