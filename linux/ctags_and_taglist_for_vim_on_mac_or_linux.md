@@ -46,7 +46,7 @@ And Do not forget the below to add the `~/.vimrc`:
 
 Also, we need to config the taglist plugin for `VIM`, just add the below config
 
-below the line of `filetype on` in `~/.vimrc`.
+in `~/.vimrc`.
 
     " taglist
 
