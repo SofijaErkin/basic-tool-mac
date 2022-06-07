@@ -50,6 +50,14 @@ Jump to the next file: `]]`;
 
 Help tag document: `<F1>`.
 
+After all, there is yes need to using mouse on `VIM`, just add the code to
+
+`~/.vimrc`: `set mouse=a  " always use mouse`; or navigate to go to the
+
+definition via setting single click tag adding the code to `~/.vimrc`:
+
+`let Tlist_Use_SingleClick=1`.
+
 ### install taglist
 
 Pre-Requisite: `ctags` should be installed to use `taglist` plugin. But it is
@@ -261,3 +269,5 @@ builds a list to navigate with the relevant functions.
 5.[Install usage ctags and taglist on VIM(Chinese Blog)](https://blog.csdn.net/baidu_35679960/article/details/79111140).
 
 6.[Config Taglist in VIM(Chinese Blog)](https://xiaozhou.net/install_taglist_for_vim-2013-05-26.html).
+
+7.[Teacher book: Install Taglist for VIM(Chinese Blog)](https://blog.csdn.net/weixin_39846515/article/details/79208933).
