@@ -125,3 +125,13 @@ file/shows the list, use the following command:
     :ts 
 
 ## refer
+
+1.[Integrating Vim with ctags](https://linuxhint.com/integrating_vim_ctags/).
+
+2.[Ctags and Taglist: Convert Vim Editor to Beautiful Source Code Browser for Any Programming Language](https://www.thegeekstuff.com/2009/04/ctags-taglist-vi-vim-editor-as-sourece-code-browser/).
+
+3.[taglist.vim : Source code browser](https://www.vim.org/scripts/script.php?script_id=273).
+
+4.[Adding Exuberant CTag support to VIM](https://gist.github.com/lancebecker/1428183).
+
+5.[Install usage ctags and taglist on VIM(Chinese Blog)](https://blog.csdn.net/baidu_35679960/article/details/79111140).
