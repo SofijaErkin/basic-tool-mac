@@ -92,7 +92,7 @@ and that added to `~/.vimrc` should be:
 
 Nothing could be better!
 
-### Usage ctags
+### Usage ctags Or GOTo function using ctags
 
 Locate to target tags, search tags/goto tags definition using tag command:
 
@@ -105,5 +105,23 @@ Locate to target tags, search tags/goto tags definition using tag command:
 Find tags using search pattern:
 
     : /tag-name
+
+Move to the next same tags/goes to the next tag in that list:
+
+    :tnext
+
+    "Or
+
+    :tn
+
+To select a particular tag from a list of tags after opening the source code
+
+file/shows the list, use the following command:
+
+    :tselect
+
+    "Or
+
+    :ts 
 
 ## refer
