@@ -50,9 +50,31 @@ in `~/.vimrc`.
 
     " taglist
 
-    let Tlist_Exit_OnlyWindow = 1
+    let Tlist_Exit_OnlyWindow = 1   " exit the VIM while taglist window be the last
 
-    let Tlist_Use_Right_Window =1
+    let Tlist_Use_Right_Window =1   " let taglist display on the right window
+
+    let Tlist_File_Fold_Auto_Close = 1
+
+                                " tagslist only display the current file's tag
+
+                                " and indent the other files tags
+
+    let Tlist_Show_One_File = 1     " only display one file's tag
+
+    let Tlist_Sort_Type = 'name'  " sort tags using name
+
+    let Tlist_GainFocus_On_ToggleOpen = 1
+
+                                " switch into cursor focus state once taglist
+
+                                " open
+
+    let Tlist_WinWidth = 32         " set the width with 32 byte
+
+    let Tlist_Ctags_Cmd = '/usr/bin/ctags'
+
+                                " connect taglist with ctags
 
     "map <F2> :TlistToggle<CR>
 
