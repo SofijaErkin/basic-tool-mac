@@ -255,3 +255,5 @@ builds a list to navigate with the relevant functions.
 4.[Adding Exuberant CTag support to VIM](https://gist.github.com/lancebecker/1428183).
 
 5.[Install usage ctags and taglist on VIM(Chinese Blog)](https://blog.csdn.net/baidu_35679960/article/details/79111140).
+
+6.[Config Taglist in VIM(Chinese Blog)](https://xiaozhou.net/install_taglist_for_vim-2013-05-26.html).
