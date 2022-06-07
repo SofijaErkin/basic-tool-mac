@@ -40,10 +40,16 @@ and you will get:
 
 then using the suggestion,
 
-    sudo apt install exuberant-ctags
+    sudo apt install exuberant-ctags 
 
 and checkout the version of `ctags`:
 
     ctags --version
+
+The Debian will install `exuberant-ctags` under `/usr/bin/`, and will create
+
+soft link `ctags` under `/etc/alternatives/`, also, that `ctags` under
+
+`/usr/bin` will link to `/etc/alternatives/ctags`.
 
 ## refer
