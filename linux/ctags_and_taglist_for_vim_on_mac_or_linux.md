@@ -14,4 +14,8 @@ So, we need to install the other ctags called `exuberant-ctags`(Debian) or
 
 ## install ctags and taglist
 
+On Debian, just use this to download and install the need `ctags`,
+
+    sudo apt install ctags
+
 ## refer
