@@ -22,7 +22,9 @@ Close Taglist window: `:Tlist`, `:TlistClose`, `q`;
 
 Switch the left/right window: `Ctrl` + `ww`;
 
-Navigate to function definition from Taglist window: `Ctrl` + `]`;
+Navigate to function definition from Taglist window: `Ctrl` + `]`, or click
+
+on the function name in the right panel after enable single click on taglist;
 
 Returning back again to function tag from definition: `Ctrl` + `o`;
 
@@ -30,7 +32,25 @@ Navigate to cursor location: `<CR>`;
 
 Display cursor's tags on New opening window: `o`;
 
-Show the beta definition of current cursor tag: `<Space>`;
+Show the beta definition of current cursor tag: `<Space>`, that means press
+
+`Space` in the function name or in the variable name in the tag list window to
+
+show the prototype (function signature) of it in the VIM status bar, e.g: click
+
+on selectDumpableTable function from the Tag-window and press space-bar, which
+
+displays the function signature for selectDumptableTable function in the bottom
+
+Vim Status bar;
+
+Viewing the total number of functions or variables in a source code file: press
+
+`space` in the tag type in the tag list window, which shows the count of it.
+
+e.g, when the cursor is at ‘function’ press space, which will display the total
+
+number of functions in the current source code.
 
 Update the tags on Taglist window: `u`;
 
