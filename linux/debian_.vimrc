@@ -32,7 +32,7 @@ set incsearch                   " show match points while the fuzzy search
 
 " ctags
 
-"set tags=~/tags
+set tags=~/tags
 
 
 
