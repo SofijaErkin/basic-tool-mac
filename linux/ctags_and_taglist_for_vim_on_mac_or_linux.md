@@ -44,6 +44,20 @@ And Do not forget the below to add the `~/.vimrc`:
 
                                        " , Or: filetype plugin on
 
+Also, we need to config the taglist plugin for `VIM`, just add the below config
+
+below the line of `filetype on` in `~/.vimrc`.
+
+    " taglist
+
+    let Tlist_Exit_OnlyWindow = 1
+
+    let Tlist_Use_Right_Window =1
+
+    "map <F2> :TlistToggle<CR>
+
+    "map <F3> :TlistOpen<CR>
+
 ### install ctags
 
 #### ctags On Debian
