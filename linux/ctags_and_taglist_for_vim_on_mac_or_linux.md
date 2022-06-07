@@ -146,7 +146,29 @@ file/shows the list, use the following command:
 
     "Or
 
-    :ts 
+    :ts
+
+Show the current tags information:
+
+    :tags
+
+Navigate to the definition of tag from `function call`: `ctrl` + `]`, that
+
+means when the cursor is under the function call, then press `CTRL` + `]` to go
+
+to the function definition.
+
+Navigate return back again to the function call from the definition using:
+
+`Ctrl` + `t` or `Ctrl` + `o`.
+
+Navigate through a list of function names which has the similar names, e.g:
+
+    :ta /^get
+
+`:ta` will go to the function definition whose name starts with `get`, and also
+
+builds a list to navigate with the relevant functions.
 
 ## refer
 
