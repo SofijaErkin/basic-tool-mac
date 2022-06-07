@@ -1,79 +1,3 @@
-" Vundle
-
-set nocompatible                   " be iMproved, required
-
-filetype off                       " required
-
-set rtp+=~/.vim/bundle/Vundle.vim  " set the runtime path to include Vundle
-
-                                   " and initialize
-
-call vundle#begin()
-
-Plugin 'VundleVim/Vundle.vim'      " let Vundle manage Vundle, required
-
-Plugin 'https://github.com/scrooloose/nerdtree.git' 
-
-                                   " install NERDTree, file and directory tree
-
-Plugin 'Valloric/YouCompleteMe'    " install YouCompleteMe, with autoupdate via
-
-                                    " vundle
-
-Plugin 'altercation/vim-colors-solarized'
-
-                                   " color plugins, improve the color method of
-
-                                   " VIM, the main three color plugins: the
-
-                                   " upstairs and the below two line
-
-Plugin 'tomasr/molokai'
-
-Plugin 'vim-scripts/phd'
-
-Plugin 'nathanaelkane/vim-indent-guides'  " indent Plugin
-
-Plugin 'scrooloose/nerdcommenter'  " Comment Plugin for VIM
-
-                                   " use shift + V to enter visual block status
-
-                                   " just use command leader + cc to comment
-
-                                   " just use command leader + cc to comment
-
-Plugin 'rhysd/vim-clang-format'    " Format Plugin for VIM to directly standard
-
-                                   " code format
-
-Plugin 'https://github.com/vim-scripts/taglist.vim.git'
-
-                                   " taglist plugin for VIM
-
-call vundle#end()                  " All of your Plugins must be added before
-
-                                   " the following line required
-
-"colorscheme solarized  " solarized is the better
-
-colorscheme molokai
-
-"colorscheme phd
-
-filetype plugin indent on          " required
-
-                                   " taglist plugin relies on the Vim "filetype"
-
-                                   " determine the type of the current file.
-
-                                   " We have to turn on the Vim filetype
-
-                                   " detection. e.g: filetype on
-
-                                   " , Or: filetype plugin on
-
-
-
 " VIM
 
 set nocp                        " forbid optional vi module
@@ -114,9 +38,9 @@ set tags=~/tags
 
 " taglist
 
-"let Tlist_Exit_OnlyWindow = 1
+let Tlist_Exit_OnlyWindow = 1
 
-"let Tlist_Use_Right_Window =1
+let Tlist_Use_Right_Window =1
 
 "map <F2> :TlistToggle<CR>
 
@@ -403,3 +327,79 @@ let g:ycm_cache_omnifunc=0     " disable cache complete, occur new complete
 "hightlight Pmenu ctermfg=15 ctermfg=0 guifg=#000000 guibg=#111100
 
 " change the complete backcolor into vim's backcolor
+
+
+
+" Vundle
+
+set nocompatible                   " be iMproved, required
+
+filetype off                       " required
+
+set rtp+=~/.vim/bundle/Vundle.vim  " set the runtime path to include Vundle
+
+                                   " and initialize
+
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'      " let Vundle manage Vundle, required
+
+Plugin 'https://github.com/scrooloose/nerdtree.git' 
+
+                                   " install NERDTree, file and directory tree
+
+Plugin 'Valloric/YouCompleteMe'    " install YouCompleteMe, with autoupdate via
+
+                                    " vundle
+
+Plugin 'altercation/vim-colors-solarized'
+
+                                   " color plugins, improve the color method of
+
+                                   " VIM, the main three color plugins: the
+
+                                   " upstairs and the below two line
+
+Plugin 'tomasr/molokai'
+
+Plugin 'vim-scripts/phd'
+
+Plugin 'nathanaelkane/vim-indent-guides'  " indent Plugin
+
+Plugin 'scrooloose/nerdcommenter'  " Comment Plugin for VIM
+
+                                   " use shift + V to enter visual block status
+
+                                   " just use command leader + cc to comment
+
+                                   " just use command leader + cc to comment
+
+Plugin 'rhysd/vim-clang-format'    " Format Plugin for VIM to directly standard
+
+                                   " code format
+
+Plugin 'https://github.com/vim-scripts/taglist.vim.git'
+
+                                   " taglist plugin for VIM
+
+call vundle#end()                  " All of your Plugins must be added before
+
+                                   " the following line required
+
+"colorscheme solarized  " solarized is the better
+
+colorscheme molokai
+
+"colorscheme phd
+
+filetype plugin indent on          " required
+
+                                   " taglist plugin relies on the Vim "filetype"
+
+                                   " determine the type of the current file.
+
+                                   " We have to turn on the Vim filetype
+
+                                   " detection. e.g: filetype on
+
+                                   " , Or: filetype plugin on
