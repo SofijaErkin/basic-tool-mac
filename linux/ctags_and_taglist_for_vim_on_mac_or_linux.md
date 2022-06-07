@@ -64,7 +64,7 @@ my programming source code under ~/my_project_debian directory.
 
     ctags -R *
 
-The ctags command will create a filename `tags` the will contain all required
+The `ctags` command will create a filename `tags` the will contain all required
 
 information (`tags`) about the all typed program files.
 
@@ -81,5 +81,15 @@ Or
     cd && vim ~/.vimrc      
     
     set tags = /home/my_debian_user_name/my_project_debian/tags
+
+OR, we could let the `ctags` command function under `/home/my_debian_user_name`
+
+and that added to `~/.vimrc` should be:
+
+    cd && vim ~/.vimrc
+
+    set tags = ~/tags
+
+Nothing could be better!
 
 ## refer
