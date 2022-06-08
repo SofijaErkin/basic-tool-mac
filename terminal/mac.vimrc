@@ -358,6 +358,9 @@ Plugin 'rhysd/vim-clang-format'    " Format Plugin for VIM to directly standard
 
                                    " code format
 
+Plugin 'https://github.com/vim-scripts/taglist.vim.git'
+
+                                   " taglist plugin for VIM
 " Install L9 and avoid a Naming conflict if you've already installed a
 " different version somewhere else.
 " Plugin 'ascenator/L9', {'name': 'newL9'}
@@ -374,6 +377,16 @@ colorscheme molokai
 
 filetype plugin indent on    " required
 
+                             " taglist plugin relies on the Vim "filetype"
+
+                             " determine the type of the current file.
+
+                             " We have to turn on the Vim filetype
+
+                             " detection. e.g: filetype on
+
+                             " , Or: filetype plugin on
+                             
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
 "
