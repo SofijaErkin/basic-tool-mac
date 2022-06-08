@@ -149,6 +149,12 @@ for debian:
     let Tlist_Ctags_Cmd = '/usr/bin/ctags'
 
                                 " connect taglist with ctags
+    
+    " Add nice bindings
+
+    "map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
+
+    "map <C-\> :tnext<CR> 
 
     "map t :TlistToggle              " (hot-key)Leader + t: call or close taglist
 
