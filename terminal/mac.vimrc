@@ -49,9 +49,36 @@ set tags=~/VSCode/tags
 
 " taglist
 
-"let Tlist_Exit_OnlyWindow = 1
+set mouse=a                     " always use mouse
 
-"let Tlist_Use_Right_Window =1
+let Tlist_Use_SingleClick=1     " enable single click tags goto definition 
+let Tlist_Exit_OnlyWindow = 1   " exit the VIM while taglist window be the last
+
+let Tlist_Use_Right_Window =1   " let taglist display on the right window
+
+let Tlist_File_Fold_Auto_Close = 1
+
+                                " tagslist only display the current file's tag
+
+                                " and indent the other files tags
+
+let Tlist_Show_One_File = 1     " only display one file's tag
+
+let Tlist_Sort_Type = 'name'  " sort tags using name
+
+let Tlist_GainFocus_On_ToggleOpen = 1
+
+                                " switch into cursor focus state once taglist
+
+                                " open
+
+let Tlist_WinWidth = 32         " set the width with 32 byte
+
+let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
+
+                                " connect taglist with ctags
+
+"map t :TlistToggle              " (hot-key)Leader + t: call or close taglist
 
 "map <F2> :TlistToggle<CR>
 
@@ -361,6 +388,7 @@ Plugin 'rhysd/vim-clang-format'    " Format Plugin for VIM to directly standard
 Plugin 'https://github.com/vim-scripts/taglist.vim.git'
 
                                    " taglist plugin for VIM
+
 " Install L9 and avoid a Naming conflict if you've already installed a
 " different version somewhere else.
 " Plugin 'ascenator/L9', {'name': 'newL9'}
@@ -386,7 +414,7 @@ filetype plugin indent on    " required
                              " detection. e.g: filetype on
 
                              " , Or: filetype plugin on
-                             
+
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
 "
