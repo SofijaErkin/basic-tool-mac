@@ -168,6 +168,10 @@ The MacOS will install `ctags-exuberant` under `/usr/local/Cellar/ctags/5.8_2`,
 
 and create a soft link `ctags` under `/usr/local/bin`.
 
+Remember to exit Terminal and reboot/restart Terminal!!!(This means macOS
+
+update ctags to `/usr/local/bin/ctags` from `/usr/bin/ctags`)
+
 And create tags at your directory, e.g: `/User/you_user_name` via
 
 `cd && ctags -R *`;
