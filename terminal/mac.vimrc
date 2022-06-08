@@ -43,7 +43,7 @@ source ~/.vim_runtime/vimrcs/extended.vim
 
 " ctags
 
-"set tags=~/tags
+set tags=~/VSCode/tags
 
 
 
