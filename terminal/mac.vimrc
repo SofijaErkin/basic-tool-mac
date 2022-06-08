@@ -78,6 +78,12 @@ let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
 
                                 " connect taglist with ctags
 
+" Add nice bindings
+
+"map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
+
+"map <C-\> :tnext<CR>
+
 "map t :TlistToggle              " (hot-key)Leader + t: call or close taglist
 
 "map <F2> :TlistToggle<CR>
