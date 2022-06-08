@@ -108,9 +108,15 @@ And Do not forget the below to add the `~/.vimrc`:
 
                                        " , Or: filetype plugin on
 
+Do not forget using `:PluginInstall` under `VIM` normal state to install
+
+plugin taglist!
+
 Also, we need to config the taglist plugin for `VIM`, just add the below config
 
 in `~/.vimrc`.
+
+for debian:
 
     " taglist
 
@@ -150,6 +156,10 @@ in `~/.vimrc`.
 
     "map <F3> :TlistOpen<CR>
 
+for macOS:
+
+Just change `let Tlist_Ctags_Cmd =` to `let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'`.
+
 After all settings finish, just use `:wq` to save and quit `~/.vimrc`, exit
 
 and restart/reboot `VIM`, use `:Tlist` or `:TlistOpen` or `TlistToggle` or
@@ -172,13 +182,13 @@ Remember to exit Terminal and reboot/restart Terminal!!!(This means macOS
 
 update ctags to `/usr/local/bin/ctags` from `/usr/bin/ctags`)
 
-And create tags at your directory, e.g: `/User/you_user_name` via
+And create tags at your directory, e.g: `/User/you_user_name/VSCode/` via
 
 `cd && ctags -R *`;
 
 Other we need to add the tags into `~/.vimrc` via `vim ~/.vimrc` with adding
 
-the code `set tags = ~/tags` to `~/.vimrc`.
+the code `set tags = ~/VSCode/tags` to `~/.vimrc`.
 
 #### ctags On Debian
 
