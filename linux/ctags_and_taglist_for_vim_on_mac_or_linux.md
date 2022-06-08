@@ -158,6 +158,24 @@ hot-key `Leader` + `t` to call tagslist.
 
 ### install ctags
 
+#### ctags on macOS
+
+Just use this to install that needed `ctags`(ctags-exuberant):
+
+    brew install ctags
+
+The MacOS will install `ctags-exuberant` under `/usr/local/Cellar/ctags/5.8_2`,
+
+and create a soft link `ctags` under `/usr/local/bin`.
+
+And create tags at your directory, e.g: `/User/you_user_name` via
+
+`cd && ctags -R *`;
+
+Other we need to add the tags into `~/.vimrc` via `vim ~/.vimrc` with adding
+
+the code `set tags = ~/tags` to `~/.vimrc`.
+
 #### ctags On Debian
 
 Just use this to download and install the need `ctags`(`exuberant-ctags`),
@@ -295,3 +313,5 @@ builds a list to navigate with the relevant functions.
 6.[Config Taglist in VIM(Chinese Blog)](https://xiaozhou.net/install_taglist_for_vim-2013-05-26.html).
 
 7.[Teacher book: Install Taglist for VIM(Chinese Blog)](https://blog.csdn.net/weixin_39846515/article/details/79208933).
+
+8.[Install Taglist plugin for VIM(Chinese Blog)](https://blog.csdn.net/baidu_35679960/article/details/79111140).
