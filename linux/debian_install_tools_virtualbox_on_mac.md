@@ -64,19 +64,19 @@ Manually Install + (System Including).
 
 [+((VIM));](https://gist.github.com/SofijaErkin/6b836186f81184d5913ca791a32a7b55#about-debian11)
 
-+((vundle))(Manage vim package install);
+[+((vundle))(Manage vim package install);](https://gist.github.com/SofijaErkin/f8eafbc87f3a174e17e49ffd1a2c727d#macoslinux-manually-install-vundle)
 
-+((NERDTree)(File content tree));
+[+((NERDTree)(File content tree));](https://gist.github.com/SofijaErkin/ae3505742a431c343f54a9a995fd7e2b#nerdtree-for-vim)
 
-+((YouCompleteMe)(Auto complete code));
+[+((YouCompleteMe)(Auto complete code));](https://gist.github.com/SofijaErkin/9318ecb63460400c8b3876cce6c2bf25#macoslinux-manually-install-youcompleteme)
 
-+((solarized/molokai/phd)(Color Plugins));
+[+((solarized/molokai/phd)(Color Plugins));](https://gist.github.com/SofijaErkin/c380d13ce0725d134f073686a2eb994b#color-plugins-for-vim)
 
-+((indent-guides)(Indent Plugin for VIM));
+[+((indent-guides)(Indent Plugin for VIM));](https://gist.github.com/SofijaErkin/c380d13ce0725d134f073686a2eb994b#indent-plugin-for-vim)
 
-+((nerdcommenter)(Comment Plugin for VIM));
+[+((nerdcommenter)(Comment Plugin for VIM));](https://gist.github.com/SofijaErkin/c380d13ce0725d134f073686a2eb994b#comment-plugin-for-vim)
 
-+((Ctags and Taglist for VIM)(Tags manager));
+[+((Ctags and Taglist for VIM)(Tags manager));](https://gist.github.com/SofijaErkin/f9c5a930ba4bd7bae2d63dcf988f6f0e#macoslinux-install-ctags-and-taglist-for-vim)
 
     +(GNU Emacs);
 
