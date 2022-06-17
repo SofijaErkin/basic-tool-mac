@@ -1,8 +1,8 @@
 # Build Debian Development
 
-I need like [notice_complete](https://gist.github.com/SofijaErkin/9318ecb63460400c8b3876cce6c2bf25), [goto_define](https://gist.github.com/SofijaErkin/9318ecb63460400c8b3876cce6c2bf25#goto-defines), search_keywords, highlight_syntax,
+I need like [notice_complete](https://gist.github.com/SofijaErkin/9318ecb63460400c8b3876cce6c2bf25), [goto_define](https://gist.github.com/SofijaErkin/9318ecb63460400c8b3876cce6c2bf25#goto-defines), search_keywords, [highlight_syntax](https://gist.github.com/SofijaErkin/df24156d5a00d76c6c1ea80877fc08ee#13-syntax-highlightingcommand),
 
-check_syntax, [intent_folding](https://gist.github.com/SofijaErkin/5f6c9e3ee851c415d181ac6dca78244a), display_the_architecture_of_function,
+check_syntax, [intent_folding](https://gist.github.com/SofijaErkin/5f6c9e3ee851c415d181ac6dca78244a), [display_the_architecture_of_function](https://gist.github.com/SofijaErkin/f9c5a930ba4bd7bae2d63dcf988f6f0e),
 
 file_template, [content_tree](https://gist.github.com/SofijaErkin/ae3505742a431c343f54a9a995fd7e2b)...
 
