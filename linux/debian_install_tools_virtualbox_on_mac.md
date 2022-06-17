@@ -70,6 +70,14 @@ Manually Install + (System Including).
 
 +((YouCompleteMe)(Auto complete code));
 
++((solarized/molokai/phd)(Color Plugins));
+
++((indent-guides)(Indent Plugin for VIM));
+
++((nerdcommenter)(Comment Plugin for VIM));
+
++((Ctags and Taglist for VIM)(Tags manager));
+
     +(GNU Emacs);
 
     $(GNU nano);
