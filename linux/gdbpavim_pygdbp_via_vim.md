@@ -8,6 +8,8 @@ add the below to `~/.vimrc`:
 
     Plugin 'https://github.com/brookhong/DBGPavim.git'
 
+                                       " Debug Python via DBGPavim in VIM
+
 also, using `:PluginInstall` to install plugin `DBGPavim`.
 
 ### Config DBGPavim
@@ -24,9 +26,18 @@ Just use this to download pydbgp:
 
     sudo wget http://downloads.activestate.com/Komodo/releases/12.0.1/remotedebugging/Komodo-PythonRemoteDebugging-12.0.1-91869-linux-x86_64.tar.gz
 
+(MacOS)
+
+    sudo wget http://downloads.activestate.com/Komodo/releases/12.0.1/remotedebugging/Komodo-PythonRemoteDebugging-12.0.1-91869-macosx.tar.gz
+
 release the package:
 
     tar -zxvf Komodo-PythonRemoteDebugging-12.0.1-91869-linux-x86_64.tar.gz && cd Komodo-PythonRemoteDebugging-12.0.1-91869-linux-x86_64 && pwd && ls -a
+
+(MacOS)
+
+    tar -zxvf Komodo-PythonRemoteDebugging-12.0.1-91869-macosx.tar.gz && cd 
+    Komodo-PythonRemoteDebugging-12.0.1-91869-macosx && pwd && ls -a
 
 ### Settings pydbgp
 
