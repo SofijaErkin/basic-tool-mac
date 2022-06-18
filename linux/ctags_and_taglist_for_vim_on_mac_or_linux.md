@@ -70,13 +70,17 @@ Jump to the next file: `]]`;
 
 Help tag document: `<F1>`.
 
-After all, there is yes need to using mouse on `VIM`, just add the code to
+Update June 18 2022 AM 11:59 EST
 
-`~/.vimrc`: `set mouse=a  " always use mouse`; or navigate to go to the
+Not recommend to using mouse in `VIM` at Linux.
 
-definition via setting single click tag adding the code to `~/.vimrc`:
+    After all, there is yes need to using mouse on `VIM`, just add the code to
 
-`let Tlist_Use_SingleClick=1`.
+    `~/.vimrc`: `set mouse=a  " always use mouse`; or navigate to go to the
+
+    definition via setting single click tag adding the code to `~/.vimrc`:
+
+    `let Tlist_Use_SingleClick=1`.
 
 ### install taglist
 
