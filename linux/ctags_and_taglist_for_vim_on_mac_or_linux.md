@@ -339,3 +339,5 @@ builds a list to navigate with the relevant functions.
 7.[Teacher book: Install Taglist for VIM(Chinese Blog)](https://blog.csdn.net/weixin_39846515/article/details/79208933).
 
 8.[Install Taglist plugin for VIM(Chinese Blog)](https://blog.csdn.net/baidu_35679960/article/details/79111140).
+
+9.[Build VIM into IDE step by step(Chinese BLog)](https://sq.sf.163.com/blog/article/197471096162713600).
