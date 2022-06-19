@@ -1,4 +1,4 @@
-# Python Debug on Linux via DBGPavim and pydbgp
+# Debug Python via DBGPavim and pydbgp
 
 ## DBGPavim Plugin
 
@@ -24,6 +24,8 @@ add the below to config the monitor port of debugger in `~/.vimrc`:
 
 Just use this to download pydbgp:
 
+(Linux)
+
     sudo wget http://downloads.activestate.com/Komodo/releases/12.0.1/remotedebugging/Komodo-PythonRemoteDebugging-12.0.1-91869-linux-x86_64.tar.gz
 
 (MacOS)
@@ -31,6 +33,8 @@ Just use this to download pydbgp:
     sudo wget http://downloads.activestate.com/Komodo/releases/12.0.1/remotedebugging/Komodo-PythonRemoteDebugging-12.0.1-91869-macosx.tar.gz
 
 release the package:
+
+(Linux)
 
     tar -zxvf Komodo-PythonRemoteDebugging-12.0.1-91869-linux-x86_64.tar.gz && cd Komodo-PythonRemoteDebugging-12.0.1-91869-linux-x86_64 && pwd && ls -a
 
@@ -59,7 +63,7 @@ Using `F5` to enter debug status, `F10` ensure the break point, `:Dp` to enter
 
 debugging.
 
-But mission fell!
+But mission fell! Both on Linux(Debian) or MacOS.
 
 ## Debug hot-keys
 
