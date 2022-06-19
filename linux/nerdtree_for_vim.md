@@ -55,3 +55,7 @@ Also,
 "`gt`" to switch the upstairs bookmark,
 
 "`:tabc`"(VIM command) to close the current bookmark.
+
+Refer:
+
+[Build VIM into IDE step by step(Chinese BLog)](https://sq.sf.163.com/blog/article/197471096162713600)
