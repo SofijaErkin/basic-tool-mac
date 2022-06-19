@@ -16,6 +16,10 @@ Or [refer](https://gist.github.com/ffeu/6ffb75d8e8c7d92c0fbeb4b036599c33?permali
 
 ## Clang format
 
+### refer
+
+[Auto-mate keep iOS code style(CHinese Blog)](https://zhuanlan.zhihu.com/p/19923007)
+
 ### for Git
 
 #### only format one
