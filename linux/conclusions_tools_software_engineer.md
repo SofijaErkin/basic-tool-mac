@@ -117,3 +117,21 @@ Refer: [Using oh-my-zsh build Linux Shell environment(Chinese)](https://sysin.or
 ## 3. Online Services
 
 ## 4. Framework Or Libraries
+
+## 5.Know About
+
+### 5.1[CLion](https://en.wikipedia.org/wiki/JetBrains#CLion)
+
+CLion (pronounced "sea lion") is a C and C++ IDE for Linux, macOS, and Windows
+
+integrated with the CMake build system. The initial version supports GNU
+
+Compiler Collection (GCC) and Clang compilers and GDB debugger, LLDB and Google
+
+Test.
+
+### 5.2[JetBrains](https://en.wikipedia.org/wiki/JetBrains)
+
+JetBrains, initially called IntelliJ Software, makes tools for software
+
+developers and project managers.
