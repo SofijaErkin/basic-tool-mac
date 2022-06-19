@@ -90,3 +90,7 @@ while no next break point;
 value;
 
 `F12`: watch out the value of the variable where the cursor is locate.
+
+## refer
+
+[Build VIM into IDE step by step(Chinese BLog)](https://sq.sf.163.com/blog/article/197471096162713600)
