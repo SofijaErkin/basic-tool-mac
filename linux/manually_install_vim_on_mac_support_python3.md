@@ -157,3 +157,7 @@ output:
 Successful!
 
 ## Way 2
+
+## refer
+
+[Build VIM into IDE step by step(Chinese BLog)](https://sq.sf.163.com/blog/article/197471096162713600)
