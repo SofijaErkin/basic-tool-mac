@@ -291,3 +291,5 @@ refer:
 [Debian install python supported Vim(Chinese).](https://blog.csdn.net/MK_chan/article/details/89047170)
 
 [Linux install Vim8 and config Vim plug(Chinese).](https://blog.csdn.net/rankun1/article/details/78775404)
+
+[Build VIM into IDE step by step(Chinese BLog)](https://sq.sf.163.com/blog/article/197471096162713600)
