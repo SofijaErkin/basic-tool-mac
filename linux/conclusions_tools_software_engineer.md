@@ -6,7 +6,15 @@ those.
 
 ## 1. Commands Or Plug-ins
 
-### 1.1 Sync(command)
+### 1.1 Sync Data
+
+Data between Linux(Virtual Machine) and MacOS/Window(Host Machine); Or,
+
+data between Linux(Remote/Cloud Machine) and MacOS/Window(LocalMachine); Or,
+
+data between Linux(Docker) and MacOS/Window(Host Machine).
+
+First, we need to find out the IP address.
 
 Find Public IP on Linux/MacOS:
 
@@ -52,7 +60,7 @@ the network-connected devices. The IP address you need can be found under one
 
 of the following labels: UP, BROADCAST, RUNNING, MULTICAST.
 
-#### 1.1.1 rsync(Shell)
+#### 1.1.1 rsync(Shell command)
 
 Transform/Transmit and sync the data/code between local and remote.
 
