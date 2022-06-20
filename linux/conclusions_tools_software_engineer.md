@@ -135,3 +135,29 @@ Test.
 JetBrains, initially called IntelliJ Software, makes tools for software
 
 developers and project managers.
+
+### 5.3[Blaze](https://news.ycombinator.com/item?id=9257000)
+
+Blaze, only by google using, a tool to automate software building and testing.
+
+Blaze includes the description of source dependence, distributed building,
+
+test. Also, well Integrated with the management system of source, auto-deploy, continuous integrated system.
+
+### 5.4[Bazel](hhttps://bazel.build/)
+
+Bazel is a free software tool for the automation of building and testing of
+
+software. The company Google uses the build tool Blaze internally and released
+
+an open-sourced port of the Blaze tool as Bazel, named as an anagram of Blaze.
+
+Similar to build tools like Make, Apache Ant, or Apache Maven, Bazel builds
+
+software applications from source code using a set of rules. Rules and macros
+
+are created in the Starlark language, a dialect of Python. There are built-in
+
+rules for building software written in the programming languages of Java, C,
+
+C++, Go, Python, Objective-C and Bourne shell scripts.
