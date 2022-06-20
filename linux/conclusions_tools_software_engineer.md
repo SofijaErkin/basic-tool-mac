@@ -161,3 +161,17 @@ are created in the Starlark language, a dialect of Python. There are built-in
 rules for building software written in the programming languages of Java, C,
 
 C++, Go, Python, Objective-C and Bourne shell scripts.
+
+### 5.5[Blade](https://github.com/chen3feng/blade-build)
+
+Blade is a building system from Tencent, supports many mainstream programming
+
+languages, such as C/C++, java, scala, python, protobuf.
+
+### 5.6[Buck](https://buck.build/)
+
+Buck is a build system developed and used by Facebook. It encourages the
+
+creation of small, reusable modules consisting of code and resources, and
+
+supports a variety of languages on many platforms.
