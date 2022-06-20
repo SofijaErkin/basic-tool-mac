@@ -8,6 +8,50 @@ those.
 
 ### 1.1 Sync(command)
 
+Find Public IP on Linux/MacOS:
+
+`curl ifconfig.me`;
+
+`curl ipinfo.io/ip`;
+
+`curl api.ipify.org`;
+
+`curl checkip.dyndns.org`;
+
+`curl ident.me`;
+
+`curl ipecho.net/plain`.
+
+Find Mac IP:
+
+(Local IP)
+
+(wired connections): `ipconfig getifaddr en1`;
+
+(Wi-Fi): `ipconfig getifaddr en0`;
+
+Find Linux IP:
+
+(Local/[Private](https://opensource.com/article/18/5/how-find-ip-address-linux)/[Internal IP](https://constellix.com/news/what-is-my-ip-address))
+
+`hostname -I`;
+
+`hostname -I | awk '{print $1}'`;
+
+`ip route get 1.2.3.4 | awk '{print $7}'`;
+
+`nmcli -p device show`.
+
+`ip addr` This will return the address in either the Ethernet (ether) or
+
+wireless (link) information, depending on how the device is connected to the
+
+network. And this command will display the IPv4 and IPv6 addresses of all of
+
+the network-connected devices. The IP address you need can be found under one
+
+of the following labels: UP, BROADCAST, RUNNING, MULTICAST.
+
 #### 1.1.1 rsync(Shell)
 
 Transform/Transmit and sync the data/code between local and remote.
