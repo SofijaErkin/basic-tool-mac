@@ -175,3 +175,19 @@ Buck is a build system developed and used by Facebook. It encourages the
 creation of small, reusable modules consisting of code and resources, and
 
 supports a variety of languages on many platforms.
+
+### 5.7[Nuclide](https://nuclide.io/)
+
+Atom was (and is) developed by GitHub as a text editor. Facebook then developed
+
+the Nuclide and Atom IDE projects to turn Atom into an integrated
+
+development environment (IDE), but development on Nuclide and Atom IDE stopped
+
+in December 2018. Development on Atom itself is ongoing.
+
+Nuclide is built as a single package on top of Atom to provide hackability
+
+and the support of an active community. It provides a first-class development
+
+environment for React Native, Hack and Flow projects.
