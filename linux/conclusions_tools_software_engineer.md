@@ -38,6 +38,8 @@ refer:
 
 [(Mac+VirtualBox+Linux+NAT+SSH+Local)Macbook using SSH connect with VirtualBox Ubuntu(Chinese Blog)](https://www.pianshen.com/article/1205385656/)
 
+[(Mac+VirtualBox+Linux+NAT+Local+PING)Ping connect with virtual machine via VirtualBox settings on Macbook(Chinese Blog)](https://www.codeleading.com/article/2669356015/)
+
 [(Mac+Parallels+Linux+NAT+SSH+Local)Mac terminal using SSH connect Parallels VM Linux(Chinese Blog)](https://digglife.net/articles/ssh-access-to-parallel-linux-virtual-machie-with-terminal.html)
 
 [(Mac+VirtualBox+Linux(Kail)+SSH+Local)MacBook using SSH connect With Virtual machine Kail and set auto-log once Kail start(Chinese Blog)](https://codeantenna.com/a/f9I5eLTOvS)
@@ -47,6 +49,8 @@ refer:
 [(Mac+VirtualBox+Linux+NAT+Local)Using VirtualBox build local virtual environment on Mac(Chinese Blog)](https://www.cainiaojc.com/note/qa3hep.html)
 
 [(Mac+Parallels+Linux+NAT+Remote)Port Mapping: the fantastic function of Virtual machine Parallels Desktop(Chinese Blog)](https://cloud.tencent.com/developer/article/1757671)
+
+[(Mac+Parallels+Windows(IE)+NAT)Virtual machine access the local sites of MacBook(Chinese Blog)](https://segmentfault.com/q/1010000005719680)
 
 [(Mac+VMware+Linux+Bridge)Config VMware virtual machine connecting with the internet on MacOS(Chinese)](https://segmentfault.com/a/1190000016926655)
 
