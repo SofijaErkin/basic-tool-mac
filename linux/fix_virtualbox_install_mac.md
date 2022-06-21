@@ -442,7 +442,7 @@ then, output:
 
     zsh: command not found: ifconfig
 
-Fixed.
+tried but not fixed.
 
 Just install `net-tools` at Linux(If use Debian, then the blow):
 
