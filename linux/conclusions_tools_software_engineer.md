@@ -36,6 +36,14 @@ data between Linux(Docker) and MacOS/Window(Host Machine).
 
 refer:
 
+[How to use SSH keys with Windows on Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/ssh-from-windows)
+
+[Accessing Linux VMs with SSH](https://help.skytap.com/connect-to-a-linux-vm-with-ssh.html)
+
+[How to Access a Linux Virtual Machine via SSH from Windows](https://interworks.com/blog/2021/09/22/how-to-access-a-linux-virtual-machine-via-ssh-from-windows/)
+
+[Setting up SSH access to virtual machines](https://www.ibm.com/docs/en/was-icp-vmq?topic=environment-setting-up-ssh-access-virtual-machines)
+
 [(Mac+VirtualBox+Linux+NAT+SSH+Local)Macbook using SSH connect with VirtualBox Ubuntu(Chinese Blog)](https://www.pianshen.com/article/1205385656/)
 
 [(Mac+VirtualBox+Linux+NAT+Local+PING)Ping connect with virtual machine via VirtualBox settings on Macbook(Chinese Blog)](https://www.codeleading.com/article/2669356015/)
