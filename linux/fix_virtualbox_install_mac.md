@@ -450,7 +450,7 @@ Just install `net-tools` at Linux(If use Debian, then the blow):
     
     sudo apt install net-tools
 
-Continue try the below code, then fixed.
+[Continue try the below code](https://www.makeuseof.com/fix-ifconfig-command-not-found-error-linux/), then fixed.
 
 Adding the `ifconfig` directory to the environment variable via adding the
 
