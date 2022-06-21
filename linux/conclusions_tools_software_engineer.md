@@ -8,11 +8,35 @@ those.
 
 ### 1.1 Sync Data
 
+If Syncing data use sharing folder, virtual machine could access Host machine's
+
+folders.
+
+If Syncing data use the setting of image folder or the creation of sharing
+
+internet, the host machine could access the virtual machine's folders.
+
+This we talk about the second syncing data.
+
+The below sync data is that Host machine access the Linux under virtual machine
+
+.
+
 Data between Linux(Virtual Machine) and MacOS/Window(Host Machine); Or,
 
 data between Linux(Remote/Cloud Machine) and MacOS/Window(LocalMachine); Or,
 
 data between Linux(Docker) and MacOS/Window(Host Machine).
+
+refer:
+
+[(Windows+VMare+Linux)Using one host Log into a virtual machine on another Host(Chinese Blog)](https://novicenote.com/2444.html).
+
+[(Windows+VMare+Linux)Log into virtual machine using the current host(Chinese Blog)](https://blog.csdn.net/Zereao/article/details/89420513).
+
+[(Windows+VMare+Linux)How to access the Web services under virtual machine(Chinese Blog)](https://codeantenna.com/a/BIK7VaksyV)
+
+[(Windows+VMare+Linux)Mac access the CentOS at the virtual machine under the same local internet(Chinese)](https://blog.csdn.net/innovate1989/article/details/103221959)
 
 First, we need to find out the IP address.
 
