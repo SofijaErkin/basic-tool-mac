@@ -431,3 +431,21 @@ Login Items tab (on the right).
 Select the automatically item named `VirtualBoxVM`, then click the minus
 
 button `-`, then quit the "OSX System Preferences".
+
+## 12.Problem I
+
+input the below code in Linux terminal under VirtualBox:
+
+    ifconfig
+
+then, output:
+
+    zsh: command not found: ifconfig
+
+Fixed.
+
+Just install `net-tools` at Linux(If use Debian, then the blow):
+
+    sudo apt update
+    
+    sudo apt install net-tools
