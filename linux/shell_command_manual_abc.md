@@ -47,3 +47,7 @@ Debian:
     apt search package
 
     apt-cache madison package
+
+## 8. Exit Ping
+
+macOS/Linux: `Ctrl` + `c`.
