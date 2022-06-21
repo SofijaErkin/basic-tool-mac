@@ -442,10 +442,20 @@ then, output:
 
     zsh: command not found: ifconfig
 
-tried but not fixed.
+Tried but not fixed.
 
 Just install `net-tools` at Linux(If use Debian, then the blow):
 
     sudo apt update
     
     sudo apt install net-tools
+
+Continue try the below code, then fixed.
+
+Adding the `ifconfig` directory to the environment variable via adding the
+
+below to the `~/.zshrc` and activating the `~/.zshrc` via `source ~/.zshrc`:
+
+    export PATH=$PATH:/sbin
+
+End! Fixed.
