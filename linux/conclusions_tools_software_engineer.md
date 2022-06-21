@@ -40,6 +40,8 @@ refer:
 
 [(Mac+VirtualBox+Linux+NAT+Local+PING)Ping connect with virtual machine via VirtualBox settings on Macbook(Chinese Blog)](https://www.codeleading.com/article/2669356015/)
 
+[(Mac+VirtualBox+Linux)The idea of transmit data from macOS to Ubuntu under VirtualBox(Chinese Blog)](https://www.daimajiaoliu.com/daima/4ea059b54900408)
+
 [(Mac+Parallels+Linux+NAT+SSH+Local)Mac terminal using SSH connect Parallels VM Linux(Chinese Blog)](https://digglife.net/articles/ssh-access-to-parallel-linux-virtual-machie-with-terminal.html)
 
 [(Mac+VirtualBox+Linux(Kail)+SSH+Local)MacBook using SSH connect With Virtual machine Kail and set auto-log once Kail start(Chinese Blog)](https://codeantenna.com/a/f9I5eLTOvS)
