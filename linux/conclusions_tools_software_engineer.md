@@ -12,6 +12,12 @@ If Syncing data use sharing folder, virtual machine could access Host machine's
 
 folders.
 
+Also, we could [install `samba`](http://www.4k8k.xyz/article/Bioinspiration/107203703)(Server Message Block, about 79MB) on Linux via
+
+`sudo apt install samba`, and transmit data full duplex between Host machine
+
+and Linux.
+
 If Syncing data use the setting of image folder or the creation of sharing
 
 internet, the host machine could access the virtual machine's folders.
@@ -31,6 +37,8 @@ data between Linux(Docker) and MacOS/Window(Host Machine).
 refer:
 
 [(Mac+VirtualBox+Linux+NAT+SSH+Local)Macbook using SSH connect with VirtualBox Ubuntu(Chinese Blog)](https://www.pianshen.com/article/1205385656/)
+
+[(Mac+Parallels+Linux+NAT+SSH+Local)Mac terminal using SSH connect Parallels VM Linux(Chinese Blog)](https://digglife.net/articles/ssh-access-to-parallel-linux-virtual-machie-with-terminal.html)
 
 [(Mac+VirtualBox+Linux(Kail)+SSH+Local)MacBook using SSH connect With Virtual machine Kail and set auto-log once Kail start(Chinese Blog)](https://codeantenna.com/a/f9I5eLTOvS)
 
