@@ -30,13 +30,17 @@ data between Linux(Docker) and MacOS/Window(Host Machine).
 
 refer:
 
-[(Windows+VMare+Linux)Using one host Log into a virtual machine on another Host(Chinese Blog)](https://novicenote.com/2444.html).
+[(Mac+VirtualBox+Linux+NAT+Local)Using VirtualBox build local virtual environment on Mac(Chinese Blog)](https://www.cainiaojc.com/note/qa3hep.html)
 
-[(Windows+VMare+Linux)Log into virtual machine using the current host(Chinese Blog)](https://blog.csdn.net/Zereao/article/details/89420513).
+[(Mac+VMware+Linux+Bridge)Config VMware virtual machine connecting with the internet on MacOS(Chinese)](https://segmentfault.com/a/1190000016926655)
 
-[(Windows+VMare+Linux)How to access the Web services under virtual machine(Chinese Blog)](https://codeantenna.com/a/BIK7VaksyV)
+[(Windows+VMware+Linux+NAT+Remote)Using one host Log into a virtual machine on another Host(Chinese Blog)](https://novicenote.com/2444.html).
 
-[(Windows+VMare+Linux)Mac access the CentOS at the virtual machine under the same local internet(Chinese)](https://blog.csdn.net/innovate1989/article/details/103221959)
+[(Windows+VMware+Linux+NAT+Remote)Log into virtual machine using the current host(Chinese Blog)](https://blog.csdn.net/Zereao/article/details/89420513).
+
+[(Windows+VMware+Linux+NAT+Remote)How to access the Web services under virtual machine(Chinese Blog)](https://codeantenna.com/a/BIK7VaksyV)
+
+[(Windows+VMware+Linux+Bridge+Remote)Mac access the CentOS at the virtual machine under the same local internet(Chinese)](https://blog.csdn.net/innovate1989/article/details/103221959)
 
 First, we need to find out the IP address.
 
