@@ -52,6 +52,8 @@ refer:
 
 [(Mac+Parallels+Windows(IE)+NAT)Virtual machine access the local sites of MacBook(Chinese Blog)](https://segmentfault.com/q/1010000005719680)
 
+[(Mac+VMware+Linux+NAT+Local)The settings of Macbook accessing the virtual machine IP and setting static IP for virtual machine(Chinese Blog)](https://www.cc1021.com/article/261.html)
+
 [(Mac+VMware+Linux+Bridge)Config VMware virtual machine connecting with the internet on MacOS(Chinese)](https://segmentfault.com/a/1190000016926655)
 
 [(Windows+VMware+Linux+NAT+Remote)Using one host Log into a virtual machine on another Host(Chinese Blog)](https://novicenote.com/2444.html).
