@@ -36,6 +36,12 @@ data between Linux(Docker) and MacOS/Window(Host Machine).
 
 refer:
 
+[Detailed steps: Create and manage SSH keys for authentication to a Linux VM in Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/create-ssh-keys-detailed)
+
+[How to Access VirtualBox 6 VMs Remotely](https://linuxhint.com/access_virtualbox6_vms_remotely/)
+
+[Chapter 7. Remote Virtual Machines](https://www.virtualbox.org/manual/ch07.html)
+
 [How to use SSH keys with Windows on Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/ssh-from-windows)
 
 [Accessing Linux VMs with SSH](https://help.skytap.com/connect-to-a-linux-vm-with-ssh.html)
@@ -43,6 +49,10 @@ refer:
 [How to Access a Linux Virtual Machine via SSH from Windows](https://interworks.com/blog/2021/09/22/how-to-access-a-linux-virtual-machine-via-ssh-from-windows/)
 
 [Setting up SSH access to virtual machines](https://www.ibm.com/docs/en/was-icp-vmq?topic=environment-setting-up-ssh-access-virtual-machines)
+
+[Quick steps: Create and use an SSH public-private key pair for Linux VMs in Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/mac-create-ssh-keys)
+
+[This article shows how to connect to your VM via SSH in Linux](https://creodias.eu/faq-all/-/asset_publisher/SIs09LQL6Gct/content/how-to-connect-to-your-virtual-machine-via-ssh-in-linux-)
 
 [(Mac+VirtualBox+Linux+NAT+SSH+Local)Macbook using SSH connect with VirtualBox Ubuntu(Chinese Blog)](https://www.pianshen.com/article/1205385656/)
 
@@ -107,6 +117,8 @@ Find Linux IP:
 `hostname -I | awk '{print $1}'`;
 
 `ip route get 1.2.3.4 | awk '{print $7}'`;
+
+`ip a`;
 
 `ifconfig | grep inet`
 
