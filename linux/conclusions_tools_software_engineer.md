@@ -36,11 +36,27 @@ data between Linux(Docker) and MacOS/Window(Host Machine).
 
 refer:
 
+[SSH between Mac OS X host and Virtual Box guest](https://gist.github.com/wacko/5577187)
+
+[(#+VirtualBox+Linux+NAT+Local)How do I access Virtualbox internal IP from host machine?](https://superuser.com/a/838742)
+
+[(Linux+VirtualBox+Linux+NAT+SSH+Local)Accessing your Virtualbox Guest from your Host OS](https://2buntu.com/articles/1513/accessing-your-virtualbox-guest-from-your-host-os/)
+
+[VirtualBox: How to set up networking so both host and guest can access internet and talk to each other](https://serverfault.com/a/333584)
+
+[(#+VirtualBox+Linux+NAT+SSH+Local)How to access a NAT guest from host with VirtualBox](https://www.xmodulo.com/access-nat-guest-from-host-virtualbox.html)
+
 [Detailed steps: Create and manage SSH keys for authentication to a Linux VM in Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/create-ssh-keys-detailed)
 
 [How to Access VirtualBox 6 VMs Remotely](https://linuxhint.com/access_virtualbox6_vms_remotely/)
 
+[(#+VirtualBox+Linux+NAT+SSH+Remote)Easy way to SSH into VirtualBox machine | Any OS](https://dev.to/developertharun/easy-way-to-ssh-into-virtualbox-machine-any-os-just-x-steps-5d9i)
+
 [Chapter 7. Remote Virtual Machines](https://www.virtualbox.org/manual/ch07.html)
+
+[(#+VirtualBox+Linux+Bridge)Access your VirtualBox guest localhost from your host OS](https://coderwall.com/p/yx23qw/access-your-virtualbox-guest-localhost-from-your-host-os)
+
+[(Windows+VirtualBox+Linux+Bridge)How to access server running in VirtualBox from the host?](https://superuser.com/a/1120146)
 
 [How to use SSH keys with Windows on Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/ssh-from-windows)
 
@@ -53,6 +69,8 @@ refer:
 [Quick steps: Create and use an SSH public-private key pair for Linux VMs in Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/mac-create-ssh-keys)
 
 [This article shows how to connect to your VM via SSH in Linux](https://creodias.eu/faq-all/-/asset_publisher/SIs09LQL6Gct/content/how-to-connect-to-your-virtual-machine-via-ssh-in-linux-)
+
+[Run a web server in a Linux VM with Vagrant [Learning Project]](https://www.tutorialworks.com/linux-vm-vagrant/)
 
 [(Mac+VirtualBox+Linux+NAT+SSH+Local)Macbook using SSH connect with VirtualBox Ubuntu(Chinese Blog)](https://www.pianshen.com/article/1205385656/)
 
@@ -83,6 +101,10 @@ refer:
 [(Windows+VMware+Linux+NAT+Remote)How to access the Web services under virtual machine(Chinese Blog)](https://codeantenna.com/a/BIK7VaksyV)
 
 [(Windows+VMware+Linux+Bridge+Remote)Mac access the CentOS at the virtual machine under the same local internet(Chinese)](https://blog.csdn.net/innovate1989/article/details/103221959)
+
+[Macbook access the sharing folders under Ubuntu(Chinese Blog)](https://blog.csdn.net/qq_41822647/article/details/85332378?spm=1001.2101.3001.6650.12&utm_medium=distribute.pc_relevant.none-task-blog-2~default~CTRLIST~Rate-12-85332378-blog-107203703.pc_relevant_paycolumn_v3&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2~default~CTRLIST~Rate-12-85332378-blog-107203703.pc_relevant_paycolumn_v3&utm_relevant_index=14)
+
+[Macbook build Samba folders to share with Ubuntu for accessing and loading(Chinese Blog)](https://blog.csdn.net/ff_lz/article/details/107391871?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_title~default-4-107391871-blog-85332378.pc_relevant_paycolumn_v3&spm=1001.2101.3001.4242.3&utm_relevant_index=7)
 
 First, we need to find out the IP address.
 
