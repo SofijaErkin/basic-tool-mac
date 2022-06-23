@@ -22,7 +22,7 @@ Edit the `/etc/samba/smb.conf`:
 
     sudo gedit /etc/samba/smb.conf
 
-Adding the below to the buttom of that file
+Adding the below to the bottom of that file
 
     [share]
        
