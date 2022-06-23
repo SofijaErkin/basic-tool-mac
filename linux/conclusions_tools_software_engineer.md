@@ -72,35 +72,33 @@ refer:
 
 [Run a web server in a Linux VM with Vagrant [Learning Project]](https://www.tutorialworks.com/linux-vm-vagrant/)
 
-[(Mac+VirtualBox+Linux+NAT+SSH+Local)Macbook using SSH connect with VirtualBox Ubuntu(Chinese Blog)](https://www.pianshen.com/article/1205385656/)
+[(Mac+VirtualBox+centos7+NAT+SSH+Local)Macbook using SSH connect with VirtualBox Ubuntu(Chinese Blog)](https://www.pianshen.com/article/1205385656/)
 
-[(Mac+VirtualBox+Linux+NAT+Local+PING)Ping connect with virtual machine via VirtualBox settings on Macbook(Chinese Blog)](https://www.codeleading.com/article/2669356015/)
+[(Mac+VirtualBox+Centos-7+NAT+Local+PING)Ping connect with virtual machine via VirtualBox settings on Macbook(Chinese Blog)](https://www.codeleading.com/article/2669356015/)
 
-[(Mac+VirtualBox+Linux)The idea of transmit data from macOS to Ubuntu under VirtualBox(Chinese Blog)](https://www.daimajiaoliu.com/daima/4ea059b54900408)
-
-[(Mac+Parallels+Linux+NAT+SSH+Local)Mac terminal using SSH connect Parallels VM Linux(Chinese Blog)](https://digglife.net/articles/ssh-access-to-parallel-linux-virtual-machie-with-terminal.html)
+[(Mac+Parallels+Fedora+NAT+SSH+Local)Mac terminal using SSH connect Parallels VM Linux(Chinese Blog)](https://digglife.net/articles/ssh-access-to-parallel-linux-virtual-machie-with-terminal.html)
 
 [(Mac+VirtualBox+Linux(Kail)+SSH+Local)MacBook using SSH connect With Virtual machine Kail and set auto-log once Kail start(Chinese Blog)](https://codeantenna.com/a/f9I5eLTOvS)
 
-[(Mac+Unknown+Linux+Bridge+SSH+Local/Cloud)Mac using SSH access VM ubuntu and cloud 's operation(Chinese Blog)](https://www.cnblogs.com/bjwu/p/9853498.html)
+[(Mac+Unknown+ubuntu+Bridge+SSH+Local/Cloud)Mac using SSH access VM ubuntu and cloud 's operation(Chinese Blog)](https://www.cnblogs.com/bjwu/p/9853498.html)
 
-[(Mac+VirtualBox+Linux+NAT+Local)Using VirtualBox build local virtual environment on Mac(Chinese Blog)](https://www.cainiaojc.com/note/qa3hep.html)
+[(Mac+VirtualBox+CentOS+NAT+Local)Using VirtualBox build local virtual environment on Mac(Chinese Blog)](https://www.cainiaojc.com/note/qa3hep.html)
 
-[(Mac+Parallels+Linux+NAT+Remote)Port Mapping: the fantastic function of Virtual machine Parallels Desktop(Chinese Blog)](https://cloud.tencent.com/developer/article/1757671)
+[(Mac+Parallels+Ubuntu+NAT+Remote)Port Mapping: the fantastic function of Virtual machine Parallels Desktop(Chinese Blog)](https://cloud.tencent.com/developer/article/1757671)
 
 [(Mac+Parallels+Windows(IE)+NAT)Virtual machine access the local sites of MacBook(Chinese Blog)](https://segmentfault.com/q/1010000005719680)
 
-[(Mac+VMware+Linux+NAT+Local)The settings of Macbook accessing the virtual machine IP and setting static IP for virtual machine(Chinese Blog)](https://www.cc1021.com/article/261.html)
+[(Mac+VMware+Centos+NAT+Local)The settings of Macbook accessing the virtual machine IP and setting static IP for virtual machine(Chinese Blog)](https://www.cc1021.com/article/261.html)
 
-[(Mac+VMware+Linux+Bridge)Config VMware virtual machine connecting with the internet on MacOS(Chinese)](https://segmentfault.com/a/1190000016926655)
+[(Mac+VMware+redhat+Bridge)Config VMware virtual machine connecting with the internet on MacOS(Chinese)](https://segmentfault.com/a/1190000016926655)
 
 [(Windows+VMware+Linux+NAT+Remote)Using one host Log into a virtual machine on another Host(Chinese Blog)](https://novicenote.com/2444.html).
 
-[(Windows+VMware+Linux+NAT+Remote)Log into virtual machine using the current host(Chinese Blog)](https://blog.csdn.net/Zereao/article/details/89420513).
+[(Windows+VMware+CentOS+NAT+Remote)Log into virtual machine using the current host(Chinese Blog)](https://blog.csdn.net/Zereao/article/details/89420513).
 
-[(Windows+VMware+Linux+NAT+Remote)How to access the Web services under virtual machine(Chinese Blog)](https://codeantenna.com/a/BIK7VaksyV)
+[(Windows+VMware+CentOS+NAT+Remote)How to access the Web services under virtual machine(Chinese Blog)](https://codeantenna.com/a/BIK7VaksyV)
 
-[(Windows+VMware+Linux+Bridge+Remote)Mac access the CentOS at the virtual machine under the same local internet(Chinese)](https://blog.csdn.net/innovate1989/article/details/103221959)
+[(Windows+VMware+CentOS7+Bridge+Remote)Mac access the CentOS at the virtual machine under the same local internet(Chinese)](https://blog.csdn.net/innovate1989/article/details/103221959)
 
 First, we need to find out the IP address.
 
