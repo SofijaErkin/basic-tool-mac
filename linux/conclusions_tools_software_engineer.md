@@ -36,69 +36,27 @@ data between Linux(Docker) and MacOS/Window(Host Machine).
 
 refer:
 
-[SSH between Mac OS X host and Virtual Box guest](https://gist.github.com/wacko/5577187)
-
-[(#+VirtualBox+Linux+NAT+Local)How do I access Virtualbox internal IP from host machine?](https://superuser.com/a/838742)
-
-[(Linux+VirtualBox+Linux+NAT+SSH+Local)Accessing your Virtualbox Guest from your Host OS](https://2buntu.com/articles/1513/accessing-your-virtualbox-guest-from-your-host-os/)
-
-[VirtualBox: How to set up networking so both host and guest can access internet and talk to each other](https://serverfault.com/a/333584)
-
-[(#+VirtualBox+Linux+NAT+SSH+Local)How to access a NAT guest from host with VirtualBox](https://www.xmodulo.com/access-nat-guest-from-host-virtualbox.html)
-
-[Detailed steps: Create and manage SSH keys for authentication to a Linux VM in Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/create-ssh-keys-detailed)
-
-[How to Access VirtualBox 6 VMs Remotely](https://linuxhint.com/access_virtualbox6_vms_remotely/)
+[Setting up SSH access to virtual machines](https://www.ibm.com/docs/en/was-icp-vmq?topic=environment-setting-up-ssh-access-virtual-machines)
 
 [(#+VirtualBox+Linux+NAT+SSH+Remote)Easy way to SSH into VirtualBox machine | Any OS](https://dev.to/developertharun/easy-way-to-ssh-into-virtualbox-machine-any-os-just-x-steps-5d9i)
 
-[Chapter 7. Remote Virtual Machines](https://www.virtualbox.org/manual/ch07.html)
+[(#+VirtualBox+Linux+NAT+SSH+Local)How to access a NAT guest from host with VirtualBox](https://www.xmodulo.com/access-nat-guest-from-host-virtualbox.html)
 
-[(#+VirtualBox+Linux+Bridge)Access your VirtualBox guest localhost from your host OS](https://coderwall.com/p/yx23qw/access-your-virtualbox-guest-localhost-from-your-host-os)
+[VirtualBox Host ssh to Guest](https://superuser.com/a/507703)
 
-[(Windows+VirtualBox+Linux+Bridge)How to access server running in VirtualBox from the host?](https://superuser.com/a/1120146)
+[The System Network Configuration of Debian 101(Chinese Blog)](https://blog.csdn.net/annita2019/article/details/105515004)
 
-[How to use SSH keys with Windows on Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/ssh-from-windows)
-
-[Accessing Linux VMs with SSH](https://help.skytap.com/connect-to-a-linux-vm-with-ssh.html)
-
-[How to Access a Linux Virtual Machine via SSH from Windows](https://interworks.com/blog/2021/09/22/how-to-access-a-linux-virtual-machine-via-ssh-from-windows/)
-
-[Setting up SSH access to virtual machines](https://www.ibm.com/docs/en/was-icp-vmq?topic=environment-setting-up-ssh-access-virtual-machines)
-
-[Quick steps: Create and use an SSH public-private key pair for Linux VMs in Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/mac-create-ssh-keys)
-
-[This article shows how to connect to your VM via SSH in Linux](https://creodias.eu/faq-all/-/asset_publisher/SIs09LQL6Gct/content/how-to-connect-to-your-virtual-machine-via-ssh-in-linux-)
-
-[Run a web server in a Linux VM with Vagrant [Learning Project]](https://www.tutorialworks.com/linux-vm-vagrant/)
-
-[(Mac+VirtualBox+centos7+NAT+SSH+Local)Macbook using SSH connect with VirtualBox Ubuntu(Chinese Blog)](https://www.pianshen.com/article/1205385656/)
-
-[(Mac+VirtualBox+Centos-7+NAT+Local+PING)Ping connect with virtual machine via VirtualBox settings on Macbook(Chinese Blog)](https://www.codeleading.com/article/2669356015/)
-
-[(Mac+Parallels+Fedora+NAT+SSH+Local)Mac terminal using SSH connect Parallels VM Linux(Chinese Blog)](https://digglife.net/articles/ssh-access-to-parallel-linux-virtual-machie-with-terminal.html)
-
-[(Mac+VirtualBox+Linux(Kail)+SSH+Local)MacBook using SSH connect With Virtual machine Kail and set auto-log once Kail start(Chinese Blog)](https://codeantenna.com/a/f9I5eLTOvS)
-
-[(Mac+Unknown+ubuntu+Bridge+SSH+Local/Cloud)Mac using SSH access VM ubuntu and cloud 's operation(Chinese Blog)](https://www.cnblogs.com/bjwu/p/9853498.html)
-
-[(Mac+VirtualBox+CentOS+NAT+Local)Using VirtualBox build local virtual environment on Mac(Chinese Blog)](https://www.cainiaojc.com/note/qa3hep.html)
-
-[(Mac+Parallels+Ubuntu+NAT+Remote)Port Mapping: the fantastic function of Virtual machine Parallels Desktop(Chinese Blog)](https://cloud.tencent.com/developer/article/1757671)
-
-[(Mac+Parallels+Windows(IE)+NAT)Virtual machine access the local sites of MacBook(Chinese Blog)](https://segmentfault.com/q/1010000005719680)
-
-[(Mac+VMware+Centos+NAT+Local)The settings of Macbook accessing the virtual machine IP and setting static IP for virtual machine(Chinese Blog)](https://www.cc1021.com/article/261.html)
-
-[(Mac+VMware+redhat+Bridge)Config VMware virtual machine connecting with the internet on MacOS(Chinese)](https://segmentfault.com/a/1190000016926655)
-
-[(Windows+VMware+Linux+NAT+Remote)Using one host Log into a virtual machine on another Host(Chinese Blog)](https://novicenote.com/2444.html).
-
-[(Windows+VMware+CentOS+NAT+Remote)Log into virtual machine using the current host(Chinese Blog)](https://blog.csdn.net/Zereao/article/details/89420513).
+[The Network Configuration of Ubuntu Under Macbook's VirtualBox(Chinese Blog)](https://www.muouseo.com/article/qd7yq9pe2w.html)
 
 [(Windows+VMware+CentOS+NAT+Remote)How to access the Web services under virtual machine(Chinese Blog)](https://codeantenna.com/a/BIK7VaksyV)
 
-[(Windows+VMware+CentOS7+Bridge+Remote)Mac access the CentOS at the virtual machine under the same local internet(Chinese)](https://blog.csdn.net/innovate1989/article/details/103221959)
+[(Mac+Unknown+ubuntu+Bridge+SSH+Local/Cloud)Mac using SSH access VM ubuntu and cloud 's operation(Chinese Blog)](https://www.cnblogs.com/bjwu/p/9853498.html)
+
+[(Mac+VirtualBox+Linux(Kail)+SSH+Local)MacBook using SSH connect With Virtual machine Kail and set auto-log once Kail start(Chinese Blog)](https://codeantenna.com/a/f9I5eLTOvS)
+
+[(Mac+Parallels+Fedora+NAT+SSH+Local)Mac terminal using SSH connect Parallels VM Linux(Chinese Blog)](https://digglife.net/articles/ssh-access-to-parallel-linux-virtual-machie-with-terminal.html)
+
+END refer!
 
 First, we need to find out the IP address.
 
