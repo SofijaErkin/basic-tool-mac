@@ -12,7 +12,7 @@ If Syncing data use sharing folder, virtual machine could access Host machine's
 
 folders.
 
-Also, we could [install `samba`](http://www.4k8k.xyz/article/Bioinspiration/107203703)(Server Message Block, about 79MB) on Linux via
+Also, we could [install `samba`](https://gist.github.com/SofijaErkin/4472f8703804b472fd4b3d55f58eb36f)(Server Message Block, about 79MB) on Linux via
 
 `sudo apt install samba`, and transmit data full duplex between Host machine
 
@@ -101,10 +101,6 @@ refer:
 [(Windows+VMware+Linux+NAT+Remote)How to access the Web services under virtual machine(Chinese Blog)](https://codeantenna.com/a/BIK7VaksyV)
 
 [(Windows+VMware+Linux+Bridge+Remote)Mac access the CentOS at the virtual machine under the same local internet(Chinese)](https://blog.csdn.net/innovate1989/article/details/103221959)
-
-[Macbook access the sharing folders under Ubuntu(Chinese Blog)](https://blog.csdn.net/qq_41822647/article/details/85332378?spm=1001.2101.3001.6650.12&utm_medium=distribute.pc_relevant.none-task-blog-2~default~CTRLIST~Rate-12-85332378-blog-107203703.pc_relevant_paycolumn_v3&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2~default~CTRLIST~Rate-12-85332378-blog-107203703.pc_relevant_paycolumn_v3&utm_relevant_index=14)
-
-[Macbook build Samba folders to share with Ubuntu for accessing and loading(Chinese Blog)](https://blog.csdn.net/ff_lz/article/details/107391871?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_title~default-4-107391871-blog-85332378.pc_relevant_paycolumn_v3&spm=1001.2101.3001.4242.3&utm_relevant_index=7)
 
 First, we need to find out the IP address.
 
