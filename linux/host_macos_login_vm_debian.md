@@ -17,3 +17,21 @@ Click `VirtualBox` logo and enter that, found out virtual machine OS
 button, edit `Guest Port` to `22`, edit `Host Port` to `22` or `22222`, edit
 
 `Name` to `SSH`, edit `Host IP` to `127.0.0.1`, edit `Guest IP` to `10.0.2.15`.
+
+Just liking:
+
+    Name     Protocol     Host IP    Host Port     Guest IP    Guest Port
+
+    SSH      SSH          127.0.0.1   22222        10.0.2.15   22
+
+refer:
+
+1.[VirtualBox Host ssh to Guest](https://superuser.com/a/507703).
+
+2.[How to access a NAT guest from host with VirtualBox](https://www.xmodulo.com/access-nat-guest-from-host-virtualbox.html).
+
+3.[Easy way to SSH into VirtualBox machine | Any OS](https://dev.to/developertharun/easy-way-to-ssh-into-virtualbox-machine-any-os-just-x-steps-5d9i).
+
+4.[The Network configuration of Ubuntu after installed in Mac via VirtualBox(Chinese Blog)](https://www.muouseo.com/article/qd7yq9pe2w.html)
+
+5.[How to access the Web server under Virtual machine(Chinese Blog)](https://codeantenna.com/a/BIK7VaksyV).
