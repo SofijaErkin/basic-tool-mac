@@ -219,3 +219,23 @@ via `source ~/.bashrc`:
     alias debian="ssh -p 22222 my_debian_user_name@debian"
 
 Now, you could just use `debian` to remote login VM Debian in Macbook's terminal.
+
+refer:
+
+1.[The Network configuration of Ubuntu after installed in Mac via VirtualBox(Chinese Blog)](https://www.muouseo.com/article/qd7yq9pe2w.html)
+
+2.[Mac terminal SSH connect with VM Linux via Parallels(Chinese Blog)](https://digglife.net/articles/ssh-access-to-parallel-linux-virtual-machie-with-terminal.html).
+
+3.[Easy way to SSH into VirtualBox machine | Any OS](https://dev.to/developertharun/easy-way-to-ssh-into-virtualbox-machine-any-os-just-x-steps-5d9i).
+
+4.[MacOS access VM Ubuntu using SSH and the operation of Cloud](https://www.cnblogs.com/bjwu/p/9853498.html).
+
+## 4.[SCP: Copy a File Between Two Systems](https://docs.oracle.com/cd/E26502_01/html/E29001/remotehowtoaccess-55154.html)
+
+usage: `scp [-r] [[user1@]hostname1:]file1 ... [[user2@]hostname2:]file2`
+
+refer:
+
+1.[Remote Copying With the scp Command](https://docs.oracle.com/cd/E26502_01/html/E29001/remotehowtoaccess-55154.html).
+
+2.[MacOS access VM Ubuntu using SSH and the operation of Cloud](https://www.cnblogs.com/bjwu/p/9853498.html).
