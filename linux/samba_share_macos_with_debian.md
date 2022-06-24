@@ -62,6 +62,12 @@ right click `Folder`, choose `Connect to server`, input the IP, e.g:
 
     smb://10.0.1.15
 
+Notice: The `IP` should be the physical or virtual IP, not that local IP.
+
+The Guest machine and the Host machine should be the bridge connection,
+
+not the host-only or NAT connect.
+
 ## Using User Name and Password Register Account
 
 Just using user name and password under Linux to register account, and transmit data.
