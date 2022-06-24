@@ -29,3 +29,9 @@ set port forwarding to access the virtual machine via
 As the below image show:
 
 ![NAT Connection](https://digglife.net/wp-content/uploads/2011/05/shared-networking.png "NAT")
+
+## 3.RoadMap
+
+### 3.1.Host macOS remote login VM Debian
+
+### 3.2.VM Debian remote login Host macOS
