@@ -133,3 +133,21 @@ then input my debian user password: `my_debian_user_password`, then got:
     Last login: Thu Mouth Day XX:XX:XX 20XX from localhost
 
     my_debian_user_name@device_Name:
+
+Just `exit` to quit the remote login.
+
+    my_debian_user_name@device_Name:exit
+
+    logout
+
+    Connection to 127.0.0.1 closed. 
+
+### 3.3No Use Password Remote login
+
+We need to[generate a pair of RSA public/private key](https://gist.github.com/SofijaErkin/6441b5f81d0aa8f54cd73c7aea6a158f#1-generate-ssh-key-pair).
+
+E.g: I just use `ssh-keygen -t rsa -b 4096 -C "macos_login_debian_via_ssh"` to
+
+product a pair of RSA key store under `/User/my_mac_usr_name/.ssh/` with name
+
+`macos_login_debian_id_rsa` and `macos_login_debian_id_rsa.pub`.
