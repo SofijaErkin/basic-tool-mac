@@ -103,3 +103,15 @@ default.
 Just use the code to connect with VM Debian/Ubuntu:
 
     ssh -p 22222 my_debian_user_name@127.0.0.1
+
+Then,you got:
+
+    The authenticity of host '127.0.0.1 (127.0.0.1)' can't be established.
+
+    ECDSA key fingerprint is SHA256:xxx.
+
+    Are you sure you want to continue connecting (yes/no)? yes
+
+    Warning: Permanently added '10.0.2.15' (ECDSA) to the list of known hosts.
+
+    my_debian_user_name@127.0.0.1's password:
