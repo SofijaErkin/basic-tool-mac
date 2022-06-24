@@ -10,13 +10,13 @@ laptop to push my workspace but not using my predecessors' Git Email address.
 
 First, my new Email need a customization SSH key pair.
 
-Open and enter my Termianl, and print that codes. I've just used iTerm2 as my
+Open and enter my Terminal, and print that codes. I've just used iTerm2 as my
 
 laptop default terminal.
 
     ssh-keygen -t rsa -b 4096 -C "my_new_email_address_for_git@gmail.com"
 
-The termianl prompt:
+The terminal prompt:
 
     Generating public/private rsa key pair.
     Enter file in which to save the key (/Users/XXX/.ssh/id_rsa):
@@ -39,7 +39,7 @@ Also, that terminal prompt:
 
 I also just input "`enter`" key.
 
-Then, the termianl prompt:
+Then, the terminal prompt:
 
     Your identification has been saved in /Users/user_name/.ssh/my_new_email_address_id_rsa
 
@@ -57,7 +57,7 @@ Just use this code:
 
     eval "$(ssh-agent -s)"
 
-That termianl prompt:
+That terminal prompt:
 
     > Agent pid 59566
 
@@ -95,6 +95,10 @@ Just use that below code:
 
     ssh-add -K /Users/user_name/.ssh/my_new_email_address_id_rsa
 
+Notice: using the below on Linux:
+
+    /usr/bin/ssh-add -k /home/user_name/.ssh/my_new_email_address_id_rsa
+
 Check the proxy of the ssh key again:
 
     ssh-add -l
@@ -119,7 +123,7 @@ That terminal prompt:
 
     4096 SHA256:............ /Users/user_name/.ssh/sofija_personal_github_id_rsa (RSA)
 
-### 2.5 Local Git Do Connect Qith GitHub via SSH
+### 2.5 Local Git Do Connect With GitHub via SSH
 
 Just use this command:
 
@@ -153,7 +157,7 @@ use this command:
 
     echo "This is a test for \"my new Email address git\"." >> README.md && git add README.md && git commit -m "Create README.md to test new Email git" && git pull && git push
 
-Then, just log into my Git account to checkout my repositorys' "`README.md`".
+Then, just log into my Git account to checkout my repository's' "`README.md`".
 
 ## 4.Change Remote Git User Name
 
@@ -167,13 +171,13 @@ repository, just use this command:
 
     git config --list && git remote set-url origin git@my_new_email_address-github.com:MyNewEmailNewGitName/my_remote_repository_name.git && git config --list
 
-Also, use "`READMD.md`" to checkout renamed Gitub user name
+Also, use "`README.md`" to checkout renamed Github user name
 
 "`MyNewEmailNewGitName`". Just use this command:
 
     echo "This is a test for \"my new Git user name\"." >> README.md && git add README.md && git commit -m "Update README.md to test new Git user name" && git pull && git push
 
-Then, just log into my Git account to checkout my repositorys' "`README.md`".
+Then, just log into my Git account to checkout my repository's' "`README.md`".
 
 That "`README.md`" in my repository just like:
 
