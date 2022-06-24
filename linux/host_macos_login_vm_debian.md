@@ -203,3 +203,19 @@ Add the below to `/Users/user_name/.ssh/config`, save and active:
     ssh-add -K /Users/my_mac_usr_name/.ssh/macos_login_debian_id_rsa
 
 That terminal prompt: `4096 SHA256:.../Users/my_mac_usr_name/.ssh/macos_login_debian_id_rsa(RSA)`.
+
+#### 3.3.2.4Settings short key
+
+If you are using `Zsh`, just edit `~/.zshrc` and add the below code line, and active
+
+via `source ~/.zshrc`:
+
+    alias debian="ssh -p 22222 my_debian_user_name@debian"
+
+Or if you are using `Bash`, just edit `~/.bashrc`, add the below, and active
+
+via `source ~/.bashrc`:
+
+    alias debian="ssh -p 22222 my_debian_user_name@debian"
+
+Now, you could just use `debian` to remote login VM Debian in Macbook's terminal.
