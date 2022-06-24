@@ -35,3 +35,23 @@ refer:
 4.[The Network configuration of Ubuntu after installed in Mac via VirtualBox(Chinese Blog)](https://www.muouseo.com/article/qd7yq9pe2w.html)
 
 5.[How to access the Web server under Virtual machine(Chinese Blog)](https://codeantenna.com/a/BIK7VaksyV).
+
+## 2.VM Debian
+
+### 2.1Install SSH in Debian
+
+No matter you are Debian or even Ubuntu, just use:
+
+    sudo apt update
+
+    sudo apt install openssh-server
+
+Check out whether the server of SSH has opened:
+
+    ps -e | grep ssh
+
+If you saw `sshd`, then the server of SSH was opening; Or, just use the code to
+
+start the server of SSH:
+
+    sudo /etc/init.d/ssh start
