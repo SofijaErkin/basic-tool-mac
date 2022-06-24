@@ -55,3 +55,29 @@ If you saw `sshd`, then the server of SSH was opening; Or, just use the code to
 start the server of SSH:
 
     sudo /etc/init.d/ssh start
+
+### 2.2Config SSH Server
+
+Just set SSH port to `22` via comment the `#` before `#Port 22` at
+
+`/etc/ssh/sshd_config`, use VIM to open and edit via
+
+`sudo vim /etc/ssh/sshd_config`, and edit that `Port` line to:
+
+    Port 22 # if set port forwarding at Host was 22, then -p do not need to write
+
+### 2.3Ensure IP
+
+Just use one of the codes to make sure the IP of VM/Guest Debian/Ubuntu and
+
+keep it in mind: `hostname -I`; `hostname -I | awk '{print $1}'`;
+
+`ip route get 1.2.3.4 | awk '{print $7}'`.
+
+E.g: `hostname -I`:
+
+    10.0.2.15
+
+the IP was that you need to set that `Guest IP` at Step1:
+
+`VirtualBox Manager: Port Forwarding`.
