@@ -171,3 +171,15 @@ then you will see an new generated file name `authorized_keys` under your VM
 debian `/home/my_debian_user_name/.ssh`, and the file `authorized_keys`'s text
 
 is that the generated public key `macos_login_debian_id_rsa.pub`'s text.
+
+#### 3.3.2Private Key Settings
+
+#### 3.3.2.1Start SSH-Agent in the Background
+
+Just use this code: `eval "$(ssh-agent -s)"`; That terminal prompt:
+
+`> Agent pid 59566`.
+
+#### 3.3.2.2[Configure SSH config file](https://gist.github.com/SofijaErkin/6441b5f81d0aa8f54cd73c7aea6a158f#22-configure-ssh-config-file)
+
+    cd && cd /Users/user_name/.ssh && vim config
