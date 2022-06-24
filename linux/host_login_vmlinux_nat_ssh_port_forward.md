@@ -16,7 +16,7 @@ with my VirtualBox Debian's terminal.
 
 ## 1.My Network Environment
 
-I've just set NAT connection between my VirtualBox Debian and macbook. In NAT
+I've just set [NAT connection](https://en.wikipedia.org/wiki/Network_address_translation) between my VirtualBox Debian and macbook. In NAT
 
 status, that the virtual machine could access the host machine via
 
