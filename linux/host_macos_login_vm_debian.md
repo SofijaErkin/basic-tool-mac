@@ -81,3 +81,25 @@ E.g: `hostname -I`:
 the IP was that you need to set that `Guest IP` at Step1:
 
 `VirtualBox Manager: Port Forwarding`.
+
+refer:
+
+1.[The Network configuration of Ubuntu after installed in Mac via VirtualBox(Chinese Blog)](https://www.muouseo.com/article/qd7yq9pe2w.html).
+
+2.[Macbook SSH with VM Kail and Settings auto login once Kail Power on(Chinese)](https://codeantenna.com/a/f9I5eLTOvS).
+
+3.[MacOS access VM Ubuntu using SSH and the operation of Cloud](https://www.cnblogs.com/bjwu/p/9853498.html).
+
+## 3.Host macOS
+
+### 3.1Install SSH on macOS
+
+All modern Macs running macOS or Mac OS X come with SSH pre-installed by
+
+default.
+
+### 3.2Test SSH with VM Debian
+
+Just use the code to connect with VM Debian/Ubuntu:
+
+    ssh -p 22222 my_debian_user_name@127.0.0.1
