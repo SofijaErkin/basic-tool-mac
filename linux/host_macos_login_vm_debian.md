@@ -115,3 +115,21 @@ Then,you got:
     Warning: Permanently added '10.0.2.15' (ECDSA) to the list of known hosts.
 
     my_debian_user_name@127.0.0.1's password:
+
+then input my debian user password: `my_debian_user_password`, then got:
+
+    Linux device_Name X.YZ.Z-ZZ-amd64 #1 SMP Debian X.YZ.XYZ-X (20XX-0X-XX) x86_64
+
+    The programs included with the Debian GNU/Linux system are free software;
+
+    the exact distribution terms for each program are described in the
+    
+    individual files in /usr/share/doc/*/copyright.
+
+    Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+
+    permitted by applicable law.
+
+    Last login: Thu Mouth Day XX:XX:XX 20XX from localhost
+
+    my_debian_user_name@device_Name:
