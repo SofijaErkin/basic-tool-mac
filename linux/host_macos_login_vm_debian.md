@@ -183,3 +183,23 @@ Just use this code: `eval "$(ssh-agent -s)"`; That terminal prompt:
 #### 3.3.2.2[Configure SSH config file](https://gist.github.com/SofijaErkin/6441b5f81d0aa8f54cd73c7aea6a158f#22-configure-ssh-config-file)
 
     cd && cd /Users/user_name/.ssh && vim config
+
+Add the below to `/Users/user_name/.ssh/config`, save and active:
+
+    Host debian
+
+         Hostname 127.0.0.1
+
+         User my_debian_user_name
+
+         AddKeysToAgent yes
+
+         UseKeychain yes
+
+         IdentityFile /Users/my_mac_usr_name/.ssh/macos_login_debian_id_rsa
+
+#### 3.3.2.3Add to SSH-Agent
+
+    ssh-add -K /Users/my_mac_usr_name/.ssh/macos_login_debian_id_rsa
+
+That terminal prompt: `4096 SHA256:.../Users/my_mac_usr_name/.ssh/macos_login_debian_id_rsa(RSA)`.
