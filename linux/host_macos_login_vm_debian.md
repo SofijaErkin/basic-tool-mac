@@ -151,3 +151,23 @@ E.g: I just use `ssh-keygen -t rsa -b 4096 -C "macos_login_debian_via_ssh"` to
 product a pair of RSA key store under `/User/my_mac_usr_name/.ssh/` with name
 
 `macos_login_debian_id_rsa` and `macos_login_debian_id_rsa.pub`.
+
+#### 3.3.1Push Public Key To  VM Debian
+
+And I push that public key to VM debian:
+
+    ssh-copy-id -p my_debian_user_name@127.0.0.1
+
+Or use this code to push the generated public key to VM debian:
+
+    ssh-copy-id -f -p my_debian_user_name@127.0.0.1
+
+Or just use this to push:
+
+    ssh-copy-id my_debian_user_name@127.0.0.1
+
+then you will see an new generated file name `authorized_keys` under your VM
+
+debian `/home/my_debian_user_name/.ssh`, and the file `authorized_keys`'s text
+
+is that the generated public key `macos_login_debian_id_rsa.pub`'s text.
