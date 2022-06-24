@@ -32,6 +32,6 @@ As the below image show:
 
 ## 3.RoadMap
 
-### 3.1.Host macOS remote login VM Debian
+### 3.1.[Host macOS remote login VM Debian](https://gist.github.com/SofijaErkin/91e1bec1640ca486805d32c9278f9c44)
 
-### 3.2.VM Debian remote login Host macOS
+### 3.2.[VM Debian remote login Host macOS](https://gist.github.com/SofijaErkin/c8c9e9fefe2fc6fd46e8540a907d8f54)
