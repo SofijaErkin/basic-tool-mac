@@ -44,6 +44,8 @@ refer:
 
 [VirtualBox Host ssh to Guest](https://superuser.com/a/507703)
 
+[Enable or Disable Automatic Login in Debian 11 Bullseye](https://www.how2shout.com/linux/enable-or-disable-automatic-login-in-debian-11-bullseye/)
+
 [The System Network Configuration of Debian 101(Chinese Blog)](https://blog.csdn.net/annita2019/article/details/105515004)
 
 [The Network Configuration of Ubuntu Under Macbook's VirtualBox(Chinese Blog)](https://www.muouseo.com/article/qd7yq9pe2w.html)
