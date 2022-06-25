@@ -126,7 +126,7 @@ Then,you got:
 
     Are you sure you want to continue connecting (yes/no)? yes
 
-    Warning: Permanently added '10.0.2.15' (ECDSA) to the list of known hosts.
+    Warning: Permanently added '127.0.0.1' (ECDSA) to the list of known hosts.
 
     my_debian_user_name@127.0.0.1's password:
 
