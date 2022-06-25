@@ -4,6 +4,12 @@ I have just install Debian via VirtualBox in macbook, set NAT connection
 
 between VM Debian and Host macOS.
 
+So, if I need to remotely login VM Debian by macOS, macOS have to be the
+
+SSH client, VM Debian have to be the SSH server, VirtualBox have to be the
+
+SSH connection translation bridge.
+
 ## 1.VirtualBox Manager: Port Forwarding
 
 Click `VirtualBox` logo and enter that, found out virtual machine OS
@@ -36,7 +42,11 @@ refer:
 
 5.[How to access the Web server under Virtual machine(Chinese Blog)](https://codeantenna.com/a/BIK7VaksyV).
 
-## 2.VM Debian
+## 2.VM Debian Settings
+
+In this SSH connections, VM Debian active as the SSH server. So, the VM Debian
+
+Settings is that the SSH server setting.
 
 ### 2.1Install SSH in Debian
 
@@ -90,7 +100,11 @@ refer:
 
 3.[MacOS access VM Ubuntu using SSH and the operation of Cloud](https://www.cnblogs.com/bjwu/p/9853498.html).
 
-## 3.Host macOS
+## 3.Host macOS Settings
+
+In this SSH connections, Host macOS active as the SSH client. So, the VM Debian
+
+Settings is that the SSH client setting.
 
 ### 3.1Install SSH on macOS
 
