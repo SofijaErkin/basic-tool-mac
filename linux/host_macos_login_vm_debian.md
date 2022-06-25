@@ -246,10 +246,30 @@ refer:
 
 ## 4.[SCP: Copy a File Between Two Systems](https://docs.oracle.com/cd/E26502_01/html/E29001/remotehowtoaccess-55154.html)
 
-usage: `scp [-r] [[user1@]hostname1:]file1 ... [[user2@]hostname2:]file2`
+usage: `scp [OPTION] [user@]SRC_HOST:]file1 [user@]DEST_HOST:]file2`
+
+Notice:
+
+In SCP command,
+
+`-P` - Specifies the remote host ssh port.
+
+`-p` - Preserves files modification and access times.
+
+In SSH command,
+
+`-p` - Specifies the remote host ssh port.
 
 refer:
 
 1.[Remote Copying With the scp Command](https://docs.oracle.com/cd/E26502_01/html/E29001/remotehowtoaccess-55154.html).
 
 2.[MacOS access VM Ubuntu using SSH and the operation of Cloud](https://www.cnblogs.com/bjwu/p/9853498.html).
+
+3.[How to Use SCP Command to Securely Transfer Files](https://linuxize.com/post/how-to-use-scp-command-to-securely-transfer-files/).
+
+4.[SSH Command](https://linuxize.com/post/ssh-command-in-linux/).
+
+5.[SCP Command(Chinese Blog)](https://wangdoc.com/ssh/scp.html).
+
+6.[Target Port to transmit files via SCP(Chinese Blog)](https://blog.csdn.net/qq_29307291/article/details/72819802).
