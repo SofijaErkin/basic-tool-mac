@@ -55,3 +55,17 @@ Finally, if want to copy the result to the local machine, then use `scp`, again:
 and if from cloud to local, then:
 
     scp -P target_port cloud_current_user_name@remote.cloud.ip.address:~/macos_share_cloud/a.py ~/Desktop/ 
+
+## 4.Refer
+
+1.[Remote Copying With the scp Command](https://docs.oracle.com/cd/E26502_01/html/E29001/remotehowtoaccess-55154.html).
+
+2.[MacOS access VM Ubuntu using SSH and the operation of Cloud(Chinese Blog)](https://www.cnblogs.com/bjwu/p/9853498.html).
+
+3.[How to Use SCP Command to Securely Transfer Files](https://linuxize.com/post/how-to-use-scp-command-to-securely-transfer-files/).
+
+4.[SSH Command](https://linuxize.com/post/ssh-command-in-linux/).
+
+5.[SCP Command(Chinese Blog)](https://wangdoc.com/ssh/scp.html).
+
+6.[Target Port to transmit files via SCP(Chinese Blog)](https://blog.csdn.net/qq_29307291/article/details/72819802).
