@@ -260,6 +260,10 @@ Macbook, just use this code to run in remote cloud/VM(e.g:Debian):
 
     ssh -p port_target cloud_or_vm_user_current_name@target.machine.ip.addr python3 < ~/test.py
 
+refer:
+
+1.[MacOS access VM Ubuntu using SSH and the operation of Cloud(Chinese Blog)](https://www.cnblogs.com/bjwu/p/9853498.html).
+
 ### 4.2[SCP: Copy a File Between Two Systems](https://docs.oracle.com/cd/E26502_01/html/E29001/remotehowtoaccess-55154.html)
 
 usage: `scp [OPTION] [user@]SRC_HOST:]file1 [user@]DEST_HOST:]file2`
@@ -280,7 +284,7 @@ refer:
 
 1.[Remote Copying With the scp Command](https://docs.oracle.com/cd/E26502_01/html/E29001/remotehowtoaccess-55154.html).
 
-2.[MacOS access VM Ubuntu using SSH and the operation of Cloud](https://www.cnblogs.com/bjwu/p/9853498.html).
+2.[MacOS access VM Ubuntu using SSH and the operation of Cloud(Chinese Blog)](https://www.cnblogs.com/bjwu/p/9853498.html).
 
 3.[How to Use SCP Command to Securely Transfer Files](https://linuxize.com/post/how-to-use-scp-command-to-securely-transfer-files/).
 
