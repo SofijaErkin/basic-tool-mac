@@ -244,7 +244,23 @@ refer:
 
 4.[MacOS access VM Ubuntu using SSH and the operation of Cloud](https://www.cnblogs.com/bjwu/p/9853498.html).
 
-## 4.[SCP: Copy a File Between Two Systems](https://docs.oracle.com/cd/E26502_01/html/E29001/remotehowtoaccess-55154.html)
+## 4.Running and Transmit Files on Cloud/VM Debian
+
+Running files on Cloud/VM Debian could use `ssh` command, while transmit files
+
+on Cloud/VM Debian should be use `scp` command.
+
+### 4.1Running files Cloud/VM Debian via ssh
+
+Write project on local host Macbook, run program in free remote cloud/VM Debian
+
+via ssh the program to there. E.g: a program `test.py` under `~/` in my local
+
+Macbook, just use this code to run in remote cloud/VM(e.g:Debian):
+
+    ssh -p port_target cloud_or_vm_user_current_name@target.machine.ip.addr python3 < ~/test.py
+
+### 4.2[SCP: Copy a File Between Two Systems](https://docs.oracle.com/cd/E26502_01/html/E29001/remotehowtoaccess-55154.html)
 
 usage: `scp [OPTION] [user@]SRC_HOST:]file1 [user@]DEST_HOST:]file2`
 
