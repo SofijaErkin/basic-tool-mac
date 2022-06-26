@@ -100,4 +100,30 @@ Just `exit` to quit the remote login.
 
 2.[MacOS access VM Ubuntu using SSH and the operation of cloud(Chinese Blog)](https://www.cnblogs.com/bjwu/p/9853498.html).
 
-## 3.[SCP: Copy a File Between Two Systems](https://gist.github.com/SofijaErkin/91e1bec1640ca486805d32c9278f9c44#4scp-copy-a-file-between-two-systems)
+## 3.Running and Transmit Files on Remote Cloud/Host
+
+Running files on remote Cloud/host could use `ssh` command, while transmit
+
+files on remote Cloud/host macOS should be use `scp` command.
+
+### 3.1Running files Cloud/Host via ssh
+
+Write project on local guest VM Debian, run program in free remote cloud/Host
+
+macOS via `ssh` the program to there. E.g: a program `test.py` under `~/` in my
+
+local guest VM Debian, just use this code to run in remote cloud/Host
+
+(e.g:macOS):
+
+    ssh cloud_or_host_user_current_name@target.machine.ip.addr python3 < ~/test.py
+
+Do not need to add `-p port_target`, because the ssh default port is `22`, and
+
+we use that port `22`.
+
+refer:
+
+1.[MacOS access VM Ubuntu using SSH and the operation of Cloud(Chinese Blog)](https://www.cnblogs.com/bjwu/p/9853498.html).
+
+### 3.2[SCP: Copy a File Between Two Systems](https://gist.github.com/SofijaErkin/bb59afe064fcc397f5f687efb9fa534c#scp-command-combat-style)
