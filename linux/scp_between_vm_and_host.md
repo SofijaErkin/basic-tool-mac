@@ -30,29 +30,33 @@ this case occurs, we should push that two program into remote cloud/VM to run.
 
 Now, that's time to use `scp`(secure copy). package them and copy, copy that
 
-into my VM's folder `macos_share` via:
+into my VM's folder `macos_share` via:(From Host to Guest VM)
 
     scp -P target_port ~/{a,b}.py vm_current_user_name@127.0.0.1:~/macos_share
 
 and if into my remote Cloud's folder `macos_share_cloud`, then via:
 
-    scp -P target_port ~/{a,b}.py cloud_current_user_name@remote.cloud.ip.address:~/macos_share_cloud
+(From remote cloud or other host to guest VM)
+
+    scp -P target_port ~/{a,b}.py cloud_current_user_name@host.machine.ip.address:~/macos_share_cloud
 
 then run that transmitted copied file, that means product a instruct to active
 
-`a.py` via `ssh` command with `"` and `"`:
+`a.py` via `ssh` command with `"` and `"`(From Host to Guest VM):
 
     ssh -p target_port vm_current_user_name@127.0.0.1 "python3 ~/macos_share/a.py"
 
-and if run in remote cloud, then via:
+and if run in remote cloud, then via(From remote cloud/other host to guest VM):
 
-    ssh -p target_port cloud_current_user_name@remote.cloud.ip.address "python3 ~/macos_share/a.py" 
+    ssh -p target_port cloud_current_user_name@host.machine.ip.address "python3 ~/macos_share/a.py" 
 
 Finally, if want to copy the result to the local machine, then use `scp`, again:
 
+(From Host yo Guest VM)
+
     scp -P target_port vm_current_user_name@127.0.0.1:~/macos_share/a.py ~/Desktop/ 
 
-and if from cloud to local, then:
+and if from cloud to local, then(From cloud or other host to guest VM):
 
     scp -P target_port cloud_current_user_name@remote.cloud.ip.address:~/macos_share_cloud/a.py ~/Desktop/ 
 
