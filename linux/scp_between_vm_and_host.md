@@ -37,3 +37,21 @@ into my VM's folder `macos_share` via:
 and if into my remote Cloud's folder `macos_share_cloud`, then via:
 
     scp -P target_port ~/{a,b}.py cloud_current_user_name@remote.cloud.ip.address:~/macos_share_cloud
+
+then run that transmitted copied file, that means product a instruct to active
+
+`a.py` via `ssh` command with `"` and `"`:
+
+    ssh -p target_port vm_current_user_name@127.0.0.1 "python3 ~/macos_share/a.py"
+
+and if run in remote cloud, then via:
+
+    ssh -p target_port cloud_current_user_name@remote.cloud.ip.address "python3 ~/macos_share/a.py" 
+
+Finally, if want to copy the result to the local machine, then use `scp`, again:
+
+    scp -P target_port vm_current_user_name@127.0.0.1:~/macos_share/a.py ~/Desktop/ 
+
+and if from cloud to local, then:
+
+    scp -P target_port cloud_current_user_name@remote.cloud.ip.address:~/macos_share_cloud/a.py ~/Desktop/ 
