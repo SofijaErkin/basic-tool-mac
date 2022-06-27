@@ -88,6 +88,8 @@ connect, and then transmit data.
 
 [How To Connect To Samba Shares Mac Os X?](https://lemp.io/how-to-connect-to-samba-shares-mac-os-x/)
 
+[Configuring Samba on Mac OS X](https://docs.toonboom.com/help/harmony-14/advanced/installation/mac/configure-samba-macosx.html)
+
 [Sharing folder between virtual machine ubuntu and macOS(Chinese Blog)](https://blog.csdn.net/Bioinspiration/article/details/107203703)
 
 [Macbook access the sharing folders under Ubuntu(Chinese Blog)](https://blog.csdn.net/qq_41822647/article/details/85332378?spm=1001.2101.3001.6650.12&utm_medium=distribute.pc_relevant.none-task-blog-2~default~CTRLIST~Rate-12-85332378-blog-107203703.pc_relevant_paycolumn_v3&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2~default~CTRLIST~Rate-12-85332378-blog-107203703.pc_relevant_paycolumn_v3&utm_relevant_index=14)
