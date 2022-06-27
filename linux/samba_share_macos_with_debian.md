@@ -70,7 +70,9 @@ not the host-only or NAT connect.
 
 ## Using User Name and Password Register Account
 
-Just using user name and password under Linux to register account, and transmit data.
+Just using user name and password under Linux to choose register account to
+
+connect, and then transmit data.
 
 ## refer
 
