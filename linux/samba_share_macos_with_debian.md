@@ -108,6 +108,8 @@ Refer from Server to Client.
 
 13.(Terminal)[MacOSX connect Samba under terminal(Chinese)](https://blog.csdn.net/lionelluthor/article/details/102876522).
 
+14.[Sharing Files From a VirtualBox Guest To The Host Using NAT Adapter](https://kleinfelter.com/sharing-files-from-a-virtualbox-guest-to-the-host-using-nat-adapter).
+
 ### 9.2Refer from Host/macOS to Linux/Debian
 
 1.[Configuring Samba on Mac OS X](https://docs.toonboom.com/help/harmony-14/advanced/installation/mac/configure-samba-macosx.html).
