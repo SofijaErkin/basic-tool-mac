@@ -112,6 +112,14 @@ Refer from Server to Client.
 
 15.[Firewalling Samba](https://www.samba.org/~tpot/articles/firewall.html).
 
+16.[The port and protocol of Samba Service(Chinese Blog)](https://blog.csdn.net/wangsifu2009/article/details/6780749).
+
+17.[4.3. Shared Folders](https://www.virtualbox.org/manual/ch04.html#sharedfolders).
+
+18.[Chapter 4. Guest Additions](https://www.virtualbox.org/manual/ch04.html).
+
+19.[8.40. VBoxManage sharedfolder](https://www.virtualbox.org/manual/ch08.html#vboxmanage-sharedfolder).
+
 ### 9.2Refer from Host/macOS to Linux/Debian
 
 1.[Configuring Samba on Mac OS X](https://docs.toonboom.com/help/harmony-14/advanced/installation/mac/configure-samba-macosx.html).
