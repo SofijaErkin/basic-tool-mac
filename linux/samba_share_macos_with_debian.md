@@ -1,6 +1,8 @@
 # Samba Share
 
-## Install Samba
+This `Samba Share` is from Linux/Cloud(e.g:debian) to Others(like:macos).
+
+## 1.Install Samba
 
 Just use the below:
 
@@ -8,15 +10,15 @@ Just use the below:
     
     sudo apt install samba
 
-## Create Samba Password file
+## 2.Create Samba Password file
 
     sudo touch /etc/samba/smbpasswd
 
-## Create User Name and Password(Using the current user name and password)
+## 3.Create User Name and Password(Using the current user name and password)
 
     sudo smbpasswd -a username
 
-## Config Smaba
+## 4.Config Smaba
 
 Edit the `/etc/samba/smb.conf`:
 
@@ -48,15 +50,15 @@ Adding the below to the bottom of that file
    
        writable = yes
 
-## Restart Server Samba
+## 5.Restart Server Samba
 
     sudo /etc/init.d/smbd restart
 
-## Checkout the IP of Linux(Notice: virtual local IP not work)
+## 6.Checkout the IP of Linux(Notice: virtual local IP not work)
 
     ifconfig
 
-## Using Folder under Macbook Connect Samba
+## 7.Using Folder under Macbook Connect Samba
 
 right click `Folder`, choose `Connect to server`, input the IP, e.g:
 
@@ -68,36 +70,60 @@ The Guest machine and the Host machine should be the bridge connection,
 
 not the host-only or NAT connect.
 
-## Using User Name and Password Register Account
+## 8.Using User Name and Password Register Account
 
 Just using user name and password under Linux to choose register account to
 
 connect, and then transmit data.
 
-## refer
+## 9.Refer
 
-[How to set up Samba in Ubuntu/Linux, and access it in Mac OS and Windows](https://adrianmejia.com/how-to-set-up-samba-in-ubuntu-linux-and-access-it-in-mac-os-and-windows/)
+Refer from Server to Client.
 
-[Configure Samba to Work Better with Mac OS X](https://wiki.samba.org/index.php/Configure_Samba_to_Work_Better_with_Mac_OS_X)
+### 9.1Refer from Linux/Debian to Host/macOS
 
-[How to set up Samba in Ubuntu and access it in MacOS/Windows](https://trendoceans.com/how-to-set-up-samba-in-ubuntu-and-access-it-in-macos-windows/)
+1.[How to set up Samba in Ubuntu/Linux, and access it in Mac OS and Windows](https://adrianmejia.com/how-to-set-up-samba-in-ubuntu-linux-and-access-it-in-mac-os-and-windows/).
 
-[Mac OSX client and Linux SAMBA share](https://forum.howtoforge.com/threads/mac-osx-client-and-linux-samba-share.77380/)
+2.[Configure Samba to Work Better with Mac OS X](https://wiki.samba.org/index.php/Configure_Samba_to_Work_Better_with_Mac_OS_X).
 
-[How to Share Files Between Windows, Mac, and Linux PCs on a Network](https://www.howtogeek.com/191116/how-to-share-files-between-windows-mac-and-linux-pcs-on-a-network/)
+3.[How to set up Samba in Ubuntu and access it in MacOS/Windows](https://trendoceans.com/how-to-set-up-samba-in-ubuntu-and-access-it-in-macos-windows/).
 
-[How To Connect To Samba Shares Mac Os X?](https://lemp.io/how-to-connect-to-samba-shares-mac-os-x/)
+4.[Mac OSX client and Linux SAMBA share](https://forum.howtoforge.com/threads/mac-osx-client-and-linux-samba-share.77380/).
 
-[Configuring Samba on Mac OS X](https://docs.toonboom.com/help/harmony-14/advanced/installation/mac/configure-samba-macosx.html)
+5.[How to Share Files Between Windows, Mac, and Linux PCs on a Network](https://www.howtogeek.com/191116/how-to-share-files-between-windows-mac-and-linux-pcs-on-a-network/).
 
-[Sharing folder between virtual machine ubuntu and macOS(Chinese Blog)](https://blog.csdn.net/Bioinspiration/article/details/107203703)
+6.[How To Connect To Samba Shares Mac Os X?](https://lemp.io/how-to-connect-to-samba-shares-mac-os-x/).
 
-[Macbook access the sharing folders under Ubuntu(Chinese Blog)](https://blog.csdn.net/qq_41822647/article/details/85332378?spm=1001.2101.3001.6650.12&utm_medium=distribute.pc_relevant.none-task-blog-2~default~CTRLIST~Rate-12-85332378-blog-107203703.pc_relevant_paycolumn_v3&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2~default~CTRLIST~Rate-12-85332378-blog-107203703.pc_relevant_paycolumn_v3&utm_relevant_index=14)
+7.[Sharing folder between virtual machine ubuntu and macOS(Chinese Blog)](https://blog.csdn.net/Bioinspiration/article/details/107203703).
 
-[Macbook build Samba folders to share with Ubuntu for accessing and loading(Chinese Blog)](https://blog.csdn.net/ff_lz/article/details/107391871?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_title~default-4-107391871-blog-85332378.pc_relevant_paycolumn_v3&spm=1001.2101.3001.4242.3&utm_relevant_index=7)
+8.[Macbook access the sharing folders under Ubuntu(Chinese Blog)](https://blog.csdn.net/qq_41822647/article/details/85332378?spm=1001.2101.3001.6650.12&utm_medium=distribute.pc_relevant.none-task-blog-2~default~CTRLIST~Rate-12-85332378-blog-107203703.pc_relevant_paycolumn_v3&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2~default~CTRLIST~Rate-12-85332378-blog-107203703.pc_relevant_paycolumn_v3&utm_relevant_index=14).
 
-[Ubuntu16.04 access the sharing folders of Windows via Internet with Samba(Chinese Blog)](https://blog.csdn.net/Yemiekai/article/details/113432451)
+9.[Accessing Linux Files from Windows or Mac (via SMB)](https://latisresearch.umn.edu/linux-smb).
 
-[MacOS build up Samba Server(Chinese Blog)](https://blog.csdn.net/qq_38375620/article/details/101699465)
+10.(Terminal)[macOS: How to mount a SMB share from the command line](https://www.ryadel.com/en/macos-mount-smb-share-command-line-terminal-unc-remote-folder/).
 
-[Config the Samba client on Linux to access the remote Samba server contents(Chinese Blog)](https://www.linuxrumen.com/rmxx/2093.html)
+11.(Terminal)[Using terminal connect SMB(Chinese Blog)](https://fengyalv.github.io/Blogs/mac/%E4%BD%BF%E7%94%A8%E7%BB%88%E7%AB%AF%E8%BF%9E%E6%8E%A5smb.html).
+
+12.(Terminal)[The three ways to connect SMB under MacOS terminal(Chinese Blog)](https://blog.csdn.net/youxiansanren/article/details/51581282).
+
+13.(Terminal)[MacOSX connect Samba under terminal(Chinese)](https://blog.csdn.net/lionelluthor/article/details/102876522).
+
+### 9.2Refer from Host/macOS to Linux/Debian
+
+1.[Configuring Samba on Mac OS X](https://docs.toonboom.com/help/harmony-14/advanced/installation/mac/configure-samba-macosx.html).
+
+2.(Terminal)[Macbook build Samba folders to share with Ubuntu for accessing and loading(Chinese Blog)](https://blog.csdn.net/ff_lz/article/details/107391871?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_title~default-4-107391871-blog-85332378.pc_relevant_paycolumn_v3&spm=1001.2101.3001.4242.3&utm_relevant_index=7).
+
+3.(Terminal)[Ubuntu16.04 access the sharing folders of Windows via Internet with Samba(Chinese Blog)](https://blog.csdn.net/Yemiekai/article/details/113432451).
+
+4.[MacOS build up Samba Server(Chinese Blog)](https://blog.csdn.net/qq_38375620/article/details/101699465).
+
+5.(Terminal)[Config the Samba client on Linux to access the remote Samba server contents(Chinese Blog)](https://www.linuxrumen.com/rmxx/2093.html).
+
+6.(Terminal)[Ubuntu access te server of Samba using terminal(Chinese Blog)](https://blog.csdn.net/ZCF1002797280/article/details/49805603).
+
+7.[Set up file sharing on Mac](https://support.apple.com/guide/mac-help/set-up-file-sharing-on-mac-mh17131/mac).
+
+8.(Terminal)[How to connect to samba shares over the internet via ssh from mac os x](https://blog.cadena-it.com/linux-tips-how-to/how-to-connect-to-samba-shares-over-the-internet-via-ssh-from-mac-os-x/).
+
+9.(Terminal)[Smbclient document](https://www.samba.org/samba/docs/current/man-html/smbclient.1.html?spm=a2c6h.13066369.question.22.198a2863Y6GMVE).
