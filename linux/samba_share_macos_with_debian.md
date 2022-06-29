@@ -150,4 +150,4 @@ Refer from Server to Client.
 
 10.(Terminal)[HOWTO: Use Shared Folders](https://forums.virtualbox.org/viewtopic.php?t=15868).
 
-11.[Using Git with shared folders and virtual machines](https://www.software.ac.uk/resources/guides-everything/using-git-shared-folders-and-virtual-machines-3).
+11.(Host-only+VM+Host+Git)[Using Git with shared folders and virtual machines](https://www.software.ac.uk/resources/guides-everything/using-git-shared-folders-and-virtual-machines-3).
