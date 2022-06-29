@@ -126,6 +126,8 @@ Refer from Server to Client.
 
 19.[8.40. VBoxManage sharedfolder](https://www.virtualbox.org/manual/ch08.html#vboxmanage-sharedfolder).
 
+20.[Share Ubuntu Home Directories using Samba](https://www.howtogeek.com/howto/ubuntu/share-ubuntu-home-directories-using-samba/).
+
 ### 9.2Refer from Host/macOS to Linux/Debian
 
 1.[Configuring Samba on Mac OS X](https://docs.toonboom.com/help/harmony-14/advanced/installation/mac/configure-samba-macosx.html).
