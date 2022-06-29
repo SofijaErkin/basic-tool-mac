@@ -42,6 +42,8 @@ refer:
 
 5.[How to access the Web server under Virtual machine(Chinese Blog)](https://codeantenna.com/a/BIK7VaksyV).
 
+6.[Chapter 6. Virtual Networking](https://www.virtualbox.org/manual/ch06.html).
+
 ## 2.VM Debian Settings
 
 In this SSH connections, VM Debian active as the SSH server. So, the VM Debian
@@ -99,6 +101,8 @@ refer:
 2.[Macbook SSH with VM Kail and Settings auto login once Kail Power on(Chinese)](https://codeantenna.com/a/f9I5eLTOvS).
 
 3.[MacOS access VM Ubuntu using SSH and the operation of Cloud](https://www.cnblogs.com/bjwu/p/9853498.html).
+
+4.[Chapter 6. Virtual Networking](https://www.virtualbox.org/manual/ch06.html).
 
 ## 3.Host macOS Settings
 
@@ -243,6 +247,8 @@ refer:
 3.[Easy way to SSH into VirtualBox machine | Any OS](https://dev.to/developertharun/easy-way-to-ssh-into-virtualbox-machine-any-os-just-x-steps-5d9i).
 
 4.[MacOS access VM Ubuntu using SSH and the operation of Cloud](https://www.cnblogs.com/bjwu/p/9853498.html).
+
+5.[Chapter 6. Virtual Networking](https://www.virtualbox.org/manual/ch06.html).
 
 ## 4.Running and Transmit Files on Cloud/VM Debian
 
