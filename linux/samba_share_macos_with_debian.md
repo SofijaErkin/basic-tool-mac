@@ -149,3 +149,5 @@ Refer from Server to Client.
 9.(Terminal)[Smbclient document](https://www.samba.org/samba/docs/current/man-html/smbclient.1.html?spm=a2c6h.13066369.question.22.198a2863Y6GMVE).
 
 10.(Terminal)[HOWTO: Use Shared Folders](https://forums.virtualbox.org/viewtopic.php?t=15868).
+
+11.[Using Git with shared folders and virtual machines](https://www.software.ac.uk/resources/guides-everything/using-git-shared-folders-and-virtual-machines-3).
