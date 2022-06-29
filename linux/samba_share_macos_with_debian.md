@@ -50,6 +50,12 @@ Adding the below to the bottom of that file
    
        writable = yes
 
+Notice: just use `testparm` to check your changes after you edit smb.conf, then
+
+let the daemon re-read the config with a "`sudo /etc/init.d/smbd restart`" or
+
+"`sudo service smbd restart`".
+
 ## 5.Restart Server Samba
 
     sudo /etc/init.d/smbd restart
