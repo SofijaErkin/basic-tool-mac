@@ -155,7 +155,62 @@ Catch: ``.
 
 What's the matter: Successfully mounted!!!
 
-But only read status! Try using the below:
+Three, try case:
+
+    sudo mount -t cifs //192.168.1.2/sharewithdebian /media/share_from_macos -osec=ntlmv2,domain=MYDOMAIN,username=share,password=pass
+
+Catch: `mount: /media/share_from_macos: cannot mount //192.168.1.2/sharewithdebian read-only.`.
+
+What's the matter: I do not know!
+
+Four, try case:
+
+    sudo mount -t cifs //192.168.1.2/sharewithdebian /media/share_from_macos
+
+Catch:
+
+    [sudo] password for foruo:
+    mount: /media/share_from_macos: bad option; for several filesystems (e.g. nfs, cifs) you might need a /sbin/mount.<type> helper program.
+
+What's the matter: I do not know!
+
+Five, try case:
+
+    sudo mount -t cifs //192.168.1.2/sharewithdebian /media/share_from_macos -o username=sharewithdebian,password=pass,vers=2.0
+
+Catch: `[sudo] password for foruo:`.
+
+What's the matter: Successfully mounted!!!
+
+Six, try case:
+
+    smb://192.168.1.2
+
+Catch: `zsh: no such file or directory: smb://192.168.1.2`.
+
+What's the matter: I do not know!
+
+Seven, try case:
+
+    sudo mount -t cifs //192.168.1.2/sharewithdebian HD /media/share_from_debian -o username=sharewithdebian,noserverino
+
+Catch:
+
+    [sudo] password for foruo:
+    mount: bad usage
+    Try 'mount --help' for more information.
+
+What's the matter: I do not know!
+
+Eight, try case:
+
+    sudo mount -t cifs //192.168.1.2/sharewithdebian /media/share_from_macos/ -rw -o username=sharewithdebian,password=pass,nounix,sec=ntlmssp
+
+Catch:``.
+
+What's the matter: Successfully mounted!!!
+
+But the upstairs successful cases is only reading status! Try using the below:
 
     sudo mount -t cifs //192.168.1.2/sharewithdebian /media/share/ -rw -o username=sharewithdebian,password=pass,nounix,sec=ntlmssp
 
