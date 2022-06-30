@@ -128,6 +128,8 @@ Refer from Server to Client.
 
 20.[Share Ubuntu Home Directories using Samba](https://www.howtogeek.com/howto/ubuntu/share-ubuntu-home-directories-using-samba/).
 
+21.[21.3.4 Accessing Samba Shares from an Oracle Linux Client](https://docs.oracle.com/en/operating-systems/oracle-linux/6/admin/access-shares-linux.html).
+
 ### 9.2Refer from Host/macOS to Linux/Debian
 
 1.[Configuring Samba on Mac OS X](https://docs.toonboom.com/help/harmony-14/advanced/installation/mac/configure-samba-macosx.html).
