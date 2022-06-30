@@ -82,11 +82,17 @@ Just using user name and password under Linux to choose register account to
 
 connect, and then transmit data.
 
-## 9.Refer
+## 9.[Terminal Login or Access Samba Server Services](https://gist.github.com/SofijaErkin/c1ffee1af03826db67ec594c3d727e2e)
+
+There is best to login samba client via terminal, which means access the
+
+services of samba service by terminal.
+
+## 10.Refer
 
 Refer from Server to Client.
 
-### 9.1Refer from Linux/Debian to Host/macOS
+### 10.1Refer from Linux/Debian to Host/macOS
 
 1.[How to set up Samba in Ubuntu/Linux, and access it in Mac OS and Windows](https://adrianmejia.com/how-to-set-up-samba-in-ubuntu-linux-and-access-it-in-mac-os-and-windows/).
 
@@ -132,7 +138,7 @@ Refer from Server to Client.
 
 22.[21.3.1 Configuring a Samba Server](https://docs.oracle.com/en/operating-systems/oracle-linux/6/admin/configure-samba-server.html).
 
-### 9.2Refer from Host/macOS to Linux/Debian
+### 10.2Refer from Host/macOS to Linux/Debian
 
 1.[Configuring Samba on Mac OS X](https://docs.toonboom.com/help/harmony-14/advanced/installation/mac/configure-samba-macosx.html).
 
