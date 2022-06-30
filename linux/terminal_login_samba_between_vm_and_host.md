@@ -210,6 +210,17 @@ Catch:``.
 
 What's the matter: Successfully mounted!!!
 
+Nine, try case:
+
+    sudo mount -t cifs -o username=sharewithdebian //192.168.1.2/sharewithdebian /media/share_from_macos
+
+Catch:
+
+    [sudo] password for foruo:
+    mount: /media/share_from_macos: cannot mount //192.168.1.2/sharewithdebian read-only.
+
+What's the matter: Successfully mounted!!!
+
 But the upstairs successful cases is only reading status! Try using the below:
 
     sudo mount -t cifs //192.168.1.2/sharewithdebian /media/share/ -rw -o username=sharewithdebian,password=pass,nounix,sec=ntlmssp
@@ -231,3 +242,7 @@ Have a nice!
 1.[Macbook build Samba folders to share with Ubuntu for accessing and loading(Chinese Blog).](https://blog.csdn.net/ff_lz/article/details/107391871?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_title~default-4-107391871-blog-85332378.pc_relevant_paycolumn_v3&spm=1001.2101.3001.4242.3&utm_relevant_index=7).
 
 ### 1.2try case with access samba server on VM Debian from Host macOS
+
+#### 1.2.1Refer
+
+1.[Ubuntu16.04 access the sharing folders of Windows via Internet with Samba(Chinese Blog).](https://blog.csdn.net/Yemiekai/article/details/113432451).
