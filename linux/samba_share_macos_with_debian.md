@@ -151,3 +151,5 @@ Refer from Server to Client.
 10.(Terminal)[HOWTO: Use Shared Folders](https://forums.virtualbox.org/viewtopic.php?t=15868).
 
 11.(Host-only+VM+Host+Git)[Using Git with shared folders and virtual machines](https://www.software.ac.uk/resources/guides-everything/using-git-shared-folders-and-virtual-machines-3).
+
+12.[Direct connect to Maximo running on a NAT virtual machine](https://www.ibm.com/support/pages/direct-connect-maximo-running-nat-virtual-machine).
