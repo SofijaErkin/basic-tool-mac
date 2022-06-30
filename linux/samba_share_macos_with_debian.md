@@ -144,7 +144,7 @@ Refer from Server to Client.
 
 2.(Terminal)[Macbook build Samba folders to share with Ubuntu for accessing and loading(Chinese Blog)](https://blog.csdn.net/ff_lz/article/details/107391871?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_title~default-4-107391871-blog-85332378.pc_relevant_paycolumn_v3&spm=1001.2101.3001.4242.3&utm_relevant_index=7).
 
-3.(Terminal)[Ubuntu16.04 access the sharing folders of Windows via Internet with Samba(Chinese Blog)](https://blog.csdn.net/Yemiekai/article/details/113432451).
+3.(Windows Port Forwarding+Terminal)[Ubuntu16.04 access the sharing folders of Windows via Internet with Samba(Chinese Blog)](https://blog.csdn.net/Yemiekai/article/details/113432451).
 
 4.[MacOS build up Samba Server(Chinese Blog)](https://blog.csdn.net/qq_38375620/article/details/101699465).
 
