@@ -153,3 +153,5 @@ Refer from Server to Client.
 11.(Host-only+VM+Host+Git)[Using Git with shared folders and virtual machines](https://www.software.ac.uk/resources/guides-everything/using-git-shared-folders-and-virtual-machines-3).
 
 12.[Direct connect to Maximo running on a NAT virtual machine](https://www.ibm.com/support/pages/direct-connect-maximo-running-nat-virtual-machine).
+
+13.[How to access Hyper-V VMs behind native NAT](https://4sysops.com/archives/how-to-access-hyper-v-vms-through-native-nat/).
