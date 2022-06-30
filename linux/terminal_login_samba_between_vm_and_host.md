@@ -2,11 +2,19 @@
 
 ## 1.Try login smaba client
 
-Try to login samba client on VM Debian via terminal, and access to the services
+Two ways:
 
-of samba server on Host macOS.
+1.Try to login samba client on VM Debian via terminal, and access to the
 
-### 1.1try case
+services of samba server on Host macOS.
+
+2.Try to login samba client on Host macOS via terminal, and access to the
+
+services of samba server on VM Debian.
+
+### 1.1try case with access samba server on Host macOS from VM Debian
+
+#### 1.1.1 Case Combat
 
 1.Case0001
 
@@ -123,8 +131,24 @@ Catch: `[sudo] password for foruo:`.
 
 What's the matter: Successfully mounted!!!
 
-VM Debian successfully login samba client with accessing the services of samba server on Host macOS.
+But only read status! Try using the below:
+
+    sudo mount -t cifs //192.168.1.2/sharewithdebian /media/share/ -rw -o username=sharewithdebian,password=pass,nounix,sec=ntlmssp
+
+Ok. read and write power!
+
+But But But share folder will miss once the VM Debian power off!!!
+
+VM Debian successfully login samba client with accessing the services of samba
+
+server on Host macOS.
 
 Happy Day! Nice Day! Great Day!
 
-Have a nice!:)
+Have a nice!
+
+#### 1.1.2Refer
+
+1.[Macbook build Samba folders to share with Ubuntu for accessing and loading(Chinese Blog).](https://blog.csdn.net/ff_lz/article/details/107391871?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_title~default-4-107391871-blog-85332378.pc_relevant_paycolumn_v3&spm=1001.2101.3001.4242.3&utm_relevant_index=7).
+
+### 1.2try case with access samba server on VM Debian from Host macOS
