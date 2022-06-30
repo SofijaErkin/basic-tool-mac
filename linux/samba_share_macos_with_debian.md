@@ -130,6 +130,8 @@ Refer from Server to Client.
 
 21.[21.3.4 Accessing Samba Shares from an Oracle Linux Client](https://docs.oracle.com/en/operating-systems/oracle-linux/6/admin/access-shares-linux.html).
 
+22.[21.3.1 Configuring a Samba Server](https://docs.oracle.com/en/operating-systems/oracle-linux/6/admin/configure-samba-server.html).
+
 ### 9.2Refer from Host/macOS to Linux/Debian
 
 1.[Configuring Samba on Mac OS X](https://docs.toonboom.com/help/harmony-14/advanced/installation/mac/configure-samba-macosx.html).
