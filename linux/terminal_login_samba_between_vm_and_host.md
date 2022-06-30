@@ -147,6 +147,14 @@ Catch: ``.
 
 What's the matter: Successfully mounted!!!
 
+Two, try case:
+
+    sudo mount -t cifs //192.168.1.2/sharewithdebian /media/share_from_macos -osec=ntlmv2,domain=MYDONMAIN,username=sharewithdebian,password=pass
+
+Catch: ``.
+
+What's the matter: Successfully mounted!!!
+
 But only read status! Try using the below:
 
     sudo mount -t cifs //192.168.1.2/sharewithdebian /media/share/ -rw -o username=sharewithdebian,password=pass,nounix,sec=ntlmssp
