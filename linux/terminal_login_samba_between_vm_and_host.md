@@ -16,7 +16,7 @@ services of samba server on VM Debian.
 
 #### 1.1.1 Case Combat
 
-1.Case0001
+##### 1.Case0001
 
     smbclient //192.168.1.1/sharewithdebian -U sharewithdebian%6666 --signing=off
 
@@ -32,7 +32,7 @@ Another, try case:
 
 another catch: `session setup failed: NT_STATUS_LOGON_FAILURE`.
 
-2.Case0002
+##### 2.Case0002
 
     smbclient -L //192.168.1.2
 
@@ -45,7 +45,7 @@ What's the matter: can not login forever!
 
 No fix!
 
-3.Case0003
+##### 3.Case0003
 
 `smbclient //192.168.1.2/sharewithdebian -U sharewithdebian%6666`
 
@@ -67,7 +67,7 @@ Catch:
 
 Another with what's the matter:  occurs that accidentally  interrupt during connecting.
 
-4.Case0004
+##### 4.Case0004
 
 `smbclient -L //192.168.1.2 -U sharewithdebian --signing-off`
 
@@ -101,7 +101,7 @@ Another catch:
 
 Another with what's the matter: I do not know!
 
-5.Case0005
+##### 5.Case0005
 
     mount -t cifs //192.168.1.2/sharewithdebian /media/share/ -o username=sharewithdebian,password=pass,nounix,sec=ntlmssp
 
@@ -113,7 +113,7 @@ Fixed! using:
 
     sudo mount -t cifs //192.168.1.2/sharewithdebian /media/share/ -o username=sharewithdebian,password=pass,nounix,sec=ntlmssp
 
-6.Case0006
+##### 6.Case0006
 
     sudo mount -t cifs //192.168.1.2/sharewithdebian /media/share/ -o username=sharewithdebian,password=pass,nounix,sec=ntlmssp
 
@@ -123,11 +123,27 @@ What's the matter: I do not know!
 
 No fix!
 
-7.Case0007
+##### 7.Case0007
 
     sudo mount -t cifs //192.168.1.2/sharewithdebian /media/share/ -o username=sharewithdebian,password=pass,nounix,sec=ntlmssp
 
 Catch: `[sudo] password for foruo:`.
+
+What's the matter: Successfully mounted!!!
+
+Another, try case:
+
+    sudo mount -t cifs //192.168.1.2/sharewithdebian /media/share_from_macos -o username=sharewithdebian,password=pass,vers=2.0
+
+Catch: ``.
+
+What's the matter: Successfully mounted!!!
+
+One, try case:
+
+    sudo mount -t cifs -o username=sharewithdebian,password=pass //192.168.1.2/sharewithdebian /media/share_from_macos
+
+Catch: ``.
 
 What's the matter: Successfully mounted!!!
 
