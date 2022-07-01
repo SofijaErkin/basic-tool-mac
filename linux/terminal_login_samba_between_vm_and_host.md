@@ -12,7 +12,7 @@ services of samba server on Host macOS.
 
 services of samba server on VM Debian.
 
-### 1.1try case with access samba server on Host macOS from VM Debian
+### 1.1try case with accessing samba server on Host macOS from VM Debian
 
 #### 1.1.1 Case Combat
 
@@ -418,7 +418,7 @@ Have a nice!
 
 3.[Ubuntu access te server of Samba using terminal(Chinese Blog)](https://blog.csdn.net/ZCF1002797280/article/details/49805603).
 
-### 1.2try case with access samba server on VM Debian from Host macOS
+### 1.2try case with accessing samba server on VM Debian from Host macOS
 
 #### 1.2.1Refer
 
