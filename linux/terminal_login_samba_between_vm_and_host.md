@@ -91,9 +91,12 @@ No fix!
 
 ##### 3.Case0003
 
-`smbclient //192.168.1.2/sharewithdebian -U sharewithdebian%6666`
+`smbclient //192.168.1.2/sharewithdebian -U sharewithdebian%share_user_pass`
 
-Catch: `do_connect: Connection to 192.168.1.2 failed (Error NT_STATUS_IO_TIMEOUT)`.
+Catch:
+
+    Try "help" to get a list of possible commands.
+    smb: \> SMBecho failed (NT_STATUS_CONNECTION_DISCONNECTED). The connection is disconnected now
 
 What's the matter: occurs error during linking!
 
@@ -117,7 +120,17 @@ Another with what's the matter:  occurs that accidentally  interrupt during conn
 
 `smbclient -L //192.168.1.2 -U sharewithdebian --signing-off`
 
-Catch: `do_connect: Connection to 192.168.1.2 failed (Error NT_STATUS_IO_TIMEOUT)`.
+Catch:
+
+    Enter WORKGROUP\sharewithdebian's password:
+
+            Sharename       Type      Comment
+            ---------       ----      -------
+            IPC$            IPC
+            sharewithdebian Disk
+    Reconnecting with SMB1 for workgroup listing.
+    do_connect: Connection to 192.168.1.2 failed (Error NT_STATUS_CONNECTION_REFUSED)
+    Unable to connect with SMB1 -- no workgroup available
 
 What's the matter: occurs error during linking!
 
