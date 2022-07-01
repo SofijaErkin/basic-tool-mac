@@ -308,6 +308,30 @@ Catch:
 
 What's the matter: I do not know!
 
+###### 7.Case00070X4
+
+Fourteen, try case:
+
+    sudo mount -t cifs -o username=user_share_name,password=pass //192.168.1.2/sharewithdebian /media/share_from_macos
+
+Catch:``.
+
+What's the matter: Successfully mounted!!!
+
+###### 7.Case00070X5
+
+Fifteen, try case:
+
+    sudo mount -t cifs username=sharewithdebian //192.168.1.2/sharewithdebian /media/share_from_macos
+
+Catch:
+
+    [sudo] password for foruo:
+    mount: bad usage
+    Try 'mount --help' for more information.
+
+What's the matter: I do not know!
+
 Notice: Un mount share folder -------------------------------------------------
 
 If you do not  mount share folder, just use `cd && umount share_folders`.
@@ -391,6 +415,8 @@ Have a nice!
 1.[Macbook build Samba folders to share with Ubuntu for accessing and loading(Chinese Blog)](https://blog.csdn.net/ff_lz/article/details/107391871?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_title~default-4-107391871-blog-85332378.pc_relevant_paycolumn_v3&spm=1001.2101.3001.4242.3&utm_relevant_index=7).
 
 2.[Config the Samba client on Linux to access the remote Samba server contents(Chinese Blog)](https://www.linuxrumen.com/rmxx/2093.html).
+
+3.[Ubuntu access te server of Samba using terminal(Chinese Blog)](https://blog.csdn.net/ZCF1002797280/article/details/49805603).
 
 ### 1.2try case with access samba server on VM Debian from Host macOS
 
