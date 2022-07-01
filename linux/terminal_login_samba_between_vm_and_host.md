@@ -288,6 +288,22 @@ If you do not  mount share folder, just use `cd && umount share_folders`.
 
 ------------------------------------------------Not mount share folders: Notice
 
+Notice: Others ----------------------------------------------------------------
+
+Checkout the mounted filesystem: `df -h`;
+
+Checkout the mounted file: `ll /media/share_folder`;
+
+If you want to automate mount share_folders, just add the code to `/etc/fstab`
+
+at the bottom:
+
+    //192.168.121.118/share /mnt/smbmount  cifs  username=zcwyou,password=123,soft,rw  0 0
+
+also, continue use `cd && sudo mount -a` to test mount sharing folders.
+
+--------------------------------------------------------------- Others : Notice
+
 But the upstairs successful cases is only reading status! Try using the below:
 
     sudo mount -t cifs //192.168.1.2/sharewithdebian /media/share/ -rw -o username=sharewithdebian,password=pass,nounix,sec=ntlmssp
@@ -306,10 +322,12 @@ Have a nice!
 
 #### 1.1.2Refer
 
-1.[Macbook build Samba folders to share with Ubuntu for accessing and loading(Chinese Blog).](https://blog.csdn.net/ff_lz/article/details/107391871?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_title~default-4-107391871-blog-85332378.pc_relevant_paycolumn_v3&spm=1001.2101.3001.4242.3&utm_relevant_index=7).
+1.[Macbook build Samba folders to share with Ubuntu for accessing and loading(Chinese Blog)](https://blog.csdn.net/ff_lz/article/details/107391871?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_title~default-4-107391871-blog-85332378.pc_relevant_paycolumn_v3&spm=1001.2101.3001.4242.3&utm_relevant_index=7).
+
+2.[Config the Samba client on Linux to access the remote Samba server contents(Chinese Blog)](https://www.linuxrumen.com/rmxx/2093.html).
 
 ### 1.2try case with access samba server on VM Debian from Host macOS
 
 #### 1.2.1Refer
 
-1.[Ubuntu16.04 access the sharing folders of Windows via Internet with Samba(Chinese Blog).](https://blog.csdn.net/Yemiekai/article/details/113432451).
+1.[Ubuntu16.04 access the sharing folders of Windows via Internet with Samba(Chinese Blog)](https://blog.csdn.net/Yemiekai/article/details/113432451).
