@@ -14,11 +14,53 @@ services of samba server on VM Debian.
 
 ### 1.1try case with accessing samba server on Host macOS from VM Debian
 
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+
+Notice:-------BEGIN------------------------------------------------------------
+
+Accessing the server of samba on Host macOS from VM debian use port `445`. Just
+
+use this code to check:
+
+    smbclient -L 192.168.1.2 -p 445 -U sharewithdebian
+
+and you got:
+
+    Enter WORKGROUP\sharewithdebian's password:
+
+            Sharename       Type      Comment
+            ---------       ----      -------
+            IPC$            IPC
+            sharewithdebian Disk
+    Reconnecting with SMB1 for workgroup listing.
+    do_connect: Connection to 192.168.1.2 failed (Error NT_STATUS_CONNECTION_REFUSED)
+    Unable to connect with SMB1 -- no workgroup available
+
+if use this code to check:
+
+    smbclient -L 192.168.1.2 -p 139 -U sharewithdebian
+
+then you got:
+
+    do_connect: Connection to 192.168.1.2 failed (Error NT_STATUS_CONNECTION_REFUSED)
+
+So the port of the client of smaba using on VM Debian is `445`, which is to
+
+access the services of the smaba server on Host macOS.
+
+-------------------------------------------------END: Notice-------------------
+
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+
 #### 1.1.1 Case Combat
 
 ##### 1.Case0001
 
-    smbclient //192.168.1.1/sharewithdebian -U sharewithdebian%6666 --signing=off
+    smbclient //192.168.1.1/sharewithdebian -U sharewithdebian%your_share_pass --signing=off
 
 Catch: `session setup failed: NT_STATUS_LOGON_FAILURE`.
 
@@ -81,7 +123,7 @@ What's the matter: occurs error during linking!
 
 No fix!
 
-###### 4.Case00040
+###### 4.Case00040$NowOccurringBug$
 
 Another,try case:
 
