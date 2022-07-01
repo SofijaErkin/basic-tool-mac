@@ -352,6 +352,14 @@ at the bottom:
 
 also, continue use `cd && sudo mount -a` to test mount sharing folders.
 
+----------------------------------Strongly suggestion--------------------------
+
+But But But I strongly suggest that we should be cautious about including
+
+passwords in scripts or passing user-supplied values onto the command line.
+
+----------------------------------Strongly suggestion--------------------------
+
 SMBclient status command:
 
 When terminal occurs `smb:\>` after using `smbclient XXXX`, then could use
