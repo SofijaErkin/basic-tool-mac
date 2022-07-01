@@ -277,10 +277,36 @@ Eleven, try case:
 
 Catch:
 
-   [sudo] password for user_debian:
-   Password for username@//samba_hostname_or_server_ip/sharename:
+    [sudo] password for user_debian:
+    Password for username@//samba_hostname_or_server_ip/sharename:
 
 What's the matter: Successfully mounted!!!
+
+###### 7.Case00070X2
+
+Twelve, try case:
+
+    smbclient -L 192.168.1.2
+
+Catch:
+
+    Enter WORKGROUP\foruo's password:
+    session setup failed: NT_STATUS_LOGON_FAILURE
+
+What's the matter: I do not know!
+
+###### 7.Case00070X3
+
+Thirteen, try case:
+
+    smbclient //192.168.1.2/sharewithdebian
+
+Catch:
+
+    Enter WORKGROUP\foruo's password:
+    session setup failed: NT_STATUS_LOGON_FAILURE
+
+What's the matter: I do not know!
 
 Notice: Un mount share folder -------------------------------------------------
 
@@ -301,6 +327,46 @@ at the bottom:
     //192.168.121.118/share /mnt/smbmount  cifs  username=zcwyou,password=123,soft,rw  0 0
 
 also, continue use `cd && sudo mount -a` to test mount sharing folders.
+
+SMBclient status command:
+
+When terminal occurs `smb:\>` after using `smbclient XXXX`, then could use
+
+smbclient command!
+
+(The below is smbclient command)
+
+`?` or `help` -> help with samba client usage.
+
+`![shell command]` -> active the SHELL command, or enter the status of SHELL.
+
+`cd [directory]` -> switch to the target directory of samba server, or current
+
+directory.
+
+`lcd` -> switch to the target directory of samba client.
+
+`dir` or `ls` -> list the files of current directory.
+
+`exit` or `quit` -> exit the client of samba.
+
+`get file_server_name file_client_name` -> download file_server_name from
+
+server of samba and named `file_client_name`; if do not change name, then
+
+do not add `file_client_name`.
+
+`mget file1 file2 file3 filen` -> download multiple-files from server of samba.
+
+`md` or `mkdir` -> create the directories at the server of samba.
+
+`rd` or `rmdir` -> delete the directories at the server of samba.
+
+`put file_from_client_name file_to_server_name` -> load a file
+
+`file_from_client_name` to server of samba with naming `file_to_server_name`.
+
+`mput file1 file2 filen` -> load multiple files to the server of samba.
 
 --------------------------------------------------------------- Others : Notice
 
