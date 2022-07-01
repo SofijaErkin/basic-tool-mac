@@ -26,6 +26,8 @@ What's the matter: I do not know!
 
 No fix!
 
+###### 1.Case00010
+
 Another, try case:
 
     smbclient //192.168.1.1/sharewithdebian -U sharewithdebian%pass --signing=off
@@ -55,6 +57,8 @@ What's the matter: occurs error during linking!
 
 No fix!
 
+###### 3.Case00030
+
 Another, try case:
 
     smbclient //192.168.1.2/sharewithdebian -U sharewithdebian%pass
@@ -76,6 +80,8 @@ Catch: `do_connect: Connection to 192.168.1.2 failed (Error NT_STATUS_IO_TIMEOUT
 What's the matter: occurs error during linking!
 
 No fix!
+
+###### 4.Case00040
 
 Another,try case:
 
@@ -100,6 +106,14 @@ Another catch:
     Unable to connect with SMB1 -- no workgroup available
 
 Another with what's the matter: I do not know!
+
+Notice: -----------------------------------------------------------------------
+
+If you want to mount the share folder in the current VM, please just use
+
+cifs-utils via `sudo apt install cifs-utils` for Debian/Ubuntu.
+
+----------------------------------------------------------------------- :Notice
 
 ##### 5.Case0005
 
@@ -131,6 +145,8 @@ Catch: `[sudo] password for foruo:`.
 
 What's the matter: Successfully mounted!!!
 
+###### 7.Case00070
+
 Another, try case:
 
     sudo mount -t cifs //192.168.1.2/sharewithdebian /media/share_from_macos -o username=sharewithdebian,password=pass,vers=2.0
@@ -138,6 +154,8 @@ Another, try case:
 Catch: ``.
 
 What's the matter: Successfully mounted!!!
+
+###### 7.Case000701
 
 One, try case:
 
@@ -147,6 +165,8 @@ Catch: ``.
 
 What's the matter: Successfully mounted!!!
 
+###### 7.Case000702
+
 Two, try case:
 
     sudo mount -t cifs //192.168.1.2/sharewithdebian /media/share_from_macos -osec=ntlmv2,domain=MYDONMAIN,username=sharewithdebian,password=pass
@@ -155,6 +175,8 @@ Catch: ``.
 
 What's the matter: Successfully mounted!!!
 
+###### 7.Case000703
+
 Three, try case:
 
     sudo mount -t cifs //192.168.1.2/sharewithdebian /media/share_from_macos -osec=ntlmv2,domain=MYDOMAIN,username=share,password=pass
@@ -162,6 +184,8 @@ Three, try case:
 Catch: `mount: /media/share_from_macos: cannot mount //192.168.1.2/sharewithdebian read-only.`.
 
 What's the matter: I do not know!
+
+###### 7.Case000704
 
 Four, try case:
 
@@ -174,6 +198,8 @@ Catch:
 
 What's the matter: I do not know!
 
+###### 7.Case000705
+
 Five, try case:
 
     sudo mount -t cifs //192.168.1.2/sharewithdebian /media/share_from_macos -o username=sharewithdebian,password=pass,vers=2.0
@@ -182,6 +208,8 @@ Catch: `[sudo] password for foruo:`.
 
 What's the matter: Successfully mounted!!!
 
+###### 7.Case000706
+
 Six, try case:
 
     smb://192.168.1.2
@@ -189,6 +217,8 @@ Six, try case:
 Catch: `zsh: no such file or directory: smb://192.168.1.2`.
 
 What's the matter: I do not know!
+
+###### 7.Case000707
 
 Seven, try case:
 
@@ -202,6 +232,8 @@ Catch:
 
 What's the matter: I do not know!
 
+###### 7.Case000708
+
 Eight, try case:
 
     sudo mount -t cifs //192.168.1.2/sharewithdebian /media/share_from_macos/ -rw -o username=sharewithdebian,password=pass,nounix,sec=ntlmssp
@@ -209,6 +241,8 @@ Eight, try case:
 Catch:``.
 
 What's the matter: Successfully mounted!!!
+
+###### 7.Case000709
 
 Nine, try case:
 
@@ -220,6 +254,20 @@ Catch:
     mount: /media/share_from_macos: cannot mount //192.168.1.2/sharewithdebian read-only.
 
 What's the matter: Successfully mounted!!!
+
+###### 7.Case00070X
+
+Ten, try case:
+
+    smbclient //samba_hostname_or_server_ip/share_name -U username
+
+Catch:
+
+    Enter WORKGROUP\sharewithdebian's password:
+    Try "help" to get a list of possible commands.
+    smb: \> SMBecho failed (NT_STATUS_CONNECTION_DISCONNECTED). The connection is disconnected now
+
+What's the matter:  occurs that accidentally  interrupt during connecting.
 
 But the upstairs successful cases is only reading status! Try using the below:
 
