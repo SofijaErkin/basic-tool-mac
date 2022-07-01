@@ -284,7 +284,7 @@ What's the matter: Successfully mounted!!!
 
 Notice: Un mount share folder -------------------------------------------------
 
-If you do not want to mount share folder, just use `umount share_folders`.
+If you do not  mount share folder, just use `cd && umount share_folders`.
 
 ------------------------------------------------Not mount share folders: Notice
 
