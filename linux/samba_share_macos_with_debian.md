@@ -154,7 +154,7 @@ Refer from Server to Client.
 
 7.[Set up file sharing on Mac](https://support.apple.com/guide/mac-help/set-up-file-sharing-on-mac-mh17131/mac).
 
-8.(Terminal)[How to connect to samba shares over the internet via ssh from mac os x](https://blog.cadena-it.com/linux-tips-how-to/how-to-connect-to-samba-shares-over-the-internet-via-ssh-from-mac-os-x/).
+8.(Terminal)[How to connect to samba shares over the internet via ssh from mac os x](https://lemp.io/how-to-connect-to-samba-shares-mac-os-x/).
 
 9.(Terminal)[Smbclient document](https://www.samba.org/samba/docs/current/man-html/smbclient.1.html?spm=a2c6h.13066369.question.22.198a2863Y6GMVE).
 
