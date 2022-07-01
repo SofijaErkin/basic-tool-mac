@@ -426,6 +426,8 @@ Have a nice!
 
 3.[Ubuntu access te server of Samba using terminal(Chinese Blog)](https://blog.csdn.net/ZCF1002797280/article/details/49805603).
 
+4.[Samba document](https://www.samba.org/samba/docs/current/man-html/smbclient.1.html?spm=a2c6h.13066369.question.22.198a2863Y6GMVE).
+
 ### 1.2try case with accessing samba server on VM Debian from Host macOS
 
 #### 1.2.1Refer
