@@ -269,6 +269,25 @@ Catch:
 
 What's the matter:  occurs that accidentally  interrupt during connecting.
 
+###### 7.Case00070X1
+
+Eleven, try case:
+
+    sudo mount -t cifs -o username=username //samba_hostname_or_server_ip/sharename /mnt/smbmount
+
+Catch:
+
+   [sudo] password for user_debian:
+   Password for username@//samba_hostname_or_server_ip/sharename:
+
+What's the matter: Successfully mounted!!!
+
+Notice: Un mount share folder -------------------------------------------------
+
+If you do not want to mount share folder, just use `umount share_folders`.
+
+------------------------------------------------Not mount share folders: Notice
+
 But the upstairs successful cases is only reading status! Try using the below:
 
     sudo mount -t cifs //192.168.1.2/sharewithdebian /media/share/ -rw -o username=sharewithdebian,password=pass,nounix,sec=ntlmssp
