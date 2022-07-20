@@ -1,5 +1,9 @@
 # Login Samba between VM and Host via Terminal
 
+Update July 20 2022 PM 05:00 EST
+
+I'm back after taking a vacation.
+
 ## 1.Try login smaba client
 
 Two ways:
