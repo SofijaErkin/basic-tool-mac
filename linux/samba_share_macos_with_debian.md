@@ -54,7 +54,9 @@ Attention please, "create mask" or "directory mask" `0766` is the Linux
 
 permissions[(An introduction to chmod)](https://www.redhat.com/sysadmin/introduction-chmod)
 
-[or](http://web.tku.ac.jp/~densan/local/permission/permission.htm) .
+or [in Japanese](http://web.tku.ac.jp/~densan/local/permission/permission.htm)
+
+or [in chinese](https://blog.csdn.net/dijkstar/article/details/50645139).
 
 [Notice](https://superuser.com/a/258103): just use `testparm` to check your
 
