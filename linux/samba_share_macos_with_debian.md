@@ -20,6 +20,16 @@ Just use the below:
 
 ## 4.Config Smaba
 
+There will be have a default configuration file `smb.conf` under `/etc/samba`.
+
+But you'd better rename the default file into `smb.conf.original` and create
+
+a new file named `smb.conf` using the below code:
+
+    sudo mv /etc/samba/smb.conf /etc/samba/smb.conf.original
+
+    sudo nano /etc/samba/smb.conf
+
 Edit the `/etc/samba/smb.conf`:
 
     sudo gedit /etc/samba/smb.conf
