@@ -50,7 +50,15 @@ Adding the below to the bottom of that file
    
        writable = yes
 
-[Notice](https://superuser.com/a/258103): just use `testparm` to check your changes after you edit `smb.conf`,
+Attention please, "create mask" or "directory mask" `0766` is the Linux
+
+permissions[(An introduction to chmod)](https://www.redhat.com/sysadmin/introduction-chmod)
+
+[or](http://web.tku.ac.jp/~densan/local/permission/permission.htm) .
+
+[Notice](https://superuser.com/a/258103): just use `testparm` to check your
+
+changes after you edit `smb.conf`,
 
 then let the daemon re-read the config with a "`sudo /etc/init.d/smbd restart`"
 
@@ -93,6 +101,10 @@ services of samba service by terminal.
 Refer from Server to Client.
 
 ### 10.1Refer from Linux/Debian to Host/macOS
+
+Host/macOS smaba client using terminal connects to Linux/Debian samba server.
+
+Not that easy.
 
 1.[How to set up Samba in Ubuntu/Linux, and access it in Mac OS and Windows](https://adrianmejia.com/how-to-set-up-samba-in-ubuntu-linux-and-access-it-in-mac-os-and-windows/).
 
@@ -139,6 +151,10 @@ Refer from Server to Client.
 22.[21.3.1 Configuring a Samba Server](https://docs.oracle.com/en/operating-systems/oracle-linux/6/admin/configure-samba-server.html).
 
 ### 10.2Refer from Host/macOS to Linux/Debian
+
+Linux/Debian samba client using terminal connects to Host/macOS smaba server.
+
+Easy!
 
 1.[Configuring Samba on Mac OS X](https://docs.toonboom.com/help/harmony-14/advanced/installation/mac/configure-samba-macosx.html).
 
