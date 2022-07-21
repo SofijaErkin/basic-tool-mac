@@ -193,3 +193,5 @@ Easy!
 12.[Direct connect to Maximo running on a NAT virtual machine](https://www.ibm.com/support/pages/direct-connect-maximo-running-nat-virtual-machine).
 
 13.[How to access Hyper-V VMs behind native NAT](https://4sysops.com/archives/how-to-access-hyper-v-vms-through-native-nat/).
+
+14.[Hot to set Samba sharing for weight COP on Ubuntu(Chinese Blog)](https://cloud.tencent.com/developer/article/1184150).
