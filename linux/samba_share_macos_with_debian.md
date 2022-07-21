@@ -68,9 +68,9 @@ or [in Japanese](http://web.tku.ac.jp/~densan/local/permission/permission.htm)
 
 or [in chinese](https://blog.csdn.net/dijkstar/article/details/50645139).
 
-[Notice](https://superuser.com/a/258103): just use `testparm` to check your
+[Notice](https://superuser.com/a/258103): No matter any time, Checkout syntax
 
-changes after you edit `smb.conf`,
+just use `testparm` to check your changes after you edit `smb.conf`,
 
 then let the daemon re-read the config with a "`sudo /etc/init.d/smbd restart`"
 
