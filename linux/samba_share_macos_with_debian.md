@@ -88,15 +88,21 @@ Also, add the [below to the `Global` zone on the file](https://cloud.tencent.com
 Adding the below to the bottom of that file
 
     [share]
-       
-       comment = share folder
-   
+    # share: the sharing name of login using
+
+       comment = share folder with macOS
+
+    # path: the absolute directory of sharing folder under file system   
        path = /home/username/mac_share
-   
+    
+    # create mask: enhance the writing power to any files under sharing folder
        create mask = 0766
-   
+    
+    # directory mask: enable the creating directory under sharing folder
        directory mask = 0766
-   
+    
+    # valid users: the user list of accessing the sharing folder. Set user name,
+    # user group(e.g: administration or admin, using @admins).
        valid users username
       
        force user = username
@@ -104,9 +110,15 @@ Adding the below to the bottom of that file
        force group = username
    
        available = yes
-   
+    
+    # browseable: setting whether other users could accessing the sharing folder or
+    # not? If enable, then other samba server users could check whether the sharing
+    # folder live or not, but could not read or write that sharing folder         
        browseable = yes
-   
+    
+    # read only: setting whether the valid users could write the sharing folder
+       read only = no       
+
        public = yes
    
        writable = yes
