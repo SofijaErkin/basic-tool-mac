@@ -34,6 +34,57 @@ Edit the `/etc/samba/smb.conf`:
 
     sudo gedit /etc/samba/smb.conf
 
+Also, add the [below to the `Global` zone on the file](https://cloud.tencent.com/developer/article/1184150)
+
+    [global]
+
+    ## Browsing/Identification ###
+
+    # Change this to the workgroup/NT-domain name your Samba server will part of
+
+       workgroup = WORKGROUP
+
+    # Setting the name of samba server
+
+       server string = samba_server_on_debian_11
+
+    # Setting the role type of samba server
+
+       server role = standalone server
+
+    # Binding samba to the internet ports
+
+       interfaces = lo eth3
+
+    # Making sure that samba only bind to the list of interfaces
+
+       bind interfaces only = yes
+
+    # Disabling the not of NetBIOS business's function
+
+       disable netbios = yes
+
+    # Setting the listen port for samba server from the outside accessing
+
+       smb ports = 445
+
+    # Settings the name and location of log file
+
+       log file = /var/log/samba/smb.log
+
+    # Settings the size of the log file
+
+       max log size = 10000
+
+    # Settings the info and level of log file
+
+       log level = 3 passdb:5 auth:5
+
+    # Adding the protocol configuration for the client and server settings
+
+       client min protocol = CORE
+       client max protocol = SMB3
+
 Adding the below to the bottom of that file
 
     [share]
