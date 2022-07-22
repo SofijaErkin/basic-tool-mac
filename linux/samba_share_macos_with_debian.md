@@ -43,7 +43,8 @@ Also, add the [below to the `Global` zone on the file](https://cloud.tencent.com
     # Change this to the workgroup/NT-domain name your Samba server will part of
 
        workgroup = WORKGROUP
-
+    
+    # Refer: https://cloud.tencent.com/developer/article/1184150
     # Setting the name of samba server
 
        server string = samba_server_on_debian_11
@@ -88,6 +89,7 @@ Also, add the [below to the `Global` zone on the file](https://cloud.tencent.com
 Adding the below to the bottom of that file
 
     [share]
+    # Refer: https://cloud.tencent.com/developer/article/1184150
     # share: the sharing name of login using
 
        comment = share folder with macOS
