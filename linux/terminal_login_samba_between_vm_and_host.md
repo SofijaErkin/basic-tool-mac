@@ -68,7 +68,11 @@ access the services of the smaba server on Host macOS.
 
 Catch: `session setup failed: NT_STATUS_LOGON_FAILURE`.
 
-What's the matter: may be the password is false. I do not know!
+What's the matter: may be the password is false. I do not know! Or, the
+
+password of samba user is false or is not the samba user or no user.
+
+(Trouble-3: `"login failure"`).
 
 No fix!
 
@@ -80,7 +84,11 @@ Another, try case:
 
 another catch: `session setup failed: NT_STATUS_LOGON_FAILURE`.
 
-Also, because the password is false.
+Also, because the password is false. Or, the password of samba user is false or
+
+ is not the samba user or no user.
+
+(Trouble-3: `"login failure"`).
 
 ##### 2.Case0002
 
@@ -91,7 +99,11 @@ Catch:
     Enter WORKGROUP\foruo's password:
     session setup failed: NT_STATUS_LOGON_FAILURE
 
-What's the matter: can not login forever!
+What's the matter: can not login forever! Or, the password of samba user is
+
+ false or is not the samba user or no user.
+
+(Trouble-3: `"login failure"`).
 
 No fix!
 
@@ -110,7 +122,7 @@ What's the matter: occurs error during linking! Or, connection disconnected whil
 
 login samba user account via connecting samba server.
 
-(Trouble-0001 `"connection disconnected"`)
+(Trouble-1: `"connection disconnected"`)
 
 No fix!
 
@@ -132,7 +144,7 @@ connecting. Or, connection disconnected while login samba user account via
 
 connecting samba server.
 
-(Trouble-0001 `"connection disconnected"`)
+(Trouble-1: `"connection disconnected"`)
 
 ##### 4.Case0004
 
@@ -346,7 +358,7 @@ connection disconnected while login samba user account via connecting samba
 
 server.
 
-(Trouble-0001 `"connection disconnected"`)
+(Trouble-1: `"connection disconnected"`)
 
 Try this case again, catch that again!
 
@@ -374,7 +386,11 @@ Catch:
     Enter WORKGROUP\foruo's password:
     session setup failed: NT_STATUS_LOGON_FAILURE
 
-What's the matter: I do not know!
+What's the matter: I do not know! Or, the password of samba user is false or is
+
+ not the samba user or no user.
+
+(Trouble-3: `"login failure"`).
 
 ###### 7.Case00070X3
 
@@ -387,7 +403,11 @@ Catch:
     Enter WORKGROUP\foruo's password:
     session setup failed: NT_STATUS_LOGON_FAILURE
 
-What's the matter: I do not know!
+What's the matter: I do not know! Or, the password of samba user is false or is
+
+ not the samba user or no user.
+
+(Trouble-3: `"login failure"`).
 
 ###### 7.Case00070X4
 
@@ -412,6 +432,34 @@ Catch:
     Try 'mount --help' for more information.
 
 What's the matter: I do not know!
+
+###### 7.Case00070X6
+
+Sixteen, try case:
+
+    smbclient //192.168.1.2/sharewithdebian -p 139 -U sharewithdebian
+
+Catch:
+
+    do_connect: NetBIOS support disabled, unable to connect
+    
+    do_connect: Connection to 192.168.1.2 failed (Error NT_STATUS_NOT_SUPPORTED)
+
+What's the matter: Samba Server do not support the port 139.
+
+(Trouble-2: `"not support"`).
+
+or, try case:
+
+    smbclient -c "ls" //192.168.1.2/sharewithdebian -p 139 -U sharewithdebian%pass
+
+also, catch:
+
+    do_connect: NetBIOS support disabled, unable to connect
+    
+    do_connect: Connection to 192.168.1.2 failed (Error NT_STATUS_NOT_SUPPORTED)
+
+The same matter.
 
 Notice: Un mount share folder -------------------------------------------------
 
