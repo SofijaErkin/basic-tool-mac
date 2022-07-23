@@ -51,6 +51,7 @@ Just use adding the below code to `/etc/samba/smb.conf` at Linux:
 
        client min protocol = CORE
        client max protocol = SMB3
+
 after add the upstairs to fix some of the catch, the ray case also catch:
 
     Enter WORKGROUP\sharewithdebian's password:
@@ -72,6 +73,24 @@ if use this code to check:
 then you got:
 
     do_connect: Connection to 192.168.1.2 failed (Error NT_STATUS_CONNECTION_REFUSED)
+
+Just use adding the below code to `/etc/samba/smb.conf` at Linux:
+
+    # The below configuration solve the problem(protocol negotiation failed:
+    # NT_STATUS_CONNECTION_RESET or protocol negotiation failed:
+    # NT_STATUS_IO_TIMEOUT).
+    # Adding the protocol configuration for the client and server settings
+
+       client min protocol = CORE
+       client max protocol = SMB3
+
+after add the upstairs to fix some of the catch, the ray case also catch:
+
+    do_connect: NetBIOS support disabled, unable to connect
+    
+    do_connect: Connection to 192.168.1.2 failed (Error NT_STATUS_NOT_SUPPORTED)
+
+The catch became the Trouble-2.
 
 So the port of the client of smaba using on VM Debian is `445`, which is to
 
@@ -187,7 +206,31 @@ Catch:
 
 What's the matter: occurs error during linking!
 
-No fix!
+Fixed.
+
+Just use adding the below code to `/etc/samba/smb.conf` at Linux:
+
+    # The below configuration solve the problem(protocol negotiation failed:
+    # NT_STATUS_CONNECTION_RESET or protocol negotiation failed:
+    # NT_STATUS_IO_TIMEOUT).
+    # Adding the protocol configuration for the client and server settings
+
+       client min protocol = CORE
+       client max protocol = SMB3
+
+after add the upstairs to fix some of the catch, the ray case also catch:
+
+    Enter WORKGROUP\sharewithdebian's password:
+
+    Sharename       Type      Comment
+
+    ---------       ----      -------
+  
+    IPC$            IPC
+
+    sharewithdebian Disk
+
+    NetBIOS over TCP disabled -- no workgroup available
 
 ###### 4.Case00040$NowOccurringBug$
 
@@ -214,6 +257,34 @@ Another catch:
     Unable to connect with SMB1 -- no workgroup available
 
 Another with what's the matter: I do not know!
+
+Fixed.
+
+Fixed.
+
+Just use adding the below code to `/etc/samba/smb.conf` at Linux:
+
+    # The below configuration solve the problem(protocol negotiation failed:
+    # NT_STATUS_CONNECTION_RESET or protocol negotiation failed:
+    # NT_STATUS_IO_TIMEOUT).
+    # Adding the protocol configuration for the client and server settings
+
+       client min protocol = CORE
+       client max protocol = SMB3
+
+after add the upstairs to fix some of the catch, the ray case also catch:
+
+    Enter WORKGROUP\sharewithdebian's password:
+
+    Sharename       Type      Comment
+
+    ---------       ----      -------
+  
+    IPC$            IPC
+
+    sharewithdebian Disk
+
+    NetBIOS over TCP disabled -- no workgroup available
 
 Notice: -----------------------------------------------------------------------
 
