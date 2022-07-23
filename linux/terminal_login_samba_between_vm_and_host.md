@@ -46,7 +46,8 @@ Just use adding the below code to `/etc/samba/smb.conf` at Linux:
 
     # The below configuration solve the problem(protocol negotiation failed:
     # NT_STATUS_CONNECTION_RESET or protocol negotiation failed:
-    # NT_STATUS_IO_TIMEOUT).
+    # NT_STATUS_IO_TIMEOUT or protocol negotiation failed: 
+    # NT_STATUS_INVALID_NETWORK_RESPONSE).
     # Adding the protocol configuration for the client and server settings
 
        client min protocol = CORE
@@ -78,7 +79,8 @@ Just use adding the below code to `/etc/samba/smb.conf` at Linux:
 
     # The below configuration solve the problem(protocol negotiation failed:
     # NT_STATUS_CONNECTION_RESET or protocol negotiation failed:
-    # NT_STATUS_IO_TIMEOUT).
+    # NT_STATUS_IO_TIMEOUT or protocol negotiation failed: 
+    # NT_STATUS_INVALID_NETWORK_RESPONSE).
     # Adding the protocol configuration for the client and server settings
 
        client min protocol = CORE
@@ -212,7 +214,8 @@ Just use adding the below code to `/etc/samba/smb.conf` at Linux:
 
     # The below configuration solve the problem(protocol negotiation failed:
     # NT_STATUS_CONNECTION_RESET or protocol negotiation failed:
-    # NT_STATUS_IO_TIMEOUT).
+    # NT_STATUS_IO_TIMEOUT or protocol negotiation failed: 
+    # NT_STATUS_INVALID_NETWORK_RESPONSE).
     # Adding the protocol configuration for the client and server settings
 
        client min protocol = CORE
@@ -264,7 +267,8 @@ Just use adding the below code to `/etc/samba/smb.conf` at Linux:
 
     # The below configuration solve the problem(protocol negotiation failed:
     # NT_STATUS_CONNECTION_RESET or protocol negotiation failed:
-    # NT_STATUS_IO_TIMEOUT).
+    # NT_STATUS_IO_TIMEOUT or protocol negotiation failed: 
+    # NT_STATUS_INVALID_NETWORK_RESPONSE).
     # Adding the protocol configuration for the client and server settings
 
        client min protocol = CORE
