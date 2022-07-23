@@ -67,6 +67,12 @@ after add the upstairs to fix some of the catch, the ray case also catch:
 
     NetBIOS over TCP disabled -- no workgroup available
 
+matter: I do not know!
+
+(Trouble-4: `NetBIOS over TCP disabled -- no workgroup available`).
+
+No fix!
+
 if use this code to check:
 
     smbclient -L 192.168.1.2 -p 139 -U sharewithdebian
@@ -94,6 +100,8 @@ after add the upstairs to fix some of the catch, the ray case also catch:
 
 The catch became the Trouble-2.
 
+No fix!
+
 So the port of the client of smaba using on VM Debian is `445`, which is to
 
 access the services of the smaba server on Host macOS.
@@ -118,7 +126,29 @@ password of samba user is false or is not the samba user or no user currently.
 
 (Trouble-3: `"login failure"`).
 
-No fix!
+Fixed.
+
+But,
+
+`IP` is totally false. `192.168.1.1` changing to `192.168.1.2`.
+
+then, try:
+
+    smbclient //192.168.1.2/sharewithdebian -U sharewithdebian%your_share_pass --signing=off
+
+then, catch:
+
+    Enter WORKGROUP\sharewithdebian's password:
+    Try "help" to get a list of possible commands.
+    smb: \> SMBecho failed (NT_STATUS_CONNECTION_DISCONNECTED). The connection is disconnected now
+
+matter: connection disconnected while login samba user account via connecting
+
+ samba server.
+
+(Trouble-1: `"connection disconnected"`).
+
+No fix
 
 ###### 1.Case00010
 
@@ -666,3 +696,5 @@ Have a nice!
 1.[Ubuntu16.04 access the sharing folders of Windows via Internet with Samba(Chinese Blog)](https://blog.csdn.net/Yemiekai/article/details/113432451).
 
 2.[Hot to set Samba sharing for smart management on Ubuntu16.04(Chinese Blog)](https://cloud.tencent.com/developer/article/1184150).
+
+3.[Samba document](https://www.samba.org/samba/docs/current/man-html/smbclient.1.html?spm=a2c6h.13066369.question.22.198a2863Y6GMVE).
