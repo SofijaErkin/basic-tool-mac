@@ -68,7 +68,7 @@ access the services of the smaba server on Host macOS.
 
 Catch: `session setup failed: NT_STATUS_LOGON_FAILURE`.
 
-What's the matter: I do not know!
+What's the matter: may be the password is false. I do not know!
 
 No fix!
 
@@ -79,6 +79,8 @@ Another, try case:
     smbclient //192.168.1.1/sharewithdebian -U sharewithdebian%pass --signing=off
 
 another catch: `session setup failed: NT_STATUS_LOGON_FAILURE`.
+
+Also, because the password is false.
 
 ##### 2.Case0002
 
@@ -92,6 +94,8 @@ Catch:
 What's the matter: can not login forever!
 
 No fix!
+
+May be not the below user name and password.
 
 ##### 3.Case0003
 
@@ -194,7 +198,7 @@ Catch: `mount: /media/share: mount(2) system call failed: Network is unreachable
 
 What's the matter: I do not know!
 
-No fix!
+No fix! Maybe the internet has some false.
 
 ##### 7.Case0007
 
@@ -327,6 +331,8 @@ Catch:
     smb: \> SMBecho failed (NT_STATUS_CONNECTION_DISCONNECTED). The connection is disconnected now
 
 What's the matter:  occurs that accidentally  interrupt during connecting.
+
+Try this case again, catch that again!
 
 ###### 7.Case00070X1
 
