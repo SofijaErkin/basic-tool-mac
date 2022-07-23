@@ -82,7 +82,8 @@ Also, add the [below to the `Global` zone on the file](https://cloud.tencent.com
        log level = 3 passdb:5 auth:5
 
     # The below configuration solve the problem(protocol negotiation failed:
-    # NT_STATUS_CONNECTION_RESET).
+    # NT_STATUS_CONNECTION_RESET or protocol negotiation failed:
+    # NT_STATUS_IO_TIMEOUT).
     # Adding the protocol configuration for the client and server settings
 
        client min protocol = CORE
