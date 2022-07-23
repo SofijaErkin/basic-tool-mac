@@ -42,6 +42,29 @@ and you got:
     do_connect: Connection to 192.168.1.2 failed (Error NT_STATUS_CONNECTION_REFUSED)
     Unable to connect with SMB1 -- no workgroup available
 
+Just use adding the below code to `/etc/samba/smb.conf` at Linux:
+
+    # The below configuration solve the problem(protocol negotiation failed:
+    # NT_STATUS_CONNECTION_RESET or protocol negotiation failed:
+    # NT_STATUS_IO_TIMEOUT).
+    # Adding the protocol configuration for the client and server settings
+
+       client min protocol = CORE
+       client max protocol = SMB3
+after add the upstairs to fix some of the catch, the ray case also catch:
+
+    Enter WORKGROUP\sharewithdebian's password:
+
+    Sharename       Type      Comment
+
+    ---------       ----      -------
+  
+    IPC$            IPC
+
+    sharewithdebian Disk
+
+    NetBIOS over TCP disabled -- no workgroup available
+
 if use this code to check:
 
     smbclient -L 192.168.1.2 -p 139 -U sharewithdebian
