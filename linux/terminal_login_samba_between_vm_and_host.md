@@ -106,7 +106,11 @@ Catch:
     Try "help" to get a list of possible commands.
     smb: \> SMBecho failed (NT_STATUS_CONNECTION_DISCONNECTED). The connection is disconnected now
 
-What's the matter: occurs error during linking!
+What's the matter: occurs error during linking! Or, connection disconnected while
+
+login samba user account via connecting samba server.
+
+(Trouble-0001 `"connection disconnected"`)
 
 No fix!
 
@@ -122,7 +126,13 @@ Catch:
 
     smb: \> SMBecho failed (NT_STATUS_CONNECTION_DISCONNECTED). The connection is disconnected now
 
-Another with what's the matter:  occurs that accidentally  interrupt during connecting.
+Another with what's the matter:  occurs that accidentally  interrupt during
+
+connecting. Or, connection disconnected while login samba user account via
+
+connecting samba server.
+
+(Trouble-0001 `"connection disconnected"`)
 
 ##### 4.Case0004
 
@@ -330,7 +340,13 @@ Catch:
     Try "help" to get a list of possible commands.
     smb: \> SMBecho failed (NT_STATUS_CONNECTION_DISCONNECTED). The connection is disconnected now
 
-What's the matter:  occurs that accidentally  interrupt during connecting.
+What's the matter:  occurs that accidentally  interrupt during connecting. Or,
+
+connection disconnected while login samba user account via connecting samba
+
+server.
+
+(Trouble-0001 `"connection disconnected"`)
 
 Try this case again, catch that again!
 
