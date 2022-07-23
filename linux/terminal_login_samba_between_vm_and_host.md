@@ -69,9 +69,9 @@ after add the upstairs to fix some of the catch, the ray case also catch:
 
 matter: I do not know!
 
-(Trouble-4: `NetBIOS over TCP disabled -- no workgroup available`).
+The trouble became to
 
-No fix!
+(Trouble-4: `NetBIOS over TCP disabled -- no workgroup available`).
 
 if use this code to check:
 
@@ -98,9 +98,9 @@ after add the upstairs to fix some of the catch, the ray case also catch:
     
     do_connect: Connection to 192.168.1.2 failed (Error NT_STATUS_NOT_SUPPORTED)
 
-The catch became the Trouble-2.
+The catch became to
 
-No fix!
+(Trouble-2: `"not support"`).
 
 So the port of the client of smaba using on VM Debian is `445`, which is to
 
@@ -146,9 +146,9 @@ matter: connection disconnected while login samba user account via connecting
 
  samba server.
 
-(Trouble-1: `"connection disconnected"`).
+The trouble became to
 
-No fix.
+(Trouble-1: `"connection disconnected"`).
 
 ###### 1.Case00010
 
@@ -184,9 +184,9 @@ matter: connection disconnected while login samba user account via connecting
 
  samba server.
 
-(Trouble-1: `"connection disconnected"`).
+The trouble became to
 
-No fix.
+(Trouble-1: `"connection disconnected"`).
 
 ##### 2.Case0002
 
@@ -203,9 +203,15 @@ What's the matter: can not login forever! Or, the password of samba user is
 
 (Trouble-3: `"login failure"`).
 
-No fix!
-
 May be not the below user name and password.
+
+Fixed!
+
+Try adding the `-U sharewithdebian`.
+
+Then, trouble became to
+
+(Trouble-1: `"connection disconnected"`).
 
 ##### 3.Case0003
 
@@ -242,7 +248,9 @@ connecting. Or, connection disconnected while login samba user account via
 
 connecting samba server.
 
-(Trouble-1: `"connection disconnected"`)
+(Trouble-1: `"connection disconnected"`).
+
+No fix!
 
 ##### 4.Case0004
 
@@ -288,6 +296,12 @@ after add the upstairs to fix some of the catch, the ray case also catch:
     sharewithdebian Disk
 
     NetBIOS over TCP disabled -- no workgroup available
+
+matter: I do not know!
+
+The trouble became to
+
+(Trouble-4: `NetBIOS over TCP disabled -- no workgroup available`).
 
 ###### 4.Case00040$NowOccurringBug$
 
@@ -342,6 +356,12 @@ after add the upstairs to fix some of the catch, the ray case also catch:
 
     NetBIOS over TCP disabled -- no workgroup available
 
+matter: I do not know!
+
+The trouble became to
+
+(Trouble-4: `NetBIOS over TCP disabled -- no workgroup available`).
+
 Notice: -----------------------------------------------------------------------
 
 If you want to mount the share folder in the current VM, please just use
@@ -370,7 +390,19 @@ Catch: `mount: /media/share: mount(2) system call failed: Network is unreachable
 
 What's the matter: I do not know!
 
-No fix! Maybe the internet has some false.
+Maybe the internet has some false.
+
+try the case again, and catch:
+
+    [sudo] password for foruo:
+    Couldn't chdir to /media/share/: No such file or directory
+
+matter: The sharing folder `//ip/sharing_directory` mounted false dir while
+
+that dir do not exit. Changing to `/media/share_from_target`.
+
+Fixed.
+
 
 ##### 7.Case0007
 
