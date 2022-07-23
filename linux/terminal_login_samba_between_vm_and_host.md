@@ -204,7 +204,7 @@ Catch:
     do_connect: Connection to 192.168.1.2 failed (Error NT_STATUS_CONNECTION_REFUSED)
     Unable to connect with SMB1 -- no workgroup available
 
-What's the matter: occurs error during linking!
+What's the matter: protocol negotiation failed.
 
 Fixed.
 
@@ -256,9 +256,7 @@ Another catch:
 
     Unable to connect with SMB1 -- no workgroup available
 
-Another with what's the matter: I do not know!
-
-Fixed.
+Another with what's the matter: protocol negotiation failed.
 
 Fixed.
 
