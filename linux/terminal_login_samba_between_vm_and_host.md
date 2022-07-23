@@ -148,7 +148,7 @@ matter: connection disconnected while login samba user account via connecting
 
 (Trouble-1: `"connection disconnected"`).
 
-No fix
+No fix.
 
 ###### 1.Case00010
 
@@ -163,6 +163,30 @@ Also, because the password is false. Or, the password of samba user is false or
  is not the samba user or no user currently.
 
 (Trouble-3: `"login failure"`).
+
+Fixed.
+
+But,
+
+`IP` is totally false. `192.168.1.1` changing to `192.168.1.2`.
+
+then, try:
+
+    smbclient //192.168.1.2/sharewithdebian -U sharewithdebian%your_share_pass --signing=off
+
+then, catch:
+
+    Enter WORKGROUP\sharewithdebian's password:
+    Try "help" to get a list of possible commands.
+    smb: \> SMBecho failed (NT_STATUS_CONNECTION_DISCONNECTED). The connection is disconnected now
+
+matter: connection disconnected while login samba user account via connecting
+
+ samba server.
+
+(Trouble-1: `"connection disconnected"`).
+
+No fix.
 
 ##### 2.Case0002
 
