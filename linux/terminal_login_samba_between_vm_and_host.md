@@ -401,8 +401,11 @@ matter: The sharing folder `//ip/sharing_directory` mounted false dir while
 
 that dir do not exit. Changing to `/media/share_from_target`.
 
-Fixed.
+Catch: ``.
 
+What's the matter: Successfully mounted!!!
+
+Fixed.
 
 ##### 7.Case0007
 
@@ -464,6 +467,8 @@ Catch:
     mount: /media/share_from_macos: bad option; for several filesystems (e.g. nfs, cifs) you might need a /sbin/mount.<type> helper program.
 
 What's the matter: I do not know!
+
+
 
 ###### 7.Case000705
 
@@ -648,6 +653,8 @@ The same matter.
 Notice: Un mount share folder -------------------------------------------------
 
 If you do not  mount share folder, just use `cd && umount share_folders`.
+
+e.g: `sudo umount /media/share_from_macos`.
 
 ------------------------------------------------Not mount share folders: Notice
 
