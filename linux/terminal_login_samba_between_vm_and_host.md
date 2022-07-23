@@ -655,8 +655,14 @@ Have a nice!
 
 4.[Samba document](https://www.samba.org/samba/docs/current/man-html/smbclient.1.html?spm=a2c6h.13066369.question.22.198a2863Y6GMVE).
 
+5.[The usage of smbclient(Chinese Blog)](https://wangchujiang.com/linux-command/c/smbclient.html#!kw=%20).
+
+6.[Hot to set Samba sharing for smart management on Ubuntu16.04(Chinese Blog)](https://cloud.tencent.com/developer/article/1184150).
+
 ### 1.2try case with accessing samba server on VM Debian from Host macOS
 
 #### 1.2.1Refer
 
 1.[Ubuntu16.04 access the sharing folders of Windows via Internet with Samba(Chinese Blog)](https://blog.csdn.net/Yemiekai/article/details/113432451).
+
+2.[Hot to set Samba sharing for smart management on Ubuntu16.04(Chinese Blog)](https://cloud.tencent.com/developer/article/1184150).
