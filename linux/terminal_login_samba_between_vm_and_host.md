@@ -70,7 +70,7 @@ Catch: `session setup failed: NT_STATUS_LOGON_FAILURE`.
 
 What's the matter: may be the password is false. I do not know! Or, the
 
-password of samba user is false or is not the samba user or no user.
+password of samba user is false or is not the samba user or no user currently.
 
 (Trouble-3: `"login failure"`).
 
@@ -86,7 +86,7 @@ another catch: `session setup failed: NT_STATUS_LOGON_FAILURE`.
 
 Also, because the password is false. Or, the password of samba user is false or
 
- is not the samba user or no user.
+ is not the samba user or no user currently.
 
 (Trouble-3: `"login failure"`).
 
@@ -101,7 +101,7 @@ Catch:
 
 What's the matter: can not login forever! Or, the password of samba user is
 
- false or is not the samba user or no user.
+ false or is not the samba user or no user currently.
 
 (Trouble-3: `"login failure"`).
 
@@ -388,7 +388,7 @@ Catch:
 
 What's the matter: I do not know! Or, the password of samba user is false or is
 
- not the samba user or no user.
+ not the samba user or no user currently.
 
 (Trouble-3: `"login failure"`).
 
@@ -405,7 +405,7 @@ Catch:
 
 What's the matter: I do not know! Or, the password of samba user is false or is
 
- not the samba user or no user.
+ not the samba user or no user currently.
 
 (Trouble-3: `"login failure"`).
 
@@ -460,6 +460,8 @@ also, catch:
     do_connect: Connection to 192.168.1.2 failed (Error NT_STATUS_NOT_SUPPORTED)
 
 The same matter.
+
+(Trouble-2: `"not support"`).
 
 Notice: Un mount share folder -------------------------------------------------
 
