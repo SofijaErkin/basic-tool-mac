@@ -532,3 +532,75 @@ below to the `~/.zshrc` and activating the `~/.zshrc` via `source ~/.zshrc`:
     export PATH=$PATH:/sbin
 
 End! Fixed.
+
+## 13.Problem J
+
+VirtualBox VM do not work after upgrade macOS, once power on that VM, the VM
+
+ shows:
+
+    FATAL: could not read from the boot medium! System halted 
+
+matter: No matter what you upgrade the VirtualBox, or even upgrade the macOS,
+
+you haven't created a virtual hard disk. So your virtual machine is a machine
+
+without a hard disk, hence the error. To add one, goto the same
+
+"storage" settings as in your first snap, then right-click "IDE Controller"
+
+icon and select "Add Hard disk". Then follow the steps to create a new disk or
+
+add an existing one.
+
+refer:
+
+1.[[SOLVED] Fatal no boot media..VirtualBox](https://ubuntuforums.org/showthread.php?t=1788759).
+
+2.[The solving idea of fixing `VirtualBox: Fatal: Could not read from Boot Medium! System Halted`(Chinese Blog)](https://blog.csdn.net/iteye_13378/article/details/82323291?spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1-82323291-blog-105881526.pc_relevant_multi_platform_whitelistv3&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1-82323291-blog-105881526.pc_relevant_multi_platform_whitelistv3&utm_relevant_index=1).
+
+3.[Ubuntu installing VM Windows 10 FATAL:No bootable medium... or Could not read from the boot medium...(Chinese Blog)](https://blog.csdn.net/qq_27507377/article/details/102832418?spm=1001.2101.3001.6650.1&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1-102832418-blog-105881526.pc_relevant_multi_platform_whitelistv3&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1-102832418-blog-105881526.pc_relevant_multi_platform_whitelistv3&utm_relevant_index=2).
+
+4.[Troubleshooting “No Bootable Medium Found” Error in VirtualBox](https://itsfoss.com/virtualbox-no-bootable-medium-found/).
+
+5[fatal could not read from the boot medium system halted](https://www.codegrepper.com/code-examples/whatever/fatal+could+not+read+from+the+boot+medium+system+halted).
+
+6.[virtualBox, Win10 Fatal: no bootable medium found! System Halted](https://stackoverflow.com/questions/46217280/virtualbox-win10-fatal-no-bootable-medium-found-system-halted).
+
+Fixed!
+
+Just power of the VirtualBox VM, then quit the VirtualBox.
+
+Reopen the VirtualBox, then right click the pull-down menu of VM, with shows:
+
+    Settings... 
+    Clone...
+    Move...
+    Export to OCI
+    Remove...
+    Group
+    ...
+
+just click the settings of VM, and you will enter the general settings of VM,
+
+e.g: `linux_debian_11 - General`, then choose the `Storage`, the windows of
+
+`Storage` shows liking:
+
+    Storage Devices     |     Attributes
+
+      Controller: IDE   |     Name:    IDE
+
+          Empty         |      Type:    PIIX4
+
+      Controller:  SATA  |          Use Host I/O Cache
+
+then, you just choose the `Controller SATA`, and click `Add hard disk`, and
+
+choose your VM with extension `.vdi`, e.g: `linux_debian_11.vdi`, click
+
+`linux_debian_11.vdi`, push down the `Choose` button. Then, push the `OK`
+
+button on the windows of `linux_debian_11 - Storage` to active that SATA,
+
+finally, power on the VM.
