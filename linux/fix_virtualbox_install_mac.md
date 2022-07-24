@@ -593,7 +593,7 @@ e.g: `linux_debian_11 - General`, then choose the `Storage`, the windows of
 
           Empty         |      Type:    PIIX4
 
-      Controller:  SATA  |          Use Host I/O Cache
+      Controller:  SATA |          Use Host I/O Cache
 
 then, you just choose the `Controller SATA`, and click `Add hard disk`, and
 
