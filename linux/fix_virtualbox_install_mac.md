@@ -632,3 +632,29 @@ refer:
 2.[Upgrade VirtualBox(CHinese Blog)](https://lanlan2017.github.io/blog/47fd80ca/).
 
 3.[How to Install VirtualBox Extension Pack on Windows and MacOS](https://www.nakivo.com/blog/how-to-install-virtualbox-extension-pack/).
+
+## 15.Problem O
+
+Manually install VBoxLinuxAdditions:
+
+Fixed.
+
+Input the below code under VM debian terminal:
+
+   sudo mkdir --p /media/cdrom
+
+    sudo mount -t auto /dev/cdrom /media/cdrom
+
+    cd /media/cdrom
+
+    sudo sh VBoxLinuxAdditions.run 
+
+Restart or Reboot Guest machine Debian.
+
+refer:
+
+1.[Install VirtualBox guest additions on Debian 11/10](https://techviewleo.com/install-virtualbox-guest-additions-on-debian/).
+
+2.[VirtualBox Debian10 install enhanced function(Chinese Blog)](https://www.cxyzjd.com/article/weixin_43878297/115295361).
+
+3.[Upgrade VirtualBox(Chinese Blog)](https://lanlan2017.github.io/blog/47fd80ca/).
