@@ -616,7 +616,18 @@ Catch:
     mount: bad usage
     Try 'mount --help' for more information.
 
-What's the matter: I do not know!
+What's the matter: not add the reading power `-o` to the command.
+
+Notice: the below code are deffer!
+
+sudo mount -t cifs username=sharewithdebian //192.168.1.2/sharewithdebian /media/share_from_macos
+
+sudo mount -t cifs -o username=sharewithdebian //192.168.1.2/sharewithdebian /media/share_from_macos
+
+Fixed.
+
+
+
 
 ###### 7.Case00070X6
 
