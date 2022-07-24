@@ -485,7 +485,7 @@ Fixed.
 
     sudo nano sources.list
 
-## 11. [Problem H](https://forums.virtualbox.org/viewtopic.php?t=92632#wrap)
+## 11. [Problem K](https://forums.virtualbox.org/viewtopic.php?t=92632#wrap)
 
     VirtualBox-Error
 
@@ -505,7 +505,7 @@ Select the automatically item named `VirtualBoxVM`, then click the minus
 
 button `-`, then quit the "OSX System Preferences".
 
-## 12.Problem I
+## 12.Problem L
 
 input the below code in Linux terminal under VirtualBox:
 
@@ -533,7 +533,7 @@ below to the `~/.zshrc` and activating the `~/.zshrc` via `source ~/.zshrc`:
 
 End! Fixed.
 
-## 13.Problem J
+## 13.Problem M
 
 VirtualBox VM do not work after upgrade macOS, once power on that VM, the VM
 
@@ -604,3 +604,31 @@ choose your VM with extension `.vdi`, e.g: `linux_debian_11.vdi`, click
 button on the windows of `linux_debian_11 - Storage` to active that SATA,
 
 finally, power on the VM.
+
+## 14.Problem N
+
+How to download and install Oracle VM VirtualBox Extension Pack?
+
+Fixed.
+
+Goto the [`Download VirtualBox`](https://www.virtualbox.org/wiki/Downloads),
+
+Download Extension Pack: [VirtualBox 6.1.36 Oracle VM VirtualBox Extension Pack](https://download.virtualbox.org/virtualbox/6.1.36/Oracle_VM_VirtualBox_Extension_Pack-6.1.36a-152435.vbox-extpack),
+
+and click `All supported platforms` button,
+
+choose`Open with "VirtualBox(Default)"` and push down `OK` button,
+
+and push down `Install` button under the windows of occurring, pull down the
+
+the mouse, and push down `I Agree` button, then input your password of Mac or
+
+Windows, finally push down `OK` button.
+
+refer:
+
+1.[Download VirtualBox](https://www.virtualbox.org/wiki/Downloads).
+
+2.[Upgrade VirtualBox(CHinese Blog)](https://lanlan2017.github.io/blog/47fd80ca/).
+
+3.[How to Install VirtualBox Extension Pack on Windows and MacOS](https://www.nakivo.com/blog/how-to-install-virtualbox-extension-pack/).
