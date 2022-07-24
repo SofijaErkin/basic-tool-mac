@@ -36,7 +36,78 @@ luxury and too expensive. Got down on my knees, VirtualBox.
 
 ## 1. [Problem A](https://stackoverflow.com/questions/52689672/virtualbox-ns-error-failure-0x80004005-macos)
 
-display output:
+Update July 23 2022 PM 06:35 EST
+
+After update `VirtualBox` from `6.1.32` to `6.1.36`, my virtual machine Debian
+
+do not work again!
+
+And the Debian occurs the below while you click the VM power button to start
+
+that:
+
+    (VirtualBox VM)
+
+    Kernel driver not installed (rc=-1908)
+
+    Make sure the kernel module has been loaded successfully.
+
+    where: suplibOsInit what: 3 VERR_VM_DRIVER_NOT_INSTALLED (-1908) - The support driver is not installed. On linux, open returned ENOENT.
+
+and the upstairs has a button of `OK`, and you click the `OK` button, then will
+
+occurs display:
+
+    (VirtualBox)
+
+    Failed to open session or the virtual machine linux_debian_11
+
+and the occurred display has a `copy` button, a `OK` button and a pull-down
+
+ menu `Details`, click the `Details` button, then shows:
+
+    The virtual machine 'linux_Debian_11' has terminated unexpectedly during startup because of signal 6.
+
+    Result Code:
+    NS_ERROR_FAILURE (0x80004005)
+    Component:
+    MachineWrap
+    Interface:
+    IMachine {85632c68-b5bb-4316-a900-5eb28d3413df}
+
+and you click the `OK` button, then it will show:
+
+    (Problem Report for VirtualBoxVM)
+
+    VirtualBoxVM quit unexpectedly
+    Click Reopen to open the application again. This report will be sent
+    
+     automatically to Apple
+
+    [pull-down menu]Comments
+
+    [...]
+
+    Problem Details nd System Configuration
+
+    [...]
+
+    [button] (Hide Details)                [button](OK) [button](Reopen)
+
+click `Reopen`, and you got:
+
+    (VirtualBox - Error)
+
+    You must specify a machine to start, using the command line.
+
+    Usage: VirtualBoxVM --startvm &lt;name|UUID&gt;
+    Starts the VirtualBox virtual machine with the given name or unique identifier (UUID).
+
+                   [button](copy) [button](OK) 
+
+Or,
+
+Others happens display output:
 
     The virtual machine 'Linuxdemo' has terminated unexpectedly during startup with exit code 1 (0x1).
 
@@ -50,9 +121,9 @@ Fixed.
 
 This is because:
 
-After installing `Virtual Box`, first grant "`VirtualBox`" APP
+After installing `Virtual Box` from out of App Store, first grant
 
-permissions, then restart/reboot mac.
+ "`VirtualBox`" APP permissions, then restart/reboot mac.
 
 So,
 
