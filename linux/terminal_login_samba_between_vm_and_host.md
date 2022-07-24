@@ -12,6 +12,34 @@ In all, there are four troubles occurring for me during VM debian accessing
 
 samba server on Host macOS until July 24 2022 PM5:45 EST.
 
+Trouble-4: NetBIOS over TCP disabled -- no workgroup available.
+
+Operate command on terminal:
+
+    smbclient -L 192.168.1.2 -p 445 -U sharewithdebian
+
+Terminal output:
+
+    Enter WORKGROUP\sharewithdebian's password:
+
+    Sharename       Type      Comment
+
+    ---------       ----      -------
+  
+    IPC$            IPC
+
+    sharewithdebian Disk
+
+    NetBIOS over TCP disabled -- no workgroup available
+
+Trouble description:
+
+    NetBIOS over TCP disabled -- no workgroup available
+
+Matters: I do not now until now!
+
+Fixed or not: Not fix.
+
 ### 0.2Host macOS access samba server on VM debian
 
 ## 1.Try login smaba client
