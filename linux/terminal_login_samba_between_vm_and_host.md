@@ -4,6 +4,16 @@ Update July 20 2022 PM 05:00 EST
 
 I'm back after taking a vacation.
 
+## 0.Finally Debug Troubles
+
+### 0.1VM Debian access samba server on Host macOS
+
+In all, there are four troubles occurring for me during VM debian accessing
+
+samba server on Host macOS until July 24 2022 PM5:45 EST.
+
+### 0.2Host macOS access samba server on VM debian
+
 ## 1.Try login smaba client
 
 Two ways:
@@ -625,9 +635,6 @@ sudo mount -t cifs username=sharewithdebian //192.168.1.2/sharewithdebian /media
 sudo mount -t cifs -o username=sharewithdebian //192.168.1.2/sharewithdebian /media/share_from_macos
 
 Fixed.
-
-
-
 
 ###### 7.Case00070X6
 
