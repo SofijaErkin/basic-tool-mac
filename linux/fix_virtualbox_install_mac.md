@@ -105,6 +105,8 @@ click `Reopen`, and you got:
 
                    [button](copy) [button](OK) 
 
+Also, refer: [VirtualBox VM do not work after upgrade MacOS(Chinese Blog)](https://blog.csdn.net/u010953609/article/details/118888485).
+
 Or,
 
 Others happens display output:
