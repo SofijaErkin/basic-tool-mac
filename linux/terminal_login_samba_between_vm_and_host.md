@@ -15,6 +15,7 @@ samba server on Host macOS until July 24 2022 PM5:45 EST.
 #### Trouble-2
 
     not support
+
 Target: I want to checkout which port does the samba server on macOS listening
 
 during VM debian accessing samba server on macOS.
@@ -22,13 +23,16 @@ during VM debian accessing samba server on macOS.
 Operate command on terminal:
 
     smbclient -L 192.168.1.2 -p 139 -U sharewithdebian
+
 Terminal output:
 
     do_connect: NetBIOS support disabled, unable to connect
     do_connect: Connection to 192.168.1.2 failed (Error NT_STATUS_NOT_SUPPORTED)
+
 Trouble description:
 
     error nt_status_not_support
+
 Matters: The listening port of Samba server under Host macOS is not `139`.
 
 Fixed or not: Fixed.
@@ -139,7 +143,6 @@ The trouble became to
 if use this code to check:
 
     smbclient -L 192.168.1.2 -p 139 -U sharewithdebian
-
 then you got:
 
     do_connect: Connection to 192.168.1.2 failed (Error NT_STATUS_CONNECTION_REFUSED)
@@ -371,7 +374,6 @@ The trouble became to
 Another,try case:
 
     smbclient -L //192.168.1.2 -U sharewithdebian --signing-off
-
 Another catch:
 
     Enter WORKGROUP\sharewithdebian's password:
