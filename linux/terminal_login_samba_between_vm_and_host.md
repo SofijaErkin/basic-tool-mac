@@ -8,6 +8,16 @@ I'm back after taking a vacation.
 
 ### 0.1VM Debian access samba server on Host macOS
 
+The refer of connecting samba server:
+
+1.[Man-machine interactively access samba server(Chinese Blog)](https://wangchujiang.com/linux-command/c/smbclient.html).
+
+2.[Smbclient document](https://www.samba.org/samba/docs/current/man-html/smbclient.1.html?spm=a2c6h.13066369.question.22.198a2863Y6GMVE).
+
+3.[How to set the sharing of smaba for smart cop. on Ubuntu16.04?(Chinese Blog)](https://cloud.tencent.com/developer/article/1184150).
+
+4.[(GitHub Gist)Mount samba sharing folder with local directory](https://gist.github.com/SofijaErkin/c1ffee1af03826db67ec594c3d727e2e#5case0005).
+
 In all, there are four troubles occurring for me during VM debian accessing
 
 samba server on Host macOS until July 24 2022 PM5:45 EST.
