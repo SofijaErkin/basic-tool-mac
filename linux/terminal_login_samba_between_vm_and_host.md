@@ -37,6 +37,32 @@ Matters: The listening port of Samba server under Host macOS is not `139`.
 
 Fixed or not: Fixed.
 
+#### Trouble-3
+
+    login failure
+
+Target: I'm will to login the sever of samba on Host macOS.
+
+Operate command on terminal:
+
+    smbclient //192.168.1.1/sharewithdebian -U sharewithdebian%your_share_pass --signing=off
+
+Terminal output:
+
+    session setup failed: NT_STATUS_LOGON_FAILURE
+
+Trouble description:
+
+    session setup failed: nt_status_logon_failure
+
+Matters: can not login forever! May be not the below user name and password.
+
+Or, the password of samba user is false or is not the samba user or no user
+
+currently.
+
+Fixed or not: Fixed.
+
 #### Trouble-4
 
     NetBIOS over TCP disabled -- no workgroup available.
@@ -50,15 +76,10 @@ Operate command on terminal:
 Terminal output:
 
     Enter WORKGROUP\sharewithdebian's password:
-
     Sharename       Type      Comment
-
     ---------       ----      -------
-  
     IPC$            IPC
-
     sharewithdebian Disk
-
     NetBIOS over TCP disabled -- no workgroup available
 
 Trouble description:
