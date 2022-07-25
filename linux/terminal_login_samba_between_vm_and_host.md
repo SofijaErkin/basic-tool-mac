@@ -12,6 +12,31 @@ In all, there are four troubles occurring for me during VM debian accessing
 
 samba server on Host macOS until July 24 2022 PM5:45 EST.
 
+#### Trouble-1
+
+    connection disconnected
+
+Target: I'm glad to login samba server on Host macOS using user name and
+
+password under VM debian.
+
+Operate command on terminal:
+
+    smbclient //192.168.1.2/sharewithdebian -U sharewithdebian%share_user_pass
+
+Terminal output:
+
+    Try "help" to get a list of possible commands.
+    smb: \> SMBecho failed (NT_STATUS_CONNECTION_DISCONNECTED). The connection is disconnected now
+
+Trouble description:
+
+    smb echo failed nt_status_connection_disconnected
+
+Matters: I do not know.
+
+Fixed or not: Not fix.
+
 #### Trouble-2
 
     not support
