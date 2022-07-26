@@ -4,6 +4,8 @@ Update July 20 2022 PM 05:00 EST
 
 I'm back after taking a vacation.
 
+I guess that I may download samba via `brew`, not use the default samba of mac.
+
 ## 0.Finally Debug Troubles
 
 ### 0.1VM Debian access samba server on Host macOS
@@ -21,6 +23,14 @@ The refer of connecting samba server:
 In all, there are four troubles occurring for me during VM debian accessing
 
 samba server on Host macOS until July 24 2022 PM5:45 EST.
+
+Notice: restart the service of samba server on Debian by
+
+    sudo service smbd restart
+
+or
+
+    sudo /etc/init.d/smbd restart
 
 #### Trouble-1
 
