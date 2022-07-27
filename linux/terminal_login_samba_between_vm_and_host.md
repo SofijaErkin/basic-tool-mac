@@ -6,6 +6,8 @@ I'm back after taking a vacation.
 
 I guess that I may download samba via `brew`, not use the default samba of mac.
 
+Maybe, I should share the folder under system directory on Mac with VM debian.
+
 ## 0.Finally Debug Troubles
 
 ### 0.1VM Debian access samba server on Host macOS
