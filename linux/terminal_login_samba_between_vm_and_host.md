@@ -8,6 +8,12 @@ I guess that I may download samba via `brew`, not use the default samba of mac.
 
 Maybe, I should share the folder under system directory on Mac with VM debian.
 
+I just want to make that enable, that is: Creating the project under the VM
+
+Guest VM Debian, and share the project with Host MacOS, edit and change code
+
+under the project in Host MacOS, and run the project in the Guest VM Debian.
+
 ## 0.Finally Debug Troubles
 
 ### 0.1VM Debian access samba server on Host macOS
