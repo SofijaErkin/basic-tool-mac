@@ -14,6 +14,18 @@ Guest VM Debian, and share the project with Host MacOS, edit and change code
 
 under the project in Host MacOS, and run the project in the Guest VM Debian.
 
+What's the status of the plan? Guest VM Debian do successfully access the Samba
+
+server on the Host MacOS, that means creating the project under Host MacoS,
+
+editing and changing the code under Guest VM Debian via sharing folder from Host
+
+MacOS using "host.macos.ip.address:port". But I need Host MacOS to access the
+
+Samba server under VM Debian, that do not work until now!
+
+Even "127.0.0.1:22_port-forwarding_to-target-port".
+
 ## 0.Finally Debug Troubles
 
 ### 0.1VM Debian access samba server on Host macOS
