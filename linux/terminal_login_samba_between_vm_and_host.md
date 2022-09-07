@@ -32,6 +32,10 @@ Even "smb://127.0.0.1:139_port-forwarding_to-target-port/" or
 
 "smb://127.0.0.1:445_port-forwarding_to-target-port/".
 
+The new trouble is that how to set port forward for Host macOS to access the
+
+Guest VM Debian.
+
 ## 0.Finally Debug Troubles
 
 ### 0.1VM Debian access samba server on Host macOS
