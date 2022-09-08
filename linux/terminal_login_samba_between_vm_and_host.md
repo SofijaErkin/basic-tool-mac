@@ -36,6 +36,18 @@ The new trouble is that how to set port forward for Host macOS to access the
 
 Guest VM Debian.
 
+If this way do not work, I will just let her go!
+
+Just log in Guest VM Debian via SSH on Host MacOS, and use VIM to edit and
+
+change the code under directory in the Guest VM Debian, and run that into
+
+Debian, then just use git to push remote repository.
+
+Do a job, stand with the idea of boss, take the responsibility, solve those
+
+problem, push action to the TOP.
+
 ## 0.Finally Debug Troubles
 
 ### 0.1VM Debian access samba server on Host macOS
