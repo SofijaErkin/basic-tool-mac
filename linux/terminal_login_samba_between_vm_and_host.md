@@ -48,6 +48,8 @@ Do a job, stand with the idea of boss, take the responsibility, solve those
 
 problem, push action to the TOP.
 
+I have just to work now!
+
 ## 0.Finally Debug Troubles
 
 ### 0.1VM Debian access samba server on Host macOS
