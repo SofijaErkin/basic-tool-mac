@@ -50,6 +50,8 @@ problem, push action to the TOP.
 
 I have just to work now!
 
+NOW, it's time to get my fucking ass up and work!
+
 ## 0.Finally Debug Troubles
 
 ### 0.1VM Debian access samba server on Host macOS
