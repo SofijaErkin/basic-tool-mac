@@ -50,7 +50,7 @@ problem, push action to the TOP.
 
 I have just to work now!
 
-NOW, it's time to get my fucking ass up and work!
+NOW, it's time to get my fucking ass up and work! No time to die!
 
 ## 0.Finally Debug Troubles
 
