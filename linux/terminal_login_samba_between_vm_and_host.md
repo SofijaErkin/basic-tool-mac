@@ -52,6 +52,8 @@ I have just to work now!
 
 NOW, it's time to get my fucking ass up and work! No time to die!
 
+There is no need to dia for others. live for me, only myself.
+
 ## 0.Finally Debug Troubles
 
 ### 0.1VM Debian access samba server on Host macOS
