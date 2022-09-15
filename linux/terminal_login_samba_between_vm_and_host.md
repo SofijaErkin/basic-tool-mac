@@ -54,6 +54,8 @@ NOW, it's time to get my fucking ass up and work! No time to die!
 
 There is no need to dia for others. live for me, only myself.
 
+Oh, my lig was hurt! Rest in peace, Your Majesty.
+
 ## 0.Finally Debug Troubles
 
 ### 0.1VM Debian access samba server on Host macOS
