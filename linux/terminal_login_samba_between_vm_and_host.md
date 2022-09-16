@@ -56,6 +56,8 @@ There is no need to dia for others. live for me, only myself.
 
 Oh, my lig was hurt! Rest in peace, Your Majesty.
 
+Too tired to go to bed!!!
+
 ## 0.Finally Debug Troubles
 
 ### 0.1VM Debian access samba server on Host macOS
