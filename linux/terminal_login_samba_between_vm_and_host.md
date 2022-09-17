@@ -58,6 +58,8 @@ Oh, my lig was hurt! Rest in peace, Your Majesty.
 
 Too tired to go to bed!!!
 
+Time has to shut down.
+
 ## 0.Finally Debug Troubles
 
 ### 0.1VM Debian access samba server on Host macOS
