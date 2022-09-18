@@ -60,6 +60,8 @@ Too tired to go to bed!!!
 
 Time has to shut down.
 
+RIP, Q E II.
+
 ## 0.Finally Debug Troubles
 
 ### 0.1VM Debian access samba server on Host macOS
