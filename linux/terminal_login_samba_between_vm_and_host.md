@@ -68,6 +68,8 @@ Work smart and hard!
 
 My left leg pain and swollen.
 
+Too more rebeck to go to hospital.
+
 ## 0.Finally Debug Troubles
 
 ### 0.1VM Debian access samba server on Host macOS
