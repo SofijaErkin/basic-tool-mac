@@ -70,6 +70,10 @@ My left leg pain and swollen.
 
 Too more rebeck to go to hospital.
 
+Do not fucking care those fucking words!
+
+No one could limit your direction.
+
 ## 0.Finally Debug Troubles
 
 ### 0.1VM Debian access samba server on Host macOS
