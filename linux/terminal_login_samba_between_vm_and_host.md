@@ -74,6 +74,8 @@ Do not fucking care those fucking words!
 
 No one could limit your direction.
 
+No time to die.
+
 ## 0.Finally Debug Troubles
 
 ### 0.1VM Debian access samba server on Host macOS
