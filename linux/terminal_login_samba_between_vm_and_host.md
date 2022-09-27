@@ -80,6 +80,8 @@ Now, it's the better time to get my fucking ass up and work.
 
 Everything is just fine! It's not too late to work smart and hard!
 
+Nothing needs to say! Go!
+
 ## 0.Finally Debug Troubles
 
 ### 0.1VM Debian access samba server on Host macOS
