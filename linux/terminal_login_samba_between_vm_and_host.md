@@ -84,6 +84,10 @@ Nothing needs to say! Go!
 
 What am I waiting for? No need to wait!
 
+Now I know What, how and why to do job after about thirty-nine gap time. It's
+
+not too late to begin. Do not wait on the source station.
+
 ## 0.Finally Debug Troubles
 
 ### 0.1VM Debian access samba server on Host macOS
