@@ -88,6 +88,18 @@ Now I know What, how and why to do job after about thirty-nine gap time. It's
 
 not too late to begin. Do not wait on the source station.
 
+I would not choose suicide (suicide is the stupidest) or hurt any one (hurting
+
+ others would get my hands dirty).
+
+Suicide is not in my dictionary. In my opinion, suicide is: sacrificing
+
+yourself to make others happy.
+
+I think back to my grandma who had a really tough time between 1960 and 1980.
+
+My unemployed days were weaker than my grandma's hard times.
+
 ## 0.Finally Debug Troubles
 
 ### 0.1VM Debian access samba server on Host macOS
