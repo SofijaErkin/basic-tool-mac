@@ -1,9 +1,5 @@
 # Login Samba between VM and Host via Terminal
 
-Update July 20 2022 PM 05:00 EST
-
-I'm back after taking a vacation.
-
 I guess that I may download samba via `brew`, not use the default samba of mac.
 
 Maybe, I should share the folder under system directory on Mac with VM debian.
@@ -43,64 +39,6 @@ Just log in Guest VM Debian via SSH on Host MacOS, and use VIM to edit and
 change the code under directory in the Guest VM Debian, and run that into
 
 Debian, then just use git to push remote repository.
-
-Do a job, stand with the idea of boss, take the responsibility, solve those
-
-problem, push action to the TOP.
-
-I have just to work now!
-
-NOW, it's time to get my fucking ass up and work! No time to die!
-
-There is no need to dia for others. live for me, only myself.
-
-Oh, my lig was hurt! Rest in peace, Your Majesty.
-
-Too tired to go to bed!!!
-
-Time has to shut down.
-
-RIP, Q E II.
-
-There must be work.
-
-Work smart and hard!
-
-My left leg pain and swollen.
-
-Too more rebeck to go to hospital.
-
-Do not fucking care those fucking words!
-
-No one could limit your direction.
-
-No time to die.
-
-Now, it's the better time to get my fucking ass up and work.
-
-Everything is just fine! It's not too late to work smart and hard!
-
-Nothing needs to say! Go!
-
-What am I waiting for? No need to wait!
-
-Now I know What, how and why to do job after about thirty-nine gap time. It's
-
-not too late to begin. Do not wait on the source station.
-
-I would not choose suicide (suicide is the stupidest) or hurt any one (hurting
-
- others would get my hands dirty).
-
-Suicide is not in my dictionary. In my opinion, suicide is: sacrificing
-
-yourself to make others happy.
-
-I think back to my grandma who had a really tough time between 1960 and 1980.
-
-My unemployed days were weaker than my grandma's hard times.
-
-I still like challenges. I just waste my time elsewhere than my major.
 
 ## 0.Finally Debug Troubles
 
@@ -994,3 +932,69 @@ Have a nice!
 2.[Hot to set Samba sharing for smart management on Ubuntu16.04(Chinese Blog)](https://cloud.tencent.com/developer/article/1184150).
 
 3.[Samba document](https://www.samba.org/samba/docs/current/man-html/smbclient.1.html?spm=a2c6h.13066369.question.22.198a2863Y6GMVE).
+
+## 2.Terminal My Jobless Time
+
+Update July 20 2022 PM 05:00 EST
+
+I'm back after taking a vacation.
+
+What I have suffered in my jobless time?
+
+Do a job, stand with the idea of boss, take the responsibility, solve those
+
+problem, push action to the TOP.
+
+I have just to work now!
+
+NOW, it's time to get my fucking ass up and work! No time to die!
+
+There is no need to dia for others. live for me, only myself.
+
+Oh, my lig was hurt! Rest in peace, Your Majesty.
+
+Too tired to go to bed!!!
+
+Time has to shut down.
+
+RIP, Q E II.
+
+There must be work.
+
+Work smart and hard!
+
+My left leg pain and swollen.
+
+Too more rebeck to go to hospital.
+
+Do not fucking care those fucking words!
+
+No one could limit your direction.
+
+No time to die.
+
+Now, it's the better time to get my fucking ass up and work.
+
+Everything is just fine! It's not too late to work smart and hard!
+
+Nothing needs to say! Go!
+
+What am I waiting for? No need to wait!
+
+Now I know What, how and why to do job after about thirty-nine gap time. It's
+
+not too late to begin. Do not wait on the source station.
+
+I would not choose suicide (suicide is the stupidest) or hurt any one (hurting
+
+ others would get my hands dirty).
+
+Suicide is not in my dictionary. In my opinion, suicide is: sacrificing
+
+yourself to make others happy.
+
+I think back to my grandma who had a really tough time between 1960 and 1980.
+
+My unemployed days were weaker than my grandma's hard times.
+
+I still like challenges. I just waste my time elsewhere than my major.
