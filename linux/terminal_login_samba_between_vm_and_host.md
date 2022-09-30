@@ -100,6 +100,8 @@ I think back to my grandma who had a really tough time between 1960 and 1980.
 
 My unemployed days were weaker than my grandma's hard times.
 
+I still like challenges. I just waste my time elsewhere than my major.
+
 ## 0.Finally Debug Troubles
 
 ### 0.1VM Debian access samba server on Host macOS
