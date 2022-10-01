@@ -6,21 +6,21 @@ Maybe, I should share the folder under system directory on Mac with VM debian.
 
 I just want to make that enable, that is: Creating the project under the VM
 
-Guest VM Debian, and share the project with Host MacOS, edit and change code
+Guest VM Debian, and share the project with Host macOS, edit and change code
 
-under the project in Host MacOS, and run the project in the Guest VM Debian.
+under the project in Host macOS, and run the project in the Guest VM Debian.
 
 What's the status of the plan? Guest VM Debian do successfully access the Samba
 
-server on the Host MacOS via "smb://host.macos.ip.address:139/" or
+server on the Host macOS via "smb://host.macos.ip.address:139/" or
 
 "smb://host.macos.ip.address:445/" or "smb://host.macos.ip.address/", that
 
-means creating the project under Host MacoS,
+means creating the project under Host macOS,
 
 editing and changing the code under Guest VM Debian via sharing folder from Host
 
-MacOS using "host.macos.ip.address:port". But I need Host MacOS to access the
+macOS using "host.macos.ip.address:port". But I need Host macOS to access the
 
 Samba server under VM Debian, that do not work until now!
 
@@ -34,7 +34,7 @@ Guest VM Debian.
 
 If this way do not work, I will just let her go!
 
-Just log in Guest VM Debian via SSH on Host MacOS, and use VIM to edit and
+Just log in Guest VM Debian via SSH on Host macOS, and use VIM to edit and
 
 change the code under directory in the Guest VM Debian, and run that into
 
