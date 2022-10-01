@@ -998,3 +998,7 @@ I think back to my grandma who had a really tough time between 1960 and 1980.
 My unemployed days were weaker than my grandma's hard times.
 
 I still like challenges. I just waste my time elsewhere than my major.
+
+### 2.1Refer
+
+1.[(HelpGuide)Job Loss and Unemployment Stress](https://www.helpguide.org/articles/stress/job-loss-and-unemployment-stress.htm).
