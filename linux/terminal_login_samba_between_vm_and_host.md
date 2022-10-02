@@ -999,6 +999,16 @@ My unemployed days were weaker than my grandma's hard times.
 
 I still like challenges. I just waste my time elsewhere than my major.
 
+Just as that says, be healthy, wealthy and wise.
+
+Also, as always We know, you always come back to the basics.
+
+But I should not do like this: He has too pride to accept any help.
+
+Even, I had developed an outgoing personality to mask my deep insecurities.
+
+No-matter jobless or unemployment stress.
+
 ### 2.1Refer
 
 1.[(HelpGuide)Job Loss and Unemployment Stress](https://www.helpguide.org/articles/stress/job-loss-and-unemployment-stress.htm).
