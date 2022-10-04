@@ -1005,9 +1005,9 @@ Also, as always We know, you always come back to the basics.
 
 But I should not do like this: He has too pride to accept any help.
 
-Even, I had developed an outgoing personality to mask my deep insecurities.
+Even, I had developed an outgoing personality.
 
-No-matter jobless or unemployment stress.
+I'm fine!!!
 
 ### 2.1Refer
 
