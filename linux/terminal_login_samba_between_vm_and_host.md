@@ -1009,6 +1009,8 @@ Even, I had developed an outgoing personality.
 
 I'm fine!!!
 
+No so worst!
+
 ### 2.1Refer
 
 1.[(HelpGuide)Job Loss and Unemployment Stress](https://www.helpguide.org/articles/stress/job-loss-and-unemployment-stress.htm).
