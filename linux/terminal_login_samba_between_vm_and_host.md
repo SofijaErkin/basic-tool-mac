@@ -1019,6 +1019,8 @@ So happy to witness my friends! Hooray!
 
 Organic foods are great!
 
+I need to care about my friends and me.
+
 ### 2.1Refer
 
 1.[(HelpGuide)Job Loss and Unemployment Stress](https://www.helpguide.org/articles/stress/job-loss-and-unemployment-stress.htm).
