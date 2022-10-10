@@ -1021,6 +1021,8 @@ Organic foods are great!
 
 I need to care about my friends and me.
 
+Caring about my friends and me, not only help them, but also help me.
+
 ### 2.1Refer
 
 1.[(HelpGuide)Job Loss and Unemployment Stress](https://www.helpguide.org/articles/stress/job-loss-and-unemployment-stress.htm).
