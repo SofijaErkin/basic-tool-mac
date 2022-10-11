@@ -1031,6 +1031,10 @@ functioning and misdiagnosed depression of my family and me. That is vary vital
 
 for the future of my family.
 
+Interventions for the jobless person may make that man quickly get the offer
+
+and improve outcomes of their family.(Reference: [Depression from WHO](https://www.who.int/news-room/fact-sheets/detail/depression))
+
 ### 2.1Refer
 
 1.[(HelpGuide)Job Loss and Unemployment Stress](https://www.helpguide.org/articles/stress/job-loss-and-unemployment-stress.htm).
