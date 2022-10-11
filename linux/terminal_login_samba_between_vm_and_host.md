@@ -1025,6 +1025,12 @@ Caring about my friends and me, not only help them, but also help me.
 
 Good morning, American!
 
+I should have to notice the physical, mental, emotional healthy, body's
+
+functioning and misdiagnosed depression of my family and me. That is vary vital
+
+for the future of my family.
+
 ### 2.1Refer
 
 1.[(HelpGuide)Job Loss and Unemployment Stress](https://www.helpguide.org/articles/stress/job-loss-and-unemployment-stress.htm).
