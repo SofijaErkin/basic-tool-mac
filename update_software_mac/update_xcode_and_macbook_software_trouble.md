@@ -33,3 +33,19 @@ that depend your net-speed.
 As we al know, installing xcode needs about 5 hours to 7 hours.
 
 But it is worth to do that.
+
+### 2.3Problem
+
+#### 2.3.1Two Xcode icon
+
+Both of the two Xcode icon are the same version in my Mac. I've just moved the
+
+second Xcode icon from Launchpad to the Trash, and I try that first, that
+
+worked! But after a few minutes, My first Xcode missed!
+
+So, Please do not directly move any of the Xcode icon to the trash. Because that
+
+will delete the Xcode, and you again need to download.
+
+Solution: please refer [this](https://stackoverflow.com/a/12519773/10846570).
