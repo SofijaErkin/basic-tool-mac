@@ -48,4 +48,16 @@ So, Please do not directly move any of the Xcode icon to the trash. Because that
 
 will delete the Xcode, and you again need to download.
 
-Solution: please refer [this](https://stackoverflow.com/a/12519773/10846570).
+Solution: The easiest way to fix this is to head to your applications folder,
+
+(Using the menu bar, not a dock folder) and manually moving Xcode to your
+
+trash.
+
+After that, open launchpad and let it update. Both Xcodes will be gone. Then
+
+open your trash and right click Xcode, select Put Back. Voila, you fixed your
+
+problem and didn't even have to re-download!
+
+Refer [this](https://stackoverflow.com/a/12519773/10846570).
