@@ -9,3 +9,17 @@
 2.If the system softwares do not work quickly, or some usage need the latest
 
 system, then update the macbook operation system.
+
+### 2.RoadMap
+
+1.Maybe the system software automatically download while connecting the wifi;
+
+2.Now restart the mac to install the latest version spending about ten minutes.
+
+## 2.Xcode
+
+### 2.1Download
+
+1.Downloading Xcode from AppStore needs about 30 minutes(Just use the 8GB APP
+
+for an example). Also, that depend your network speed.
