@@ -23,3 +23,13 @@ system, then update the macbook operation system.
 1.Downloading Xcode from AppStore needs about 30 minutes(Just use the 8GB APP
 
 for an example). Also, that depend your network speed.
+
+2.Or downloading Xcode Package from AppleDeveloper spend up to 2 hours. Also,
+
+that depend your net-speed.
+
+### 2.2Install
+
+As we al know, installing xcode needs about 5 hours to 7 hours.
+
+But it is worth to do that.
