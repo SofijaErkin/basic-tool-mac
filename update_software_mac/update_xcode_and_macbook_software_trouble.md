@@ -73,3 +73,13 @@ open your trash and right click Xcode, select Put Back. Voila, you fixed your
 problem and didn't even have to re-download!
 
 Refer [this](https://stackoverflow.com/a/12519773/10846570).
+
+If you have just done like me, directly move the second Xcode icon from
+
+the launchpad to trash, you need to download the Xcode from AppStore. That
+
+needs about from 30 minutes to 3 hours. I always do that before go to bed,
+
+Xcode already successfully download and install while I get up. You know, that
+
+splendid. Cool!
