@@ -1041,6 +1041,10 @@ I'd learned about nutritious, healthy and organic food from United States
 
 U.S. [Health and Human Services(health.gov)](https://health.gov/).
 
+Finally, I've just spent a few days to terminal the definition of 'Healthy'
+
+claim on food packages.
+
 ### 2.1Refer
 
 1.[(HelpGuide)Job Loss and Unemployment Stress](https://www.helpguide.org/articles/stress/job-loss-and-unemployment-stress.htm).
