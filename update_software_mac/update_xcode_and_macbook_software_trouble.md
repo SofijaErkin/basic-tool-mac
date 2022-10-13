@@ -38,6 +38,18 @@ But it is worth to do that.
 
 #### 2.3.1Two Xcode icon
 
+The version of my local Xcode is `12.3.1`, and the version of latest Xcode in
+
+AppStore is `14.0.1`. Also, the version of CommandLineTools for macOS is `14`.
+
+Because I have just updated macOS from `12.5.1` to `12.6`(`12.6` was
+
+automatically download while connecting to wifi and I have chose the usage of
+
+"`Download new updates while available`" on the "`Advanced`" under the
+
+function of "`Software Update`").
+
 Both of the two Xcode icon are the same version in my Mac. I've just moved the
 
 second Xcode icon from Launchpad to the Trash, and I try that first, that
