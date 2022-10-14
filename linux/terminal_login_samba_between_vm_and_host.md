@@ -1047,6 +1047,8 @@ claim on food packages.
 
 I know myself, I have the potential to reach the top of mine profession.
 
+But no matter ow bleak things seem right now, there is hope.
+
 ### 2.1Refer
 
 1.[(HelpGuide)Job Loss and Unemployment Stress](https://www.helpguide.org/articles/stress/job-loss-and-unemployment-stress.htm).
