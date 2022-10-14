@@ -1049,6 +1049,18 @@ I know myself, I have the potential to reach the top of mine profession.
 
 But no matter ow bleak things seem right now, there is hope.
 
+It’s important to know that you’re not alone; many of us are facing the same
+
+insecurities at this time. With time and the right coping techniques, you can
+
+come to terms with these setbacks, ease your stress and anxiety, and move on
+
+with your working life.
+
+I am unemployment because I do not ready for interview and I do the wrong
+
+techniques and I waste my time, not because I was bad at my major.
+
 ### 2.1Refer
 
 1.[(HelpGuide)Job Loss and Unemployment Stress](https://www.helpguide.org/articles/stress/job-loss-and-unemployment-stress.htm).
