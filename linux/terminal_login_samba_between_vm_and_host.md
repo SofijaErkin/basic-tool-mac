@@ -1061,6 +1061,22 @@ I am unemployment because I do not ready for interview and I do the wrong
 
 techniques and I waste my time, not because I was bad at my major.
 
+Social contact is nature’s antidote to stress. Nothing works better at calming
+
+your nervous system than talking face to face with a good listener.
+
+But it’s important to remember that being unemployed doesn’t have to define who
+
+you are as a person. It’s up to you define yourself, not the state of the
+
+economy or a company’s decision to lay you off. . Exercise is a powerful
+
+antidote to stress. Spending time in nature is also a great stress reliever.
+
+Social contact is nature’s antidote to stress. Now more than ever, it’s
+
+important to take care of yourself.
+
 ### 2.1Refer
 
 1.[(HelpGuide)Job Loss and Unemployment Stress](https://www.helpguide.org/articles/stress/job-loss-and-unemployment-stress.htm).
