@@ -18,7 +18,7 @@ Debian because the notifications says "Low Disk Space This computer has only
 
 ### 1.1 Using VirtualBox Media Manager On Host/VirtualBox
 
-First, click the VirtualBox APP using your Trackpad; Second, find out the menu
+First, click the VirtualBox APP using your TrackPad; Second, find out the menu
 
 of 'VirtualBox' on the right of the apple logo; Third, find the menu of 'File'
 
@@ -32,7 +32,7 @@ But I suggest that enlarge triple size of the current disk space. E.g:'30GB'.
 
 ## 2.Manually Extend VM Partition
 
-### 2.1 Via Gparted on VM Debian
+### 2.1 Via GParted on VM Debian
 
 ## 3.Refer
 
@@ -40,4 +40,4 @@ But I suggest that enlarge triple size of the current disk space. E.g:'30GB'.
 
 2.[VirtualBox: How to solve the issue with low disk space.](https://blog.surges.eu/virtualbox-how-to-solve-the-issue-with-low-disk-space/)
 
-3.[Using Gparted to enlarge the VirtualBox VM space(Chinese Blog).](https://cloud.tencent.com/developer/article/1631881)
+3.[Using GParted to enlarge the VirtualBox VM space(Chinese Blog).](https://cloud.tencent.com/developer/article/1631881)
