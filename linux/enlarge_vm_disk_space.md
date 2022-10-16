@@ -28,6 +28,8 @@ on the right of menu 'VirtualBox'; Fourth, click the menu 'File' and choose
 
 '20.00GB'. Sixth, click 'Apply' to make sure. Seventh, click `close` to exit.
 
+But I suggest that enlarge triple size of the current disk space. E.g:'30GB'.
+
 ## 2.Manually Extend VM Partition
 
 ### 2.1 Via Gparted on VM Debian
