@@ -104,6 +104,16 @@ please refer below:
 
 ### 2.2 Via command On Terminal(Repartition a disk space on a remote VM)
 
+There are two ways to enlarge the partition of VM. One is that enlarge the
+
+source partition into big partition than the formal size of the source
+
+partition; Another is that create a new partition and mount that new partition
+
+with the data space of VM.
+
+#### 2.2.1Enlarge the source partition into bigger partition
+
 Once quitting the VM Debian during upgrading software or others, there only
 
 have a light down space. So I need use `Ctrl` + `Alt` + `Fn`(n from 1 to 6).
@@ -116,7 +126,7 @@ status.
 
 Just use the uer name and password to login the VM.
 
-As the terminal shows after I type `sudo fdisk -l`:
+As the terminal shows after I typing `sudo fdisk -l`:
 
     Disk /dev/sda: 30 GiB, 32212254720 bytes, 62914560 sectors
     Disk model: VBOX HARDDISK
@@ -131,8 +141,36 @@ As the terminal shows after I type `sudo fdisk -l`:
     /dev/sda2       23166974 25163775  1996802  975M  5 Extended
     /dev/sda5       23166976 25163775  1996800  975M 82 Linux swap / Solaris
 
+and terminal shows after typing `df -hT`:
+
+    Filesystem     Type      Size  Used Avail Use% Mounted on
+    udev           devtmpfs  465M     0  465M   0% /dev
+    tmpfs          tmpfs      98M  2.4M   96M   3% /run
+    /dev/sda1      ext4       11G   11G     0 100% /
+    tmpfs          tmpfs     489M     0  489M   0% /dev/shm
+    tmpfs          tmpfs     5.0M  4.0K  5.0M   1% /run/lock
+    tmpfs          tmpfs      98M   60K   98M   1% /run/user/1000
+
+also, terminal shows after typing `df -hi`:
+
+    Filesystem     Inodes IUsed IFree IUse% Mounted on
+    udev             117K   389  116K    1% /dev
+    tmpfs            123K   665  122K    1% /run
+    /dev/sda1        708K  297K  412K   42% /
+    tmpfs            123K     1  123K    1% /dev/shm
+    tmpfs            123K     4  123K    1% /run/lock
+    tmpfs             25K    67   25K    1% /run/user/1000
+
 Referring about using terminal resize the disk partition of VM:
 
 [Resize Disk Partition on Remote VM Server(Ask Ubuntu)](https://askubuntu.com/questions/109215/resize-disk-partition-on-remote-vm-server/109224#109224).
 
 [Increase partition size on which Ubuntu is installed?(Ask Ubuntu)](https://askubuntu.com/questions/116351/increase-partition-size-on-which-ubuntu-is-installed).
+
+#### 2.2.2Create a new partition with mounting to data space of VM
+
+Please refer:
+
+[Enlarge the disk size on VirtualBox VM(Chinese Blog).](https://blog.csdn.net/don_chiang709/article/details/82797256?spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-82797256-blog-90685295.pc_relevant_layerdownloadsortv1&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-82797256-blog-90685295.pc_relevant_layerdownloadsortv1&utm_relevant_index=1)
+
+[Enlarge the disk space on VirtualBox VM(Chinese Blog).](https://blog.csdn.net/xiaoxiangzi520/article/details/111291634)
