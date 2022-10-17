@@ -30,9 +30,79 @@ on the right of menu 'VirtualBox'; Fourth, click the menu 'File' and choose
 
 But I suggest that enlarge triple size of the current disk space. E.g:'30GB'.
 
-## 2.Manually Extend VM Partition
+## 2.Manually Change VM Partition
+
+After I adjust the disk space of the VM, the Debian also says: "Low Disk Space"
+
+and "This computer has only 244.7MB disk space remaining", I just use `df -h`
+
+to check the actual usage of disk space:
+
+    Filesystem     1K-blocks     Used Available Use% Mounted on
+    
+    /dev/sda1        11G   11G     0 100% /
+
+As I see, the disk space of VM Debian is the same size. So I'm not able to
+
+access any of this space yet.
+
+That means the VM do not recognize the new enlarged partition, that's the guest
+
+VM can not use the new free space, so I need to manually change the partition
+
+of VM Debian, this's I will now eed to extend the VM Debian's partition.
+
+Changing or resizing the partition of the VM guest's partition use `GParted`.
+
+Just simple boot the GParted ISO image in my VM or install GParted via apt on
+
+terminal if my VM have enough disk space.
+
+Because I have no more than one byte on my VM Debian, I just use the GParted
+
+live CD's ISO file.
 
 ### 2.1 Via GParted on VM Debian
+
+1.Download the ISO file of GParted from [Org](https://gparted.org/download.php).
+
+2.Loading the GParted ISO.
+
+First, shut down the VM Debian;
+
+Second, click APP VirtualBox to enter and right click to choose the `setting`
+
+menu;
+
+Third, click `Storage` and find out `Controller: SATA` to click;
+
+Fourth, choose the button `Adds optional drive` and click `Add`;
+
+Fifth, choose ISO `gparted-live-1.4.0-5-amd64.iso` with `Open` button to load and
+
+click `gparted-live-1.4.0-5-amd64.iso` and click 'Choose' button.
+
+Sixth, click `Ok` button to start settings.
+
+But once start the VM Debian, that only display one light down space. Because
+
+there is no disk space for Debian and quit Debian during upgrade software, this
+
+time I can not use graph playstation GParted to manually extend the partition
+
+of VM Debian.
+
+### 2.2 Via command On Terminal
+
+Once quitting the VM Debian during upgrading software or others, there only
+
+have a light down space. So I need use `Ctrl` + `Alt` + `Fn`(n from 1 to 6).
+
+The `n` under `Fn` dependent the work station of VM. Just my Debian use `F2`.
+
+After `"Ctrl" + "ALt" + "F2"` are being touched, the VM will enter the terminal
+
+status.
 
 ## 3.Refer
 
