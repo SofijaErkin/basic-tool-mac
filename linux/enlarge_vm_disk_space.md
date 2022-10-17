@@ -92,6 +92,16 @@ time I can not use graph playstation GParted to manually extend the partition
 
 of VM Debian.
 
+3.If you can use the GParted to manually enlarger your extended disk space,
+
+please refer below:
+
+[How to Enlarge a Virtual Machine’s Disk in VirtualBox or VMware.](https://www.howtogeek.com/124622/how-to-enlarge-a-virtual-machines-disk-in-virtualbox-or-vmware/)
+
+[VirtualBox: How to solve the issue with low disk space.](https://blog.surges.eu/virtualbox-how-to-solve-the-issue-with-low-disk-space/)
+
+[Using GParted to enlarge the VirtualBox VM space(Chinese Blog).](https://cloud.tencent.com/developer/article/1631881)
+
 ### 2.2 Via command On Terminal
 
 Once quitting the VM Debian during upgrading software or others, there only
@@ -103,11 +113,3 @@ The `n` under `Fn` dependent the work station of VM. Just my Debian use `F2`.
 After `"Ctrl" + "ALt" + "F2"` are being touched, the VM will enter the terminal
 
 status.
-
-## 3.Refer
-
-1.[How to Enlarge a Virtual Machine’s Disk in VirtualBox or VMware.](https://www.howtogeek.com/124622/how-to-enlarge-a-virtual-machines-disk-in-virtualbox-or-vmware/)
-
-2.[VirtualBox: How to solve the issue with low disk space.](https://blog.surges.eu/virtualbox-how-to-solve-the-issue-with-low-disk-space/)
-
-3.[Using GParted to enlarge the VirtualBox VM space(Chinese Blog).](https://cloud.tencent.com/developer/article/1631881)
