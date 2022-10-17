@@ -102,7 +102,7 @@ please refer below:
 
 [Using GParted to enlarge the VirtualBox VM space(Chinese Blog).](https://cloud.tencent.com/developer/article/1631881)
 
-### 2.2 Via command On Terminal
+### 2.2 Via command On Terminal(Repartition a disk space on a remote VM)
 
 Once quitting the VM Debian during upgrading software or others, there only
 
@@ -113,3 +113,26 @@ The `n` under `Fn` dependent the work station of VM. Just my Debian use `F2`.
 After `"Ctrl" + "ALt" + "F2"` are being touched, the VM will enter the terminal
 
 status.
+
+Just use the uer name and password to login the VM.
+
+As the terminal shows after I type `sudo fdisk -l`:
+
+    Disk /dev/sda: 30 GiB, 32212254720 bytes, 62914560 sectors
+    Disk model: VBOX HARDDISK
+    Units: sectors of 1 * 512 = 512 bytes
+    Sector size (logical/physical): 512 bytes / 512 bytes
+    I/O size (minimum/optimal): 512 bytes / 512 bytes
+    Disklabel type: dos
+    Disk identifier: 0x50c3fc86
+
+    Device     Boot    Start      End  Sectors  Size Id Type
+    /dev/sda1  *        2048 23164927 23162880   11G 83 Linux
+    /dev/sda2       23166974 25163775  1996802  975M  5 Extended
+    /dev/sda5       23166976 25163775  1996800  975M 82 Linux swap / Solaris
+
+Referring about using terminal resize the disk partition of VM:
+
+[Resize Disk Partition on Remote VM Server(Ask Ubuntu)](https://askubuntu.com/questions/109215/resize-disk-partition-on-remote-vm-server/109224#109224).
+
+[Increase partition size on which Ubuntu is installed?(Ask Ubuntu)](https://askubuntu.com/questions/116351/increase-partition-size-on-which-ubuntu-is-installed).
