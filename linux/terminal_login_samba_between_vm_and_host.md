@@ -933,6 +933,8 @@ Have a nice!
 
 3.[Samba document](https://www.samba.org/samba/docs/current/man-html/smbclient.1.html?spm=a2c6h.13066369.question.22.198a2863Y6GMVE).
 
+#### 1.2.2 Case Combat
+
 ## 2.Terminal My Jobless Time
 
 Update July 20 2022 PM 05:00 EST
@@ -1076,6 +1078,12 @@ antidote to stress. Spending time in nature is also a great stress reliever.
 Social contact is nature’s antidote to stress. Now more than ever, it’s
 
 important to take care of yourself.
+
+Just as Gwyneth Paltrow says, I used to care so much what people thought of me.
+
+Now I don't care. It's so nice. What I think it really means to not be caught
+
+up in what other people think is it means that you're close to yourself.
 
 ### 2.1Refer
 
