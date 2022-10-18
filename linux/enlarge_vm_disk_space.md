@@ -1,10 +1,10 @@
-# Enlarge VirtualBox VM Debian disk space
+# Enlarge VirtualBox VM Debian disk space(Dynamically allocated storage)
 
-When we create VMs on VirtualBox, we may choose automatically distribute disk
+When I create VMs on VirtualBox, I just choose automatically distribute disk
 
 space, but that auto-distributed disk space has been limited by the VirtualBox.
 
-For example, I just create a virtual machine Debian use VirtualBox on MacOS.
+For example, I just create a virtual machine Debian using VirtualBox on MacOS.
 
 The new VM Debian get 12GB disk space, but a few days later, all the 12GB has
 
@@ -14,7 +14,17 @@ Debian because the notifications says "Low Disk Space This computer has only
 
 245.3MB disk space remaining.".
 
-## 1.Manually Enlarge Virtual Size
+If you create VM using VirtualBox, choose fixed size storage, and your VM disk
+
+space has stayed low, you need to create a new `.vdi` disk bigger than the
+
+limited disk, and copy the date from the limited disk to the larger disk using
+
+`dd` command. Also, do not forget to backup your data before creating enlarge.
+
+Please refer [this(Chinese Blog)](https://www.cnblogs.com/xueweihan/p/5923937.html#2).
+
+## 1.Manually Enlarge Virtual Machine Size
 
 ### 1.1 Using VirtualBox Media Manager On Host/VirtualBox
 
@@ -31,6 +41,8 @@ on the right of menu 'VirtualBox'; Fourth, click the menu 'File' and choose
 But I suggest that enlarge triple size of the current disk space. E.g:'30GB'.
 
 ## 2.Manually Change VM Partition
+
+Please backup your data before you manually enlarger the partition of your VM.
 
 After I adjust the disk space of the VM, the Debian also says: "Low Disk Space"
 
