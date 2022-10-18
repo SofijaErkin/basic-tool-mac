@@ -1085,6 +1085,8 @@ Now I don't care. It's so nice. What I think it really means to not be caught
 
 up in what other people think is it means that you're close to yourself.
 
+Also, I recalled that the schooldays of mine wasn't quite as smooth.
+
 ### 2.1Refer
 
 1.[(HelpGuide)Job Loss and Unemployment Stress](https://www.helpguide.org/articles/stress/job-loss-and-unemployment-stress.htm).
