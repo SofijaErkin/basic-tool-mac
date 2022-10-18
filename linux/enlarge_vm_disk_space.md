@@ -114,6 +114,10 @@ please refer below:
 
 [Using GParted to enlarge the VirtualBox VM space(Chinese Blog).](https://cloud.tencent.com/developer/article/1631881)
 
+[The solution of Low disk space on VirtualBox VM Ubuntu(Chinese Blog).](https://blog.csdn.net/qq_46170379/article/details/116808669)
+
+[How to deal with low disk space on Ubuntu via enlarging disk(Chinese Blog).](https://blog.csdn.net/weixin_44886002/article/details/112061001?utm_medium=distribute.pc_relevant.none-task-blog-baidujs_title-0&spm=1001.2101.3001.4242)
+
 ### 2.2 Via command On Terminal(Repartition a disk space on a remote VM)
 
 There are two ways to enlarge the partition of VM. One is that enlarge the
