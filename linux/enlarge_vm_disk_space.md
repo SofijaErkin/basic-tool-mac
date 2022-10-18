@@ -36,11 +36,27 @@ on the right of menu 'VirtualBox'; Fourth, click the menu 'File' and choose
 
 "Virtual Media Manager" to click; Fifth, change the number of 'Size', e.g:
 
-'20.00GB'. Sixth, click 'Apply' to make sure. Seventh, click `close` to exit.
+'40.00GB'. Sixth, click 'Apply' to make sure. Seventh, click `close` to exit.
 
-But I suggest that enlarge triple size of the current disk space. E.g:'30GB'.
+But I suggest that enlarge quintuple size of the current disk space.
+
+E.g:'60GB'.
 
 ## 2.Manually Change VM Partition
+
+There are two ways to enlarge the partition of VM. One is that enlarge the
+
+source partition into bigger partition than the formal size of the source
+
+partition; Another is that create a new partition and mount that new partition
+
+with the data space of VM.
+
+Refer: [Enlarge the partition and file system of System disk for Linux(Chinese).](https://support.huaweicloud.com/usermanual-evs/evs_01_0072.html)
+
+Notice: `sudo resize2fs /dev/sda1` - this form will default to making the
+
+filesystem to take all available space on the partition.
 
 Please backup your data before you manually enlarger the partition of your VM.
 
@@ -108,27 +124,21 @@ of VM Debian.
 
 please refer below:
 
+(Enlarge source partition to enlarge the disk space of VM)
+
 [How to Enlarge a Virtual Machine’s Disk in VirtualBox or VMware.](https://www.howtogeek.com/124622/how-to-enlarge-a-virtual-machines-disk-in-virtualbox-or-vmware/)
 
 [VirtualBox: How to solve the issue with low disk space.](https://blog.surges.eu/virtualbox-how-to-solve-the-issue-with-low-disk-space/)
 
 [Using GParted to enlarge the VirtualBox VM space(Chinese Blog).](https://cloud.tencent.com/developer/article/1631881)
 
+(Create a new partition to enlarge the disk space of VM)
+
 [The solution of Low disk space on VirtualBox VM Ubuntu(Chinese Blog).](https://blog.csdn.net/qq_46170379/article/details/116808669)
 
 [How to deal with low disk space on Ubuntu via enlarging disk(Chinese Blog).](https://blog.csdn.net/weixin_44886002/article/details/112061001?utm_medium=distribute.pc_relevant.none-task-blog-baidujs_title-0&spm=1001.2101.3001.4242)
 
 ### 2.2 Via command On Terminal(Repartition a disk space on a remote VM)
-
-There are two ways to enlarge the partition of VM. One is that enlarge the
-
-source partition into big partition than the formal size of the source
-
-partition; Another is that create a new partition and mount that new partition
-
-with the data space of VM.
-
-Refer: [Enlarge the partition and file system of System disk for Linux(Chinese).](https://support.huaweicloud.com/usermanual-evs/evs_01_0072.html)
 
 #### 2.2.1Enlarge the source partition into bigger partition
 
