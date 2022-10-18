@@ -128,6 +128,8 @@ partition; Another is that create a new partition and mount that new partition
 
 with the data space of VM.
 
+Refer: [Enlarge the partition and file system of System disk for Linux(Chinese).](https://support.huaweicloud.com/usermanual-evs/evs_01_0072.html)
+
 #### 2.2.1Enlarge the source partition into bigger partition
 
 Once quitting the VM Debian during upgrading software or others, there only
