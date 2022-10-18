@@ -1087,6 +1087,24 @@ up in what other people think is it means that you're close to yourself.
 
 Also, I recalled that the schooldays of mine wasn't quite as smooth.
 
+And Paltrow says, I don't long for it, I don't miss it. But things can rekindle
+
+at different times in your life. I've lived long enough to know that you can
+
+never make assumptions about who you're going to be. So never say never! when
+
+it comes to a potential return to acting. What about splitting from ex-husband,
+
+she says, I was not able to make my first marriage work, and I took it as a
+
+huge failure. And it's still hard. I have disappointed kids and it's never
+
+going to be the same as if I stayed together with their dad. But knowing how
+
+painful it was to get a divorce the first time, I'm vigilant about staying
+
+aligned and not letting resentments build up.
+
 ### 2.1Refer
 
 1.[(HelpGuide)Job Loss and Unemployment Stress](https://www.helpguide.org/articles/stress/job-loss-and-unemployment-stress.htm).
