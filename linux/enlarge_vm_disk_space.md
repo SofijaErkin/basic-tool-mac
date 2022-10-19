@@ -191,6 +191,10 @@ Referring about using terminal resize the disk partition of VM:
 
 [Increase partition size on which Ubuntu is installed?(Ask Ubuntu)](https://askubuntu.com/questions/116351/increase-partition-size-on-which-ubuntu-is-installed).
 
+[How to extend filesystem partition on Ubuntu VM?(UNIX&LINUX).](https://unix.stackexchange.com/a/418412/335824)
+
+[VirtualBox Increase Size of Ubuntu Linux(Stack overflow).](https://stackoverflow.com/a/47551808/10846570)
+
 #### 2.2.2Create a new partition with mounting to data space of VM
 
 Please refer:
