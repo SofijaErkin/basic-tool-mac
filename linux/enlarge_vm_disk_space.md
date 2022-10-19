@@ -199,6 +199,8 @@ Referring about using terminal resize the disk partition of VM:
 
 [How do resize an OS partition(Stack overflow).](https://askubuntu.com/a/1418366/922190)
 
+[the GNU Parted Manual(GNU Org).](https://www.gnu.org/software/parted/manual/html_node/parted_toc.html#TOC31)
+
 #### 2.2.2Create a new partition with mounting to data space of VM
 
 Please refer:
