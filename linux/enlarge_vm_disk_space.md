@@ -195,6 +195,10 @@ Referring about using terminal resize the disk partition of VM:
 
 [VirtualBox Increase Size of Ubuntu Linux(Stack overflow).](https://stackoverflow.com/a/47551808/10846570)
 
+[how to let Ubuntu see that I increased disk size in azure portal(Stack overflow).](https://stackoverflow.com/a/59435121/10846570)
+
+[How do resize an OS partition(Stack overflow).](https://askubuntu.com/a/1418366/922190)
+
 #### 2.2.2Create a new partition with mounting to data space of VM
 
 Please refer:
