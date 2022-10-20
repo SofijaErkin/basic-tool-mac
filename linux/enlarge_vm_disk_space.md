@@ -22,7 +22,45 @@ limited disk, and copy the date from the limited disk to the larger disk using
 
 `dd` command. Also, do not forget to backup your data before creating enlarge.
 
-if you want to backup your data, please refer:
+## 1.Backup my VM
+
+### 1.1Local VM
+
+My VM Debian has just installed on MacOS via VirtualBox, VM Debian is a `.vdi`
+
+image file, I have just needed to copy that file into other direction differ
+
+than the source direction, e.g: local host machine desktop or external disk.
+
+Check my VM debian's location, it was under
+
+    /Users/my_user_name/VirtualBox VMs/linux_Debian_system_version/linux_Debian_image_name.vdi
+
+Check my local host machine MacOS desktop's location:
+
+    /Users/my_user_name/Desktop/
+
+Check my external disk's location:
+
+    /Volumes/my_external_disk/
+
+I just use command `cp` to backup the `.vdi` under my desktop:
+
+    cp "/Users/my_user_name/VirtualBox VMs/linux_Debian_system_version/linux_Debian_image_name.vdi" "/Users/my_user_name/Desktop/linux_Debian_image_backup_name.vdi"
+
+Or, I just use command `VBoxManage clonehd` to backup that `.vdi` under my
+
+external disk:
+
+    cd "/Users/my_user_name/VirtualBox VMs/"
+
+    VBoxManage clonehd "/Users/my_user_name/VirtualBox VMs/linux_Debian_system_version/linux_Debian_image_name.vdi"  "/Volumes/my_external_disk/linux_Debian_image_backup_name.vdi"
+
+### 1.2Remote VM or Cloud host machine
+
+### 1.3Refer
+
+If you want to backup your data, please refer:
 
 [Sync the disk of virtual machine(Chinese Blog).](https://www.cnblogs.com/xueweihan/p/5923937.html#2)
 
@@ -34,9 +72,15 @@ if you want to backup your data, please refer:
 
 [Using command dd manually operate disk on Linux(Chinese Blog).](https://blog.csdn.net/ACMer_L/article/details/107593891)
 
-## 1.Manually Enlarge Virtual Machine Size
+[Using rsync backup the remote VM(Chinese Blog).](https://www.jianshu.com/p/b0157e4ab801)
 
-### 1.1 Using VirtualBox Media Manager On Host/VirtualBox
+[Using sftp backup the remote VM(Chinese Blog).](https://www.myfreax.com/how-to-use-linux-sftp-command-to-transfer-files/)
+
+[The detail of SSH on Linux(Chinese Blog).](https://www.jianshu.com/p/d32414af2001)
+
+## 2.Manually Enlarge Virtual Machine Size
+
+### 2.1 Using VirtualBox Media Manager On Host/VirtualBox
 
 First, click the VirtualBox APP using your TrackPad; Second, find out the menu
 
@@ -52,7 +96,7 @@ But I suggest that enlarge quintuple size of the current disk space.
 
 E.g:'60GB'.
 
-## 2.Manually Change VM Partition
+## 3.Manually Change VM Partition
 
 There are two ways to enlarge the partition of VM. One is that enlarge the
 
@@ -100,7 +144,7 @@ Because I have no more than one byte on my VM Debian, I just use the GParted
 
 live CD's ISO file.
 
-### 2.1 Via GParted on VM Debian
+### 3.1 Via GParted on VM Debian
 
 1.Download the ISO file of GParted from [Org](https://gparted.org/download.php).
 
@@ -144,9 +188,9 @@ please refer below:
 
 [How to deal with low disk space on Ubuntu via enlarging disk(Chinese Blog).](https://blog.csdn.net/weixin_44886002/article/details/112061001?utm_medium=distribute.pc_relevant.none-task-blog-baidujs_title-0&spm=1001.2101.3001.4242)
 
-### 2.2 Via command On Terminal(Repartition a disk space on a remote VM)
+### 3.2 Via command On Terminal(Repartition a disk space on a remote VM)
 
-#### 2.2.1Enlarge the source partition into bigger partition
+#### 3.2.1Enlarge the source partition into bigger partition
 
 Once quitting the VM Debian during upgrading software or others, there only
 
@@ -211,7 +255,7 @@ Referring about using terminal resize the disk partition of VM:
 
 [the GNU Parted Manual(GNU Org).](https://www.gnu.org/software/parted/manual/html_node/parted_toc.html#TOC31)
 
-#### 2.2.2Create a new partition with mounting to data space of VM
+#### 3.2.2Create a new partition with mounting to data space of VM
 
 Please refer:
 
