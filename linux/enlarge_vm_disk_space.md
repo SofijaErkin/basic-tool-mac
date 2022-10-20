@@ -22,7 +22,17 @@ limited disk, and copy the date from the limited disk to the larger disk using
 
 `dd` command. Also, do not forget to backup your data before creating enlarge.
 
-Please refer [this(Chinese Blog)](https://www.cnblogs.com/xueweihan/p/5923937.html#2).
+if you want to backup your data, please refer:
+
+[Sync the disk of virtual machine(Chinese Blog).](https://www.cnblogs.com/xueweihan/p/5923937.html#2)
+
+[Test of coping and moving vdi file(Chinese Blog).](https://www.finclip.com/news/f/8791.html)
+
+[Using command dd copy the operation system into the new virtual disk(Chinese Blog).](https://www.cnblogs.com/xueweihan/p/5923937.html#2)
+
+[The command scp of Linux(Chinese Blog).](https://www.runoob.com/linux/linux-comm-scp.html)
+
+[Using command dd manually operate disk on Linux(Chinese Blog).](https://blog.csdn.net/ACMer_L/article/details/107593891)
 
 ## 1.Manually Enlarge Virtual Machine Size
 
