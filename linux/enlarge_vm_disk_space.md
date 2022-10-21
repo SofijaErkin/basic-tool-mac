@@ -160,6 +160,14 @@ e.g:
 
     ssh user@remote "dd if=image.gz | gzip -dc -" | dd of=/dev/sda
 
+or, if the upstairs do not work, just try(the below and upstairs should be 
+
+check twice, again and again!):
+
+    cd ~ && scp /local_home/user_name/Desktop/image_local_backup.gz image.gz
+
+    ssh user@remote "gzip -dc image.gz" | dd of=/dev/sda
+
 #### 1.2.3Rsync backup
 
 #### 1.2.4Sftp backup
