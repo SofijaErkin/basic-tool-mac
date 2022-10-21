@@ -168,7 +168,7 @@ e.g:
 
     ssh user@remote "dd if=image.gz | gzip -dc -" | dd of=/dev/sda
 
-or, if the upstairs do not work, just try(the below and upstairs should be 
+or, if the upstairs do not work, just try(the below and upstairs should be
 
 check twice, again and again!):
 
