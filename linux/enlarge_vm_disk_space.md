@@ -176,7 +176,19 @@ check twice, again and again!):
 
     ssh user@remote "gzip -dc image.gz" | dd of=/dev/sda
 
+Please use the second of compressing image to restore source disk.
+
+Notice: `gunzip -c file.image.gz` equals `gzip -dc file.image.gz`, `-d` means
+
+decompress.
+
 refer:
+
+[Restoring Stuff with dd(Real Tech Talk).](https://realtechtalk.com/dd_how_to_backup_and_restore_disk_images_including_compression_with_gzip-2261-articles)
+
+[DD to restore compressed hard drive images(Linux Questions Org).](https://www.linuxquestions.org/questions/slackware-14/dd-to-restore-compressed-hard-drive-images-4175532385/)
+
+[DD Backup, Compress, and Restore(GitHub Gist).](https://gist.github.com/JonathanPorta/06e74e6a0a1f89f895aa)
 
 [Exporting an instance as a VM using VM Import/Export(AWS Document).](https://docs.aws.amazon.com/vm-import/latest/userguide/vmexport.html)
 
@@ -185,6 +197,8 @@ refer:
 [How to dd a remote disk using SSH on local machine and save to a local disk(UNIX&LINUX).](https://unix.stackexchange.com/a/132800/335824)
 
 [Clone a remote Linux server with rsync and migrate it locally as Virtual Machine(server fault).](https://serverfault.com/a/915124/989101)
+
+[The usage of gzip and gunzip(Chinese Blog).](https://codeantenna.com/a/Nw8hVT1cUe)
 
 [Command scp of Linux(Chinese Blog).](https://www.runoob.com/linux/linux-comm-scp.html)
 
