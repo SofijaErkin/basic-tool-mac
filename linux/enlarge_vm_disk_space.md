@@ -106,6 +106,14 @@ data disk partition:
     cd ~
     ssh root_or_user_name@remoteIp "dd if=/dev/sdb" | dd of=/dev/sda
 
+refer:
+
+[Using command dd copy the virtual OS into new virtual disk(Chinese Blog)](https://www.cnblogs.com/xueweihan/p/5923937.html#2)
+
+[Using command dd manually operate disk on Linux(Chinese Blog).](https://blog.csdn.net/ACMer_L/article/details/107593891)
+
+[The detail of SSH on Linux(Chinese Blog).](https://www.jianshu.com/p/d32414af2001)
+
 #### 1.2.2Create image
 
 If your remote VM or cloud server has the console or API, you can manually
@@ -168,10 +176,6 @@ check twice, again and again!):
 
     ssh user@remote "gzip -dc image.gz" | dd of=/dev/sda
 
-#### 1.2.3Rsync backup
-
-#### 1.2.4Sftp backup
-
 refer:
 
 [Exporting an instance as a VM using VM Import/Export(AWS Document).](https://docs.aws.amazon.com/vm-import/latest/userguide/vmexport.html)
@@ -184,19 +188,13 @@ refer:
 
 [Command scp of Linux(Chinese Blog).](https://www.runoob.com/linux/linux-comm-scp.html)
 
-[Using command dd copy the virtual OS into new virtual disk(Chinese Blog)](https://www.cnblogs.com/xueweihan/p/5923937.html#2)
-
-[Using command dd manually operate disk on Linux(Chinese Blog).](https://blog.csdn.net/ACMer_L/article/details/107593891)
-
-[The detail of SSH on Linux(Chinese Blog).](https://www.jianshu.com/p/d32414af2001)
-
-### 1.3Refer
-
-If you want to backup your data, please refer:
-
 [The command scp of Linux(Chinese Blog).](https://www.runoob.com/linux/linux-comm-scp.html)
 
+#### 1.2.3Rsync backup
+
 [Using rsync backup the remote VM(Chinese Blog).](https://www.jianshu.com/p/b0157e4ab801)
+
+#### 1.2.4Sftp backup
 
 [Using sftp backup the remote VM(Chinese Blog).](https://www.myfreax.com/how-to-use-linux-sftp-command-to-transfer-files/)
 
