@@ -77,7 +77,7 @@ refer:
 
 [Sync the disk of virtual machine(Chinese Blog).](https://www.cnblogs.com/xueweihan/p/5923937.html#2)
 
-### 1.2Remote VM or Cloud host machine
+### 1.2Remote VM or Cloud host machine or Cloud server
 
 If you have another disk bigger than the one disk, e.g: the one source disk is
 
@@ -87,13 +87,25 @@ source disk(the one source disk is under `/dev/sda/`, another disk is under
 
 `/dev/sdb/`):
 
-(Just ssh login your remote machine via terminal)
+(Just ssh login your remote machine via local host terminal)
 
-    ssh root_or_log_user_name@remoteIP dd if=/dev/sda/ of=/dev/sdb/
+    ssh root_or_user_name@remoteIP -p port_number_ "dd if=/dev/sda/ " | dd of=/dev/sdb/
+
+or use default port:
+
+   ssh root_or_user_name@remoteIP "dd if=/dev/sda/ " | dd of=/dev/sdb/
 
 refer:
 
-[Using command dd copy the virtual OS into new virtual disk](https://www.cnblogs.com/xueweihan/p/5923937.html#2)
+[How to dd a remote disk using SSH on local machine and save to a local disk(UNIX&LINUX).](https://unix.stackexchange.com/a/132800/335824)
+
+[Clone a remote Linux server with rsync and migrate it locally as Virtual Machine(server fault).](https://serverfault.com/a/915124/989101)
+
+[Using command dd copy the virtual OS into new virtual disk(Chinese Blog)](https://www.cnblogs.com/xueweihan/p/5923937.html#2)
+
+[Using command dd manually operate disk on Linux(Chinese Blog).](https://blog.csdn.net/ACMer_L/article/details/107593891)
+
+[The detail of SSH on Linux(Chinese Blog).](https://www.jianshu.com/p/d32414af2001)
 
 ### 1.3Refer
 
@@ -101,13 +113,9 @@ If you want to backup your data, please refer:
 
 [The command scp of Linux(Chinese Blog).](https://www.runoob.com/linux/linux-comm-scp.html)
 
-[Using command dd manually operate disk on Linux(Chinese Blog).](https://blog.csdn.net/ACMer_L/article/details/107593891)
-
 [Using rsync backup the remote VM(Chinese Blog).](https://www.jianshu.com/p/b0157e4ab801)
 
 [Using sftp backup the remote VM(Chinese Blog).](https://www.myfreax.com/how-to-use-linux-sftp-command-to-transfer-files/)
-
-[The detail of SSH on Linux(Chinese Blog).](https://www.jianshu.com/p/d32414af2001)
 
 ## 2.Manually Enlarge Virtual Machine Size
 
