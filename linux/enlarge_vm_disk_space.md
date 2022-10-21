@@ -137,6 +137,8 @@ image file to local:
 
     scp -P port_number_ root_or_user_name@remoteIP:/remote_home/remote_user_name/Document/remote_vm_backup_image_file.image /local_home/local_user_name/Desktop/remote_vm_backup_image_file_in_local.image
 
+Notice: command `ssh` choose port using `-p`, while command `scp` using `-P`.
+
 Also, if your source data disk partition has been deleted, then restore the
 
 local backup file into remote virtual machine:
@@ -160,11 +162,11 @@ e.g:
 (backup below)
 
     cd ~ && ssh user@remote "dd if=/dev/sda | gzip -1 -" | dd of=image.gz
-    scp image.gz /local_home/user_name/Desktop/image_local_backup.gz
+    scp -P port_number_ image.gz /local_home/user_name/Desktop/image_local_backup.gz
 
 (restore)
 
-    cd ~ && scp /local_home/user_name/Desktop/image_local_backup.gz image.gz
+    cd ~ && scp -P port_number_ /local_home/user_name/Desktop/image_local_backup.gz image.gz
 
     ssh user@remote "dd if=image.gz | gzip -dc -" | dd of=/dev/sda
 
@@ -172,7 +174,7 @@ or, if the upstairs do not work, just try(the below and upstairs should be
 
 check twice, again and again!):
 
-    cd ~ && scp /local_home/user_name/Desktop/image_local_backup.gz image.gz
+    cd ~ && scp -P port_number_ /local_home/user_name/Desktop/image_local_backup.gz image.gz
 
     ssh user@remote "gzip -dc image.gz" | dd of=/dev/sda
 
