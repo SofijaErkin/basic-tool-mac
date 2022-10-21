@@ -97,9 +97,13 @@ or use default port:
 
 If your remote VM or cloud server has the console or API, you can manually
 
-create an  image and download into the local.
+create an image and download into the local. E.g: aws(.vdmk), alibaba
+
+cloud(.oss).
 
 refer:
+
+[Exporting an instance as a VM using VM Import/Export(AWS Document).](https://docs.aws.amazon.com/vm-import/latest/userguide/vmexport.html)
 
 [backup an existing linux server to a virtualbox virtual machine(server fault).](https://serverfault.com/a/451039/989101)
 
@@ -153,7 +157,11 @@ partition; Another is that create a new partition and mount that new partition
 
 with the data space of VM.
 
-Refer: [Enlarge the partition and file system of System disk for Linux(Chinese).](https://support.huaweicloud.com/usermanual-evs/evs_01_0072.html)
+Refer:
+
+[Extend the logical volume(AWS:Premium Support-knowledge center).](https://aws.amazon.com/premiumsupport/knowledge-center/create-lv-on-ebs-partition/)
+
+[Enlarge the partition and file system of System disk for Linux(Chinese).](https://support.huaweicloud.com/usermanual-evs/evs_01_0072.html)
 
 Notice: `sudo resize2fs /dev/sda1` - this form will default to making the
 
@@ -301,6 +309,18 @@ Referring about using terminal resize the disk partition of VM:
 [How do resize an OS partition(Stack overflow).](https://askubuntu.com/a/1418366/922190)
 
 [the GNU Parted Manual(GNU Org).](https://www.gnu.org/software/parted/manual/html_node/parted_toc.html#TOC31)
+
+[Extend a Linux file system after resizing a volume(AWS Document).](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/recognize-expanded-volume-linux.html)
+
+[Expand virtual hard disks on a Linux VM with the Azure CLI(Azure Document).](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/expand-disks)
+
+[Resize the file system and partitions(Google Cloud).](https://cloud.google.com/compute/docs/disks/resize-persistent-disk)
+
+[Extending MBR Partitions and File Systems Offline (Tencent Cloud Document)](https://www.tencentcloud.com/document/product/362/39998)
+
+[Extend the partitions and file systems of disks on a Linux instance(Alibaba Cloud Document).](https://www.alibabacloud.com/help/en/elastic-compute-service/latest/resize-disks-online-for-windows-instances)
+
+[Extending Partitions and File Systems for System Disks(Huawei Cloud Document).](https://support.huaweicloud.com/intl/en-us/usermanual-evs/evs_01_0072.html)
 
 #### 3.2.2Create a new partition with mounting to data space of VM
 
