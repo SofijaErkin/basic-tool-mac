@@ -101,17 +101,35 @@ create an image and download into the local. E.g: aws(.vdmk), alibaba
 
 cloud(.oss).
 
+If you have more than 50% free disk space, you can create a image for your disk
+
+partition via an `.image` file, and use command `scp` to download that backup
+
+image file to local:
+
+(Just in your local machine terminal)
+
+   ssh root_or_user_name@remoteIP -p port_number_ "dd if=/dev/sda/ " | \
+
+   dd of=/remote_home/remote_user_name/Document/remote_vm_backup_image_file.image
+
+   scp -P port_number_ root_or_user_name@remoteIP:/remote_home/remote_user_name/Document/remote_vm_backup_image_file.image /local_home/local_user_name/Desktop/remote_vm_backup_image_file_in_local.image
+
+All detail about the backup of system disk and data disk on Cloud Virtual
+
+Machine, please refer [the document of Tencent Cloud](https://www.tencentcloud.com/document/product/213/17284).
+
 refer:
 
 [Exporting an instance as a VM using VM Import/Export(AWS Document).](https://docs.aws.amazon.com/vm-import/latest/userguide/vmexport.html)
 
 [backup an existing linux server to a virtualbox virtual machine(server fault).](https://serverfault.com/a/451039/989101)
 
-[Backup and Restore(Tencent Cloud Document: Cloud Virtual Machine).](https://www.tencentcloud.com/document/product/213/17284)
-
 [How to dd a remote disk using SSH on local machine and save to a local disk(UNIX&LINUX).](https://unix.stackexchange.com/a/132800/335824)
 
 [Clone a remote Linux server with rsync and migrate it locally as Virtual Machine(server fault).](https://serverfault.com/a/915124/989101)
+
+[Command scp of Linux(Chinese Blog).](https://www.runoob.com/linux/linux-comm-scp.html)
 
 [Using command dd copy the virtual OS into new virtual disk(Chinese Blog)](https://www.cnblogs.com/xueweihan/p/5923937.html#2)
 
