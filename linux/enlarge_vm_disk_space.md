@@ -22,6 +22,10 @@ limited disk, and copy the date from the limited disk to the larger disk using
 
 `dd` command. Also, do not forget to backup your data before creating enlarge.
 
+Please refer: [Using command dd copy the virtual OS into new virtual disk](https://www.cnblogs.com/xueweihan/p/5923937.html#2) for
+
+fixed size storage VM(Chinese Blog).
+
 ## 1.Backup my VM
 
 ### 1.1Local VM
@@ -44,29 +48,56 @@ Check my external disk's location:
 
     /Volumes/my_external_disk/
 
-I just use command `cp` to backup the `.vdi` under my desktop:
+I just use command `cp` to backup the `.vdi` under my desktop(This takes about
 
+30 seconds and generate the same `UUID`):
+
+(Just use my host machine terminal)
+
+    cd ~
     cp "/Users/my_user_name/VirtualBox VMs/linux_Debian_system_version/linux_Debian_image_name.vdi" "/Users/my_user_name/Desktop/linux_Debian_image_backup_name.vdi"
+
+if you use `cp` to backup that `.vdi` under the external disk, that will takes
+
+a few minutes but less than using command `VBoxManage clonehd`.
 
 Or, I just use command `VBoxManage clonehd` to backup that `.vdi` under my
 
-external disk:
+external disk(this takes a few minutes and generate a new `UUID`):
+
+(Just use my host machine terminal)
 
     cd "/Users/my_user_name/VirtualBox VMs/"
 
     VBoxManage clonehd "/Users/my_user_name/VirtualBox VMs/linux_Debian_system_version/linux_Debian_image_name.vdi"  "/Volumes/my_external_disk/linux_Debian_image_backup_name.vdi"
 
+refer:
+
+[Test of coping and moving vdi file(Chinese Blog).](https://www.finclip.com/news/f/8791.html)
+
+[Sync the disk of virtual machine(Chinese Blog).](https://www.cnblogs.com/xueweihan/p/5923937.html#2)
+
 ### 1.2Remote VM or Cloud host machine
+
+If you have another disk bigger than the one disk, e.g: the one source disk is
+
+13GB and another disk has 32 GB, you can use command `dd` to backup all the one
+
+source disk(the one source disk is under `/dev/sda/`, another disk is under
+
+`/dev/sdb/`):
+
+(Just ssh login your remote machine via terminal)
+
+    ssh root_or_log_user_name@remoteIP dd if=/dev/sda/ of=/dev/sdb/
+
+refer:
+
+[Using command dd copy the virtual OS into new virtual disk](https://www.cnblogs.com/xueweihan/p/5923937.html#2)
 
 ### 1.3Refer
 
 If you want to backup your data, please refer:
-
-[Sync the disk of virtual machine(Chinese Blog).](https://www.cnblogs.com/xueweihan/p/5923937.html#2)
-
-[Test of coping and moving vdi file(Chinese Blog).](https://www.finclip.com/news/f/8791.html)
-
-[Using command dd copy the operation system into the new virtual disk(Chinese Blog).](https://www.cnblogs.com/xueweihan/p/5923937.html#2)
 
 [The command scp of Linux(Chinese Blog).](https://www.runoob.com/linux/linux-comm-scp.html)
 
