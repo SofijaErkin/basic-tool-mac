@@ -95,7 +95,15 @@ or use default port:
 
    ssh root_or_user_name@remoteIP "dd if=/dev/sda/ " | dd of=/dev/sdb/
 
+If your remote VM or cloud server has the console or API, you can manually
+
+create an  image and download into the local.
+
 refer:
+
+[backup an existing linux server to a virtualbox virtual machine(server fault).](https://serverfault.com/a/451039/989101)
+
+[Backup and Restore(Tencent Cloud Document: Cloud Virtual Machine).](https://www.tencentcloud.com/document/product/213/17284)
 
 [How to dd a remote disk using SSH on local machine and save to a local disk(UNIX&LINUX).](https://unix.stackexchange.com/a/132800/335824)
 
