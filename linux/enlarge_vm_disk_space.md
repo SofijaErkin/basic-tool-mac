@@ -67,8 +67,8 @@ external disk(this takes a few minutes and generate a new `UUID`):
 
 (Just use my host machine terminal)
 
+    cd ~
     cd "/Users/my_user_name/VirtualBox VMs/"
-
     VBoxManage clonehd "/Users/my_user_name/VirtualBox VMs/linux_Debian_system_version/linux_Debian_image_name.vdi"  "/Volumes/my_external_disk/linux_Debian_image_backup_name.vdi"
 
 refer:
@@ -78,6 +78,8 @@ refer:
 [Sync the disk of virtual machine(Chinese Blog).](https://www.cnblogs.com/xueweihan/p/5923937.html#2)
 
 ### 1.2Remote VM or Cloud host machine or Cloud server
+
+#### 1.2.1Another disk
 
 If you have another disk bigger than the one disk, e.g: the one source disk is
 
@@ -89,11 +91,22 @@ source disk(the one source disk is under `/dev/sda/`, another disk is under
 
 (Just ssh login your remote machine via local host terminal)
 
-    ssh root_or_user_name@remoteIP -p port_number_ "dd if=/dev/sda/ " | dd of=/dev/sdb/
+    cd ~
+    ssh root_or_user_name@remoteIP -p port_number_ "dd if=/dev/sda " | dd of=/dev/sdb
 
-or use default port:
+Or, use default port:
 
-   ssh root_or_user_name@remoteIP "dd if=/dev/sda/ " | dd of=/dev/sdb/
+    cd ~ 
+    ssh root_or_user_name@remoteIP "dd if=/dev/sda " | dd of=/dev/sdb
+
+Also, if your data disk partition has been deleted, then restore the source
+
+data disk partition:
+
+    cd ~
+    ssh root_or_user_name@remoteIp "dd if=/dev/sdb" | dd of=/dev/sda
+
+#### 1.2.2Create image
 
 If your remote VM or cloud server has the console or API, you can manually
 
@@ -109,15 +122,47 @@ image file to local:
 
 (Just in your local machine terminal)
 
-   ssh root_or_user_name@remoteIP -p port_number_ "dd if=/dev/sda/ " | \
+    cd ~
 
-   dd of=/remote_home/remote_user_name/Document/remote_vm_backup_image_file.image
+    ssh root_or_user_name@remoteIP -p port_number_ "dd if=/dev/sda" | \
+    dd of=/remote_home/remote_user_name/Document/remote_vm_backup_image_file.image
 
-   scp -P port_number_ root_or_user_name@remoteIP:/remote_home/remote_user_name/Document/remote_vm_backup_image_file.image /local_home/local_user_name/Desktop/remote_vm_backup_image_file_in_local.image
+    scp -P port_number_ root_or_user_name@remoteIP:/remote_home/remote_user_name/Document/remote_vm_backup_image_file.image /local_home/local_user_name/Desktop/remote_vm_backup_image_file_in_local.image
+
+Also, if your source data disk partition has been deleted, then restore the
+
+local backup file into remote virtual machine:
+
+    cd ~
+
+    scp -P port_number_ /local_home/local_user_name/Desktop/remote_vm_backup_image_file_in_local.image root_or_user_name@remoteIP:/remote_home/remote_user_name/Document/remote_vm_backup_image_file.image 
+
+    ssh root_or_user_name@remoteIP -p port_number_ "dd if=/remote_home/remote_user_name/Document/remote_vm_backup_image_file.image" | \
+    of=/dev/sda
 
 All detail about the backup of system disk and data disk on Cloud Virtual
 
 Machine, please refer [the document of Tencent Cloud](https://www.tencentcloud.com/document/product/213/17284).
+
+If your do not have more than 50% free disk space, then you should compress the
+
+backup image file,
+
+e.g:
+(backup below)
+
+    cd ~ && ssh user@remote "dd if=/dev/sda | gzip -1 -" | dd of=image.gz
+    scp image.gz /local_home/user_name/Desktop/image_local_backup.gz
+
+(restore)
+
+    cd ~ && scp /local_home/user_name/Desktop/image_local_backup.gz image.gz
+
+    ssh user@remote "dd if=image.gz | gzip -dc -" | dd of=/dev/sda
+
+#### 1.2.3Rsync backup
+
+#### 1.2.4Sftp backup
 
 refer:
 
