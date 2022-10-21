@@ -314,6 +314,8 @@ Referring about using terminal resize the disk partition of VM:
 
 [Expand virtual hard disks on a Linux VM with the Azure CLI(Azure Document).](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/expand-disks)
 
+[How to Resize Droplets(DigitalOcean Document).](https://docs.digitalocean.com/products/droplets/how-to/resize/)
+
 [Resize the file system and partitions(Google Cloud).](https://cloud.google.com/compute/docs/disks/resize-persistent-disk)
 
 [Extending MBR Partitions and File Systems Offline (Tencent Cloud Document)](https://www.tencentcloud.com/document/product/362/39998)
