@@ -184,6 +184,16 @@ Notice: `gunzip -c file.image.gz` equals `gzip -dc file.image.gz`, `-d` means
 
 decompress.
 
+If you want to restore the remote VM into local VirtualBox, just use:
+
+    cd ~ && gzip -dc /local_home/user_name/Desktop/image_local_backup.image.gz
+
+    cd "/Users/my_user_name/VirtualBox VMs/" 
+
+    VBoxManage convertdd /local_home/user_name/Desktop/image_local_backup.image restore_virtualbox_image.vdi --format VDI 
+
+But the upstairs maybe end with Fatal:`Virtual Box: No bootable medium found!`.
+
 refer:
 
 [Restoring Stuff with dd(Real Tech Talk).](https://realtechtalk.com/dd_how_to_backup_and_restore_disk_images_including_compression_with_gzip-2261-articles)
