@@ -218,6 +218,50 @@ refer:
 
 #### 1.2.3Rsync backup
 
+If your remote VM only have 0% free disk partition, you have to download all
+
+the files or folders under remote partition `/dev/sda` with its' mounted
+
+directory `/`, you need to use command `scp`, `rsync` or even sftp services.
+
+But command `scp` disappear file permissions, date attributes and soft links,
+
+even do not support incremental backup.
+
+Thought the user and group of file will become the user and group of login
+
+account, command `rsync` do better than `scp`.
+
+Backup all the files or folders of the remote VM:
+
+(Just under your local terminal)
+
+    rsync -avl --delete --progress --exclude '/dev/' --exclude '/proc/' user@remoteIP:// /local_home/local_user/remoteVmBackup/
+
+or, in short:
+
+    rsync -avl user@remoteIP:// /local_home/local_user/remoteVmBackup/ 
+
+refer:
+
+[rsync(1) - Linux man page(Linux Die).](https://linux.die.net/man/1/rsync)
+
+[How to use Rsync on Windows 10 and Rsync alternative software(MiniTool Japan).](https://jp.minitool.com/backup-tips/rsync-windows.html)
+
+[rsync document(archLinux Japan).](https://wiki.archlinux.jp/index.php/Rsync)
+
+[Copying files with rsync(Japanese Blog).](https://documentation.suse.com/ja-jp/sles/15-SP1/html/SLES-all/cha-net-rsync.html)
+
+[Rsync options(Japanese Blog).](https://qiita.com/bezeklik/items/22e791df7187958d76c1)
+
+[Six rules that first-time rsync users should know(Japanese Blog)](https://www.itmedia.co.jp/enterprise/articles/0804/21/news013.html)
+
+[backup an existing linux server to a virtualbox virtual machine(Server fault).](https://serverfault.com/q/451030/989101)
+
+[Rsync: auto-matic backup and sync the remote Linux(Chinese Blog).](https://blog.csdn.net/renfeigui0/article/details/100988910)
+
+[Copy the remote files via rsync(Chinese Blog).](https://www.jianshu.com/p/d32414af2001)
+
 [Using rsync backup the remote VM(Chinese Blog).](https://www.jianshu.com/p/b0157e4ab801)
 
 #### 1.2.4Sftp backup
