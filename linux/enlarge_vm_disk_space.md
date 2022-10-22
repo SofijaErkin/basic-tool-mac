@@ -471,7 +471,27 @@ also, terminal shows after typing `df -hi`:
 
 Notice: This Gist mainly major in this place!!!
 
+Just as my command `sudo fdisk -l` shows, if I need to distribute some of the
+
+free space or unpartitioned space, I should remove all the partitions between
+
+the main partition and the free space. This is the moment to witness the
+
+miracle!
+
+(Please login your virtual machine terminal)
+
+(1)Turn off the swap permissions: `sudo swapoff /dev/sda5`;
+
+(2)Remove or delete the swap partition `/dev/sda5` and extended partition
+
+`/dev/sda2`:
+
+    sudo cfdisk
+
 Referring about using terminal resize the disk partition of VM:
+
+[How to disable swap forever in Linux(Chinese Blog).](https://www.howtoing.com/disable-swap-partition-in-centos-ubuntu)
 
 [Resize Disk Partition on Remote VM Server(Ask Ubuntu)](https://askubuntu.com/questions/109215/resize-disk-partition-on-remote-vm-server/109224#109224).
 
