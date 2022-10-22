@@ -226,7 +226,9 @@ directory `/`, you need to use command `scp`, `rsync` or even sftp services.
 
 But command `scp` disappear file permissions, date attributes and soft links,
 
-even do not support incremental backup.
+even do not support incremental backup. E.g:
+
+    scp -P port_number_-r user@remoteIp:// /local_home/local_user/remoteVMbackup/
 
 Thought the user and group of file will become the user and group of login
 
@@ -264,9 +266,33 @@ refer:
 
 [Using rsync backup the remote VM(Chinese Blog).](https://www.jianshu.com/p/b0157e4ab801)
 
-#### 1.2.4Sftp backup
+#### 1.2.4Sftp or FTP backup
+
+If you do not know the content structure of remote VM, you can use `sftp`:
+
+(Just under your local terminal)
+
+    cd ~ && cd /local_home/local_user/remoteVMbackupSFTP/
+
+    sftp -P port_number_ user@remoteIp
+
+    cd // && get -r //
+
+refer:
+
+[SFTP: Logging In to a Remote System to Copy a File(ORACLE).](https://docs.oracle.com/cd/E26502_01/html/E29001/remotehowtoaccess-14.html)
+
+[sftp(1) — Linux manual page.](https://man7.org/linux/man-pages/man1/sftp.1.html)
+
+[How To Use SFTP to Securely Transfer Files with a Remote Server(Digital Ocean)](https://www.digitalocean.com/community/tutorials/how-to-use-sftp-to-securely-transfer-files-with-a-remote-server)
+
+[How to Backup a Hyper-V VM Remotely Online(Backup Chain USA).](https://hyper-v-backup.backupchain.com/back-up-a-hyper-v-virtual-machine-to-ftp-site-how-to/)
+
+[Using sftp copy the remote file(Chinese Blog).](https://www.jianshu.com/p/d32414af2001)
 
 [Using sftp backup the remote VM(Chinese Blog).](https://www.myfreax.com/how-to-use-linux-sftp-command-to-transfer-files/)
+
+[Using FTP download remote VM into local(Alibaba Cloud Chine).](https://help.aliyun.com/document_detail/159174.html)
 
 ## 2.Manually Enlarge Virtual Machine Size
 
