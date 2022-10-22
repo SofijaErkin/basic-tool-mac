@@ -278,7 +278,17 @@ If you do not know the content structure of remote VM, you can use `sftp`:
 
     cd // && get -r //
 
+Also, you can use FTP server to download the remote VM into local machine.
+
 refer:
+
+[Using SFTP for Remote File Transfer from the Command Line(Portland State University).](https://cat.pdx.edu/platforms/linux/remote-access/using-sftp-for-remote-file-transfer-from-command-line/)
+
+[Upload & Download From Remote FTP & SFTP(ARC Cdata).](https://arc.cdata.com/kb/articles/ftp-and-sftp-clients.rst)
+
+[How to Download and Upload Remote Directory in sFTP(Linux shell tips).](https://www.linuxshelltips.com/download-upload-directory-in-sftp/)
+
+[How to Transfer Files using SFTP?(Geeks for geeks).](https://www.geeksforgeeks.org/how-to-transfer-files-using-sftp/)
 
 [SFTP: Logging In to a Remote System to Copy a File(ORACLE).](https://docs.oracle.com/cd/E26502_01/html/E29001/remotehowtoaccess-14.html)
 
