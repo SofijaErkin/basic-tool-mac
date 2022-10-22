@@ -469,6 +469,8 @@ also, terminal shows after typing `df -hi`:
     tmpfs            123K     4  123K    1% /run/lock
     tmpfs             25K    67   25K    1% /run/user/1000
 
+Notice: This Gist mainly major in this place!!!
+
 Referring about using terminal resize the disk partition of VM:
 
 [Resize Disk Partition on Remote VM Server(Ask Ubuntu)](https://askubuntu.com/questions/109215/resize-disk-partition-on-remote-vm-server/109224#109224).
