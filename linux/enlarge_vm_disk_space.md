@@ -483,11 +483,45 @@ miracle!
 
 (1)Turn off the swap permissions: `sudo swapoff /dev/sda5`;
 
+And use command `free -h` to check whether swapoff do matter or not, if you see
+
+the free or total space percent of swap partition is `0B`, that means
+
+successfully turn off the swap; Or, `lsblk` will not display the `[SWAP]` at
+
+the line of `/dev/sda5`; Or `lsblk -f | grep "swap"` will not show the percent
+
+of free space and used space, e.g: `sda5 swap 1 UUID`.
+
+Also, I just use command `lsblk -f | grep "swap"` to catch the `UUID` of swap
+
+partition.
+
+Others, reboot or restart will automatically turn on the swap, using command
+
+`sudo swapoff swap_partition_directory` just temporarily turn off swap.
+
 (2)Remove or delete the swap partition `/dev/sda5` and extended partition
 
 `/dev/sda2`:
 
+I can use `fdisk`, `cfdisk`, `sfdisk` and even `parted`, because they has been
+
+installed under every Linux system, including Debian, Ubuntu and so on. Also,
+
+I do not have to manually install liking `cloud-guest-utils` tools.
+
     sudo cfdisk
+
+(3)Resize the main partition `/dev/sda1`, the source space of `/dev/sda1` is
+
+`12.96GB`, all the virtual disk has 40GB, so I just let `/dev/sda1` 39GB.
+
+Extended and swap partition also has `1GB` or source `975MB`.
+
+Notice, if a disk or partition space has been used up to 80%, there is a
+
+dangerous status.
 
 Referring about using terminal resize the disk partition of VM:
 
