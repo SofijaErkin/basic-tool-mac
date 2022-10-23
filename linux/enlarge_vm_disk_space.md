@@ -469,6 +469,16 @@ also, terminal shows after typing `df -hi`:
     tmpfs            123K     4  123K    1% /run/lock
     tmpfs             25K    67   25K    1% /run/user/1000
 
+or, terminal shows after typing `df -iTh`:
+
+    Filesystem     Type     Inodes IUsed IFree IUse% Mounted on
+    udev           devtmpfs   117K   378  116K    1% /dev
+    tmpfs          tmpfs      123K   721  122K    1% /run
+    /dev/sda1      ext4       2.3M  297K  2.0M   13% /
+    tmpfs          tmpfs      123K     1  123K    1% /dev/shm
+    tmpfs          tmpfs      123K     4  123K    1% /run/lock
+    tmpfs          tmpfs       25K   120   25K    1% /run/user/1000
+
 Notice: This Gist mainly major in this place!!!
 
 Just as my command `sudo fdisk -l` shows, if I need to distribute some of the
