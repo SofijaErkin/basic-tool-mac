@@ -560,9 +560,7 @@ Partition type: Linux (83)                                                      
 
 `36GB` or `39GB`.
 
-Extended and swap partition also has `8GB`, or `4GB` or `2GB` or `1GB` or
-
-source `975MB`.
+Extended and swap partition also has the source size `975MB` or less.
 
 Notice, if a disk or partition space has been used up to `80%`, there is a
 
@@ -590,7 +588,7 @@ cylinder with the form source main partition. So, next.
 
 (4)Re-create extended and swap partition:
 
-I just enable`2GB` to extended partition `/dev/sda2`, and `2GB` to swap
+I just enable`975MB` to extended partition `/dev/sda2`, and `975MB` to swap
 
 partition `/dev/sda5`, also, the start cylinder of extended partition
 
@@ -602,7 +600,7 @@ bigger 2047 than the end cylinder of main partition `/dev/sda1`.
 
 Fourthly, re-create extended partition: once `down` direction button and once
 
-`enter` button; clean the automatic size `4GB`, change into `2GB`, and push
+`enter` button; clean the automatic size `4GB`, change into `975MB`, and push
 
 `enter` button; choose `extended` menu via once `right` direction button,
 
@@ -610,9 +608,31 @@ but the start cylinder of the extended partition is not my needed! So, I just
 
 quit `cfdisk`. If I want to finish my needed, I should use `fdisk` or `parted`
 
-or even `gdisk`. In all, I should let the cfdisk operations write work before
+or even `gdisk`. In all, I should let the `cfdisk` operations write work before
 
 I re-create the extended and swap partition.
+
+Fifthly, using `fdisk` to re-create the needed extended partition `/dev/sda2`:
+
+`sudo fdisk /dev/sda` to enter the place`fdisk`; type `n` and `enter`to add a
+
+new partition; type `e` and `enter`to choose extended; type `enter` to named
+
+the partition `/dev/sda2`; type `"(the end cylinder of main partition)+2047"`
+
+and `enter` to set my needed the start cylinder of my new extended partition;
+
+type `+975M` and `enter` to set the size of my new extended partition;
+
+Sixthly, using `fdisk` to re-create the needed swap partition `/dev/sda5`:
+
+type `n` and `enter`to add a new partition; type `l` and `enter`to choose
+
+logical; type `enter` to named the partition `/dev/sda5`; type `enter` to set
+
+default start cylinder; type `enter` to set default end cylinder; then type `w`
+
+ and `enter` to write and sync into the disks.
 
 Referring about using terminal resize the disk partition of VM:
 
