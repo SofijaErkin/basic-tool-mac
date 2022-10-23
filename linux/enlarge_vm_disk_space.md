@@ -515,15 +515,23 @@ I do not have to manually install liking `cloud-guest-utils` tools.
 
 (3)Resize the main partition `/dev/sda1`, the source space of `/dev/sda1` is
 
-`12.96GB`, all the virtual disk has 40GB, so I just let `/dev/sda1` 39GB.
+`12.96GB`, all the virtual disk has 40GB, so I just let `/dev/sda1` `32GB` or
 
-Extended and swap partition also has `1GB` or source `975MB`.
+`36GB` or `39GB`.
 
-Notice, if a disk or partition space has been used up to 80%, there is a
+Extended and swap partition also has `8GB`, or `4GB` or `2GB` or `1GB` or
 
-dangerous status.
+source `975MB`.
+
+Notice, if a disk or partition space has been used up to `80%`, there is a
+
+dangerous status. We should enlarge the disk space before `80%` used storage.
 
 Referring about using terminal resize the disk partition of VM:
+
+[The partition tolls of Linux: fdisk, cfdisk and sfdisk(Chinese Blog).](https://www.cnblogs.com/RXDXB/p/11890852.html)
+
+[Comparing three Linux partition tools: fdisk, gdisk and parted(Chinese Blog).](https://www.cnblogs.com/zhaojiedi1992/p/zhaojiedi_linux_039_fdisk_gdisk_parted.html)
 
 [How to disable swap forever in Linux(Chinese Blog).](https://www.howtoing.com/disable-swap-partition-in-centos-ubuntu)
 
