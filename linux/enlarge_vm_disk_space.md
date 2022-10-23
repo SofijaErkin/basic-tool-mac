@@ -521,17 +521,17 @@ I remember the partition type, filesystem UUID and filesystem of main partition
 
 `/dev/sda1`, extended partition `/dev/sda2` and swap partition `/dev/sda5`.
 
-Just use `up` direction key and `down` direction key to choose partition, use
+Just use `up` direction button and `down` direction button to choose partition,
 
-`right` direction key and `left` direction key to choose operation.
+use `right` direction button and `left` direction button to choose operation.
 
-Firstly, Removing swap partition `/dev/sda5`: touch twice `down` direction key
+Firstly, Removing swap partition `/dev/sda5`: touch twice `down` direction
 
-and twice `left` direction key and once `enter` key;
+button and twice `left` direction button and once `enter` button;
 
-Secondly, removing extended partition `/dev/sda2`: touch once `up` direction key
+Secondly, removing extended partition `/dev/sda2`: touch once `up` direction
 
-and twice `left` direction key and once `enter` key;
+button and twice `left` direction button and once `enter` button;
 
 Write down the partition:
 
@@ -576,7 +576,39 @@ do that, I will use `parted` even `gdisk`.
 
 Thirdly, resize the main partition `/dev/sda1`: once `up` direction and once
 
-`right` direction and once `enter` key;
+`right` direction and once `enter` button; Remove the automatic size `40GB`,
+
+change that into `36GB` and push `enter` button;
+
+As the cfdisk menu display, the resized new main partition has the same
+
+cylinder with the form source main partition. So, next.
+
+(4)Re-create extended and swap partition:
+
+I just enable`2GB` to extended partition `/dev/sda2`, and `2GB` to swap
+
+partition `/dev/sda5`, also, the start cylinder of extended partition
+
+`/dev/sda2` less 2 than the start cylinder of the swap partition, thought they
+
+have the same end partition. The start cylinder of the extended partition
+
+bigger 2047 than the end cylinder of main partition `/dev/sda1`.
+
+Fourthly, re-create extended partition: once `down` direction button and once
+
+`enter` button; clean the automatic size `4GB`, change into `2GB`, and push
+
+`enter` button; choose `extended` menu via once `right` direction button,
+
+but the start cylinder of the extended partition is not my needed! So, I just
+
+quit `cfdisk`. If I want to finish my needed, I should use `fdisk` or `parted`
+
+or even `gdisk`. In all, I should let the cfdisk operations write work before
+
+I re-create the extended and swap partition.
 
 Referring about using terminal resize the disk partition of VM:
 
