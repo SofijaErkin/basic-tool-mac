@@ -659,6 +659,10 @@ the `UUID` under the line of `swap`, type `i` to edit the file, copy your new
 
 swap `UUID` instead of the old `UUID` of the former swap.
 
+(6)Restart or reboot your virtual machine: `sudo reboot`.
+
+Have fun!!!
+
 Referring about using terminal resize the disk partition of VM:
 
 [cfdisk(8) - Linux man page(Linux Die Net).](https://linux.die.net/man/8/cfdisk)
