@@ -665,6 +665,8 @@ Have fun!!!
 
 Referring about using terminal resize the disk partition of VM:
 
+[The idea of creating the swap partition on Linux(Chinese Blog).](http://quenywell.com/linux-how-to-create-swap-space/)
+
 [cfdisk(8) - Linux man page(Linux Die Net).](https://linux.die.net/man/8/cfdisk)
 
 [The partition tolls of Linux: fdisk, cfdisk and sfdisk(Chinese Blog).](https://www.cnblogs.com/RXDXB/p/11890852.html)
