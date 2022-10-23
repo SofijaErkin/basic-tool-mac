@@ -638,6 +638,27 @@ default start cylinder; type `enter` to set default end cylinder; type `t` and
 
 `/dev/sda5`; then type `w` and `enter` to write and sync into the disks.
 
+Just use `sudo mkswap /dev/sda5`  and input your root password to set the file
+
+ type of partition `/dev/sda5` into `swap`, please remember the `UUID` of swap
+
+or logical partition `/dev/sda5`, e.g:
+
+    Setting up swapspace version 1, size = 974 MiB (1021308928 bytes)
+    no label, UUID=663053ea-1e9e-4c63-a34f-fa0a069af4cb
+
+and use `sudo resize2fs /dev/sda1` to set all the file types of
+
+partition `/dev/sda5` into `ext4`.
+
+Then, turn the swap on: `sudo swapon /dev/sda5`.
+
+(5)Copy your swap UUID into `/etc/fstab`: `sudo vim /etc/fstab`, please update
+
+the `UUID` under the line of `swap`, type `i` to edit the file, copy your new
+
+swap `UUID` instead of the old `UUID` of the former swap.
+
 Referring about using terminal resize the disk partition of VM:
 
 [cfdisk(8) - Linux man page(Linux Die Net).](https://linux.die.net/man/8/cfdisk)
