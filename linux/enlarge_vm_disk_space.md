@@ -505,11 +505,13 @@ Others, reboot or restart will automatically turn on the swap, using command
 
 `/dev/sda2`:
 
-I can use `fdisk`, `cfdisk`, `sfdisk` and even `parted`, because they has been
+I can use `fdisk`, `cfdisk`, `sfdisk`, `parted` or even `gdisk`, because they
 
-installed under every Linux system, including Debian, Ubuntu and so on. Also,
+has been installed under every Linux system, including Debian, Ubuntu and so
 
-I do not have to manually install liking `cloud-guest-utils` tools.
+on. Also, I do not have to manually install liking `cloud-guest-utils` tools.
+
+At this point, I recommend `cfdisk` and `gdisk`. Just use `cfdisk` for example.
 
     sudo cfdisk
 
@@ -528,6 +530,8 @@ Notice, if a disk or partition space has been used up to `80%`, there is a
 dangerous status. We should enlarge the disk space before `80%` used storage.
 
 Referring about using terminal resize the disk partition of VM:
+
+[cfdisk(8) - Linux man page(Linux Die Net).](https://linux.die.net/man/8/cfdisk)
 
 [The partition tolls of Linux: fdisk, cfdisk and sfdisk(Chinese Blog).](https://www.cnblogs.com/RXDXB/p/11890852.html)
 
