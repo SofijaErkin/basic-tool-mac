@@ -578,7 +578,11 @@ Thirdly, resize the main partition `/dev/sda1`: once `up` direction and once
 
 `right` direction and once `enter` button; Remove the automatic size `40GB`,
 
-change that into `36GB` and push `enter` button;
+change that into `36GB` and push `enter` button; four times `right` direction
+
+button and once `enter` to write the operations using `cfdisk`, and type `yes`
+
+to ensure; then three times touch `left` direction button to quit the `cfdisk`.
 
 As the cfdisk menu display, the resized new main partition has the same
 
