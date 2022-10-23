@@ -630,9 +630,13 @@ type `n` and `enter`to add a new partition; type `l` and `enter`to choose
 
 logical; type `enter` to named the partition `/dev/sda5`; type `enter` to set
 
-default start cylinder; type `enter` to set default end cylinder; then type `w`
+default start cylinder; type `enter` to set default end cylinder; type `t` and
 
- and `enter` to write and sync into the disks.
+`enter` to change a partition type; type `5` to change the partition type of
+
+`/dev/sda5`; type `82` to set `Linux swap / Solaris` into the partition type of
+
+`/dev/sda5`; then type `w` and `enter` to write and sync into the disks.
 
 Referring about using terminal resize the disk partition of VM:
 
