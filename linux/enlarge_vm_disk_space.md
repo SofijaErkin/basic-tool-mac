@@ -525,13 +525,13 @@ Just use `up` direction key and `down` direction key to choose partition, use
 
 `right` direction key and `left` direction key to choose operation.
 
-Firstly, Removing `/dev/sda5`: touch twice `down` direction key and twice
+Firstly, Removing swap partition `/dev/sda5`: touch twice `down` direction key
 
-`left` direction key and once `enter` key;
+and twice `left` direction key and once `enter` key;
 
-Secondly, removing `/dev/sda2`: touch once `up` direction key and twice `left`
+Secondly, removing extended partition `/dev/sda2`: touch once `up` direction key
 
-direction key and once `enter` key;
+and twice `left` direction key and once `enter` key;
 
 Write down the partition:
 
@@ -567,6 +567,16 @@ source `975MB`.
 Notice, if a disk or partition space has been used up to `80%`, there is a
 
 dangerous status. We should enlarge the disk space before `80%` used storage.
+
+I need the resized main partition `/dev/sda1` has the same start cylinder
+
+(e.g: start 2048) with the source main partition `/dev/sda1`, if `cfdisk` can't
+
+do that, I will use `parted` even `gdisk`.
+
+Thirdly, resize the main partition `/dev/sda1`: once `up` direction and once
+
+`right` direction and once `enter` key;
 
 Referring about using terminal resize the disk partition of VM:
 
