@@ -622,6 +622,27 @@ Also, I need to this below display after automatically expand the disk using
     5        513MB    1012MB   499MB   logical   ext4
     6        1013MB   16.0GB   15.0G   logical   ext4                    /root
     7        16.0GB   172GB    156GB   logical   ext4                    /home
+[Follow suggestion](https://unix.stackexchange.com/a/436069) and [idea](https://askubuntu.com/a/1420726/922190).
+
+A.Create the following files on the golden image disk before exporting:
+
+`/etc/rc.local:`
+
+    #!/bin/sh -e
+
+    type /etc/init.d/extend-home-part.sh && /etc/init.d/extend-home-part.sh
+
+    exit 0
+`/etc/init.d/extend-home-part.sh:`
+
+    #!/bin/sh
+
+    sudo growpart /dev/vda 2 && sudo growpart /dev/vda 7 && sudo resize2fs /dev/vda7
+    sudo mv /etc/init.d/extend-home-part.sh /etc/init.d/extended-home-part.sh
+
+    exit 0
+
+B.Then, create a virtual machine with a larger virtual disk. Have fun!
 
 (4)Re-create extended and swap partition:
 
