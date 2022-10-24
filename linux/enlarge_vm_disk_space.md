@@ -543,27 +543,6 @@ Secondly, removing extended partition `/dev/sda2`: touch once `up` direction
 
 button and twice `left` direction button and once `enter` button;
 
-Write down the partition:
-
-(main partition)
-
-Partition type: Linux (83)                                                                                                                               │
- │     Attributes: 80                                                                                                                                       │
- │Filesystem UUID: f510fe1a-edd3-4779-acd7-fc8b66261ee4                                                                                                     │
- │     Filesystem: ext4                                                                                                                                     │
- │     Mountpoint: / (mounted)
-
- (extended partition)
-
- Partition type: Extended (5)
-
- (swap partition)
-
- Partition type: Linux swap / Solaris (82)                                                                                                                │
- │Filesystem UUID: e5cd1e85-b43e-4475-99b3-69394feaad3f                                                                                                     │
- │     Filesystem: swap                                                                                                                                     │
- │     Mountpoint: none
-
 (3)Resize the main partition `/dev/sda1`, the source space of `/dev/sda1` is
 
 `12.96GB`, all the virtual disk has 40GB, so I just let `/dev/sda1` `32GB` or
