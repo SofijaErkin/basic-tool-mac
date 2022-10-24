@@ -721,6 +721,14 @@ swap `UUID` instead of the old `UUID` of the former swap.
 
 Have fun!!!
 
+Others, how do the expanded VM Debian feel?
+
+Not worse!Debian's Startup is a little slow. The host MacOS automatically shuts
+
+down twice. The host's CPU was overloaded for five minutes without warning, and
+
+I had to quit all programs in use and shut down.
+
 Referring about using terminal resize the disk partition of VM:
 
 [The idea of creating the swap partition on Linux(Chinese Blog).](http://quenywell.com/linux-how-to-create-swap-space/)
