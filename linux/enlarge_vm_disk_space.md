@@ -607,6 +607,22 @@ using `sudo fdisk -l`:
     6        1013MB   16.0GB   15.0G   logical   ext4                    /root
     7        16.0GB   26.8GB   10.8GB  logical   ext4                    /home
     free     26.8GB   172GB    145GB             free space
+Also, I need to this below display after automatically expand the disk using
+
+`sudo fdisk -l`:
+
+    Model: Virtio Block Device (virtblk)
+    Disk /dev/vda: 172GB
+    Sector size (logical/physical): 512B/512B
+    Partition Table: msdos
+    Disk Flags:
+    Number    Start    End      Size    Type      File system      Flags Mounted
+    1        1049kB   512MB    511MB   primary   linux-swap(v1)   boot
+    2        513MB    26.8GB   26.3GB  extended
+    5        513MB    1012MB   499MB   logical   ext4
+    6        1013MB   16.0GB   15.0G   logical   ext4                    /root
+    7        16.0GB   172GB    156GB   logical   ext4                    /home
+
 (4)Re-create extended and swap partition:
 
 I just enable`975MB` to extended partition `/dev/sda2`, and `975MB` to swap
