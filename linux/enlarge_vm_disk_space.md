@@ -733,6 +733,17 @@ Finally, how to expand the main/root partition on the Work/Company laptop,
 
 please refer: [Later edits with solution from IT(Ask Ubuntu).](https://askubuntu.com/q/1396769/922190)
 
+Notices:
+
+A-Partition types adn file types(refer: [this](https://www.linuxprobe.com/linux-ntfs-fat32.html))
+
+    Partition types          File type
+    Id Type           
+    c  W95 FAT32 (LBA)       FAT32
+    5  Extended
+    83 Linux                 ext4
+    82 Linux swap / Solaris  swap
+
 Referring about using terminal resize the disk partition of VM:
 
 [Low disk space on Filesystem root despite having plenty of space in `home`(Ask Ubuntu).](https://askubuntu.com/q/1396769/922190)
