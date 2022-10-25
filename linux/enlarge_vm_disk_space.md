@@ -705,7 +705,7 @@ or logical partition `/dev/sda5`, e.g:
     Setting up swapspace version 1, size = 974 MiB (1021308928 bytes)
     no label, UUID=663053ea-1e9e-4c63-a34f-fa0a069af4cb
 
-and use `sudo resize2fs /dev/sda1` to set all the file types of
+and use `sudo resize2fs /dev/sda5` to set all the file types of
 
 partition `/dev/sda5` into `ext4`.
 
