@@ -731,6 +731,8 @@ I had to quit all programs in use and shut down.
 
 Referring about using terminal resize the disk partition of VM:
 
+[Low disk space on Filesystem root despite having plenty of space in `home`(Ask Ubuntu).](https://askubuntu.com/q/1396769/922190)
+
 [The idea of creating the swap partition on Linux(Chinese Blog).](http://quenywell.com/linux-how-to-create-swap-space/)
 
 [cfdisk(8) - Linux man page(Linux Die Net).](https://linux.die.net/man/8/cfdisk)
