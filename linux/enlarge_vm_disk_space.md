@@ -772,6 +772,12 @@ B-Others partition types(refer: [this](https://gnu-linux.readthedocs.io/zh/lates
     1c  Hidden W95 FAT3 75  PC/IX           bc  Acronis FAT32 L fe  LANstep
     1e  Hidden W95 FAT1 80  Old Minix       be  Solaris boot    ff  BBT
 
+C-Partition types can be(refer: [this](https://phoenixnap.com/kb/linux-create-partition))
+
+    Primary – Holds the operating system files. Only four primary partitions can be created.
+    Extended – Special type of partition in which more than the four primary partitions can be created.
+    Logical – Partition that has been created inside of an extended partition.
+
 Referring about using terminal resize the disk partition of VM:
 
 [Low disk space on Filesystem root despite having plenty of space in `home`(Ask Ubuntu).](https://askubuntu.com/q/1396769/922190)
