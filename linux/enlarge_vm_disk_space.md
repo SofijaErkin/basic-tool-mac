@@ -778,6 +778,8 @@ C-Partition types can be(refer: [this](https://phoenixnap.com/kb/linux-create-pa
     Extended – Special type of partition in which more than the four primary partitions can be created.
     Logical – Partition that has been created inside of an extended partition.
 
+D-Reply all the same question at Stack Exchange has been done, Yes!
+
 Referring about using terminal resize the disk partition of VM:
 
 [Low disk space on Filesystem root despite having plenty of space in `home`(Ask Ubuntu).](https://askubuntu.com/q/1396769/922190)
