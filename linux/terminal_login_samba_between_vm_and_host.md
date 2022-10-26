@@ -1105,6 +1105,12 @@ painful it was to get a divorce the first time, I'm vigilant about staying
 
 aligned and not letting resentments build up.
 
+Now, I'm back again! Yes, again! Do work smart and hard. Continue to spend time
+
+and energy on profession. Cut down on other distractions that are not related
+
+to career development.
+
 ### 2.1Refer
 
 1.[(HelpGuide)Job Loss and Unemployment Stress](https://www.helpguide.org/articles/stress/job-loss-and-unemployment-stress.htm).
