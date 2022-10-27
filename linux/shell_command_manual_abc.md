@@ -69,3 +69,9 @@ Just login your VM on Host terminal and then check, e.g: Debian.
     sudo fdisk -l
 
     sudo cfdisk
+
+## 10.[Copy and paste Via VIM](https://linuxize.com/post/how-to-copy-cut-paste-in-vim/)
+
+Copy current line: `esc` + `yy`;
+
+Paste to the cursor: `p`;
