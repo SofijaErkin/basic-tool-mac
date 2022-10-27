@@ -112,7 +112,9 @@ Trouble description:
 
     error nt_status_not_support
 
-Matters: The listening port of Samba server under Host macOS is not `139`.
+Matters: The listening port of Samba server under Host macOS is not `139`, but
+
+is `445`, please use `smbclient -L 192.168.1.2 -p 445 -U sharewithdebian`.
 
 Fixed or not: Fixed.
 
