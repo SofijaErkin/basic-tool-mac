@@ -51,3 +51,21 @@ Debian:
 ## 8. Exit Ping
 
 macOS/Linux: `Ctrl` + `c`.
+
+## 9.Check VM Disk usage
+
+Just login your VM on Host terminal and then check, e.g: Debian.
+
+    df -h
+
+    df -T
+
+    df -i
+
+    df -k
+
+    free -l
+    
+    sudo fdisk -l
+
+    sudo cfdisk
