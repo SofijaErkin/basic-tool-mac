@@ -75,3 +75,9 @@ Just login your VM on Host terminal and then check, e.g: Debian.
 Copy current line: `esc` + `yy`;
 
 Paste to the cursor: `p`;
+
+## 11.[Write path of a folder or directory with space in its name](https://askubuntu.com/a/530581/922190)
+
+Enclose the whole path by double-quotes `"`, single-quote `'` or escape the
+
+ space character using a backslash `\`.
