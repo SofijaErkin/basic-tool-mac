@@ -1113,6 +1113,12 @@ and energy on profession. Cut down on other distractions that are not related
 
 to career development.
 
+Today is my birthday. Even though I'm unemployed, my birthday today is going to
+
+be a little ceremonial. Although I am alone. I still need a piece of cake,
+
+happy birthday to me!
+
 ### 2.1Refer
 
 1.[(HelpGuide)Job Loss and Unemployment Stress](https://www.helpguide.org/articles/stress/job-loss-and-unemployment-stress.htm).
