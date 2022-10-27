@@ -746,6 +746,8 @@ What's the matter: I do not know! Or, the password of samba user is false or is
 
 (Trouble-3: `"login failure"`).
 
+Fixed! See `###### 7.Case00070X3`.
+
 ###### 7.Case00070X3
 
 Thirteen, try case:
@@ -762,6 +764,12 @@ What's the matter: I do not know! Or, the password of samba user is false or is
  not the samba user or no user currently.
 
 (Trouble-3: `"login failure"`).
+
+Trouble-3: `login failure`. Because there is no user name called `root` on the
+
+Samba on MacOS, or not create the sharing user name `root`.
+
+Fixed!
 
 ###### 7.Case00070X4
 
@@ -824,6 +832,10 @@ also, catch:
 The same matter.
 
 (Trouble-2: `"not support"`).
+
+Trouble-2: `not support`. Because the port of Smaba on MacOS is `445`.
+
+So, fixed.
 
 Notice: Un mount share folder -------------------------------------------------
 
