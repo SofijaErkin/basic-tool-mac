@@ -142,6 +142,8 @@ Or, the password of samba user is false or is not the samba user or no user
 
 currently.
 
+Updated matters: the target IP is total false. `:)`
+
 Fixed or not: Fixed.
 
 #### Trouble-4
