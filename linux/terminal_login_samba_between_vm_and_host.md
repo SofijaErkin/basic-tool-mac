@@ -539,6 +539,14 @@ cifs-utils via `sudo apt install cifs-utils` for Debian/Ubuntu.
 
 ----------------------------------------------------------------------- :Notice
 
+(All mounting the share folder from Host macOS on Guest VM Debian will miss
+
+after the Guest VM Debian restart or reboot, so I need to let that
+
+automatically load at Guest. Those combat cases try to access the server of
+
+macOS via the terminal command of Guest VM Debian.)
+
 ##### 5.Case0005
 
     mount -t cifs //192.168.1.2/sharewithdebian /media/share/ -o username=sharewithdebian,password=pass,nounix,sec=ntlmssp
