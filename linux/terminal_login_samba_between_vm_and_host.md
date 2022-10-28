@@ -40,6 +40,12 @@ change the code under directory in the Guest VM Debian, and run that into
 
 Debian, then just use git to push remote repository.
 
+## -1.Why still use Samba for file syncing
+
+Though I can transfer folders or files between VM and Host via [Share Folder](https://medium.com/macoclock/share-folder-between-macos-and-ubuntu-4ce84fb5c1ad),
+
+but if the VM was at the remote or cloud? So, just use Samba or others.
+
 ## 0.Finally Debug Troubles
 
 ### 0.1VM Debian access samba server on Host macOS
