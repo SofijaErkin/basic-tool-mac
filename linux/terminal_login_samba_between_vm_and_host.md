@@ -189,6 +189,24 @@ services of samba server on VM Debian.
 
 ### 1.1try case with accessing samba server on Host macOS from VM Debian
 
+#### 1.1.0Summary
+
+The `1.1` try to access the server of Host macOS on Guest VM Debian's terminal
+
+command by `smbclient -L 192.168.1.n/sharewithdebian -p 445 -U sharewithdebian`
+
+or `sudo mount -t cifs //192.168.1.2/sharewithdebian /media/share_from_macos -o username=sharewithdebian,password=pass,vers=2.0`.
+
+The share folder of Host macOS's server is under:
+
+`/Users/Shared/sharewithdebian`, and user name `sharewithdebian`, user password
+
+`user_password`, accessed by `/host.machine.macos.ip` with port `445`.
+
+The received folder of Guest VM Debian is under
+
+`/media/samba_share_folder_from_mac` which mounted with that share folder.
+
 -------------------------------------------------------------------------------
 
 -------------------------------------------------------------------------------
