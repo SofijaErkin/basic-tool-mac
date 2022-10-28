@@ -35,3 +35,5 @@ file_template, [content_tree](https://gist.github.com/SofijaErkin/ae3505742a431c
 ## 13.[Ctags and Taglist for VIM](https://gist.github.com/SofijaErkin/f9c5a930ba4bd7bae2d63dcf988f6f0e)
 
 ## 14.[DBGPavim and pydbgp (Python Debug via VIM)](https://gist.github.com/SofijaErkin/b429b4e9160f92c6adc884a0dfe82494#python-debug-on-linux-via-dbgpavim-and-pydbgp)
+
+## 15.File Sync via [Share Folder](https://gist.github.com/SofijaErkin/c1ffee1af03826db67ec594c3d727e2e#-1why-still-use-samba-for-file-syncing) and [Samba](https://gist.github.com/SofijaErkin/4472f8703804b472fd4b3d55f58eb36f) and Rsync
