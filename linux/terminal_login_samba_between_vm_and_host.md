@@ -967,6 +967,26 @@ Have a nice!
 
 ### 1.2try case with accessing samba server on VM Debian from Host macOS
 
+#### 1.2.0Idea combat
+
+This try to access the samba server of Guest VM Debian on Host machine macOS
+
+terminal command. if Guest and host machine are all at router with under the
+
+same net, host can access the share folder of Guest's samba server; but when it
+
+ comes NAT status, Host should need to use port forwarding to access. Though I
+
+do that port forwarding, Host still can access the Guest via liking
+
+`127.0.0.1:xx445`.
+
+Also, the share folder `share_folder_via_samba_to_mac` of samba server of Guest
+
+VM Debian is under `~/share_folder_via_samba_to_mac`, with user name
+
+`sharewithmac`, and user password `user_password`.
+
 #### 1.2.1Refer
 
 1.[Ubuntu16.04 access the sharing folders of Windows via Internet with Samba(Chinese Blog)](https://blog.csdn.net/Yemiekai/article/details/113432451).
