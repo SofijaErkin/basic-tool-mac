@@ -23,3 +23,32 @@ more `90+ GB` used space going to? Maybe there are some snapshots on the local
 of my mac. ALso, `Disk Utility` shows `90+ GB` purgeable space. So, how to deal
 
 with that purgeable space?
+
+## 3.Solution
+
+### 3.1Directly remove local snapshots
+
+A.Enter your Time Machine Settings and cancel `Back Up Automatically` button;
+
+B.Just log in your mac terminal;
+
+C.Check out the list of local snapshots on your mac:
+
+    sudo tmutil listlocalsnapshots
+Then, there will output some symbol containing `Time Machine`.
+
+D.Just directly remove via `tmutil deletelocalsnapshots XXXX-XX-XX-XXXXXX`;
+
+When the terminal outputs `Deleted local snapshot`, that means successfully
+
+remove that snapshots.
+
+E.After removing your no-needed snapshots, restart or reboot your mac.
+
+Have fun!
+
+refer:
+
+[macOS not showing the actual free space](https://apple.stackexchange.com/a/324443)(Ask Different).
+
+[The solution of removing purgeable space and killing 100% usage on mac](https://blog.csdn.net/qq_41884863/article/details/99648227)(Chinese Blog).
