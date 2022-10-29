@@ -52,3 +52,7 @@ refer:
 [macOS not showing the actual free space](https://apple.stackexchange.com/a/324443)(Ask Different).
 
 [The solution of removing purgeable space and killing 100% usage on mac](https://blog.csdn.net/qq_41884863/article/details/99648227)(Chinese Blog).
+
+### 3.2Others
+
+[Finder, Disk utility and Storage tab shows different free space in macOS.](https://www.mytecbits.com/apple/macos/finder-disk-utility-shows-different-free-space)
