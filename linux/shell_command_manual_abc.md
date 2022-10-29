@@ -28,11 +28,19 @@ To find out "python":
 
     ls -l | grep "python"
 
-## 6. Upgrade
+## 6. Check Upgrade and Upgrade
+
+To check whether has been upgrade on Debian:
+
+    sudo apt update
+
+    sudo apt-get update
 
 Debian To upgrade all the latest version:
 
     sudo apt update && sudo apt upgrade
+
+refer: [How do I check for updates on Debian 11](https://linuxhint.com/check-updates-debian-11/)?
 
 ## 7. Search
 
