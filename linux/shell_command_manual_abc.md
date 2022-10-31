@@ -89,3 +89,15 @@ Paste to the cursor: `p`;
 Enclose the whole path by double-quotes `"`, single-quote `'` or escape the
 
  space character using a backslash `\`.
+
+## 12.[Restart or reboot and shut down Machine](https://www.debian.org/releases/stretch/amd64/ch08s01.html.en)
+
+Reboot/restart Ubuntu(Debian) : `sudo reboot`;
+
+Shut down Debian:
+
+    sudo poweroff
+
+    sudo shutdown -h now
+
+    sudo systemctl poweroff
