@@ -26,6 +26,22 @@ Please refer: [Using command dd copy the virtual OS into new virtual disk](https
 
 fixed size storage VM(Chinese Blog).
 
+## 0.Base memory and Swap partition
+
+Even I want to enlarge my base memory of my VirtualBox VM, I just run only one
+
+VM on my host machine, there is no need to extend the base memory of my VM,
+
+and the space of swap partition is less than the base memory of my VM, also,
+
+there is no need to expand the swap partition.
+
+refer:
+
+[How to change the RAM allocated to an OS in VirtualBox?](https://superuser.com/a/926341)(Super User)
+
+[How much memory (RAM) should I allocate to the Virtual Machine?](https://askubuntu.com/a/150107)(Ask Ubuntu)
+
 ## 1.Backup my VM
 
 ### 1.1Local VM
