@@ -59,3 +59,9 @@ If you want to browse hidden websites ('eepsites') on the I2P network, you need
 to configure your browser. E.g: use `firefox` browse the I2P network, use
 
 `chrome` to browse the other network.
+
+#### 2.1.3Others
+
+The home page of I2P: `http://127.0.0.1:7657/home`, and the configuration of
+
+reseed page: `http://127.0.0.1:7657/configreseed`.
