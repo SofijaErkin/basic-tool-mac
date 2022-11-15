@@ -81,3 +81,15 @@ Please refer [this](https://mathiasbynens.be/notes/gmail-plain-text).
 The japanese of the words `Plain text mode` is `平文モード`, and that french is
 
 `mode texte brut`, and that swedish is `oformaterad text`.
+
+#### 2.2.2Download
+
+Computer, e.g: laptop or desktop PC, via plain text mode email refer the
+
+[Download of Tor](https://tb-manual.torproject.org/downloading/).
+
+Also, I do highly recommend the [GetTor](https://gettor.torproject.org/).
+
+Micro smart computer, e.g: phone or pad, via the official Tor Project website
+
+at <https://www.torproject.org/download>.
