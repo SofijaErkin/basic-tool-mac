@@ -90,6 +90,14 @@ Computer, e.g: laptop or desktop PC, via plain text mode email refer the
 
 Also, I do highly recommend the [GetTor](https://gettor.torproject.org/).
 
+Notice: Linux `32bit` computer choose `i386` version, while `64bit` computer
+
+choose `x64`.
+
 Micro smart computer, e.g: phone or pad, via the official Tor Project website
 
 at <https://www.torproject.org/download>.
+
+Notice: android phone choose `aarch64` or `arm` apk, while pad choose `x86_64`
+
+(`64bit`) or `x86`(`32bit`) apk.
