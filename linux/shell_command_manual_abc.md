@@ -101,3 +101,7 @@ Shut down Debian:
     sudo shutdown -h now
 
     sudo systemctl poweroff
+
+## 13.Check the version of Glibc on Debian or Ubuntu
+
+    ldd --version
