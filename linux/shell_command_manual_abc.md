@@ -105,3 +105,7 @@ Shut down Debian:
 ## 13.Check the version of Glibc on Debian or Ubuntu
 
     ldd --version
+
+Or, e.g: `x86_64-Debian/x_64-Debian`:
+
+    /lib/x86_64-linux-gnu/libc.so.6
