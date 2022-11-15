@@ -65,3 +65,19 @@ to configure your browser. E.g: use `firefox` browse the I2P network, use
 The home page of I2P: `http://127.0.0.1:7657/home`, and the configuration of
 
 reseed page: `http://127.0.0.1:7657/configreseed`.
+
+### 2.2Tor
+
+#### 2.2.1Plain text mode
+
+By default, composing a new email in Gmail results in an HTML email under the
+
+hood — even if you don’t use any formatting. Luckily, it’s possible to opt-out
+
+of that and use plain text email instead.
+
+Please refer [this](https://mathiasbynens.be/notes/gmail-plain-text).
+
+The japanese of the words `Plain text mode` is `平文モード`, and that french is
+
+`mode texte brut`, and that swedish is `oformaterad text`.
