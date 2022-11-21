@@ -101,3 +101,15 @@ at <https://www.torproject.org/download>.
 Notice: android phone choose `aarch64` or `arm` apk, while pad choose `x86_64`
 
 (`64bit`) or `x86`(`32bit`) apk.
+
+#### 2.2.3System of process
+
+Check whether you are in `Tor`: <https://check.torproject.org/>. Using `Tor`
+
+show green right onion, while no in `Tor` shows red false onion.
+
+Install `HTTPS Forever` via [HTTP everywhere](https://www.eff.org/https-everywhere).
+
+Create or find the configuration file `torrc` of `Tor`, edit the line of
+
+`ExcludeNodes` into
