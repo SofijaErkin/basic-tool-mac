@@ -10,9 +10,9 @@ if 0 {
 
 The better way to build ssh for logging in cloud services (such as `GitHub`, 
 
-`GitLab`, `Gitee`, `Bitbucket` ...), remotee web server(`Nginx`, `Cloudflare Server`,
+`GitLab`, `Gitee`, `Bitbucket` ...), remote web server(`Nginx`, `Cloudflare Server`,
 
-`Apache`, `IIS and lighttpd`, `Microsoft Internet Information Services`, 
+`Apache`, `IIS and Lighttpd`, `Microsoft Internet Information Services`, 
 
 `Sun Java System Web Server` and `Jigsaw`), customer premises via git 
 
@@ -88,13 +88,13 @@ directory `/Users/marryme`, before doing this, I need to enter the terminal.
 
 Some use the default terminal Apple `Terminal`, but I use `iTerm` here.
 
-when i'm in the terminal, just use this command to create the dirctory
+when i'm in the terminal, just use this command to create the directory
 
 `/GitHub`:
 
 `mkdir GitHub`
 
-Also, use thic command to enter the dirctory `/Users/marryme/GitHub`:
+Also, use this command to enter the directory `/Users/marryme/GitHub`:
 
 `cd /Users/marryme/Github`
 
@@ -110,7 +110,7 @@ directory `/Corporate`. Just use this command to create that directions:
 
 Now, I have more than one personal GitHub accounts. My personal Github 
 
-accounts `Sofija`, `Starla`, `Sivert`. Enter my personal GitHub dirctory
+accounts `Sofija`, `Starla`, `Sivert`. Enter my personal GitHub directory
 
 `/Personal` and create three personal GitHub accounts:
 
