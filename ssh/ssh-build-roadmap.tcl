@@ -621,6 +621,23 @@ and `ssh`. `Origin` is the name I gave to this repository and can be customized.
  
  or run `git push -u origin other-branch`.
 
+Update Nov 21 2022 EST 21:04
+
+If you use `git push -u origin main`  to mention the main branch to the remote
+ 
+github repository, that may generate the [problem](https://stackoverflow.com/questions/12940626/github-error-message-permission-denied-publickey):
+
+   Permission denied (publickey).
+   fatal: Could not read from remote repository.
+
+   Please make sure you have the correct access rights
+   and the repository exists.
+
+Just use this to fix that via `git pull --rebase && git push -u origin main`.
+
+    
+
+
 # 5.Multiple GitHub accounts
 
 It is necessary to consider logging into multiple GitHub accounts on the 
