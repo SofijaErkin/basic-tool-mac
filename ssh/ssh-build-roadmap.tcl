@@ -637,7 +637,9 @@ github repository, that may generate the [problem](https://stackoverflow.com/que
    Please make sure you have the correct access rights
    and the repository exists.
 
-Just use this to fix that via `git pull --rebase && git push -u origin main`.
+Just use this to fix that via `git pull --rebase && git push -u origin main`. 
+
+Or maybe you should check the connection of your network.
 
 Notice:
 
