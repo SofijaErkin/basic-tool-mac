@@ -2,7 +2,9 @@
 # '#' just for only one line comment
 if 0 {
 
-# SSH Manually
+# [SSH Manually](https://github.com/SofijaErkin/basic-tool-mac/blob/main/ssh/ssh-build-roadmap.tcl)
+
+GitHub Gist source [here](https://gist.github.com/SofijaErkin/a5b866c4a1bf5abb69ba0d99599ebe28#ssh-manually).
 
 
 
