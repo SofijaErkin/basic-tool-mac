@@ -298,7 +298,7 @@ I know, no matter I directly copy the public key file
  
 `sofija_personal_github_id_rsa.pub` via vim copying or changing the `.pub` 
  
-to `.txt`, that all does not sucessfuly add to GitHub SSH keys, Use the 
+to `.txt`, that all does not successfully add to GitHub SSH keys, Use the 
  
 `cat` command to print out the just created ssh key in the terminal.
 
@@ -565,7 +565,7 @@ Now, add the file `README.md` that needs to be updated to the local git reposito
  
 `git add README.md`
  
-Please notice: `git add/rm <file>` run everytime while changing files.
+Please notice: `git add/rm <file>` run every-time while changing files.
  
 Never forget check if the file to be uploaded is correct:
 
@@ -591,7 +591,7 @@ after git@. After creating the repository in github, there are links to `http`
 
 and `ssh`. `Origin` is the name I gave to this repository and can be customized.
  
-`git remote add origin git@sofija_persaonal-github.com:SofijaPersonal/hello-world-debug-vscode.git`
+`git remote add origin git@sofija_personal-github.com:SofijaPersonal/hello-world-debug-vscode.git`
  
  "`git remote add origin ssh-url`" is to connect between local repository and
  
@@ -611,13 +611,13 @@ and `ssh`. `Origin` is the name I gave to this repository and can be customized.
  
  eg:
  
- `git remote set-url origin git@sofija_persaonal-github.com:SofijaPersonal/hello-world.git`
+ `git remote set-url origin git@sofija_personal-github.com:SofijaPersonal/hello-world.git`
  
  Mention the main branch to the remote github repository:
  
  `git push -u origin main`
  
- "`git push -u origin main`" or "`git push`" run everytime once "`git add/rm <file>`", 
+ "`git push -u origin main`" or "`git push`" run every-time once "`git add/rm <file>`", 
  
  or run `git push -u origin other-branch`.
 
@@ -723,7 +723,7 @@ Set up each repo's own user.email
 
 `git config  user.email "sivertpersonalgitee@gmail.com"`
 
-`git config  user.name "Sivert_Personal_Gittee"`
+`git config  user.name "Sivert_Personal_Gitee"`
 
 If there are two git accounts, they are `github@example.com` and 
 
