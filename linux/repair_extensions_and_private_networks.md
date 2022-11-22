@@ -110,6 +110,9 @@ show green right onion, while no in `Tor` shows red false onion.
 
 Install `HTTPS Forever` via [HTTP everywhere](https://www.eff.org/https-everywhere).
 
-Create or find the configuration file `torrc` of `Tor`, edit the line of
+Create or find the configuration file `torrc` of `Tor`, just edit the line of
 
-`ExcludeNodes` into
+`ExcludeNodes` liking below:
+
+    ExcludeNodes  {by},{cn},{cu},{hk},{ir},{kp},{mo},{pk},{ru},{sy},{vn}
+    StrictNodes  1
