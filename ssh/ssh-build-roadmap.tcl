@@ -639,6 +639,25 @@ github repository, that may generate the [problem](https://stackoverflow.com/que
 
 Just use this to fix that via `git pull --rebase && git push -u origin main`.
 
+Notice:
+
+If you just use `rm file` on your local workspace with no committing that file,
+
+then your local repository again has that file, your remote repository also has
+
+that file. Just use `git restore <file>...` to discard changes in working 
+
+directory, and your local workspace will display that file. Remember to check
+
+the status of your repository's git via `git status`. Also, if you delete some
+
+files on your local workspace but not commit those to the local repository, you
+
+should use `git pull --no-rebase` to pull the remote repository. Finally, if
+
+there are some code collision or conflict, you need to use some commands liking
+
+`git merge ...`.
     
 
 
