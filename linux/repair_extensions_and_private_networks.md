@@ -116,3 +116,7 @@ Create or find the configuration file `torrc` of `Tor`, just edit the line of
 
     ExcludeNodes  {by},{cn},{cu},{hk},{ir},{kp},{mo},{pk},{ru},{sy},{vn}
     StrictNodes  1
+
+Just refer the [gangster community](https://gist.github.com/SofijaErkin/802aa2b9a8f11dfdea8cb719e81405f0#gangster-community) about the configuration `ExcludeNodes` on
+
+Tor's `torrc`.
