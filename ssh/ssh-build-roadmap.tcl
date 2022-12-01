@@ -637,6 +637,12 @@ github repository, that may generate the [problem](https://stackoverflow.com/que
    Please make sure you have the correct access rights
    and the repository exists.
 
+To fix the upstairs problem, firstly, using `Git` try to connect the `GitHub`
+
+via `ssh` again, e.g: `ssh -T git@sofija_personal-github.com`.
+
+Also, `GitLab` or `Bitbucket` do the same.
+
 Just use this to fix that via `git pull --rebase && git push -u origin main`. 
 
 Or maybe you should check the connection of your network.
