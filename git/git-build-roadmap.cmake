@@ -1,6 +1,7 @@
 # # "# # " for one line comment
 # #
 # # "#[=[ ... ]=]" for more than one lines comment
+# cmake file comment refer:https://wiki.lihebi.com/cmake.html#orgf0dc0f3.
 #[=[
 
 # Git commands Manually
