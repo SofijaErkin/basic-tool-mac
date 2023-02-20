@@ -465,4 +465,22 @@ The above command will just fetch all the remote branches to your local.
 
 As you can see the old remote is deleted.
 
+## 4.Command Mistakes
+
+If I use the command `git pull && git push --rebase` to push the local 
+
+repository into remote, terminal will prompt just liking below
+
+    error: unknown option `rebase'
+    usage: git push [<options>] [<repository> [<refspec>...]]
+
+Why I use that command mistake, I just want to git pull and rebase the differ
+
+from remote repository into local. I find I forget how to the command "git
+
+pull" and "git push" via refering the below
+
+    https://github.com/pyenv/pyenv-update/issues/13
+I should use the command "git pull --rebase && git push".
+
 ]=]
