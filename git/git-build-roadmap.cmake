@@ -1,7 +1,7 @@
 # # "# # " for one line comment
 # #
-# # "# [[ ... ]]" for more than one lines comment
-# [[
+# # "#[=[ ... ]=]" for more than one lines comment
+#[=[
 
 # Git commands Manually
 
@@ -23,7 +23,7 @@ pulling, you would then do git stash pop and your changes would be reapplied.
 
 `git status` also has how to get rid of changes depending on if the file is staged for 
 
-commit or not. 
+commit or not.
 
 ### Add changed file of being git added and all the workspace file to 
 
@@ -465,6 +465,4 @@ The above command will just fetch all the remote branches to your local.
 
 As you can see the old remote is deleted.
 
-]]
-
-# #
+]=]
