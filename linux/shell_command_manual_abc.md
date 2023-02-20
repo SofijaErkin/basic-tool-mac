@@ -109,3 +109,30 @@ Shut down Debian:
 Or, e.g: `x86_64-Debian/x_64-Debian`:
 
     /lib/x86_64-linux-gnu/libc.so.6
+
+`i386-Debian`:
+
+    /lib/i386-linux-gnu/libc.so.6
+
+## 14.Rename the file or directory
+
+### 14.1Command `mv`
+
+Rename only one:
+
+    mv source_file_or_directory destination
+If `destination_file` does not exist, `source_file_or_directory` is renamed
+
+`destination_file`.
+
+### 14.2Command `rename`
+
+Rename multiple files, using regular expressions.
+
+### 14.3Reference
+
+1.[How to change or rename a file, folder, or directory](https://www.computerhope.com/issues/ch000846.htm).
+
+2.[Linux mv command](https://www.computerhope.com/unix/umv.htm).
+
+3.[Linux rename command](https://www.computerhope.com/unix/rename.htm).
