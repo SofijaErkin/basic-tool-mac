@@ -1,24 +1,46 @@
 " VIM
 
+" Just use VIM command `:source ~/.vimrc` to take effect or reload `.vimrc`.
+
 set nocp                        " forbid optional vi module
 
 set ru                          " show the scale
 
 set nu                          " show the line number
 
+                                " or add line numbers by checking
+
 set cursorline                  " hightlight the current line
-
-hi CursorLine cterm=bold      
-
-set sw=2                        " auto intent 2 character
-
-set ts=2                        " tab width 2 character
-
-set backspace=indent,eol,start  " local cmment test line comment
+hi CursorLine cterm=bold
 
 syntax on                       " enable the syntax function of VIM
 
-"colorscheme  default           " too dark to comment
+set sw=4                        " auto intent 4 character for Java
+
+                                " or change the default indentation to four 
+                                
+                                " spaces 
+
+set ts=4                        " tab width 4 character for Java
+
+                                " or Change the default tab width when printing
+                                
+                                " to four spaces
+
+set textwidth=80                " allow at most 80 characters per line
+
+set ff=unix                     " Change the default line separator to Unix
+
+                                " even the default line ending of mac or unix
+
+                                " is `unix`.
+
+
+set backspace=indent,eol,start  " local cmment test line comment
+
+syntax on
+
+" colorscheme  default           " too dark to comment
 
 set autoindent                  " keep the same intent with the uppstairs
 
@@ -28,11 +50,29 @@ set ruler                       " display the location of cursor at the right
 
 set incsearch                   " show match points while the fuzzy search
 
+source ~/.vim_runtime/vimrcs/basic.vim
+
+source ~/.vim_runtime/vimrcs/filetypes.vim
+
+source ~/.vim_runtime/vimrcs/plugins_config.vim
+
+source ~/.vim_runtime/vimrcs/extended.vim
+
+
+
+" Using DBGPavim debug Python in VIM
+
+let g:dbgPavimPort = 9009       " Set the foldback port for let DBGPavim,
+
+                                " the default port was 9000, monitor port 
+
+                                " should be the same as the debugger port
+                                
 
 
 " ctags
 
-set tags=~/tags
+set tags=~/VSCode/tags
 
 
 
@@ -42,9 +82,9 @@ set tags=~/tags
 
 "let Tlist_Use_SingleClick=1     " enable single click tags goto definition 
 
-let Tlist_Exit_OnlyWindow = 1   " exit the VIM while taglist window be the last
+let Tlist_Exit_OnlyWindow = 1
 
-let Tlist_Use_Right_Window =1   " let taglist display on the right window
+let Tlist_Use_Right_Window =1
 
 let Tlist_File_Fold_Auto_Close = 1
 
@@ -64,16 +104,17 @@ let Tlist_GainFocus_On_ToggleOpen = 1
 
 let Tlist_WinWidth = 32         " set the width with 32 byte
 
-let Tlist_Ctags_Cmd = '/usr/bin/ctags'
+let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
 
                                 " connect taglist with ctags
+
 " Add nice bindings
 
 "map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
 
 "map <C-\> :tnext<CR>
 
-"map t :TlistToggle              " (hot-key)Leader + t: call or close taglist
+"map t :TlistToggle              " (hot-key)Leader + t: call or close taglist 
 
 "map <F2> :TlistToggle<CR>
 
@@ -81,123 +122,79 @@ let Tlist_Ctags_Cmd = '/usr/bin/ctags'
 
 
 
-" Format plugin for VIM
-
-" refer
-
-" https://mesos.readthedocs.io/en/0.23.1/clang-format/
-
-" mapping enables clang-format for NORMAL and VISUAL mode
-
-map <C-I> :py3f /usr/share/vim/addons/syntax/clang-format.py<cr>
-
-" mapping adds support for INSERT mode
-
-imap <C-I> <c-o>:py3f /usr/share/vim/addons/syntax/clang-format.py<cr>
-
-" Or using the below four VIM command
+" Format Plugin for VIM
 
 " use leader + f in NORMAL Model
 
-"map <leader>f :py3f  /usr/share/vim/addons/syntax/clang-format.py<cr>
+map <leader>f :py3f  /usr/local/share/clang/clang-format.py<cr>
 
 " use leader + f in INSERT Model
 
-"imap <leader>f <c-o>:py3f /usr/share/vim/addons/syntax/clang-format.py<cr>
+imap <leader>f <c-o>:py3f /usr/local/share/clang/clang-format.py<cr>
 
-" Comment about the upstairs 
-
-" Change "C-I" to another binding if you need clang-format on a different
-
-" key (C-I stands for Ctrl+i)
-
-" With this integration you can press the bound key and clang-format will
-    
-" format the current line in NORMAL and INSERT mode or the selected region
-
-" in VISUAL mode. The line or region is extended to the next bigger
-    
-" syntactic entity.
-
-" refer
-
-" https://shengfazhu.github.io/2019/08/03/vim/
-
-" to format the full file
+" set clang-format range to all File    
 
 function FormatFile()
 
-  let l:lines="all"
+    let l:lines="all"
 
-  py3f /usr/share/clang/clang-format-11/clang-format.py/clang-format.py
+    py3f /usr/local/Cellar/clang-format@5/5.0.2/share/clang/clang-format.py 
 
-endfunction
+endfunction 
 
-" Comment the upstairs
+" Or Format during saving
 
-" You can also pass in the variable "l:lines" to choose the range for
-
-" formatting. This variable can either contain "<start line>:<end line>"
-
-" refer 
-
-" https://blog.csdn.net/weixin_39609623/article/details/102080465
-
-"  or "all" to format the full file. 
-    
 "function! Formatonsave()
 
 "  let l:formatdiff =1
 
-"   py3f /usr/share/clang/clang-format-11/clang-format.py/clang-format.py
-
-"endfunction
+"  py3f /usr/local/Cellar/clang-format@5/5.0.2/share/clang/clang-format.py      
 
 "autocmd BufWritePre *.h,*.cc,*.cpp call Formatonsave()
 
-" auto format when leave INSERT Model
+" auto format when leave INSERT Model 
 
 let g:clang_format#auto_format_on_insert_leave=1
 
+
 " Comment about the two upstairs configuration for VIM
 
-" changing pyf to py3f: because the default version of python on Debian
+" changing pyf to py3f: because the default version of python on macOS is 
 
-" is python2;
+" python2 
 
 " let l:lines = "all": format all the code under this project
 
-" let l:formatdiff = 1: only format for changing code
+" let l:formatdiff = 1: only format for changing code   
 
-" if doing all the things does not work or if clang-format.py of
+" if doing all the things does not work or if clang-format.py of 
 
-" clang-format@11.0 script in the Debian11 (clang-format-11.0) is not
+" clang-format@5.0 script in the macOS12.3.1 (clang-format-5.0) is not  
 
-" compatible with Python 3, then download the latest clang-format.py to
-    
-" replace the default clang-format.py for clang-format@11.0, refer from
+" compatible with Python 3, then download the latest clang-format.py to 
+
+" replace the default clang-format.py for clang-format@5.0, refer from 
 
 " https://stackoverflow.com/a/39781747/10846570
 
 " the upstairs means that we should download the latest clang-format.py via
-    
+
 " the below
 
-" wget https://llvm.org/svn/llvm-project/cfe/trunk/tools/clang-format/clang-format.py
+" wget https://llvm.org/svn/llvm-project/cfe/trunk/tools/clang-format/clang-format.py    
 
 " Others,
-    
-" clang-format-3.8.py is compatible with Python 2;
 
-" clang-format-4.0.py is compatible with Python 3; 
+" clang-format-3.8.py is compatible with Python 2;
 
 " clang-format-6.0.py is compatible with Python 3;
 
-" I do know whether clang-format-11.0.py is compatible with Python 3 or not
+" I do know whether clang-format-5.0.py is compatible with Python 3 or not  
 
 
 
-" Indent Plugin for VIM
+
+" Indent Plugin for VIm
 
 " Auto-Start with VIM
 
@@ -223,27 +220,27 @@ set t_Co=256  " make color normally
 
 set background=dark
 
-" colorscheme solarized  " solarized is the better
+"colorscheme solarized  " solarized is the better
 
 " the upstairs VIM command config need to come somewhere after
 
-" "call vundle#end()".
+""call vundle#end()".
 
 " Also, we could chose the below two lines plugins
 
 "colorscheme molokai
 
-"colorscheme phd
+"colorscheme phd    
 
 
 
 " NERDTree config
 
-map <F4> :NERDTreeToggle<CR> 
+map <F4> :NERDTreeToggle<CR>  
 
 " F4 control the content tree
 
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType=="primary" )     | q | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType=="primary") | q | endif
 
 " exit vim during the current winter being the last content tree winer
 
@@ -267,7 +264,7 @@ let g:ycm_seed_identifiers_with_syntax = 1  " complete the key_words of syntax
 
 let g:ycm_complete_in_comments = 1
 
-let g:ycm_confirm_extra_conf = 0  " close YCM during opeaning .ycm_extra_conf.py
+let g:ycm_confirm_extra_conf = 0  " close YCM during opeaning .ycm_extra_conf.py    
 
 let g:ycm_key_list_select_completion = ['<c-n>', '<Down>']
 
@@ -279,7 +276,7 @@ let g:ycm_key_list_previous_completion = ['<c-p>', '<Up>']
 
 let g:ycm_complete_in_comments = 1  " enable the complete at comment
 
-let g:ycm_complete_in_strings = 1  " enable the complete at string contents 
+let g:ycm_complete_in_strings = 1  " enable the complete at string contents
 
 let g:ycm_collect_identifiers_from_comments_and_strings = 1
 
@@ -295,15 +292,13 @@ let g:ycm_key_invoke_completion = '<M-;>'
 
                                " change hot-kay mapping about completing for C
 
-                               " functions, from ctrl + space to ALT + ;
+                               " functions, from Ctrl + space to ALT + ;
 
-let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/third_party/ycmd/.ycm_extra_conf.py'
+"let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/third_party/ycmd/.ycm_extra_conf.py'
+
+let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py'
 
 let g:ycm_show_diagnostics_ui = 0  " disable the checkout syntax
-
-let g:ycm_error_symbol = '>>'  " config Ycm show >> during occuring error
-
-let g:ycm_warning_symbol = '>*'  " config Ycm show >* during occuring warning
 
 nnoremap <leader>gl :YcmCompleter GoToDeclaration<CR>
 
@@ -333,31 +328,21 @@ nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
                                " declaration
 
-                               " Or Using the below VIM command setting:
+                               " Or Using the below vim command setting:
 
 "nnoremap <c-j> :YcmCompleter GoToDefinitionElseDeclaration<CR>|
 
                                " goto the define of the functions
 
-"nmap <F4> :YcmDiags<CR>
-
-                               " config VIM command :YcmDiags,
-
-                               " the upstairs VIM command opens the 
-                               
-                               " location-list to display error and warning,
-
-                               " but confliting with NERDTree hot-key
-
 let g:ycm_min_num_of_chars_for_completion=2
 
                                " complete begin at the second character
 
-let g:ycm_cache_omnifunc=0     " disable cache complete, occur new complete
+let g:ycm_cache_omnifunc=0     " disable cache complete, occur new complete 
 
-                               " tag every time
-
-"hightlight Pmenu ctermfg=15 ctermfg=0 guifg=#000000 guibg=#111100
+                               " tag every time 
+                               
+" hightlight Pmenu ctermfg=15 ctermfg=0 guifg=#000000 guibg=#111100
 
 " change the complete backcolor into vim's backcolor
 
@@ -369,17 +354,42 @@ set nocompatible                   " be iMproved, required
 
 filetype off                       " required
 
-set rtp+=~/.vim/bundle/Vundle.vim  " set the runtime path to include Vundle
+set rtp+=~/.vim/bundle/Vundle.vim  " set the runtime path to include Vundle 
 
                                    " and initialize
 
 call vundle#begin()
 
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
 Plugin 'VundleVim/Vundle.vim'      " let Vundle manage Vundle, required
 
-Plugin 'https://github.com/scrooloose/nerdtree.git' 
+Plugin 'https://github.com/scrooloose/nerdtree.git'  
 
-                                   " install NERDTree, file and directory tree
+                                   " install NERDTree, file and directory 
+                                   
+                                   " tree
+
+" The following are examples of different formats supported.
+" Keep Plugin commands between vundle#begin/end.
+" plugin on GitHub repo
+
+Plugin 'tpope/vim-fugitive'
+
+" plugin from http://vim-scripts.org/vim/scripts.html
+" Plugin 'L9'
+" Git plugin not hosted on GitHub
+
+Plugin 'git://git.wincent.com/command-t.git'
+
+" " git repos on your local machine (i.e. when working on your own plugin)
+" Plugin 'file:///home/gmarik/path/to/plugin'
+
+" The sparkup vim script is in a subdirectory of this repo called vim.
+" Pass the path to set the runtimepath properly.
+
+Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
 Plugin 'Valloric/YouCompleteMe'    " install YouCompleteMe, with autoupdate via
 
@@ -407,32 +417,61 @@ Plugin 'scrooloose/nerdcommenter'  " Comment Plugin for VIM
 
                                    " just use command leader + cc to comment
 
-Plugin 'rhysd/vim-clang-format'    " Format Plugin for VIM to directly standard
+Plugin 'rhysd/vim-clang-format'    " Format Plugin for VIM to directly standard                      
 
                                    " code format
-
 Plugin 'https://github.com/vim-scripts/taglist.vim.git'
 
                                    " taglist plugin for VIM
 
-call vundle#end()                  " All of your Plugins must be added before
+Plugin 'https://github.com/brookhong/DBGPavim.git'
 
-                                   " the following line required
+                                   " Debug Python via DBGPavim in VIM 
 
-"colorscheme solarized  " solarized is the better
+" Install L9 and avoid a Naming conflict if you've already installed a
+" different version somewhere else.
+" Plugin 'ascenator/L9', {'name': 'newL9'}
+"
+" All of your Plugins must be added before the following line
+
+call vundle#end()            " required
+
+"colorscheme solarized  " solarized is the better    
 
 colorscheme molokai
 
 "colorscheme phd
 
-filetype plugin indent on          " required
+filetype plugin indent on    " required
 
-                                   " taglist plugin relies on the Vim "filetype"
+                             " taglist plugin relies on the Vim "filetype"
 
-                                   " determine the type of the current file.
+                             " determine the type of the current file.
 
-                                   " We have to turn on the Vim filetype
+                             " We have to turn on the Vim filetype
 
-                                   " detection. e.g: filetype on
+                             " detection. e.g: filetype on
 
-                                   " , Or: filetype plugin on
+                             " , Or: filetype plugin on
+
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+
+
+
+try
+
+    source ~/.vim_runtime/my_configs.vim
+
+catch
+
+endtry
