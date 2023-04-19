@@ -1,5 +1,7 @@
 " VIM
 
+" Just use VIM command `:source ~/.vimrc` to take effect or reload `.vimrc`.
+
 set runtimepath+=~/.vim_runtime
 
 set nocp                        " forbid optional vi module
@@ -8,14 +10,33 @@ set ru                          " show the scale
 
 set nu                          " show the line number
 
+                                " or add line numbers by checking
+
 set cursorline                  " hightlight the current line
 hi CursorLine cterm=bold
 
 syntax on                       " enable the syntax function of VIM
 
-set sw=2                        " auto intent 2 character
+set sw=4                        " auto intent 4 character for Java
 
-set ts=2                        " tab width 2 character
+                                " or change the default indentation to four 
+                                
+                                " spaces 
+
+set ts=4                        " tab width 4 character for Java
+
+                                " or Change the default tab width when printing
+                                
+                                " to four spaces
+
+set textwidth=80                " allow at most 80 characters per line
+
+set ff=unix                     " Change the default line separator to Unix
+
+                                " even the default line ending of mac or unix
+
+                                " is `unix`.
+
 
 set backspace=indent,eol,start  " local cmment test line comment
 
@@ -41,6 +62,16 @@ source ~/.vim_runtime/vimrcs/extended.vim
 
 
 
+" Using DBGPavim debug Python in VIM
+
+let g:dbgPavimPort = 9009       " Set the foldback port for let DBGPavim,
+
+                                " the default port was 9000, monitor port 
+
+                                " should be the same as the debugger port
+                                
+
+
 " ctags
 
 set tags=~/VSCode/tags
@@ -49,12 +80,13 @@ set tags=~/VSCode/tags
 
 " taglist
 
-set mouse=a                     " always use mouse
+"set mouse=a                     " always use mouse
 
-let Tlist_Use_SingleClick=1     " enable single click tags goto definition 
-let Tlist_Exit_OnlyWindow = 1   " exit the VIM while taglist window be the last
+"let Tlist_Use_SingleClick=1     " enable single click tags goto definition 
 
-let Tlist_Use_Right_Window =1   " let taglist display on the right window
+let Tlist_Exit_OnlyWindow = 1
+
+let Tlist_Use_Right_Window =1
 
 let Tlist_File_Fold_Auto_Close = 1
 
@@ -84,7 +116,7 @@ let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
 
 "map <C-\> :tnext<CR>
 
-"map t :TlistToggle              " (hot-key)Leader + t: call or close taglist
+"map t :TlistToggle              " (hot-key)Leader + t: call or close taglist 
 
 "map <F2> :TlistToggle<CR>
 
@@ -190,11 +222,11 @@ set t_Co=256  " make color normally
 
 set background=dark
 
-" colorscheme solarized  " solarized is the better
+"colorscheme solarized  " solarized is the better
 
 " the upstairs VIM command config need to come somewhere after
 
-" "call vundle#end()".
+""call vundle#end()".
 
 " Also, we could chose the below two lines plugins
 
@@ -390,10 +422,13 @@ Plugin 'scrooloose/nerdcommenter'  " Comment Plugin for VIM
 Plugin 'rhysd/vim-clang-format'    " Format Plugin for VIM to directly standard                      
 
                                    " code format
-
 Plugin 'https://github.com/vim-scripts/taglist.vim.git'
 
                                    " taglist plugin for VIM
+
+Plugin 'https://github.com/brookhong/DBGPavim.git'
+
+                                   " Debug Python via DBGPavim in VIM 
 
 " Install L9 and avoid a Naming conflict if you've already installed a
 " different version somewhere else.
