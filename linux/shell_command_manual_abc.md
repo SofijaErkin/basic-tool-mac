@@ -136,3 +136,14 @@ Rename multiple files, using regular expressions.
 2.[Linux mv command](https://www.computerhope.com/unix/umv.htm).
 
 3.[Linux rename command](https://www.computerhope.com/unix/rename.htm).
+
+### 15.Compile and Execute  Java Program
+
+    (From the Command Prompt, type to compile)
+    javac HelloWorld.java
+    (At the Command Prompt, type to Execute)
+    java HelloWorld
+    (Try running your program with the command line while Troubleshooting)
+    java -classpath ./ HelloWorld
+
+Reference: [Hello, World in Java on Mac OS X](https://www.cs.princeton.edu/courses/archive/spr04/cos126/hello/mac.html).
