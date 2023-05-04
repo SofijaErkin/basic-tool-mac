@@ -12,6 +12,14 @@
 # alias ll='ll $LS_OPTIONS -l'
 # alias l='ls $LS_OPTIONS -lA'
 
+# Adding the pydbgp to the environment variable 
+
+export PATH=$PATH:~/Komodo-PythonRemoteDebugging-12.0.1-91869-macosx/python3lib
+
+
+# Path to Ctags under /usr/local/bin
+#export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
+#export PATH=/usr/local/bin/ctags:$PATH
 
 # Path to your oh-my-zsh installation.
 
@@ -75,7 +83,10 @@ alias envconfig="gvim ~/Projects/config/env.sh"
 
 alias xcode="open -a Xcode"
 
+#alias debian="ssh -p 50022 foruo@debian"
+alias debian="ssh foruo@debian"
 
+alias remotedebian="ssh foruo@remotedebian"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -180,3 +191,5 @@ eval "$(rbenv init -)"
 export NVM_DIR="/Users/yq/.nvm"
 
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
