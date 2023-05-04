@@ -237,10 +237,14 @@ set background=dark
 
 
 " NERDTree config
-
-map <F4> :NERDTreeToggle<CR>  
-
-" F4 control the content tree
+" Reference:https://averywagar.com/post/vim-java/
+" Open when no files were speficied on vim launch
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+" Toggle nerdtree
+map <F4> :NERDTreeToggle<CR> 
+" F4 control the content tree 
+" or map <C-n> :NERDTreeToggle<CR>
 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType=="primary") | q | endif
 
@@ -350,6 +354,181 @@ let g:ycm_cache_omnifunc=0     " disable cache complete, occur new complete
 
 
 
+" reference:https://averywagar.com/post/vim-java/
+" Deoplete.nvim
+" start deoplete let g:deoplete#enable_at_startup = 1
+" Less spam let g:deoplete#auto_complete_start_length = 2
+" Use smartcase
+let g:deoplete#enable_smart_case = 1
+" Setup completion sources
+let g:deoplete#sources = {}
+" IMPORTANT: PLEASE INSTALL JAVACOMPLETE2  AND ULTISNIPS OR DONT ADD THIS LINE!
+" =====================================
+"let g:deoplete#sources.java = ['jc', 'javacomplete2', 'file', 'buffer', 'ultisnips']
+" =====================================
+" use TAB as the mapping
+inoremap <silent><expr> <TAB>
+    \ pumvisible() ?  "\<C-n>" :
+    \ <SID>check_back_space() ? "\<TAB>" :
+    \ deoplete#mappings#manual_complete()
+function! s:check_back_space() abort "" {{{
+    let col = col('.') - 1
+    return !col || getline('.')[col - 1]  =~ '\s'
+endfunction "" }}}
+" Vim-Javacomplete2
+" Java completion
+"autocmd FileType java setlocal omnifunc=javacomplete#Complete
+"autocmd FileType java JCEnable
+" ALE
+" Shorten error/warning flags
+let g:ale_echo_msg_error_str = 'E'
+let g:ale_echo_msg_warning_str = 'W'
+"
+" I have some custom icons for errors and warnings but feel free to change them.
+let g:ale_sign_error = '✘✘'
+let g:ale_sign_warning = '⚠⚠'
+"
+" Disable or enable loclist at the bottom of vim
+" Comes down to personal preferance.
+let g:ale_open_list = 0
+let g:ale_loclist = 0
+"
+" Setup compilers for languages
+let g:ale_linters = {
+      \  'cs':['syntax', 'semantic', 'issues'],
+      \  'python': ['pylint'],
+      \  'java': ['javac'],
+      \  'c++': ['clang++'],
+      \  'c': ['clang']
+      \ }
+"
+" Loc List (ALE Output)
+" Open and close ALEs output window with leader-e leader-w
+" Loc List
+map <leader>e :lopen<CR>
+map <leader>w :lclose<CR>
+" refer: https://jqno.nl/post/2020/09/09/my-vim-setup/.
+" Linting
+" ale: https://github.com/dense-analysis/ale.
+" For more information on the options ALE offers, consult :help ale-options
+" for global options and :help ale-integration-options for options specified
+" to particular linters.
+" Configuring UltiSnips
+" Trigger configuration. Do not use <tab> if you use 
+" https://github.com/Valloric/YouCompleteMe.
+"
+" Since we are already using Deoplete, and using tab with both doesn't work
+" nice use <c-j> instead
+let g:UltiSnipsExpandTrigger="<c-j>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
+"
+let g:UltiSnipsSnippetDirectories = ['~/.vim/UltiSnips', 'UltiSnips']
+let g:UltiSnipsSnippetsDir="~/.vim/UltiSnips"
+" Configuring TagBar
+" Ctrl-b to open Tagbar
+map <C-b> :TagbarToggle<CR>
+" Configuring CtrlP.vim
+" Map Ctrl-p to open Ctrl-p.
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+"
+" use current git repo/file director with ctrl p
+let g:ctrlp_working_path_mode = 'ra'
+" Configuring Quick Compile
+" Auto compile java with leader-m
+" Easy compile java in vim
+autocmd FileType java set makeprg=javac\ %
+set errorformat=%A%f:%l:\ %m,%-Z%p^,%-C.%#
+" Configuring External Tools
+" Use RipGrep (RG) with Ctrlp
+" Make sure RipGrep is installed
+function! CtrlPCommand()
+  let c = 0
+  let wincount = winnr('$')
+  " Don't open it here if current buffer is not writable (e.g. NERDTree)
+  while !empty(getbufvar(+expand("<abuf>"),"&buftype")) && c < wincount
+    exec 'wincmd w'
+    let c = c + 1
+  endwhile
+  exec 'CtrlP'
+endfunction
+let g:ctrlp_cmd = 'call CtrlPCommand()'
+
+"RipGrep
+if executable('rg')
+  set grepprg=rg\ --color=never
+  let g:ctrlp_user_command = 'rg %s --files --color=never --glob ""'
+  let g:ctrlp_use_caching = 0
+endif
+let g:ctrlp_custom_ignore = {
+      \ 'dir':  '',
+      \ 'file': '\.so$\|\.dat$|\.DS_Store$|\.meta|\.zip|\.rar|\.ipa|\.apk',
+      \ }
+
+
+
+" Refer: https://jqno.nl/post/2020/09/09/my-vim-setup/.
+" Refactorings
+" Configuring vim-swap: https://github.com/machakann/vim-swap.
+" g<: swaps the item under the cursor with the former item. 
+" g>: swaps the item under the cursor with the latter item.
+" gs works more interactive. 
+" Configuring vim-commentary: https://github.com/tpope/vim-commentary.
+" Use gcc to comment out a line (takes a count), 
+" gc to comment out the target of a motion 
+" (for example, gcap to comment out a paragraph), 
+" gc in visual mode to comment out the selection, 
+" and gc in operator pending mode to target a comment. 
+" Configuring jqno-extractvariable.vim :
+" https://github.com/jqno/jqno-extractvariable.vim.
+"nmap <leader>e <Plug>(extractVariableNormal)
+"vmap <leader>e <Plug>(extractVariableVisual)
+" The visual mode mapping will extract the selection as a variable.
+" The normal mode mapping will first select something, and then extract that
+" selection as a variable.
+" Navigation 
+" Configuring Vista:https://github.com/liuchengxu/vista.vim.
+" For navigating code semantically, It hooks into the LSP via CoC to display
+" symbols from your code in a sidebar.
+" Vista Open/Close vista window for viewing tags or LSP symbols;
+" Vista! Close vista view window if already opened
+" Vista!! Toggle vista view window
+" Configuring vim-gutentags: https://github.com/ludovicchabant/vim-gutentags.
+" :call pathogen#helptags() to generate the documentation tags
+" (how ironic, eh?),
+" and you can access Gutentags' help pages with help gutentags.
+" Debugging
+" use print statements instead of a debugger.
+" Running code
+" Using a small Vimscript wrapper can call a Python script to quickly run a
+" unit test or a Java class with a main method;
+" (the upstairs Vimscript wrapper) 
+" https://github.com/jqno/dotfiles/blob/1e4ccbefc511662fe8bfe09080a3b4ee173dae53/vim/plugin/runjava.vim.
+" (the upstairs Python script)
+" https://github.com/jqno/dotfiles/blob/1e4ccbefc511662fe8bfe09080a3b4ee173dae53/scripts/runjava.py.
+" java or JUnit uses Dispatch to run all your class this asynchronously.
+" Configuring Dispatch: https://github.com/tpope/vim-dispatch.
+" The core of Vim's compiler system is :make, a command similar to :grep
+" that runs a build tool and parses the resulting errors. 
+" Completions
+" Configuring CoC: https://github.com/neoclide/coc.nvim.
+" refer ~/.vimrc: https://github.com/neoclide/coc.nvim#example-vim-configuration.
+" Please use command like:verbose imap <tab> to make sure that your keymap has
+" taken effect. 
+" CoC: That said, it currently provides the best experience by far: it has the
+" most complete implementation of the LSP and provides many quality-of-life
+" features such as fuzzy searching in completions.
+" Configuring CoC extension
+" coc-java: https://github.com/neoclide/coc-java. 
+"
+" coc-metals: https://github.com/scalameta/coc-metals.
+" 
+
+
+
 " Vundle
 
 set nocompatible                   " be iMproved, required
@@ -367,7 +546,11 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'      " let Vundle manage Vundle, required
 
-Plugin 'https://github.com/scrooloose/nerdtree.git'  
+" Refer:https://jqno.nl/post/2020/09/09/my-vim-setup/.
+" Navigation
+" NERDTree:https://github.com/preservim/nerdtree.
+Plugin 'https://github.com/scrooloose/nerdtree.git'
+" or Plugin 'scrooloose/nerdtree'
 
                                    " install NERDTree, file and directory 
                                    
@@ -377,7 +560,12 @@ Plugin 'https://github.com/scrooloose/nerdtree.git'
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
 
+" Git wrapper
 Plugin 'tpope/vim-fugitive'
+" it’s useful to do a quick git blame
+" reference:
+" https://github.com/tpope/vim-fugitive.
+
 
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
@@ -430,6 +618,140 @@ Plugin 'https://github.com/brookhong/DBGPavim.git'
 
                                    " Debug Python via DBGPavim in VIM 
 
+" Reference: https://averywagar.com/post/vim-java/.
+" Install Deoplete.nvim 
+" Also, YouComplete do support the autocompletion of Java language, please
+" reference: https://github.com/ycm-core/YouCompleteMe#java-semantic-completion
+" Code completion
+if has('nvim')
+  Plugin 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plugin 'Shougo/deoplete.nvim'
+  Plugin 'roxma/nvim-yarp'
+  Plugin 'roxma/vim-hug-neovim-rpc'
+endif
+" Install Vim-Javacomplete2
+" fatal: unable to access 'https://github.com/junegunn/vim-javacomplete2.git/':
+" HTTP/2 stream 1 was not closed cleanly before end of the underlying stream
+" fatal: unable to access 'https://github.com/
+" junegunn/vim-javacomplete2.git/': Recv failure: Operation timed out
+" remote: Repository not found.
+" fatal: Authentication failed for 
+" 'https://github.com/junegunn/vim-javacomplete2.git/', so comment the below
+" Java-completion
+"Plugin 'junegunn/vim-javacomplete2', {'for': 'java'} " Load only for java files 
+" Install ALE
+" refer: https://jqno.nl/post/2020/09/09/my-vim-setup/.
+" Linting
+" A.L.E. to do linting in the background, set up CoC to report its linting
+" issues through A.L.E., so that any errors and warnings can be presented to
+" me in a unified way.
+"Plugin 'w0rp-ale'
+" error: RPC failed; curl 56 Recv failure:
+" Connection reset by peer
+" error: 1987 bytes of body are still expected
+" fetch-pack: unexpected disconnect while reading sideband packet
+" fatal: early EOF
+" fatal: fetch-pack: invalid index-pack output
+"Plugin 'dense-analysis/ale'
+" Try to use vim pack to install ale using the belwo code:
+" mkdir -p ~/.vim/pack/plugins/start
+" git clone --depth 1 https://github.com/dense-analysis/ale.git ~/.vim/pack/plugins/start/ale
+" Install UltiSnips
+" Snippet manager
+Plugin 'SirVer/ultisnips'
+" Install TagBar
+" a tool that shows you the methods variables and more in a buffer to the right
+" of your file
+Plugin 'majutsushi/tagbar'
+" Install CtrlP.vim
+" a great fuzzy finder which can be configured to use faster tools than grep. 
+" It can search buffers, files, and more!
+Plugin 'ctrlpvim/ctrlp.vim'
+
+" reference: https://jqno.nl/post/2020/09/09/my-vim-setup/.
+" Color scheme
+" reversal.vim: https://github.com/jqno/reversal.vim.
+" Reversal.vim does the opposite, and emphasizes identifiers instead. 
+Plugin 'jqno/reversal.vim'
+" Refactorings
+" vim-swap: https://github.com/machakann/vim-swap.
+Plugin 'machakann/vim-swap'
+" vim-commentary: https://github.com/tpope/vim-commentary.
+" fatal: remote error: access denied or repository
+" not exported: /vim/commentary.git
+"Plugin 'git://tpope.io/vim/commentary.git'
+"Plugin 'https://github.com/tpope/vim-commentary.git'
+Plugin 'tpope/vim-commentary'
+" jqno-extractvariable.vim: https://github.com/jqno/jqno-extractvariable.vim.
+Plugin 'jqno/jqno-extractvariable.vim'
+" Navigation
+" Vista:https://github.com/liuchengxu/vista.vim.
+" For navigating code semantically, It hooks into the LSP via CoC to display
+" symbols from your code in a sidebar.
+Plugin 'liuchengxu/vista.vim'
+" vim-gutentags: https://github.com/ludovicchabant/vim-gutentags.
+" It will (re)generate tag files as you work while staying completely out of
+" your way. 
+Plugin 'ludovicchabant/vim-gutentags'
+" Debugging
+" use print statements instead of a debugger.
+" e.g: Vimspector paired with coc-java-debug.
+" Vimspector: https://github.com/puremourning/vimspector.
+" coc-java-debug: https://github.com/dansomething/coc-java-debug.
+" Running code
+" To quickly run a unit test or a Java class with a main method, 
+" written a Python script that I can call from Vim,
+" (the upstairs Python script)
+" https://github.com/jqno/dotfiles/blob/1e4ccbefc511662fe8bfe09080a3b4ee173dae53/scripts/runjava.py.
+" using a small Vimscript wrapper.
+" (Vimscript wrapper)
+" https://github.com/jqno/dotfiles/blob/1e4ccbefc511662fe8bfe09080a3b4ee173dae53/vim/plugin/runjava.vim.
+" Dispatch to run all this asynchronously.
+" Dispatch: https://github.com/tpope/vim-dispatch.
+Plugin 'tpope/vim-dispatch'
+" Completions
+" CoC: https://github.com/neoclide/coc.nvim.
+" Use release branch (recommended)
+"Plugin 'neoclide/coc.nvim', {'branch': 'release'}
+" Or build from source code by using yarn: https://yarnpkg.com
+"
+" error: RPC failed; curl 56 Recv failure:Connection reset by peer
+" error: 3297 bytes of body are still expected
+" fetch-pack: unexpected disconnect while reading sideband packet
+" fatal: early EOF
+" fatal: fetch-pack: invalid index-pack output
+"
+" [coc.nvim] build/index.js not found, 
+" please install dependencies and compile coc.nvim by: yarn install
+" the upstairs because coc.nvim Requirements  node >= 14.14!
+"
+" Just install yarn before install COC, use the below to install yarn
+" curl --compressed -o- -L https://yarnpkg.com/install.sh | bash
+" > WARNING: GPG is not installed, integrity can not be verified!
+" > Extracting to ~/.yarn...
+" > Adding to $PATH...
+" > We've added the following to your ~/.zshrc
+" > If this isn't the profile of your current shell then please add the following to your correct profile:
+" export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+" > Successfully installed Yarn X.XX.XX! Please open another terminal where the `yarn` command will now be available.
+Plugin 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
+" [coc.nvim] build/index.js not found, 
+" please install dependencies and compile coc.nvim by: yarn install
+" Notice: use cd ~/.vim/bundle/coc.nvim && yarn install to install dependencies
+" if error happensagain, use 
+" cd ~/.vim/bundle/coc.nvim && yarn install && yarn build 
+" or cd ~/.vim/bundle/coc.nvim && git checkout release
+" refer: https://github.com/neoclide/coc.nvim/issues/3258.
+" 
+" CoC extension: coc-java, coc-metals;
+" coc-java: https://github.com/neoclide/coc-java.
+" coc-metals: https://github.com/scalameta/coc-metals.
+Plugin 'neoclide/coc-java', {'do': 'yarn install --frozen-lockfile'}
+Plugin 'scalameta/coc-metals', {'do': 'yarn install --frozen-lockfile'}
+
+
+
 " Install L9 and avoid a Naming conflict if you've already installed a
 " different version somewhere else.
 " Plugin 'ascenator/L9', {'name': 'newL9'}
@@ -440,9 +762,14 @@ call vundle#end()            " required
 
 "colorscheme solarized  " solarized is the better    
 
-colorscheme molokai
+"colorscheme molokai
 
 "colorscheme phd
+
+" refer: https://jqno.nl/post/2020/09/09/my-vim-setup/.
+" Color scheme
+" reversal.vim: https://github.com/jqno/reversal.vim.
+colorscheme reversal 
 
 filetype plugin indent on    " required
 
