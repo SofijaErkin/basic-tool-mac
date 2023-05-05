@@ -7,6 +7,12 @@ I did know that was because two version of MySQL extensions while I deleted all 
 
 but that's too late! So, I have to reinstall all my VSCode extensions again.
 
+## BackUp
+
+[GitHub Project](https://github.com/SofijaErkin/basic-tool-mac/tree/main/vscode).
+
+[GitHub Gist](https://gist.github.com/SofijaErkin/74e6e4eca4b67011b683919558513b0d).
+
 ## Tips
 
 ### Roll Back or revert The target version of extension 
