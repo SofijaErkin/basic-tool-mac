@@ -33,16 +33,18 @@ Download the VSIX file, then `Install from VSIX`refer [this](https://community.p
 
 #### Free Tools
 
-[FauxPilot](https://github.com/fauxpilot/fauxpilot).
+[StarCoder: A State-of-the-Art LLM for Code(Hugging Face)](https://huggingface.co/blog/starcoder).
 
-[Amazon CodeWhisperer](https://aws.amazon.com/codewhisperer/).
+[FauxPilot: an open-source alternative to GitHub Copilot(GitHub Open Project)](https://github.com/fauxpilot/fauxpilot).
+
+[CodeWhisperer: AI Code Generator(Amazon Org.)](https://aws.amazon.com/codewhisperer/).
 
 [AWS Toolkit](https://aws.amazon.com/visualstudiocode/).
 
-[Codeium](https://codeium.com/).
+[Codeium: AI code completion & search](https://codeium.com/).
 
 #### Free Tools But Need to Contribute to Community Or Use Money
 
-[GitHub Copilot](https://github.com/features/copilot).
+[Copilot: Your AI pair programmer (GitHub Org.)](https://github.com/features/copilot).
 
 ## Refer
