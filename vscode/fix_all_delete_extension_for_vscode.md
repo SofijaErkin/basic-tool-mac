@@ -35,6 +35,11 @@ Download the VSIX file, then `Install from VSIX`refer [this](https://community.p
 
 [StarCoder: A State-of-the-Art LLM for Code(Hugging Face)](https://huggingface.co/blog/starcoder).
 
+    (Developing)In vscode, Not open Run and Debug side bar & click Launch Extension
+    Because no Launch Extension to click while open Run and Debug side bar
+    (Configuring)Not configure which endpoint to where request will be sent and special tokens.
+    Because do not know what difference between huggingface model id and  custom endpoint
+
 [FauxPilot: an open-source alternative to GitHub Copilot(GitHub Open Project)](https://github.com/fauxpilot/fauxpilot).
 
 [CodeWhisperer: AI Code Generator(Amazon Org.)](https://aws.amazon.com/codewhisperer/).
