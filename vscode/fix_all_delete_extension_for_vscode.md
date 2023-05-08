@@ -52,4 +52,8 @@ Download the VSIX file, then `Install from VSIX`refer [this](https://community.p
 
 [Copilot: Your AI pair programmer (GitHub Org.)](https://github.com/features/copilot).
 
+[TabNine: AI assistant for software developers](https://www.tabnine.com/).
+
+[ChatGPT: Your best AI pair programmer](https://chat.openai.com/).
+
 ## Refer
