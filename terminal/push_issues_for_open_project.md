@@ -8,6 +8,8 @@
 
 ## RoadMap
 
+Just use GitHUb repository for an example.
+
 1.Go to the project repository on GitHub and click on the `Issues` tab.
 
 2.Search to see if an issue similar to yours has already been reported. If you
