@@ -147,3 +147,8 @@ Rename multiple files, using regular expressions.
     java -classpath ./ HelloWorld
 
 Reference: [Hello, World in Java on Mac OS X](https://www.cs.princeton.edu/courses/archive/spr04/cos126/hello/mac.html).
+
+### 16.Check Where does JDK installed
+
+    java -verbose
+    /usr/libexec/java_home -V
