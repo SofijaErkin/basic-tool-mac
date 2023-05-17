@@ -55,3 +55,14 @@ under "`/Users/user/jee-2020-06`", then you will find the `Eclipse` APP, just
 move the `Eclipse` APP  to the directory `Desktop`, then directly draw into
 
 `Application`.
+
+7.A Test of Project Demo.
+
+    Create Project: click "Create a new Java EE Web Project", input Project name
+    e.g:"softTest1", then click "Finish" Button.
+    Create Package: right-click new-created Project name "softTest1"->new->
+    Package->OK/adjust Package name+OK
+    Create Class: right-click new-created Package name "softTest1"->new->class
+    rename the name of prompted Class "Name", e.g: "HelloWorld", then->Finish
+    Code Class file: input code, click Running, then output witness under the 
+    Console
