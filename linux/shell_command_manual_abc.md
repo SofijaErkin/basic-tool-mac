@@ -152,3 +152,12 @@ Reference: [Hello, World in Java on Mac OS X](https://www.cs.princeton.edu/cours
 
     java -verbose
     /usr/libexec/java_home -V
+
+### 17.Decompress files
+
+    (.tar.gz) tar -xzvf decompress_file_with_tar_gz
+    (.zip)  unzip -d /decompress/into/this/directory file_with_zip
+
+### 18.Create Soft Link
+
+    (sudo) ln -sv /source/directory/file /direction/file/soft/link
