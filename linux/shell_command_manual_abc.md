@@ -1,5 +1,7 @@
 # Shell Command Manual ABC
 
+BackUp: [GitHub Project](https://github.com/SofijaErkin/basic-tool-mac/blob/main/linux/shell_command_manual_abc.md), [GitHub Gist](https://gist.github.com/SofijaErkin/bea65b4c8d367c90bfd2d88aa8c3be43).
+
 ## 1. Check Default Shell
 
     echo $SHELL
