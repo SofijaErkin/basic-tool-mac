@@ -69,7 +69,8 @@ move the `Eclipse` APP  to the directory `Desktop`, then directly draw into
 
 8.Install Plugin for Eclipse
 
-    (Help) button -> Install New Software... -> Add -> Local-> click the name[]
+    (Help(Should be the newest Eclipse IDE)) button -> Install New Software...
+    -> Add -> Local-> click the name[]
     (Start up Tomcat server) cd /usr/local/tomcat/bin/ && ./startup.sh
     (Add local server) Eclipse->Preferences->Server->RuntimeEnvironments->Add->
     choose yourself version->Browse local directory->choose local JRE->Finish->
