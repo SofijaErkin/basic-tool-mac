@@ -69,7 +69,11 @@ move the `Eclipse` APP  to the directory `Desktop`, then directly draw into
 
 8.Install Plugin for Eclipse
 
-    (Download remote Tomcat Plugin ZIP)https://sourceforge.net/projects/tomcatplugin/
+    (Download remote Tomcat Plugin ZIP, the newest version 9.1.6)
+    https://sourceforge.net/projects/tomcatplugin/
+    (more recent version 9.1.2)
+    https://files.cnblogs.com/files/godwithus/net.sf.eclipse.tomcat.updatesite-2016-09-21.zip
+
     (Help(Should be the newest Eclipse IDE)) button -> Install New Software...
     -> Add -> Local-> give a Repository name-> OK -> click the name[]-> always
     Next-> accept the Licenses -> Finish -> waiting for Eclipse auto-installing
@@ -80,6 +84,8 @@ move the `Eclipse` APP  to the directory `Desktop`, then directly draw into
     Problems downloading artifact: osgi.bundle,org.eclipse.equinox.common,3.17.100.v20230202-1341.
     Error reading signed content:/var/folders/zs/_m5zmn613_vgyyszpxwcyx980000gn/T/signatureFile3901322827202294976.jar
     An error occurred while processing the signatures for the file: /var/folders/zs/_m5zmn613_vgyyszpxwcyx980000gn/T/signatureFile3901322827202294976.jar
+    Fixed the upstairs error:
+    Reinstall Eclipse and Tomcat Plugin for Eclipse
 
     (Add local server) Eclipse->Preferences->Server->RuntimeEnvironments->Add->
     choose yourself version->Browse local directory->choose local JRE->Finish->
