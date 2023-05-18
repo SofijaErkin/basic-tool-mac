@@ -44,6 +44,13 @@ click "`/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home`",
 
 and then `Next`.
 
+Notice: please choose `Yes` while installing the old version Eclipse if prompt the below.
+
+    The following URI could not be download:
+    https://download.eclipse.org/technology/epp/packages/2020-06/artifacts.jar
+    A local cached version that is 1065 days old is available. Would you like
+    to use locally cached versions, when available, to continue provisioning?
+
 6.If `Eclipse` APP disappeared after "`Eclipse Installer`", which means that
 
 you can not find out the `Eclipse` APP from the `LaunchPad`, just go to the
