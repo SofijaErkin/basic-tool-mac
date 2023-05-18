@@ -71,6 +71,7 @@ move the `Eclipse` APP  to the directory `~/Desktop`, then directly draw into
 
     (Download remote Tomcat Plugin ZIP, the newest version 9.1.6)
     https://sourceforge.net/projects/tomcatplugin/
+    (or here) https://marketplace.eclipse.org/content/eclipse-tomcat-plugin
     (more recent version 9.1.2)
     https://files.cnblogs.com/files/godwithus/net.sf.eclipse.tomcat.updatesite-2016-09-21.zip
 
