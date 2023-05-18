@@ -74,6 +74,13 @@ move the `Eclipse` APP  to the directory `Desktop`, then directly draw into
     -> Add -> Local-> give a Repository name-> OK -> click the name[]-> always
     Next-> accept the Licenses -> Finish -> waiting for Eclipse auto-installing
     Software(A long long time about more than an hour!)
+    But->
+    An error occurred while collecting items to be installed
+    session context was:(profile=_Users_yq_jee-2020-06_Eclipse.app_Contents_Eclipse, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+    Problems downloading artifact: osgi.bundle,org.eclipse.equinox.common,3.17.100.v20230202-1341.
+    Error reading signed content:/var/folders/zs/_m5zmn613_vgyyszpxwcyx980000gn/T/signatureFile3901322827202294976.jar
+    An error occurred while processing the signatures for the file: /var/folders/zs/_m5zmn613_vgyyszpxwcyx980000gn/T/signatureFile3901322827202294976.jar
+
     (Add local server) Eclipse->Preferences->Server->RuntimeEnvironments->Add->
     choose yourself version->Browse local directory->choose local JRE->Finish->
     Apply and close
