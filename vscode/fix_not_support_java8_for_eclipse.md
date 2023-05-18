@@ -52,9 +52,9 @@ installed directory of "`Eclipse Installer`", e.g: my "`Java 1.8+ VM`" was
 
 under "`/Users/user/jee-2020-06`", then you will find the `Eclipse` APP, just
 
-move the `Eclipse` APP  to the directory `Desktop`, then directly draw into
+move the `Eclipse` APP  to the directory `~/Desktop`, then directly draw into
 
-`Application`.
+`/Application`.
 
 7.A Test of Project Demo.
 
