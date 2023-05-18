@@ -66,3 +66,19 @@ move the `Eclipse` APP  to the directory `Desktop`, then directly draw into
     rename the name of prompted Class "Name", e.g: "HelloWorld", then->Finish
     Code Class file: input code, click Running, then output witness under the 
     Console
+
+8.Install Plugin for Eclipse
+
+    (Help) button -> Install New Software... -> Add -> Local-> click the name[]
+    (Start up Tomcat server) cd /usr/local/tomcat/bin/ && ./startup.sh
+    (Add local server) Eclipse->Preferences->Server->RuntimeEnvironments->Add->
+    choose yourself version->Browse local directory->choose local JRE->Finish->
+    Apply and close
+    (Startup Tomcat using Eclipse) Eclipse->Window->Show View->Other...->Server
+    ->Servers->Open-> click "No servers are available. Click this link to..."->
+    Finish-> click "Start the server" or "\-ComR"
+    (Power off Tomcat using Eclipse) COnsole -> red button "Terminal"
+    (Check the usage of Port) sudo lsof -i :8080
+    (Kill the target port server) sudo kill -9 pid
+    (Power off Tomcat server) cd /usr/local/tomcat/bin/ && ./shutdown.sh 
+    (Test Tomcat server) goTo http://localhost:8080/ or http://127.0.0.1:8080/
