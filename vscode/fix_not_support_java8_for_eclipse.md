@@ -74,7 +74,6 @@ move the `Eclipse` APP  to the directory `Desktop`, then directly draw into
     -> Add -> Local-> give a Repository name-> OK -> click the name[]-> always
     Next-> accept the Licenses -> Finish -> waiting for Eclipse auto-installing
     Software(A long long time about more than an hour!)
-    (Start up Tomcat server) cd /usr/local/tomcat/bin/ && ./startup.sh
     (Add local server) Eclipse->Preferences->Server->RuntimeEnvironments->Add->
     choose yourself version->Browse local directory->choose local JRE->Finish->
     Apply and close
