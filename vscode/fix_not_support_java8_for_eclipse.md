@@ -86,6 +86,9 @@ move the `Eclipse` APP  to the directory `Desktop`, then directly draw into
     An error occurred while processing the signatures for the file: /var/folders/zs/_m5zmn613_vgyyszpxwcyx980000gn/T/signatureFile3901322827202294976.jar
     Fixed the upstairs error:
     Reinstall Eclipse and Tomcat Plugin for Eclipse
+    If your Eclipse's Preference haven't "Server", the using "help->Install New
+    Software..." input "https://download.eclipse.org/releases/kepler/" in Work
+    with
 
     (Add local server) Eclipse->Preferences->Server->RuntimeEnvironments->Add->
     choose yourself version->Browse local directory->choose local JRE->Finish->
