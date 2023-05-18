@@ -69,8 +69,11 @@ move the `Eclipse` APP  to the directory `Desktop`, then directly draw into
 
 8.Install Plugin for Eclipse
 
+    (Download remote Tomcat Plugin ZIP)https://sourceforge.net/projects/tomcatplugin/
     (Help(Should be the newest Eclipse IDE)) button -> Install New Software...
-    -> Add -> Local-> click the name[]
+    -> Add -> Local-> give a Repository name-> OK -> click the name[]-> always
+    Next-> accept the Licenses -> Finish -> waiting for Eclipse auto-installing
+    Software(A long long time about more than an hour!)
     (Start up Tomcat server) cd /usr/local/tomcat/bin/ && ./startup.sh
     (Add local server) Eclipse->Preferences->Server->RuntimeEnvironments->Add->
     choose yourself version->Browse local directory->choose local JRE->Finish->
@@ -78,8 +81,10 @@ move the `Eclipse` APP  to the directory `Desktop`, then directly draw into
     (Startup Tomcat using Eclipse) Eclipse->Window->Show View->Other...->Server
     ->Servers->Open-> click "No servers are available. Click this link to..."->
     Finish-> click "Start the server" or "\-ComR"
-    (Power off Tomcat using Eclipse) COnsole -> red button "Terminal"
+    (Power off Tomcat using Eclipse) COnsole -> red button "Terminal"  
+    (Test Tomcat server) goTo http://localhost:8080/ or http://127.0.0.1:8080/
+
+    (Start up Tomcat server) cd /usr/local/tomcat/bin/ && ./startup.sh
+    (Power off Tomcat server) cd /usr/local/tomcat/bin/ && ./shutdown.sh
     (Check the usage of Port) sudo lsof -i :8080
     (Kill the target port server) sudo kill -9 pid
-    (Power off Tomcat server) cd /usr/local/tomcat/bin/ && ./shutdown.sh 
-    (Test Tomcat server) goTo http://localhost:8080/ or http://127.0.0.1:8080/
