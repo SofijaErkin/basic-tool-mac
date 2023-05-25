@@ -111,3 +111,26 @@ move the `Eclipse` APP  to the directory `~/Desktop`, then directly draw into
     (Power off Tomcat server) cd /usr/local/tomcat/bin/ && ./shutdown.sh
     (Check the usage of Port) sudo lsof -i :8080
     (Kill the target port server) sudo kill -9 pid
+
+9.Fix the encountered problem of Eclipse
+
+9.1Cannot connect to VM-Socket closed
+
+the `Eclipse` prompt:
+
+    ERROR: transport error 202: gethostbyname: unknown host
+    ERROR: JDWP Transport dt_socket failed to initialize, TRANSPORT_INIT(510)
+    JDWP exit error AGENT_ERROR_TRANSPORT_INIT(197): No transports initialized [debugInit.c:750]
+What's the problem?
+
+Maybe this is the error of IP address of localhost, or with the changed IP of
+
+your local, e.g: using VPS or VPN.
+
+Fixed or not?
+Yes with:
+    (Windows) netsh winsock reset
+    (MacOS) sudo vim /etc/hosts
+            (add the following line into hosts)
+            127.0.0.1 localhost
+            (then use `:wq` to save and execute)
