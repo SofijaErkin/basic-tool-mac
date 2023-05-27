@@ -141,4 +141,3 @@ Yes with:
 `F5` jump into the function
 `F6` jump out of the function
 `F7` step out of the function
-`F8` run to the cursor and stop
