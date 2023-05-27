@@ -137,7 +137,8 @@ Yes with:
 
 10.Debug in Eclipse
 
-line breakpoint, watchpoint breakpoint, method breakpoint, exception breakpoint
+Five breakpoint: line breakpoint, watchpoint breakpoint, method breakpoint,
+exception breakpoint, class reload breakpoint.
 
 `Run` -> `Debug`;
 `F2` terminal the current running pipeline
