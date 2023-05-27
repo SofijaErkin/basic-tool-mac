@@ -137,7 +137,11 @@ Yes with:
 
 10.Debug in Eclipse
 
+line breakpoint, watchpoint breakpoint, method breakpoint, exception breakpoint
+
 `Run` -> `Debug`;
-`F5` jump into the function
-`F6` jump out of the function
-`F7` step out of the function
+`F2` terminal the current running pipeline
+`F5` (Step Into)jump into the function/method
+`F6` (Step Over)jump out of the function/method
+`F7` (Step Return)step out of the function/method
+`F8` resume the terminal pipeline
