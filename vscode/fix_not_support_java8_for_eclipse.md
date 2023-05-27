@@ -134,3 +134,11 @@ Yes with:
             (add the following line into hosts)
             127.0.0.1 localhost
             (then use `:wq` to save and execute)
+
+10.Debug in Eclipse
+
+`Run` -> `Debug`;
+`F5` jump into the function
+`F6` jump out of the function
+`F7` step out of the function
+`F8` run to the cursor and stop
