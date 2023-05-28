@@ -1,9 +1,17 @@
 # Fix Java8 For IntelliJIdea
 
-## Two directory of Intelli Idea
+## Two directory of IntelliJ Idea
 
 `~/Library/Application Support/JetBrains/IdeaICYear.month`
 `~/Library/Caches/JetBrains/IdeaICYear.month`
+
+## Google Java Style for IntelliJ Idea
+
+Download `Google Java Style` from:
+
+    https://github.com/google/styleguide/blob/gh-pages/instmall-java-googlestyle.xml
+Import the style guide for IntelliJ IDEA: `IntelliJ Idea`->`Preferences`->
+`Editor` ->`Code Style`->`Java`
 
 ## Nice tips to using IntelliJ Idea
 
