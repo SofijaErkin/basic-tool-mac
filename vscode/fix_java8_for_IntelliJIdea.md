@@ -16,7 +16,9 @@ settings page, click on the "gear icon" and select "Import Scheme", choose the
 menu `IntelliJ Idea code style XML`, then select the
 "intellij-java-google-style.xml" file that you downloaded and click "OK".
 
-Set the code into Target style, e.g:`Google Java Style`, using Cmd+Option+L(Mac).
+Formatting code using a shortcut key in IntelliJ IDEA is very simple. using
+
+`Cmd+Option+L(Mac)`.
 
 ## Nice tips to using IntelliJ Idea
 
