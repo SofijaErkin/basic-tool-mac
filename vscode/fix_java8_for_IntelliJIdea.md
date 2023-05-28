@@ -11,7 +11,10 @@ Download `Google Java Style` from:
 
     https://github.com/google/styleguide/blob/gh-pages/instmall-java-googlestyle.xml
 Import the style guide for IntelliJ IDEA: `IntelliJ Idea`->`Preferences`->
-`Editor` ->`Code Style`->`Java`
+`Editor` ->`Code Style`->`Java`, in the top right corner of the Java code style
+settings page, click on the "gear icon" and select "Import Scheme", choose the
+menu `IntelliJ Idea code style XML`, then select the
+"intellij-java-google-style.xml" file that you downloaded and click "OK".
 
 ## Nice tips to using IntelliJ Idea
 
