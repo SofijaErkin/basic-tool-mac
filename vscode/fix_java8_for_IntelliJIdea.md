@@ -38,3 +38,21 @@ The Extract Variable refactoring wraps the selected expression into a variable.
 It adds a new variable declaration and uses the expression as an initializer.
 To invoke this refactoring, select the expression and press `⌥⌘V` `(Refactor |`
 `Extract | Variable)`.
+Press `⇧⌘V` to choose from the recent clipboard contents chunks and insert it.
+To make your printouts (`File | Print`) nice and informative, use keywords.
+For example, use `$DATE$` and `$TIME$` to specify the exact date and time of
+the printout.
+IntelliJ IDEA Community can generate getter and setter methods for fields in
+your class. With the caret inside the class, press `⌘N` (`Code | Generate`).
+One can easily convert any Java class to the Kotlin one with the same
+semantics.
+To do that, just choose `Code | Convert Java File to Kotlin File` on the main
+menu.
+Scratch files are temporary files that let you experiment and prototype in the
+editor, without creating any project files.
+To create a scratch file, press `⇧⌘N`, and then select the language to use.
+Press `⌘1` to open the Project tool window and switch focus to it.
+Postfix code completion is applied from right to left to avoid backward caret
+jumps when coding. Type a dot . after the code fragment that you want to change
+and select the desired option.
+To see the suggestion list with postfix templates, you can also press `⌘J`.
