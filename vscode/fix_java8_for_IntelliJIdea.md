@@ -16,7 +16,7 @@ settings page, click on the "gear icon" and select "Import Scheme", choose the
 menu `IntelliJ Idea code style XML`, then select the
 "intellij-java-google-style.xml" file that you downloaded and click "OK".
 
-Set the code into Target style, e.g: `Google Java Style`, using `ctrl+alt+L`.
+Set the code into Target style, e.g:`Google Java Style`, using Cmd+Option+L(Mac).
 
 ## Nice tips to using IntelliJ Idea
 
