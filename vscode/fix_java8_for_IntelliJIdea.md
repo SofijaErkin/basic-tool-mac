@@ -31,6 +31,13 @@ debugging process without printing it to the console, such as defining new
 variables, running methods, and more. This allows you to explore the code
 interactively during the debugging process and calculate the values of various
 expressions.
+`Shift + F7`: Smart Step Into; `Com+shift+F8`: view all Java Line Breakpoints,->
+`Condition`->`Log message to console`->`Evaluate and log`: run the line code,
+calculate the expression and output the result into the console.
+Also, notices the `Java Exception Breakpoints` and `NullPointerException`.
+Multi-threads debug: View Breakpoints->Thread->Make Default(Switch thread);
+Back to breakpoint: (1)Drop Frame: back to the breakpoint step by step via call
+method; (2)Drop Frame->`9(Resume Program)`. Interpret debug: Force Return.
 `alt+Com+R`: Resume program (witness the output after running on `Console`);
 `Com+R`: return program or re-run debug or re-run; `Com+F2`: terminal debug;
 
