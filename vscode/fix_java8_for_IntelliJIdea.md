@@ -22,10 +22,17 @@ Formatting code using a shortcut key in IntelliJ IDEA is very simple. using
 
 ## Debug Tips on IntelliJ IDEA
 
-`Bugger` logo or `^D` to start Debug the current program; `F7`: Step into;
+`Bugger` logo or `^D` to start Debug the current program;
+
+`F7`: Step into; `alt+shift+F7`: force step into; `F8`: Step Over; `shift+F8`:
+Step out, `alt+F9`: Run to Cursor; `alt+F8`: Evaluate Expression;
+Notice: `Evaluate Expression` calculate the value of an expression during the
+debugging process without printing it to the console, such as defining new
+variables, running methods, and more. This allows you to explore the code
+interactively during the debugging process and calculate the values of various
+expressions.
 `alt+Com+R`: Resume program (witness the output after running on `Console`);
-`Com+R`: return program or re-run debug; `Com+F2`: terminal debug; `F8`: Step
-Over; `shift+F8`: Step out.
+`Com+R`: return program or re-run debug or re-run; `Com+F2`: terminal debug;
 
 ## Nice tips to using IntelliJ Idea
 
