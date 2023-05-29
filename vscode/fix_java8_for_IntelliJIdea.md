@@ -24,7 +24,8 @@ Formatting code using a shortcut key in IntelliJ IDEA is very simple. using
 
 `Bugger` logo or `^D` to start Debug the current program; `F7`: Step into;
 `alt+Com+R`: Resume program (witness the output after running on `Console`);
-`Com+R`: return program or re-run debug; `Com+F2`: terminal debug.
+`Com+R`: return program or re-run debug; `Com+F2`: terminal debug; `F8`: Step
+Over; `shift+F8`: Step out.
 
 ## Nice tips to using IntelliJ Idea
 
