@@ -20,6 +20,12 @@ Formatting code using a shortcut key in IntelliJ IDEA is very simple. using
 
 `Cmd+Option+L(Mac)`.
 
+## Debug Tips on IntelliJ IDEA
+
+`Bugger` logo or `^D` to start Debug the current program; `F7`: Step into;
+`alt+Com+R`: Resume program (witness the output after running on `Console`);
+`Com+R`: return program or re-run debug; `Com+F2`: terminal debug.
+
 ## Nice tips to using IntelliJ Idea
 
 Use the Smart code completion `⌃⇧Space` after the `new` keyword to instantiate
