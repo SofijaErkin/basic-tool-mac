@@ -1,5 +1,9 @@
 # Fix Java8 For IntelliJIdea
 
+## BackUp
+
+[GitHub repository](https://github.com/SofijaErkin/basic-tool-mac/blob/main/vscode/fix_java8_for_IntelliJIdea.md). [GitHub Gist](https://gist.github.com/SofijaErkin/cabddeb5704b0d062a463c1c89b4fc40).
+
 ## Two directory of IntelliJ Idea
 
 `~/Library/Application Support/JetBrains/IdeaICYear.month`
