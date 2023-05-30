@@ -533,6 +533,20 @@ GitHub Repository to create one directory, and i'm in the directory
 
 `/Users/marryme/GitHub/Personal/Sofija`, Now:
 
+#### 4.2.1 The Summary for Step 4.2
+
+Update EST AM 03:32 May 30 Tuesday, in summary for Step `4.2`:
+
+    cd ~/GitHub/Personal/Sofija && mkdir hello-world-debug-vscode &&
+    cd hello-world-debug-vscode && touch README.md &&
+    echo "# hello-world-debug-vscode" >> README.md && git init &&
+    git config user.name "Sofija_Personal_GitHub" &&
+    git config user.email "sofijapersonal@gmail.com" &&
+    git add README.md && git commit -m "Create README.md" &&
+    git branch -M main &&
+    git remote set-url origin git@sofija_personal-github.com:SofijaPersonal/hello-world.git
+    && git push -u origin main
+
 mkdir hello-world-debug-vscode && cd hello-world-debug-vscode
 
 The same thing, create `README.md` and write "`# hello-world-debug-vscode`":
