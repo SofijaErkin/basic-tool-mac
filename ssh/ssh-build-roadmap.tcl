@@ -544,7 +544,7 @@ Update EST AM 03:32 May 30 Tuesday, in summary for Step `4.2`:
     git config user.email "sofijapersonal@gmail.com" &&
     git add README.md && git commit -m "Create README.md" &&
     git branch -M main &&
-    git remote set-url origin git@sofija_personal-github.com:SofijaPersonal/hello-world.git
+    git remote add origin git@sofija_personal-github.com:SofijaPersonal/hello-world-debug-vscode.git
     && git push -u origin main
 
 mkdir hello-world-debug-vscode && cd hello-world-debug-vscode
