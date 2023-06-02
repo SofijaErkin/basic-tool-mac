@@ -297,6 +297,24 @@ Check the proxy of the ssh key again:
 `4096 SHA256:............ /Users/marryme/.ssh/sofija_personal_github_id_rsa (RSA)`
 
 #### 3.2.5 Adding Public RSA to GitHub SSH keys
+
+Notice: Update 1:20 EST Friday June 2 2023
+
+if your remote repository `Bitbucket` occurs:
+
+    SSH Host Key Rotation
+    IMPORTANT NOTICE: Bitbucket Cloud’s RSA SSH Host Key will be rotated on June 20, 2023 1700 UTC
+    
+You just need to replace the old Bitbucket's SSH host Key at your local laptop's `~/.ssh`
+with the New bitbucket SSH Host key, via command:
+
+    ssh-keygen -R bitbucket.org && curl https://bitbucket.org/site/ssh >> ~/.ssh/known_hosts
+
+Notice: You do not need to generate a non-RSA type SSH key pair for Bitbucket, as Bitbucket
+still supports RSA type SSH key pairs for authentication. You just need to update the SSH
+Host Key for Bitbucket on your local machine.
+
+Refer:[SSH Host Key Rotation(Stack overflow)](https://stackoverflow.com/a/76387301/10846570).
  
 I know, no matter I directly copy the public key file 
  
